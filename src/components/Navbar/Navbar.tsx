@@ -10,6 +10,7 @@ import SubmenuActualidad from './components/SubmenuActualidad'
 const Navbar: React.FC = () => {
 	const [hover, setHover] = React.useState<string>('')
 	const [showSearchable, setShowSearchable] = React.useState<boolean>(false)
+	const [hover1, setHover1] = React.useState<string>('')
 
 	const subItemRef = React.useRef(null)
 
@@ -72,7 +73,9 @@ const Navbar: React.FC = () => {
 								transform="translate(1631 36)"
 							/>
 						</g>
-						<text className="d cursor-pointer" transform="translate(78 31)">
+						<text
+							className="d cursor-pointer"
+							transform="translate(78 31)">
 							<tspan x={-33.552} y={0}>
 								{'UCITECH'}
 							</tspan>
@@ -80,7 +83,7 @@ const Navbar: React.FC = () => {
 					</g>
 					<g
 						transform="translate(1495.944 36.252)"
-						className='cursor-pointer'
+						className="cursor-pointer"
 						onClick={() => setShowSearchable(!showSearchable)}>
 						<path
 							className="e cursor-pointer"
@@ -94,16 +97,21 @@ const Navbar: React.FC = () => {
 						/>
 					</g>
 					<g
+						onMouseOver={() => setHover1('contactenos')}
+						onMouseLeave={() => setHover1('')}
 						transform="translate(1238 27)"
-						onClick={() => setHover(hover === 'contactenos' ? '' : 'contactenos')}
->
+						onClick={() =>
+							setHover(
+								hover === 'contactenos' ? '' : 'contactenos'
+							)
+						}>
 						<rect
 							className="contactenos-a"
 							width={137}
 							height={76}
 							style={{
 								fill:
-									hover === 'contactenos'
+									hover1 === 'contactenos'
 										? '#001F5F'
 										: 'transparent',
 							}}
@@ -113,7 +121,7 @@ const Navbar: React.FC = () => {
 							transform="translate(69 29)"
 							style={{
 								fill:
-									hover !== 'contactenos'
+									hover1 !== 'contactenos'
 										? '#001F5F'
 										: '#fff',
 							}}>
@@ -121,7 +129,7 @@ const Navbar: React.FC = () => {
 								{'Cont\xE1ctenos'}
 							</tspan>
 						</text>
-						{hover === 'contactenos' && (
+						{hover1 === 'contactenos' && (
 							<line
 								className="contactenos-c"
 								x2={120}
@@ -132,14 +140,18 @@ const Navbar: React.FC = () => {
 						)}
 					</g>
 					<g
+						onMouseOver={() => setHover1('trabaje')}
+						onMouseLeave={() => setHover1('')}
 						transform="translate(1086.982 27)"
-						onClick={() => setHover(hover === 'trabaje' ? '' : 'trabaje')}>
+						onClick={() =>
+							setHover(hover === 'trabaje' ? '' : 'trabaje')
+						}>
 						<path
 							className="trabaje-a"
 							d="M0,0H138.964V76H0Z"
 							style={{
 								fill:
-									hover === 'trabaje'
+									hover1 === 'trabaje'
 										? '#001F5F'
 										: 'transparent',
 							}}
@@ -148,7 +160,7 @@ const Navbar: React.FC = () => {
 							className="trabaje-b cursor-pointer"
 							transform="translate(68.982 22)"
 							style={{
-								fill: hover === 'trabaje' ? '#fff' : '#001F5F',
+								fill: hover1 === 'trabaje' ? '#fff' : '#001F5F',
 							}}>
 							<tspan x={-33.246} y={0}>
 								{'Trabaje'}
@@ -157,7 +169,7 @@ const Navbar: React.FC = () => {
 								{'con nosotros'}
 							</tspan>
 						</text>
-						{hover === 'trabaje' && (
+						{hover1 === 'trabaje' && (
 							<line
 								className="trabaje-c"
 								x2={80}
@@ -166,15 +178,19 @@ const Navbar: React.FC = () => {
 						)}
 					</g>
 					<g
+						onMouseOver={() => setHover1('etica')}
+						onMouseLeave={() => setHover1('')}
 						transform="translate(951 27)"
-						onClick={() => setHover(hover === 'etica' ? '' : 'etica')}>
+						onClick={() =>
+							setHover(hover === 'etica' ? '' : 'etica')
+						}>
 						<rect
 							className="etica-a"
 							width={121}
 							height={76}
 							style={{
 								fill:
-									hover === 'etica'
+									hover1 === 'etica'
 										? '#001F5F'
 										: 'transparent',
 							}}
@@ -183,7 +199,7 @@ const Navbar: React.FC = () => {
 							className="etica-b cursor-pointer"
 							transform="translate(60 22)"
 							style={{
-								fill: hover !== 'etica' ? '#001F5F' : '#fff',
+								fill: hover1 !== 'etica' ? '#001F5F' : '#fff',
 							}}>
 							<tspan x={-30.114} y={0}>
 								{'\xC9tica y'}
@@ -192,7 +208,7 @@ const Navbar: React.FC = () => {
 								{'compliance\u200B'}
 							</tspan>
 						</text>
-						{hover === 'etica' && (
+						{hover1 === 'etica' && (
 							<path
 								className="etica-c"
 								d="M0,0H107.463"
@@ -201,14 +217,18 @@ const Navbar: React.FC = () => {
 						)}
 					</g>
 					<g
+						onMouseOver={() => setHover1('actualidad')}
+						onMouseLeave={() => setHover1('')}
 						transform="translate(823 27)"
-						onClick={() => setHover(hover === 'actualidad' ? '' : 'actualidad')}>
+						onClick={() =>
+							setHover(hover === 'actualidad' ? '' : 'actualidad')
+						}>
 						<path
 							className="actu-a"
 							d="M0,0H117V76H0Z"
 							style={{
 								fill:
-									hover === 'actualidad'
+									hover1 === 'actualidad'
 										? '#001F5F'
 										: 'transparent',
 							}}
@@ -218,13 +238,15 @@ const Navbar: React.FC = () => {
 							transform="translate(68 29)"
 							style={{
 								fill:
-									hover === 'actualidad' ? '#fff' : '#001F5F',
+									hover1 === 'actualidad'
+										? '#fff'
+										: '#001F5F',
 							}}>
 							<tspan x={-57.555} y={0}>
 								{'Actualidad\u200B'}
 							</tspan>
 						</text>
-						{hover === 'actualidad' && (
+						{hover1 === 'actualidad' && (
 							<line
 								className="actualidad-c"
 								x2={97}
@@ -235,14 +257,18 @@ const Navbar: React.FC = () => {
 						)}
 					</g>
 					<g
+						onMouseOver={() => setHover1('solucion')}
+						onMouseLeave={() => setHover1('')}
 						transform="translate(692 27)"
-						onClick={() => setHover(hover === 'solucion' ? '' : 'solucion')}>
+						onClick={() =>
+							setHover(hover === 'solucion' ? '' : 'solucion')
+						}>
 						<rect
 							width={123}
 							height={76}
 							style={{
 								fill:
-									hover === 'solucion'
+									hover1 === 'solucion'
 										? '#001F5F'
 										: 'transparent',
 							}}
@@ -251,7 +277,8 @@ const Navbar: React.FC = () => {
 							className="solucion-b cursor-pointer"
 							transform="translate(61 22)"
 							style={{
-								fill: hover === 'solucion' ? '#fff' : '#001F5F',
+								fill:
+									hover1 === 'solucion' ? '#fff' : '#001F5F',
 							}}>
 							<tspan x={-47.772} y={0}>
 								{'Soluciones'}
@@ -260,7 +287,7 @@ const Navbar: React.FC = () => {
 								{'en salud\u200B'}
 							</tspan>
 						</text>
-						{hover === 'solucion' && (
+						{hover1 === 'solucion' && (
 							<line
 								className="solucion-c"
 								x2={95}
@@ -269,15 +296,21 @@ const Navbar: React.FC = () => {
 						)}
 					</g>
 					<g
+						onMouseOver={() => setHover1('trayectoria')}
+						onMouseLeave={() => setHover1('')}
 						transform="translate(554 27)"
-						onClick={() => setHover(hover === 'trayectoria' ? '' : 'trayectoria')}>
+						onClick={() =>
+							setHover(
+								hover === 'trayectoria' ? '' : 'trayectoria'
+							)
+						}>
 						<rect
 							className="trayectoria-a"
 							width={121}
 							height={76}
 							style={{
 								fill:
-									hover !== 'trayectoria'
+									hover1 !== 'trayectoria'
 										? 'transparent'
 										: '#001F5F',
 							}}
@@ -287,7 +320,7 @@ const Navbar: React.FC = () => {
 							transform="translate(60 29)"
 							style={{
 								fill:
-									hover === 'trayectoria'
+									hover1 === 'trayectoria'
 										? '#fff'
 										: '#001F5F',
 							}}>
@@ -295,7 +328,7 @@ const Navbar: React.FC = () => {
 								{'Trayectoria'}
 							</tspan>
 						</text>
-						{hover === 'trayectoria' && (
+						{hover1 === 'trayectoria' && (
 							<line
 								className="trayectoria-c"
 								x2={101}
@@ -307,15 +340,19 @@ const Navbar: React.FC = () => {
 					</g>
 					<a href="/">
 						<g
+							onMouseOver={() => setHover1('home')}
+							onMouseLeave={() => setHover1('')}
 							transform="translate(468 27)"
-							onClick={() => setHover(hover === 'home' ? '' : 'home')}>
+							onClick={() =>
+								setHover(hover1 === 'home' ? '' : 'home')
+							}>
 							<rect
 								className="a"
 								width={78}
 								height={76}
 								style={{
 									fill:
-										hover === 'home'
+										hover1 === 'home'
 											? '#001F5F'
 											: 'transparent',
 								}}
@@ -324,21 +361,22 @@ const Navbar: React.FC = () => {
 								className="home-menu-b"
 								transform="translate(39 29)"
 								style={{
-									fill: hover === 'home' ? '#fff' : '#001F5F',
+									fill:
+										hover1 === 'home' ? '#fff' : '#001F5F',
 								}}>
 								<tspan
 									x={-26.262}
 									y={0}
 									style={{
 										fill:
-											hover === 'home'
+											hover1 === 'home'
 												? '#fff'
 												: '#001F5F',
 									}}>
 									{'Home'}
 								</tspan>
 							</text>
-							{hover === 'home' && (
+							{hover1 === 'home' && (
 								<line
 									className="home-menu-c"
 									x2={52}
@@ -352,8 +390,12 @@ const Navbar: React.FC = () => {
 						</g>
 					</a>
 					<a href="/">
-						<g transform="translate(142 26.931)" className='cursor-pointer'>
-							<g className="h cursor-pointer" transform="translate(0 0)">
+						<g
+							transform="translate(142 26.931)"
+							className="cursor-pointer">
+							<g
+								className="h cursor-pointer"
+								transform="translate(0 0)">
 								<path
 									className="c cursor-pointer"
 									d="M34.052,36.752l8.073,10.989a.306.306,0,0,1,.057.177l.046,8.6a.3.3,0,0,1-.3.3l-1.2.006a.3.3,0,0,1-.3-.3l-.016-3.051-4.34.022.016,3.052a.3.3,0,0,1-.3.3l-1.2.006a.3.3,0,0,1-.3-.3l-.041-7.9a.3.3,0,0,1,.3-.3l1.2-.007a.3.3,0,0,1,.3.3l.016,3.051,4.34-.022-.017-3.264-7.33-9.98-6.236.032L19.592,48.524l.016,3.263,4.341-.023-.016-3.051a.3.3,0,0,1,.3-.3l1.2-.007a.3.3,0,0,1,.3.3l.041,7.9a.3.3,0,0,1-.3.3l-1.2.006a.3.3,0,0,1-.3-.3l-.016-3.052-4.34.023.016,3.052a.3.3,0,0,1-.3.3l-1.2.006a.3.3,0,0,1-.3-.3l-.045-8.6a.3.3,0,0,1,.056-.177L25.8,36.795a.3.3,0,0,1,.242-.125l7.765-.04a.3.3,0,0,1,.243.123m-12.5-8.985L8.559,23.623a.291.291,0,0,0-.185,0l-8.168,2.7a.3.3,0,0,0-.19.38l.376,1.14a.3.3,0,0,0,.38.19l2.9-.957L5.031,31.2l-2.9.957a.3.3,0,0,0-.19.38l.376,1.14a.3.3,0,0,0,.38.19l7.5-2.481a.3.3,0,0,0,.19-.38l-.376-1.14a.3.3,0,0,0-.38-.19l-2.9.959L5.379,26.511l3.1-1.025,11.8,3.765.964,2.915.994,3.005L15.006,45.228l-3.1,1.024-1.362-4.121,2.9-.957a.3.3,0,0,0,.19-.38l-.377-1.14a.3.3,0,0,0-.378-.19l-7.5,2.481a.3.3,0,0,0-.19.38l.376,1.14a.3.3,0,0,0,.38.19l2.9-.959L10.2,46.817l-2.9.959a.3.3,0,0,0-.191.38l.377,1.14a.3.3,0,0,0,.38.19l8.167-2.7a.3.3,0,0,0,.15-.11L24.14,35.6a.3.3,0,0,0,.041-.269L21.743,27.96a.3.3,0,0,0-.194-.193m16.018-2.03,12.946-4.281a.3.3,0,0,0,.149-.11l5.021-6.986a.3.3,0,0,0-.069-.419l-.975-.7a.3.3,0,0,0-.419.069L52.44,15.788l-3.525-2.533L50.7,10.777a.3.3,0,0,0-.068-.419l-.975-.7a.3.3,0,0,0-.419.069l-4.613,6.418a.3.3,0,0,0,.068.42l.976.7a.3.3,0,0,0,.419-.069l1.781-2.478,3.525,2.533-1.9,2.65L37.728,23.789l-5.065-3.639L32.6,7.766l1.9-2.65,3.525,2.533-1.781,2.478a.3.3,0,0,0,.069.419l.975.7a.3.3,0,0,0,.419-.069l4.613-6.419a.3.3,0,0,0-.069-.419l-.975-.7a.3.3,0,0,0-.419.069L39.079,6.186,35.555,3.654l1.781-2.479a.3.3,0,0,0-.069-.419l-.975-.7a.3.3,0,0,0-.419.069L30.853,7.111a.3.3,0,0,0-.056.177l.071,13.636a.3.3,0,0,0,.125.242L37.3,25.7a.3.3,0,0,0,.269.041m21.8,1.8.365-1.144a.3.3,0,0,0-.195-.377L51.342,23.4a.3.3,0,0,0-.186,0L38.21,27.682a.3.3,0,0,0-.191.194l-2.361,7.4a.3.3,0,0,0,.044.268l8.072,10.99a.306.306,0,0,0,.151.108l8.195,2.617a.3.3,0,0,0,.377-.195l.365-1.143a.3.3,0,0,0-.194-.377l-2.908-.929,1.32-4.135,2.908.928a.3.3,0,0,0,.377-.194l.365-1.144a.3.3,0,0,0-.195-.377L47,39.285a.3.3,0,0,0-.376.195l-.366,1.144a.3.3,0,0,0,.195.376l2.907.929-1.319,4.135-3.11-.992L37.6,35.091l1.9-5.941,11.757-3.888,3.108.993L53.048,30.39l-2.908-.929a.3.3,0,0,0-.377.195L49.4,30.8a.3.3,0,0,0,.195.376l7.529,2.4a.3.3,0,0,0,.377-.194l.366-1.144a.3.3,0,0,0-.195-.377l-2.908-.928,1.32-4.135,2.908.929a.3.3,0,0,0,.377-.195m-36.9-1.773,6.251-4.6a.3.3,0,0,0,.123-.244L28.747,7.279a.3.3,0,0,0-.058-.175L23.586.177a.3.3,0,0,0-.42-.064L22.2.825a.3.3,0,0,0-.063.42L23.947,3.7,20.452,6.275,18.642,3.818a.3.3,0,0,0-.42-.063l-.967.712a.3.3,0,0,0-.063.42l4.687,6.364a.3.3,0,0,0,.42.063l.967-.712a.3.3,0,0,0,.064-.42L21.52,7.725l3.495-2.574L26.95,7.779l.081,12.383-5.021,3.7-11.8-3.748L8.273,17.484l3.495-2.574,1.809,2.457a.3.3,0,0,0,.42.063l.967-.712a.3.3,0,0,0,.064-.42L10.339,9.935a.3.3,0,0,0-.42-.064l-.967.712A.3.3,0,0,0,8.89,11L10.7,13.46,7.205,16.034l-1.81-2.457a.3.3,0,0,0-.42-.064l-.967.712a.3.3,0,0,0-.063.42l5.1,6.927a.294.294,0,0,0,.15.108l13,4.129a.3.3,0,0,0,.269-.045"
@@ -420,7 +462,13 @@ const Navbar: React.FC = () => {
 				</g>
 			</svg>
 			{showSearchable && (
-				<svg style={{ position: 'absolute', width: '100%', transform: 'translate(620px, -6px)', maxWidth: 495 }}>
+				<svg
+					style={{
+						position: 'absolute',
+						width: '100%',
+						transform: 'translate(620px, -6px)',
+						maxWidth: 495,
+					}}>
 					<defs>
 						<style>
 							{
@@ -466,11 +514,11 @@ const Navbar: React.FC = () => {
 				</svg>
 			)}
 			{hover === 'trayectoria' && <SubmenuWay ref={subItemRef} />}
-			{hover === 'solucion' && <SubmenuSolution ref={subItemRef}/>}
-			{hover === 'contactenos' && <SubmenuContact ref={subItemRef}/>}
-			{hover === 'etica' && <SubmenuEtic ref={subItemRef}/>}
-			{hover === 'trabaje' && <SubmenuWorkUs ref={subItemRef}/>}
-			{hover === 'actualidad' && <SubmenuActualidad ref={subItemRef}/>}
+			{hover === 'solucion' && <SubmenuSolution ref={subItemRef} />}
+			{hover === 'contactenos' && <SubmenuContact ref={subItemRef} />}
+			{hover === 'etica' && <SubmenuEtic ref={subItemRef} />}
+			{hover === 'trabaje' && <SubmenuWorkUs ref={subItemRef} />}
+			{hover === 'actualidad' && <SubmenuActualidad ref={subItemRef} />}
 		</div>
 	)
 }

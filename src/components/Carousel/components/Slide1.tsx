@@ -10,7 +10,7 @@ const Slide1: React.FC<ISlide> = ({ height, onClick }): JSX.Element => {
     <div>
       <svg
         width="100%"
-        height={height}
+        height={'100%'}
         viewBox="0 0 1920 1080"
         preserveAspectRatio="none"
       >

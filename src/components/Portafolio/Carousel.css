@@ -77,7 +77,7 @@
 }
 
 .s-portfolio-3 {
-	opacity: 0.36;
+	opacity: 1;
 	mix-blend-mode: multiply;
 	fill: url(#h-portfolio-3);
 }

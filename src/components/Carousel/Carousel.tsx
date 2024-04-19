@@ -33,7 +33,7 @@ const CarouselHeader: React.FC = () => {
   }, []);
 
   return (
-    <Carousel slide={true}>
+    <Carousel slide={false}>
       {carouselHeaderItems.map((item: CarouselHeaderItems, index: number) => (
         <React.Fragment key={index}>
           {

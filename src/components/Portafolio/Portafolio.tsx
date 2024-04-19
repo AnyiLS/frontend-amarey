@@ -68,6 +68,8 @@ const Portafolio: React.FC = () => {
 		setItems(filterdata())
 	}, [page])
 
+	console.log(items)
+
 	return (
 		<div>
 			{!openState ? (
@@ -297,10 +299,18 @@ const Portafolio: React.FC = () => {
 							width={1}
 							height={1}
 							patternTransform="translate(0 572.845) rotate(-180)"
-							viewBox="0 0 306 342">
+							viewBox={
+								items.length > 0 && items[0].viewbox_2
+									? items[0].viewbox_2
+									: '0 0 306 342'
+							}>
 							<image
 								preserveAspectRatio="xMidYMid slice"
-								width={306}
+								width={
+									items.length > 0 && items[0].width
+										? items[0].width
+										: 306
+								}
 								height={342}
 								xlinkHref={
 									items.length > 0 ? items[0].images : ''
@@ -324,7 +334,7 @@ const Portafolio: React.FC = () => {
 							filterUnits="userSpaceOnUse">
 							<feOffset dy={3} />
 							<feGaussianBlur stdDeviation={3} result="m" />
-							<feFlood floodOpacity={0.161} />
+							<feFlood floodOpacity={0.4} />
 							<feComposite operator="in" in2="m" />
 							<feComposite in="SourceGraphic" />
 						</filter>
@@ -338,8 +348,21 @@ const Portafolio: React.FC = () => {
 							filterUnits="userSpaceOnUse">
 							<feOffset dy={3} />
 							<feGaussianBlur stdDeviation={3} result="p" />
-							<feFlood floodOpacity={0.161} />
+							<feFlood floodOpacity={0.4} />
 							<feComposite operator="in" in2="p" />
+							<feComposite in="SourceGraphic" />
+						</filter>
+						<filter
+							id="Unión_1"
+							x="0"
+							y="0"
+							width="330.965"
+							height="366.413"
+							filterUnits="userSpaceOnUse">
+							<feOffset dy="5" />
+							<feGaussianBlur stdDeviation="4" result="blur-2" />
+							<feFlood flood-opacity="0.3" />
+							<feComposite operator="in" in2="blur-2" />
 							<feComposite in="SourceGraphic" />
 						</filter>
 						<pattern
@@ -347,10 +370,18 @@ const Portafolio: React.FC = () => {
 							width={1}
 							height={1}
 							patternTransform="translate(0 860.314) rotate(-180)"
-							viewBox="0 0 306 342">
+							viewBox={
+								items.length > 0 && items[2].viewbox_2
+									? items[2].viewbox_2
+									: '0 0 306 342'
+							}>
 							<image
 								preserveAspectRatio="xMidYMid slice"
-								width={306}
+								width={
+									items.length > 0 && items[2].width
+										? items[2].width
+										: 306
+								}
 								height={342}
 								xlinkHref={
 									items.length > 0 ? items[2].images : ''
@@ -365,9 +396,12 @@ const Portafolio: React.FC = () => {
 							height={585.799}
 							filterUnits="userSpaceOnUse">
 							<feOffset dy={3} />
-							<feGaussianBlur stdDeviation={3} result="s" />
-							<feFlood floodOpacity={0.161} />
-							<feComposite operator="in" in2="s" />
+							<feGaussianBlur
+								stdDeviation={3}
+								result="s-portfolio-3"
+							/>
+							<feFlood floodOpacity={0.4} />
+							<feComposite operator="in" in2="s-portfolio-3" />
 							<feComposite in="SourceGraphic" />
 						</filter>
 						<pattern
@@ -375,7 +409,11 @@ const Portafolio: React.FC = () => {
 							width={1}
 							height={1}
 							patternTransform="translate(0 1026.314) rotate(-180)"
-							viewBox="101.554 6.532 241.811 269.735">
+							viewBox={
+								items.length > 0 && items[1].viewbox
+									? items[1].viewbox
+									: '101.554 6.532 241.811 269.735'
+							}>
 							<image
 								preserveAspectRatio="xMidYMid slice"
 								width={429.685}
@@ -551,11 +589,13 @@ const Portafolio: React.FC = () => {
 																transform="translate(1150.94 352.85)"
 															/>
 														</g>
-														<path
-															className="x-portfolio-3"
-															d="M0,0V149.62H0q0,.055,0,.11V258.48a27.943,27.943,0,0,0,27.943,27.943H228.829a27.943,27.943,0,0,0,27.943-27.943V149.73l-.05-.11h.05L223.858,48.078C214.426,18.979,192.173,0,167.487,0Z"
-															transform="translate(256.771 286.423) rotate(180)"
-														/>
+														<g filter="url(#Unión_1)">
+															<path
+																className="x-portfolio-3"
+																d="M0,0V149.62H0q0,.055,0,.11V258.48a27.943,27.943,0,0,0,27.943,27.943H228.829a27.943,27.943,0,0,0,27.943-27.943V149.73l-.05-.11h.05L223.858,48.078C214.426,18.979,192.173,0,167.487,0Z"
+																transform="translate(256.771 286.423) rotate(180)"
+															/>
+														</g>
 													</g>
 													<text
 														className="w-portfolio-3"
