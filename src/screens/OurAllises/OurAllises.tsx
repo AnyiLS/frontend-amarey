@@ -3,6 +3,7 @@ import useGeneral from 'hooks/general.hook'
 import America from './components/America'
 import Asia from './components/Asia'
 import Europa from './components/Europa'
+import OurAllisesMobile from './OurAllisesMobile'
 
 const OurAllises: React.FC = (): JSX.Element => {
 	/** Hooks */
@@ -274,7 +275,9 @@ const OurAllises: React.FC = (): JSX.Element => {
 									/>
 								</g>
 							</g>
-							<g transform="translate(312.999 625.783)" onClick={() => setShowAmerica(true)}>
+							<g
+								transform="translate(312.999 625.783)"
+								onClick={() => setShowAmerica(true)}>
 								<g
 									className="s-allises cursor-pointer"
 									transform="matrix(1, 0, 0, 1, -313, -625.78)">
@@ -343,7 +346,9 @@ const OurAllises: React.FC = (): JSX.Element => {
 									d="M66.336,90.447c-11.832,0-36.6-8.61-41.086-23.626L0,0H118.017c11.832,0,33.484,10.282,36.776,30.043l15.213,60.4Z"
 								/>
 							</g>
-							<g transform="translate(1221.999 625.783)" onClick={() => setShowAsia(true)}>
+							<g
+								transform="translate(1221.999 625.783)"
+								onClick={() => setShowAsia(true)}>
 								<g
 									className="q-allises cursor-pointer"
 									transform="matrix(1, 0, 0, 1, -1222, -625.78)">
@@ -427,7 +432,9 @@ const OurAllises: React.FC = (): JSX.Element => {
 					)}
 				</React.Fragment>
 			) : (
-				<React.Fragment></React.Fragment>
+				<React.Fragment>
+					<OurAllisesMobile />
+				</React.Fragment>
 			)}
 		</React.Fragment>
 	)

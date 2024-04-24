@@ -1,12 +1,14 @@
 import React from 'react'
 import useGeneral from 'hooks/general.hook'
 import SelecImage from './components/SelecImage'
+import InstrumentalStyrilationMobile from './Instrumentalizacion'
 
 const InstrumentalStyrilation: React.FC = (): JSX.Element => {
 	/** Hooks */
 	const { width, height } = useGeneral()
 
 	const [showModal, setShowModal] = React.useState(false)
+	const [openShow, setOpenShow] = React.useState(false)
 
 	return (
 		<React.Fragment>
@@ -21,7 +23,6 @@ const InstrumentalStyrilation: React.FC = (): JSX.Element => {
 							width="100%"
 							height={height}
 							viewBox="0 0 1920 1080"
-							
 							preserveAspectRatio="none">
 							<defs>
 								<style>
@@ -179,7 +180,7 @@ const InstrumentalStyrilation: React.FC = (): JSX.Element => {
 											<feComposite in="SourceGraphic" />
 										</filter>
 									</defs>
-									<g transform="translate(-3778.748 -5819)">
+									<g transform="translate(-3778.748 -5819)" onMouseLeave={() => setOpenShow(false)} onMouseOver={() => setOpenShow(true)}>
 										<g
 											className="c-boton-pequena cursor-pointer"
 											transform="matrix(1, 0, 0, 1, 3778.75, 5819)">
@@ -191,7 +192,8 @@ const InstrumentalStyrilation: React.FC = (): JSX.Element => {
 										</g>
 										<text
 											className="b-boton-pequena cursor-pointer"
-											transform="translate(3835.929 5863.388)">
+											transform="translate(3835.929 5863.388)"
+											style={{ fill: openShow ? "#001f5f" : '#ffffff' }}>
 											<tspan x={0} y={0}>
 												{'Conoce M\xE1s'}
 											</tspan>
@@ -219,7 +221,9 @@ const InstrumentalStyrilation: React.FC = (): JSX.Element => {
 					)}
 				</React.Fragment>
 			) : (
-				<React.Fragment></React.Fragment>
+				<React.Fragment>
+					<InstrumentalStyrilationMobile />
+				</React.Fragment>
 			)}
 		</React.Fragment>
 	)

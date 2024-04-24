@@ -1,11 +1,13 @@
 import React from 'react'
 import useGeneral from 'hooks/general.hook'
 import DevicesMedical from './Components/DevicesMedical'
+import MedicalDevicesMOMobile from './MedicalDevicesMOMobile'
 
 const MedicalDevices: React.FC = (): JSX.Element => {
 	/** Hooks */
 	const { width, height } = useGeneral()
 	const [ShowModal, setShowModal] = React.useState(false)
+	const [openShow, setOpenShow] = React.useState(false)
 
 	return (
 		<React.Fragment>
@@ -173,7 +175,7 @@ const MedicalDevices: React.FC = (): JSX.Element => {
 											<feComposite in="SourceGraphic" />
 										</filter>
 									</defs>
-									<g transform="translate(-3778.748 -5819)">
+									<g transform="translate(-3778.748 -5819)" onMouseLeave={() => setOpenShow(false)} onMouseOver={() => setOpenShow(true)}>
 										<g
 											className="c-cococ cursor-pointer"
 											transform="matrix(1, 0, 0, 1, 3778.75, 5819)">
@@ -185,7 +187,8 @@ const MedicalDevices: React.FC = (): JSX.Element => {
 										</g>
 										<text
 											className="b-cococ cursor-pointer"
-											transform="translate(3835.929 5863.388)">
+											transform="translate(3835.929 5863.388)"
+											style={{ fill: openShow ? "#001f5f" : '#ffffff' }}>
 											<tspan x={0} y={0}>
 												{'Conoce M\xE1s'}
 											</tspan>
@@ -211,7 +214,7 @@ const MedicalDevices: React.FC = (): JSX.Element => {
 					)}
 				</React.Fragment>
 			) : (
-				<React.Fragment></React.Fragment>
+				<MedicalDevicesMOMobile />
 			)}
 		</React.Fragment>
 	)

@@ -1,11 +1,13 @@
 import React from 'react'
 import useGeneral from 'hooks/general.hook'
 import Medicinesone from './Components/Medicinesone'
+import MedicinesMobile from './MedicinesMobile'
 
 const Medicines: React.FC = (): JSX.Element => {
 	/** Hooks */
 	const { width, height } = useGeneral()
 	const [ShowModal, setShowModal] = React.useState(false)
+	const [openShow, setOpenShow] = React.useState(false)
 
 	return (
 		<React.Fragment>
@@ -171,19 +173,21 @@ const Medicines: React.FC = (): JSX.Element => {
 											<feComposite in="SourceGraphic" />
 										</filter>
 									</defs>
-									<g transform="translate(-3778.748 -5819)">
+									<g transform="translate(-3778.748 -5819)" onMouseLeave={() => setOpenShow(false)} onMouseOver={() => setOpenShow(true)}>
 										<g
 											className="c-boton-pequena cursor-pointer"
 											transform="matrix(1, 0, 0, 1, 3778.75, 5819)">
 											<path
 												className="a-boton-pequena cursor-pointer"
+												
 												d="M281.362,0H57.711C34.449,0,13.561,15.983,5.067,40.281L0,54.775H221.8c24.783,0,46.972-17.232,55.7-43.257Z"
 												transform="translate(9 6)"
 											/>
 										</g>
 										<text
 											className="b-boton-pequena cursor-pointer"
-											transform="translate(3835.929 5863.388)">
+											transform="translate(3835.929 5863.388)"
+											style={{ fill: openShow ? "#001f5f" : '#ffffff' }}>
 											<tspan x={0} y={0}>
 												{'Conoce M\xE1s'}
 											</tspan>
@@ -209,7 +213,9 @@ const Medicines: React.FC = (): JSX.Element => {
 					)}
 				</React.Fragment>
 			) : (
-				<React.Fragment></React.Fragment>
+				<React.Fragment>
+					<MedicinesMobile />
+				</React.Fragment>
 			)}
 		</React.Fragment>
 	)

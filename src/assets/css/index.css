@@ -25,3 +25,9 @@
 body {
     font-family: "Kiona-Bold";
 }
+
+@media (max-width: 768px) {
+    main {
+      margin-top: 0 !important;
+    }
+  }

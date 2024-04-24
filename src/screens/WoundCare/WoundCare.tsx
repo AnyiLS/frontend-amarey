@@ -1,6 +1,7 @@
 import React from 'react'
 import useGeneral from 'hooks/general.hook'
 import SelectImage from './components/SelectImage'
+import WoundCareMobile from './WoundCareMobile'
 
 const WoundCare: React.FC = (): JSX.Element => {
 	/** Hooks */
@@ -168,7 +169,9 @@ const WoundCare: React.FC = (): JSX.Element => {
 					}
 				</React.Fragment>
 			) : (
-				<React.Fragment></React.Fragment>
+				<React.Fragment>
+					<WoundCareMobile />
+				</React.Fragment>
 			)}
 		</React.Fragment>
 	)

@@ -1,12 +1,14 @@
 import React from 'react'
 import useGeneral from 'hooks/general.hook'
 import SelectedImage from './components/SelectedImage'
+import OrthopedicsMobile from './Ortopedics'
 
 const Orthopedics: React.FC = (): JSX.Element => {
 	/** Hooks */
 	const { width, height } = useGeneral()
 
 	const [showModal, setShowModal] = React.useState(false)
+	const [openShow, setOpenShow] = React.useState(false)
 
 	return (
 		<React.Fragment>
@@ -175,7 +177,7 @@ const Orthopedics: React.FC = (): JSX.Element => {
 											<feComposite in="SourceGraphic" />
 										</filter>
 									</defs>
-									<g transform="translate(-3778.748 -5819)">
+									<g transform="translate(-3778.748 -5819)" onMouseLeave={() => setOpenShow(false)} onMouseOver={() => setOpenShow(true)}>
 										<g
 											className="c-ortope cursor-pointer"
 											transform="matrix(1, 0, 0, 1, 3778.75, 5819)">
@@ -187,7 +189,8 @@ const Orthopedics: React.FC = (): JSX.Element => {
 										</g>
 										<text
 											className="b-ortope cursor-pointer"
-											transform="translate(3835.929 5863.388)">
+											transform="translate(3835.929 5863.388)"
+											style={{ fill: openShow ? "#001f5f" : '#ffffff' }}>
 											<tspan x={0} y={0}>
 												{'Conoce M\xE1s'}
 											</tspan>
@@ -215,7 +218,9 @@ const Orthopedics: React.FC = (): JSX.Element => {
 					)}
 				</React.Fragment>
 			) : (
-				<React.Fragment></React.Fragment>
+				<React.Fragment>
+					<OrthopedicsMobile />
+				</React.Fragment>
 			)}
 		</React.Fragment>
 	)

@@ -28,14 +28,17 @@ const App: React.FC = (): JSX.Element => {
 				) : (
 					<React.Fragment>
 						{width >= 768 ? <Navbar /> : <NavbarMovil />}
-						<main className="mt-[5.4%]">
+						<main className="">
 							<RouterProvider router={router} />
 							{width >= 768 ? <Footer /> : <FooterMobile />}
 						</main>
-						{window.location.pathname !== '/contactenos' && (
-							<FixedContact />
-						)}
-						<FixedSocialNetworks />
+						{window.location.pathname !== '/contactenos' &&
+							width > 768 && (
+								<React.Fragment>
+									<FixedContact />
+									<FixedSocialNetworks />
+								</React.Fragment>
+							)}
 					</React.Fragment>
 				)}
 			</Flowbite>

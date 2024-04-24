@@ -8,7 +8,9 @@ const FixedContact: React.FC = (): JSX.Element => {
 		<React.Fragment>
 			<svg
 				viewBox="0 0 99.534 99.345"
-				className="fixed bottom-[100px] right-[0] fixed-contact   ">
+				className="fixed bottom-[100px] right-[0] fixed-contact w-[70px] h-[70px]"
+				width={50}
+				height={50}>
 				<defs>
 					<style>
 						{

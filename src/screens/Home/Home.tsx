@@ -7,7 +7,7 @@ import Portafolio from 'components/Portafolio/Portafolio';
 import { CifrasMovil } from 'componentsmovil/CifrasMovil/CifrasMovil';
 // import { ServiciosMovil } from 'componentsmovil/ServiciosMovil/ServiciosMovil';
 import { PortafolioMovil } from 'componentsmovil/PortafolioMovil/PortafolioMovil';
-import { ServiciosMovil } from 'componentsmovil/ServiciosMovil/ServiciosMovil-ANYI-LOZANO';
+import { ServiciosMovil } from 'componentsmovil/ServiciosMovil/ServiciosMobile';
 
 const Home: React.FC = (): JSX.Element => {
     const [width, setWidth] = React.useState<number>(window.innerWidth);

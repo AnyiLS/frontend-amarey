@@ -11,11 +11,53 @@ const Navbar: React.FC = () => {
 	const [hover, setHover] = React.useState<string>('')
 	const [showSearchable, setShowSearchable] = React.useState<boolean>(false)
 	const [hover1, setHover1] = React.useState<string>('')
+	const [scroll, setScroll] = React.useState<number>(0)
+	const [isScroll, setIsScroll] = React.useState<boolean>(false)
 
 	const subItemRef = React.useRef(null)
+	const [previousScrollPosition, setPreviousScrollPosition] = React.useState(0)
+
+	React.useEffect(() => {
+		const handleScroll = () => {
+			const currentScrollPosition = window.pageYOffset
+
+			if (currentScrollPosition < previousScrollPosition) {
+				setIsScroll(true)
+			} else {
+				setIsScroll(false)
+			}
+
+			setPreviousScrollPosition(currentScrollPosition)
+		}
+
+		window.addEventListener('scroll', handleScroll)
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll)
+		}
+	}, [previousScrollPosition])
+
+	React.useEffect(() => {
+		// console.log(c)
+		if (isScroll) {
+			document
+				.getElementById('navbar__container')
+				?.classList.add('navbar__container')
+			document
+				.getElementById('navbar__container')
+				?.classList.remove('navbar__estatic')
+		} else {
+			document
+				.getElementById('navbar__container')
+				?.classList.add('navbar__estatic')
+			document
+				.getElementById('navbar__container')
+				?.classList.remove('navbar__container')
+		}
+	}, [isScroll])
 
 	return (
-		<div className="navbar__container" id="navbar__container">
+		<div className="navbar__estatic" id="navbar__container">
 			<svg
 				viewBox="0 0 1920 105"
 				width="100%"

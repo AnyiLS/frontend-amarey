@@ -1,8 +1,16 @@
+import useGeneral from 'hooks/general.hook'
 import React from 'react'
+import ResponsabilidadMobile from './ResponsabilidadMobile'
 
 const Responsabilidad: React.FC = (): JSX.Element => {
+	/** States */
+	const { width } = useGeneral()
+
 	return (
-		<div>
+		<React.Fragment>
+			{
+				width > 768 ? (
+					<div>
 			<svg
 				width="100%"
 				height={'100%'}
@@ -465,6 +473,12 @@ const Responsabilidad: React.FC = (): JSX.Element => {
 				</text>
 			</svg>
 		</div>
+				) : (
+					<ResponsabilidadMobile/>
+				)
+			}
+		</React.Fragment>
+		
 	)
 }
 

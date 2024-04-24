@@ -313,7 +313,11 @@ const Portafolio: React.FC = () => {
 								}
 								height={342}
 								xlinkHref={
-									items.length > 0 ? items[0].images : ''
+									carouselPortfolio.length > 0
+										? carouselPortfolio[
+												page - 1 < 0 ? 9 : page - 1
+										  ].images
+										: ''
 								}
 							/>
 						</pattern>
@@ -384,7 +388,11 @@ const Portafolio: React.FC = () => {
 								}
 								height={342}
 								xlinkHref={
-									items.length > 0 ? items[2].images : ''
+									carouselPortfolio.length > 0
+										? carouselPortfolio[
+												page + 1 > 9 ? 0 : page + 1
+										  ].images
+										: ''
 								}
 							/>
 						</pattern>
@@ -419,7 +427,9 @@ const Portafolio: React.FC = () => {
 								width={429.685}
 								height={286.423}
 								xlinkHref={
-									items.length > 0 ? items[1].images : ''
+									carouselPortfolio.length > 0
+										? carouselPortfolio[page].images
+										: ''
 								}
 							/>
 						</pattern>
@@ -550,71 +560,52 @@ const Portafolio: React.FC = () => {
 							className="t-portfolio-3"
 							transform="translate(122.488 0)">
 							<g transform="translate(111.438 55.847)">
-								{items.map(
-									(
-										item: CarouselPortfolio,
-										index: number
-									) => (
-										<React.Fragment key={index}>
-											{index === 0 && (
-												<LeftCard {...item} />
-											)}
-											{index === 1 && (
-												<a href={item.to}>
-													<CenterCard
-														{...item}
-														selected={over}
-														onOver={() =>
-															setOver(true)
-														}
-														onLeave={() =>
-															setOver(false)
-														}
-													/>
-												</a>
-											)}
-											{index === 2 && (
-												<g
-													className="u-portfolio-3"
-													transform="translate(636.014)">
-													<g transform="translate(0)">
-														<g
-															className="af-portfolio-3"
-															transform="matrix(1, 0, 0, 1, -1150.94, -352.85)">
-															<rect
-																className="e-portfolio-3"
-																width={256.573}
-																height={474.955}
-																rx={21}
-																transform="translate(1150.94 352.85)"
-															/>
-														</g>
-														<g filter="url(#Unión_1)">
-															<path
-																className="x-portfolio-3"
-																d="M0,0V149.62H0q0,.055,0,.11V258.48a27.943,27.943,0,0,0,27.943,27.943H228.829a27.943,27.943,0,0,0,27.943-27.943V149.73l-.05-.11h.05L223.858,48.078C214.426,18.979,192.173,0,167.487,0Z"
-																transform="translate(256.771 286.423) rotate(180)"
-															/>
-														</g>
-													</g>
-													<text
-														className="w-portfolio-3"
-														transform={`translate(${item.x_selected} 379.825)`}>
-														<tspan x={item.x} y={0}>
-															{item.title}
-														</tspan>
-													</text>
-												</g>
-											)}
-										</React.Fragment>
-									)
-								)}
+								<LeftCard {...carouselPortfolio[page - 1 < 0 ? 9 : page - 1]} />
+								<a href={carouselPortfolio[page].to}>
+									<CenterCard
+										{...carouselPortfolio[page]}
+										selected={over}
+										onOver={() => setOver(true)}
+										onLeave={() => setOver(false)}
+									/>
+								</a>
+								<g
+									className="u-portfolio-3"
+									transform="translate(636.014)">
+									<g transform="translate(0)">
+										<g
+											className="af-portfolio-3"
+											transform="matrix(1, 0, 0, 1, -1150.94, -352.85)">
+											<rect
+												className="e-portfolio-3"
+												width={256.573}
+												height={474.955}
+												rx={21}
+												transform="translate(1150.94 352.85)"
+											/>
+										</g>
+										<g filter="url(#Unión_1)">
+											<path
+												className="x-portfolio-3"
+												d="M0,0V149.62H0q0,.055,0,.11V258.48a27.943,27.943,0,0,0,27.943,27.943H228.829a27.943,27.943,0,0,0,27.943-27.943V149.73l-.05-.11h.05L223.858,48.078C214.426,18.979,192.173,0,167.487,0Z"
+												transform="translate(256.771 286.423) rotate(180)"
+											/>
+										</g>
+									</g>
+									<text
+										className="w-portfolio-3"
+										transform={`translate(${carouselPortfolio[page + 1 > 9 ? 0 : page + 1].x_selected} 379.825)`}>
+										<tspan x={carouselPortfolio[page + 1 > 9 ? 0 : page + 1].x} y={0}>
+											{carouselPortfolio[page + 1 > 9 ? 0 : page + 1].title}
+										</tspan>
+									</text>
+								</g>
 							</g>
 						</g>
 						<g
 							transform="translate(0 274.895)"
 							onClick={() =>
-								setPage(page - 1 < 0 ? 7 : page - 1)
+								setPage(page - 1 < 0 ? 9 : page - 1)
 							}>
 							<g
 								className="ad-portfolio-3"
@@ -634,7 +625,7 @@ const Portafolio: React.FC = () => {
 						<g
 							transform="translate(1198.047 274.895)"
 							onClick={() =>
-								setPage(page + 1 > 8 ? 0 : page + 1)
+								setPage(page + 1 > 9 ? 0 : page + 1)
 							}>
 							<g
 								className="ac-portfolio-3 cursor-pointer"

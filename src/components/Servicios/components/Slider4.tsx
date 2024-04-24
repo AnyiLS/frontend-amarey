@@ -9,9 +9,11 @@ interface ISlider {
 }
 
 export const Slider4: React.FC<ISlider> = ({ height, index }) => {
-	const [selectedImage, setSelectedImage] = React.useState<boolean>(false)
+	const [_selectedImage, setSelectedImage] = React.useState<boolean>(false)
 	const [mute, setMute] = React.useState(false)
 
+	console.log(_selectedImage)
+	
 	React.useEffect(() => {
 		if (index === 3) setTimeout(() => setSelectedImage(true), 800)
 	}, [index])
@@ -167,9 +169,7 @@ export const Slider4: React.FC<ISlider> = ({ height, index }) => {
 					/>
 				</pattern>
 				<clipPath id="b-5">
-					<path
-						d="M0,0,83.578,495.042c23.951,141.871,77.734,234.4,228.41,234.4h989.9V0Z"
-					/>
+					<path d="M0,0,83.578,495.042c23.951,141.871,77.734,234.4,228.41,234.4h989.9V0Z" />
 				</clipPath>
 			</defs>
 			<g transform="translate(0 5.702)">
@@ -447,27 +447,30 @@ export const Slider4: React.FC<ISlider> = ({ height, index }) => {
 						transform="translate(618.11 6)"
 					/>
 				</g>
-				<g transform='translate(634 -6)'>
+				<g transform="translate(634 -6)">
 					<foreignObject
 						x="0"
 						y="0"
 						width="1290px"
 						height="722"
 						style={{ clipPath: 'url(#b-5)' }}>
-						<div className='relative'>
-						<video
-							src="https://juegoseml.co/pdf/tinywow_CEDICONOFC.mp4"
-							autoPlay
-							muted={!mute}
-							loop></video>
+						<div className="relative">
+							<video
+								src="https://juegoseml.co/pdf/tinywow_CEDICONOFC.mp4"
+								autoPlay
+								muted={!mute}
+								loop></video>
 							<div>
-				<img
-					src={mute ? Mute : Mute2}
-					className="absolute w-[3%] left-[19%] bottom-[3%]"
-					alt="Mute"
-					onClick={() => {console.log('HOla');setMute(!mute)}}
-				/>
-			</div>
+								<img
+									src={mute ? Mute : Mute2}
+									className="absolute w-[3%] left-[19%] bottom-[3%]"
+									alt="Mute"
+									onClick={() => {
+										console.log('HOla')
+										setMute(!mute)
+									}}
+								/>
+							</div>
 						</div>
 					</foreignObject>
 				</g>

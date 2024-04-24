@@ -16,8 +16,11 @@ import LifeLine20231 from './components/20231'
 import LifeLine20232 from './components/20232'
 import LifeLine20233 from './components/20233'
 import LifeLine20234 from './components/20234'
+import useGeneral from 'hooks/general.hook'
+import HistoriaMobile from './HistoriaMobile/HistoriaMobile'
 
 const Historia: React.FC = (): JSX.Element => {
+	const { width } = useGeneral();
 	/** States */
 	const [steps, setSteps] = React.useState<number>(0)
 
@@ -26,7 +29,10 @@ const Historia: React.FC = (): JSX.Element => {
 	const handleChangeStepForce = (index: number) => setSteps(index)
 
 	return (
-		<div>
+		<React.Fragment>
+			{
+				width > 768 ? (
+					<div>
 			<svg
 				width="100%"
 				height={'100%'}
@@ -228,6 +234,9 @@ const Historia: React.FC = (): JSX.Element => {
 				/>
 			) : null}
 		</div>
+				) : <HistoriaMobile/>
+			}
+		</React.Fragment>
 	)
 }
 

@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+    .video-mobile {
+        object-fit: contain !important;
+        height: auto !important;
+        box-shadow: none !important ;
+    }
+
+    .container-video {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .container-initial-bar {
+        height: 5.4% !important;
+    }
+
+    .mute-bottom {
+        height: 50px !important;
+        width: 50px !important  ;
+    }
+}

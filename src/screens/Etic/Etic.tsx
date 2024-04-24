@@ -2,6 +2,7 @@ import React from 'react'
 import useGeneral from 'hooks/general.hook'
 import Codigo from './Components/codigo'
 import Lineacodigo from './Components/Lineacodigo'
+import EticMobile from './EticMobile'
 
 const RoboticSurgery: React.FC = (): JSX.Element => {
 	/** Hooks */
@@ -238,7 +239,9 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 					)}
 				</React.Fragment>
 			) : (
-				<React.Fragment></React.Fragment>
+				<React.Fragment>
+					<EticMobile/>
+				</React.Fragment>
 			)}
 		</React.Fragment>
 	)

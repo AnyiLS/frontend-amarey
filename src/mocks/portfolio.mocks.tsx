@@ -13,13 +13,13 @@ export interface CarouselPortfolio {
 
 export const carouselPortfolio: CarouselPortfolio[] = [
     
-    // {
-    //     images: '/images/iamge_portfolio_1.jpg',
-    //     title: 'Medicamentos',
-    //     x: 55,
-    //     x_selected: 15,
-    //     to: '/productos/medicamentos'
-    // },
+    {
+        images: '/images/iamge_portfolio_1.jpg',
+        title: 'Medicamentos',
+        x: 55,
+        x_selected: 15,
+        to: '/productos/medicamentos'
+    },
     {
         images: '/images/image_portfolio_2.jpg',
         title: 'Equipos Médicos',
