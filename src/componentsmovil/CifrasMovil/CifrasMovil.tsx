@@ -591,6 +591,9 @@ export const CifrasMovil: React.FC = () => {
 						onClick={() => {
 							setOpenVideo(false)
 							document.body.style.overflow = 'auto'
+							const video: HTMLVideoElement = document.getElementById('video-cifras') as HTMLVideoElement
+
+							if (video) video.pause()
 						}}>
 						<defs>
 							<style>
@@ -639,6 +642,7 @@ export const CifrasMovil: React.FC = () => {
 						className="object-cover h-[82%] w-full"
 						autoPlay
 						muted={mute}
+						id="video-cifras"
 						controls></video>
 					<img
 						src={mute ? '/images/mute.png' : '/images/Button.png'}

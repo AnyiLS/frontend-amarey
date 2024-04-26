@@ -7,8 +7,10 @@ import {
 import Slide4 from './components/Slide4'
 import Mute from 'assets/images/mute.png'
 import Mute2 from 'assets/images/Button.png'
+import useGeneral from 'hooks/general.hook'
 
 const CarouselHeader: React.FC = () => {
+	const { width } = useGeneral();
 	const [height, setHeight] = React.useState<number>(0)
 	const [selected, setSelected] = React.useState<number | null>(null)
 	const [slide, setSlide] = React.useState<boolean>(true)
@@ -21,8 +23,8 @@ const CarouselHeader: React.FC = () => {
 
 
 	return (
-		<div style={{ height: `calc(100vh - ${(height) - 8}px)` }}>
-			<Carousel slide={slide} slideInterval={10000}>
+		<div style={{ height: width > 1280 ? `calc(100vh - ${(height) - 8}px)` : '100%' }}>
+			<Carousel slide={slide} slideInterval={20000}>
 				{carouselHeaderItems.map(
 					(item: CarouselHeaderItems, index: number) => (
 						<React.Fragment key={index}>
@@ -78,6 +80,9 @@ const CarouselHeader: React.FC = () => {
 					className="absolute top-[5%] right-[5%] text-white text-[30px] text-center font-bold bg-[#00000050] w-[50px] h-[50px] rounded-[100%]"
 					onClick={() => {
 						setShowPopup(false)
+						const video: HTMLVideoElement = document.getElementById('video-1') as HTMLVideoElement
+
+							if (video) video.pause()
 					}}>
 					X
 				</span>

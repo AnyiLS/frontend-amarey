@@ -1,12 +1,15 @@
-import { Carousel } from 'flowbite-react'
 import React from 'react'
-import Mute from 'assets/images/mute.png'
-import Mute2 from 'assets/images/Button.png'
+import { Carousel } from 'flowbite-react'
+import useGeneral from 'hooks/general.hook'
 
 export const CarouselMovil: React.FC = () => {
+	const { width } = useGeneral()
+	/** States */
 	const [height, setHeight] = React.useState<number>(0)
 	const [selectedImage, setSelectedImage] = React.useState<string>('')
 	const [step, setStep] = React.useState<number>(0)
+	const [showPopup, setShowPopup] = React.useState<boolean>(false)
+	const [mute, setMute] = React.useState(true)
 
 	React.useEffect(() => {
 		if (document.getElementById('navbar__container')) {
@@ -17,15 +20,13 @@ export const CarouselMovil: React.FC = () => {
 		}
 	}, [])
 
-	const [showPopup, setShowPopup] = React.useState<boolean>(false)
-	const [mute, setMute] = React.useState(true)
-
 	return (
-		<>
+		<React.Fragment>
 			{selectedImage === '' ? (
 				<Carousel
 					style={{ height: `calc(100vh - ${height}px)` }}
-					slide={false}>
+					slide={selectedImage === ''}
+					slideInterval={20000}>
 					<svg
 						viewBox={`0 0 414 906`}
 						width="100%"
@@ -2483,7 +2484,6 @@ export const CarouselMovil: React.FC = () => {
 					controls
 					className="w-full h-full"
 					id="video-1"></video>
-				
 
 				<span
 					className="absolute top-[5%] right-[5%] text-white text-[30px] text-center font-bold bg-[#00000050] w-[50px] h-[50px] rounded-[100%]"
@@ -2500,7 +2500,13 @@ export const CarouselMovil: React.FC = () => {
 					}}>
 					X
 				</span>
+				<img
+					src={mute ? '/images/mute.png' : '/images/Button.png'}
+					className="absolute w-[10%] left-[8%] bottom-[10px]"
+					alt="Mute"
+					onClick={() => setMute(!mute)}
+				/>
 			</div>
-		</>
+		</React.Fragment>
 	)
 }

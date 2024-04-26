@@ -1800,7 +1800,7 @@ export const ServiciosMovil: React.FC = () => {
 							<div className="relative w-full h-full">
 								<video
 									src="https://juegoseml.co/pdf/tinywow_CEDICONOFC.mp4"
-									autoPlay
+
 									muted={mute}
 									loop
 									style={{ height:200, width: '100%', objectFit: 'cover' }}></video>

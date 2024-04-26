@@ -8,7 +8,7 @@ const Filosofia: React.FC = () => {
 
 	return (
 		<div>
-			{width > 768 ? (
+			{width > 767 ? (
 				<React.Fragment>
 					<svg viewBox="1 10 1920 3650" width='100%' preserveAspectRatio='none'>
 						<defs>

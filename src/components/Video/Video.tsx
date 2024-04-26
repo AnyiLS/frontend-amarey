@@ -17,7 +17,7 @@ const Video: React.FC<IVideo> = ({ onCloseVideo }): JSX.Element => {
 	return (
 		<div className="container-video mb-[1.2px]">
 			<div className="w-full absolute top-0 h-[74px] container-initial-bar">
-				{width > 768 ? (
+				{width > 1024 ? (
 					<img src={BarraVideo} className="w-full absolute" alt="" />
 				) : (
 					<svg viewBox="0 0 414 68">

@@ -9,7 +9,7 @@ const Productos: React.FC = (): JSX.Element => {
 
 	return (
 		<React.Fragment>
-			{width > 768 ? (
+			{width > 1024 ? (
 				<div>
 					<svg viewBox="0 100 1923 998">
 						<defs>

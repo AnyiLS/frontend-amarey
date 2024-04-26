@@ -11,7 +11,7 @@ const MedicalDevices: React.FC = (): JSX.Element => {
 
 	return (
 		<React.Fragment>
-			{width > 768 ? (
+			{width > 1024 ? (
 				<React.Fragment>
 					{ShowModal ? (
 						<DevicesMedical

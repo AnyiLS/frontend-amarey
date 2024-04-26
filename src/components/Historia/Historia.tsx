@@ -31,7 +31,7 @@ const Historia: React.FC = (): JSX.Element => {
 	return (
 		<React.Fragment>
 			{
-				width > 768 ? (
+				width > 767 ? (
 					<div>
 			<svg
 				width="100%"

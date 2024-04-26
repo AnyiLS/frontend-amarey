@@ -1,3 +1,4 @@
+import useGeneral from 'hooks/general.hook'
 import React from 'react'
 
 interface ISlider {
@@ -7,9 +8,10 @@ interface ISlider {
 }
 
 export const Slider1: React.FC<ISlider> = ({ height, handleChangeSlide }) => {
+	const { width } = useGeneral()
 	return (
 		<div>
-			<svg viewBox="0 0 1920 1080" width='100%' height='100vh' preserveAspectRatio='none'>
+			<svg viewBox="0 0 1920 1080" width='100%' style={{ height: width > 1280 ? `100vh` : '100%'}} preserveAspectRatio='none'>
 				<defs>
 					<style>
 						{

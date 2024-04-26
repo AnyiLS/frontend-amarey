@@ -13,11 +13,11 @@ import Navbar from 'components/Navbar/Navbar'
 import Footer from 'components/Footer/Footer'
 
 const App: React.FC = (): JSX.Element => {
-	const { router } = useRouter()
-
 	/** Hooks */
 	const { width } = useGeneral()
+	const { router } = useRouter()
 
+	/** States */
 	const [showVideoPopup, setShowVideoPopup] = React.useState<boolean>(true)
 
 	return (
@@ -33,7 +33,7 @@ const App: React.FC = (): JSX.Element => {
 							{width >= 768 ? <Footer /> : <FooterMobile />}
 						</main>
 						{window.location.pathname !== '/contactenos' &&
-							width > 768 && (
+							width > 767 && (
 								<React.Fragment>
 									<FixedContact />
 									<FixedSocialNetworks />

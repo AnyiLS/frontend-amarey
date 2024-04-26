@@ -147,7 +147,12 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 						</div>
 					</foreignObject>
 				</g>
-				<g transform="translate(1815.473 26.578)" onClick={onClose}>
+				<g transform="translate(1815.473 26.578)" onClick={() => {
+					const video: HTMLVideoElement = document.getElementById('video-cifras') as HTMLVideoElement
+
+					if (video) video.pause()
+					onClose()
+				}}>
 					<g
 						className="f-cifras-1"
 						transform="matrix(1, 0, 0, 1, -1815.47, -26.58)">

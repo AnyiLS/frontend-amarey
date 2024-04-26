@@ -2,8 +2,10 @@ import React from "react";
 import { CifrasVideo } from "./CifrasVideo";
 /** Styles */
 import './Cifras.css'
+import useGeneral from "hooks/general.hook";
 
 const Cifras: React.FC = () => {
+  const { width } = useGeneral()
   const [height, setHeight] = React.useState<string>("100vh");
   const [openModal, setOpenModal] = React.useState<boolean>(false);
   const [selected, setSelected] = React.useState<number>(0);
@@ -31,7 +33,7 @@ const Cifras: React.FC = () => {
 
   return (
     <div className="relative">
-      <svg width='100%' height={height} viewBox="0 0 1920 1080" preserveAspectRatio="none">
+      <svg width='100%' style={{ height: width > 1280 ? `100vh` : '100%'}} viewBox="0 0 1920 1080" preserveAspectRatio="none">
       <defs>
       <style>
         {

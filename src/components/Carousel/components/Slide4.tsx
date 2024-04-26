@@ -5,6 +5,7 @@ import TopLeftAsta from './components/topleftasta'
 import DownLeftAsta from './components/downleftasta'
 import DownRightAsta from './components/downrightasta'
 import Tooltip from './Tooltip'
+import useGeneral from 'hooks/general.hook'
 
 
 interface ISlide {
@@ -15,18 +16,16 @@ interface ISlide {
 }
 
 const Slide4: React.FC<ISlide> = ({ height, image, onReturn, onOpenPopup }): JSX.Element => {
+	const { width } = useGeneral();
+	/** States */
 	const [selected, setSelected] = React.useState<number>(0)
-	const [mute, setMute] = React.useState(false)
-	const [showPopup, setShowPopup] = React.useState(false)
 
 	return (
 		<React.Fragment>
 			<svg
 				width="100%"
-				height="100vh"
-				viewBox={`0 ${
-					document.getElementById('navbar__container')?.clientHeight
-				} 1920 1080`}
+				style={{ height: width > 1280 ? `calc(100vh - ${document.getElementById('navbar__container')?.clientHeight}px)` : '100%'}}
+				viewBox={`0 0 1920 1080`}
 				preserveAspectRatio="none">
 				<defs>
 					<style
@@ -612,21 +611,6 @@ const Slide4: React.FC<ISlide> = ({ height, image, onReturn, onOpenPopup }): JSX
 					<Tooltip />
 				</g>
 			</svg>
-			
-
-			{/* <foreignObject width="1929" height="1089" style={{}}>
-				{selected === 1 && (
-					<video
-						id="video"
-						width="1929"
-						height="1080"
-						src="/images/video/Origen pentamero_1.mp4"
-						autoPlay
-						muted={!mute}
-						loop
-					/>
-				)}
-			</foreignObject> */}
 		</React.Fragment>
 	)
 }

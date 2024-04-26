@@ -1,3 +1,4 @@
+import useGeneral from 'hooks/general.hook'
 import React from 'react'
 interface ISlider {
 	height: string
@@ -6,6 +7,7 @@ interface ISlider {
 }
 
 export const Slider2: React.FC<ISlider> = ({ height, index }) => {
+	const { width } = useGeneral()
 	const [grandImage, setGrandImage] = React.useState<boolean>(false)
 	const [hoverCard, setHoverCard] = React.useState<boolean>(false)
 	const [hoverCard2, setHoverCard2] = React.useState<boolean>(false)
@@ -16,7 +18,7 @@ export const Slider2: React.FC<ISlider> = ({ height, index }) => {
 	}, [index])
 
 	return (
-		<svg viewBox="1590 10 1920 1080" preserveAspectRatio='none' height='100vh' width='100%'>
+		<svg viewBox="1590 10 1920 1080" preserveAspectRatio='none'  style={{ height: width > 1280 ? `100vh` : '100%'}} width='100%'>
 			<defs>
 				<style>
 					{

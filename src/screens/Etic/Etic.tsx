@@ -12,7 +12,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 
 	return (
 		<React.Fragment>
-			{width > 768 ? (
+			{width > 1024 ? (
 				<React.Fragment>
 					{view === 1 && <Codigo onClose={() => setView(0)}/>}
 					{view === 2 && <Lineacodigo onClose={() => setView(0)}/>}

@@ -4,7 +4,7 @@ import {Slider3} from "components/Servicios/components/Slider3";
 import {Slider4} from "components/Servicios/components/Slider4";
 
 export interface CarouselServiciosItems {
-    slide: (height: string, index: number, handleChangeSlide: (position: number) => void) => JSX.Element
+    slide: (height: string, index: number, handleChangeSlide: (position: number) => void, onOpenVideo?: () => void) => JSX.Element
     image: string
 }
 
@@ -22,7 +22,7 @@ export const carouselServiciosItems: CarouselServiciosItems[] = [
         image: '/images/carouselHeader/image_5.jpg'
     },
     {
-        slide: (height: string, index: number, handleChangeSlide: (position: number) => void) => <Slider4 height={height} index={index} handleChangeSlide={handleChangeSlide}/>,
+        slide: (height: string, index: number, handleChangeSlide: (position: number) => void, onOpenVideo?: () => void) => <Slider4 height={height} index={index} handleChangeSlide={handleChangeSlide} onOpenVideo={onOpenVideo}/>,
         image: '/images/carouselHeader/image_5.jpg'
     }
 ]

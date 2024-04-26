@@ -3,7 +3,7 @@ import React from 'react'
 const SubmenuWay: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 	return (
 		<svg
-			viewBox="0 0 1929 360"
+			viewBox="-2 0 1920 360"
 			className="absolute z-1"
 			style={{ zIndex: 1 }}
 			ref={ref}>
@@ -131,16 +131,19 @@ const SubmenuWay: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 								className="d-way-submenu"
 								d="M1189.053,402.13l-.541-.21,41.367-92.276a55.308,55.308,0,0,1,21.556-24.336,61.508,61.508,0,0,1,32.454-9.135h184.873v.544H1283.888c-23.457,0-44.444,13.007-53.468,33.136Z"
 								transform="translate(-5.245 -137.554)"
+								style={{ stroke: '#fff', strokeWidth: 1.5 }}
 							/>
 							<path
 								className="d-way-submenu"
 								d="M369.429,0l.638.247L321.252,109.14a65.276,65.276,0,0,1-25.436,28.719,72.593,72.593,0,0,1-38.3,10.779H39.353V148H257.516c27.681,0,52.448-15.349,63.1-39.1Z"
 								transform="translate(-0.174 -117.002)"
+								style={{ stroke: '#fff', strokeWidth: 1.5 }}
 							/>
 							<path
 								className="e-way-submenu"
 								d="M1442.394,155.049,1386.479,279.8c-9.024,20.13-30.01,33.136-53.468,33.136h-28.562v0H1169.46A61.52,61.52,0,0,0,1137,322.063a55.312,55.312,0,0,0-21.555,24.336L581.086,471.147l.541.21L1115.99,346.61c9.025-20.13,30.012-33.136,53.47-33.136h28.562v0h134.99a61.522,61.522,0,0,0,32.455-9.135,55.319,55.319,0,0,0,21.556-24.336l55.913-124.748Z"
 								transform="translate(-2.564 -128.54)"
+								style={{ stroke: '#e6002a', strokeWidth: 1.5 }}
 							/>
 						</g>
 					</g>

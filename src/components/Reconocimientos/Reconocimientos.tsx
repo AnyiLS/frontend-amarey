@@ -15,7 +15,7 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 
 	return (
 		<React.Fragment>
-			{width > 768 ? (
+			{width > 767 ? (
 				<div>
 					<svg viewBox="300 200 1920 1970">
 						<defs>
@@ -397,17 +397,21 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 							/>
 						</g>
 					</svg>
-					<div className="fixed top-[0] left-[0] h-screen w-full bg-[#e6e6e650] z-[1]" style={{ display: showVideo ? 'flex' : 'none' }}>
+					<div className="fixed top-[0] left-[0] h-screen w-full bg-[#e6e6e6] z-[1]" style={{ display: showVideo ? 'flex' : 'none' }}>
 						<video
 							src="/images/video/Reconocimientos_1.mp4"
 							width="100%"
 							height="100%"
 							controls
+							id='video-cifras'
 						/>
 						<span
 							className="absolute top-[5%] right-[5%] text-white text-[30px] text-center font-bold bg-[#00000050] w-[50px] h-[50px] rounded-[100%]"
 							onClick={() => {
 								setShowVideo(false)
+								const video: HTMLVideoElement = document.getElementById('video-cifras') as HTMLVideoElement
+
+							if (video) video.pause()
 							}}>
 							X
 						</span>

@@ -1,6 +1,8 @@
+import useGeneral from 'hooks/general.hook'
 import React from 'react'
 
 const MedicinesMobile: React.FC = (): JSX.Element => {
+	const { width } = useGeneral();
 	/** States */
 	const [view, setView] = React.useState<number>(0)
 	const [height, setHeight] = React.useState<number>(0)

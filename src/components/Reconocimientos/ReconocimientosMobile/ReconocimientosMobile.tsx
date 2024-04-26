@@ -12,7 +12,7 @@ const ReconocimientosMobile: React.FC = (): JSX.Element => {
 
 	return (
 		<React.Fragment>
-			<svg viewBox="56 0 416 815" preserveAspectRatio="none">
+			<svg viewBox="56 0 414 815" preserveAspectRatio="none">
 				<defs>
 					<style>
 						{
@@ -276,11 +276,15 @@ const ReconocimientosMobile: React.FC = (): JSX.Element => {
 					width="100%"
 					height="100%"
 					controls
+					id='video-cifras'
 				/>
 				<span
 					className="absolute top-[5%] right-[5%] text-white text-[30px] text-center font-bold bg-[#00000050] w-[50px] h-[50px] rounded-[100%]"
 					onClick={() => {
 						setShowVideo(false)
+						const video: HTMLVideoElement = document.getElementById('video-cifras') as HTMLVideoElement
+
+							if (video) video.pause()
 					}}>
 					X
 				</span>

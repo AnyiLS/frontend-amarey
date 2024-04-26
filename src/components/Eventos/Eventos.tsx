@@ -38,7 +38,7 @@ const Eventos = () => {
 
 	return (
 		<React.Fragment>
-			{width > 768 ? (
+			{width > 1024 ? (
 				<React.Fragment>
 					{calendarItems.map((item: CalendarItems, index: number) => {
 						const Component = item.Component

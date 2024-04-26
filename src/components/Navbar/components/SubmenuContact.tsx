@@ -10,7 +10,7 @@ const SubmenuContact: React.FC<{ ref: any }> = ({ ref }): JSX.Element => {
 			<defs>
 				<style>
 					{
-						'.a-submenu-t{fill:none;}.b-submenu-t{fill:#001F5F;}.c-submenu-t{clip-path:url(#a-submenu-t);}.d-submenu-t,.h-submenu-t,.i-submenu-t{fill:#fff;}.e-submenu-t{fill:#E6002A;}.f-submenu-t{fill:url(#b-submenu-t);}.g-submenu-t{opacity:0.8;mix-blend-mode:multiply;isolation:isolate;fill:url(#c-submenu-t);}.h-submenu-t{font-size:42px;font-family:Kiona-Bold, Kiona;font-weight:700;}.i-submenu-t{font-size:24px;font-family:Silka-Regular, Silka;}'
+						'.a-submenu-t{fill:none;}.b-submenu-t{fill:#001F5F;}.c-submenu-t{clip-path:url(#a-submenu-t);}.d-submenu-t,.h-submenu-t,.i-submenu-t{fill:#fff;}.e-submenu-t{fill:#E6002A;}.f-submenu-t{fill:url(#b-submenu-t);}.g-submenu-t{opacity:0.8;mix-blend-mode:multiply;isolation:isolate;fill:url(#c-submenu-t);}.h-submenu-t{font-size:42px;font-family:"Kiona-Bold";font-weight:700;}.i-submenu-t{font-size:24px;font-family:Silka-Regular, Silka;}'
 					}
 				</style>
 				<clipPath id="a-submenu-t">
@@ -57,16 +57,20 @@ const SubmenuContact: React.FC<{ ref: any }> = ({ ref }): JSX.Element => {
 								className="d-submenu-t"
 								d="M1188.983,343.709l-.471-.113,36.034-49.477c3.884-5.333,10.376-9.844,18.777-13.049a80.187,80.187,0,0,1,28.27-4.9h161.04v.292h-161.04c-20.433,0-38.714,6.974-46.575,17.767Z"
 								transform="translate(-5.245 -137.554)"
+								style={{ stroke: '#fff', strokeWidth: 1.5 }}
 							/>
 							<path
 								className="d-submenu-t"
 								d="M369.429,0l.638.247L321.252,109.14a65.276,65.276,0,0,1-25.436,28.719,72.593,72.593,0,0,1-38.3,10.779H39.353V148H257.516c27.681,0,52.448-15.349,63.1-39.1Z"
 								transform="translate(-0.174 -117.002)"
+								style={{ stroke: '#fff', strokeWidth: 1.5 }}
 							/>
 							<path
 								className="e-submenu-t"
 								d="M1429.074,155.049,1374.06,271.5c-8.879,18.79-29.526,30.931-52.606,30.931h-28.1v0H1160.54a62.99,62.99,0,0,0-31.932,8.527,52.612,52.612,0,0,0-21.208,22.717l.532.2c8.879-18.79,29.528-30.931,52.608-30.931h28.1v0h132.814a62.992,62.992,0,0,0,31.932-8.527,52.62,52.62,0,0,0,21.208-22.717l55.012-116.447Z"
 								transform="translate(-2.218 -128.54)"
+								style={{ stroke: '#e6002a', strokeWidth: 1.5 }}
+								
 							/>
 						</g>
 					</g>

@@ -2,6 +2,7 @@ import React from 'react'
 import './Slide3.css'
 import BluePoint from './BluePoint'
 import RedPoint from './RedPoint'
+import useGeneral from 'hooks/general.hook'
 
 interface ISlider {
 	height: string
@@ -10,6 +11,7 @@ interface ISlider {
 }
 
 export const Slider3: React.FC<ISlider> = ({ height }) => {
+	const { width } = useGeneral()
 	const [selectedImage, setSelectedImage] = React.useState<null | number>(
 		null
 	)
@@ -18,7 +20,7 @@ export const Slider3: React.FC<ISlider> = ({ height }) => {
 		<svg
 			viewBox="0 0 1920 1080"
 			preserveAspectRatio="none"
-			height="100vh"
+			style={{ height: width > 1280 ? `100vh` : '100%'}}
 			width="100%">
 			<defs>
 				<style>

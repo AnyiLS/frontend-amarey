@@ -1,3 +1,4 @@
+import useGeneral from "hooks/general.hook";
 import React from "react";
 
 interface ISlide {
@@ -6,11 +7,12 @@ interface ISlide {
 }
 
 const Slide2: React.FC<ISlide> = ({ height, onClick }): JSX.Element => {
+  const { width } = useGeneral();
   return (
     <svg
       width="100%"
-      height='100vh'
-      viewBox="0 82 1920 1080"
+      style={{ height: width > 1280 ? `calc(100vh - ${document.getElementById('navbar__container')?.clientHeight}px)` : '100%'}}
+      viewBox="0 92 1920 978"
       preserveAspectRatio="none"
     >
       <defs>
