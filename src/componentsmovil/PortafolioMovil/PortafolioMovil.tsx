@@ -8,7 +8,7 @@ export const PortafolioMovil: React.FC = () => {
 	return (
 		<React.Fragment>
 			{!isCarousel ? (
-				<svg viewBox="0 0 414 897">
+				<svg viewBox="3 0 414 897">
 					<defs>
 						<style>
 							{

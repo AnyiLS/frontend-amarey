@@ -19,10 +19,10 @@ const MedicalSurgicalDevices: React.FC = (): JSX.Element => {
 							onClose={() => setShowModal(false)}></Medical>
 					) : (
 						<svg
-							width="100%"
-							height={height}
-							viewBox="0 0 1920 1080"
-							preserveAspectRatio="none">
+						viewBox="0 0 1920 1080"
+						width="100%"
+						height='100vh'
+						preserveAspectRatio="none">
 							<defs>
 								<style>
 									{

@@ -1,20 +1,25 @@
 import React from 'react'
 
 export const CifrasMovil: React.FC = () => {
-  /** States */
-  const [openVideo, setOpenVideo] = React.useState<boolean>(false)
-  const [numberVideo, setNumberVideo] = React.useState<number>(0)
+	/** States */
+	const [openVideo, setOpenVideo] = React.useState<boolean>(false)
+	const [numberVideo, setNumberVideo] = React.useState<number>(0)
+	const [mute, setMute] = React.useState(false);
 
-  const video = [
-    {url: '/images/video/capacitaciones.mp4'},
-    {url: '/images/video/Roboticaa.mp4'},
-    {url: '/images/video/Maxiloo.mp4'},
-    {url: '/images/video/logistica.mp4'},
-  ]
+	const video = [
+		{ url: '/videos/Cifras educacion vertical_1.mp4' },
+		{ url: '/videos/Cifras robotica vertical_1.mp4' },
+		{ url: '/videos/Cifras logistica vertical_1.mp4' },
+		{ url: 'videos/Cifras ortopedia vertical_1.mp4' },
+	]
 
 	return (
 		<div className="relative">
-			<svg viewBox="12 0 414 895">
+			<svg
+				viewBox="12 0 414 895"
+				width="100%"
+				height="100vh"
+				preserveAspectRatio="none">
 				<defs>
 					<style>
 						{
@@ -234,7 +239,13 @@ export const CifrasMovil: React.FC = () => {
 					</filter>
 				</defs>
 				<g>
-					<g transform="translate(12.381 0.119)" onClick={() => {setOpenVideo(true); setNumberVideo(1)}}>
+					<g
+						transform="translate(12.381 0.119)"
+						onClick={() => {
+							setOpenVideo(true)
+							setNumberVideo(1)
+							document.body.style.overflow = 'hidden'
+						}}>
 						<path
 							className="c-cifras-impacto"
 							d="M0,0H413V895H0Z"
@@ -321,7 +332,11 @@ export const CifrasMovil: React.FC = () => {
 						<text
 							className="l-cifras-impacto"
 							transform="translate(293 283)"
-              onClick={() => {setOpenVideo(true); setNumberVideo(1)}}>
+							onClick={() => {
+								setOpenVideo(true)
+								setNumberVideo(1)
+								document.body.style.overflow = 'hidden'
+							}}>
 							<tspan x={-70.575} y={0}>
 								{'+3000'}
 							</tspan>
@@ -334,7 +349,10 @@ export const CifrasMovil: React.FC = () => {
 						<g
 							className="n-cifras-impacto"
 							transform="translate(-73.953 146.357)"
-              onClick={() => {setOpenVideo(true); setNumberVideo(1)}}>
+							onClick={() => {
+								setOpenVideo(true)
+								setNumberVideo(1)
+							}}>
 							<g
 								className="n-cifras-impacto"
 								transform="translate(371.953 120.175)">
@@ -355,10 +373,20 @@ export const CifrasMovil: React.FC = () => {
 						<path
 							className="p-cifras-impacto"
 							d="M0,0V254.146H271.42c45.984-1.27,73.646-1.532,98.561-94.517L416,0Z"
-              onClick={() => {setOpenVideo(true); setNumberVideo(1)}}
+							onClick={() => {
+								setOpenVideo(true)
+								setNumberVideo(1)
+								document.body.style.overflow = 'hidden'
+							}}
 						/>
 					</g>
-					<g transform="translate(12.381 641.973)" onClick={() => {setOpenVideo(true); setNumberVideo(2)}}>
+					<g
+						transform="translate(12.381 641.973)"
+						onClick={() => {
+							setOpenVideo(true)
+							setNumberVideo(2)
+							document.body.style.overflow = 'hidden'
+						}}>
 						<g
 							className="ae-cifras-impacto"
 							transform="matrix(1, 0, 0, 1, -21.38, -653.97)">
@@ -419,7 +447,13 @@ export const CifrasMovil: React.FC = () => {
 							/>
 						</g>
 					</g>
-					<g transform="translate(-3.619 -8.881)" onClick={() => {setOpenVideo(true); setNumberVideo(0)}}>
+					<g
+						transform="translate(-3.619 -8.881)"
+						onClick={() => {
+							setOpenVideo(true)
+							setNumberVideo(0)
+							document.body.style.overflow = 'hidden'
+						}}>
 						<g
 							className="ab-cifras-impacto"
 							transform="matrix(1, 0, 0, 1, -5.38, -3.12)">
@@ -480,7 +514,13 @@ export const CifrasMovil: React.FC = () => {
 							/>
 						</g>
 					</g>
-					<g transform="translate(139.786 711.526)" onClick={() => {setOpenVideo(true); setNumberVideo(3)}}>
+					<g
+						transform="translate(139.786 711.526)"
+						onClick={() => {
+							setOpenVideo(true)
+							setNumberVideo(3)
+							document.body.style.overflow = 'hidden'
+						}}>
 						<g
 							className="y-cifras-impacto"
 							transform="matrix(1, 0, 0, 1, -148.79, -723.53)">
@@ -544,8 +584,14 @@ export const CifrasMovil: React.FC = () => {
 				</g>
 			</svg>
 			{openVideo && (
-				<div className="h-full w-full absolute top-0 bg-[#959192] flex items-center">
-					<svg viewBox="0 0 48 50" className='w-[15%] right-[20px] absolute top-[20px]' onClick={() => setOpenVideo(false)}>
+				<div className="h-full w-full fixed	 top-0 bg-[#959192] flex items-center ">
+					<svg
+						viewBox="0 0 48 50"
+						className="w-[15%] right-[20px] absolute top-[20px]"
+						onClick={() => {
+							setOpenVideo(false)
+							document.body.style.overflow = 'auto'
+						}}>
 						<defs>
 							<style>
 								{
@@ -588,7 +634,17 @@ export const CifrasMovil: React.FC = () => {
 							</text>
 						</g>
 					</svg>
-					<video src={video[numberVideo].url} autoPlay muted></video>
+					<video
+						src={video[numberVideo].url}
+						className="object-contain h-[82%]"
+						autoPlay
+						muted={mute}></video>
+					<img
+						src={mute ? '/images/mute.png' : '/images/Button.png'}
+						className="absolute w-[10%] left-[2%] bottom-[10px]"
+						alt="Mute"
+						onClick={() => setMute(!mute)}
+					/>
 				</div>
 			)}
 		</div>

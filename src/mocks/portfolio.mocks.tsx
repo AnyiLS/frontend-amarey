@@ -14,18 +14,21 @@ export interface CarouselPortfolio {
 export const carouselPortfolio: CarouselPortfolio[] = [
     
     {
-        images: '/images/iamge_portfolio_1.jpg',
+        images: '/images/services/Medicamentos.png',
         title: 'Medicamentos',
         x: 55,
         x_selected: 15,
-        to: '/productos/medicamentos'
+        to: '/productos/medicamentos',
+        viewbox: '0 6.532 241.811 269.735',
+        viewbox_2: '0 6.532 241.811 269.735'
     },
     {
-        images: '/images/image_portfolio_2.jpg',
+        images: '/images/image_portfolio_2.png',
         title: 'Equipos Médicos',
         x_selected: 15,
         x: 42.715,
-        to: '/productos/equipos-medicos'
+        to: '/productos/equipos-medicos',
+        viewbox: '0 6.532 241.811 269.735'
     },
     {
         images: '/images/dispositivo.png',
@@ -34,15 +37,16 @@ export const carouselPortfolio: CarouselPortfolio[] = [
         x: 82.715,
         x_2: 35,
         title_2: 'médico-quirúrgicos',
-        to: '/productos/dispositivos-medico-quirurgicos'
+        to: '/productos/dispositivos-medico-quirurgicos',
+        viewbox: '0 6.532 241.811 269.735'
     },
     {
-        images: '/images/ortopedi.png',
+        images: '/images/services/Ortopedia.png',
         title: 'Ortopedia',
         x_selected: 0,
         x: 93.715,
         to: '/productos/ortopedia',
-        viewbox: '135.554 6.532 241.811 269.735',
+        viewbox: '30 6.532 241.811 269.735',
         viewbox_2: '65.554 6.532 241.811 269.735'
     },
     {
@@ -51,7 +55,7 @@ export const carouselPortfolio: CarouselPortfolio[] = [
         x_selected: 0,
         x: 57.715,
         to: '/productos/cirugia-robotica',
-        viewbox: '61.554 6.532 241.811 269.735'
+        viewbox: '0 6.532 241.811 269.735'
     },
     {
         images: '/images/genetica.png',
@@ -59,7 +63,7 @@ export const carouselPortfolio: CarouselPortfolio[] = [
         x_selected: 0,
         x: 27.715,
         to: '/productos/genomica-y-genetica',
-        viewbox: "185.554 6.532 241.811 269.735",
+        viewbox: "0 6.532 241.811 269.735",
         viewbox_2: '300 0 267 342',
         width: '600'
     },
@@ -71,7 +75,7 @@ export const carouselPortfolio: CarouselPortfolio[] = [
         x_selected: 0,
         x: 42.715,
         to: '/productos/cuidado-avanzado-de-heridas',
-        viewbox: '80.554 6.532 241.811 269.735'
+        viewbox: '0 6.532 241.811 269.735'
     },
     {
         images: '/images/instrumental.png',
@@ -81,29 +85,29 @@ export const carouselPortfolio: CarouselPortfolio[] = [
         x_selected: 0,
         x: 63,
         to: '/productos/instrumental-y-estirilizacion',
-        viewbox: '30.554 6.532 241.811 269.735',
+        viewbox: '0 6.532 241.811 269.735',
         viewbox_2: '40 0 306 342',
         width: '600'
     },
     {
-        images: '/images/image_portfolio.jpg',
+        images: '/images/image_portfolio.png',
         title: 'Neurointervencionismo',
         x: 15,
         x_selected: 0,
         to: '/productos/neurointervencionismo',
-        viewbox: '165.554 6.532 241.811 269.735',
+        viewbox: '0 6.532 241.811 269.735',
         viewbox_2: '240 0 306 342',
         width: '600'
     },
     {
-        images: '/images/logistica.jpg',
+        images: '/images/logistica.png',
         title: 'Logística',
         title_2: 'hospitalaria',
         x_2: 80.715,
         x_selected: 0,
         x: 100,
         to: '/productos/logistica-hospitalaria',
-        viewbox: '30.554 6.532 241.811 269.735',
+        viewbox: '0.554 6.532 241.811 269.735',
         viewbox_2: '40 0 306 342',
         width: '600'
     }

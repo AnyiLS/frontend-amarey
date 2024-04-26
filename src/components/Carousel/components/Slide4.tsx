@@ -20,8 +20,8 @@ const Slide4: React.FC<ISlide> = ({ height, image, onReturn }): JSX.Element => {
 	return (
 		<svg
 			width="100%"
-			height={height}
-			viewBox="0 0 1920 1080"
+			height='100vh'
+			viewBox={`0 ${document.getElementById('navbar__container')?.clientHeight} 1920 1080`}
 			preserveAspectRatio="none">
 			<defs>
 				<style

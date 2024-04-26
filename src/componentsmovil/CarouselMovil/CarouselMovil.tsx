@@ -2,28 +2,32 @@ import { Carousel } from 'flowbite-react'
 import React from 'react'
 
 export const CarouselMovil: React.FC = () => {
-	const [height, setHeight] = React.useState<string>('100vh')
+	const [height, setHeight] = React.useState<number>(0)
 	const [selectedImage, setSelectedImage] = React.useState<string>('')
 	const [step, setStep] = React.useState<number>(0)
-	// const [selected, setSelected] = React.useState<number | null>(null);
 
 	React.useEffect(() => {
-		const resizeImage = () => {
-			if (window.innerHeight < 800) setHeight('110vh')
-			else setHeight('100vh')
+		if (document.getElementById('navbar__container')) {
+			const navbar: HTMLElement = document.getElementById(
+				'navbar__container'
+			) as HTMLElement
+			setHeight(navbar.clientHeight)
 		}
-		window.addEventListener('resize', resizeImage)
-
-		resizeImage()
-
-		return () => window.removeEventListener('resize', resizeImage)
 	}, [])
+
+	console.log(document.getElementById('navbar__container'))
 
 	return (
 		<>
 			{selectedImage === '' ? (
-				<Carousel style={{ height: 874 }} slide={false}>
-					<svg viewBox="0 0 414 906">
+				<Carousel
+					style={{ height: `calc(100vh - ${height}px)` }}
+					slide={false}>
+					<svg
+						viewBox={`0 0 414 906`}
+						width="100%"
+						height="100vh"
+						preserveAspectRatio="none">
 						<defs>
 							<style>
 								{
@@ -211,7 +215,11 @@ export const CarouselMovil: React.FC = () => {
 							</g>
 						</g>
 					</svg>
-					<svg viewBox="0 0 414 906">
+					<svg
+						viewBox="0 0 414 906"
+						width="100%"
+						height="100vh"
+						preserveAspectRatio="none">
 						<defs>
 							<style>
 								{
@@ -344,21 +352,27 @@ export const CarouselMovil: React.FC = () => {
 									</tspan>
 								</text>
 							</g>
-							<path
-								className="b-carousel-welcome-2"
-								d="M0,0V16.967L14.7,8.483,7.68,4.431Z"
-								transform="translate(88.108 346.911) rotate(-78)"
-							/>
-							<text
-								className="n-carousel-welcome-2"
-								transform="translate(68.462 495.922) rotate(-77)">
-								<tspan x={0} y={0}>
-									{'Conoce Más'}
-								</tspan>
-							</text>
+							<g onClick={() => setSelectedImage('a')}>
+								<path
+									className="b-carousel-welcome-2"
+									d="M0,0V16.967L14.7,8.483,7.68,4.431Z"
+									transform="translate(88.108 346.911) rotate(-78)"
+								/>
+								<text
+									className="n-carousel-welcome-2"
+									transform="translate(68.462 495.922) rotate(-77)">
+									<tspan x={0} y={0}>
+										{'Conoce Más'}
+									</tspan>
+								</text>
+							</g>
 						</g>
 					</svg>
-					<svg viewBox="0 0 414 906">
+					<svg
+						viewBox="0 0 414 906"
+						width="100%"
+						height="100vh"
+						preserveAspectRatio="none">
 						<defs>
 							<style>
 								{
@@ -495,25 +509,31 @@ export const CarouselMovil: React.FC = () => {
 									</text>
 								</g>
 							</g>
-							<path
-								className="b-carousel-welcome-3"
-								d="M0,0V16.967L14.7,8.483,7.68,4.431Z"
-								transform="translate(88.108 346.911) rotate(-78)"
-							/>
-							<text
-								className="n-carousel-welcome-3"
-								transform="translate(68.462 495.922) rotate(-77)">
-								<tspan x={0} y={0}>
-									{'Conoce Más'}
-								</tspan>
-							</text>
+							<g onClick={() => setSelectedImage('a')}>
+								<path
+									className="b-carousel-welcome-3"
+									d="M0,0V16.967L14.7,8.483,7.68,4.431Z"
+									transform="translate(88.108 346.911) rotate(-78)"
+								/>
+								<text
+									className="n-carousel-welcome-3"
+									transform="translate(68.462 495.922) rotate(-77)">
+									<tspan x={0} y={0}>
+										{'Conoce Más'}
+									</tspan>
+								</text>
+							</g>
 						</g>
 					</svg>
 				</Carousel>
 			) : (
 				<React.Fragment>
 					{step === 0 ? (
-						<svg viewBox="0 0 414 894.293">
+						<svg
+							viewBox="0 0 414 894.293"
+							width="100%"
+							height="100vh"
+							preserveAspectRatio="none">
 							<defs>
 								<style>
 									{
@@ -563,7 +583,7 @@ export const CarouselMovil: React.FC = () => {
 									id="f-pentagrama"
 									width={1}
 									height={1}
-									viewBox="3.51 -0.061 148.114 122.757">
+									viewBox="0 -0.061 148.114 122.757">
 									<image
 										preserveAspectRatio="none"
 										width={148.114}
@@ -831,7 +851,7 @@ export const CarouselMovil: React.FC = () => {
 									id="n-pentagrama"
 									width={1}
 									height={1}
-									viewBox="3.51 -0.061 148.114 122.757">
+									viewBox="0 -0.061 148.114 122.757">
 									<image
 										preserveAspectRatio="none"
 										width={148.114}
@@ -1171,7 +1191,7 @@ export const CarouselMovil: React.FC = () => {
 									id="h-pentagrama"
 									width={1}
 									height={1}
-									viewBox="1.909 -0.033 80.553 66.763">
+									viewBox="0 -0.033 80.553 66.763">
 									<image
 										preserveAspectRatio="none"
 										width={80.553}
@@ -1503,7 +1523,7 @@ export const CarouselMovil: React.FC = () => {
 									id="h-pentagrama"
 									width={1}
 									height={1}
-									viewBox="3.51 -0.061 148.114 122.757">
+									viewBox="0 -0.061 148.114 122.757">
 									<image
 										preserveAspectRatio="none"
 										width={148.114}
@@ -1836,7 +1856,7 @@ export const CarouselMovil: React.FC = () => {
 									id="h-pentagrama"
 									width={1}
 									height={1}
-									viewBox="3.51 -0.061 148.114 122.757">
+									viewBox="0 -0.061 148.114 122.757">
 									<image
 										preserveAspectRatio="none"
 										width={148.114}
@@ -2168,7 +2188,7 @@ export const CarouselMovil: React.FC = () => {
 									id="h-pentagrama"
 									width={1}
 									height={1}
-									viewBox="3.51 -0.061 148.114 122.757">
+									viewBox="0 -0.061 148.114 122.757">
 									<image
 										preserveAspectRatio="none"
 										width={148.114}

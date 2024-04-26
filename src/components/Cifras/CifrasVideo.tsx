@@ -17,9 +17,14 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 }) => {
 	const [mute, setMute] = React.useState(false)
 
+	React.useEffect(() => {
+		if (open) document.body.style.overflow = 'hidden'
+		else document.body.style.overflow = 'auto'
+	}, [open])
+
 	return (
 		<div
-			className={`w-full absolute top-0 bg-[#ffffff50] ${
+			className={`w-full fixed h-full top-0 bg-[#ffffff50] z-[1] ${
 				open ? 'block' : 'hidden'
 			}`}>
 			<svg

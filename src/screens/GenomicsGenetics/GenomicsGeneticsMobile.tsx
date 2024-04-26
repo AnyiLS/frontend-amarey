@@ -3,11 +3,17 @@ import React from 'react'
 const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 	/** States */
 	const [view, setView] = React.useState<number>(0)
+	const [height, setHeight] = React.useState<number>(0)
+
+	React.useEffect(() => {
+		if (document.getElementById('navbar__container')) setHeight(document.getElementById('navbar__container')?.clientHeight ?? 0)
+	}, [])
+
 
 	return (
 		<React.Fragment>
 			{view === 0 ? (
-				<svg viewBox="80 1710 414 855">
+				<svg viewBox="85 1710 414 855" width='100%' style={{ height: `calc(100vh - ${height}px)` }} preserveAspectRatio='none'>
 					<defs>
 						<style>
 							{
@@ -126,7 +132,7 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 								{'Soluciones en salud'}
 							</tspan>
 						</text>
-						<g transform="translate(448.085 1722.792)">
+						<g transform="translate(448.085 1722.792)" onClick={() => window.location.href = '/productos'}>
 							<path
 								className="a"
 								d="M8.8,10.967,5.708,7.874,2.615,10.967A1.531,1.531,0,1,1,.448,8.8L3.542,5.708.448,2.615A1.532,1.532,0,0,1,2.615.448L5.708,3.542,8.8.448a1.531,1.531,0,1,1,2.165,2.166L7.874,5.708,10.967,8.8A1.531,1.531,0,0,1,8.8,10.967Z"
@@ -173,7 +179,7 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 					</g>
 				</svg>
 			) : view === 1 ? (
-				<svg viewBox="0 0 414 855">
+				<svg viewBox="0 0 414 855" width='100%' style={{ height: `calc(100vh - ${height}px)` }} preserveAspectRatio='none'>
 					<defs>
 						<style>
 							{
@@ -428,7 +434,7 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 					</g>
 				</svg>
 			) : (
-				<svg viewBox="0 0 414 855">
+				<svg viewBox="0 0 414 855" width='100%' style={{ height: `calc(100vh - ${height}px)` }} preserveAspectRatio='none'>
 					<defs>
 						<style>
 							{

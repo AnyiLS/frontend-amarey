@@ -1,8 +1,12 @@
 import React from 'react'
 
-const SubmenuWorkUs: React.FC<{ref: any}> = ({ ref }) => {
+const SubmenuWorkUs: React.FC<{ ref: any }> = ({ ref }) => {
 	return (
-		<svg viewBox="0 0 1930 360" className="absolute" style={{ zIndex: 1 }} ref={ref}>
+		<svg
+			viewBox="0 0 1930 360"
+			className="absolute"
+			style={{ zIndex: 1 }}
+			ref={ref}>
 			<defs>
 				<style>
 					{
@@ -99,53 +103,47 @@ const SubmenuWorkUs: React.FC<{ref: any}> = ({ ref }) => {
 						d="M367.709,339.246H0V0H586.714l-62.14,206.671a173.939,173.939,0,0,1-15.633,36.562c-36.385,63.36-89.124,96.013-141.232,96.013"
 						transform="translate(0 104)"
 					/>
-					<a href="/trabaja-con-nosotros">
-						<g
-							className="k-submenu-w"
-							transform="matrix(1, 0, 0, 1, -9, 98)">
-							<path
-								className="f-submenu-w"
-								d="M366,457.568H0V126.409H579.611L519,328.153a169.849,169.849,0,0,1-15.248,35.69C468.267,425.694,416.828,457.568,366,457.568"
-								transform="translate(9 -120.41)"
-							/>
-						</g>
-						<g
-							className="j-submenu-w"
-							transform="matrix(1, 0, 0, 1, -9, 98)">
-							<path
-								className="g-submenu-w"
-								d="M366,457.568H0V126.409H579.611L519,328.153a169.849,169.849,0,0,1-15.248,35.69C468.267,425.694,416.828,457.568,366,457.568"
-								transform="translate(9 -120.41)"
-							/>
-						</g>
-						<text
-							className="h-submenu-w"
-							transform="translate(139 359)">
-							<tspan x={0} y={0}>
-								{'TRABAJE CON'}
-							</tspan>
-							<tspan x={0} y={37}>
-								{'NOSOTROS'}
-							</tspan>
-						</text>
-					</a>
-				</g>
-				<a href="/trabaja-con-nosotros">
+					<g
+						className="k-submenu-w"
+						transform="matrix(1, 0, 0, 1, -9, 98)">
+						<path
+							className="f-submenu-w"
+							d="M366,457.568H0V126.409H579.611L519,328.153a169.849,169.849,0,0,1-15.248,35.69C468.267,425.694,416.828,457.568,366,457.568"
+							transform="translate(9 -120.41)"
+						/>
+					</g>
+					<g
+						className="j-submenu-w"
+						transform="matrix(1, 0, 0, 1, -9, 98)">
+						<path
+							className="g-submenu-w"
+							d="M366,457.568H0V126.409H579.611L519,328.153a169.849,169.849,0,0,1-15.248,35.69C468.267,425.694,416.828,457.568,366,457.568"
+							transform="translate(9 -120.41)"
+						/>
+					</g>
 					<text
-						className="i-submenu-w"
-						transform="translate(692 116)">
-						<tspan x={0} y={23}>
-							{
-								'Sea parte de nuestro talentoso y comprometido equipo.'
-							}
+						className="h-submenu-w"
+						transform="translate(139 359)">
+						<tspan x={0} y={0}>
+							{'TRABAJE CON'}
+						</tspan>
+						<tspan x={0} y={37}>
+							{'NOSOTROS'}
 						</tspan>
 					</text>
-					<text className="h-submenu-w" transform="translate(692 60)">
-						<tspan x={0} y={42}>
-							{'Encuentre oportunidades de carrera. \u200B'}
-						</tspan>
-					</text>
-				</a>
+				</g>
+				<text className="i-submenu-w" transform="translate(692 116)">
+					<tspan x={0} y={23}>
+						{
+							'Sea parte de nuestro talentoso y comprometido equipo.'
+						}
+					</tspan>
+				</text>
+				<text className="h-submenu-w" transform="translate(692 60)">
+					<tspan x={0} y={42}>
+						{'Encuentre oportunidades de carrera. \u200B'}
+					</tspan>
+				</text>
 			</g>
 		</svg>
 	)

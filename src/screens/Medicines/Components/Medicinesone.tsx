@@ -7,9 +7,9 @@ const Medicinesone: React.FC<{ height: string; onClose: () => void }> = ({
 	return (
 		<div>
 			<svg
+				viewBox="7 0 1927 974"
 				width="100%"
 				height={"100%"}
-				viewBox="7 0 1927 974"
 				preserveAspectRatio="none">
 				<defs>
 					<style>

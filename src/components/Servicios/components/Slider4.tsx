@@ -13,17 +13,17 @@ export const Slider4: React.FC<ISlider> = ({ height, index }) => {
 	const [mute, setMute] = React.useState(false)
 
 	console.log(_selectedImage)
-	
+
 	React.useEffect(() => {
 		if (index === 3) setTimeout(() => setSelectedImage(true), 800)
 	}, [index])
 
 	return (
 		<svg
-			width="100%"
-			height={height}
 			viewBox="0 0 1920 1080"
-			preserveAspectRatio="none">
+			preserveAspectRatio="none"
+			height="100vh"
+			width="100%">
 			<defs>
 				<style>
 					{

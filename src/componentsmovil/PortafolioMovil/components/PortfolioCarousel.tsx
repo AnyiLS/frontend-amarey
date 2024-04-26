@@ -7,7 +7,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 	return (
 		<React.Fragment>
 			{view === 0 ? (
-				<svg viewBox="106 0 414 960">
+				<svg viewBox="106 0 414 960" preserveAspectRatio='none' width='100%' height='100vh'>
 					<defs>
 						<style>
 							{
@@ -54,12 +54,12 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							width={1}
 							height={1}
 							patternTransform="translate(578 344.068) rotate(-180)"
-							viewBox="21.715 2.304 140.722 167.426">
+							viewBox="0 2.304 140.722 167.426">
 							<image
-								preserveAspectRatio="xMidYMid slice"
-								width={305.839}
+								preserveAspectRatio="none"
+								width={258}
 								height={172.034}
-								xlinkHref="/images/mobile/portfolio/image-1.jpg"
+								xlinkHref="/images/services/Logistica-Hs.png"
 							/>
 						</pattern>
 						<filter
@@ -80,12 +80,12 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							width={1}
 							height={1}
 							patternTransform="translate(720.103 344.068) rotate(-180)"
-							viewBox="84.278 3.64 132.23 157.323">
+							viewBox="0 3.64 132.23 157.323">
 							<image
-								preserveAspectRatio="xMidYMid slice"
-								width={258.051}
+								preserveAspectRatio="none"
+								width={170}
 								height={172.034}
-								xlinkHref="/images/mobile/portfolio/image-2.png"
+								xlinkHref="/images/services/Equipos-M.png"
 							/>
 						</pattern>
 						<filter
@@ -108,10 +108,10 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							patternTransform="translate(617.065 411.327) rotate(-180)"
 							viewBox="77.948 3.464 164.537 195.761">
 							<image
-								preserveAspectRatio="xMidYMid slice"
+								preserveAspectRatio="none"
 								width={308.532}
 								height={205.664}
-								xlinkHref="/images/mobile/portfolio/image-3.jpg"
+								xlinkHref="/images/services/Medicamentos.png"
 							/>
 						</pattern>
 						<filter
@@ -294,31 +294,33 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										</tspan>
 									</text>
 								</g>
-								<g transform="translate(164.538)">
-									<g
-										className="aa-portfolio-1"
-										transform="matrix(1, 0, 0, 1, -227.29, -317.54)">
-										<rect
-											className="c-portfolio-1"
-											width={172.727}
-											height={341.038}
-											rx={35}
-											transform="translate(227.29 317.54)"
+								<a href="/productos/medicamentos">
+									<g transform="translate(164.538)">
+										<g
+											className="aa-portfolio-1"
+											transform="matrix(1, 0, 0, 1, -227.29, -317.54)">
+											<rect
+												className="c-portfolio-1"
+												width={172.727}
+												height={341.038}
+												rx={35}
+												transform="translate(227.29 317.54)"
+											/>
+										</g>
+										<path
+											className="u-portfolio-1"
+											d="M0,0V107.433H0q0,.04,0,.079V185.6c0,11.081,8.422,20.064,18.811,20.064H154.049c10.389,0,18.811-8.983,18.811-20.064V107.512l-.034-.079h.034L150.7,34.522C144.353,13.628,129.373,0,112.754,0Z"
+											transform="translate(172.893 205.664) rotate(180)"
 										/>
+										<text
+											className="v-portfolio-1"
+											transform="translate(100.446 268.095)">
+											<tspan x={-60.417} y={0}>
+												{'Medicamentos'}
+											</tspan>
+										</text>
 									</g>
-									<path
-										className="u-portfolio-1"
-										d="M0,0V107.433H0q0,.04,0,.079V185.6c0,11.081,8.422,20.064,18.811,20.064H154.049c10.389,0,18.811-8.983,18.811-20.064V107.512l-.034-.079h.034L150.7,34.522C144.353,13.628,129.373,0,112.754,0Z"
-										transform="translate(172.893 205.664) rotate(180)"
-									/>
-									<text
-										className="v-portfolio-1"
-										transform="translate(100.446 268.095)">
-										<tspan x={-60.417} y={0}>
-											{'Medicamentos'}
-										</tspan>
-									</text>
-								</g>
+								</a>
 							</g>
 						</g>
 						<g
@@ -385,7 +387,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					</g>
 				</svg>
 			) : view === 1 ? (
-				<svg viewBox="106 0 414 960">
+				<svg viewBox="106 0 414 960" preserveAspectRatio='none' width='100%' height='100vh'>
 					<defs>
 						<style>
 							{
@@ -432,12 +434,12 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							width={1}
 							height={1}
 							patternTransform="translate(578 344.068) rotate(-180)"
-							viewBox="21.715 2.304 140.722 167.426">
+							viewBox="0 2.304 140.722 167.426">
 							<image
-								preserveAspectRatio="xMidYMid slice"
-								width={305.839}
+								preserveAspectRatio="none"
+								width={200}
 								height={172.034}
-								xlinkHref="/images/mobile/portfolio/image-3.jpg"
+								xlinkHref="/images/services/Medicamentos.png"
 							/>
 						</pattern>
 						<filter
@@ -458,12 +460,12 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							width={1}
 							height={1}
 							patternTransform="translate(720.103 344.068) rotate(-180)"
-							viewBox="84.278 3.64 132.23 157.323">
+							viewBox="0 3.64 132.23 157.323">
 							<image
-								preserveAspectRatio="xMidYMid slice"
-								width={258.051}
+								preserveAspectRatio="none"
+								width={170.051}
 								height={172.034}
-								xlinkHref="/images/mobile/portfolio/image-4.png"
+								xlinkHref="/images/services/Dispositivos-Q.png"
 							/>
 						</pattern>
 						<filter
@@ -483,13 +485,13 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							id="l-portfolio-1"
 							width={1}
 							height={1}
-							patternTransform="translate(617.065 411.327) rotate(-180)"
-							viewBox="77.948 3.464 164.537 195.761">
+							patternTransform="translate(520 411.327) rotate(-180)"
+							viewBox="0 3.464 164.537 195.761">
 							<image
-								preserveAspectRatio="xMidYMid slice"
-								width={308.532}
+								preserveAspectRatio="none"
+								width={170}
 								height={205.664}
-								xlinkHref="/images/mobile/portfolio/image-2.png"
+								xlinkHref="/images/services/Equipos-M.png"
 							/>
 						</pattern>
 						<filter
@@ -672,31 +674,33 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										</tspan>
 									</text>
 								</g>
-								<g transform="translate(164.538)">
-									<g
-										className="aa-portfolio-1"
-										transform="matrix(1, 0, 0, 1, -227.29, -317.54)">
-										<rect
-											className="c-portfolio-1"
-											width={172.727}
-											height={341.038}
-											rx={35}
-											transform="translate(227.29 317.54)"
+								<a href="/productos/equipos-medicos">
+									<g transform="translate(164.538)">
+										<g
+											className="aa-portfolio-1"
+											transform="matrix(1, 0, 0, 1, -227.29, -317.54)">
+											<rect
+												className="c-portfolio-1"
+												width={172.727}
+												height={341.038}
+												rx={35}
+												transform="translate(227.29 317.54)"
+											/>
+										</g>
+										<path
+											className="u-portfolio-1"
+											d="M0,0V107.433H0q0,.04,0,.079V185.6c0,11.081,8.422,20.064,18.811,20.064H154.049c10.389,0,18.811-8.983,18.811-20.064V107.512l-.034-.079h.034L150.7,34.522C144.353,13.628,129.373,0,112.754,0Z"
+											transform="translate(172.893 205.664) rotate(180)"
 										/>
+										<text
+											className="v-portfolio-1"
+											transform="translate(86.446 268.095)">
+											<tspan x={-54.451} y={0}>
+												{'Equipos m\xE9dicos'}
+											</tspan>
+										</text>
 									</g>
-									<path
-										className="u-portfolio-1"
-										d="M0,0V107.433H0q0,.04,0,.079V185.6c0,11.081,8.422,20.064,18.811,20.064H154.049c10.389,0,18.811-8.983,18.811-20.064V107.512l-.034-.079h.034L150.7,34.522C144.353,13.628,129.373,0,112.754,0Z"
-										transform="translate(172.893 205.664) rotate(180)"
-									/>
-									<text
-										className="v-portfolio-1"
-										transform="translate(86.446 268.095)">
-										<tspan x={-54.451} y={0}>
-											{'Equipos m\xE9dicos'}
-										</tspan>
-									</text>
-								</g>
+								</a>
 							</g>
 						</g>
 						<g
@@ -717,9 +721,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g
-							transform="translate(171 438.931)"
-							>
+						<g transform="translate(171 438.931)">
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -763,7 +765,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					</g>
 				</svg>
 			) : view === 2 ? (
-				<svg viewBox="106 0 414 960">
+				<svg viewBox="106 0 414 960" preserveAspectRatio='none' width='100%' height='100vh'>
 					<defs>
 						<style>
 							{
@@ -810,12 +812,12 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							width={1}
 							height={1}
 							patternTransform="translate(578 344.068) rotate(-180)"
-							viewBox="21.715 2.304 140.722 167.426">
+							viewBox="0 2.304 140.722 167.426">
 							<image
-								preserveAspectRatio="xMidYMid slice"
-								width={305.839}
+								preserveAspectRatio="none"
+								width={140}
 								height={172.034}
-								xlinkHref="/images/mobile/portfolio/image-2.png"
+								xlinkHref="/images/services/Equipos-M.png"
 							/>
 						</pattern>
 						<filter
@@ -835,13 +837,13 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							id="i-portfolio-1"
 							width={1}
 							height={1}
-							patternTransform="translate(720.103 344.068) rotate(-180)"
-							viewBox="84.278 3.64 132.23 157.323">
+							patternTransform="translate(480 344.068) rotate(-180)"
+							viewBox="0 3.64 132.23 157.323">
 							<image
-								preserveAspectRatio="xMidYMid slice"
+								preserveAspectRatio="none"
 								width={258.051}
 								height={172.034}
-								xlinkHref="/images/mobile/portfolio/image-5.png"
+								xlinkHref="/images/services/Ortopedia.png"
 							/>
 						</pattern>
 						<filter
@@ -861,13 +863,13 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							id="l-portfolio-1"
 							width={1}
 							height={1}
-							patternTransform="translate(617.065 411.327) rotate(-180)"
-							viewBox="77.948 3.464 164.537 195.761">
+							patternTransform="translate(517.065 411.327) rotate(-180)"
+							viewBox="0 3.464 164.537 195.761">
 							<image
 								preserveAspectRatio="xMidYMid slice"
-								width={308.532}
+								width={170}
 								height={205.664}
-								xlinkHref="/images/mobile/portfolio/image-4.png"
+								xlinkHref="/images/services/Dispositivos-Q.png"
 							/>
 						</pattern>
 						<filter
@@ -991,33 +993,35 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					<g transform="translate(0 284)">
 						<g className="p-portfolio-1" transform="translate(0)">
 							<g transform="translate(62.754 33.544)">
-								<g className="q-portfolio-1">
-									<g transform="translate(0)">
-										<g
-											className="ac-portfolio-1"
-											transform="matrix(1, 0, 0, 1, -62.75, -317.54)">
-											<rect
-												className="c-portfolio-1"
-												width={144.484}
-												height={285.272}
-												rx={21}
-												transform="translate(62.75 317.54)"
+								<a href="/productos/equipos-medicos">
+									<g className="q-portfolio-1">
+										<g transform="translate(0)">
+											<g
+												className="ac-portfolio-1"
+												transform="matrix(1, 0, 0, 1, -62.75, -317.54)">
+												<rect
+													className="c-portfolio-1"
+													width={144.484}
+													height={285.272}
+													rx={21}
+													transform="translate(62.75 317.54)"
+												/>
+											</g>
+											<path
+												className="r-portfolio-1"
+												d="M0,0V89.866H0q0,.033,0,.066v65.319c0,9.269,7.045,16.783,15.735,16.783H128.86c8.69,0,15.735-7.514,15.735-16.783V89.932l-.028-.066h.028L126.061,28.877C120.749,11.4,108.218,0,94.317,0Z"
+												transform="translate(144.595 172.034) rotate(180)"
 											/>
 										</g>
-										<path
-											className="r-portfolio-1"
-											d="M0,0V89.866H0q0,.033,0,.066v65.319c0,9.269,7.045,16.783,15.735,16.783H128.86c8.69,0,15.735-7.514,15.735-16.783V89.932l-.028-.066h.028L126.061,28.877C120.749,11.4,108.218,0,94.317,0Z"
-											transform="translate(144.595 172.034) rotate(180)"
-										/>
+										<text
+											className="s-portfolio-1"
+											transform="translate(72.297 208.235)">
+											<tspan x={-37.696} y={0}>
+												{'Equipos m\xE9dicos'}
+											</tspan>
+										</text>
 									</g>
-									<text
-										className="s-portfolio-1"
-										transform="translate(72.297 208.235)">
-										<tspan x={-37.696} y={0}>
-											{'Equipos m\xE9dicos'}
-										</tspan>
-									</text>
-								</g>
+								</a>
 								<g
 									className="q-portfolio-1"
 									transform="translate(358.157)">
@@ -1047,34 +1051,36 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										</tspan>
 									</text>
 								</g>
-								<g transform="translate(164.538)">
-									<g
-										className="aa-portfolio-1"
-										transform="matrix(1, 0, 0, 1, -227.29, -317.54)">
-										<rect
-											className="c-portfolio-1"
-											width={172.727}
-											height={341.038}
-											rx={35}
-											transform="translate(227.29 317.54)"
+								<a href="/productos/dispositivos-medico-quirurgicos">
+									<g transform="translate(164.538)">
+										<g
+											className="aa-portfolio-1"
+											transform="matrix(1, 0, 0, 1, -227.29, -317.54)">
+											<rect
+												className="c-portfolio-1"
+												width={172.727}
+												height={341.038}
+												rx={35}
+												transform="translate(227.29 317.54)"
+											/>
+										</g>
+										<path
+											className="u-portfolio-1"
+											d="M0,0V107.433H0q0,.04,0,.079V185.6c0,11.081,8.422,20.064,18.811,20.064H154.049c10.389,0,18.811-8.983,18.811-20.064V107.512l-.034-.079h.034L150.7,34.522C144.353,13.628,129.373,0,112.754,0Z"
+											transform="translate(172.893 205.664) rotate(180)"
 										/>
+										<text
+											className="v-portfolio-1"
+											transform="translate(86.446 268.095)">
+											<tspan x={-39.162} y={0}>
+												{'Dispositivos'}
+											</tspan>
+											<tspan x={-63.329} y={14}>
+												{'m\xE9dico-quir\xFArgicos'}
+											</tspan>
+										</text>
 									</g>
-									<path
-										className="u-portfolio-1"
-										d="M0,0V107.433H0q0,.04,0,.079V185.6c0,11.081,8.422,20.064,18.811,20.064H154.049c10.389,0,18.811-8.983,18.811-20.064V107.512l-.034-.079h.034L150.7,34.522C144.353,13.628,129.373,0,112.754,0Z"
-										transform="translate(172.893 205.664) rotate(180)"
-									/>
-									<text
-										className="v-portfolio-1"
-										transform="translate(86.446 268.095)">
-										<tspan x={-39.162} y={0}>
-											{'Dispositivos'}
-										</tspan>
-										<tspan x={-63.329} y={14}>
-											{'m\xE9dico-quir\xFArgicos'}
-										</tspan>
-									</text>
-								</g>
+								</a>
 							</g>
 						</g>
 						<g
@@ -1095,9 +1101,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g
-							transform="translate(171 438.931)"
-							>
+						<g transform="translate(171 438.931)">
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -1141,7 +1145,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					</g>
 				</svg>
 			) : view === 3 ? (
-				<svg viewBox="106 0 414 960">
+				<svg viewBox="106 0 414 960" preserveAspectRatio='none' width='100%' height='100vh'>
 					<defs>
 						<style>
 							{
@@ -1188,12 +1192,12 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							width={1}
 							height={1}
 							patternTransform="translate(578 344.068) rotate(-180)"
-							viewBox="21.715 2.304 140.722 167.426">
+							viewBox="0 2.304 140.722 167.426">
 							<image
-								preserveAspectRatio="xMidYMid slice"
-								width={305.839}
+								preserveAspectRatio="none"
+								width={170}
 								height={172.034}
-								xlinkHref="/images/mobile/portfolio/image-4.png"
+								xlinkHref="/images/services/Dispositivos-Q.png"
 							/>
 						</pattern>
 						<filter
@@ -1213,13 +1217,13 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							id="i-portfolio-1"
 							width={1}
 							height={1}
-							patternTransform="translate(620.103 344.068) rotate(-180)"
+							patternTransform="translate(590 344.068) rotate(-180)"
 							viewBox="0 3.64 132.23 157.323">
 							<image
-								preserveAspectRatio="xMidYMid slice"
-								width={258.051}
+								preserveAspectRatio="none"
+								width={170}
 								height={172.034}
-								xlinkHref="/images/mobile/portfolio/image-6.png"
+								xlinkHref="/images/services/Ciruguia-R.png"
 							/>
 						</pattern>
 						<filter
@@ -1428,31 +1432,33 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										</tspan>
 									</text>
 								</g>
-								<g transform="translate(164.538)">
-									<g
-										className="aa-portfolio-1"
-										transform="matrix(1, 0, 0, 1, -227.29, -317.54)">
-										<rect
-											className="c-portfolio-1"
-											width={172.727}
-											height={341.038}
-											rx={35}
-											transform="translate(227.29 317.54)"
+								<a href="/productos/ortopedia">
+									<g transform="translate(164.538)">
+										<g
+											className="aa-portfolio-1"
+											transform="matrix(1, 0, 0, 1, -227.29, -317.54)">
+											<rect
+												className="c-portfolio-1"
+												width={172.727}
+												height={341.038}
+												rx={35}
+												transform="translate(227.29 317.54)"
+											/>
+										</g>
+										<path
+											className="u-portfolio-1"
+											d="M0,0V107.433H0q0,.04,0,.079V185.6c0,11.081,8.422,20.064,18.811,20.064H154.049c10.389,0,18.811-8.983,18.811-20.064V107.512l-.034-.079h.034L150.7,34.522C144.353,13.628,129.373,0,112.754,0Z"
+											transform="translate(172.893 205.664) rotate(180)"
 										/>
+										<text
+											className="v-portfolio-1"
+											transform="translate(100.446 268.095)">
+											<tspan x={-48.055} y={0}>
+												{'Ortopedia'}
+											</tspan>
+										</text>
 									</g>
-									<path
-										className="u-portfolio-1"
-										d="M0,0V107.433H0q0,.04,0,.079V185.6c0,11.081,8.422,20.064,18.811,20.064H154.049c10.389,0,18.811-8.983,18.811-20.064V107.512l-.034-.079h.034L150.7,34.522C144.353,13.628,129.373,0,112.754,0Z"
-										transform="translate(172.893 205.664) rotate(180)"
-									/>
-									<text
-										className="v-portfolio-1"
-										transform="translate(100.446 268.095)">
-										<tspan x={-48.055} y={0}>
-											{'Ortopedia'}
-										</tspan>
-									</text>
-								</g>
+								</a>
 							</g>
 						</g>
 						<g
@@ -1473,9 +1479,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g
-							transform="translate(171 438.931)"
-							>
+						<g transform="translate(171 438.931)">
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -1519,7 +1523,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					</g>
 				</svg>
 			) : view === 4 ? (
-				<svg viewBox="106 0 414 960">
+				<svg viewBox="106 0 414 960" preserveAspectRatio='none' width='100%' height='100vh'>
 					<defs>
 						<style>
 							{
@@ -1591,13 +1595,13 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							id="i-portfolio-1"
 							width={1}
 							height={1}
-							patternTransform="translate(620.103 344.068) rotate(-180)"
-							viewBox="90 3.64 132.23 157.323">
+							patternTransform="translate(610.103 344.068) rotate(-180)"
+							viewBox="0 3.64 132.23 157.323">
 							<image
-								preserveAspectRatio="xMidYMid slice"
-								width={258.051}
+								preserveAspectRatio="none"
+								width={170}
 								height={172.034}
-								xlinkHref="/images/mobile/portfolio/imagen-7.jpg"
+								xlinkHref="/images/services/Genetica.png"
 							/>
 						</pattern>
 						<filter
@@ -1620,10 +1624,10 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							patternTransform="translate(520.065 411.327) rotate(-180)"
 							viewBox="0 3.464 164.537 195.761">
 							<image
-								preserveAspectRatio="xMidYMid slice"
-								width={308.532}
+								preserveAspectRatio="none"
+								width={170}
 								height={205.664}
-								xlinkHref="/images/mobile/portfolio/image-6.png"
+								xlinkHref="/images/services/Ciruguia-R.png"
 							/>
 						</pattern>
 						<filter
@@ -1806,31 +1810,33 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										</tspan>
 									</text>
 								</g>
-								<g transform="translate(164.538)">
-									<g
-										className="aa-portfolio-1"
-										transform="matrix(1, 0, 0, 1, -227.29, -317.54)">
-										<rect
-											className="c-portfolio-1"
-											width={172.727}
-											height={341.038}
-											rx={35}
-											transform="translate(227.29 317.54)"
+								<a href="/productos/cirugia-robotica">
+									<g transform="translate(164.538)">
+										<g
+											className="aa-portfolio-1"
+											transform="matrix(1, 0, 0, 1, -227.29, -317.54)">
+											<rect
+												className="c-portfolio-1"
+												width={172.727}
+												height={341.038}
+												rx={35}
+												transform="translate(227.29 317.54)"
+											/>
+										</g>
+										<path
+											className="u-portfolio-1"
+											d="M0,0V107.433H0q0,.04,0,.079V185.6c0,11.081,8.422,20.064,18.811,20.064H154.049c10.389,0,18.811-8.983,18.811-20.064V107.512l-.034-.079h.034L150.7,34.522C144.353,13.628,129.373,0,112.754,0Z"
+											transform="translate(172.893 205.664) rotate(180)"
 										/>
+										<text
+											className="v-portfolio-1"
+											transform="translate(86.446 268.095)">
+											<tspan x={-53.528} y={0}>
+												{'Cirug\xEDa rob\xF3tica'}
+											</tspan>
+										</text>
 									</g>
-									<path
-										className="u-portfolio-1"
-										d="M0,0V107.433H0q0,.04,0,.079V185.6c0,11.081,8.422,20.064,18.811,20.064H154.049c10.389,0,18.811-8.983,18.811-20.064V107.512l-.034-.079h.034L150.7,34.522C144.353,13.628,129.373,0,112.754,0Z"
-										transform="translate(172.893 205.664) rotate(180)"
-									/>
-									<text
-										className="v-portfolio-1"
-										transform="translate(86.446 268.095)">
-										<tspan x={-53.528} y={0}>
-											{'Cirug\xEDa rob\xF3tica'}
-										</tspan>
-									</text>
-								</g>
+								</a>
 							</g>
 						</g>
 						<g
@@ -1851,9 +1857,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g
-							transform="translate(171 438.931)"
-							>
+						<g transform="translate(171 438.931)">
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -1897,7 +1901,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					</g>
 				</svg>
 			) : view === 5 ? (
-				<svg viewBox="106 0 414 960">
+				<svg viewBox="106 0 414 960" preserveAspectRatio='none' width='100%' height='100vh'>
 					<defs>
 						<style>
 							{
@@ -1944,12 +1948,12 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							width={1}
 							height={1}
 							patternTransform="translate(578 344.068) rotate(-180)"
-							viewBox="100 2.304 140.722 167.426">
+							viewBox="0 2.304 140.722 167.426">
 							<image
 								preserveAspectRatio="xMidYMid slice"
-								width={305.839}
+								width={170}
 								height={172.034}
-								xlinkHref="/images/mobile/portfolio/image-6.png"
+								xlinkHref="/images/services/Ciruguia-R.png"
 							/>
 						</pattern>
 						<filter
@@ -1970,12 +1974,12 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							width={1}
 							height={1}
 							patternTransform="translate(620.103 344.068) rotate(-180)"
-							viewBox="40 3.64 132.23 157.323">
+							viewBox="0 3.64 132.23 157.323">
 							<image
-								preserveAspectRatio="xMidYMid slice"
-								width={258.051}
+								preserveAspectRatio="none"
+								width={170}
 								height={172.034}
-								xlinkHref="/images/mobile/portfolio/imagen-8.jpg"
+								xlinkHref="/images/services/Cuidado-A-H.png"
 							/>
 						</pattern>
 						<filter
@@ -1996,12 +2000,12 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							width={1}
 							height={1}
 							patternTransform="translate(520.065 411.327) rotate(-180)"
-							viewBox="144 3.464 164.537 195.761">
+							viewBox="0 3.464 164.537 195.761">
 							<image
-								preserveAspectRatio="xMidYMid slice"
-								width={308.532}
+								preserveAspectRatio="none"
+								width={170}
 								height={205.664}
-								xlinkHref="/images/mobile/portfolio/imagen-7.jpg"
+								xlinkHref="/images/services/Genetica.png"
 							/>
 						</pattern>
 						<filter
@@ -2184,34 +2188,36 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										</tspan>
 									</text>
 								</g>
-								<g transform="translate(164.538)">
-									<g
-										className="aa-portfolio-1"
-										transform="matrix(1, 0, 0, 1, -227.29, -317.54)">
-										<rect
-											className="c-portfolio-1"
-											width={172.727}
-											height={341.038}
-											rx={35}
-											transform="translate(227.29 317.54)"
+								<a href="/productos/genomica-y-genetica">
+									<g transform="translate(164.538)">
+										<g
+											className="aa-portfolio-1"
+											transform="matrix(1, 0, 0, 1, -227.29, -317.54)">
+											<rect
+												className="c-portfolio-1"
+												width={172.727}
+												height={341.038}
+												rx={35}
+												transform="translate(227.29 317.54)"
+											/>
+										</g>
+										<path
+											className="u-portfolio-1"
+											d="M0,0V107.433H0q0,.04,0,.079V185.6c0,11.081,8.422,20.064,18.811,20.064H154.049c10.389,0,18.811-8.983,18.811-20.064V107.512l-.034-.079h.034L150.7,34.522C144.353,13.628,129.373,0,112.754,0Z"
+											transform="translate(172.893 205.664) rotate(180)"
 										/>
+										<text
+											className="v-portfolio-1"
+											transform="translate(75.446 268.095)">
+											<tspan x={-22.923} y={0}>
+												{'Gen\xF3mica'}
+											</tspan>
+											<tspan x={-23.747} y={15}>
+												{'y gen\xE9tica'}
+											</tspan>
+										</text>
 									</g>
-									<path
-										className="u-portfolio-1"
-										d="M0,0V107.433H0q0,.04,0,.079V185.6c0,11.081,8.422,20.064,18.811,20.064H154.049c10.389,0,18.811-8.983,18.811-20.064V107.512l-.034-.079h.034L150.7,34.522C144.353,13.628,129.373,0,112.754,0Z"
-										transform="translate(172.893 205.664) rotate(180)"
-									/>
-									<text
-										className="v-portfolio-1"
-										transform="translate(75.446 268.095)">
-										<tspan x={-22.923} y={0}>
-											{'Gen\xF3mica'}
-										</tspan>
-										<tspan x={-23.747} y={15}>
-											{'y gen\xE9tica'}
-										</tspan>
-									</text>
-								</g>
+								</a>
 							</g>
 						</g>
 						<g
@@ -2232,9 +2238,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g
-							transform="translate(171 438.931)"
-							>
+						<g transform="translate(171 438.931)">
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -2278,7 +2282,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					</g>
 				</svg>
 			) : view === 6 ? (
-				<svg viewBox="106 0 414 960">
+				<svg viewBox="106 0 414 960" preserveAspectRatio='none' width='100%' height='100vh'>
 					<defs>
 						<style>
 							{
@@ -2324,13 +2328,13 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							id="f-portfolio-1"
 							width={1}
 							height={1}
-							patternTransform="translate(578 344.068) rotate(-180)"
-							viewBox="144 2.304 140.722 167.426">
+							patternTransform="translate(580 344.068) rotate(-180)"
+							viewBox="0 2.304 140.722 167.426">
 							<image
-								preserveAspectRatio="xMidYMid slice"
-								width={305.839}
+								preserveAspectRatio="none"
+								width={170}
 								height={172.034}
-								xlinkHref="/images/mobile/portfolio/imagen-7.jpg"
+								xlinkHref="/images/services/Genetica.png"
 							/>
 						</pattern>
 						<filter
@@ -2350,13 +2354,13 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							id="i-portfolio-1"
 							width={1}
 							height={1}
-							patternTransform="translate(620.103 344.068) rotate(-180)"
+							patternTransform="translate(600 344.068) rotate(-180)"
 							viewBox="0 3.64 132.23 157.323">
 							<image
-								preserveAspectRatio="xMidYMid slice"
-								width={258.051}
+								preserveAspectRatio="none"
+								width={170}
 								height={172.034}
-								xlinkHref="/images/mobile/portfolio/imagen-9.jpg"
+								xlinkHref="/images/services/Instrumental.png"
 							/>
 						</pattern>
 						<filter
@@ -2568,34 +2572,36 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										</tspan>
 									</text>
 								</g>
-								<g transform="translate(164.538)">
-									<g
-										className="aa-portfolio-1"
-										transform="matrix(1, 0, 0, 1, -227.29, -317.54)">
-										<rect
-											className="c-portfolio-1"
-											width={172.727}
-											height={341.038}
-											rx={35}
-											transform="translate(227.29 317.54)"
+								<a href="/productos/cuidado-avanzado-de-heridas">
+									<g transform="translate(164.538)">
+										<g
+											className="aa-portfolio-1"
+											transform="matrix(1, 0, 0, 1, -227.29, -317.54)">
+											<rect
+												className="c-portfolio-1"
+												width={172.727}
+												height={341.038}
+												rx={35}
+												transform="translate(227.29 317.54)"
+											/>
+										</g>
+										<path
+											className="u-portfolio-1"
+											d="M0,0V107.433H0q0,.04,0,.079V185.6c0,11.081,8.422,20.064,18.811,20.064H154.049c10.389,0,18.811-8.983,18.811-20.064V107.512l-.034-.079h.034L150.7,34.522C144.353,13.628,129.373,0,112.754,0Z"
+											transform="translate(172.893 205.664) rotate(180)"
 										/>
+										<text
+											className="v-portfolio-1"
+											transform="translate(86.446 268.095)">
+											<tspan x={-60.417} y={0}>
+												{'Cuidado avanzado'}
+											</tspan>
+											<tspan x={-33.989} y={14}>
+												{'de heridas'}
+											</tspan>
+										</text>
 									</g>
-									<path
-										className="u-portfolio-1"
-										d="M0,0V107.433H0q0,.04,0,.079V185.6c0,11.081,8.422,20.064,18.811,20.064H154.049c10.389,0,18.811-8.983,18.811-20.064V107.512l-.034-.079h.034L150.7,34.522C144.353,13.628,129.373,0,112.754,0Z"
-										transform="translate(172.893 205.664) rotate(180)"
-									/>
-									<text
-										className="v-portfolio-1"
-										transform="translate(86.446 268.095)">
-										<tspan x={-60.417} y={0}>
-											{'Cuidado avanzado'}
-										</tspan>
-										<tspan x={-33.989} y={14}>
-											{'de heridas'}
-										</tspan>
-									</text>
-								</g>
+								</a>
 							</g>
 						</g>
 						<g
@@ -2616,9 +2622,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g
-							transform="translate(171 438.931)"
-							>
+						<g transform="translate(171 438.931)">
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -2662,7 +2666,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					</g>
 				</svg>
 			) : view === 7 ? (
-				<svg viewBox="106 0 414 960">
+				<svg viewBox="106 0 414 960" preserveAspectRatio='none' width='100%' height='100vh'>
 					<defs>
 						<style>
 							{
@@ -2709,12 +2713,12 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							width={1}
 							height={1}
 							patternTransform="translate(578 344.068) rotate(-180)"
-							viewBox="100 2.304 140.722 167.426">
+							viewBox="0 2.304 140.722 167.426">
 							<image
-								preserveAspectRatio="xMidYMid slice"
-								width={305.839}
+								preserveAspectRatio="none"
+								width={170}
 								height={172.034}
-								xlinkHref="/images/mobile/portfolio/imagen-8.jpg"
+								xlinkHref="/images/services/Cuidado-A-H.png"
 							/>
 						</pattern>
 						<filter
@@ -2735,12 +2739,12 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							width={1}
 							height={1}
 							patternTransform="translate(620.103 344.068) rotate(-180)"
-							viewBox="80 3.64 132.23 157.323">
+							viewBox="0 3.64 132.23 157.323">
 							<image
-								preserveAspectRatio="xMidYMid slice"
-								width={258.051}
+								preserveAspectRatio="none"
+								width={170}
 								height={172.034}
-								xlinkHref="/images/mobile/portfolio/imagen-10.png	"
+								xlinkHref="/images/services/Neurointervencionismo.png"
 							/>
 						</pattern>
 						<filter
@@ -2761,12 +2765,12 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							width={1}
 							height={1}
 							patternTransform="translate(520.065 411.327) rotate(-180)"
-							viewBox="37 3.464 164.537 195.761">
+							viewBox="0 3.464 164.537 195.761">
 							<image
-								preserveAspectRatio="xMidYMid slice"
-								width={308.532}
+								preserveAspectRatio="none"
+								width={170}
 								height={205.664}
-								xlinkHref="/images/mobile/portfolio/imagen-9.jpg"
+								xlinkHref="/images/services/Instrumental.png"
 							/>
 						</pattern>
 						<filter
@@ -2949,34 +2953,36 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										</tspan>
 									</text>
 								</g>
-								<g transform="translate(164.538)">
-									<g
-										className="aa-portfolio-1"
-										transform="matrix(1, 0, 0, 1, -227.29, -317.54)">
-										<rect
-											className="c-portfolio-1"
-											width={172.727}
-											height={341.038}
-											rx={35}
-											transform="translate(227.29 317.54)"
+								<a href="/productos/instrumental-y-estirilizacion">
+									<g transform="translate(164.538)">
+										<g
+											className="aa-portfolio-1"
+											transform="matrix(1, 0, 0, 1, -227.29, -317.54)">
+											<rect
+												className="c-portfolio-1"
+												width={172.727}
+												height={341.038}
+												rx={35}
+												transform="translate(227.29 317.54)"
+											/>
+										</g>
+										<path
+											className="u-portfolio-1"
+											d="M0,0V107.433H0q0,.04,0,.079V185.6c0,11.081,8.422,20.064,18.811,20.064H154.049c10.389,0,18.811-8.983,18.811-20.064V107.512l-.034-.079h.034L150.7,34.522C144.353,13.628,129.373,0,112.754,0Z"
+											transform="translate(172.893 205.664) rotate(180)"
 										/>
+										<text
+											className="v-portfolio-1"
+											transform="translate(86.446 268.095)">
+											<tspan x={-41.866} y={0}>
+												{'Instrumental'}
+											</tspan>
+											<tspan x={-49.192} y={14}>
+												{'y esterilizaci\xF3n'}
+											</tspan>
+										</text>
 									</g>
-									<path
-										className="u-portfolio-1"
-										d="M0,0V107.433H0q0,.04,0,.079V185.6c0,11.081,8.422,20.064,18.811,20.064H154.049c10.389,0,18.811-8.983,18.811-20.064V107.512l-.034-.079h.034L150.7,34.522C144.353,13.628,129.373,0,112.754,0Z"
-										transform="translate(172.893 205.664) rotate(180)"
-									/>
-									<text
-										className="v-portfolio-1"
-										transform="translate(86.446 268.095)">
-										<tspan x={-41.866} y={0}>
-											{'Instrumental'}
-										</tspan>
-										<tspan x={-49.192} y={14}>
-											{'y esterilizaci\xF3n'}
-										</tspan>
-									</text>
-								</g>
+								</a>
 							</g>
 						</g>
 						<g
@@ -2997,9 +3003,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g
-							transform="translate(171 438.931)"
-							>
+						<g transform="translate(171 438.931)">
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -3043,7 +3047,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					</g>
 				</svg>
 			) : view === 8 ? (
-				<svg viewBox="106 0 414 960">
+				<svg viewBox="106 0 414 960" preserveAspectRatio='none' width='100%' height='100vh'>
 					<defs>
 						<style>
 							{
@@ -3090,12 +3094,12 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							width={1}
 							height={1}
 							patternTransform="translate(578 344.068) rotate(-180)"
-							viewBox="100 2.304 140.722 167.426">
+							viewBox="0 2.304 140.722 167.426">
 							<image
-								preserveAspectRatio="xMidYMid slice"
-								width={305.839}
+								preserveAspectRatio="none"
+								width={170}
 								height={172.034}
-								xlinkHref="/images/mobile/portfolio/imagen-9.jpg"
+								xlinkHref="/images/services/Instrumental.png"
 							/>
 						</pattern>
 						<filter
@@ -3115,13 +3119,13 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							id="i-portfolio-1"
 							width={1}
 							height={1}
-							patternTransform="translate(620.103 344.068) rotate(-180)"
+							patternTransform="translate(600.103 344.068) rotate(-180)"
 							viewBox="0 3.64 132.23 157.323">
 							<image
-								preserveAspectRatio="xMidYMid slice"
-								width={258.051}
+								preserveAspectRatio="none"
+								width={170}
 								height={172.034}
-								xlinkHref="/images/mobile/portfolio/image-1.jpg"
+								xlinkHref="/images/services/Logistica-Hs.png"
 							/>
 						</pattern>
 						<filter
@@ -3142,12 +3146,12 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							width={1}
 							height={1}
 							patternTransform="translate(520.065 411.327) rotate(-180)"
-							viewBox="120 3.464 164.537 195.761">
+							viewBox="0 3.464 164.537 195.761">
 							<image
-								preserveAspectRatio="xMidYMid slice"
-								width={308.532}
+								preserveAspectRatio="none"
+								width={220}
 								height={205.664}
-								xlinkHref="/images/mobile/portfolio/imagen-10.png"
+								xlinkHref="/images/services/Neurointervencionismo.png"
 							/>
 						</pattern>
 						<filter
@@ -3333,31 +3337,33 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										</tspan>
 									</text>
 								</g>
-								<g transform="translate(164.538)">
-									<g
-										className="aa-portfolio-1"
-										transform="matrix(1, 0, 0, 1, -227.29, -317.54)">
-										<rect
-											className="c-portfolio-1"
-											width={172.727}
-											height={341.038}
-											rx={35}
-											transform="translate(227.29 317.54)"
+								<a href="/productos/neurointervencionismo">
+									<g transform="translate(164.538)">
+										<g
+											className="aa-portfolio-1"
+											transform="matrix(1, 0, 0, 1, -227.29, -317.54)">
+											<rect
+												className="c-portfolio-1"
+												width={172.727}
+												height={341.038}
+												rx={35}
+												transform="translate(227.29 317.54)"
+											/>
+										</g>
+										<path
+											className="u-portfolio-1"
+											d="M0,0V107.433H0q0,.04,0,.079V185.6c0,11.081,8.422,20.064,18.811,20.064H154.049c10.389,0,18.811-8.983,18.811-20.064V107.512l-.034-.079h.034L150.7,34.522C144.353,13.628,129.373,0,112.754,0Z"
+											transform="translate(172.893 205.664) rotate(180)"
 										/>
+										<text
+											className="v-portfolio-1"
+											transform="translate(60 268.095)">
+											<tspan x={-48.055} y={0}>
+												{'Neurointervencionismo'}
+											</tspan>
+										</text>
 									</g>
-									<path
-										className="u-portfolio-1"
-										d="M0,0V107.433H0q0,.04,0,.079V185.6c0,11.081,8.422,20.064,18.811,20.064H154.049c10.389,0,18.811-8.983,18.811-20.064V107.512l-.034-.079h.034L150.7,34.522C144.353,13.628,129.373,0,112.754,0Z"
-										transform="translate(172.893 205.664) rotate(180)"
-									/>
-									<text
-										className="v-portfolio-1"
-										transform="translate(60 268.095)">
-										<tspan x={-48.055} y={0}>
-											{'Neurointervencionismo'}
-										</tspan>
-									</text>
-								</g>
+								</a>
 							</g>
 						</g>
 						<g
@@ -3378,9 +3384,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g
-							transform="translate(171 438.931)"
-							>
+						<g transform="translate(171 438.931)">
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -3424,7 +3428,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					</g>
 				</svg>
 			) : view === 9 ? (
-				<svg viewBox="106 0 414 960">
+				<svg viewBox="106 0 414 960" preserveAspectRatio='none' width='100%' height='100vh'>
 					<defs>
 						<style>
 							{
@@ -3471,12 +3475,12 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							width={1}
 							height={1}
 							patternTransform="translate(578 344.068) rotate(-180)"
-							viewBox="100 2.304 140.722 167.426">
+							viewBox="0 2.304 140.722 167.426">
 							<image
-								preserveAspectRatio="xMidYMid slice"
-								width={305.839}
+								preserveAspectRatio="none"
+								width={170}
 								height={172.034}
-								xlinkHref="/images/mobile/portfolio/imagen-10.png"
+								xlinkHref="/images/services/Neurointervencionismo.png"
 							/>
 						</pattern>
 						<filter
@@ -3499,10 +3503,10 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							patternTransform="translate(620.103 344.068) rotate(-180)"
 							viewBox="0 3.64 132.23 157.323">
 							<image
-								preserveAspectRatio="xMidYMid slice"
-								width={258.051}
+								preserveAspectRatio="none"
+								width={170}
 								height={172.034}
-								xlinkHref="/images/mobile/portfolio/image-3.jpg"
+								xlinkHref="/images/services/Medicamentos.png"
 							/>
 						</pattern>
 						<filter
@@ -3525,10 +3529,10 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 							patternTransform="translate(520.065 411.327) rotate(-180)"
 							viewBox="0 3.464 164.537 195.761">
 							<image
-								preserveAspectRatio="xMidYMid slice"
-								width={308.532}
+								preserveAspectRatio="none"
+								width={170}
 								height={205.664}
-								xlinkHref="/images/mobile/portfolio/image-1.jpg"
+								xlinkHref="/images/services/Logistica-Hs.png"
 							/>
 						</pattern>
 						<filter
@@ -3708,34 +3712,36 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										</tspan>
 									</text>
 								</g>
-								<g transform="translate(164.538)">
-									<g
-										className="aa-portfolio-1"
-										transform="matrix(1, 0, 0, 1, -227.29, -317.54)">
-										<rect
-											className="c-portfolio-1"
-											width={172.727}
-											height={341.038}
-											rx={35}
-											transform="translate(227.29 317.54)"
+								<a href="/productos/logistica-hospitalaria">
+									<g transform="translate(164.538)">
+										<g
+											className="aa-portfolio-1"
+											transform="matrix(1, 0, 0, 1, -227.29, -317.54)">
+											<rect
+												className="c-portfolio-1"
+												width={172.727}
+												height={341.038}
+												rx={35}
+												transform="translate(227.29 317.54)"
+											/>
+										</g>
+										<path
+											className="u-portfolio-1"
+											d="M0,0V107.433H0q0,.04,0,.079V185.6c0,11.081,8.422,20.064,18.811,20.064H154.049c10.389,0,18.811-8.983,18.811-20.064V107.512l-.034-.079h.034L150.7,34.522C144.353,13.628,129.373,0,112.754,0Z"
+											transform="translate(172.893 205.664) rotate(180)"
 										/>
+										<text
+											className="v-portfolio-1"
+											transform="translate(75 268.095)">
+											<tspan x={-20.466} y={0}>
+												{'Log\xEDstica'}
+											</tspan>
+											<tspan x={-27.261} y={15}>
+												{'hospitalaria'}
+											</tspan>
+										</text>
 									</g>
-									<path
-										className="u-portfolio-1"
-										d="M0,0V107.433H0q0,.04,0,.079V185.6c0,11.081,8.422,20.064,18.811,20.064H154.049c10.389,0,18.811-8.983,18.811-20.064V107.512l-.034-.079h.034L150.7,34.522C144.353,13.628,129.373,0,112.754,0Z"
-										transform="translate(172.893 205.664) rotate(180)"
-									/>
-									<text
-										className="v-portfolio-1"
-										transform="translate(75 268.095)">
-										<tspan x={-20.466} y={0}>
-											{'Log\xEDstica'}
-										</tspan>
-										<tspan x={-27.261} y={15}>
-											{'hospitalaria'}
-										</tspan>
-									</text>
-								</g>
+								</a>
 							</g>
 						</g>
 						<g
@@ -3756,9 +3762,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g
-							transform="translate(171 438.931)"
-							>
+						<g transform="translate(171 438.931)">
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">

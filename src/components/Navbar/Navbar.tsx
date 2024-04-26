@@ -11,7 +11,6 @@ const Navbar: React.FC = () => {
 	const [hover, setHover] = React.useState<string>('')
 	const [showSearchable, setShowSearchable] = React.useState<boolean>(false)
 	const [hover1, setHover1] = React.useState<string>('')
-	const [scroll, setScroll] = React.useState<number>(0)
 	const [isScroll, setIsScroll] = React.useState<boolean>(false)
 
 	const subItemRef = React.useRef(null)
@@ -38,11 +37,11 @@ const Navbar: React.FC = () => {
 	}, [previousScrollPosition])
 
 	React.useEffect(() => {
-		// console.log(c)
 		if (isScroll) {
 			document
 				.getElementById('navbar__container')
 				?.classList.add('navbar__container')
+				document.querySelectorAll('main')[0].style.marginTop = `${document.getElementById('navbar__container')?.clientHeight}px`
 			document
 				.getElementById('navbar__container')
 				?.classList.remove('navbar__estatic')
@@ -50,6 +49,7 @@ const Navbar: React.FC = () => {
 			document
 				.getElementById('navbar__container')
 				?.classList.add('navbar__estatic')
+				document.querySelectorAll('main')[0].style.marginTop = '0px'
 			document
 				.getElementById('navbar__container')
 				?.classList.remove('navbar__container')

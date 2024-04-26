@@ -1,14 +1,13 @@
 import { Carousel } from 'flowbite-react'
 import React from 'react'
-// import './Servcios.css'
+import './Servcios.css'
 
 export const ServiciosMovil: React.FC = () => {
 	const [open4Tag, setOpen4Tag] = React.useState<boolean>(false)
 	const [open2Tag, setOpen2Tag] = React.useState<boolean>(false)
-	const [open1Tag, setOpen1Tag] = React.useState<boolean>(false)
-	const [open3Tag, setOpen3Tag] = React.useState<boolean>(false)
 	const [changeTo2, setChangeTo2] = React.useState<boolean>(false)
 	const [doHover, setDoHover] = React.useState<boolean>(false)
+	const [mute, setMute] = React.useState(true)
 
 	const handleChangeSlide = () => {
 		setChangeTo2(true)
@@ -24,26 +23,30 @@ export const ServiciosMovil: React.FC = () => {
 	}, [changeTo2])
 
 	return (
-		<div className="h-screen mt-[-3%]">
+		<div style={{ height: '100vh' }}>
 			<Carousel
 				slide={false}
 				rightControl={<button className="next-button"></button>}>
-				<svg viewBox="0 0 414 896">
+				<svg
+					viewBox="0 0 414 896"
+					width="100%"
+					height="100vh"
+					preserveAspectRatio="none">
 					<defs>
 						<style>
 							{
-								'.a-services,.e-services,.f-services{fill:#001f5f;}.b-services,.g-services{fill:#fff;}.c-services{fill:none;}.d-services{clip-path:url(#a-services);}.e-services{font-size:14px;font-family:Silka-Regular, Silka;}.f-services{font-size:55px;}.f-services,.g-services{font-family:Kiona-Bold, Kiona;font-weight:700;}.g-services{font-size:18px;}.h-services{clip-path:url(#d-services);}.i-services{fill:#e40032;}.j-services{clip-path:url(#e-services);}.k-services{fill:#e7002a;}.l-services{mix-blend-mode:multiply;isolation:isolate;}.m-services{fill:#d6d6d6;}.n-services{fill:#eeebeb;}.o-services{filter:url(#b-services);}'
+								'.a-servicios-1-mobile{fill:none;}.b-servicios-1-mobile,.h-servicios-1-mobile{fill:#fff;}.c-servicios-1-mobile,.e-servicios-1-mobile,.f-servicios-1-mobile,.g-servicios-1-mobile{fill:#001f5f;}.d-servicios-1-mobile{clip-path:url(#a-servicios-1-mobile);}.e-servicios-1-mobile{font-size:14px;font-family:Silka-Regular, Silka;}.f-servicios-1-mobile{font-size:16px;font-family:Silka-Bold, Silka;}.f-servicios-1-mobile,.g-servicios-1-mobile,.h-servicios-1-mobile{font-weight:700;}.g-servicios-1-mobile{font-size:55px;}.g-servicios-1-mobile,.h-servicios-1-mobile{font-family:Kiona-Bold, Kiona;}.h-servicios-1-mobile{font-size:18px;}.i-servicios-1-mobile{clip-path:url(#d-servicios-1-mobile);}.j-servicios-1-mobile{fill:#e40032;}.k-servicios-1-mobile{clip-path:url(#e-servicios-1-mobile);}.l-servicios-1-mobile{fill:#e7002a;}.m-servicios-1-mobile{mix-blend-mode:multiply;isolation:isolate;}.n-servicios-1-mobile{fill:#d6d6d6;}.o-servicios-1-mobile{fill:#eeebeb;}.p-servicios-1-mobile{filter:url(#b-servicios-1-mobile);}'
 							}
 						</style>
-						<clipPath id="a-services">
+						<clipPath id="a-servicios-1-mobile">
 							<rect
-								className="a-services"
+								className="c-servicios-1-mobile"
 								width={175}
 								height={80.893}
 							/>
 						</clipPath>
 						<filter
-							id="b-services"
+							id="b-servicios-1-mobile"
 							x={83}
 							y={620.007}
 							width={248}
@@ -55,159 +58,183 @@ export const ServiciosMovil: React.FC = () => {
 							<feComposite operator="in" in2="c" />
 							<feComposite in="SourceGraphic" />
 						</filter>
-						<clipPath id="d-services">
+						<clipPath id="d-servicios-1-mobile">
 							<rect
-								className="b-services"
+								className="b-servicios-1-mobile"
 								width={176}
 								height={257}
 								transform="translate(0)"
 							/>
 						</clipPath>
-						<clipPath id="e-services">
+						<clipPath id="e-servicios-1-mobile">
 							<rect
-								className="c-services"
+								className="a-servicios-1-mobile"
 								width={1773.958}
 								height={802}
 							/>
 						</clipPath>
 					</defs>
-					<rect className="b-services" width={414} height={896} />
-					<g className="d-services">
+					<rect
+						className="b-servicios-1-mobile"
+						width={414}
+						height={896}
+					/>
+					<g className="d-servicios-1-mobile">
 						<path
-							className="a-services"
+							className="c-servicios-1-mobile"
 							d="M115.05,80.893H0V0H175V20.943a59.95,59.95,0,0,1-59.95,59.95"
 						/>
 					</g>
 					<text
-						className="e-services"
-						transform="translate(210 438.681)">
-						<tspan x={-147.014} y={13}>
-							{'Somos la compañía de servicio técnico en '}
+						className="e-servicios-1-mobile"
+						transform="translate(210 409.681)">
+						<tspan x={-143.542} y={13}>
+							{'El servicio es uno de los pilares del Grupo '}
 						</tspan>
-						<tspan x={-159.481} y={29}>
-							{'ingeniería biomédica más grande del país y la '}
+						<tspan x={-151.844} y={29}>
+							{'Amarey, una misión que se ha convertido en '}
 						</tspan>
-						<tspan x={-168.154} y={45}>
-							{
-								'primera empresa a nivel nacional en certificarse '
-							}
+						<tspan x={-149.541} y={45}>
+							{'la vocación de la compañía para cumplir el '}
 						</tspan>
-						<tspan x={-127.204} y={61}>
-							{'con la norma ISO 13485 de ICONTEC. '}
+						<tspan x={-147.826} y={61}>
+							{'compromiso de ser un actor determinante '}
+						</tspan>
+						<tspan x={-122.507} y={77}>
+							{'en la labor de cuidar y salvar vidas.'}
 						</tspan>
 					</text>
 					<text
-						className="f-services"
-						transform="translate(210 358.076)">
+						className="f-servicios-1-mobile"
+						transform="translate(210 509.681)">
+						<tspan x={-117.296} y={15}>
+							{'Grupo Amarey, la cadena que '}
+						</tspan>
+						<tspan x={-46.16} y={33}>
+							{'salva vidas. '}
+						</tspan>
+					</text>
+					<text
+						className="g-servicios-1-mobile"
+						transform="translate(210 329.076)">
 						<tspan x={-125.263} y={55}>
 							{'Servicio'}
 						</tspan>
 					</text>
-					<g
-						transform="translate(92 626.007)"
-						onClick={handleChangeSlide}>
+					<g transform="translate(92 626.007)">
 						<g
-							className="o-services"
+							className="p-servicios-1-mobile"
 							transform="matrix(1, 0, 0, 1, -92, -626.01)">
 							<path
-								className="a-services"
+								className="c-servicios-1-mobile"
 								d="M230,0H47.176C28.161,0,11.086,12.6,4.142,31.746L0,43.169H181.308c20.259,0,38.4-13.581,45.534-34.092Z"
 								transform="translate(92 626.01)"
 							/>
 						</g>
 						<text
-							className="g-services"
-							transform="translate(55.5 28.584)">
+							className="h-servicios-1-mobile"
+							transform="translate(55.5 28.584)"
+							onClick={handleChangeSlide}>
 							<tspan x={0} y={0}>
 								{'Conoce Más'}
 							</tspan>
 						</text>
 					</g>
-					<g className="h-services" transform="translate(238)">
+					<g
+						className="i-servicios-1-mobile"
+						transform="translate(238)">
 						<path
-							className="i-services"
+							className="j-servicios-1-mobile"
 							d="M170.7,184.238l40.47,55.087a1.534,1.534,0,0,1,.287.885l.23,43.126a1.511,1.511,0,0,1-1.5,1.512l-6.018.029a1.5,1.5,0,0,1-1.512-1.494l-.08-15.295-21.756.109.08,15.3a1.5,1.5,0,0,1-1.5,1.512l-6.018.029a1.494,1.494,0,0,1-1.506-1.494l-.207-39.62a1.5,1.5,0,0,1,1.494-1.512l6.018-.035a1.511,1.511,0,0,1,1.512,1.5l.081,15.295,21.756-.109-.086-16.364L165.7,192.671l-31.262.161L98.211,243.246l.08,16.358,21.761-.115-.08-15.295a1.5,1.5,0,0,1,1.494-1.512l6.018-.034a1.5,1.5,0,0,1,1.512,1.5l.207,39.62a1.506,1.506,0,0,1-1.494,1.512l-6.018.029a1.5,1.5,0,0,1-1.512-1.494l-.08-15.3-21.756.115.08,15.3a1.511,1.511,0,0,1-1.5,1.512l-6.018.029a1.506,1.506,0,0,1-1.512-1.495l-.224-43.126a1.5,1.5,0,0,1,.282-.885l39.89-55.513a1.519,1.519,0,0,1,1.213-.626l38.924-.2a1.5,1.5,0,0,1,1.219.615M108.022,139.2,42.9,118.42a1.456,1.456,0,0,0-.925.006L1.032,131.962a1.506,1.506,0,0,0-.954,1.9l1.885,5.713a1.5,1.5,0,0,0,1.9.954l14.519-4.8,6.834,20.658-14.525,4.8a1.506,1.506,0,0,0-.954,1.9l1.885,5.713a1.51,1.51,0,0,0,1.9.954l37.619-12.438a1.5,1.5,0,0,0,.954-1.9l-1.885-5.713a1.51,1.51,0,0,0-1.9-.954l-14.525,4.805L26.96,132.9l15.531-5.139,59.139,18.876,4.831,14.611,4.981,15.065L75.219,226.726l-15.536,5.133L52.854,211.2l14.525-4.8a1.506,1.506,0,0,0,.954-1.9l-1.891-5.713a1.5,1.5,0,0,0-1.9-.954L26.926,210.27a1.506,1.506,0,0,0-.954,1.9l1.885,5.713a1.506,1.506,0,0,0,1.9.954l14.525-4.805,6.834,20.658L36.594,239.5a1.5,1.5,0,0,0-.96,1.9l1.891,5.713a1.506,1.506,0,0,0,1.9.954l40.942-13.542a1.506,1.506,0,0,0,.753-.552l39.884-55.507a1.49,1.49,0,0,0,.207-1.351l-12.22-36.953a1.507,1.507,0,0,0-.971-.966m80.3-10.174,64.9-21.462a1.491,1.491,0,0,0,.747-.552l25.17-35.022a1.507,1.507,0,0,0-.345-2.1L273.9,66.379a1.5,1.5,0,0,0-2.1.345l-8.932,12.421-17.669-12.7,8.926-12.421a1.5,1.5,0,0,0-.339-2.1l-4.886-3.512a1.5,1.5,0,0,0-2.1.345L223.686,80.933a1.507,1.507,0,0,0,.339,2.1l4.891,3.512a1.507,1.507,0,0,0,2.1-.345l8.926-12.421,17.669,12.7-9.547,13.283-58.938,19.491L163.736,101.01l-.322-62.077,9.547-13.283,17.669,12.7L181.7,50.768a1.5,1.5,0,0,0,.345,2.1l4.886,3.512a1.5,1.5,0,0,0,2.1-.345l23.124-32.176a1.5,1.5,0,0,0-.345-2.1l-4.886-3.512a1.507,1.507,0,0,0-2.1.345l-8.932,12.421L178.232,18.322l8.926-12.427a1.506,1.506,0,0,0-.345-2.1L181.928.285a1.5,1.5,0,0,0-2.1.345L154.66,35.651a1.529,1.529,0,0,0-.282.885l.356,68.353a1.5,1.5,0,0,0,.626,1.213l31.607,22.715a1.508,1.508,0,0,0,1.351.207M297.6,138.037l1.828-5.736a1.506,1.506,0,0,0-.977-1.891L257.368,117.3a1.515,1.515,0,0,0-.931.006l-64.9,21.462a1.486,1.486,0,0,0-.96.971l-11.835,37.079a1.5,1.5,0,0,0,.218,1.345l40.465,55.093a1.535,1.535,0,0,0,.759.54l41.08,13.117a1.5,1.5,0,0,0,1.891-.977l1.828-5.731a1.493,1.493,0,0,0-.971-1.891l-14.576-4.656,6.616-20.727,14.577,4.65a1.507,1.507,0,0,0,1.891-.971l1.828-5.736a1.506,1.506,0,0,0-.977-1.891l-37.746-12.047a1.5,1.5,0,0,0-1.885.977l-1.834,5.736a1.5,1.5,0,0,0,.977,1.885l14.571,4.656-6.61,20.727-15.588-4.972L188.5,175.91l9.507-29.779,58.938-19.491,15.582,4.978-6.61,20.727-14.576-4.656a1.513,1.513,0,0,0-1.891.977l-1.828,5.736a1.5,1.5,0,0,0,.977,1.885l37.74,12.047a1.5,1.5,0,0,0,1.891-.971l1.833-5.736a1.51,1.51,0,0,0-.977-1.891l-14.577-4.65,6.616-20.727,14.576,4.656a1.513,1.513,0,0,0,1.891-.977M112.6,129.151l31.337-23.083a1.514,1.514,0,0,0,.615-1.224L144.1,36.491a1.483,1.483,0,0,0-.293-.879L118.23.889a1.5,1.5,0,0,0-2.1-.322l-4.845,3.569a1.505,1.505,0,0,0-.316,2.1l9.076,12.318-17.519,12.9L93.446,19.144a1.5,1.5,0,0,0-2.1-.316L86.5,22.4a1.5,1.5,0,0,0-.316,2.1l23.5,31.9a1.505,1.505,0,0,0,2.1.316l4.845-3.569a1.505,1.505,0,0,0,.322-2.1l-9.076-12.318,17.519-12.9L135.094,39l.408,62.076-25.17,18.537L51.17,100.82l-9.7-13.174,17.519-12.9,9.07,12.318a1.505,1.505,0,0,0,2.1.316l4.845-3.569a1.51,1.51,0,0,0,.322-2.1l-23.5-31.895a1.5,1.5,0,0,0-2.1-.322l-4.845,3.569a1.5,1.5,0,0,0-.316,2.1l9.07,12.318-17.514,12.9L27.041,68.063a1.506,1.506,0,0,0-2.1-.322l-4.845,3.569a1.505,1.505,0,0,0-.316,2.1l25.578,34.723a1.475,1.475,0,0,0,.753.54l65.146,20.7a1.51,1.51,0,0,0,1.351-.224"
 							transform="translate(347.833 -10.609) rotate(105)"
 						/>
 					</g>
-					<g className="j-services" transform="translate(0 87)">
+					<g
+						className="k-servicios-1-mobile"
+						transform="translate(0 87)">
 						<path
-							className="a-services"
+							className="c-servicios-1-mobile"
 							d="M171.706,423.276c-48.188,0-91.3,27.387-109.842,69.773L0,634.5v4.142L63.407,493.662c18.278-41.789,60.789-68.792,108.3-68.792H445.68v-1.594Z"
 							transform="translate(0 71.85)"
 						/>
 						<path
-							className="a-services"
+							className="c-servicios-1-mobile"
 							d="M521.828,293.986c-20.513,0-41.2-.173-61.586-.346-32.51-.274-66.129-.557-97.154-.092l-.028-1.782c31.046-.468,64.677-.184,97.2.091,45.453.383,92.455.779,135.5-.776a118.065,118.065,0,0,0,31.217-5.2c34.227-10.79,62.04-33.19,76.307-61.457,26.869-58.877,52.656-118.745,77.593-176.642Q791.172,23.884,801.489,0l1.719.683Q792.876,24.565,782.6,48.463c-24.94,57.9-50.73,117.783-77.622,176.708-14.5,28.73-42.714,51.465-77.416,62.4a120.008,120.008,0,0,1-31.729,5.287c-23.775.859-48.754,1.123-74,1.123"
 							transform="translate(83.771)"
 						/>
 						<path
-							className="a-services"
+							className="c-servicios-1-mobile"
 							d="M1242.78,293.986c-20.636,0-41.45-.173-61.956-.346-32.706-.274-66.526-.557-97.737-.092l-.028-1.782c31.232-.468,65.067-.184,97.783.091,45.727.383,93.009.779,136.316-.776a119.423,119.423,0,0,0,31.4-5.2c34.432-10.79,62.412-33.19,76.765-61.457,27.03-58.877,52.972-118.745,78.059-176.642Q1513.74,23.884,1524.119,0l1.729.683q-10.394,23.882-20.734,47.78c-25.09,57.9-51.035,117.783-78.088,176.708-14.588,28.73-42.97,51.465-77.881,62.4a121.389,121.389,0,0,1-31.92,5.287c-23.917.859-49.046,1.123-74.446,1.123"
 							transform="translate(246.43)"
 						/>
 						<path
-							className="a-services"
+							className="c-servicios-1-mobile"
 							d="M817.537,437.927c46.717-.414,95.021-.845,142.142,1.258,43.015,7.471,78.99,32.207,96.225,66.146,27.04,58.9,52.978,118.757,78.06,176.645q9.981,23.031,19.983,46.048h2.026q-10.164-23.357-20.278-46.729c-25.087-57.9-51.028-117.763-78.092-176.71-17.517-34.5-54.021-59.606-97.649-67.165l-.124-.013c-47.2-2.107-95.551-1.679-142.311-1.262-31.037.275-63.13.559-94.432.095l-.029,1.782c31.324.467,63.429.18,94.479-.094"
 							transform="translate(164.518 73.976)"
 						/>
 						<path
-							className="k-services"
+							className="l-servicios-1-mobile"
 							d="M296.517,582.057H3.07V580.35H296.517c50.887,0,96.419-28.922,115.994-73.681l146.4-308.747,1.633.7L414.155,507.348c-19.846,45.374-66.024,74.708-117.638,74.708"
 							transform="translate(-3.07 33.597)"
 						/>
 						<path
-							className="k-services"
+							className="l-servicios-1-mobile"
 							d="M1505.487,334.592h-197.23c-50.887,0-96.417-28.922-116.005-73.7l-10.357-21.84h-1.965l10.678,22.52c19.858,45.4,66.037,74.732,117.649,74.732h197.23Z"
 							transform="translate(268.471 40.578)"
 						/>
 						<path
-							className="k-services"
+							className="l-servicios-1-mobile"
 							d="M1440.429,694.173h2.1c-22.789-36.3-63.941-58.956-109.3-58.956H1039.782v1.707h293.446c44.343,0,84.615,21.967,107.2,57.25"
 							transform="translate(236.582 107.827)"
 						/>
 					</g>
 				</svg>
-				<svg viewBox="0 0 417 894.481">
+
+				<svg
+					viewBox="0 0 417 894.481"
+					className="mt-[0]"
+					width="100%"
+					height="100vh"
+					preserveAspectRatio="none">
 					<defs>
 						<style>
 							{
-								'.a-services2,.b-services2{fill:none;}.b-services2{stroke:#001f5f;stroke-width:2px;}.c-services2{fill:#fff;}.d-services2{clip-path:url(#a-services2);}.e-services2,.o-services2,.r-services2,.t-services2{fill:#001f5f;}.f-services2{fill:#e7002a;}.g-services2{clip-path:url(#b-services2);}.h-services2{mix-blend-mode:multiply;isolation:isolate;}.i-services2{fill:#eeebeb;}.j-services2{fill:#d6d6d6;}.k-services2{clip-path:url(#c-services2);}.l-services2{fill:#e40032;}.m-services2{clip-path:url(#d-services2);}.n-services2{fill:url(#e-services2);}.o-services2{font-size:32px;}.o-services2,.r-services2{font-family:Silka-SemiBold, Silka;font-weight:600;}.p-services2,.s-services2{fill:#182856;font-family:Silka-Regular, Silka;}.p-services2{font-size:16px;}.q-services2,.t-services2{font-family:Silka-Bold, Silka;font-weight:700;}.r-services2{font-size:50px;}.s-services2{font-size:23px;opacity:0;}.t-services2{font-size:12px;}.u-services2{filter:url(#l-services2);}.v-services2{filter:url(#j-services2);}.w-services2{filter:url(#h-services2);}.x-services2{filter:url(#f-services2);}'
+								'.a-servicios-2-mobile,.b-servicios-2-mobile{fill:none;}.b-servicios-2-mobile{stroke:#001f5f;stroke-width:2px;}.c-servicios-2-mobile,.u-servicios-2-mobile,.w-servicios-2-mobile{fill:#fff;}.d-servicios-2-mobile{clip-path:url(#a-servicios-2-mobile);}.e-servicios-2-mobile,.o-servicios-2-mobile,.r-servicios-2-mobile,.t-servicios-2-mobile{fill:#001f5f;}.f-servicios-2-mobile{fill:#e7002a;}.g-servicios-2-mobile{clip-path:url(#b-servicios-2-mobile);}.h-servicios-2-mobile,.t-servicios-2-mobile{mix-blend-mode:multiply;isolation:isolate;}.i-servicios-2-mobile{fill:#eeebeb;}.j-servicios-2-mobile{fill:#d6d6d6;}.k-servicios-2-mobile{clip-path:url(#c-servicios-2-mobile);}.l-servicios-2-mobile{fill:#e40032;}.m-servicios-2-mobile{clip-path:url(#d-servicios-2-mobile);}.n-servicios-2-mobile{fill:url(#e-servicios-2-mobile);}.o-servicios-2-mobile{font-size:32px;}.o-servicios-2-mobile,.u-servicios-2-mobile,.w-servicios-2-mobile{font-family:Silka-SemiBold, Silka;font-weight:600;}.p-servicios-2-mobile{fill:#182856;font-size:16px;font-family:Silka-Regular, Silka;}.q-servicios-2-mobile,.r-servicios-2-mobile{font-family:Silka-Bold, Silka;font-weight:700;}.r-servicios-2-mobile{font-size:12px;}.s-servicios-2-mobile{fill:url(#f-servicios-2-mobile);}.t-servicios-2-mobile{opacity:0.65;}.u-servicios-2-mobile{font-size:50px;}.v-servicios-2-mobile{fill:url(#g-servicios-2-mobile);}.w-servicios-2-mobile{font-size:23px;}.x-servicios-2-mobile{font-size:40px;}'
 							}
 						</style>
-						<clipPath id="a-services2">
+						<clipPath id="a-servicios-2-mobile">
 							<rect
-								className="a-services2"
+								className="a-servicios-2-mobile"
 								width={414}
 								height={760.481}
 								transform="translate(367.479 -87.481)"
 							/>
 						</clipPath>
-						<clipPath id="b-services2">
+						<clipPath id="b-servicios-2-mobile">
 							<rect
-								className="b-services2"
+								className="b-servicios-2-mobile"
 								width={428.574}
 								height={263.01}
 								transform="translate(0 115.304)"
 							/>
 						</clipPath>
-						<clipPath id="c-services2">
+						<clipPath id="c-servicios-2-mobile">
 							<rect
-								className="c-services2"
+								className="c-servicios-2-mobile"
 								width={70}
 								height={146}
 								transform="translate(0.048 -0.487)"
 							/>
 						</clipPath>
-						<clipPath id="d-services2">
+						<clipPath id="d-servicios-2-mobile">
 							<rect
-								className="a-services2"
+								className="a-servicios-2-mobile"
 								width={210}
 								height={95.931}
 							/>
 						</clipPath>
 						<pattern
-							id="e-services2"
+							id="e-servicios-2-mobile"
 							width={1}
 							height={1}
 							viewBox="0 12.078 210 95.931">
@@ -215,109 +242,82 @@ export const ServiciosMovil: React.FC = () => {
 								preserveAspectRatio="xMidYMid slice"
 								width={210}
 								height={139.919}
-								xlinkHref="/images/mobile/cifras/image30.jpg"
+								xlinkHref="/images/services/ComponentTMP_0-image3.jpg"
 							/>
 						</pattern>
-						<filter
-							id="f-services2"
-							x={32}
-							y={450.481}
-							width={179}
-							height={141.388}
-							filterUnits="userSpaceOnUse">
-							<feOffset dy={3} />
-							<feGaussianBlur stdDeviation={3} result="g" />
-							<feFlood floodOpacity={0.4} />
-							<feComposite operator="in" in2="g" />
-							<feComposite in="SourceGraphic" />
-						</filter>
-						<filter
-							id="h-services2"
-							x={32}
-							y={613.869}
-							width={179}
-							height={141.388}
-							filterUnits="userSpaceOnUse">
-							<feOffset dy={3} />
-							<feGaussianBlur stdDeviation={3} result="i" />
-							<feFlood floodOpacity={0.4} />
-							<feComposite operator="in" in2="i" />
-							<feComposite in="SourceGraphic" />
-						</filter>
-						<filter
-							id="j-services2"
-							x={209}
-							y={505.481}
-							width={179}
-							height={141.388}
-							filterUnits="userSpaceOnUse">
-							<feOffset dy={3} />
-							<feGaussianBlur stdDeviation={3} result="k" />
-							<feFlood floodOpacity={0.4} />
-							<feComposite operator="in" in2="k" />
-							<feComposite in="SourceGraphic" />
-						</filter>
-						<filter
-							id="l-services2"
-							x={209}
-							y={675.563}
-							width={179}
-							height={141.388}
-							filterUnits="userSpaceOnUse">
-							<feOffset dy={3} />
-							<feGaussianBlur stdDeviation={3} result="m" />
-							<feFlood floodOpacity={0.4} />
-							<feComposite operator="in" in2="m" />
-							<feComposite in="SourceGraphic" />
-						</filter>
-						<clipPath id="ab-des">
+						<pattern
+							id="f-servicios-2-mobile"
+							width={1}
+							height={1}
+							patternTransform="matrix(1, 0, 0, -1, 0, 318.175)"
+							viewBox="4.941 19.084 275.099 120.92">
+							<image
+								preserveAspectRatio="xMidYMid slice"
+								width={282.83}
+								height={159.088}
+								xlinkHref="/images/services/ComponentTMP_0-image4.jpg"
+							/>
+						</pattern>
+						<pattern
+							id="g-servicios-2-mobile"
+							width={1}
+							height={1}
+							patternTransform="matrix(-1, 0, 0, 1, 565.66, 0)"
+							viewBox="4.179 33.955 274.472 120.644">
+							<image
+								preserveAspectRatio="xMidYMid slice"
+								width={282.83}
+								height={188.553}
+								xlinkHref="/images/services/ComponentTMP_0-image5.jpg"
+							/>
+						</pattern>
+						<clipPath id="bla-servicios-1">
 							<rect
-								className="a"
-								width={428.574}
-								height={259.01}
-								transform="translate(0 115.304)"
+								style={{ fill: 'none' }}
+								width={420}
+								height={270.931}
 							/>
 						</clipPath>
 					</defs>
 					<g transform="translate(3 0.481)">
 						<rect
-							className="c-services2"
+							className="c-servicios-2-mobile"
 							width={414}
 							height={894}
 						/>
 					</g>
 					<g
-						className="d-services2"
+						className="d-servicios-2-mobile"
 						transform="translate(-364.479 87.481)">
 						<path
-							className="e-services2"
+							className="e-servicios-2-mobile"
 							d="M142.668,423.276c-40.039,0-75.863,22.982-91.266,58.55L0,600.523V604L52.684,482.341c15.187-35.068,50.508-57.727,89.984-57.727H370.309v-1.338Z"
 							transform="translate(0 -7.79)"
 						/>
 						<path
-							className="e-services2"
+							className="e-servicios-2-mobile"
 							d="M1215.769,246.7c-17.146,0-34.44-.145-51.478-.291-27.175-.23-55.276-.467-81.208-.078l-.023-1.495c25.95-.393,54.063-.154,81.246.077,37.994.321,77.28.654,113.263-.651a98.338,98.338,0,0,0,26.093-4.363c28.609-9.054,51.857-27.852,63.783-51.572,22.459-49.407,44.013-99.645,64.858-148.23q8.6-20.054,17.228-40.1l1.437.573q-8.636,20.041-17.227,40.094c-20.847,48.591-42.4,98.838-64.883,148.285-12.121,24.109-35.7,43.187-64.71,52.367a99.957,99.957,0,0,1-26.522,4.437c-19.872.721-40.751.942-61.856.942"
 							transform="translate(21.595)"
 						/>
 						<path
-							className="f-services2"
+							className="f-servicios-2-mobile"
 							d="M246.892,526.313H3.07v-1.459H246.892c42.282,0,80.113-24.725,96.378-62.989L441.287,249.4H442.8l-98.16,213.044c-16.489,38.79-54.858,63.867-97.744,63.867"
 							transform="translate(-39.317 -79)"
 						/>
 						<path
-							className="f-services2"
+							className="f-servicios-2-mobile"
 							d="M1450.431,319.224H1286.555c-42.281,0-80.112-24.27-96.387-61.849l-8.605-18.327h-1.633l8.872,18.9c16.5,38.1,54.869,62.711,97.753,62.711h163.876Z"
 							transform="translate(23.527 -4.399)"
 						/>
 						<path
-							className="f-services2"
+							className="f-servicios-2-mobile"
 							d="M1372.674,684.69h1.741c-18.935-30.461-53.128-49.473-90.813-49.473h-243.82v1.432H1283.6c36.844,0,70.306,18.433,89.071,48.041"
 							transform="translate(20.732 -11.69)"
 						/>
 						<g transform="translate(364.479 -202.785)">
-							<g className="g-services2">
+							<g className="g-servicios-2-mobile">
 								<path
-									className="b-services2"
+									className="b-servicios-2-mobile"
 									d="M275.577,259.01H0V0H422.481L368.327,175.78c-15.52,50.375-52.133,83.23-92.75,83.23"
 									transform="translate(0 115.304)"
 								/>
@@ -325,38 +325,35 @@ export const ServiciosMovil: React.FC = () => {
 						</g>
 					</g>
 					<g
-						className="k-services2"
+						className="k-servicios-2-mobile"
 						transform="translate(346.952 725.968)">
 						<path
-							className="l-services2"
+							className="l-servicios-2-mobile"
 							d="M79.983,86.328,98.946,112.14a.719.719,0,0,1,.135.415l.108,20.207a.708.708,0,0,1-.7.708l-2.82.013a.7.7,0,0,1-.708-.7l-.038-7.167-10.194.051.038,7.169a.7.7,0,0,1-.7.708l-2.82.013a.7.7,0,0,1-.706-.7l-.1-18.564a.7.7,0,0,1,.7-.708l2.82-.016a.708.708,0,0,1,.708.7l.038,7.167,10.194-.051-.04-7.668L77.639,90.279l-14.649.075L46.018,113.977l.038,7.665,10.2-.054-.038-7.167a.7.7,0,0,1,.7-.708l2.82-.016a.7.7,0,0,1,.708.7l.1,18.564a.706.706,0,0,1-.7.708l-2.82.013a.7.7,0,0,1-.708-.7l-.038-7.169-10.194.054.038,7.169a.708.708,0,0,1-.7.708l-2.82.013a.706.706,0,0,1-.708-.7l-.105-20.207a.7.7,0,0,1,.132-.415L60.6,86.428a.712.712,0,0,1,.568-.294l18.239-.094a.7.7,0,0,1,.571.288m-29.367-21.1L20.1,55.488a.682.682,0,0,0-.434,0L.484,61.833a.706.706,0,0,0-.447.891L.92,65.4a.7.7,0,0,0,.891.447l6.8-2.249,3.2,9.68L5.011,75.528a.705.705,0,0,0-.447.891L5.447,79.1a.708.708,0,0,0,.891.447l17.627-5.828a.7.7,0,0,0,.447-.891l-.883-2.677a.708.708,0,0,0-.891-.447l-6.806,2.252-3.2-9.68,7.277-2.408,27.711,8.845,2.263,6.846,2.334,7.059L35.245,106.236l-7.28,2.405-3.2-9.68,6.806-2.249a.705.705,0,0,0,.447-.891l-.886-2.677a.7.7,0,0,0-.889-.447L12.617,98.526a.706.706,0,0,0-.447.891l.883,2.677a.705.705,0,0,0,.891.447l6.806-2.252,3.2,9.68-6.806,2.252a.7.7,0,0,0-.45.891l.886,2.677a.706.706,0,0,0,.891.447l19.184-6.345a.706.706,0,0,0,.353-.259L56.7,83.624a.7.7,0,0,0,.1-.633L51.071,65.676a.706.706,0,0,0-.455-.452M88.24,60.457,118.649,50.4a.7.7,0,0,0,.35-.259l11.794-16.41a.706.706,0,0,0-.162-.983L128.342,31.1a.7.7,0,0,0-.983.162l-4.185,5.82L114.9,31.135l4.183-5.82a.7.7,0,0,0-.159-.983l-2.289-1.646a.7.7,0,0,0-.983.162L104.812,37.922a.706.706,0,0,0,.159.986l2.292,1.646a.706.706,0,0,0,.983-.162l4.183-5.82,8.279,5.949-4.473,6.224L88.617,55.878l-11.9-8.548L76.57,18.243l4.473-6.224,8.279,5.949-4.183,5.82a.7.7,0,0,0,.162.983l2.289,1.646a.7.7,0,0,0,.983-.162L99.409,11.179a.7.7,0,0,0-.162-.983L96.958,8.55a.706.706,0,0,0-.983.162l-4.185,5.82L83.513,8.585,87.7,2.762a.706.706,0,0,0-.162-.983L85.245.134A.7.7,0,0,0,84.262.3L72.468,16.705a.716.716,0,0,0-.132.415L72.5,49.148a.7.7,0,0,0,.294.568L87.607,60.36a.706.706,0,0,0,.633.1m51.2,4.223.856-2.688a.706.706,0,0,0-.458-.886l-19.249-6.143a.71.71,0,0,0-.436,0L89.748,65.022a.7.7,0,0,0-.45.455L83.753,82.851a.7.7,0,0,0,.1.63l18.96,25.815a.719.719,0,0,0,.356.253L122.42,115.7a.7.7,0,0,0,.886-.458l.856-2.685a.7.7,0,0,0-.455-.886l-6.83-2.182,3.1-9.712,6.83,2.179a.706.706,0,0,0,.886-.455l.856-2.688a.706.706,0,0,0-.458-.886l-17.687-5.645a.7.7,0,0,0-.883.458l-.859,2.688a.7.7,0,0,0,.458.883l6.827,2.182-3.1,9.712-7.3-2.33L88.326,82.425l4.455-13.954L120.4,59.339l7.3,2.332-3.1,9.712-6.83-2.182a.709.709,0,0,0-.886.458l-.856,2.688a.7.7,0,0,0,.458.883l17.684,5.645a.705.705,0,0,0,.886-.455l.859-2.688a.708.708,0,0,0-.458-.886l-6.83-2.179,3.1-9.712,6.83,2.182a.709.709,0,0,0,.886-.458M52.762,60.516,67.446,49.7a.709.709,0,0,0,.288-.574L67.521,17.1a.7.7,0,0,0-.137-.412L55.4.416a.7.7,0,0,0-.986-.151l-2.27,1.673a.705.705,0,0,0-.148.986L56.247,8.7l-8.209,6.046L43.785,8.97a.7.7,0,0,0-.986-.148l-2.27,1.672a.7.7,0,0,0-.148.986l11.01,14.947a.705.705,0,0,0,.986.148l2.27-1.673a.705.705,0,0,0,.151-.986l-4.253-5.772L58.754,12.1,63.3,18.273l.191,29.087L51.7,56.045l-27.722-8.8-4.546-6.173,8.209-6.046,4.25,5.772a.705.705,0,0,0,.986.148l2.27-1.673a.707.707,0,0,0,.151-.986L24.284,23.339a.7.7,0,0,0-.986-.151l-2.27,1.673a.7.7,0,0,0-.148.986l4.25,5.772-8.206,6.046L12.67,31.892a.706.706,0,0,0-.986-.151l-2.27,1.672a.705.705,0,0,0-.148.986l11.985,16.27a.691.691,0,0,0,.353.253l30.525,9.7a.708.708,0,0,0,.633-.105"
 							transform="translate(160.871 28.07) rotate(105)"
 						/>
 					</g>
-					<g transform="translate(0 0.148)">
-						<g className="c">
-							<path
-								className="a"
-								d="M275.577,259.01H0V0H422.481L368.327,175.78c-15.52,50.375-52.133,83.23-92.75,83.23"
-								transform="translate(0 115.304)"
-							/>
-						</g>
-						<g>
-							{doHover ? (
+					{doHover ? (
+						<g transform="translate(0 0.148)">
+							<g clipPath="url(#bla-servicios-1)">
 								<path
-									className="n-services2"
-									d="M275.577,259.01H0V0H422.481L368.327,175.78c-15.52,50.375-52.133,83.23-92.75,83.23"
+									className="n-servicios-2-mobile"
+									d="M273.959,270.931H0V0H420L366.164,183.87c-15.428,52.694-51.826,87.061-92.206,87.061"
 								/>
-							) : (
+							</g>
+						</g>
+					) : (
+						<g transform="translate(0 46.148)">
+							<g className="m-servicios-2-mobile">
 								<path
-									className="n-services2"
+									className="n-servicios-2-mobile"
 									d="M136.979,95.931H0V0H210L183.082,65.1a49.888,49.888,0,0,1-46.1,30.826"
 								/>
-							)}
+							</g>
 						</g>
-					</g>
+					)}
 					<text
-						className="o-services2"
+						className="o-servicios-2-mobile"
 						transform="translate(210 272.186)">
 						<tspan x={-167.248} y={30}>
 							{'NUESTROS CLIENTES, '}
@@ -369,381 +366,106 @@ export const ServiciosMovil: React.FC = () => {
 						</tspan>
 					</text>
 					<text
-						className="p-services2"
+						className="p-servicios-2-mobile"
 						transform="translate(39 386.258)">
 						<tspan x={20.504} y={15}>
 							{'Resultados medición de'}
 						</tspan>
 						<tspan
-							className="q-services2"
+							className="q-servicios-2-mobile"
 							y={15}
 							xmlSpace="preserve">
 							{' experiencia y '}
 						</tspan>
-						<tspan className="q-services2" x={93.768} y={33}>
+						<tspan
+							className="q-servicios-2-mobile"
+							x={93.768}
+							y={33}>
 							{'lealtad (NPS) 2023:'}
 						</tspan>
 						<tspan y={33} />
 					</text>
-					<g
-						transform="translate(41 456.481)"
-						onClick={() => setOpen1Tag(!open1Tag)}>
-						{open1Tag ? (
-							<React.Fragment>
-								<defs>
-									<style>
-										{
-											'.a-services2-hover-30{fill:#fff;}.b-services2-hover-30{fill:#e40032;font-size:50px;font-family:Silka-SemiBold, Silka;}.d-services2-hover-30{font-family:Silka-SemiBold, Silka;font-weight:600;font-size:16px}.c-services2-hover-30{fill:#001f5f;font-size:16px;font-family:Silka-Regular, Silka;}.e-services2-hover-30{filter:url(#a-services2-hover-30);}'
-										}
-									</style>
-									<filter
-										id="a-services2-hover-30"
-										x={0}
-										y={0}
-										width={179}
-										height={141.388}
-										filterUnits="userSpaceOnUse">
-										<feOffset dy={3} />
-										<feGaussianBlur
-											stdDeviation={3}
-											result="b"
-										/>
-										<feFlood floodOpacity={0.4} />
-										<feComposite operator="in" in2="b" />
-										<feComposite in="SourceGraphic" />
-									</filter>
-								</defs>
-								<g>
-									<g
-										className="e-services2-hover-30"
-										transform="matrix(1, 0, 0, 1, -9, -6)">
-										<path
-											className="a-services2-hover-30"
-											d="M153.982,123.388H7.019A7.126,7.126,0,0,1,.057,115.3L15.439,6.278A7.076,7.076,0,0,1,22.4,0H138.123a7.075,7.075,0,0,1,6.958,6.251L160.94,115.272a7.126,7.126,0,0,1-6.958,8.116"
-											transform="translate(9 6)"
-										/>
-									</g>
-									<text
-										className="b-services2-hover-30"
-										transform="translate(24.95 9.544)">
-										<tspan x={8.825} y={47}>
-											{'71%'}
-										</tspan>
-									</text>
-									<text
-										className="c-services2-hover-30"
-										transform="translate(11.678 57.326)">
-										<tspan x={10.622} y={15}>
-											{'Experiencia de'}
-										</tspan>
-										<tspan
-											className="d-services2-hover-30"
-											y={15}
-										/>
-										<tspan
-											className="d-services2-hover-30"
-											x={32.95}
-											y={33}>
-											{'servicios '}
-										</tspan>
-										<tspan
-											className="d-services2-hover-30"
-											x={7.022}
-											y={51}>
-											{'administrativos'}
-										</tspan>
-									</text>
-								</g>
-							</React.Fragment>
-						) : (
-							<React.Fragment>
-								<g
-									className="x-services2"
-									transform="matrix(1, 0, 0, 1, -41, -456.48)">
-									<path
-										className="c-services2"
-										d="M153.982,123.388H7.019A7.126,7.126,0,0,1,.057,115.3L15.439,6.278A7.076,7.076,0,0,1,22.4,0H138.123a7.075,7.075,0,0,1,6.958,6.251L160.94,115.272a7.126,7.126,0,0,1-6.958,8.116"
-										transform="translate(41 456.48)"
-									/>
-								</g>
-								<text
-									className="r-services2"
-									transform="translate(17.535 35.008)">
-									<tspan x={18.711} y={47}>
-										{'71%'}
-									</tspan>
-								</text>
-							</React.Fragment>
-						)}
-					</g>
-					<g
-						transform="translate(41 619.869)"
-						onClick={() => setOpen3Tag(!open3Tag)}>
-						{open3Tag ? (
-							<React.Fragment>
-								<defs>
-									<style>
-										{
-											'.a-services2-hover-90{fill:#fff;}.b-services2-hover-90{fill:#e40032;font-size:50px;}.b-services2-hover-90,.c-services2-hover-90{font-family:Silka-SemiBold, Silka;font-weight:600;}.c-services2-hover-90{fill:#001f5f;font-size:32px;}.d-services2-hover-90{font-size:16px;}.e-services2-hover-90{filter:url(#a-services2-hover-90);}'
-										}
-									</style>
-									<filter
-										id="a-services2-hover-90"
-										x={0}
-										y={0}
-										width={179}
-										height={141.388}
-										filterUnits="userSpaceOnUse">
-										<feOffset dy={3} />
-										<feGaussianBlur
-											stdDeviation={3}
-											result="b"
-										/>
-										<feFlood floodOpacity={0.4} />
-										<feComposite operator="in" in2="b" />
-										<feComposite in="SourceGraphic" />
-									</filter>
-								</defs>
-								<g>
-									<g
-										className="e-services2-hover-90"
-										transform="matrix(1, 0, 0, 1, -9, -6)">
-										<path
-											className="a-services2-hover-90"
-											d="M153.982,123.388H7.019A7.126,7.126,0,0,1,.057,115.3L15.439,6.278A7.076,7.076,0,0,1,22.4,0H138.123a7.075,7.075,0,0,1,6.958,6.251L160.94,115.272a7.126,7.126,0,0,1-6.958,8.116"
-											transform="translate(9 6)"
-										/>
-									</g>
-									<text
-										className="b-services2-hover-90"
-										transform="translate(18.95 11.544)">
-										<tspan x={2.225} y={47}>
-											{'91.1%'}
-										</tspan>
-									</text>
-									<text
-										className="c-services2-hover-90"
-										transform="translate(11.678 57.326)">
-										<tspan x={37.654} y={30}>
-											{'NPS '}
-										</tspan>
-										<tspan
-											className="d-services2-hover-90"
-											x={7.022}
-											y={48}>
-											{'administrativos'}
-										</tspan>
-									</text>
-								</g>
-							</React.Fragment>
-						) : (
-							<React.Fragment>
-								<g
-									className="w-services2"
-									transform="matrix(1, 0, 0, 1, -41, -619.87)">
-									<path
-										className="c-services2"
-										d="M153.982,123.388H7.019A7.126,7.126,0,0,1,.057,115.3L15.439,6.278A7.076,7.076,0,0,1,22.4,0H138.123a7.075,7.075,0,0,1,6.958,6.251L160.94,115.272a7.126,7.126,0,0,1-6.958,8.116"
-										transform="translate(41 619.87)"
-									/>
-								</g>
-								<text
-									className="r-services2"
-									transform="translate(17.535 35.008)">
-									<tspan x={6.111} y={47}>
-										{'91.1%'}
-									</tspan>
-								</text>
-								<text
-									className="s-services2"
-									transform="translate(38.772 64.093)">
-									<tspan x={2.17} y={22}>
-										{'Experie'}
-									</tspan>
-								</text>
-							</React.Fragment>
-						)}
-					</g>
-					<g
-						transform="translate(218 511.481)"
-						onClick={() => setOpen2Tag(!open2Tag)}>
-						{open2Tag ? (
-							<React.Fragment>
-								<defs>
-									<style>
-										{
-											'.a-services2-hover-1{fill:#fff;}.b-services2-hover-1{fill:#e40032;font-size:50px;}.b-services2-hover-1,.d-services2-hover-1{font-family:Silka-SemiBold, Silka;font-weight:600;}.c-services2-hover-1{fill:#001f5f;font-size:16px;font-family:Silka-Regular, Silka;}.e-services2-hover-1{filter:url(#a-services2-hover-1);}'
-										}
-									</style>
-									<filter
-										id="a-services2-hover-1"
-										x={0}
-										y={0}
-										width={179}
-										height={141.388}
-										filterUnits="userSpaceOnUse">
-										<feOffset dy={3} />
-										<feGaussianBlur
-											stdDeviation={3}
-											result="b"
-										/>
-										<feFlood floodOpacity={0.4} />
-										<feComposite operator="in" in2="b" />
-										<feComposite in="SourceGraphic" />
-									</filter>
-								</defs>
-								<g>
-									<g
-										className="e-services2-hover-1"
-										transform="matrix(1, 0, 0, 1, -9, -6)">
-										<path
-											className="a-services2-hover-1"
-											d="M153.982,123.388H7.019A7.126,7.126,0,0,1,.057,115.3L15.439,6.278A7.076,7.076,0,0,1,22.4,0H138.123a7.075,7.075,0,0,1,6.958,6.251L160.94,115.272a7.126,7.126,0,0,1-6.958,8.116"
-											transform="translate(9 6)"
-										/>
-									</g>
-									<text
-										className="b-services2-hover-1"
-										transform="translate(24.95 15.805)">
-										<tspan x={4.325} y={47}>
-											{'83%'}
-										</tspan>
-									</text>
-									<text
-										className="c-services2-hover-1"
-										transform="translate(11.678 64.326)">
-										<tspan x={10.622} y={15}>
-											{'Experiencia de '}
-										</tspan>
-										<tspan
-											className="d-services2-hover-1"
-											x={1.31}
-											y={33}>
-											{'servicio médicos'}
-										</tspan>
-									</text>
-								</g>
-							</React.Fragment>
-						) : (
-							<React.Fragment>
-								<g
-									className="v-services2"
-									transform="matrix(1, 0, 0, 1, -218, -511.48)">
-									<path
-										className="c-services2"
-										d="M153.982,123.388H7.019A7.126,7.126,0,0,1,.057,115.3L15.439,6.278A7.076,7.076,0,0,1,22.4,0H138.123a7.075,7.075,0,0,1,6.958,6.251L160.94,115.272a7.126,7.126,0,0,1-6.958,8.116"
-										transform="translate(218 511.48)"
-									/>
-								</g>
-								<text
-									className="r-services2"
-									transform="translate(17.535 35.008)">
-									<tspan x={14.211} y={47}>
-										{'83%'}
-									</tspan>
-								</text>
-								<text
-									className="s-services2"
-									transform="translate(38.772 64.093)">
-									<tspan x={2.17} y={22}>
-										{'Experie'}
-									</tspan>
-								</text>
-							</React.Fragment>
-						)}
-					</g>
-					<g transform="translate(208 288)">
-						{/*  */}
-						{open4Tag ? (
-							<svg
-								viewBox="-2 0 170 141.388"
-								width={170}
-								onClick={() => setOpen4Tag(false)}>
-								<defs>
-									<style>
-										{
-											'.a-services2-hover{fill:#fff;}.b-services2-hover{fill:#e40032;font-size:50px;}.b-services2-hover,.c-services2-hover{font-family:Silka-SemiBold, Silka;font-weight:600;}.c-services2-hover{fill:#001f5f;font-size:22px;}.d-services2-hover{filter:url(#a-services2-hover);}'
-										}
-									</style>
-									<filter
-										id="a-services2-hover"
-										x={0}
-										y={0}
-										width={179}
-										height={141.388}
-										filterUnits="userSpaceOnUse">
-										<feOffset dy={3} />
-										<feGaussianBlur
-											stdDeviation={3}
-											result="b"
-										/>
-										<feFlood floodOpacity={0.4} />
-										<feComposite operator="in" in2="b" />
-										<feComposite in="SourceGraphic" />
-									</filter>
-								</defs>
-								<g transform="translate(9 6)">
-									<g
-										className="d-services2-hover"
-										transform="matrix(1, 0, 0, 1, -9, -6)">
-										<path
-											className="a-services2-hover"
-											d="M153.982,123.388H7.019A7.126,7.126,0,0,1,.057,115.3L15.439,6.278A7.076,7.076,0,0,1,22.4,0H138.123a7.075,7.075,0,0,1,6.958,6.251L160.94,115.272a7.126,7.126,0,0,1-6.958,8.116"
-											transform="translate(9 6)"
-										/>
-									</g>
-									<text
-										className="b-services2-hover"
-										transform="translate(24.95 21.544)">
-										<tspan x={4.5} y={47}>
-											{'85%'}
-										</tspan>
-									</text>
-									<text
-										className="c-services2-hover"
-										transform="translate(9.678 69.326)">
-										<tspan x={0.059} y={21}>
-											{'NPS médicos'}
-										</tspan>
-									</text>
-								</g>
-							</svg>
-						) : (
-							<React.Fragment>
-								<g
-									onClick={() => setOpen4Tag(true)}
-									style={{
-										transform: 'translate(12px, 397px)',
-									}}>
-									<g
-										className="u-services2"
-										transform="matrix(1, 0, 0, 1, -218, -681.56)">
-										<path
-											className="c-services2"
-											d="M153.982,123.388H7.019A7.126,7.126,0,0,1,.057,115.3L15.439,6.278A7.076,7.076,0,0,1,22.4,0H138.123a7.075,7.075,0,0,1,6.958,6.251L160.94,115.272a7.126,7.126,0,0,1-6.958,8.116"
-											transform="translate(218 681.56)"
-										/>
-									</g>
-									<text
-										className="r-services2"
-										transform="translate(17.535 35.008)">
-										<tspan x={14.386} y={47}>
-											{'85%'}
-										</tspan>
-									</text>
-								</g>
-							</React.Fragment>
-						)}
-					</g>
 					<text
-						className="t-services2"
-						transform="translate(41 835.481)">
+						className="r-servicios-2-mobile"
+						transform="translate(41 785.481)">
 						<tspan x={94.666} y={11}>
 							{'NPS: Net Promoter Score '}
 						</tspan>
 					</text>
+					<g transform="translate(-181.942 -3193.069)">
+						<g
+							transform="translate(246.844 3656.257)"
+							onClick={() => setOpen2Tag(!open2Tag)}>
+							<path
+								className="e-servicios-2-mobile"
+								d="M282.934,130.424H7.263c-4.374,0-7.755-4.748-7.2-10.116L15.976,7.852C16.436,3.364,19.522,0,23.179,0H266.524c3.646,0,6.726,3.345,7.2,7.817l16.411,112.456c.569,5.379-2.815,10.15-7.2,10.15"
+								transform="translate(290.197 130.424) rotate(180)"
+							/>
+							<path
+								className="s-servicios-2-mobile"
+								d="M275.752,124.318H7.078c-4.263,0-7.558-4.526-7.021-9.642L15.57,7.484C16.019,3.206,19.027,0,22.591,0H259.758c3.553,0,6.555,3.188,7.017,7.451l15.994,107.191c.555,5.127-2.744,9.675-7.017,9.675"
+								transform="translate(286.746 127.371) rotate(180)"
+							/>
+							{open2Tag && (
+								<g>
+									<path
+										className="t-servicios-2-mobile"
+										d="M275.752,124.318H7.078c-4.263,0-7.558-4.526-7.021-9.642L15.57,7.484C16.019,3.206,19.027,0,22.591,0H259.758c3.553,0,6.555,3.188,7.017,7.451l15.994,107.191c.555,5.127-2.744,9.675-7.017,9.675"
+										transform="translate(286.746 127.371) rotate(180)"
+									/>
+									<text
+										className="u-servicios-2-mobile"
+										transform="translate(22.17 38.804)">
+										<tspan x={17.327} y={47}>
+											{'NPS 86%'}
+										</tspan>
+									</text>
+								</g>
+							)}
+						</g>
+						<g
+							transform="translate(246.844 3828.8)"
+							onClick={() => setOpen4Tag(!open4Tag)}>
+							<path
+								className="e-servicios-2-mobile"
+								d="M282.935,130.424H7.263c-4.374,0-7.755-4.748-7.2-10.116L15.976,7.852C16.436,3.364,19.523,0,23.179,0H266.524c3.646,0,6.726,3.345,7.2,7.817l16.411,112.456c.569,5.379-2.815,10.15-7.2,10.15"
+								transform="translate(0)"
+							/>
+							<path
+								className="v-servicios-2-mobile"
+								d="M275.752,124.318H7.078c-4.263,0-7.558-4.526-7.021-9.642L15.57,7.484C16.019,3.206,19.027,0,22.591,0H259.758c3.553,0,6.555,3.188,7.017,7.451l15.994,107.191c.555,5.127-2.744,9.675-7.017,9.675"
+								transform="translate(3.683 3.053)"
+							/>
+							{open4Tag && (
+								<React.Fragment>
+									<path
+										className="t-servicios-2-mobile"
+										d="M275.752,124.318H7.078c-4.263,0-7.558-4.526-7.021-9.642L15.57,7.484C16.019,3.206,19.027,0,22.591,0H259.758c3.553,0,6.555,3.188,7.017,7.451l15.994,107.191c.555,5.127-2.744,9.675-7.017,9.675"
+										transform="translate(3.683 3.053)"
+									/>
+									<text
+										className="w-servicios-2-mobile"
+										transform="translate(55.651 33.683)">
+										<tspan x={7.05} y={22}>
+											{'SATISFACCIÓN'}
+										</tspan>
+										<tspan className="x-servicios-2-mobile">
+											<tspan x={48.167} y={62}>
+												{'89%'}
+											</tspan>
+										</tspan>
+									</text>
+								</React.Fragment>
+							)}
+						</g>
+					</g>
 				</svg>
-				<svg viewBox="0 0 417 896">
+
+				<svg
+					viewBox="0 0 417 896"
+					width="100%"
+					height="100vh"
+					preserveAspectRatio="none">
 					<defs>
 						<style>
 							{
@@ -1606,7 +1328,11 @@ export const ServiciosMovil: React.FC = () => {
 						transform="translate(105.711 448.982)"
 					/>
 				</svg>
-				<svg viewBox="1090 0 414 897.134">
+				<svg
+					viewBox="1090 0 414 897.134"
+					width="100%"
+					height="100vh"
+					preserveAspectRatio="none">
 					<defs>
 						<style>
 							{
@@ -1757,7 +1483,7 @@ export const ServiciosMovil: React.FC = () => {
 								transform="translate(0.358 -0.239)"
 							/>
 						</clipPath>
-						
+
 						<pattern
 							id="v-services2-hover-80"
 							preserveAspectRatio="xMidYMid slice"
@@ -1771,7 +1497,7 @@ export const ServiciosMovil: React.FC = () => {
 							/>
 						</pattern>
 						<clipPath id="b-5">
-						<path
+							<path
 								className="b-services2-hover-80"
 								d="M0,0,8.572,157.77c7.646,45.213,24.814,74.7,72.911,74.7h331.8V0Z"
 								transform="translate(0.358 -0.239)"
@@ -2065,44 +1791,32 @@ export const ServiciosMovil: React.FC = () => {
 						</text>
 					</g>
 					<g transform="translate(1090.452 1.928)">
-						{/* <g
-							className="u-services2-hover-80"
-							transform="translate(2.886 0.206)">
-							<path
-								className="a-services2-hover-80"
-								d="M0,0,8.647,160.424c7.712,45.974,25.031,75.96,73.549,75.96H416.9V0Z"
-								transform="translate(0.361 -0.243)"
-							/>
-						</g> */}
 						<foreignObject
 							style={{ clipPath: 'url(#b-5)' }}
 							x="0"
-						y="0"
-						width="412px"
-						height="230px">
-							<video
-								src="/images/video/capacitaciones.mp4"
-								autoPlay
-								muted
-								loop
-								width="100%"
-								height="100%"></video>
-						</foreignObject>
-					</g>
-					<g transform="translate(1092.417 1.928)">
-						{/* <g
-							className="v-services2-hover-80"
-							transform="translate(-0.459 0.206)"> */}
-
-						{/* <g className="w-services2-hover-80">
-								<rect
-									className="x-services2-hover-80"
-									width={413.284}
-									height={232.472}
-									transform="translate(0.358 -0.238)"
+							y="0"
+							width="412px"
+							height="230px">
+							<div className="relative w-full h-full">
+								<video
+									src="https://juegoseml.co/pdf/tinywow_CEDICONOFC.mp4"
+									autoPlay
+									muted={mute}
+									loop
+									width="100%"
+									height="100%"></video>
+								<img
+									src={
+										mute
+											? '/images/mute.png'
+											: '/images/Button.png'
+									}
+									className="absolute w-[10%] left-[8%] bottom-[10px]"
+									alt="Mute"
+									onClick={() => setMute(!mute)}
 								/>
-							</g> */}
-						{/* </g> */}
+							</div>
+						</foreignObject>
 					</g>
 				</svg>
 			</Carousel>

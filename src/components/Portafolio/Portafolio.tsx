@@ -299,18 +299,10 @@ const Portafolio: React.FC = () => {
 							width={1}
 							height={1}
 							patternTransform="translate(0 572.845) rotate(-180)"
-							viewBox={
-								items.length > 0 && items[0].viewbox_2
-									? items[0].viewbox_2
-									: '0 0 306 342'
-							}>
+							viewBox='0 0 306 342'>
 							<image
 								preserveAspectRatio="xMidYMid slice"
-								width={
-									items.length > 0 && items[0].width
-										? items[0].width
-										: 306
-								}
+								width={322}
 								height={342}
 								xlinkHref={
 									carouselPortfolio.length > 0
@@ -374,18 +366,10 @@ const Portafolio: React.FC = () => {
 							width={1}
 							height={1}
 							patternTransform="translate(0 860.314) rotate(-180)"
-							viewBox={
-								items.length > 0 && items[2].viewbox_2
-									? items[2].viewbox_2
-									: '0 0 306 342'
-							}>
+							viewBox='0 0 306 342'>
 							<image
 								preserveAspectRatio="xMidYMid slice"
-								width={
-									items.length > 0 && items[2].width
-										? items[2].width
-										: 306
-								}
+								width={322}
 								height={342}
 								xlinkHref={
 									carouselPortfolio.length > 0
@@ -418,13 +402,13 @@ const Portafolio: React.FC = () => {
 							height={1}
 							patternTransform="translate(0 1026.314) rotate(-180)"
 							viewBox={
-								items.length > 0 && items[1].viewbox
-									? items[1].viewbox
+								carouselPortfolio[page].viewbox
+									? carouselPortfolio[page].viewbox
 									: '101.554 6.532 241.811 269.735'
 							}>
 							<image
-								preserveAspectRatio="xMidYMid slice"
-								width={429.685}
+								preserveAspectRatio="none"
+								width={272.685}
 								height={286.423}
 								xlinkHref={
 									carouselPortfolio.length > 0

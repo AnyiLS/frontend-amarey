@@ -6,12 +6,13 @@ interface ISlide {
 }
 
 const Slide1: React.FC<ISlide> = ({ height, onClick }): JSX.Element => {
+  // `calc(100vh - ${document.getElementById('navbar__container')?.clientHeight}px)`
   return (
     <div>
       <svg
+        viewBox="0 82 1920 1080"
         width="100%"
-        height={'100%'}
-        viewBox="0 0 1920 1080"
+        height='100vh'
         preserveAspectRatio="none"
       >
         <defs>
@@ -30,7 +31,7 @@ const Slide1: React.FC<ISlide> = ({ height, onClick }): JSX.Element => {
         id="c-1"
         width={1}
         height={1}
-        viewBox="46.242 5.586 1579.565 1077.847"
+        viewBox="46.242 -64.414 1579.565 1077.847"
       >
         <image
           preserveAspectRatio="xMidYMid slice"

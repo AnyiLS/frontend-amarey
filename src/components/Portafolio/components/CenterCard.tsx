@@ -30,8 +30,8 @@ const CenterCard: React.FC<TCenterCard> = ({
 				onMouseOver={onOver}>
 				<rect
 					className="e-portfolio-3"
-					width={306.729}
-					height={567.799}
+					width={306.965}
+					height={570.448}
 					rx={35}
 					transform="translate(806.49 343.85)"
 					style={{ fill: !selected ? 'white' : '#001f5f' }}
