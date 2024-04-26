@@ -13,7 +13,7 @@ const Mantenimiento: React.FC<IMantenimiento> = ({ onClick }): JSX.Element => {
 				<defs>
 					<style>
 						{
-							'.a-mante{fill:none;}.b-mante{clip-path:url(#a-mante);}.c-mante{fill:#e7002a;}.d-mante,.k-mante{fill:#001f5f;}.e-mante,.f-mante{fill:#fff;}.f-mante{font-size:28px;font-family:Kiona-Bold, Kiona;font-weight:700;}.g-mante{fill:#182856;}.g-mante,.k-mante{font-size:24px;}.g-mante,.i-mante,.k-mante{font-family:Silka-SemiBold, Silka;font-weight:600;}.h-mante{font-family:Silka-Regular, Silka;font-weight:400;}.j-mante{fill:url(#d-mante);}.l-mante{filter:url(#b-mante);}'
+							".a-mante{fill:none;}.b-mante{clip-path:url(#a-mante);}.c-mante{fill:#e7002a;}.d-mante,.k-mante{fill:#001f5f;}.e-mante,.f-mante{fill:#fff;}.f-mante{font-size:28px;font-family:'Kiona-Bold';font-weight:700;}.g-mante{fill:#182856;}.g-mante,.k-mante{font-size:24px;}.g-mante,.i-mante,.k-mante{font-family:Silka-SemiBold, Silka;font-weight:600;}.h-mante{font-family:Silka-Regular, Silka;font-weight:400;}.j-mante{fill:url(#d-mante);}.l-mante{filter:url(#b-mante);}"
 						}
 					</style>
 					<clipPath id="a-mante">

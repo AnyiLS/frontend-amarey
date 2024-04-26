@@ -24,7 +24,7 @@ const Biomedico: React.FC = (): JSX.Element => {
 							<defs>
 								<style>
 									{
-										'..a-bio{fill:#e7002a;}.b-bio,.g-bio{fill:#001f5f;}.c-bio{fill:none;}.d-bio,.i-bio{fill:#fff;}.e-bio{fill:#182856;font-size:24px;font-family:Silka-Regular, Silka;}.f-bio{font-family:Silka-SemiBold, Silka;font-weight:600;}.g-bio{font-size:70px;}.g-bio,.i-bio{font-family:Kiona-Bold, Kiona;font-weight:700;}.h-bio{fill:url(#a-bio);}.i-bio{font-size:28px;}.j-bio{filter:url(#b-bio);}'
+										".a-bio{fill:#e7002a;}.b-bio,.g-bio{fill:#001f5f;}.c-bio{fill:none;}.d-bio,.i-bio{fill:#fff;}.e-bio{fill:#182856;font-size:24px;font-family:Silka-Regular, Silka;}.f-bio{font-family:Silka-SemiBold, Silka;font-weight:600;}.g-bio{font-size:70px;}.g-bio,.i-bio{font-family:'Kiona-Bold';font-weight:700;}.h-bio{fill:url(#a-bio);}.i-bio{font-size:28px;}.j-bio{filter:url(#b-bio);}"
 									}
 								</style>
 								<pattern

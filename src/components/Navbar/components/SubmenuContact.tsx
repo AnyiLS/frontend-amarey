@@ -10,7 +10,7 @@ const SubmenuContact: React.FC<{ ref: any }> = ({ ref }): JSX.Element => {
 			<defs>
 				<style>
 					{
-						'.a-submenu-t{fill:none;}.b-submenu-t{fill:#001F5F;}.c-submenu-t{clip-path:url(#a-submenu-t);}.d-submenu-t,.h-submenu-t,.i-submenu-t{fill:#fff;}.e-submenu-t{fill:#E6002A;}.f-submenu-t{fill:url(#b-submenu-t);}.g-submenu-t{opacity:0.8;mix-blend-mode:multiply;isolation:isolate;fill:url(#c-submenu-t);}.h-submenu-t{font-size:42px;font-family:"Kiona-Bold";font-weight:700;}.i-submenu-t{font-size:24px;font-family:Silka-Regular, Silka;}'
+						'.a-submenu-t{fill:none;}.b-submenu-t{fill:#001F5F;}.c-submenu-t{clip-path:url(#a-submenu-t);}.d-submenu-t,.h-submenu-t,.i-submenu-t{fill:#fff;}.e-submenu-t{fill:#E6002A;}.f-submenu-t{fill:url(#b-submenu-t);}.g-submenu-t{opacity:0.8;mix-blend-mode:multiply;isolation:isolate;fill:url(#c-submenu-t);}.h-submenu-t{font-size:42px;font-family:Kiona-Bold, Kiona;font-weight:700;}.i-submenu-t{font-size:24px;font-family:Silka-Regular, Silka;}'
 					}
 				</style>
 				<clipPath id="a-submenu-t">

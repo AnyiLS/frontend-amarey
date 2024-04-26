@@ -7,6 +7,7 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 	const { width } = useGeneral()
 
 	const [slide, setSlide] = React.useState<number>(0)
+	const [showVideo, setShowVideo] = React.useState<boolean>(false)
 
 	const handleLessSlide = () => setSlide(slide - 1 < 0 ? 3 : slide - 1)
 
@@ -20,7 +21,7 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 						<defs>
 							<style>
 								{
-									'.a-pentagrama,.f-pentagrama,.i-pentagrama,.l-pentagrama,.q-pentagrama{fill:#001f5f;}.b-pentagrama{fill:#e40032;}.c-pentagrama{clip-path:url(#a-pentagrama);}.d-pentagrama{fill:#e7002a;}.e-pentagrama{fill:#1c164e;}.f-pentagrama{font-size:40px;font-family:Silka-Bold, Silka;}.f-pentagrama,.q-pentagrama{font-weight:700;}.g-pentagrama{fill:#fff;}.h-pentagrama{fill:url(#d-pentagrama);}.i-pentagrama{font-size:24px;}.i-pentagrama,.l-pentagrama,.n-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.j-pentagrama,.p-pentagrama{opacity:0.5;}.k-pentagrama{fill:url(#g-pentagrama);}.l-pentagrama{font-size:18px;}.m-pentagrama{fill:url(#j-pentagrama);}.n-pentagrama{fill:#182856;font-size:12px;}.o-pentagrama,.p-pentagrama{fill:#c7c7cc;}.q-pentagrama{font-size:70px;font-family:Kiona-Bold, Kiona;}.r-pentagrama{clip-path:url(#o-pentagrama);}.s-pentagrama{fill:url(#p-pentagrama);}.t-pentagrama{filter:url(#m-pentagrama);}.u-pentagrama{filter:url(#k-pentagrama);}.v-pentagrama{filter:url(#h-pentagrama);}.w-pentagrama{filter:url(#e-pentagrama);}.x-pentagrama{filter:url(#b-pentagrama);}'
+									".a-pentagrama,.f-pentagrama,.i-pentagrama,.l-pentagrama,.q-pentagrama{fill:#001f5f;}.b-pentagrama{fill:#e40032;}.c-pentagrama{clip-path:url(#a-pentagrama);}.d-pentagrama{fill:#e7002a;}.e-pentagrama{fill:#1c164e;}.f-pentagrama{font-size:40px;font-family:Silka-Bold, Silka;}.f-pentagrama,.q-pentagrama{font-weight:700;}.g-pentagrama{fill:#fff;}.h-pentagrama{fill:url(#d-pentagrama);}.i-pentagrama{font-size:24px;}.i-pentagrama,.l-pentagrama,.n-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.j-pentagrama,.p-pentagrama{opacity:0.5;}.k-pentagrama{fill:url(#g-pentagrama);}.l-pentagrama{font-size:18px;}.m-pentagrama{fill:url(#j-pentagrama);}.n-pentagrama{fill:#182856;font-size:12px;}.o-pentagrama,.p-pentagrama{fill:#c7c7cc;}.q-pentagrama{font-size:70px;font-family:'Kiona-Bold';}.r-pentagrama{clip-path:url(#o-pentagrama);}.s-pentagrama{fill:url(#p-pentagrama);}.t-pentagrama{filter:url(#m-pentagrama);}.u-pentagrama{filter:url(#k-pentagrama);}.v-pentagrama{filter:url(#h-pentagrama);}.w-pentagrama{filter:url(#e-pentagrama);}.x-pentagrama{filter:url(#b-pentagrama);}"
 								}
 							</style>
 							<clipPath id="a-pentagrama">
@@ -148,12 +149,12 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 								<image
 									width={1280}
 									height={720}
-									xlinkHref="ComponentTMP_0-image4.jpg-pentagrama"
+									xlinkHref="/images/fondo-video.png"
 								/>
 							</pattern>
 							<style>
 								{
-									'.a-lin{fill:#e7002a;}.b-lin,.f-lin,.i-lin,.n-lin,.o-lin{fill:#001f5f;}.c-lin{fill:#e40032;}.d-lin{fill:#fff;}.e-lin{fill:url(#c-lin);}.f-lin{font-size:24px;}.f-lin,.i-lin,.k-lin{font-family:Silka-SemiBold, Silka;font-weight:600;}.g-lin,.m-lin{opacity:0.5;}.h-lin{fill:url(#f-lin);}.i-lin{font-size:18px;}.j-lin{fill:url(#i-lin);}.k-lin{fill:#182856;font-size:12px;}.l,.m-lin{fill:#c7c7cc;}.n-lin{font-size:40px;font-family:Silka-Bold, Silka;}.n-lin,.o-lin{font-weight:700;}.o-lin{font-size:70px;font-family:Kiona-Bold, Kiona;}.p-lin{filter:url(#l-lin);}.l-lin{fill:#C7C7CC;}.q-lin{filter:url(#j-lin);}.r-lin{filter:url(#g-lin);}.s-lin{filter:url(#d-lin);}.t-lin{filter:url(#a-lin);}'
+									".a-lin{fill:#e7002a;}.b-lin,.f-lin,.i-lin,.n-lin,.o-lin{fill:#001f5f;}.c-lin{fill:#e40032;}.d-lin{fill:#fff;}.e-lin{fill:url(#c-lin);}.f-lin{font-size:24px;}.f-lin,.i-lin,.k-lin{font-family:Silka-SemiBold, Silka;font-weight:600;}.g-lin,.m-lin{opacity:0.5;}.h-lin{fill:url(#f-lin);}.i-lin{font-size:18px;}.j-lin{fill:url(#i-lin);}.k-lin{fill:#182856;font-size:12px;}.l,.m-lin{fill:#c7c7cc;}.n-lin{font-size:40px;font-family:Silka-Bold, Silka;}.n-lin,.o-lin{font-weight:700;}.o-lin{font-size:70px;font-family:'Kiona-Bold';}.p-lin{filter:url(#l-lin);}.l-lin{fill:#C7C7CC;}.q-lin{filter:url(#j-lin);}.r-lin{filter:url(#g-lin);}.s-lin{filter:url(#d-lin);}.t-lin{filter:url(#a-lin);}"
 								}
 							</style>
 							<filter
@@ -392,22 +393,25 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 								width={1621.333}
 								height={912}
 								transform="translate(149.333 1078)"
+								onClick={() => setShowVideo(true)}
 							/>
-							<foreignObject
-								width={1621.333}
-								height={912}
-								y={0}
-								x={0}
-								transform="translate(149.333 1078)">
-								<video
-									src="/images/video/capacitaciones.mp4"
-									width="100%"
-									height="100%"
-									controls
-								/>
-							</foreignObject>
 						</g>
 					</svg>
+					<div className="fixed top-[0] left-[0] h-screen w-full bg-[#e6e6e650] z-[1]" style={{ display: showVideo ? 'flex' : 'none' }}>
+						<video
+							src="/images/video/Reconocimientos_1.mp4"
+							width="100%"
+							height="100%"
+							controls
+						/>
+						<span
+							className="absolute top-[5%] right-[5%] text-white text-[30px] text-center font-bold bg-[#00000050] w-[50px] h-[50px] rounded-[100%]"
+							onClick={() => {
+								setShowVideo(false)
+							}}>
+							X
+						</span>
+					</div>
 				</div>
 			) : (
 				<ReconocimientosMobile />

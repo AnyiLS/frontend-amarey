@@ -7,7 +7,7 @@ const DownAsta: React.FC<{onUnselected: () => void}> = ({ onUnselected }): JSX.E
       <defs>
 				<style>
 					{
-						'.a-subitem-3{fill:#001f5f;}.b-subitem-3{clip-path:url(#e-subitem-3);}.c-subitem-3{fill:none;stroke:#e40032;stroke-miterlimit:10;stroke-width:0.979px;}.d-subitem-3{fill:url(#f-subitem-3);}.e-subitem-3{fill:#fff;font-size:28px;font-family:"Kiona-Bold";font-weight:700;}.f-subitem-3{filter:url(#c-subitem-3);}.g-subitem-3{filter:url(#a-subitem-3);}'
+						'.a-subitem-3{fill:#001f5f;}.b-subitem-3{clip-path:url(#e-subitem-3);}.c-subitem-3{fill:none;stroke:#e40032;stroke-miterlimit:10;stroke-width:0.979px;}.d-subitem-3{fill:url(#f-subitem-3);}.e-subitem-3{fill:#fff;font-size:28px;font-family:Kiona-Bold, Kiona;font-weight:700;}.f-subitem-3{filter:url(#c-subitem-3);}.g-subitem-3{filter:url(#a-subitem-3);}'
 					}
 				</style>
 				<filter

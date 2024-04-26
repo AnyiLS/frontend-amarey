@@ -10,7 +10,7 @@ const SubmenuWay: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 			<defs>
 				<style>
 					{
-						'.a-way-submenu{fill:none;}.b-way-submenu{fill:#001f5f;}.c-way-submenu{clip-path:url(#a-way-submenu);}.d-way-submenu,.h-way-submenu,.n-way-submenu{fill:#fff;}.e-way-submenu{fill:#e7002a;}.f-way-submenu{fill:url(#b-way-submenu);}.g-way-submenu{opacity:0.8;}.g-way-submenu,.o-way-submenu{mix-blend-mode:multiply;isolation:isolate;}.g-way-submenu,.m-way-submenu{fill:url(#c-way-submenu);}.h-way-submenu{font-size:24px;}.h-way-submenu,.n-way-submenu{font-family:"Kiona-Bold";font-weight:700;}.i-way-submenu{fill:url(#d-way-submenu);}.j-way-submenu{fill:url(#f-way-submenu);}.k-way-submenu{fill:url(#h-way-submenu);}.l-way-submenu{fill:url(#j-way-submenu);}.m-way-submenu{opacity:0.75;}.n-way-submenu{font-size:42px;}.o-way-submenu{filter:url(#n-way-submenu);}.p-way-submenu{filter:url(#k-way-submenu);}'
+						'.a-way-submenu{fill:none;}.b-way-submenu{fill:#001f5f;}.c-way-submenu{clip-path:url(#a-way-submenu);}.d-way-submenu,.h-way-submenu,.n-way-submenu{fill:#fff;}.e-way-submenu{fill:#e7002a;}.f-way-submenu{fill:url(#b-way-submenu);}.g-way-submenu{opacity:0.8;}.g-way-submenu,.o-way-submenu{mix-blend-mode:multiply;isolation:isolate;}.g-way-submenu,.m-way-submenu{fill:url(#c-way-submenu);}.h-way-submenu{font-size:24px;}.h-way-submenu,.n-way-submenu{font-family:Kiona-Bold, Kiona;font-weight:700;}.i-way-submenu{fill:url(#d-way-submenu);}.j-way-submenu{fill:url(#f-way-submenu);}.k-way-submenu{fill:url(#h-way-submenu);}.l-way-submenu{fill:url(#j-way-submenu);}.m-way-submenu{opacity:0.75;}.n-way-submenu{font-size:42px;}.o-way-submenu{filter:url(#n-way-submenu);}.p-way-submenu{filter:url(#k-way-submenu);}'
 					}
 				</style>
 				<clipPath id="a-way-submenu">

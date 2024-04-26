@@ -10,7 +10,7 @@ const SubmenuEtic: React.FC<{ref: any}> = ({ ref }) => {
 			<defs>
 				<style>
 					{
-						'.a-submenu-o{fill:none;}.b-submenu-o{fill:#001f5f;}.c-submenu-o{clip-path:url(#a-submenu-o);}.d-submenu-o,.h-submenu-o,.i-submenu-o{fill:#fff;}.e-submenu-o{fill:#e7002a;}.f-submenu-o{fill:url(#b-submenu-o);}.g-submenu-o{opacity:0.8;mix-blend-mode:multiply;isolation:isolate;fill:url(#c-submenu-o);}.h-submenu-o{font-size:42px;font-family:"Kiona-Bold";font-weight:700;}.i-submenu-o{font-size:40px;font-family:Silka-Regular, Silka;}.j-submenu-o{font-family:Silka-SemiBold, Silka;font-weight:600;}'
+						'.a-submenu-o{fill:none;}.b-submenu-o{fill:#001f5f;}.c-submenu-o{clip-path:url(#a-submenu-o);}.d-submenu-o,.h-submenu-o,.i-submenu-o{fill:#fff;}.e-submenu-o{fill:#e7002a;}.f-submenu-o{fill:url(#b-submenu-o);}.g-submenu-o{opacity:0.8;mix-blend-mode:multiply;isolation:isolate;fill:url(#c-submenu-o);}.h-submenu-o{font-size:42px;font-family:Kiona-Bold, Kiona;font-weight:700;}.i-submenu-o{font-size:40px;font-family:Silka-Regular, Silka;}.j-submenu-o{font-family:Silka-SemiBold, Silka;font-weight:600;}'
 					}
 				</style>
 				<clipPath id="a-submenu-o">

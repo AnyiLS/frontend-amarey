@@ -9,7 +9,7 @@ const Genetica: React.FC<{ onChangeClick: () => void }> = ({
 				<defs>
 					<style>
 						{
-							'.a-genetica,.m-genetica{fill:#fff;}.b-genetica{fill:url(#a-genetica);}.c-genetica{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-genetica);}.d-genetica{clip-path:url(#c-genetica);}.e-genetica,.h-genetica{fill:#e40032;}.f-genetica{fill:#e7002a;}.g-genetica{clip-path:url(#d-genetica);}.h-genetica,.l-genetica,.m-genetica{font-size:24px;}.h-genetica,.m-genetica{font-family:Silka-SemiBold, Silka;font-weight:600;}.i-genetica{opacity:0.7;}.j-genetica,.k-genetica{fill:#001f5f;}.k-genetica{font-size:55px;font-family:"Kiona-Bold";font-weight:700;}.l-genetica{fill:#182856;font-family:Silka-Regular, Silka;}'
+							'.a-genetica,.m-genetica{fill:#fff;}.b-genetica{fill:url(#a-genetica);}.c-genetica{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-genetica);}.d-genetica{clip-path:url(#c-genetica);}.e-genetica,.h-genetica{fill:#e40032;}.f-genetica{fill:#e7002a;}.g-genetica{clip-path:url(#d-genetica);}.h-genetica,.l-genetica,.m-genetica{font-size:24px;}.h-genetica,.m-genetica{font-family:Silka-SemiBold, Silka;font-weight:600;}.i-genetica{opacity:0.7;}.j-genetica,.k-genetica{fill:#001f5f;}.k-genetica{font-size:55px;font-family:Kiona-Bold, Kiona;font-weight:700;}.l-genetica{fill:#182856;font-family:Silka-Regular, Silka;}'
 						}
 					</style>
 					<pattern

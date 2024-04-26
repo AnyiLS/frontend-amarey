@@ -194,7 +194,7 @@ const Portafolio: React.FC = () => {
 						<defs>
 							<style>
 								{
-									'.a-button-32{fill:#fff;}.b-button-32,.c-button-32{fill:#001f5f;}.b-button-32{font-size:28px;font-family:"Kiona-Bold";font-weight:700;}.d-button-32{filter:url(#a-button-32);}'
+									'.a-button-32{fill:#fff;}.b-button-32,.c-button-32{fill:#001f5f;}.b-button-32{font-size:28px;font-family:Kiona-Bold, Kiona;font-weight:700;}.d-button-32{filter:url(#a-button-32);}'
 								}
 							</style>
 							<filter

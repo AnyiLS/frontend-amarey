@@ -10,7 +10,7 @@ const SubmenuSolution: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 			<defs>
 				<style>
 					{
-						'.a-solution{fill:none;}.b-solution{fill:#001f5f;}.c-solution{clip-path:url(#a-solution);}.d-solution,.h-solution,.k-solution{fill:#fff;}.e-solution{fill:#e7002a;}.f-solution{fill:url(#b-solution);}.g-solution,.m-solution{opacity:0.8;}.g-solution,.j-solution,.m-solution{fill:url(#e-solution);}.h-solution{font-size:42px;}.h-solution,.k-solution{font-family:"Kiona-Bold";font-weight:700;}.i-solution{fill:url(#h-solution);}.j-solution{opacity:0.79;}.j-solution,.m-solution,.o-solution{mix-blend-mode:multiply;isolation:isolate;}.k-solution{font-size:24px;}.l-solution{fill:url(#j-solution);}.n-solution{fill:url(#l-solution);}.o-solution{filter:url(#f-solution);}.p-solution{filter:url(#c-solution);}'
+						'.a-solution{fill:none;}.b-solution{fill:#001f5f;}.c-solution{clip-path:url(#a-solution);}.d-solution,.h-solution,.k-solution{fill:#fff;}.e-solution{fill:#e7002a;}.f-solution{fill:url(#b-solution);}.g-solution,.m-solution{opacity:0.8;}.g-solution,.j-solution,.m-solution{fill:url(#e-solution);}.h-solution{font-size:42px;}.h-solution,.k-solution{font-family:Kiona-Bold, Kiona;font-weight:700;}.i-solution{fill:url(#h-solution);}.j-solution{opacity:0.79;}.j-solution,.m-solution,.o-solution{mix-blend-mode:multiply;isolation:isolate;}.k-solution{font-size:24px;}.l-solution{fill:url(#j-solution);}.n-solution{fill:url(#l-solution);}.o-solution{filter:url(#f-solution);}.p-solution{filter:url(#c-solution);}'
 					}
 				</style>
 				<clipPath id="a-solution">

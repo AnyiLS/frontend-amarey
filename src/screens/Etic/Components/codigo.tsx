@@ -11,7 +11,7 @@ const Codigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 				<defs>
 					<style>
 						{
-							'.h-codigo:hover {fill: #e40032;} .code:hover {fill: #fff} .code:hover .h-codigo {fill:#e40032} .a-codigo{fill:none;}.b-codigo{fill:#e40032;}.c-codigo{fill:url(#a-codigo);}.d-codigo,.h-codigo,.i-codigo{fill:#fff;}.e-codigo,.g-codigo,.m-codigo,.n-codigo{fill:#001f5f;}.e-codigo{font-size:55px;}.e-codigo,.h-codigo,.m-codigo{font-family:"Kiona-Bold";font-weight:700;}.f-codigo{fill:#182856;font-family:Silka-Regular, Silka;}.f-codigo,.h-codigo,.i-codigo,.n-codigo{font-size:24px;}.i-codigo,.n-codigo{font-family:Silka-SemiBold, Silka;font-weight:600;}.j-codigo{clip-path:url(#f-codigo);}.k-codigo{fill:#e7002a;}.l-codigo{fill:rgba(67,67,67,0.09);}.m-codigo{font-size:42px;}.o-codigo{filter:url(#g-codigo);}.p-codigo{filter:url(#d-codigo);}.q-codigo{filter:url(#b-codigo);}'
+							'.h-codigo:hover {fill: #e40032;} .code:hover {fill: #fff} .code:hover .h-codigo {fill:#e40032} .a-codigo{fill:none;}.b-codigo{fill:#e40032;}.c-codigo{fill:url(#a-codigo);}.d-codigo,.h-codigo,.i-codigo{fill:#fff;}.e-codigo,.g-codigo,.m-codigo,.n-codigo{fill:#001f5f;}.e-codigo{font-size:55px;}.e-codigo,.h-codigo,.m-codigo{font-family:Kiona-Bold, Kiona;font-weight:700;}.f-codigo{fill:#182856;font-family:Silka-Regular, Silka;}.f-codigo,.h-codigo,.i-codigo,.n-codigo{font-size:24px;}.i-codigo,.n-codigo{font-family:Silka-SemiBold, Silka;font-weight:600;}.j-codigo{clip-path:url(#f-codigo);}.k-codigo{fill:#e7002a;}.l-codigo{fill:rgba(67,67,67,0.09);}.m-codigo{font-size:42px;}.o-codigo{filter:url(#g-codigo);}.p-codigo{filter:url(#d-codigo);}.q-codigo{filter:url(#b-codigo);}'
 						}
 					</style>
 					<pattern

@@ -27,7 +27,7 @@ export const Slider4: React.FC<ISlider> = ({ height, index }) => {
 			<defs>
 				<style>
 					{
-						'.hover:hover .y-item-1820 .c-item-1820, .hover:hover .z-item-1820 .c-item-1820, .hover:hover .w-item-1820 .c-item-1820, .hover:hover .x-item-1820 .c-item-1820, .hover:hover .u-item-1820 .c-item-1820, .hover:hover .v-item-1820 .c-item-1820{fill:#001f5f;}.hover:hover .m-item-1820, .hover:hover .p-item-1820, .hover:hover .o-item-1820{fill: #fff}.a-item-1820,.e-item-1820,.f-item-1820{fill:none;}.b-item-1820,.c-item-1820{fill:#fff;}.b-item-1820{stroke:#707070;}.d-item-1820{clip-path:url(#c-item-1820);}.e-item-1820{stroke:#001f5f;}.e-item-1820,.f-item-1820{stroke-miterlimit:10;stroke-width:3.044px;}.f-item-1820{stroke:#e7002a;}.g-item-1820,.p-item-1820,.q-item-1820{fill:#001f5f;}.g-item-1820{font-size:65px;font-family:Kiona-Bold, Kiona;font-weight:700;}.h-item-1820{clip-path:url(#d-item-1820);}.i-item-1820{fill:#e40032;}.j-item-1820{mix-blend-mode:multiply;isolation:isolate;}.k-item-1820{fill:#eeebeb;}.l-item-1820{fill:#d6d6d6;}.m-item-1820,.o-item-1820{fill:#182856;}.m-item-1820,.o-item-1820,.p-item-1820{font-size:24px;}.m-item-1820,.p-item-1820{font-family:Silka-Regular, Silka;}.n-item-1820,.o-item-1820{font-family:Silka-SemiBold, Silka;font-weight:600;}.r-item-1820{clip-path:url(#s-item-1820);}.s-item-1820{fill:url(#t-item-1820);}.t-item-1820{filter:url(#q-item-1820);}.u-item-1820{filter:url(#o-item-1820);}.v-item-1820{filter:url(#m-item-1820);}.w-item-1820{filter:url(#k-item-1820);}.x-item-1820{filter:url(#i-item-1820);}.y-item-1820{filter:url(#g-item-1820);}.z-item-1820{filter:url(#e-item-1820);}.aa-item-1820{filter:url(#a-item-1820);}'
+						'.hover:hover .y-item-1820 .c-item-1820, .hover:hover .z-item-1820 .c-item-1820, .hover:hover .w-item-1820 .c-item-1820, .hover:hover .x-item-1820 .c-item-1820, .hover:hover .u-item-1820 .c-item-1820, .hover:hover .v-item-1820 .c-item-1820{fill:#001f5f;}.hover:hover .m-item-1820, .hover:hover .p-item-1820, .hover:hover .o-item-1820{fill: #fff}.a-item-1820,.e-item-1820,.f-item-1820{fill:none;}.b-item-1820,.c-item-1820{fill:#fff;}.b-item-1820{stroke:#707070;}.d-item-1820{clip-path:url(#c-item-1820);}.e-item-1820{stroke:#001f5f;}.e-item-1820,.f-item-1820{stroke-miterlimit:10;stroke-width:3.044px;}.f-item-1820{stroke:#e7002a;}.g-item-1820,.p-item-1820,.q-item-1820{fill:#001f5f;}.g-item-1820{font-size:65px;font-family:Kiona-Bold;font-weight:700;}.h-item-1820{clip-path:url(#d-item-1820);}.i-item-1820{fill:#e40032;}.j-item-1820{mix-blend-mode:multiply;isolation:isolate;}.k-item-1820{fill:#eeebeb;}.l-item-1820{fill:#d6d6d6;}.m-item-1820,.o-item-1820{fill:#182856;}.m-item-1820,.o-item-1820,.p-item-1820{font-size:24px;}.m-item-1820,.p-item-1820{font-family:Silka-Regular, Silka;}.n-item-1820,.o-item-1820{font-family:Silka-SemiBold, Silka;font-weight:600;}.r-item-1820{clip-path:url(#s-item-1820);}.s-item-1820{fill:url(#t-item-1820);}.t-item-1820{filter:url(#q-item-1820);}.u-item-1820{filter:url(#o-item-1820);}.v-item-1820{filter:url(#m-item-1820);}.w-item-1820{filter:url(#k-item-1820);}.x-item-1820{filter:url(#i-item-1820);}.y-item-1820{filter:url(#g-item-1820);}.z-item-1820{filter:url(#e-item-1820);}.aa-item-1820{filter:url(#a-item-1820);}'
 					}
 				</style>
 				<filter
@@ -459,7 +459,9 @@ export const Slider4: React.FC<ISlider> = ({ height, index }) => {
 								src="https://juegoseml.co/pdf/tinywow_CEDICONOFC.mp4"
 								autoPlay
 								muted={!mute}
-								loop></video>
+								loop
+								width='100%'
+								height='100%'></video>
 							<div>
 								<img
 									src={mute ? Mute : Mute2}

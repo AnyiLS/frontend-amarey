@@ -19,7 +19,7 @@ const Responsabilidad: React.FC = (): JSX.Element => {
 				<defs>
 					<style>
 						{
-							'.a-res{fill:#e7002a;}.b-res,.f-res{fill:#001f5f;}.c-res{fill:url(#a-res);}.d-res{fill:#182856;font-size:24px;font-family:Silka-Regular, Silka;}.e-res{font-family:Silka-SemiBold, Silka;font-weight:600;}.f-res{font-size:70px;font-family:Kiona-Bold, Kiona;font-weight:700;}'
+							'.a-res{fill:#e7002a;}.b-res,.f-res{fill:#001f5f;}.c-res{fill:url(#a-res);}.d-res{fill:#182856;font-size:24px;font-family:Silka-Regular, Silka;}.e-res{font-family:Silka-SemiBold, Silka;font-weight:600;}.f-res{font-size:70px;font-family:Kiona-Bold;font-weight:700;}'
 						}
 					</style>
 					<pattern
@@ -129,7 +129,7 @@ const Responsabilidad: React.FC = (): JSX.Element => {
 				<defs>
 					<style>
 						{
-							'.boton-segundo:hover .i-respo {fill:#e7002a} .boton-segundo:hover .h-respo {fill:#fff} .a-respo{fill:none;}.b-respo{clip-path:url(#a-respo);}.c-respo{fill:#e7002a;}.d-respo,.p-respo{fill:#001f5f;}.e-respo{fill:url(#d-respo);}.f-respo,.i-respo,.j-respo,.n-respo{fill:#fff;}.f-respo{font-size:70px;font-family:Silka-SemiBold, Silka;font-weight:600;}.g-respo{font-size:32px;font-weight:400;}.g-respo,.l-respo,.n-respo,.p-respo{font-family:Silka-Regular, Silka;}.h-respo{fill:#e40032;}.i-respo{font-size:28px;font-family:Kiona-Bold, Kiona;font-weight:700;}.k-respo{fill:url(#k-respo);}.l-respo{fill:#182856;font-size:20px;}.m-respo{fill:url(#p-respo);}.n-respo,.p-respo{font-size:24px;}.o-respo{fill:url(#u-respo);}.q-respo{filter:url(#v-respo);}.r-respo{filter:url(#s-respo);}.s-respo{filter:url(#q-respo);}.t-respo{filter:url(#n-respo);}.u-respo{filter:url(#l-respo);}.v-respo{filter:url(#i-respo);}.w-respo{filter:url(#g-respo);}.x-respo{filter:url(#e-respo);}.y-respo{filter:url(#b-respo);}'
+							'.boton-segundo:hover .i-respo {fill:#e7002a} .boton-segundo:hover .h-respo {fill:#fff} .a-respo{fill:none;}.b-respo{clip-path:url(#a-respo);}.c-respo{fill:#e7002a;}.d-respo,.p-respo{fill:#001f5f;}.e-respo{fill:url(#d-respo);}.f-respo,.i-respo,.j-respo,.n-respo{fill:#fff;}.f-respo{font-size:70px;font-family:Silka-SemiBold, Silka;font-weight:600;}.g-respo{font-size:32px;font-weight:400;}.g-respo,.l-respo,.n-respo,.p-respo{font-family:Silka-Regular, Silka;}.h-respo{fill:#e40032;}.i-respo{font-size:28px;font-family:Kiona-Bold;font-weight:700;}.k-respo{fill:url(#k-respo);}.l-respo{fill:#182856;font-size:20px;}.m-respo{fill:url(#p-respo);}.n-respo,.p-respo{font-size:24px;}.o-respo{fill:url(#u-respo);}.q-respo{filter:url(#v-respo);}.r-respo{filter:url(#s-respo);}.s-respo{filter:url(#q-respo);}.t-respo{filter:url(#n-respo);}.u-respo{filter:url(#l-respo);}.v-respo{filter:url(#i-respo);}.w-respo{filter:url(#g-respo);}.x-respo{filter:url(#e-respo);}.y-respo{filter:url(#b-respo);}'
 						}
 					</style>
 					<clipPath id="a-respo">

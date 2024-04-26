@@ -9,7 +9,7 @@ const SubmenuActualidad: React.FC<{ ref: any }> = ({ ref }) => {
 			<defs>
 				<style>
 					{
-						'.a-submenu-p{fill:none;}.b-submenu-p{fill:#001f5f;}.c-submenu-p{clip-path:url(#a-submenu-p);}.d-submenu-p,.h-submenu-p,.k-submenu-p{fill:#fff;}.e-submenu-p{fill:#e7002a;}.f-submenu-p{fill:url(#b-submenu-p);}.g-submenu-p,.j-submenu-p{opacity:0.8;fill:url(#e-submenu-p);}.h-submenu-p{font-size:42px;}.h-submenu-p,.k-submenu-p{font-family:"Kiona-Bold";font-weight:700;}.i-submenu-p{fill:url(#h-submenu-p);}.j-submenu-p,.m-submenu-p{mix-blend-mode:multiply;isolation:isolate;}.k-submenu-p{font-size:24px;}.l-submenu-p{fill:url(#j-submenu-p);}.m-submenu-p{filter:url(#f-submenu-p);}.n-submenu-p{filter:url(#c-submenu-p);}'
+						'.a-submenu-p{fill:none;}.b-submenu-p{fill:#001f5f;}.c-submenu-p{clip-path:url(#a-submenu-p);}.d-submenu-p,.h-submenu-p,.k-submenu-p{fill:#fff;}.e-submenu-p{fill:#e7002a;}.f-submenu-p{fill:url(#b-submenu-p);}.g-submenu-p,.j-submenu-p{opacity:0.8;fill:url(#e-submenu-p);}.h-submenu-p{font-size:42px;}.h-submenu-p,.k-submenu-p{font-family:Kiona-Bold, Kiona;font-weight:700;}.i-submenu-p{fill:url(#h-submenu-p);}.j-submenu-p,.m-submenu-p{mix-blend-mode:multiply;isolation:isolate;}.k-submenu-p{font-size:24px;}.l-submenu-p{fill:url(#j-submenu-p);}.m-submenu-p{filter:url(#f-submenu-p);}.n-submenu-p{filter:url(#c-submenu-p);}'
 					}
 				</style>
 				<clipPath id="a-submenu-p">

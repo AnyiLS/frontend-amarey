@@ -9,7 +9,7 @@ const Gemonica: React.FC<{ onChangeClick: () => void }> = ({
 				<defs>
 					<style>
 						{
-							'.a-genomica,.f-genomica{fill:#fff;}.b-genomica{fill:url(#a-genomica);}.c-genomica{clip-path:url(#b-genomica);}.d-genomica{fill:#e40032;}.e-genomica{fill:#e7002a;}.f-genomica,.j-genomica{font-size:24px;}.f-genomica{font-family:Silka-SemiBold, Silka;font-weight:600;}.g-genomica{opacity:0.8;mix-blend-mode:multiply;isolation:isolate;fill:url(#c-genomica);}.h-genomica{clip-path:url(#d-genomica);}.i-genomica,.l-genomica{fill:#001f5f;}.i-genomica{font-size:55px;font-family:"Kiona-Bold";font-weight:700;}.j-genomica{fill:#182856;font-family:Silka-Regular, Silka;}.k-genomica{opacity:0.7;}'
+							'.a-genomica,.f-genomica{fill:#fff;}.b-genomica{fill:url(#a-genomica);}.c-genomica{clip-path:url(#b-genomica);}.d-genomica{fill:#e40032;}.e-genomica{fill:#e7002a;}.f-genomica,.j-genomica{font-size:24px;}.f-genomica{font-family:Silka-SemiBold, Silka;font-weight:600;}.g-genomica{opacity:0.8;mix-blend-mode:multiply;isolation:isolate;fill:url(#c-genomica);}.h-genomica{clip-path:url(#d-genomica);}.i-genomica,.l-genomica{fill:#001f5f;}.i-genomica{font-size:55px;font-family:Kiona-Bold, Kiona;font-weight:700;}.j-genomica{fill:#182856;font-family:Silka-Regular, Silka;}.k-genomica{opacity:0.7;}'
 						}
 					</style>
 					<pattern

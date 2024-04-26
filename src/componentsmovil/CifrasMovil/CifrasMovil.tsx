@@ -23,7 +23,7 @@ export const CifrasMovil: React.FC = () => {
 				<defs>
 					<style>
 						{
-							'.a-cifras-impacto,.f-cifras-impacto,.g-cifras-impacto,.h-cifras-impacto{fill:none;}.b-cifras-impacto{fill:#e40032;}.c-cifras-impacto,.l-cifras-impacto{fill:#001f5f;}.d-cifras-impacto{opacity:0.52;}.e-cifras-impacto{clip-path:url(#a-cifras-impacto);}.f-cifras-impacto{stroke:#fff;}.f-cifras-impacto,.g-cifras-impacto,.h-cifras-impacto{stroke-miterlimit:10;stroke-width:1.074px;}.g-cifras-impacto{stroke:#db032e;}.h-cifras-impacto{stroke:#e40032;}.i-cifras-impacto,.j-cifras-impacto{fill:#fff;}.i-cifras-impacto{font-size:45px;}.i-cifras-impacto,.l-cifras-impacto{font-family:Kiona-Bold, Kiona;font-weight:700;}.k-cifras-impacto{fill:url(#d-cifras-impacto);}.l-cifras-impacto{font-size:25px;}.m-cifras-impacto{font-size:11px;}.ac-cifras-impacto,.n-cifras-impacto,.p-cifras-impacto,.w-cifras-impacto,.z-cifras-impacto{isolation:isolate;}.o-cifras-impacto{clip-path:url(#e-cifras-impacto);}.p-cifras-impacto,.t-cifras-impacto{opacity:0.7;fill:url(#f-cifras-impacto);}.ac-cifras-impacto,.p-cifras-impacto,.w-cifras-impacto,.z-cifras-impacto{mix-blend-mode:multiply;}.q-cifras-impacto{opacity:0.8;}.r-cifras-impacto{clip-path:url(#i-cifras-impacto);}.s-cifras-impacto{fill:url(#j-cifras-impacto);}.u-cifras-impacto{fill:url(#s-cifras-impacto);}.v-cifras-impacto{fill:url(#aa-cifras-impacto);}.w-cifras-impacto{filter:url(#ae-cifras-impacto);}.x-cifras-impacto{filter:url(#ab-cifras-impacto);}.y-cifras-impacto{filter:url(#y-cifras-impacto);}.z-cifras-impacto{filter:url(#w-cifras-impacto);}.aa-cifras-impacto{filter:url(#t-cifras-impacto);}.ab-cifras-impacto{filter:url(#p-cifras-impacto);}.ac-cifras-impacto{filter:url(#n-cifras-impacto);}.ad-cifras-impacto{filter:url(#k-cifras-impacto);}.ae-cifras-impacto{filter:url(#g-cifras-impacto);}.af-cifras-impacto{filter:url(#b-cifras-impacto);}'
+							".a-cifras-impacto,.f-cifras-impacto,.g-cifras-impacto,.h-cifras-impacto{fill:none;}.b-cifras-impacto{fill:#e40032;}.c-cifras-impacto,.l-cifras-impacto{fill:#001f5f;}.d-cifras-impacto{opacity:0.52;}.e-cifras-impacto{clip-path:url(#a-cifras-impacto);}.f-cifras-impacto{stroke:#fff;}.f-cifras-impacto,.g-cifras-impacto,.h-cifras-impacto{stroke-miterlimit:10;stroke-width:1.074px;}.g-cifras-impacto{stroke:#db032e;}.h-cifras-impacto{stroke:#e40032;}.i-cifras-impacto,.j-cifras-impacto{fill:#fff;}.i-cifras-impacto{font-size:45px;}.i-cifras-impacto,.l-cifras-impacto{font-family:Kiona-Bold;font-weight:700;}.k-cifras-impacto{fill:url(#d-cifras-impacto);}.l-cifras-impacto{font-size:25px;}.m-cifras-impacto{font-size:11px;}.ac-cifras-impacto,.n-cifras-impacto,.p-cifras-impacto,.w-cifras-impacto,.z-cifras-impacto{isolation:isolate;}.o-cifras-impacto{clip-path:url(#e-cifras-impacto);}.p-cifras-impacto,.t-cifras-impacto{opacity:0.7;fill:url(#f-cifras-impacto);}.ac-cifras-impacto,.p-cifras-impacto,.w-cifras-impacto,.z-cifras-impacto{mix-blend-mode:multiply;}.q-cifras-impacto{opacity:0.8;}.r-cifras-impacto{clip-path:url(#i-cifras-impacto);}.s-cifras-impacto{fill:url(#j-cifras-impacto);}.u-cifras-impacto{fill:url(#s-cifras-impacto);}.v-cifras-impacto{fill:url(#aa-cifras-impacto);}.w-cifras-impacto{filter:url(#ae-cifras-impacto);}.x-cifras-impacto{filter:url(#ab-cifras-impacto);}.y-cifras-impacto{filter:url(#y-cifras-impacto);}.z-cifras-impacto{filter:url(#w-cifras-impacto);}.aa-cifras-impacto{filter:url(#t-cifras-impacto);}.ab-cifras-impacto{filter:url(#p-cifras-impacto);}.ac-cifras-impacto{filter:url(#n-cifras-impacto);}.ad-cifras-impacto{filter:url(#k-cifras-impacto);}.ae-cifras-impacto{filter:url(#g-cifras-impacto);}.af-cifras-impacto{filter:url(#b-cifras-impacto);}"
 						}
 					</style>
 					<clipPath id="a-cifras-impacto">
@@ -636,9 +636,10 @@ export const CifrasMovil: React.FC = () => {
 					</svg>
 					<video
 						src={video[numberVideo].url}
-						className="object-contain h-[82%]"
+						className="object-cover h-[82%] w-full"
 						autoPlay
-						muted={mute}></video>
+						muted={mute}
+						controls></video>
 					<img
 						src={mute ? '/images/mute.png' : '/images/Button.png'}
 						className="absolute w-[10%] left-[2%] bottom-[10px]"

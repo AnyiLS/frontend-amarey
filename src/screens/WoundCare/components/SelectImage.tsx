@@ -14,7 +14,7 @@ const SelectImage: React.FC<{ height: string; onClose: () => void }> = ({
 				<defs>
 					<style>
 						{
-							'.a-cuidado,.n-cuidado{fill:#fff;}.b-cuidado{fill:none;}.c-cuidado{fill:url(#a-cuidado);}.d-cuidado,.k{opacity:0.7;}.d-cuidado{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-cuidado);}.e-cuidado{clip-path:url(#c-cuidado);}.f-cuidado,.l-cuidado,.m-cuidado{fill:#001f5f;}.f-cuidado{font-size:55px;font-family:"Kiona-Bold";font-weight:700;}.g-cuidado{fill:#182856;font-family:Silka-Regular, Silka;}.g-cuidado,.m-cuidado,.n-cuidado{font-size:24px;}.h-cuidado{fill:#e40032;}.i-cuidado{clip-path:url(#d-cuidado);}.j-cuidado{fill:#e7002a;}.m-cuidado,.n-cuidado{font-family:Silka-SemiBold, Silka;font-weight:600;}'
+							'.a-cuidado,.n-cuidado{fill:#fff;}.b-cuidado{fill:none;}.c-cuidado{fill:url(#a-cuidado);}.d-cuidado,.k{opacity:0.7;}.d-cuidado{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-cuidado);}.e-cuidado{clip-path:url(#c-cuidado);}.f-cuidado,.l-cuidado,.m-cuidado{fill:#001f5f;}.f-cuidado{font-size:55px;font-family:Kiona-Bold, Kiona;font-weight:700;}.g-cuidado{fill:#182856;font-family:Silka-Regular, Silka;}.g-cuidado,.m-cuidado,.n-cuidado{font-size:24px;}.h-cuidado{fill:#e40032;}.i-cuidado{clip-path:url(#d-cuidado);}.j-cuidado{fill:#e7002a;}.m-cuidado,.n-cuidado{font-family:Silka-SemiBold, Silka;font-weight:600;}'
 						}
 					</style>
 					<pattern

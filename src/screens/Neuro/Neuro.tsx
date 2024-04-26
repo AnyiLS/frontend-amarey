@@ -27,7 +27,7 @@ const WoundCare: React.FC = (): JSX.Element => {
 							<defs>
 								<style>
 									{
-										'g,rect{stroke: none;}.a-products-neuro-desktop,.b-products-neuro-desktop{stroke:#707070;}.a-products-neuro-desktop{fill:url(#a-products-neuro-desktop);}.b-products-neuro-desktop,.g-products-neuro-desktop{opacity:1;}.b-products-neuro-desktop{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-products-neuro-desktop);}.c-products-neuro-desktop,.d-products-neuro-desktop,.f-products-neuro-desktop,.i-products-neuro-desktop,.j-products-neuro-desktop{fill:#fff;}.c-products-neuro-desktop{font-size:55px;}.c-products-neuro-desktop,.f-products-neuro-desktop{font-family:"Kiona-Bold";font-weight:700;}.d-products-neuro-desktop,.j-products-neuro-desktop{font-size:24px;}.d-products-neuro-desktop{font-family:Silka-Regular, Silka;}.e-products-neuro-desktop{fill:rgba(67,67,67,0.09);}.f-products-neuro-desktop{font-size:42px;}.h-products-neuro-desktop{fill:rgba(255,255,255,0.5);}.j-products-neuro-desktop{font-family:Silka-SemiBold, Silka;font-weight:600;}.k-products-neuro-desktop{stroke:none;}.l-products-neuro-desktop{fill:none;}.m-products-neuro-desktop{filter:url(#c-products-neuro-desktop);}'
+										'g,rect{stroke: none;}.a-products-neuro-desktop,.b-products-neuro-desktop{stroke:#707070;}.a-products-neuro-desktop{fill:url(#a-products-neuro-desktop);}.b-products-neuro-desktop,.g-products-neuro-desktop{opacity:1;}.b-products-neuro-desktop{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-products-neuro-desktop);}.c-products-neuro-desktop,.d-products-neuro-desktop,.f-products-neuro-desktop,.i-products-neuro-desktop,.j-products-neuro-desktop{fill:#fff;}.c-products-neuro-desktop{font-size:55px;}.c-products-neuro-desktop,.f-products-neuro-desktop{font-family:Kiona-Bold, Kiona;font-weight:700;}.d-products-neuro-desktop,.j-products-neuro-desktop{font-size:24px;}.d-products-neuro-desktop{font-family:Silka-Regular, Silka;}.e-products-neuro-desktop{fill:rgba(67,67,67,0.09);}.f-products-neuro-desktop{font-size:42px;}.h-products-neuro-desktop{fill:rgba(255,255,255,0.5);}.j-products-neuro-desktop{font-family:Silka-SemiBold, Silka;font-weight:600;}.k-products-neuro-desktop{stroke:none;}.l-products-neuro-desktop{fill:none;}.m-products-neuro-desktop{filter:url(#c-products-neuro-desktop);}'
 									}
 								</style>
 								<pattern
@@ -149,7 +149,7 @@ const WoundCare: React.FC = (): JSX.Element => {
 									<defs>
 										<style>
 											{
-												'.a-ortope{fill:rgba(255,255,255,0.5);}.b-ortope{fill:#fff;font-size:28px;font-family:"Kiona-Bold";font-weight:700;}.c-ortope{filter:url(#a-ortope);}'
+												'.a-ortope{fill:rgba(255,255,255,0.5);}.b-ortope{fill:#fff;font-size:28px;font-family:Kiona-Bold, Kiona;font-weight:700;}.c-ortope{filter:url(#a-ortope);}'
 											}
 										</style>
 										<filter

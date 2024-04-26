@@ -13,7 +13,7 @@ const Lineacodigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 				<defs>
 					<style>
 						{
-							'.a-linea,.d-linea,.e-linea,.n-linea{fill:#fff;}.a-linea{stroke:#707070;}.b-linea{fill:none;}.c-linea{fill:url(#a-linea);}.e-linea,.l-linea,.n-linea{font-size:24px;}.e-linea{font-family:Silka-SemiBold, Silka;font-weight:600;}.f-linea{fill:#e7002a;}.g-linea{clip-path:url(#b-linea);}.h-linea,.m-linea{fill:#e40032;}.i-linea{clip-path:url(#c-linea);}.j-linea,.k-linea,.p-linea{fill:#001f5f;}.k-linea{font-size:55px;}.k-linea,.n-linea,.p-linea{font-family:"Kiona-Bold";}.k-linea,.m-linea,.n-linea,.p-linea{font-weight:700;}.l-linea{fill:#182856;font-family:Silka-Regular, Silka;}.m-linea{font-size:32px;font-family:Silka-Bold, Silka;}.o-linea{fill:rgba(67,67,67,0.09);}.p-linea{font-size:42px;}.q-linea{filter:url(#f-linea);}.r-linea{filter:url(#d-linea);}'
+							'.a-linea,.d-linea,.e-linea,.n-linea{fill:#fff;}.a-linea{stroke:#707070;}.b-linea{fill:none;}.c-linea{fill:url(#a-linea);}.e-linea,.l-linea,.n-linea{font-size:24px;}.e-linea{font-family:Silka-SemiBold, Silka;font-weight:600;}.f-linea{fill:#e7002a;}.g-linea{clip-path:url(#b-linea);}.h-linea,.m-linea{fill:#e40032;}.i-linea{clip-path:url(#c-linea);}.j-linea,.k-linea,.p-linea{fill:#001f5f;}.k-linea{font-size:55px;}.k-linea,.n-linea,.p-linea{font-family:Kiona-Bold, Kiona;}.k-linea,.m-linea,.n-linea,.p-linea{font-weight:700;}.l-linea{fill:#182856;font-family:Silka-Regular, Silka;}.m-linea{font-size:32px;font-family:Silka-Bold, Silka;}.o-linea{fill:rgba(67,67,67,0.09);}.p-linea{font-size:42px;}.q-linea{filter:url(#f-linea);}.r-linea{filter:url(#d-linea);}'
 						}
 					</style>
 					<pattern

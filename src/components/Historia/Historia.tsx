@@ -41,7 +41,7 @@ const Historia: React.FC = (): JSX.Element => {
 				<defs>
 					<style>
 						{
-							'.a-histo{fill:#fff;stroke:#707070;}.b-histo,.d-histo,.f-histo{fill:#001f5f;}.c-histo{fill:url(#a-histo);}.d-histo{font-size:40px;font-family:Silka-Bold, Silka;}.d-histo,.f-histo{font-weight:700;}.e-histo{fill:#182856;font-size:24px;font-family:Silka-Regular, Silka;}.f-histo{font-size:70px;font-family:Kiona-Bold, Kiona;}.g-histo{clip-path:url(#b-histo);}.h-histo{fill:#e40032;}'
+							".a-histo{fill:#fff;stroke:#707070;}.b-histo,.d-histo,.f-histo{fill:#001f5f;}.c-histo{fill:url(#a-histo);}.d-histo{font-size:40px;font-family:Silka-Bold, Silka;}.d-histo,.f-histo{font-weight:700;}.e-histo{fill:#182856;font-size:24px;font-family:Silka-Regular, Silka;}.f-histo{font-size:70px;font-family:'Kiona-Bold';}.g-histo{clip-path:url(#b-histo);}.h-histo{fill:#e40032;}"
 						}
 					</style>
 					<pattern

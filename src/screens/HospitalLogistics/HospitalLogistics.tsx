@@ -26,7 +26,7 @@ const HospitalLogistics: React.FC = (): JSX.Element => {
 							<defs>
 								<style>
 									{
-										'.a-products-hl-desktop,.b-products-hl-desktop{stroke:#707070;}.a-products-hl-desktop{fill:url(#a-products-hl-desktop);}.b-products-hl-desktop{opacity:0.91;mix-blend-mode:multiply;isolation:isolate;fill:url(#b-products-hl-desktop);}.c-products-hl-desktop,.d-products-hl-desktop,.f-products-hl-desktop,.i-products-hl-desktop,.j-products-hl-desktop{fill:#fff;}.c-products-hl-desktop{font-size:55px;}.c-products-hl-desktop,.f-products-hl-desktop{font-family:"Kiona-Bold";font-weight:700;}.d-products-hl-desktop,.j-products-hl-desktop{font-size:24px;}.d-products-hl-desktop{font-family:Silka-Regular, Silka;}.e-products-hl-desktop{fill:rgba(67,67,67,0.09);}.f-products-hl-desktop{font-size:42px;}.g-products-hl-desktop{opacity:1;}.h-products-hl-desktop{fill:rgba(255,255,255,0.5);}.j-products-hl-desktop{font-family:Silka-SemiBold, Silka;font-weight:600;}.k-products-hl-desktop{stroke:none;}.l-products-hl-desktop{fill:none;}.m-products-hl-desktop{filter:url(#c-products-hl-desktop);}'
+										'.a-products-hl-desktop,.b-products-hl-desktop{stroke:#707070;}.a-products-hl-desktop{fill:url(#a-products-hl-desktop);}.b-products-hl-desktop{opacity:0.91;mix-blend-mode:multiply;isolation:isolate;fill:url(#b-products-hl-desktop);}.c-products-hl-desktop,.d-products-hl-desktop,.f-products-hl-desktop,.i-products-hl-desktop,.j-products-hl-desktop{fill:#fff;}.c-products-hl-desktop{font-size:55px;}.c-products-hl-desktop,.f-products-hl-desktop{font-family:Kiona-Bold, Kiona;font-weight:700;}.d-products-hl-desktop,.j-products-hl-desktop{font-size:24px;}.d-products-hl-desktop{font-family:Silka-Regular, Silka;}.e-products-hl-desktop{fill:rgba(67,67,67,0.09);}.f-products-hl-desktop{font-size:42px;}.g-products-hl-desktop{opacity:1;}.h-products-hl-desktop{fill:rgba(255,255,255,0.5);}.j-products-hl-desktop{font-family:Silka-SemiBold, Silka;font-weight:600;}.k-products-hl-desktop{stroke:none;}.l-products-hl-desktop{fill:none;}.m-products-hl-desktop{filter:url(#c-products-hl-desktop);}'
 									}
 								</style>
 								<pattern
@@ -164,7 +164,7 @@ const HospitalLogistics: React.FC = (): JSX.Element => {
 									<defs>
 										<style>
 											{
-												'.a-boton-pequena{fill:rgba(255,255,255,0.5);}.b-boton-pequena{fill:#fff;font-size:28px;font-family:"Kiona-Bold";font-weight:700;}.c-boton-pequena{filter:url(#a-boton-pequena);}'
+												'.a-boton-pequena{fill:rgba(255,255,255,0.5);}.b-boton-pequena{fill:#fff;font-size:28px;font-family:Kiona-Bold, Kiona;font-weight:700;}.c-boton-pequena{filter:url(#a-boton-pequena);}'
 											}
 										</style>
 										<filter

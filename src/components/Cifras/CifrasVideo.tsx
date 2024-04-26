@@ -95,14 +95,6 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 					</filter>
 				</defs>
 				<g className="b-cifras-1">
-					{/* <rect
-            className="c-cifras-1"
-            width={1920}
-            height={1080}
-            // transform=""
-            style={{ clipPath: "url(#b-5)" }}
-            transform="translate(0 -0.263)"
-          /> */}
 					<foreignObject
 						width="1929"
 						height="1089"

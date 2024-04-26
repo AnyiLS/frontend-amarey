@@ -14,7 +14,7 @@ const Medicinesone: React.FC<{ height: string; onClose: () => void }> = ({
 				<defs>
 					<style>
 						{
-							'.a-medicamentos,.o-medicamentos{fill:#fff;}.b-medicamentos{fill:none;}.c-medicamentos{fill:url(#a-medicamentos);}.d-medicamentos{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-medicamentos);}.e-medicamentos{clip-path:url(#c-medicamentos);}.f-medicamentos,.i-medicamentos{fill:#182856;font-family:Silka-Regular, Silka;}.f-medicamentos,.h-medicamentos,.o-medicamentos{font-size:24px;}.g-medicamentos,.h-medicamentos{fill:#e40032;}.h-medicamentos,.o-medicamentos{font-family:Silka-SemiBold, Silka;font-weight:600;}.i-medicamentos{font-size:32px;}.j-medicamentos{clip-path:url(#d-medicamentos);}.k-medicamentos,.n-medicamentos{fill:#001f5f;}.l-medicamentos{fill:#e7002a;}.m-medicamentos{opacity:0.7;}.n-medicamentos{font-size:55px;font-family:"Kiona-Bold";font-weight:700;}'
+							'.a-medicamentos,.o-medicamentos{fill:#fff;}.b-medicamentos{fill:none;}.c-medicamentos{fill:url(#a-medicamentos);}.d-medicamentos{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-medicamentos);}.e-medicamentos{clip-path:url(#c-medicamentos);}.f-medicamentos,.i-medicamentos{fill:#182856;font-family:Silka-Regular, Silka;}.f-medicamentos,.h-medicamentos,.o-medicamentos{font-size:24px;}.g-medicamentos,.h-medicamentos{fill:#e40032;}.h-medicamentos,.o-medicamentos{font-family:Silka-SemiBold, Silka;font-weight:600;}.i-medicamentos{font-size:32px;}.j-medicamentos{clip-path:url(#d-medicamentos);}.k-medicamentos,.n-medicamentos{fill:#001f5f;}.l-medicamentos{fill:#e7002a;}.m-medicamentos{opacity:0.7;}.n-medicamentos{font-size:55px;font-family:Kiona-Bold, Kiona;font-weight:700;}'
 						}
 					</style>
 					<pattern

@@ -1,13 +1,13 @@
 import React from 'react'
 
-const TopLeftAsta: React.FC = (): JSX.Element => {
+const TopLeftAsta: React.FC<any> = ({onOpenPopup}): JSX.Element => {
 	return (
 		<React.Fragment>
-			<g onClick={() => window.location.reload()} transform='translate(300 170)'>
+			<g transform='translate(300 170)'>
 				<defs>
 					<style>
 						{
-							'.a-tt-8{fill:#001f5f;}.b-tt-8,.d-tt-8{fill:none;}.c-tt-8{clip-path:url(#e-tt-8);}.d-tt-8{stroke:#e40032;stroke-miterlimit:10;stroke-width:0.979px;}.e-tt-8,.f-tt-8{fill:#fff;}.f-tt-8{font-size:28px;font-family:"Kiona-Bold";font-weight:700;}.g-tt-8{clip-path:url(#f);}.h-tt-8{fill:#e40032;}.i-tt-8{filter:url(#c-tt-8);}.j-tt-8{filter:url(#a-tt-8);}'
+							'.a-tt-8{fill:#001f5f;}.b-tt-8,.d-tt-8{fill:none;}.c-tt-8{clip-path:url(#e-tt-8);}.d-tt-8{stroke:#e40032;stroke-miterlimit:10;stroke-width:0.979px;}.e-tt-8,.f-tt-8{fill:#fff;}.f-tt-8{font-size:28px;font-family:Kiona-Bold, Kiona;font-weight:700;}.g-tt-8{clip-path:url(#f);}.h-tt-8{fill:#e40032;}.i-tt-8{filter:url(#c-tt-8);}.j-tt-8{filter:url(#a-tt-8);}'
 						}
 					</style>
 					<filter
@@ -55,8 +55,7 @@ const TopLeftAsta: React.FC = (): JSX.Element => {
 						/>
 					</clipPath>
 				</defs>
-				<a href="/">
-				<g transform="translate(9 6)">
+				<g transform="translate(9 6)" onClick={(e) => {e.preventDefault(); onOpenPopup()}}>
 					<image
 						width={240.325}
 						height={208.367}
@@ -158,7 +157,6 @@ const TopLeftAsta: React.FC = (): JSX.Element => {
 						</g>
 					</g>
 				</g>
-				</a>
 			</g>
 		</React.Fragment>
 	)

@@ -3,27 +3,38 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Kiona-Bold";
-    src: url('../fonts/KIONA/Kiona-Bold.ttf')
+    font-family: Kiona-Bold;
+    src: url('../fonts/KIONA/Kiona-Bold.ttf');
+    font-style: normal;
+    font-weight: bold;
 }
 
 @font-face {
     font-family: "Silka-Regular";
-    src: url('../fonts/SILKA/Silka\ Regular.otf')
+    src: url('../fonts/SILKA/Silka\ Regular.otf');
+    font-style: normal;
+    
 }
 
 @font-face {
     font-family: "Silka-Semibold";
-    src: url('../fonts/SILKA/Silka\ SemiBold.otf')
+    src: url('../fonts/SILKA/Silka\ SemiBold.otf');
+    font-style: normal;
+    font-weight: 600;
 }
 
 @font-face {
-    font-family: "Silka-Bold";
-    src: url('../fonts/SILKA/Silka\ Bold.otf')
+    font-family: "Silka-Medium";
+    src: url('../fonts/SILKA/Silka\ Medium.otf');
+    font-style: normal;
+    font-weight: 500;
 }
 
-body {
-    font-family: "Kiona-Bold";
+@font-face {
+    font-family: Silka-Bold;
+    src: url('../fonts/SILKA/Silka\ Bold.otf');
+    font-style: normal;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {

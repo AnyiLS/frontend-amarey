@@ -14,7 +14,7 @@ const SelectedImage: React.FC<{ height: string; onClose: () => void }> = ({
 				<defs>
 					<style>
 						{
-							'.a-selected,.e-selected{fill:#fff;}.b-selected{fill:none;}.c-selected{fill:url(#a-selected);}.d-selected{opacity:0.8;mix-blend-mode:multiply;isolation:isolate;fill:url(#b-selected);}.e-selected,.i-selected,.m-selected{font-size:24px;}.e-selected,.m-selected{font-family:Silka-SemiBold, Silka;font-weight:600;}.f-selected{clip-path:url(#c-selected);}.g-selected,.l-selected,.m-selected{fill:#001f5f;}.g-selected{font-size:55px;font-family:"Kiona-Bold";font-weight:700;}.h-selected{fill:#e40032;}.i-selected{fill:#182856;font-family:Silka-Regular, Silka;}.j-selected{clip-path:url(#d-selected);}.k-selected{fill:#e7002a;}'
+							'.a-selected,.e-selected{fill:#fff;}.b-selected{fill:none;}.c-selected{fill:url(#a-selected);}.d-selected{opacity:0.8;mix-blend-mode:multiply;isolation:isolate;fill:url(#b-selected);}.e-selected,.i-selected,.m-selected{font-size:24px;}.e-selected,.m-selected{font-family:Silka-SemiBold, Silka;font-weight:600;}.f-selected{clip-path:url(#c-selected);}.g-selected,.l-selected,.m-selected{fill:#001f5f;}.g-selected{font-size:55px;font-family:Kiona-Bold, Kiona;font-weight:700;}.h-selected{fill:#e40032;}.i-selected{fill:#182856;font-family:Silka-Regular, Silka;}.j-selected{clip-path:url(#d-selected);}.k-selected{fill:#e7002a;}'
 						}
 					</style>
 					<pattern

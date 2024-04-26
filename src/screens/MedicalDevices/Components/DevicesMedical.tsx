@@ -14,7 +14,7 @@ const DevicesMedical: React.FC<{ height: string; onClose: () => void }> = ({
 				<defs>
 					<style>
 						{
-							'.a-medical{fill:none;}.b-medical{fill:url(#a-medical);}.c-medical{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-medical);}.d-medical,.e-medical,.f-medical{fill:#fff;}.d-medical,.g-medical{font-size:24px;}.d-medical{font-family:Silka-SemiBold, Silka;font-weight:600;}.e-medical{font-size:55px;font-family:"Kiona-Bold";font-weight:700;}.g-medical{fill:#182856;font-family:Silka-Regular, Silka;}.h-medical{fill:#e40032;}.i-medical{clip-path:url(#c-medical);}.j-medical{fill:#001f5f;}.k-medical{fill:#e7002a;}.l-medical{opacity:0.7;}'
+							'.a-medical{fill:none;}.b-medical{fill:url(#a-medical);}.c-medical{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-medical);}.d-medical,.e-medical,.f-medical{fill:#fff;}.d-medical,.g-medical{font-size:24px;}.d-medical{font-family:Silka-SemiBold, Silka;font-weight:600;}.e-medical{font-size:55px;font-family:Kiona-Bold, Kiona;font-weight:700;}.g-medical{fill:#182856;font-family:Silka-Regular, Silka;}.h-medical{fill:#e40032;}.i-medical{clip-path:url(#c-medical);}.j-medical{fill:#001f5f;}.k-medical{fill:#e7002a;}.l-medical{opacity:0.7;}'
 						}
 					</style>
 					<pattern

@@ -14,7 +14,7 @@ const NeuroImage: React.FC<{ height: string; onClose: () => void }> = ({
 				<defs>
 					<style>
 						{
-							'.a-neuro{fill:none;}.b-neuro{fill:url(#a-neuro);}.c-neuro{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-neuro);}.d-neuro,.g-neuro,.h-neuro{fill:#fff;}.d-neuro,.i-neuro{font-size:24px;}.d-neuro{font-family:Silka-SemiBold, Silka;font-weight:600;}.e-neuro{clip-path:url(#c-neuro);}.f-neuro{fill:#e7002a;}.g-neuro{font-size:55px;font-family:"Kiona-Bold";font-weight:700;}.i-neuro,.l-neuro{fill:#001f5f;}.i-neuro{font-family:Silka-Regular, Silka;}.j-neuro{fill:#e40032;}.k-neuro{clip-path:url(#d-neuro);}.m-neuro{opacity:0.7;}'
+							'.a-neuro{fill:none;}.b-neuro{fill:url(#a-neuro);}.c-neuro{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-neuro);}.d-neuro,.g-neuro,.h-neuro{fill:#fff;}.d-neuro,.i-neuro{font-size:24px;}.d-neuro{font-family:Silka-SemiBold, Silka;font-weight:600;}.e-neuro{clip-path:url(#c-neuro);}.f-neuro{fill:#e7002a;}.g-neuro{font-size:55px;font-family:Kiona-Bold, Kiona;font-weight:700;}.i-neuro,.l-neuro{fill:#001f5f;}.i-neuro{font-family:Silka-Regular, Silka;}.j-neuro{fill:#e40032;}.k-neuro{clip-path:url(#d-neuro);}.m-neuro{opacity:0.7;}'
 						}
 					</style>
 					<pattern

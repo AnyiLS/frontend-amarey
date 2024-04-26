@@ -10,7 +10,7 @@ const SubmenuWorkUs: React.FC<{ ref: any }> = ({ ref }) => {
 			<defs>
 				<style>
 					{
-						'.a-submenu-w{fill:none;}.b-submenu-w{fill:#001f5f;}.c-submenu-w{clip-path:url(#a-submenu-w);}.d-submenu-w,.h-submenu-w,.i-submenu-w{fill:#fff;}.e-submenu-w{fill:#e7002a;}.f-submenu-w{fill:url(#b-submenu-w);}.g-submenu-w{opacity:0.8;fill:url(#e-submenu-w);}.h-submenu-w{font-size:42px;font-family:"Kiona-Bold";font-weight:700;}.i-submenu-w{font-size:24px;font-family:Silka-Regular, Silka;}.j-submenu-w{filter:url(#f-submenu-w);mix-blend-mode:multiply;isolation:isolate;}.k-submenu-w{filter:url(#c-submenu-w);}'
+						'.a-submenu-w{fill:none;}.b-submenu-w{fill:#001f5f;}.c-submenu-w{clip-path:url(#a-submenu-w);}.d-submenu-w,.h-submenu-w,.i-submenu-w{fill:#fff;}.e-submenu-w{fill:#e7002a;}.f-submenu-w{fill:url(#b-submenu-w);}.g-submenu-w{opacity:0.8;fill:url(#e-submenu-w);}.h-submenu-w{font-size:42px;font-family:Kiona-Bold, Kiona;font-weight:700;}.i-submenu-w{font-size:24px;font-family:Silka-Regular, Silka;}.j-submenu-w{filter:url(#f-submenu-w);mix-blend-mode:multiply;isolation:isolate;}.k-submenu-w{filter:url(#c-submenu-w);}'
 					}
 				</style>
 				<clipPath id="a-submenu-w">

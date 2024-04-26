@@ -14,7 +14,7 @@ const Medical: React.FC<{ height: string; onClose: () => void }> = ({
 				<defs>
 					<style>
 						{
-							'.a-devices{fill:none;}.b-devices{fill:url(#a-devices);}.c-devices{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-devices);}.d-devices,.e-devices,.f-devices{fill:#fff;}.d-devices,.l-devices,.n-devices{font-size:24px;}.d-devices,.l-devices,.o-devices{font-family:Silka-SemiBold, Silka;font-weight:600;}.e-devices{font-size:55px;font-family:"Kiona-Bold";font-weight:700;}.g-devices{clip-path:url(#c-devices);}.h-devices{fill:#001f5f;}.i-devices,.o-devices{fill:#e40032;}.j-devices{fill:#e7002a;}.k-devices{clip-path:url(#d-devices);}.l-devices,.n-devices{fill:#182856;}.m-devices,.n-devices{font-family:Silka-Regular, Silka;}.m-devices{font-weight:400;}.o-devices{font-size:32px;}.p-devices{opacity:0.7;}'
+							'.a-devices{fill:none;}.b-devices{fill:url(#a-devices);}.c-devices{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-devices);}.d-devices,.e-devices,.f-devices{fill:#fff;}.d-devices,.l-devices,.n-devices{font-size:24px;}.d-devices,.l-devices,.o-devices{font-family:Silka-SemiBold, Silka;font-weight:600;}.e-devices{font-size:55px;font-family:Kiona-Bold, Kiona;font-weight:700;}.g-devices{clip-path:url(#c-devices);}.h-devices{fill:#001f5f;}.i-devices,.o-devices{fill:#e40032;}.j-devices{fill:#e7002a;}.k-devices{clip-path:url(#d-devices);}.l-devices,.n-devices{fill:#182856;}.m-devices,.n-devices{font-family:Silka-Regular, Silka;}.m-devices{font-weight:400;}.o-devices{font-size:32px;}.p-devices{opacity:0.7;}'
 						}
 					</style>
 					<pattern

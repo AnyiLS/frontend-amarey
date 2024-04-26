@@ -3,6 +3,7 @@ import { carouselItemsMobile } from '../mocks/Mobile'
 
 const ReconocimientosMobile: React.FC = (): JSX.Element => {
 	const [carouselSlider, setCarouselSlider] = React.useState<number>(0)
+	const [showVideo, setShowVideo] = React.useState<boolean>(false)
 
 	const handleLessCarouselSlider = () =>
 		setCarouselSlider(carouselSlider - 1 < 0 ? 3 : carouselSlider - 1)
@@ -15,7 +16,7 @@ const ReconocimientosMobile: React.FC = (): JSX.Element => {
 				<defs>
 					<style>
 						{
-							'.a-reconocimientos-mobile-3{fill:#fff;}.b-reconocimientos-mobile-3,.h-reconocimientos-mobile-3,.j-reconocimientos-mobile-3,.m-reconocimientos-mobile-3,.r-reconocimientos-mobile-3{fill:#001f5f;}.c-reconocimientos-mobile-3{clip-path:url(#a-reconocimientos-mobile-3);}.d-reconocimientos-mobile-3{clip-path:url(#b-reconocimientos-mobile-3);}.e-reconocimientos-mobile-3{fill:#e7002a;}.f-reconocimientos-mobile-3{fill:#1c164e;}.g-reconocimientos-mobile-3{fill:#e40032;}.h-reconocimientos-mobile-3{font-size:32px;font-family:Kiona-Bold, Kiona;}.h-reconocimientos-mobile-3,.j-reconocimientos-mobile-3,.r-reconocimientos-mobile-3{font-weight:700;}.i-reconocimientos-mobile-3{fill:url(#e-reconocimientos-mobile-3);}.j-reconocimientos-mobile-3{font-size:12px;}.j-reconocimientos-mobile-3,.r-reconocimientos-mobile-3{font-family:Silka-Bold, Silka;}.k-reconocimientos-mobile-3,.q-reconocimientos-mobile-3{opacity:0.5;}.l-reconocimientos-mobile-3{fill:url(#h-reconocimientos-mobile-3);}.m-reconocimientos-mobile-3{font-size:9px;}.m-reconocimientos-mobile-3,.o-reconocimientos-mobile-3{font-family:Silka-SemiBold, Silka;font-weight:600;}.n-reconocimientos-mobile-3{fill:url(#k-reconocimientos-mobile-3);}.o-reconocimientos-mobile-3{fill:#182856;font-size:6px;}.p-reconocimientos-mobile-3,.q-reconocimientos-mobile-3{fill:#c7c7cc;}.r-reconocimientos-mobile-3{font-size:22px;}.s-reconocimientos-mobile-3{clip-path:url(#p-reconocimientos-mobile-3);}.t-reconocimientos-mobile-3{fill:url(#q-reconocimientos-mobile-3);}.u-reconocimientos-mobile-3{filter:url(#n-reconocimientos-mobile-3);}.v-reconocimientos-mobile-3{filter:url(#l-reconocimientos-mobile-3);}.w-reconocimientos-mobile-3{filter:url(#i-reconocimientos-mobile-3);}.x-reconocimientos-mobile-3{filter:url(#f-reconocimientos-mobile-3);}.y-reconocimientos-mobile-3{filter:url(#c-reconocimientos-mobile-3);}'
+							".a-reconocimientos-mobile-3{fill:#fff;}.b-reconocimientos-mobile-3,.h-reconocimientos-mobile-3,.j-reconocimientos-mobile-3,.m-reconocimientos-mobile-3,.r-reconocimientos-mobile-3{fill:#001f5f;}.c-reconocimientos-mobile-3{clip-path:url(#a-reconocimientos-mobile-3);}.d-reconocimientos-mobile-3{clip-path:url(#b-reconocimientos-mobile-3);}.e-reconocimientos-mobile-3{fill:#e7002a;}.f-reconocimientos-mobile-3{fill:#1c164e;}.g-reconocimientos-mobile-3{fill:#e40032;}.h-reconocimientos-mobile-3{font-size:32px;font-family:'Kiona-Bold';}.h-reconocimientos-mobile-3,.j-reconocimientos-mobile-3,.r-reconocimientos-mobile-3{font-weight:700;}.i-reconocimientos-mobile-3{fill:url(#e-reconocimientos-mobile-3);}.j-reconocimientos-mobile-3{font-size:12px;}.j-reconocimientos-mobile-3,.r-reconocimientos-mobile-3{font-family:Silka-Bold, Silka;}.k-reconocimientos-mobile-3,.q-reconocimientos-mobile-3{opacity:0.5;}.l-reconocimientos-mobile-3{fill:url(#h-reconocimientos-mobile-3);}.m-reconocimientos-mobile-3{font-size:9px;}.m-reconocimientos-mobile-3,.o-reconocimientos-mobile-3{font-family:Silka-SemiBold, Silka;font-weight:600;}.n-reconocimientos-mobile-3{fill:url(#k-reconocimientos-mobile-3);}.o-reconocimientos-mobile-3{fill:#182856;font-size:6px;}.p-reconocimientos-mobile-3,.q-reconocimientos-mobile-3{fill:#c7c7cc;}.r-reconocimientos-mobile-3{font-size:22px;}.s-reconocimientos-mobile-3{clip-path:url(#p-reconocimientos-mobile-3);}.t-reconocimientos-mobile-3{fill:url(#q-reconocimientos-mobile-3);}.u-reconocimientos-mobile-3{filter:url(#n-reconocimientos-mobile-3);}.v-reconocimientos-mobile-3{filter:url(#l-reconocimientos-mobile-3);}.w-reconocimientos-mobile-3{filter:url(#i-reconocimientos-mobile-3);}.x-reconocimientos-mobile-3{filter:url(#f-reconocimientos-mobile-3);}.y-reconocimientos-mobile-3{filter:url(#c-reconocimientos-mobile-3);}"
 						}
 					</style>
 					<clipPath id="a-reconocimientos-mobile-3">
@@ -153,7 +154,7 @@ const ReconocimientosMobile: React.FC = (): JSX.Element => {
 						<image
 							width={1280}
 							height={720}
-							xlinkHref="ComponentTMP_0-image4.jpg-reconocimientos-mobile-3"
+							xlinkHref="/images/fondo-video.png"
 						/>
 					</pattern>
 				</defs>
@@ -262,23 +263,28 @@ const ReconocimientosMobile: React.FC = (): JSX.Element => {
 							width={414.222}
 							height={233}
 							transform="translate(-0.111 553)"
+							onClick={() => setShowVideo(true)}
 						/>
-						<foreignObject
-							width={414.222}
-							height={233}
-							y={0}
-							x={0}
-							transform="translate(-0.111 553)">
-							<video
-								src="/images/video/capacitaciones.mp4"
-								width="100%"
-								height="100%"
-								controls
-							/>
-						</foreignObject>
 					</g>
 				</g>
 			</svg>
+			<div
+				className="fixed top-[0] left-[0] h-screen w-full bg-[#e6e6e6] z-[1]"
+				style={{ display: showVideo ? 'flex' : 'none' }}>
+				<video
+					src="/images/video/Reconocimientos_1.mp4"
+					width="100%"
+					height="100%"
+					controls
+				/>
+				<span
+					className="absolute top-[5%] right-[5%] text-white text-[30px] text-center font-bold bg-[#00000050] w-[50px] h-[50px] rounded-[100%]"
+					onClick={() => {
+						setShowVideo(false)
+					}}>
+					X
+				</span>
+			</div>
 		</React.Fragment>
 	)
 }

@@ -17,7 +17,7 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 					<defs>
 						<style>
 							{
-								'.a,.c,.d,.f,.g{fill:#fff;}.b{fill:url(#a);}.c{font-size:24px;}.c,.f{font-family:Kiona-Bold, Kiona;font-weight:700;}.d{font-size:14px;font-family:Silka-Regular, Silka;}.e{fill:rgba(67,67,67,0.09);}.f{font-size:18px;}.g{opacity:0.4;}.h{fill:none;stroke:#00ff3b;stroke-width:6px;}.i{filter:url(#f);}.j{filter:url(#d);}.k{filter:url(#b);}'
+								'.a,.c,.d,.f,.g{fill:#fff;}.b{fill:url(#a);}.c{font-size:24px;}.c,.f{font-family:Kiona-Bold;font-weight:700;}.d{font-size:14px;font-family:Silka-Regular, Silka;}.e{fill:rgba(67,67,67,0.09);}.f{font-size:18px;}.g{opacity:0.4;}.h{fill:none;stroke:#00ff3b;stroke-width:6px;}.i{filter:url(#f);}.j{filter:url(#d);}.k{filter:url(#b);}'
 							}
 						</style>
 						<pattern
@@ -183,7 +183,7 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 					<defs>
 						<style>
 							{
-								'.a-reward-2-mobile,.e-reward-2-mobile,.i-reward-2-mobile,.k-reward-2-mobile{fill:#fff;}.b-reward-2-mobile{fill:url(#a-reward-2-mobile);}.c-reward-2-mobile{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-reward-2-mobile);}.d-reward-2-mobile{fill:rgba(67,67,67,0.09);}.e-reward-2-mobile{font-size:24px;}.e-reward-2-mobile,.k-reward-2-mobile{font-family:Kiona-Bold, Kiona;font-weight:700;}.f-reward-2-mobile,.h-reward-2-mobile,.n-reward-2-mobile{fill:#001f5f;}.f-reward-2-mobile{font-size:14px;font-family:Silka-Regular, Silka;}.g-reward-2-mobile{opacity:0.7;}.i-reward-2-mobile{opacity:0.4;}.j-reward-2-mobile{fill:#e40032;}.k-reward-2-mobile{font-size:18px;}.l-reward-2-mobile{clip-path:url(#e-reward-2-mobile);}.m-reward-2-mobile{fill:#e7002a;stroke:#e7002a;}.n-reward-2-mobile{stroke:#001f5f;}.o-reward-2-mobile{filter:url(#c-reward-2-mobile);}'
+								'.a-reward-2-mobile,.e-reward-2-mobile,.i-reward-2-mobile,.k-reward-2-mobile{fill:#fff;}.b-reward-2-mobile{fill:url(#a-reward-2-mobile);}.c-reward-2-mobile{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-reward-2-mobile);}.d-reward-2-mobile{fill:rgba(67,67,67,0.09);}.e-reward-2-mobile{font-size:24px;}.e-reward-2-mobile,.k-reward-2-mobile{font-family:Kiona-Bold;font-weight:700;}.f-reward-2-mobile,.h-reward-2-mobile,.n-reward-2-mobile{fill:#001f5f;}.f-reward-2-mobile{font-size:14px;font-family:Silka-Regular, Silka;}.g-reward-2-mobile{opacity:0.7;}.i-reward-2-mobile{opacity:0.4;}.j-reward-2-mobile{fill:#e40032;}.k-reward-2-mobile{font-size:18px;}.l-reward-2-mobile{clip-path:url(#e-reward-2-mobile);}.m-reward-2-mobile{fill:#e7002a;stroke:#e7002a;}.n-reward-2-mobile{stroke:#001f5f;}.o-reward-2-mobile{filter:url(#c-reward-2-mobile);}'
 							}
 						</style>
 						<pattern
@@ -438,7 +438,7 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 					<defs>
 						<style>
 							{
-								'.a-reward-2-mobile,.d-reward-2-mobile,.h-reward-2-mobile,.m-reward-2-mobile{fill:#fff;}.b-reward-2-mobile{fill:url(#a-reward-2-mobile);}.c-reward-2-mobile{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-reward-2-mobile);}.d-reward-2-mobile{font-size:24px;}.d-reward-2-mobile,.m-reward-2-mobile{font-family:Kiona-Bold, Kiona;font-weight:700;}.e-reward-2-mobile,.g-reward-2-mobile,.k-reward-2-mobile{fill:#001f5f;}.e-reward-2-mobile{font-size:14px;font-family:Silka-Regular, Silka;}.f-reward-2-mobile{opacity:0.7;}.h-reward-2-mobile{opacity:0.4;}.i-reward-2-mobile{clip-path:url(#c-reward-2-mobile);}.j-reward-2-mobile{fill:#e7002a;stroke:#e7002a;}.k-reward-2-mobile{stroke:#001f5f;}.l-reward-2-mobile{fill:rgba(67,67,67,0.09);}.m-reward-2-mobile{font-size:18px;}.n-reward-2-mobile{filter:url(#d-reward-2-mobile);}'
+								'.a-reward-2-mobile,.d-reward-2-mobile,.h-reward-2-mobile,.m-reward-2-mobile{fill:#fff;}.b-reward-2-mobile{fill:url(#a-reward-2-mobile);}.c-reward-2-mobile{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-reward-2-mobile);}.d-reward-2-mobile{font-size:24px;}.d-reward-2-mobile,.m-reward-2-mobile{font-family:Kiona-Bold;font-weight:700;}.e-reward-2-mobile,.g-reward-2-mobile,.k-reward-2-mobile{fill:#001f5f;}.e-reward-2-mobile{font-size:14px;font-family:Silka-Regular, Silka;}.f-reward-2-mobile{opacity:0.7;}.h-reward-2-mobile{opacity:0.4;}.i-reward-2-mobile{clip-path:url(#c-reward-2-mobile);}.j-reward-2-mobile{fill:#e7002a;stroke:#e7002a;}.k-reward-2-mobile{stroke:#001f5f;}.l-reward-2-mobile{fill:rgba(67,67,67,0.09);}.m-reward-2-mobile{font-size:18px;}.n-reward-2-mobile{filter:url(#d-reward-2-mobile);}'
 							}
 						</style>
 						<pattern

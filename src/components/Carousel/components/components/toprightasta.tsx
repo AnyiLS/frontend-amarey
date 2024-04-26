@@ -9,7 +9,7 @@ const TopRightAsta: React.FC<{ onUnselected: () => void }> = ({
 				<defs>
 					<style>
 						{
-							'.a-tt-7{fill:#001f5f;}.b-tt-7{fill:url(#c-tt-7);}.c-tt-7{clip-path:url(#f-tt-7);}.d-tt-7{fill:none;stroke:#e40032;stroke-miterlimit:10;stroke-width:0.979px;}.e-tt-7{fill:url(#g-tt-7);}.f-tt-7{fill:#fff;font-size:28px;font-family:"Kiona-Bold";font-weight:700;}.g-tt-7{filter:url(#d-tt-7);}.h-tt-7{filter:url(#a-tt-7);}'
+							'.a-tt-7{fill:#001f5f;}.b-tt-7{fill:url(#c-tt-7);}.c-tt-7{clip-path:url(#f-tt-7);}.d-tt-7{fill:none;stroke:#e40032;stroke-miterlimit:10;stroke-width:0.979px;}.e-tt-7{fill:url(#g-tt-7);}.f-tt-7{fill:#fff;font-size:28px;font-family:Kiona-Bold, Kiona;font-weight:700;}.g-tt-7{filter:url(#d-tt-7);}.h-tt-7{filter:url(#a-tt-7);}'
 						}
 					</style>
 					<filter

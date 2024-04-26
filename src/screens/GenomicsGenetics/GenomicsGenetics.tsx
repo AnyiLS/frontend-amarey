@@ -26,7 +26,7 @@ const GenomicsGenetics: React.FC = (): JSX.Element => {
 							<defs>
 								<style>
 									{
-										'g,rect{stroke: none;}.a-products-gg-desktop,.b-products-gg-desktop{stroke:#707070;}.a-products-gg-desktop{fill:url(#a-products-gg-desktop);}.b-products-gg-desktop{opacity:0.91;mix-blend-mode:multiply;isolation:isolate;fill:url(#b-products-gg-desktop);}.c-products-gg-desktop,.d-products-gg-desktop,.f-products-gg-desktop,.i-products-gg-desktop,.j-products-gg-desktop{fill:#fff;}.c-products-gg-desktop{font-size:55px;}.c-products-gg-desktop,.f-products-gg-desktop{font-family:"Kiona-Bold";font-weight:700;}.d-products-gg-desktop,.j-products-gg-desktop{font-size:24px;}.d-products-gg-desktop{font-family:Silka-Regular, Silka;}.e-products-gg-desktop{fill:rgba(67,67,67,0.09);}.f-products-gg-desktop{font-size:42px;}.g-products-gg-desktop{opacity:1;}.h-products-gg-desktop{fill:rgba(255,255,255,0.5);}.j-products-gg-desktop{font-family:Silka-SemiBold, Silka;font-weight:600;}.k-products-gg-desktop{stroke:none;}.l-products-gg-desktop{fill:none;}.m-products-gg-desktop{filter:url(#c-products-gg-desktop);}'
+										'g,rect{stroke: none;}.a-products-gg-desktop,.b-products-gg-desktop{stroke:#707070;}.a-products-gg-desktop{fill:url(#a-products-gg-desktop);}.b-products-gg-desktop{opacity:0.91;mix-blend-mode:multiply;isolation:isolate;fill:url(#b-products-gg-desktop);}.c-products-gg-desktop,.d-products-gg-desktop,.f-products-gg-desktop,.i-products-gg-desktop,.j-products-gg-desktop{fill:#fff;}.c-products-gg-desktop{font-size:55px;}.c-products-gg-desktop,.f-products-gg-desktop{font-family:Kiona-Bold, Kiona;font-weight:700;}.d-products-gg-desktop,.j-products-gg-desktop{font-size:24px;}.d-products-gg-desktop{font-family:Silka-Regular, Silka;}.e-products-gg-desktop{fill:rgba(67,67,67,0.09);}.f-products-gg-desktop{font-size:42px;}.g-products-gg-desktop{opacity:1;}.h-products-gg-desktop{fill:rgba(255,255,255,0.5);}.j-products-gg-desktop{font-family:Silka-SemiBold, Silka;font-weight:600;}.k-products-gg-desktop{stroke:none;}.l-products-gg-desktop{fill:none;}.m-products-gg-desktop{filter:url(#c-products-gg-desktop);}'
 									}
 								</style>
 								<pattern
@@ -168,7 +168,7 @@ const GenomicsGenetics: React.FC = (): JSX.Element => {
 									<defs>
 										<style>
 											{
-												'.a-boton-pequena{fill:rgba(255,255,255,0.5);}.b-boton-pequena{fill:#fff;font-size:28px;font-family:"Kiona-Bold";font-weight:700;}.c-boton-pequena{filter:url(#a-boton-pequena);}'
+												'.a-boton-pequena{fill:rgba(255,255,255,0.5);}.b-boton-pequena{fill:#fff;font-size:28px;font-family:Kiona-Bold, Kiona;font-weight:700;}.c-boton-pequena{filter:url(#a-boton-pequena);}'
 											}
 										</style>
 										<filter
@@ -218,7 +218,7 @@ const GenomicsGenetics: React.FC = (): JSX.Element => {
 									<defs>
 										<style>
 											{
-												'.a-boton-pequena{fill:rgba(255,255,255,0.5);}.b-boton-pequena{fill:#fff;font-size:28px;font-family:"Kiona-Bold";font-weight:700;}.c-boton-pequena{filter:url(#a-boton-pequena);}'
+												'.a-boton-pequena{fill:rgba(255,255,255,0.5);}.b-boton-pequena{fill:#fff;font-size:28px;font-family:Kiona-Bold, Kiona;font-weight:700;}.c-boton-pequena{filter:url(#a-boton-pequena);}'
 											}
 										</style>
 										<filter

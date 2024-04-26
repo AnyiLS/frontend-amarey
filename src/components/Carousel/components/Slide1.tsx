@@ -18,7 +18,7 @@ const Slide1: React.FC<ISlide> = ({ height, onClick }): JSX.Element => {
         <defs>
       <style>
         {
-          ".a-1,.j-1{fill:#001f5f;}.b-1,.f-1{fill:none;}.c-1,.g-1,.h-1{fill:#fff;}.d-1{clip-path:url(#a-1);}.e-1{clip-path:url(#b-1);}.f-1{stroke:#e7002a;stroke-miterlimit:10;stroke-width:3px;}.g-1{font-size:28px;}.g-1,.h-1{font-family:Kiona-Bold, Kiona;}.g-1,.h-1,.k-1{font-weight:700;}.h-1{font-size:46px;}.i-1{fill:url(#c-1);}.j-1{font-size:42px;font-family:Silka-SemiBold, Silka;font-weight:600;}.k-1{font-size:60px;font-family:Silka-Bold, Silka;}.l-1{clip-path:url(#f-1);}.m-1{fill:#e40032;}.n-1{mix-blend-mode:multiply;isolation:isolate;}.o-1{fill:#d6d6d6;}.p-1{fill:#eeebeb;}.q-1{filter:url(#d-1);}"
+          ".a-1,.j-1{fill:#001f5f;}.b-1,.f-1{fill:none;}.c-1,.g-1,.h-1{fill:#fff;}.d-1{clip-path:url(#a-1);}.e-1{clip-path:url(#b-1);}.f-1{stroke:#e7002a;stroke-miterlimit:10;stroke-width:3px;}.g-1{font-size:28px;}.g-1,.h-1{font-family:Kiona-Bold;}.g-1,.h-1,.k-1{font-weight:700;}.h-1{font-size:46px;}.i-1{fill:url(#c-1);}.j-1{font-size:42px;font-family:Silka-SemiBold, Silka;font-weight:600;}.k-1{font-size:60px;font-family:Silka-Bold, Silka;}.l-1{clip-path:url(#f-1);}.m-1{fill:#e40032;}.n-1{mix-blend-mode:multiply;isolation:isolate;}.o-1{fill:#d6d6d6;}.p-1{fill:#eeebeb;}.q-1{filter:url(#d-1);}"
         }
       </style>
       <clipPath id="a-1">

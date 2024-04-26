@@ -9,7 +9,7 @@ const DownLeftAsta: React.FC<{ onUnselected: () => void }> = ({
 				<defs>
 					<style>
 						{
-							'.a-tt-2{fill:#001f5f;}.b-tt-2{clip-path:url(#e-tt-2);}.c-tt-2{fill:none;stroke:#e40032;stroke-miterlimit:10;stroke-width:0.979px;}.d-tt-2{fill:url(#f-tt-2);}.e-tt-2{fill:#fff;font-size:28px;font-family:"Kiona-Bold";font-weight:700;}.f-tt-2{filter:url(#c-tt-2);}.g-tt-2{filter:url(#a-tt-2);}'
+							'.a-tt-2{fill:#001f5f;}.b-tt-2{clip-path:url(#e-tt-2);}.c-tt-2{fill:none;stroke:#e40032;stroke-miterlimit:10;stroke-width:0.979px;}.d-tt-2{fill:url(#f-tt-2);}.e-tt-2{fill:#fff;font-size:28px;font-family:Kiona-Bold, Kiona;font-weight:700;}.f-tt-2{filter:url(#c-tt-2);}.g-tt-2{filter:url(#a-tt-2);}'
 						}
 					</style>
 					<filter

@@ -27,7 +27,7 @@ const InstrumentalStyrilation: React.FC = (): JSX.Element => {
 							<defs>
 								<style>
 									{
-										'.a-products-instrumental-desktop,.e-products-instrumental-desktop,.f-products-instrumental-desktop,.h-products-instrumental-desktop,.k-products-instrumental-desktop{fill:#fff;}.b-products-instrumental-desktop{fill:none;}.c-products-instrumental-desktop,.d-products-instrumental-desktop{stroke:#707070;}.c-products-instrumental-desktop{fill:url(#a-products-instrumental-desktop);}.d-products-instrumental-desktop,.i-products-instrumental-desktop{opacity:1;}.d-products-instrumental-desktop{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-products-instrumental-desktop);}.e-products-instrumental-desktop{font-size:55px;}.e-products-instrumental-desktop,.h-products-instrumental-desktop{font-family:"Kiona-Bold";font-weight:700;}.f-products-instrumental-desktop,.k-products-instrumental-desktop{font-size:24px;}.f-products-instrumental-desktop{font-family:Silka-Regular, Silka;}.g-products-instrumental-desktop{fill:rgba(67,67,67,0.09);}.h-products-instrumental-desktop{font-size:42px;}.j-products-instrumental-desktop{fill:rgba(255,255,255,0.5);}.k-products-instrumental-desktop{font-family:Silka-SemiBold, Silka;font-weight:600;}.l-products-instrumental-desktop{stroke:none;}.m-products-instrumental-desktop{filter:url(#c-products-instrumental-desktop);}'
+										'.a-products-instrumental-desktop,.e-products-instrumental-desktop,.f-products-instrumental-desktop,.h-products-instrumental-desktop,.k-products-instrumental-desktop{fill:#fff;}.b-products-instrumental-desktop{fill:none;}.c-products-instrumental-desktop,.d-products-instrumental-desktop{stroke:#707070;}.c-products-instrumental-desktop{fill:url(#a-products-instrumental-desktop);}.d-products-instrumental-desktop,.i-products-instrumental-desktop{opacity:1;}.d-products-instrumental-desktop{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-products-instrumental-desktop);}.e-products-instrumental-desktop{font-size:55px;}.e-products-instrumental-desktop,.h-products-instrumental-desktop{font-family:Kiona-Bold, Kiona;font-weight:700;}.f-products-instrumental-desktop,.k-products-instrumental-desktop{font-size:24px;}.f-products-instrumental-desktop{font-family:Silka-Regular, Silka;}.g-products-instrumental-desktop{fill:rgba(67,67,67,0.09);}.h-products-instrumental-desktop{font-size:42px;}.j-products-instrumental-desktop{fill:rgba(255,255,255,0.5);}.k-products-instrumental-desktop{font-family:Silka-SemiBold, Silka;font-weight:600;}.l-products-instrumental-desktop{stroke:none;}.m-products-instrumental-desktop{filter:url(#c-products-instrumental-desktop);}'
 									}
 								</style>
 								<pattern
@@ -157,7 +157,7 @@ const InstrumentalStyrilation: React.FC = (): JSX.Element => {
 									<defs>
 										<style>
 											{
-												'.a-boton-pequena{fill:rgba(255,255,255,0.5);}.b-boton-pequena{fill:#fff;font-size:28px;font-family:"Kiona-Bold";font-weight:700;}.c-boton-pequena{filter:url(#a-boton-pequena);}'
+												'.a-boton-pequena{fill:rgba(255,255,255,0.5);}.b-boton-pequena{fill:#fff;font-size:28px;font-family:Kiona-Bold, Kiona;font-weight:700;}.c-boton-pequena{filter:url(#a-boton-pequena);}'
 											}
 										</style>
 										<filter

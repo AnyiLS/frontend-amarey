@@ -12,7 +12,7 @@ export const PortafolioMovil: React.FC = () => {
 					<defs>
 						<style>
 							{
-								'.a-portfolio,.g-portfolio{fill:#001f5f;}.b-portfolio{fill:#e40032;}.c-portfolio,.e-portfolio,.f-portfolio{fill:#fff;}.d-portfolio{fill:url(#a-portfolio);}.e-portfolio{font-size:14px;font-family:Silka-Regular, Silka;}.f-portfolio{font-size:46px;}.f-portfolio,.g-portfolio{font-family:Kiona-Bold, Kiona;font-weight:700;}.g-portfolio{font-size:18px;}.h-portfolio{filter:url(#d-portfolio);}.i-portfolio{filter:url(#b-portfolio);}'
+								".a-portfolio,.g-portfolio{fill:#001f5f;}.b-portfolio{fill:#e40032;}.c-portfolio,.e-portfolio,.f-portfolio{fill:#fff;}.d-portfolio{fill:url(#a-portfolio);}.e-portfolio{font-size:14px;font-family:Silka-Regular, Silka;}.f-portfolio{font-size:46px;}.f-portfolio,.g-portfolio{font-family:'Kiona-Bold';font-weight:700;}.g-portfolio{font-size:18px;}.h-portfolio{filter:url(#d-portfolio);}.i-portfolio{filter:url(#b-portfolio);}"
 							}
 						</style>
 						<pattern

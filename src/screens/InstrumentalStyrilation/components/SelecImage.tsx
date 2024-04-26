@@ -14,7 +14,7 @@ const SelecImage: React.FC<{ height: string; onClose: () => void }> = ({
 				<defs>
 					<style>
 						{
-							'.a-instru,.e-instru{fill:#fff;}.b-instru{fill:none;}.c-instru{fill:url(#a-instru);}.d-instru{opacity:0.8;mix-blend-mode:multiply;isolation:isolate;fill:url(#b-instru);}.e-instru,.k-instru,.m-instru{font-size:24px;}.e-instru,.k-instru{font-family:Silka-SemiBold, Silka;font-weight:600;}.f-instru{clip-path:url(#c-instru);}.g-instru{fill:#e40032;}.h-instru{clip-path:url(#d-instru);}.i-instru{fill:#e7002a;}.j-instru,.k-instru,.l-instru{fill:#001f5f;}.l-instru{font-size:55px;font-family:"Kiona-Bold";font-weight:700;}.m-instru{fill:#182856;font-family:Silka-Regular, Silka;}'
+							'.a-instru,.e-instru{fill:#fff;}.b-instru{fill:none;}.c-instru{fill:url(#a-instru);}.d-instru{opacity:0.8;mix-blend-mode:multiply;isolation:isolate;fill:url(#b-instru);}.e-instru,.k-instru,.m-instru{font-size:24px;}.e-instru,.k-instru{font-family:Silka-SemiBold, Silka;font-weight:600;}.f-instru{clip-path:url(#c-instru);}.g-instru{fill:#e40032;}.h-instru{clip-path:url(#d-instru);}.i-instru{fill:#e7002a;}.j-instru,.k-instru,.l-instru{fill:#001f5f;}.l-instru{font-size:55px;font-family:Kiona-Bold, Kiona;font-weight:700;}.m-instru{fill:#182856;font-family:Silka-Regular, Silka;}'
 						}
 					</style>
 					<pattern

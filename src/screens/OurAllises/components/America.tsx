@@ -19,7 +19,7 @@ const America: React.FC<IAmerica> = ({ height, onClose }): JSX.Element => {
 					<defs>
 						<style>
 							{
-								'.a-america-1,.d-america-1,.f-america-1{fill:none;}.b-america-1{clip-path:url(#a-america-1);}.c-america-1{fill:#f2f2f2;}.d-america-1{stroke:#d9dae4;stroke-width:1.169px;}.d-america-1,.f-america-1{stroke-miterlimit:10;}.e-america-1{fill:#c5dbf7;}.f-america-1{stroke:#fff;}.g-america-1,.j-america-1{fill:#001f5f;}.g-america-1{font-size:55px;font-family:"Kiona-Bold";font-weight:700;}.h-america-1{font-size:60px;}.i-america-1{font-size:85px;}.k-america-1{fill:#fff;}.l-america-1{clip-path:url(#d-america-1);}.m-america-1{fill:#e7002a;}.n-america-1{filter:url(#b-america-1);}'
+								'.a-america-1,.d-america-1,.f-america-1{fill:none;}.b-america-1{clip-path:url(#a-america-1);}.c-america-1{fill:#f2f2f2;}.d-america-1{stroke:#d9dae4;stroke-width:1.169px;}.d-america-1,.f-america-1{stroke-miterlimit:10;}.e-america-1{fill:#c5dbf7;}.f-america-1{stroke:#fff;}.g-america-1,.j-america-1{fill:#001f5f;}.g-america-1{font-size:55px;font-family:Kiona-Bold, Kiona;font-weight:700;}.h-america-1{font-size:60px;}.i-america-1{font-size:85px;}.k-america-1{fill:#fff;}.l-america-1{clip-path:url(#d-america-1);}.m-america-1{fill:#e7002a;}.n-america-1{filter:url(#b-america-1);}'
 							}
 						</style>
 						<clipPath id="a-america-1">

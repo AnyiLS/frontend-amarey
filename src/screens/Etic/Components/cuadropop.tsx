@@ -12,7 +12,7 @@ const Cuadropop: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 				<defs>
 					<style>
 						{
-							'.a-pop{fill:url(#a-pop);}.b-pop,.c-pop,.h-pop{fill:#fff;}.c-pop,.e-pop,.h-pop{font-size:24px;}.c-pop{font-family:Silka-SemiBold, Silka;font-weight:600;}.d-pop,.f-pop{fill:#e40032;}.e-pop{fill:#182856;}.e-pop,.h-pop{font-family:Silka-Regular, Silka;}.f-pop{font-size:32px;font-family:Silka-Bold, Silka;}.f-pop,.j-pop{font-weight:700;}.g-pop,.j-pop{fill:#001f5f;}.i-pop{fill:rgba(67,67,67,0.09);}.j-pop{font-size:42px;font-family:"Kiona-Bold";}.k-pop{filter:url(#p-pop);}.l-pop{filter:url(#n-pop);}.m-pop{filter:url(#l-pop);}.n-pop{filter:url(#j-pop);}.o-pop{filter:url(#h-pop);}.p-pop{filter:url(#f-pop);}.q-pop{filter:url(#d-pop);}.r-pop{filter:url(#b-pop);}'
+							'.a-pop{fill:url(#a-pop);}.b-pop,.c-pop,.h-pop{fill:#fff;}.c-pop,.e-pop,.h-pop{font-size:24px;}.c-pop{font-family:Silka-SemiBold, Silka;font-weight:600;}.d-pop,.f-pop{fill:#e40032;}.e-pop{fill:#182856;}.e-pop,.h-pop{font-family:Silka-Regular, Silka;}.f-pop{font-size:32px;font-family:Silka-Bold, Silka;}.f-pop,.j-pop{font-weight:700;}.g-pop,.j-pop{fill:#001f5f;}.i-pop{fill:rgba(67,67,67,0.09);}.j-pop{font-size:42px;font-family:Kiona-Bold, Kiona;}.k-pop{filter:url(#p-pop);}.l-pop{filter:url(#n-pop);}.m-pop{filter:url(#l-pop);}.n-pop{filter:url(#j-pop);}.o-pop{filter:url(#h-pop);}.p-pop{filter:url(#f-pop);}.q-pop{filter:url(#d-pop);}.r-pop{filter:url(#b-pop);}'
 						}
 					</style>
 					<pattern

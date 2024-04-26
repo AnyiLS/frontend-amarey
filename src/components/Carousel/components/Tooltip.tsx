@@ -2,7 +2,7 @@ import React from 'react'
 
 const Tooltip: React.FC = (): JSX.Element => {
 	return (
-		<svg viewBox="0 0 232.321 279.885" width={200} height={247}>
+		<svg viewBox="0 0 300 279.885" width={300} height={247}>
 			<defs>
 				<style>
 					{
@@ -63,7 +63,7 @@ const Tooltip: React.FC = (): JSX.Element => {
 							{'Conoce m\xE1s de '}
 						</tspan>
 						<tspan x={0} y={26}>
-							{'Amarey dando clic '}
+							{'grupo Amarey dando clic '}
 						</tspan>
 						<tspan x={0} y={52}>
 							{'en cada uno '}

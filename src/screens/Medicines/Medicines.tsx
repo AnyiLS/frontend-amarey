@@ -26,7 +26,7 @@ const Medicines: React.FC = (): JSX.Element => {
 							<defs>
 								<style>
 									{
-										'.a-medicines,.b-medicines{stroke:#707070;}.a-medicines{fill:url(#a-medicines);}.b-medicines{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-medicines);}.c-medicines,.d-medicines,.f-medicines,.i-medicines,.j-medicines{fill:#fff;}.c-medicines{font-size:55px;}.c-medicines,.f-medicines{font-family:"Kiona-Bold";font-weight:700;}.d-medicines,.j-medicines{font-size:24px;}.d{font-family:Silka-Regular, Silka;}.e-medicines{fill:rgba(67,67,67,0.09);}.f-medicines{font-size:42px;}.g-medicines{opacity:1;}.h-medicines{fill:rgba(255,255,255,0.5);}.j-medicines{font-family:Silka-SemiBold, Silka;font-weight:600;}.k-medicines{stroke:none;}.l-medicines{fill:none;}.m-medicines{filter:url(#c-medicines);}'
+										'.a-medicines,.b-medicines{stroke:#707070;}.a-medicines{fill:url(#a-medicines);}.b-medicines{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-medicines);}.c-medicines,.d-medicines,.f-medicines,.i-medicines,.j-medicines{fill:#fff;}.c-medicines{font-size:55px;}.c-medicines,.f-medicines{font-family:Kiona-Bold, Kiona;font-weight:700;}.d-medicines,.j-medicines{font-size:24px;}.d{font-family:Silka-Regular, Silka;}.e-medicines{fill:rgba(67,67,67,0.09);}.f-medicines{font-size:42px;}.g-medicines{opacity:1;}.h-medicines{fill:rgba(255,255,255,0.5);}.j-medicines{font-family:Silka-SemiBold, Silka;font-weight:600;}.k-medicines{stroke:none;}.l-medicines{fill:none;}.m-medicines{filter:url(#c-medicines);}'
 									}
 								</style>
 								<pattern
@@ -150,7 +150,7 @@ const Medicines: React.FC = (): JSX.Element => {
 									<defs>
 										<style>
 											{
-												'.a-boton-pequena{fill:rgba(255,255,255,0.5);}.b-boton-pequena{fill:#fff;font-size:28px;font-family:"Kiona-Bold";font-weight:700;}.c-boton-pequena{filter:url(#a-boton-pequena);}'
+												'.a-boton-pequena{fill:rgba(255,255,255,0.5);}.b-boton-pequena{fill:#fff;font-size:28px;font-family:Kiona-Bold, Kiona;font-weight:700;}.c-boton-pequena{filter:url(#a-boton-pequena);}'
 											}
 										</style>
 										<filter

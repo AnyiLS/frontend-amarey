@@ -27,7 +27,7 @@ const Orthopedics: React.FC = (): JSX.Element => {
 							<defs>
 								<style>
 									{
-										'.a-products-desktop,.e-products-desktop,.f-products-desktop,.h-products-desktop,.k-products-desktop tspan{fill:#fff;}.b-products-desktop{fill:none;}.c-products-desktop,.d-products-desktop{stroke:#707070;}.c-products-desktop{fill:url(#a-products-desktop);}.d-products-desktop,.i-products-desktop{opacity:1;}.d-products-desktop{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-products-desktop);}.e-products-desktop{font-size:55px;}.e-products-desktop,.h-products-desktop{font-family:"Kiona-Bold";font-weight:700;}.f-products-desktop,.k-products-desktop{font-size:24px;}.f-products-desktop{font-family:Silka-Regular, Silka;}.g-products-desktop{fill:rgba(67,67,67,0.09);}.h-products-desktop{font-size:42px;}.j-products-desktop{fill:rgba(255,255,255,0.5);}.k-products-desktop{font-family:Silka-SemiBold, Silka;font-weight:600;}.l-products-desktop{stroke:none;}.m-products-desktop{filter:url(#c-products-desktop);}'
+										'.a-products-desktop,.e-products-desktop,.f-products-desktop,.h-products-desktop,.k-products-desktop tspan{fill:#fff;}.b-products-desktop{fill:none;}.c-products-desktop,.d-products-desktop{stroke:#707070;}.c-products-desktop{fill:url(#a-products-desktop);}.d-products-desktop,.i-products-desktop{opacity:1;}.d-products-desktop{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-products-desktop);}.e-products-desktop{font-size:55px;}.e-products-desktop,.h-products-desktop{font-family:Kiona-Bold, Kiona;font-weight:700;}.f-products-desktop,.k-products-desktop{font-size:24px;}.f-products-desktop{font-family:Silka-Regular, Silka;}.g-products-desktop{fill:rgba(67,67,67,0.09);}.h-products-desktop{font-size:42px;}.j-products-desktop{fill:rgba(255,255,255,0.5);}.k-products-desktop{font-family:Silka-SemiBold, Silka;font-weight:600;}.l-products-desktop{stroke:none;}.m-products-desktop{filter:url(#c-products-desktop);}'
 									}
 								</style>
 								<pattern
@@ -154,7 +154,7 @@ const Orthopedics: React.FC = (): JSX.Element => {
 									<defs>
 										<style>
 											{
-												'.a-ortope{fill:rgba(255,255,255,0.5);}.b-ortope{fill:#fff;font-size:28px;font-family:"Kiona-Bold";font-weight:700;}.c-ortope{filter:url(#a-ortope);}'
+												'.a-ortope{fill:rgba(255,255,255,0.5);}.b-ortope{fill:#fff;font-size:28px;font-family:Kiona-Bold, Kiona;font-weight:700;}.c-ortope{filter:url(#a-ortope);}'
 											}
 										</style>
 										<filter

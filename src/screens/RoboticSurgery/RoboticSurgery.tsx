@@ -26,7 +26,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 							<defs>
 								<style>
 									{
-										'.a-robotic-surgery,.b-robotic-surgery{stroke:#707070;}.a-robotic-surgery{fill:url(#a-robotic-surgery);}.b-robotic-surgery{opacity:0.91;mix-blend-mode:multiply;isolation:isolate;fill:url(#b-robotic-surgery);}.c-robotic-surgery,.d-robotic-surgery,.f-robotic-surgery,.i-robotic-surgery,.j-robotic-surgery{fill:#fff;}.c-robotic-surgery{font-size:55px;}.c-robotic-surgery,.f-robotic-surgery{font-family:"Kiona-Bold";font-weight:700;}.d-robotic-surgery,.j-robotic-surgery{font-size:24px;}.d-robotic-surgery{font-family:Silka-Regular, Silka;}.e-robotic-surgery{fill:rgba(67,67,67,0.09);}.f-robotic-surgery{font-size:42px;}.g-robotic-surgery{opacity:1;}.h-robotic-surgery{fill:rgba(255,255,255,0.5);}.j-robotic-surgery{font-family:Silka-SemiBold, Silka;font-weight:600;}.k-robotic-surgery{stroke:none;}.l-robotic-surgery{fill:none;}.m-robotic-surgery{filter:url(#c-robotic-surgery);}'
+										'.a-robotic-surgery,.b-robotic-surgery{stroke:#707070;}.a-robotic-surgery{fill:url(#a-robotic-surgery);}.b-robotic-surgery{opacity:0.91;mix-blend-mode:multiply;isolation:isolate;fill:url(#b-robotic-surgery);}.c-robotic-surgery,.d-robotic-surgery,.f-robotic-surgery,.i-robotic-surgery,.j-robotic-surgery{fill:#fff;}.c-robotic-surgery{font-size:55px;}.c-robotic-surgery,.f-robotic-surgery{font-family:Kiona-Bold, Kiona;font-weight:700;}.d-robotic-surgery,.j-robotic-surgery{font-size:24px;}.d-robotic-surgery{font-family:Silka-Regular, Silka;}.e-robotic-surgery{fill:rgba(67,67,67,0.09);}.f-robotic-surgery{font-size:42px;}.g-robotic-surgery{opacity:1;}.h-robotic-surgery{fill:rgba(255,255,255,0.5);}.j-robotic-surgery{font-family:Silka-SemiBold, Silka;font-weight:600;}.k-robotic-surgery{stroke:none;}.l-robotic-surgery{fill:none;}.m-robotic-surgery{filter:url(#c-robotic-surgery);}'
 									}
 								</style>
 								<pattern
@@ -198,7 +198,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 									<defs>
 										<style>
 											{
-												'.a-proboctica{fill:rgba(255,255,255,0.5);}.b-proboctica{fill:#fff;font-size:28px;font-family:"Kiona-Bold";font-weight:700;}.c-proboctica{filter:url(#a-proboctica);}'
+												'.a-proboctica{fill:rgba(255,255,255,0.5);}.b-proboctica{fill:#fff;font-size:28px;font-family:Kiona-Bold, Kiona;font-weight:700;}.c-proboctica{filter:url(#a-proboctica);}'
 											}
 										</style>
 										<filter

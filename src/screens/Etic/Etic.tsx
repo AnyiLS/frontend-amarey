@@ -25,7 +25,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 							<defs>
 								<style>
 									{
-										'.a-etic{fill:url(#a-etic);}.b-etic{opacity:0.78;fill:url(#b-etic);}.c-etic,.m-etic{fill:#001f5f;}.c-etic,.g-etic{font-size:55px;}.c-etic,.g-etic,.i-etic{font-family:"Kiona-Bold";font-weight:700;}.d-etic{font-size:100px;}.e-etic{fill:url(#c-etic);}.f-etic{fill:url(#f-etic);}.g-etic,.i-etic,.l-etic{fill:#fff;}.h-etic{fill:rgba(67,67,67,0.09);}.i-etic{font-size:42px;}.j-etic{opacity:0.7;}.k-etic{fill:rgba(255,255,255,0.5);}.n-etic{filter:url(#i-etic);}.o-etic{filter:url(#g-etic);mix-blend-mode:multiply;isolation:isolate;}.p-etic{filter:url(#d-etic);}'
+										'.a-etic{fill:url(#a-etic);}.b-etic{opacity:0.78;fill:url(#b-etic);}.c-etic,.m-etic{fill:#001f5f;}.c-etic,.g-etic{font-size:55px;}.c-etic,.g-etic,.i-etic{font-family:Kiona-Bold, Kiona;font-weight:700;}.d-etic{font-size:100px;}.e-etic{fill:url(#c-etic);}.f-etic{fill:url(#f-etic);}.g-etic,.i-etic,.l-etic{fill:#fff;}.h-etic{fill:rgba(67,67,67,0.09);}.i-etic{font-size:42px;}.j-etic{opacity:0.7;}.k-etic{fill:rgba(255,255,255,0.5);}.n-etic{filter:url(#i-etic);}.o-etic{filter:url(#g-etic);mix-blend-mode:multiply;isolation:isolate;}.p-etic{filter:url(#d-etic);}'
 									}
 								</style>
 								<pattern

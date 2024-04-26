@@ -1,5 +1,7 @@
 import { Carousel } from 'flowbite-react'
 import React from 'react'
+import Mute from 'assets/images/mute.png'
+import Mute2 from 'assets/images/Button.png'
 
 export const CarouselMovil: React.FC = () => {
 	const [height, setHeight] = React.useState<number>(0)
@@ -15,7 +17,8 @@ export const CarouselMovil: React.FC = () => {
 		}
 	}, [])
 
-	console.log(document.getElementById('navbar__container'))
+	const [showPopup, setShowPopup] = React.useState<boolean>(false)
+	const [mute, setMute] = React.useState(true)
 
 	return (
 		<>
@@ -31,7 +34,7 @@ export const CarouselMovil: React.FC = () => {
 						<defs>
 							<style>
 								{
-									'.a-carousel-welcome-1,.g-carousel-welcome-1{fill:#001f5f;}.b-carousel-welcome-1{fill:none;}.c-carousel-welcome-1,.n-carousel-welcome-1{fill:#fff;}.d-carousel-welcome-1{clip-path:url(#a-carousel-welcome-1);}.e-carousel-welcome-1{fill:#e7002a;}.f-carousel-welcome-1{fill:url(#b-carousel-welcome-1);}.g-carousel-welcome-1{font-size:16px;font-family:Silka-Bold, Silka;}.g-carousel-welcome-1,.n-carousel-welcome-1{font-weight:700;}.h-carousel-welcome-1{font-size:22px;}.i-carousel-welcome-1{clip-path:url(#e-carousel-welcome-1);}.j-carousel-welcome-1{fill:#e40032;}.k-carousel-welcome-1{mix-blend-mode:multiply;isolation:isolate;}.l-carousel-welcome-1{fill:#d6d6d6;}.m-carousel-welcome-1{fill:#eeebeb;}.n-carousel-welcome-1{font-size:21px;font-family:Kiona-Bold, Kiona;}.o-carousel-welcome-1{filter:url(#c-carousel-welcome-1);}'
+									'.a-carousel-welcome-1,.g-carousel-welcome-1{fill:#001f5f;}.b-carousel-welcome-1{fill:none;}.c-carousel-welcome-1,.n-carousel-welcome-1{fill:#fff;}.d-carousel-welcome-1{clip-path:url(#a-carousel-welcome-1);}.e-carousel-welcome-1{fill:#e7002a;}.f-carousel-welcome-1{fill:url(#b-carousel-welcome-1);}.g-carousel-welcome-1{font-size:16px;font-family:Silka-Bold, Silka;}.g-carousel-welcome-1,.n-carousel-welcome-1{font-weight:700;}.h-carousel-welcome-1{font-size:22px;}.i-carousel-welcome-1{clip-path:url(#e-carousel-welcome-1);}.j-carousel-welcome-1{fill:#e40032;}.k-carousel-welcome-1{mix-blend-mode:multiply;isolation:isolate;}.l-carousel-welcome-1{fill:#d6d6d6;}.m-carousel-welcome-1{fill:#eeebeb;}.n-carousel-welcome-1{font-size:21px;font-family:Kiona-Bold;}.o-carousel-welcome-1{filter:url(#c-carousel-welcome-1);}'
 								}
 							</style>
 							<clipPath id="a-carousel-welcome-1">
@@ -223,7 +226,7 @@ export const CarouselMovil: React.FC = () => {
 						<defs>
 							<style>
 								{
-									'.a-carousel-welcome-2,.h-carousel-welcome-2,.i-carousel-welcome-2{fill:#001f5f;}.b-carousel-welcome-2,.g-carousel-welcome-2,.n-carousel-welcome-2{fill:#fff;}.c-carousel-welcome-2{clip-path:url(#a-carousel-welcome-2);}.d-carousel-welcome-2{fill:#e7002a;}.e-carousel-welcome-2{fill:url(#b-carousel-welcome-2);}.f-carousel-welcome-2{fill:#e40032;}.g-carousel-welcome-2{font-size:18px;}.g-carousel-welcome-2,.i-carousel-welcome-2,.n-carousel-welcome-2{font-family:Kiona-Bold, Kiona;font-weight:700;}.h-carousel-welcome-2{font-size:16px;font-family:Silka-Regular, Silka;}.i-carousel-welcome-2{font-size:32px;}.j-carousel-welcome-2{mix-blend-mode:multiply;isolation:isolate;}.k-carousel-welcome-2{fill:#e2e0e1;}.l-carousel-welcome-2{fill:#cccdcf;}.m-carousel-welcome-2{fill:#eeebeb;}.n-carousel-welcome-2{font-size:21px;}.o-carousel-welcome-2{filter:url(#e-carousel-welcome-2);}.p-carousel-welcome-2{filter:url(#c-carousel-welcome-2);}'
+									'.a-carousel-welcome-2,.h-carousel-welcome-2,.i-carousel-welcome-2{fill:#001f5f;}.b-carousel-welcome-2,.g-carousel-welcome-2,.n-carousel-welcome-2{fill:#fff;}.c-carousel-welcome-2{clip-path:url(#a-carousel-welcome-2);}.d-carousel-welcome-2{fill:#e7002a;}.e-carousel-welcome-2{fill:url(#b-carousel-welcome-2);}.f-carousel-welcome-2{fill:#e40032;}.g-carousel-welcome-2{font-size:18px;}.g-carousel-welcome-2,.i-carousel-welcome-2,.n-carousel-welcome-2{font-family:Kiona-Bold;font-weight:700;}.h-carousel-welcome-2{font-size:16px;font-family:Silka-Regular, Silka;}.i-carousel-welcome-2{font-size:32px;}.j-carousel-welcome-2{mix-blend-mode:multiply;isolation:isolate;}.k-carousel-welcome-2{fill:#e2e0e1;}.l-carousel-welcome-2{fill:#cccdcf;}.m-carousel-welcome-2{fill:#eeebeb;}.n-carousel-welcome-2{font-size:21px;}.o-carousel-welcome-2{filter:url(#e-carousel-welcome-2);}.p-carousel-welcome-2{filter:url(#c-carousel-welcome-2);}'
 								}
 							</style>
 							<clipPath id="a-carousel-welcome-2">
@@ -376,7 +379,7 @@ export const CarouselMovil: React.FC = () => {
 						<defs>
 							<style>
 								{
-									'.a-carousel-welcome-3,.f-carousel-welcome-3,.g-carousel-welcome-3{fill:#001f5f;}.b-carousel-welcome-3,.i-carousel-welcome-3,.n-carousel-welcome-3{fill:#fff;}.c-carousel-welcome-3{clip-path:url(#a-carousel-welcome-3);}.d-carousel-welcome-3{fill:#e7002a;}.e-carousel-welcome-3{fill:url(#b-carousel-welcome-3);}.f-carousel-welcome-3{font-size:22px;font-family:Silka-Bold, Silka;}.f-carousel-welcome-3,.i-carousel-welcome-3,.n-carousel-welcome-3{font-weight:700;}.g-carousel-welcome-3{font-size:16px;font-family:Silka-Regular, Silka;}.h-carousel-welcome-3{fill:#e40032;}.i-carousel-welcome-3{font-size:18px;}.i-carousel-welcome-3,.n-carousel-welcome-3{font-family:Kiona-Bold, Kiona;}.j-carousel-welcome-3{mix-blend-mode:multiply;isolation:isolate;}.k-carousel-welcome-3{fill:#eae8ea;}.l-carousel-welcome-3{fill:#eeebeb;}.m-carousel-welcome-3{fill:#d1d2d4;}.n-carousel-welcome-3{font-size:21px;}.o-carousel-welcome-3{filter:url(#e-carousel-welcome-3);}.p-carousel-welcome-3{filter:url(#c-carousel-welcome-3);}'
+									'.a-carousel-welcome-3,.f-carousel-welcome-3,.g-carousel-welcome-3{fill:#001f5f;}.b-carousel-welcome-3,.i-carousel-welcome-3,.n-carousel-welcome-3{fill:#fff;}.c-carousel-welcome-3{clip-path:url(#a-carousel-welcome-3);}.d-carousel-welcome-3{fill:#e7002a;}.e-carousel-welcome-3{fill:url(#b-carousel-welcome-3);}.f-carousel-welcome-3{font-size:22px;font-family:Silka-Bold, Silka;}.f-carousel-welcome-3,.i-carousel-welcome-3,.n-carousel-welcome-3{font-weight:700;}.g-carousel-welcome-3{font-size:16px;font-family:Silka-Regular, Silka;}.h-carousel-welcome-3{fill:#e40032;}.i-carousel-welcome-3{font-size:18px;}.i-carousel-welcome-3,.n-carousel-welcome-3{font-family:Kiona-Bold;}.j-carousel-welcome-3{mix-blend-mode:multiply;isolation:isolate;}.k-carousel-welcome-3{fill:#eae8ea;}.l-carousel-welcome-3{fill:#eeebeb;}.m-carousel-welcome-3{fill:#d1d2d4;}.n-carousel-welcome-3{font-size:21px;}.o-carousel-welcome-3{filter:url(#e-carousel-welcome-3);}.p-carousel-welcome-3{filter:url(#c-carousel-welcome-3);}'
 								}
 							</style>
 							<clipPath id="a-carousel-welcome-3">
@@ -537,7 +540,7 @@ export const CarouselMovil: React.FC = () => {
 							<defs>
 								<style>
 									{
-										'.a-pentagrama,.f-pentagrama,.h-pentagrama{fill:#001f5f;}.b-pentagrama,.i-pentagrama{fill:#fff;}.c-pentagrama{clip-path:url(#a-pentagrama);}.d-pentagrama{opacity:0.65;}.e-pentagrama{fill:#e7002a;}.f-pentagrama,.i-pentagrama{font-size:16px;}.f-pentagrama{font-family:Silka-Bold, Silka;}.f-pentagrama,.h-pentagrama{font-weight:700;}.g-pentagrama{fill:#e40032;}.h-pentagrama{font-size:18px;font-family:Kiona-Bold, Kiona;}.i-pentagrama{font-family:Silka-Medium, Silka;font-weight:500;}.j-pentagrama{fill:url(#f-pentagrama);}.k-pentagrama{filter:url(#d-pentagrama);}.l-pentagrama{filter:url(#b-pentagrama);}'
+										'.a-pentagrama,.f-pentagrama,.h-pentagrama{fill:#001f5f;}.b-pentagrama,.i-pentagrama{fill:#fff;}.c-pentagrama{clip-path:url(#a-pentagrama);}.d-pentagrama{opacity:0.65;}.e-pentagrama{fill:#e7002a;}.f-pentagrama,.i-pentagrama{font-size:16px;}.f-pentagrama{font-family:Silka-Bold, Silka;}.f-pentagrama,.h-pentagrama{font-weight:700;}.g-pentagrama{fill:#e40032;}.h-pentagrama{font-size:18px;font-family:Kiona-Bold;}.i-pentagrama{font-family:Silka-Medium, Silka;font-weight:500;}.j-pentagrama{fill:url(#f-pentagrama);}.k-pentagrama{filter:url(#d-pentagrama);}.l-pentagrama{filter:url(#b-pentagrama);}'
 									}
 								</style>
 								<clipPath id="a-pentagrama">
@@ -630,15 +633,15 @@ export const CarouselMovil: React.FC = () => {
 								</g>
 								<text
 									className="f-pentagrama"
-									transform="translate(71 1530)">
+									transform="translate(50 1530)">
 									<tspan x={0} y={15}>
 										{'Conoce más de '}
 									</tspan>
 									<tspan x={0} y={33}>
-										{'Amarey dando clic '}
+										{'grupo Amarey dando'}
 									</tspan>
 									<tspan x={0} y={51}>
-										{'en cada uno '}
+										{'clic en cada uno '}
 									</tspan>
 								</text>
 							</g>
@@ -739,7 +742,7 @@ export const CarouselMovil: React.FC = () => {
 							<defs>
 								<style>
 									{
-										'.a-pentagrama,.g-pentagrama,.i-pentagrama{fill:#001f5f;}.b-pentagrama,.l-pentagrama{fill:none;}.c-pentagrama,.j-pentagrama,.m-pentagrama,.o-pentagrama{fill:#fff;}.d-pentagrama{clip-path:url(#c-pentagrama);}.e-pentagrama{opacity:0.65;}.f-pentagrama{fill:#e7002a;}.g-pentagrama,.j-pentagrama{font-size:16px;}.g-pentagrama{font-family:Silka-Bold, Silka;}.g-pentagrama,.i-pentagrama,.m-pentagrama,.o-pentagrama{font-weight:700;}.h-pentagrama{fill:#e40032;}.i-pentagrama,.m-pentagrama{font-size:18px;font-family:Kiona-Bold, Kiona;}.j-pentagrama{font-family:Silka-Medium, Silka;font-weight:500;}.k-pentagrama{clip-path:url(#j-pentagrama);}.l-pentagrama{stroke:#e40032;stroke-miterlimit:10;stroke-width:0.979px;}.n-pentagrama{clip-path:url(#k-pentagrama);}.o-pentagrama{font-size:24px;font-family:Helvetica-Bold, Helvetica;}.p-pentagrama{fill:url(#n-pentagrama);}.q-pentagrama{filter:url(#l-pentagrama);}.r-pentagrama{filter:url(#h-pentagrama);}.s-pentagrama{filter:url(#f-pentagrama);}.t-pentagrama{filter:url(#d-pentagrama);}.u-pentagrama{filter:url(#a-pentagrama);}'
+										'.a-pentagrama,.g-pentagrama,.i-pentagrama{fill:#001f5f;}.b-pentagrama,.l-pentagrama{fill:none;}.c-pentagrama,.j-pentagrama,.m-pentagrama,.o-pentagrama{fill:#fff;}.d-pentagrama{clip-path:url(#c-pentagrama);}.e-pentagrama{opacity:0.65;}.f-pentagrama{fill:#e7002a;}.g-pentagrama,.j-pentagrama{font-size:16px;}.g-pentagrama{font-family:Silka-Bold, Silka;}.g-pentagrama,.i-pentagrama,.m-pentagrama,.o-pentagrama{font-weight:700;}.h-pentagrama{fill:#e40032;}.i-pentagrama,.m-pentagrama{font-size:18px;font-family:Kiona-Bold;}.j-pentagrama{font-family:Silka-Medium, Silka;font-weight:500;}.k-pentagrama{clip-path:url(#j-pentagrama);}.l-pentagrama{stroke:#e40032;stroke-miterlimit:10;stroke-width:0.979px;}.n-pentagrama{clip-path:url(#k-pentagrama);}.o-pentagrama{font-size:24px;font-family:Helvetica-Bold, Helvetica;}.p-pentagrama{fill:url(#n-pentagrama);}.q-pentagrama{filter:url(#l-pentagrama);}.r-pentagrama{filter:url(#h-pentagrama);}.s-pentagrama{filter:url(#f-pentagrama);}.t-pentagrama{filter:url(#d-pentagrama);}.u-pentagrama{filter:url(#a-pentagrama);}'
 									}
 								</style>
 								<filter
@@ -962,7 +965,18 @@ export const CarouselMovil: React.FC = () => {
 								/>
 								<g
 									transform="translate(-30.813 -1201.144)"
-									onClick={() => window.location.reload()}>
+									onClick={() => {
+										setShowPopup(true)
+										const video: HTMLVideoElement =
+											document.getElementById(
+												'video-1'
+											) as HTMLVideoElement
+
+										if (video) {
+											video.currentTime = 0
+											video.play()
+										}
+									}}>
 									<g transform="translate(30.813 1489.888)">
 										<g
 											className="r-pentagrama"
@@ -1129,7 +1143,7 @@ export const CarouselMovil: React.FC = () => {
 							<defs>
 								<style>
 									{
-										'.a-pentagrama,.f-pentagrama,.h-pentagrama{fill:#001f5f;}.b-pentagrama,.i-pentagrama,.n-pentagrama,.o-pentagrama{fill:#fff;}.c-pentagrama{clip-path:url(#c-pentagrama);}.d-pentagrama{opacity:0.65;}.e-pentagrama{fill:#e7002a;}.f-pentagrama,.i-pentagrama{font-size:16px;}.f-pentagrama{font-family:Silka-Bold, Silka;}.f-pentagrama,.h-pentagrama,.n-pentagrama,.o-pentagrama{font-weight:700;}.g-pentagrama{fill:#e40032;}.h-pentagrama,.n-pentagrama{font-size:18px;font-family:Kiona-Bold, Kiona;}.i-pentagrama{font-family:Silka-Medium, Silka;font-weight:500;}.j-pentagrama{fill:url(#h-pentagrama);}.k-pentagrama{clip-path:url(#k-pentagrama);}.l-pentagrama{fill:none;stroke:#e40032;stroke-miterlimit:10;stroke-width:0.979px;}.m-pentagrama{fill:url(#l-pentagrama);}.o-pentagrama{font-size:24px;font-family:Helvetica-Bold, Helvetica;}.p-pentagrama{filter:url(#m-pentagrama);}.q-pentagrama{filter:url(#i-pentagrama);}.r-pentagrama{filter:url(#f-pentagrama);}.s-pentagrama{filter:url(#d-pentagrama);}.t-pentagrama{filter:url(#a-pentagrama);}'
+										'.a-pentagrama,.f-pentagrama,.h-pentagrama{fill:#001f5f;}.b-pentagrama,.i-pentagrama,.n-pentagrama,.o-pentagrama{fill:#fff;}.c-pentagrama{clip-path:url(#c-pentagrama);}.d-pentagrama{opacity:0.65;}.e-pentagrama{fill:#e7002a;}.f-pentagrama,.i-pentagrama{font-size:16px;}.f-pentagrama{font-family:Silka-Bold, Silka;}.f-pentagrama,.h-pentagrama,.n-pentagrama,.o-pentagrama{font-weight:700;}.g-pentagrama{fill:#e40032;}.h-pentagrama,.n-pentagrama{font-size:18px;font-family:Kiona-Bold;}.i-pentagrama{font-family:Silka-Medium, Silka;font-weight:500;}.j-pentagrama{fill:url(#h-pentagrama);}.k-pentagrama{clip-path:url(#k-pentagrama);}.l-pentagrama{fill:none;stroke:#e40032;stroke-miterlimit:10;stroke-width:0.979px;}.m-pentagrama{fill:url(#l-pentagrama);}.o-pentagrama{font-size:24px;font-family:Helvetica-Bold, Helvetica;}.p-pentagrama{filter:url(#m-pentagrama);}.q-pentagrama{filter:url(#i-pentagrama);}.r-pentagrama{filter:url(#f-pentagrama);}.s-pentagrama{filter:url(#d-pentagrama);}.t-pentagrama{filter:url(#a-pentagrama);}'
 									}
 								</style>
 								<filter
@@ -1461,7 +1475,7 @@ export const CarouselMovil: React.FC = () => {
 							<defs>
 								<style>
 									{
-										'.a-pentagrama,.f-pentagrama,.h-pentagrama{fill:#001f5f;}.b-pentagrama,.i-pentagrama,.n-pentagrama,.o-pentagrama{fill:#fff;}.c-pentagrama{clip-path:url(#c-pentagrama);}.d-pentagrama{opacity:0.65;}.e-pentagrama{fill:#e7002a;}.f-pentagrama,.i-pentagrama{font-size:16px;}.f-pentagrama{font-family:Silka-Bold, Silka;}.f-pentagrama,.h-pentagrama,.n-pentagrama,.o-pentagrama{font-weight:700;}.g-pentagrama{fill:#e40032;}.h-pentagrama,.n-pentagrama{font-size:18px;font-family:Kiona-Bold, Kiona;}.i-pentagrama{font-family:Silka-Medium, Silka;font-weight:500;}.j-pentagrama{fill:url(#h-pentagrama);}.k-pentagrama{clip-path:url(#k-pentagrama);}.l-pentagrama{fill:none;stroke:#e40032;stroke-miterlimit:10;stroke-width:0.979px;}.m-pentagrama{fill:url(#l-pentagrama);}.o-pentagrama{font-size:24px;font-family:Helvetica-Bold, Helvetica;}.p-pentagrama{filter:url(#m-pentagrama);}.q-pentagrama{filter:url(#i-pentagrama);}.r-pentagrama{filter:url(#f-pentagrama);}.s-pentagrama{filter:url(#d-pentagrama);}.t-pentagrama{filter:url(#a-pentagrama);}'
+										'.a-pentagrama,.f-pentagrama,.h-pentagrama{fill:#001f5f;}.b-pentagrama,.i-pentagrama,.n-pentagrama,.o-pentagrama{fill:#fff;}.c-pentagrama{clip-path:url(#c-pentagrama);}.d-pentagrama{opacity:0.65;}.e-pentagrama{fill:#e7002a;}.f-pentagrama,.i-pentagrama{font-size:16px;}.f-pentagrama{font-family:Silka-Bold, Silka;}.f-pentagrama,.h-pentagrama,.n-pentagrama,.o-pentagrama{font-weight:700;}.g-pentagrama{fill:#e40032;}.h-pentagrama,.n-pentagrama{font-size:18px;font-family:Kiona-Bold;}.i-pentagrama{font-family:Silka-Medium, Silka;font-weight:500;}.j-pentagrama{fill:url(#h-pentagrama);}.k-pentagrama{clip-path:url(#k-pentagrama);}.l-pentagrama{fill:none;stroke:#e40032;stroke-miterlimit:10;stroke-width:0.979px;}.m-pentagrama{fill:url(#l-pentagrama);}.o-pentagrama{font-size:24px;font-family:Helvetica-Bold, Helvetica;}.p-pentagrama{filter:url(#m-pentagrama);}.q-pentagrama{filter:url(#i-pentagrama);}.r-pentagrama{filter:url(#f-pentagrama);}.s-pentagrama{filter:url(#d-pentagrama);}.t-pentagrama{filter:url(#a-pentagrama);}'
 									}
 								</style>
 								<filter
@@ -1794,7 +1808,7 @@ export const CarouselMovil: React.FC = () => {
 							<defs>
 								<style>
 									{
-										'.a-pentagrama,.f-pentagrama,.h-pentagrama{fill:#001f5f;}.b-pentagrama,.i-pentagrama,.n-pentagrama,.o-pentagrama{fill:#fff;}.c-pentagrama{clip-path:url(#c-pentagrama);}.d-pentagrama{opacity:0.65;}.e-pentagrama{fill:#e7002a;}.f-pentagrama,.i-pentagrama{font-size:16px;}.f-pentagrama{font-family:Silka-Bold, Silka;}.f-pentagrama,.h-pentagrama,.n-pentagrama,.o-pentagrama{font-weight:700;}.g-pentagrama{fill:#e40032;}.h-pentagrama,.n-pentagrama{font-size:18px;font-family:Kiona-Bold, Kiona;}.i-pentagrama{font-family:Silka-Medium, Silka;font-weight:500;}.j-pentagrama{fill:url(#h-pentagrama);}.k-pentagrama{clip-path:url(#k-pentagrama);}.l-pentagrama{fill:none;stroke:#e40032;stroke-miterlimit:10;stroke-width:0.979px;}.m-pentagrama{fill:url(#l-pentagrama);}.o-pentagrama{font-size:24px;font-family:Helvetica-Bold, Helvetica;}.p-pentagrama{filter:url(#m-pentagrama);}.q-pentagrama{filter:url(#i-pentagrama);}.r-pentagrama{filter:url(#f-pentagrama);}.s-pentagrama{filter:url(#d-pentagrama);}.t-pentagrama{filter:url(#a-pentagrama);}'
+										'.a-pentagrama,.f-pentagrama,.h-pentagrama{fill:#001f5f;}.b-pentagrama,.i-pentagrama,.n-pentagrama,.o-pentagrama{fill:#fff;}.c-pentagrama{clip-path:url(#c-pentagrama);}.d-pentagrama{opacity:0.65;}.e-pentagrama{fill:#e7002a;}.f-pentagrama,.i-pentagrama{font-size:16px;}.f-pentagrama{font-family:Silka-Bold, Silka;}.f-pentagrama,.h-pentagrama,.n-pentagrama,.o-pentagrama{font-weight:700;}.g-pentagrama{fill:#e40032;}.h-pentagrama,.n-pentagrama{font-size:18px;font-family:Kiona-Bold;}.i-pentagrama{font-family:Silka-Medium, Silka;font-weight:500;}.j-pentagrama{fill:url(#h-pentagrama);}.k-pentagrama{clip-path:url(#k-pentagrama);}.l-pentagrama{fill:none;stroke:#e40032;stroke-miterlimit:10;stroke-width:0.979px;}.m-pentagrama{fill:url(#l-pentagrama);}.o-pentagrama{font-size:24px;font-family:Helvetica-Bold, Helvetica;}.p-pentagrama{filter:url(#m-pentagrama);}.q-pentagrama{filter:url(#i-pentagrama);}.r-pentagrama{filter:url(#f-pentagrama);}.s-pentagrama{filter:url(#d-pentagrama);}.t-pentagrama{filter:url(#a-pentagrama);}'
 									}
 								</style>
 								<filter
@@ -2126,7 +2140,7 @@ export const CarouselMovil: React.FC = () => {
 							<defs>
 								<style>
 									{
-										'.a-pentagrama,.f-pentagrama,.h-pentagrama{fill:#001f5f;}.b-pentagrama,.i-pentagrama,.n-pentagrama,.o-pentagrama{fill:#fff;}.c-pentagrama{clip-path:url(#c-pentagrama);}.d-pentagrama{opacity:0.65;}.e-pentagrama{fill:#e7002a;}.f-pentagrama,.i-pentagrama{font-size:16px;}.f-pentagrama{font-family:Silka-Bold, Silka;}.f-pentagrama,.h-pentagrama,.n-pentagrama,.o-pentagrama{font-weight:700;}.g-pentagrama{fill:#e40032;}.h-pentagrama,.n-pentagrama{font-size:18px;font-family:Kiona-Bold, Kiona;}.i-pentagrama{font-family:Silka-Medium, Silka;font-weight:500;}.j-pentagrama{fill:url(#h-pentagrama);}.k-pentagrama{clip-path:url(#k-pentagrama);}.l-pentagrama{fill:none;stroke:#e40032;stroke-miterlimit:10;stroke-width:0.979px;}.m-pentagrama{fill:url(#l-pentagrama);}.o-pentagrama{font-size:24px;font-family:Helvetica-Bold, Helvetica;}.p-pentagrama{filter:url(#m-pentagrama);}.q-pentagrama{filter:url(#i-pentagrama);}.r-pentagrama{filter:url(#f-pentagrama);}.s-pentagrama{filter:url(#d-pentagrama);}.t-pentagrama{filter:url(#a-pentagrama);}'
+										'.a-pentagrama,.f-pentagrama,.h-pentagrama{fill:#001f5f;}.b-pentagrama,.i-pentagrama,.n-pentagrama,.o-pentagrama{fill:#fff;}.c-pentagrama{clip-path:url(#c-pentagrama);}.d-pentagrama{opacity:0.65;}.e-pentagrama{fill:#e7002a;}.f-pentagrama,.i-pentagrama{font-size:16px;}.f-pentagrama{font-family:Silka-Bold, Silka;}.f-pentagrama,.h-pentagrama,.n-pentagrama,.o-pentagrama{font-weight:700;}.g-pentagrama{fill:#e40032;}.h-pentagrama,.n-pentagrama{font-size:18px;font-family:Kiona-Bold;}.i-pentagrama{font-family:Silka-Medium, Silka;font-weight:500;}.j-pentagrama{fill:url(#h-pentagrama);}.k-pentagrama{clip-path:url(#k-pentagrama);}.l-pentagrama{fill:none;stroke:#e40032;stroke-miterlimit:10;stroke-width:0.979px;}.m-pentagrama{fill:url(#l-pentagrama);}.o-pentagrama{font-size:24px;font-family:Helvetica-Bold, Helvetica;}.p-pentagrama{filter:url(#m-pentagrama);}.q-pentagrama{filter:url(#i-pentagrama);}.r-pentagrama{filter:url(#f-pentagrama);}.s-pentagrama{filter:url(#d-pentagrama);}.t-pentagrama{filter:url(#a-pentagrama);}'
 									}
 								</style>
 								<filter
@@ -2460,6 +2474,33 @@ export const CarouselMovil: React.FC = () => {
 					)}
 				</React.Fragment>
 			)}
+			<div
+				className="fixed h-screen w-screen top-0 left-0 z-[100] bg-[#e6e6e6]"
+				style={{ display: showPopup ? 'flex' : 'none' }}>
+				<video
+					src="/images/video/Origen pentamero_1.mp4"
+					muted={mute}
+					controls
+					className="w-full h-full"
+					id="video-1"></video>
+				
+
+				<span
+					className="absolute top-[5%] right-[5%] text-white text-[30px] text-center font-bold bg-[#00000050] w-[50px] h-[50px] rounded-[100%]"
+					onClick={() => {
+						setShowPopup(false)
+						const video: HTMLVideoElement = document.getElementById(
+							'video-1'
+						) as HTMLVideoElement
+
+						if (video) {
+							video.currentTime = 0
+							video.pause()
+						}
+					}}>
+					X
+				</span>
+			</div>
 		</>
 	)
 }

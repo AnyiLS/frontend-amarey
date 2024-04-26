@@ -14,7 +14,7 @@ const Robotica: React.FC<{ height: string; onClose: () => void }> = ({
 				<defs>
 					<style>
 						{
-							'.a-robotica{fill:none;}.b-robotica{fill:url(#a-robotica);}.c-robotica{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-robotica);}.d-robotica,.e-robotica,.n-robotica{fill:#fff;}.d-robotica,.h-robotica{font-size:24px;}.d-robotica{font-family:Silka-SemiBold, Silka;font-weight:600;}.f-robotica,.m-robotica{fill:#001f5f;}.f-robotica,.g-robotica{font-size:32px;font-family:Silka-Bold, Silka;}.f-robotica,.g-robotica,.n-robotica{font-weight:700;}.g-robotica,.i-robotica{fill:#e40032;}.h-robotica{fill:#182856;font-family:Silka-Regular, Silka;}.j-robotica{clip-path:url(#c-robotica);}.k-robotica{fill:#e7002a;}.l-robotica{opacity:0.7;}.n-robotica{font-size:55px;font-family:"Kiona-Bold";}'
+							'.a-robotica{fill:none;}.b-robotica{fill:url(#a-robotica);}.c-robotica{mix-blend-mode:multiply;isolation:isolate;fill:url(#b-robotica);}.d-robotica,.e-robotica,.n-robotica{fill:#fff;}.d-robotica,.h-robotica{font-size:24px;}.d-robotica{font-family:Silka-SemiBold, Silka;font-weight:600;}.f-robotica,.m-robotica{fill:#001f5f;}.f-robotica,.g-robotica{font-size:32px;font-family:Silka-Bold, Silka;}.f-robotica,.g-robotica,.n-robotica{font-weight:700;}.g-robotica,.i-robotica{fill:#e40032;}.h-robotica{fill:#182856;font-family:Silka-Regular, Silka;}.j-robotica{clip-path:url(#c-robotica);}.k-robotica{fill:#e7002a;}.l-robotica{opacity:0.7;}.n-robotica{font-size:55px;font-family:Kiona-Bold, Kiona;}'
 						}
 					</style>
 					<pattern

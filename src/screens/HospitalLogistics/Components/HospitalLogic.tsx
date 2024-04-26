@@ -14,7 +14,7 @@ const HospitalLogic: React.FC<{ height: string; onClose: () => void }> = ({
 				<defs>
 					<style>
 						{
-							'.a-logistic-t,.n-logistic-t{fill:#fff;}.b-logistic-t{fill:none;}.c-logistic-t{fill:url(#a-logistic-t);}.d-logistic-t{clip-path:url(#b-logistic-t);}.e-logistic-t,.k-logistic-t{fill:#e40032;}.e-logistic-t,.g-logistic-t,.n-logistic-t{font-size:24px;}.e-logistic-t,.n-logistic-t{font-family:Silka-SemiBold, Silka;font-weight:600;}.f-logistic-t,.j-logistic-t{fill:#001f5f;}.f-logistic-t{font-size:55px;font-family:"Kiona-Bold";font-weight:700;}.g-logistic-t{fill:#182856;font-family:Silka-Regular, Silka;}.h-logistic-t{font-family:Silka-MediumItalic, Silka;font-weight:500;font-style:italic;}.i-logistic-t{clip-path:url(#c-logistic-t);}.l-logistic-t{fill:#e7002a;}.m-logistic-t{opacity:0.7;}'
+							'.a-logistic-t,.n-logistic-t{fill:#fff;}.b-logistic-t{fill:none;}.c-logistic-t{fill:url(#a-logistic-t);}.d-logistic-t{clip-path:url(#b-logistic-t);}.e-logistic-t,.k-logistic-t{fill:#e40032;}.e-logistic-t,.g-logistic-t,.n-logistic-t{font-size:24px;}.e-logistic-t,.n-logistic-t{font-family:Silka-SemiBold, Silka;font-weight:600;}.f-logistic-t,.j-logistic-t{fill:#001f5f;}.f-logistic-t{font-size:55px;font-family:Kiona-Bold, Kiona;font-weight:700;}.g-logistic-t{fill:#182856;font-family:Silka-Regular, Silka;}.h-logistic-t{font-family:Silka-MediumItalic, Silka;font-weight:500;font-style:italic;}.i-logistic-t{clip-path:url(#c-logistic-t);}.l-logistic-t{fill:#e7002a;}.m-logistic-t{opacity:0.7;}'
 						}
 					</style>
 					<pattern

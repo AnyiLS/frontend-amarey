@@ -35,7 +35,7 @@ export const ServiciosMovil: React.FC = () => {
 					<defs>
 						<style>
 							{
-								'.a-servicios-1-mobile{fill:none;}.b-servicios-1-mobile,.h-servicios-1-mobile{fill:#fff;}.c-servicios-1-mobile,.e-servicios-1-mobile,.f-servicios-1-mobile,.g-servicios-1-mobile{fill:#001f5f;}.d-servicios-1-mobile{clip-path:url(#a-servicios-1-mobile);}.e-servicios-1-mobile{font-size:14px;font-family:Silka-Regular, Silka;}.f-servicios-1-mobile{font-size:16px;font-family:Silka-Bold, Silka;}.f-servicios-1-mobile,.g-servicios-1-mobile,.h-servicios-1-mobile{font-weight:700;}.g-servicios-1-mobile{font-size:55px;}.g-servicios-1-mobile,.h-servicios-1-mobile{font-family:Kiona-Bold, Kiona;}.h-servicios-1-mobile{font-size:18px;}.i-servicios-1-mobile{clip-path:url(#d-servicios-1-mobile);}.j-servicios-1-mobile{fill:#e40032;}.k-servicios-1-mobile{clip-path:url(#e-servicios-1-mobile);}.l-servicios-1-mobile{fill:#e7002a;}.m-servicios-1-mobile{mix-blend-mode:multiply;isolation:isolate;}.n-servicios-1-mobile{fill:#d6d6d6;}.o-servicios-1-mobile{fill:#eeebeb;}.p-servicios-1-mobile{filter:url(#b-servicios-1-mobile);}'
+								".a-servicios-1-mobile{fill:none;}.b-servicios-1-mobile,.h-servicios-1-mobile{fill:#fff;}.c-servicios-1-mobile,.e-servicios-1-mobile,.f-servicios-1-mobile,.g-servicios-1-mobile{fill:#001f5f;}.d-servicios-1-mobile{clip-path:url(#a-servicios-1-mobile);}.e-servicios-1-mobile{font-size:14px;font-family:Silka-Regular, Silka;}.f-servicios-1-mobile{font-size:16px;font-family:Silka-Bold, Silka;}.f-servicios-1-mobile,.g-servicios-1-mobile,.h-servicios-1-mobile{font-weight:700;}.g-servicios-1-mobile{font-size:55px;}.g-servicios-1-mobile,.h-servicios-1-mobile{font-family:'Kiona-Bold';}.h-servicios-1-mobile{font-size:18px;}.i-servicios-1-mobile{clip-path:url(#d-servicios-1-mobile);}.j-servicios-1-mobile{fill:#e40032;}.k-servicios-1-mobile{clip-path:url(#e-servicios-1-mobile);}.l-servicios-1-mobile{fill:#e7002a;}.m-servicios-1-mobile{mix-blend-mode:multiply;isolation:isolate;}.n-servicios-1-mobile{fill:#d6d6d6;}.o-servicios-1-mobile{fill:#eeebeb;}.p-servicios-1-mobile{filter:url(#b-servicios-1-mobile);}"
 							}
 						</style>
 						<clipPath id="a-servicios-1-mobile">
@@ -1336,7 +1336,7 @@ export const ServiciosMovil: React.FC = () => {
 					<defs>
 						<style>
 							{
-								'.a-services2-hover-80,.e-services2-hover-80,.f-services2-hover-80,.p-services2-hover-80{fill:#001f5f;}.b-services2-hover-80,.g-services2-hover-80{fill:#fff;}.c-services2-hover-80{fill:none;}.d-services2-hover-80{clip-path:url(#a-services2-hover-80);}.e-services2-hover-80,.r-services2-hover-80,.t-services2-hover-80{font-size:14px;}.e-services2-hover-80,.s-services2-hover-80,.t-services2-hover-80{font-family:Silka-Regular, Silka;}.f-services2-hover-80{font-size:55px;}.f-services2-hover-80,.g-services2-hover-80{font-family:Kiona-Bold, Kiona;font-weight:700;}.g-services2-hover-80{font-size:18px;}.h-services2-hover-80{clip-path:url(#d-services2-hover-80);}.i-services2-hover-80{fill:#e40032;}.j-services2-hover-80{clip-path:url(#e-services2-hover-80);}.k-services2-hover-80{fill:#e7002a;}.l-services2-hover-80{clip-path:url(#f-services2-hover-80);}.m-services2-hover-80{mix-blend-mode:multiply;isolation:isolate;}.n-services2-hover-80{fill:#eeebeb;}.o-services2-hover-80{fill:#d6d6d6;}.p-services2-hover-80{font-size:32px;}.p-services2-hover-80,.q-services2-hover-80,.r-services2-hover-80{font-family:Silka-SemiBold, Silka;font-weight:600;}.r-services2-hover-80,.s-services2-hover-80,.t-services2-hover-80{fill:#182856;}.s-services2-hover-80{font-size:12px;}.u-services2-hover-80{clip-path:url(#s-services2-hover-80);}.v-services2-hover-80{clip-path:url(#t-services2-hover-80);}.w-services2-hover-80{clip-path:url(#u-services2-hover-80);}.x-services2-hover-80{fill:url(#v-services2-hover-80);}.y-services2-hover-80{filter:url(#q-services2-hover-80);}.z-services2-hover-80{filter:url(#o-services2-hover-80);}.aa-services2-hover-80{filter:url(#m-services2-hover-80);}.ab-services2-hover-80{filter:url(#k-services2-hover-80);}.ac-services2-hover-80{filter:url(#i-services2-hover-80);}.ad-services2-hover-80{filter:url(#g-services2-hover-80);}.ae-services2-hover-80{filter:url(#b-services2-hover-80);}'
+								".a-services2-hover-80,.e-services2-hover-80,.f-services2-hover-80,.p-services2-hover-80{fill:#001f5f;}.b-services2-hover-80,.g-services2-hover-80{fill:#fff;}.c-services2-hover-80{fill:none;}.d-services2-hover-80{clip-path:url(#a-services2-hover-80);}.e-services2-hover-80,.r-services2-hover-80,.t-services2-hover-80{font-size:14px;}.e-services2-hover-80,.s-services2-hover-80,.t-services2-hover-80{font-family:Silka-Regular, Silka;}.f-services2-hover-80{font-size:55px;}.f-services2-hover-80,.g-services2-hover-80{font-family:'Kiona-Bold';font-weight:700;}.g-services2-hover-80{font-size:18px;}.h-services2-hover-80{clip-path:url(#d-services2-hover-80);}.i-services2-hover-80{fill:#e40032;}.j-services2-hover-80{clip-path:url(#e-services2-hover-80);}.k-services2-hover-80{fill:#e7002a;}.l-services2-hover-80{clip-path:url(#f-services2-hover-80);}.m-services2-hover-80{mix-blend-mode:multiply;isolation:isolate;}.n-services2-hover-80{fill:#eeebeb;}.o-services2-hover-80{fill:#d6d6d6;}.p-services2-hover-80{font-size:32px;}.p-services2-hover-80,.q-services2-hover-80,.r-services2-hover-80{font-family:Silka-SemiBold, Silka;font-weight:600;}.r-services2-hover-80,.s-services2-hover-80,.t-services2-hover-80{fill:#182856;}.s-services2-hover-80{font-size:12px;}.u-services2-hover-80{clip-path:url(#s-services2-hover-80);}.v-services2-hover-80{clip-path:url(#t-services2-hover-80);}.w-services2-hover-80{clip-path:url(#u-services2-hover-80);}.x-services2-hover-80{fill:url(#v-services2-hover-80);}.y-services2-hover-80{filter:url(#q-services2-hover-80);}.z-services2-hover-80{filter:url(#o-services2-hover-80);}.aa-services2-hover-80{filter:url(#m-services2-hover-80);}.ab-services2-hover-80{filter:url(#k-services2-hover-80);}.ac-services2-hover-80{filter:url(#i-services2-hover-80);}.ad-services2-hover-80{filter:url(#g-services2-hover-80);}.ae-services2-hover-80{filter:url(#b-services2-hover-80);}"
 							}
 						</style>
 						<clipPath id="a-services2-hover-80">
@@ -1795,16 +1795,15 @@ export const ServiciosMovil: React.FC = () => {
 							style={{ clipPath: 'url(#b-5)' }}
 							x="0"
 							y="0"
-							width="412px"
-							height="230px">
+							width="100%"
+							height="150px">
 							<div className="relative w-full h-full">
 								<video
 									src="https://juegoseml.co/pdf/tinywow_CEDICONOFC.mp4"
 									autoPlay
 									muted={mute}
 									loop
-									width="100%"
-									height="100%"></video>
+									style={{ height:200, width: '100%', objectFit: 'cover' }}></video>
 								<img
 									src={
 										mute

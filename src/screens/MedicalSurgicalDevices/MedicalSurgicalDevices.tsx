@@ -26,7 +26,7 @@ const MedicalSurgicalDevices: React.FC = (): JSX.Element => {
 							<defs>
 								<style>
 									{
-										'.a-medical-survery,.b-medical-survery{stroke:#707070;}.a-medical-survery{fill:url(#a-medical-survery);}.b-medical-survery{opacity:0.91;mix-blend-mode:multiply;isolation:isolate;fill:url(#b-medical-survery);}.c-medical-survery,.d-medical-survery,.f-medical-survery,.i-medical-survery,.j-medical-survery{fill:#fff;}.c-medical-survery{font-size:55px;}.c-medical-survery,.f-medical-survery{font-family:"Kiona-Bold";font-weight:700;}.d-medical-survery,.j-medical-survery{font-size:24px;}.d-medical-survery{font-family:Silka-Regular, Silka;}.e-medical-survery{fill:rgba(67,67,67,0.09);}.f-medical-survery{font-size:42px;}.g-medical-survery{opacity:1;}.h-medical-survery{fill:rgba(255,255,255,0.5);}.j-medical-survery{font-family:Silka-SemiBold, Silka;font-weight:600;}.k-medical-survery{stroke:none;}.l-medical-survery{fill:none;}.m-medical-survery{filter:url(#c-medical-survery);}'
+										'.a-medical-survery,.b-medical-survery{stroke:#707070;}.a-medical-survery{fill:url(#a-medical-survery);}.b-medical-survery{opacity:0.91;mix-blend-mode:multiply;isolation:isolate;fill:url(#b-medical-survery);}.c-medical-survery,.d-medical-survery,.f-medical-survery,.i-medical-survery,.j-medical-survery{fill:#fff;}.c-medical-survery{font-size:55px;}.c-medical-survery,.f-medical-survery{font-family:Kiona-Bold, Kiona;font-weight:700;}.d-medical-survery,.j-medical-survery{font-size:24px;}.d-medical-survery{font-family:Silka-Regular, Silka;}.e-medical-survery{fill:rgba(67,67,67,0.09);}.f-medical-survery{font-size:42px;}.g-medical-survery{opacity:1;}.h-medical-survery{fill:rgba(255,255,255,0.5);}.j-medical-survery{font-family:Silka-SemiBold, Silka;font-weight:600;}.k-medical-survery{stroke:none;}.l-medical-survery{fill:none;}.m-medical-survery{filter:url(#c-medical-survery);}'
 									}
 								</style>
 								<pattern
@@ -156,7 +156,7 @@ const MedicalSurgicalDevices: React.FC = (): JSX.Element => {
 									<defs>
 										<style>
 											{
-												'.a-boton-pequena{fill:rgba(255,255,255,0.5);}.b-boton-pequena{fill:#fff;font-size:28px;font-family:"Kiona-Bold";font-weight:700;}.c-boton-pequena{filter:url(#a-boton-pequena);}'
+												'.a-boton-pequena{fill:rgba(255,255,255,0.5);}.b-boton-pequena{fill:#fff;font-size:28px;font-family:Kiona-Bold, Kiona;font-weight:700;}.c-boton-pequena{filter:url(#a-boton-pequena);}'
 											}
 										</style>
 										<filter
