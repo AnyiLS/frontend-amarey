@@ -65,7 +65,6 @@ const CarouselHeader: React.FC = () => {
 				<video
 					src="/images/video/Origen pentamero_1.mp4"
 					muted={mute}
-					autoPlay
 					className="w-full h-full"
 					id="video-1"></video>
 				<img
