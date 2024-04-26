@@ -334,7 +334,7 @@ export const ServiciosMovil: React.FC = () => {
 						/>
 					</g>
 					{doHover ? (
-						<g transform="translate(0 0.148)">
+						<g transform="translate(3 -13.852)">
 							<g clipPath="url(#bla-servicios-1)">
 								<path
 									className="n-servicios-2-mobile"
@@ -343,7 +343,7 @@ export const ServiciosMovil: React.FC = () => {
 							</g>
 						</g>
 					) : (
-						<g transform="translate(0 46.148)">
+						<g transform="translate(3 -13.852)">
 							<g className="m-servicios-2-mobile">
 								<path
 									className="n-servicios-2-mobile"
