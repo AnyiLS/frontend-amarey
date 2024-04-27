@@ -21,7 +21,7 @@ const Medicines: React.FC = (): JSX.Element => {
 						<svg
 							viewBox="0 0 1920 1080"
 							width="100%"
-							height={width < 1024 ? "100vh" : '100%'}
+							height={"100vh"}
 							preserveAspectRatio="none">
 							<defs>
 								<style>
