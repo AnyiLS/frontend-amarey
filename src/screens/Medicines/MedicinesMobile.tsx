@@ -14,7 +14,7 @@ const MedicinesMobile: React.FC = (): JSX.Element => {
 	return (
 		<React.Fragment>
 			{view === 0 ? (
-				<svg viewBox="0 0 414 855" width='100%' style={{ height: `calc(100vh - ${height}px)` }} preserveAspectRatio='none'>
+				<svg viewBox="0 0 414 855" width='100%' style={{ height: '100%' }} preserveAspectRatio='none'>
 					<defs>
 						<style>
 							{
@@ -447,6 +447,7 @@ const MedicinesMobile: React.FC = (): JSX.Element => {
 							transform="translate(374.584 13.292)"
 							onClick={() => setView(0)}>
 							<path
+							onClick={() => setView(0)}
 								className="a-reward-2-mobile"
 								d="M8.8,10.967,5.708,7.874,2.615,10.967A1.531,1.531,0,1,1,.448,8.8L3.542,5.708.448,2.615A1.532,1.532,0,0,1,2.615.448L5.708,3.542,8.8.448a1.531,1.531,0,1,1,2.165,2.166L7.874,5.708,10.967,8.8A1.531,1.531,0,0,1,8.8,10.967Z"
 								transform="translate(0 0)"

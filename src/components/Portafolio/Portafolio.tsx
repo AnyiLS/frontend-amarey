@@ -75,7 +75,7 @@ const Portafolio: React.FC = () => {
 			{!openState ? (
 				<svg
 					width="100%"
-					height={height}
+					height='100%'
 					viewBox="0 0 1920 1080"
 					preserveAspectRatio="none">
 					<defs>
@@ -239,7 +239,7 @@ const Portafolio: React.FC = () => {
 			) : (
 				<svg
 					width="100%"
-					height={height}
+					height="100%"
 					viewBox="0 0 1920 1080"
 					preserveAspectRatio="none">
 					<defs>

@@ -30,7 +30,7 @@ export const Slider4: React.FC<ISlider> = ({ height, index, onOpenVideo }) => {
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 1920 1080"
 				preserveAspectRatio="none"
-				style={{ height: width > 1280 ? `100vh` : '100%' }}
+				style={{ height: '100%' }}
 				width="100%">
 				<defs>
 					<style>

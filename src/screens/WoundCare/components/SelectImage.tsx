@@ -200,7 +200,7 @@ const SelectImage: React.FC<{ height: string; onClose: () => void }> = ({
 						{'SOLUCIONES EN SALUD'}
 					</tspan>
 				</text>
-				<g transform="translate(194.817 131.768)">
+				<g transform="translate(194.817 60.768)">
 					<a href="/productos">
 						<path
 							className="a-cuidado"

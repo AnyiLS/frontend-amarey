@@ -12,7 +12,7 @@ const MedicalDevicesMobile: React.FC = (): JSX.Element => {
 	return (
 		<React.Fragment>
 			{view === 0 ? (
-				<svg viewBox="0 0 414 855" width='100%' style={{ height: `calc(100vh - ${height}px)` }} preserveAspectRatio='none'>
+				<svg viewBox="0 0 414 855" width='100%' style={{ height: "100%" }} preserveAspectRatio='none'>
 					<defs>
 						<style>
 							{
@@ -340,7 +340,7 @@ const MedicalDevicesMobile: React.FC = (): JSX.Element => {
 					</g>
 				</svg>
 			) : (
-				<svg viewBox="0 0 414 855" width='100%' style={{ height: `calc(100vh - ${height}px)` }} preserveAspectRatio='none'>
+				<svg viewBox="0 0 414 855" width='100%' style={{ height: "100%" }} preserveAspectRatio='none'>
 					<defs>
 						<style>
 							{

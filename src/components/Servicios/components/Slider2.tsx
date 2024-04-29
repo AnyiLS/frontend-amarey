@@ -18,7 +18,7 @@ export const Slider2: React.FC<ISlider> = ({ height, index }) => {
 	}, [index])
 
 	return (
-		<svg viewBox="1590 10 1920 1080" preserveAspectRatio='none'  style={{ height: width > 1280 ? `100vh` : '100%'}} width='100%'>
+		<svg viewBox="1590 10 1920 1080" preserveAspectRatio='none'  style={{ height: '100%'}} width='100%'>
 			<defs>
 				<style>
 					{

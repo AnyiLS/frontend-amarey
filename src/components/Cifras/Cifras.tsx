@@ -33,7 +33,7 @@ const Cifras: React.FC = () => {
 
   return (
     <div className="relative">
-      <svg width='100%' style={{ height: width > 1280 ? `100vh` : '100%'}} viewBox="0 0 1920 1080" preserveAspectRatio="none">
+      <svg width='100%' style={{ height: '100%'}} viewBox="0 0 1920 1080" preserveAspectRatio="none">
       <defs>
       <style>
         {

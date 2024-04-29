@@ -102,7 +102,7 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 						<div>
 							{selected === 1 && (
 								<video
-									id="video"
+									id="video-cifras"
 									width="1929"
 									height="1080"
 									src="/images/video/capacitaciones.mp4" 
@@ -113,7 +113,7 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 							)}
 							{selected === 2 && (
 								<video
-									id="video1"
+									id="video-cifras"
 									width="1929"
 									height="1080"
 									src="/images/video/Roboticaa.mp4" 
@@ -124,7 +124,7 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 							)}
 							{selected === 3 && (
 								<video
-									id="video2"
+									id="video-cifras"
 									width="1929"
 									height="1080"
 									src="/images/video/Maxiloo.mp4"
@@ -135,7 +135,7 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 							)}
 							{selected === 4 && (
 								<video
-									id="video3"
+									id="video-cifras"
 									width="1929"
 									height="1080"
 									src="/images/video/logistica.mp4"

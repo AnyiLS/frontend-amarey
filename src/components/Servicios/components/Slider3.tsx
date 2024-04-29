@@ -20,7 +20,7 @@ export const Slider3: React.FC<ISlider> = ({ height }) => {
 		<svg
 			viewBox="0 0 1920 1080"
 			preserveAspectRatio="none"
-			style={{ height: width > 1280 ? `100vh` : '100%'}}
+			style={{ height: '100%'}}
 			width="100%">
 			<defs>
 				<style>

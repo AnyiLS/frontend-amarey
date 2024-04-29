@@ -21,7 +21,7 @@ const InstrumentalStyrilation: React.FC = (): JSX.Element => {
 					) : (
 						<svg
 							width="100%"
-							height={height}
+							height="100%"
 							viewBox="0 0 1920 1080"
 							preserveAspectRatio="none">
 							<defs>

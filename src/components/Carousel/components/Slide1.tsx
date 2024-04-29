@@ -7,14 +7,14 @@ interface ISlide {
 }
 
 const Slide1: React.FC<ISlide> = ({ height, onClick }): JSX.Element => {
-  const { width } = useGeneral();
+  // const { width } = useGeneral();
   // `calc(100vh - ${document.getElementById('navbar__container')?.clientHeight}px)`
   return (
     <div>
       <svg
-        viewBox="0 82 1920 978"
+        viewBox="0 82 1920 970"
         width="100%"
-        style={{ height: width > 1280 ? `calc(100vh - ${document.getElementById('navbar__container')?.clientHeight}px)` : '100%'}}
+        style={{ height:'100%'}}
         preserveAspectRatio="none"
       >
         <defs>
@@ -92,11 +92,6 @@ const Slide1: React.FC<ISlide> = ({ height, onClick }): JSX.Element => {
           transform="translate(337.578 651.493) rotate(-63)"
           onClick={() => onClick(0)}
         />
-        <text className="g-1" transform="translate(518.393 579.425)" onClick={() => onClick(0)}>
-          <tspan x={0} y={0}>
-            {"Conoce M\xE1s"}
-          </tspan>
-        </text>
         <text className="h-1" transform="translate(248.322 920.083) rotate(-65)" onClick={() => onClick(0)}>
           <tspan x={0} y={0}>
             {"Conoce M\xE1s"}

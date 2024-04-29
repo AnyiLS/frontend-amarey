@@ -20,7 +20,7 @@ const WoundCare: React.FC = (): JSX.Element => {
 						<svg
 							viewBox="0 0 1920 1080"
 							width="100%"
-							height="100vh"
+							height="100%"
 							preserveAspectRatio="none">
 							<defs>
 								<style>

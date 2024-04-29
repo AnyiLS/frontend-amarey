@@ -13,7 +13,7 @@ const WoundCareMobile: React.FC = (): JSX.Element => {
 	return (
 		<React.Fragment>
 			{view === 0 ? (
-				<svg viewBox="0 0 414 857" width='100%' style={{ height: `calc(100vh - ${height}px)` }} preserveAspectRatio='none'>
+				<svg viewBox="0 0 414 853" width='100%' style={{ height: "100%" }} preserveAspectRatio='none'>
 					<defs>
 						<style>
 							{
@@ -166,7 +166,7 @@ const WoundCareMobile: React.FC = (): JSX.Element => {
 					</g>
 				</svg>
 			) : (
-				<svg viewBox="7 0 414 857"  width='100%' style={{ height: `calc(100vh - ${height}px)` }} preserveAspectRatio='none'>
+				<svg viewBox="7 0 414 857"  width='100%' style={{ height: "100%" }} preserveAspectRatio='none'>
 					<defs>
 						<style>
 							{

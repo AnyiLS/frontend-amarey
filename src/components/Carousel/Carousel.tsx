@@ -23,7 +23,7 @@ const CarouselHeader: React.FC = () => {
 
 
 	return (
-		<div style={{ height: width > 1280 ? `calc(100vh - ${(height) - 8}px)` : '100%' }}>
+		<div style={{ height: '100%' }}>
 			<Carousel slide={slide} slideInterval={20000}>
 				{carouselHeaderItems.map(
 					(item: CarouselHeaderItems, index: number) => (

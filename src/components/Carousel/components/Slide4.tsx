@@ -24,8 +24,9 @@ const Slide4: React.FC<ISlide> = ({ height, image, onReturn, onOpenPopup }): JSX
 		<React.Fragment>
 			<svg
 				width="100%"
-				style={{ height: width > 1280 ? `calc(100vh - ${document.getElementById('navbar__container')?.clientHeight}px)` : '100%'}}
-				viewBox={`0 0 1920 1080`}
+				// style={{ height: width > 1280 ? `calc(100vh - ${document.getElementById('navbar__container')?.clientHeight}px)` : '100%'}}
+				height='100%'
+				viewBox={`0 40 1920 975`}
 				preserveAspectRatio="none">
 				<defs>
 					<style

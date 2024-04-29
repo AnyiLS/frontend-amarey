@@ -48,7 +48,7 @@ const Servicios: React.FC = () => {
 	}
 
 	return (
-		<div style={{ height: width > 1280 ? `100vh` : '100%' }}>
+		<div style={{ height: '100%' }}>
 			<Carousel
 				slide={false}
 				onSlideChange={(e) => setSlideIndex(e)}
