@@ -24,7 +24,7 @@ const May30: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 			<defs>
 				<style>
 					{
-						'.a-item-1813,.o-item-1813{fill:none;}.b-item-1813{fill:#c5dbf7;}.c-item-1813,.d-item-1813,.m-item-1813,.q-item-1813{fill:#001f5f;}.d-item-1813{font-size:70px;}.d-item-1813,.q-item-1813{font-family:Kiona-Bold;font-weight:700;}.e-item-1813,.k-item-1813,.n-item-1813,.r-item-1813{fill:#182856;}.e-item-1813,.m-item-1813{font-size:24px;}.e-item-1813,.r-item-1813{font-family:Silka-Regular, Silka;}.f-item-1813{fill:#e40032;}.g-item-1813{fill:#c7c7cc;}.h-item-1813,.i-item-1813{fill:#fff;}.i-item-1813,.n-item-1813{font-size:42px;}.i-item-1813,.k-item-1813,.n-item-1813{font-family:Silka-SemiBold, Silka;font-weight:600;}.j-item-1813{clip-path:url(#e-item-1813);}.k-item-1813{font-size:32px;}.l-item-1813{clip-path:url(#f-item-1813);}.m-item-1813{font-family:Silka-Medium, Silka;font-weight:500;}.o-item-1813{stroke:#e40032;stroke-width:3px;}.p-item-1813{fill:url(#g-item-1813);}.q-item-1813{font-size:28px;}.r-item-1813{font-size:18px;}.s-item-1813{filter:url(#j-item-1813);}.t-item-1813{filter:url(#h-item-1813);}.u-item-1813{filter:url(#c-item-1813);}.v-item-1813{filter:url(#a-item-1813);}'
+						'.a-item-1813,.o-item-1813{fill:none;}.b-item-1813{fill:#c5dbf7;}.c-item-1813,.d-item-1813,.m-item-1813,.q-item-1813{fill:#001f5f;}.d-item-1813{font-size:55px;}.d-item-1813,.q-item-1813{font-family:Kiona-Bold;font-weight:700;}.e-item-1813,.k-item-1813,.n-item-1813,.r-item-1813{fill:#182856;}.e-item-1813,.m-item-1813{font-size:24px;}.e-item-1813,.r-item-1813{font-family:Silka-Regular, Silka;}.f-item-1813{fill:#e40032;}.g-item-1813{fill:#c7c7cc;}.h-item-1813,.i-item-1813{fill:#fff;}.i-item-1813,.n-item-1813{font-size:42px;}.i-item-1813,.k-item-1813,.n-item-1813{font-family:Silka-SemiBold, Silka;font-weight:600;}.j-item-1813{clip-path:url(#e-item-1813);}.k-item-1813{font-size:32px;}.l-item-1813{clip-path:url(#f-item-1813);}.m-item-1813{font-family:Silka-Medium, Silka;font-weight:500;}.o-item-1813{stroke:#e40032;stroke-width:3px;}.p-item-1813{fill:url(#g-item-1813);}.q-item-1813{font-size:28px;}.r-item-1813{font-size:18px;}.s-item-1813{filter:url(#j-item-1813);}.t-item-1813{filter:url(#h-item-1813);}.u-item-1813{filter:url(#c-item-1813);}.v-item-1813{filter:url(#a-item-1813);}'
 					}
 				</style>
 				<filter
@@ -174,8 +174,11 @@ const May30: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 				transform="translate(434 660.019)"
 			/>
 			<text className="d-item-1813" transform="translate(0 214.019)">
-				<tspan x={0} y={70}>
-					{'EVENTOS '}
+			<tspan x={0} y={50}>
+					{'Prográmese con '}
+				</tspan>
+				<tspan x={0} y={100}>
+					{'Grupo Amarey '}
 				</tspan>
 			</text>
 			<g transform="translate(-140 -79.981)">

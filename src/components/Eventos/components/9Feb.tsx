@@ -24,7 +24,7 @@ const Feb9: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onCh
 			<defs>
 				<style>
 					{
-						".a-item-1813,.j-item-1813{fill:none;}.b-item-1813{fill:#e40032;}.c-item-1813{fill:#c5dbf7;}.d-item-1813,.h-item-1813,.k-item-1813,.p-item-1813{fill:#001f5f;}.e-item-1813{clip-path:url(#a-item-1813);}.f-item-1813,.i-item-1813,.n-item-1813,.q-item-1813{fill:#182856;}.f-item-1813{font-size:32px;}.f-item-1813,.i-item-1813,.r-item-1813{font-family:Silka-SemiBold, Silka;font-weight:600;}.g-item-1813{clip-path:url(#b-item-1813);}.h-item-1813,.n-item-1813{font-size:24px;}.h-item-1813{font-family:Silka-Medium, Silka;font-weight:500;}.i-item-1813,.r-item-1813{font-size:42px;}.j-item-1813{stroke:#e40032;stroke-width:3px;}.k-item-1813{font-size:70px;}.k-item-1813,.p-item-1813{font-family:'Kiona-Bold';font-weight:700;}.l-item-1813{fill:url(#c-item-1813);}.m-item-1813,.r-item-1813{fill:#fff;}.n-item-1813,.q-item-1813{font-family:Silka-Regular, Silka;}.o-item-1813{fill:#c7c7cc;}.p-item-1813{font-size:28px;}.q-item-1813{font-size:18px;}.s-item-1813{filter:url(#j-item-1813);}.t-item-1813{filter:url(#h-item-1813);}.u-item-1813{filter:url(#f-item-1813);}.v-item-1813{filter:url(#d-item-1813);}"
+						".a-item-1813,.j-item-1813{fill:none;}.b-item-1813{fill:#e40032;}.c-item-1813{fill:#c5dbf7;}.d-item-1813,.h-item-1813,.k-item-1813,.p-item-1813{fill:#001f5f;}.e-item-1813{clip-path:url(#a-item-1813);}.f-item-1813,.i-item-1813,.n-item-1813,.q-item-1813{fill:#182856;}.f-item-1813{font-size:32px;}.f-item-1813,.i-item-1813,.r-item-1813{font-family:Silka-SemiBold, Silka;font-weight:600;}.g-item-1813{clip-path:url(#b-item-1813);}.h-item-1813,.n-item-1813{font-size:24px;}.h-item-1813{font-family:Silka-Medium, Silka;font-weight:500;}.i-item-1813,.r-item-1813{font-size:42px;}.j-item-1813{stroke:#e40032;stroke-width:3px;}.k-item-1813{font-size:55px;}.k-item-1813,.p-item-1813{font-family:'Kiona-Bold';font-weight:700;}.l-item-1813{fill:url(#c-item-1813);}.m-item-1813,.r-item-1813{fill:#fff;}.n-item-1813,.q-item-1813{font-family:Silka-Regular, Silka;}.o-item-1813{fill:#c7c7cc;}.p-item-1813{font-size:28px;}.q-item-1813{font-size:18px;}.s-item-1813{filter:url(#j-item-1813);}.t-item-1813{filter:url(#h-item-1813);}.u-item-1813{filter:url(#f-item-1813);}.v-item-1813{filter:url(#d-item-1813);}"
 					}
 				</style>
 				<clipPath id="a-item-1813">
@@ -531,8 +531,11 @@ const Feb9: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onCh
 				/>
 			</g>
 			<text className="k-item-1813" transform="translate(0 214.019)">
-				<tspan x={0} y={70}>
-					{'EVENTOS '}
+			<tspan x={0} y={50}>
+					{'Prográmese con '}
+				</tspan>
+				<tspan x={0} y={100}>
+					{'Grupo Amarey '}
 				</tspan>
 			</text>
 			<g className="v-item-1813" transform="matrix(1, 0, 0, 1, 0, 0)">

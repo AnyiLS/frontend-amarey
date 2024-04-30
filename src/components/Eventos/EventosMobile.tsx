@@ -11,7 +11,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					<defs>
 						<style>
 							{
-								".a-pentagrama,.q-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.i-pentagrama,.j-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:url(#b-pentagrama);}.g-pentagrama,.k-pentagrama,.s-pentagrama{fill:#fff;}.h-pentagrama{fill:#c7c7cc;}.i-pentagrama{font-size:12px;}.i-pentagrama,.s-pentagrama{font-family:'Kiona-Bold';}.i-pentagrama,.k-pentagrama,.s-pentagrama{font-weight:700;}.j-pentagrama{font-size:8px;}.j-pentagrama,.o-pentagrama,.r-pentagrama{font-family:Silka-Regular, Silka;}.k-pentagrama,.o-pentagrama{font-size:16px;}.k-pentagrama{font-family:Silka-Bold, Silka;}.l-pentagrama{clip-path:url(#k-pentagrama);}.m-pentagrama,.o-pentagrama,.p-pentagrama,.r-pentagrama{fill:#182856;}.m-pentagrama{font-size:20px;}.m-pentagrama,.p-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.n-pentagrama{clip-path:url(#l-pentagrama);}.p-pentagrama{font-size:27px;}.q-pentagrama{stroke:#e40032;stroke-width:3px;}.r-pentagrama{font-size:15px;}.s-pentagrama{font-size:32px;}.t-pentagrama{filter:url(#i-pentagrama);}.u-pentagrama{filter:url(#g-pentagrama);}.v-pentagrama{filter:url(#e-pentagrama);}.w-pentagrama{filter:url(#c-pentagrama);}"
+								".a-pentagrama,.q-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.i-pentagrama,.j-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:url(#b-pentagrama);}.g-pentagrama,.k-pentagrama,.s-pentagrama{fill:#fff;}.h-pentagrama{fill:#c7c7cc;}.i-pentagrama{font-size:12px;}.i-pentagrama,.s-pentagrama{font-family:'Kiona-Bold';}.i-pentagrama,.k-pentagrama,.s-pentagrama{font-weight:700;}.j-pentagrama{font-size:8px;}.j-pentagrama,.o-pentagrama,.r-pentagrama{font-family:Silka-Regular, Silka;}.k-pentagrama,.o-pentagrama{font-size:16px;}.k-pentagrama{font-family:Silka-Bold, Silka;}.l-pentagrama{clip-path:url(#k-pentagrama);}.m-pentagrama,.o-pentagrama,.p-pentagrama,.r-pentagrama{fill:#182856;}.m-pentagrama{font-size:20px;}.m-pentagrama,.p-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.n-pentagrama{clip-path:url(#l-pentagrama);}.p-pentagrama{font-size:27px;}.q-pentagrama{stroke:#e40032;stroke-width:3px;}.r-pentagrama{font-size:15px;}.s-pentagrama{font-size:18px;}.t-pentagrama{filter:url(#i-pentagrama);}.u-pentagrama{filter:url(#g-pentagrama);}.v-pentagrama{filter:url(#e-pentagrama);}.w-pentagrama{filter:url(#c-pentagrama);}"
 							}
 						</style>
 						<clipPath id="a-pentagrama">
@@ -717,9 +717,9 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					</g>
 					<text
 						className="s-pentagrama"
-						transform="translate(139.806 23.21)">
+						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'EVENTOS '}
+							{'Prográmese con Grupo Amarey '}
 						</tspan>
 					</text>
 				</svg>
@@ -728,7 +728,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					<defs>
 						<style>
 							{
-								".a-pentagrama,.q-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.i-pentagrama,.j-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:url(#b-pentagrama);}.g-pentagrama,.k-pentagrama,.s-pentagrama{fill:#fff;}.h-pentagrama{fill:#c7c7cc;}.i-pentagrama{font-size:12px;}.i-pentagrama,.s-pentagrama{font-family:'Kiona-Bold';}.i-pentagrama,.k-pentagrama,.s-pentagrama{font-weight:700;}.j-pentagrama{font-size:8px;}.j-pentagrama,.o-pentagrama,.r-pentagrama{font-family:Silka-Regular, Silka;}.k-pentagrama,.o-pentagrama{font-size:16px;}.k-pentagrama{font-family:Silka-Bold, Silka;}.l-pentagrama{clip-path:url(#k-pentagrama);}.m-pentagrama,.o-pentagrama,.p-pentagrama,.r-pentagrama{fill:#182856;}.m-pentagrama{font-size:20px;}.m-pentagrama,.p-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.n-pentagrama{clip-path:url(#l-pentagrama);}.p-pentagrama{font-size:27px;}.q-pentagrama{stroke:#e40032;stroke-width:3px;}.r-pentagrama{font-size:15px;}.s-pentagrama{font-size:32px;}.t-pentagrama{filter:url(#i-pentagrama);}.u-pentagrama{filter:url(#g-pentagrama);}.v-pentagrama{filter:url(#e-pentagrama);}.w-pentagrama{filter:url(#c-pentagrama);}"
+								".a-pentagrama,.q-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.i-pentagrama,.j-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:url(#b-pentagrama);}.g-pentagrama,.k-pentagrama,.s-pentagrama{fill:#fff;}.h-pentagrama{fill:#c7c7cc;}.i-pentagrama{font-size:12px;}.i-pentagrama,.s-pentagrama{font-family:'Kiona-Bold';}.i-pentagrama,.k-pentagrama,.s-pentagrama{font-weight:700;}.j-pentagrama{font-size:8px;}.j-pentagrama,.o-pentagrama,.r-pentagrama{font-family:Silka-Regular, Silka;}.k-pentagrama,.o-pentagrama{font-size:16px;}.k-pentagrama{font-family:Silka-Bold, Silka;}.l-pentagrama{clip-path:url(#k-pentagrama);}.m-pentagrama,.o-pentagrama,.p-pentagrama,.r-pentagrama{fill:#182856;}.m-pentagrama{font-size:20px;}.m-pentagrama,.p-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.n-pentagrama{clip-path:url(#l-pentagrama);}.p-pentagrama{font-size:27px;}.q-pentagrama{stroke:#e40032;stroke-width:3px;}.r-pentagrama{font-size:15px;}.s-pentagrama{font-size:18px;}.t-pentagrama{filter:url(#i-pentagrama);}.u-pentagrama{filter:url(#g-pentagrama);}.v-pentagrama{filter:url(#e-pentagrama);}.w-pentagrama{filter:url(#c-pentagrama);}"
 							}
 						</style>
 						<clipPath id="a-pentagrama">
@@ -1434,9 +1434,9 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					</g>
 					<text
 						className="s-pentagrama"
-						transform="translate(139.806 23.21)">
+						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'EVENTOS '}
+							{'Prográmese con Grupo Amarey '}
 						</tspan>
 					</text>
 				</svg>
@@ -1445,7 +1445,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					<defs>
 						<style>
 							{
-								".a-pentagrama,.q-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.i-pentagrama,.j-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:url(#b-pentagrama);}.g-pentagrama,.k-pentagrama,.s-pentagrama{fill:#fff;}.h-pentagrama{fill:#c7c7cc;}.i-pentagrama{font-size:12px;}.i-pentagrama,.s-pentagrama{font-family:'Kiona-Bold';}.i-pentagrama,.k-pentagrama,.s-pentagrama{font-weight:700;}.j-pentagrama{font-size:8px;}.j-pentagrama,.o-pentagrama,.r-pentagrama{font-family:Silka-Regular, Silka;}.k-pentagrama,.o-pentagrama{font-size:16px;}.k-pentagrama{font-family:Silka-Bold, Silka;}.l-pentagrama{clip-path:url(#k-pentagrama);}.m-pentagrama,.o-pentagrama,.p-pentagrama,.r-pentagrama{fill:#182856;}.m-pentagrama{font-size:20px;}.m-pentagrama,.p-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.n-pentagrama{clip-path:url(#l-pentagrama);}.p-pentagrama{font-size:27px;}.q-pentagrama{stroke:#e40032;stroke-width:3px;}.r-pentagrama{font-size:15px;}.s-pentagrama{font-size:32px;}.t-pentagrama{filter:url(#i-pentagrama);}.u-pentagrama{filter:url(#g-pentagrama);}.v-pentagrama{filter:url(#e-pentagrama);}.w-pentagrama{filter:url(#c-pentagrama);}"
+								".a-pentagrama,.q-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.i-pentagrama,.j-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:url(#b-pentagrama);}.g-pentagrama,.k-pentagrama,.s-pentagrama{fill:#fff;}.h-pentagrama{fill:#c7c7cc;}.i-pentagrama{font-size:12px;}.i-pentagrama,.s-pentagrama{font-family:'Kiona-Bold';}.i-pentagrama,.k-pentagrama,.s-pentagrama{font-weight:700;}.j-pentagrama{font-size:8px;}.j-pentagrama,.o-pentagrama,.r-pentagrama{font-family:Silka-Regular, Silka;}.k-pentagrama,.o-pentagrama{font-size:16px;}.k-pentagrama{font-family:Silka-Bold, Silka;}.l-pentagrama{clip-path:url(#k-pentagrama);}.m-pentagrama,.o-pentagrama,.p-pentagrama,.r-pentagrama{fill:#182856;}.m-pentagrama{font-size:20px;}.m-pentagrama,.p-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.n-pentagrama{clip-path:url(#l-pentagrama);}.p-pentagrama{font-size:27px;}.q-pentagrama{stroke:#e40032;stroke-width:3px;}.r-pentagrama{font-size:15px;}.s-pentagrama{font-size:18px;}.t-pentagrama{filter:url(#i-pentagrama);}.u-pentagrama{filter:url(#g-pentagrama);}.v-pentagrama{filter:url(#e-pentagrama);}.w-pentagrama{filter:url(#c-pentagrama);}"
 							}
 						</style>
 						<clipPath id="a-pentagrama">
@@ -2148,9 +2148,9 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					</g>
 					<text
 						className="s-pentagrama"
-						transform="translate(139.806 23.21)">
+						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'EVENTOS '}
+							{'Prográmese con Grupo Amarey '}
 						</tspan>
 					</text>
 				</svg>
@@ -2159,7 +2159,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					<defs>
 						<style>
 							{
-								".a-pentagrama,.q-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.i-pentagrama,.j-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:url(#b-pentagrama);}.g-pentagrama,.k-pentagrama,.s-pentagrama{fill:#fff;}.h-pentagrama{fill:#c7c7cc;}.i-pentagrama{font-size:12px;}.i-pentagrama,.s-pentagrama{font-family:'Kiona-Bold';}.i-pentagrama,.k-pentagrama,.s-pentagrama{font-weight:700;}.j-pentagrama{font-size:8px;}.j-pentagrama,.o-pentagrama,.r-pentagrama{font-family:Silka-Regular, Silka;}.k-pentagrama,.o-pentagrama{font-size:16px;}.k-pentagrama{font-family:Silka-Bold, Silka;}.l-pentagrama{clip-path:url(#k-pentagrama);}.m-pentagrama,.o-pentagrama,.p-pentagrama,.r-pentagrama{fill:#182856;}.m-pentagrama{font-size:20px;}.m-pentagrama,.p-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.n-pentagrama{clip-path:url(#l-pentagrama);}.p-pentagrama{font-size:27px;}.q-pentagrama{stroke:#e40032;stroke-width:3px;}.r-pentagrama{font-size:15px;}.s-pentagrama{font-size:32px;}.t-pentagrama{filter:url(#i-pentagrama);}.u-pentagrama{filter:url(#g-pentagrama);}.v-pentagrama{filter:url(#e-pentagrama);}.w-pentagrama{filter:url(#c-pentagrama);}"
+								".a-pentagrama,.q-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.i-pentagrama,.j-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:url(#b-pentagrama);}.g-pentagrama,.k-pentagrama,.s-pentagrama{fill:#fff;}.h-pentagrama{fill:#c7c7cc;}.i-pentagrama{font-size:12px;}.i-pentagrama,.s-pentagrama{font-family:'Kiona-Bold';}.i-pentagrama,.k-pentagrama,.s-pentagrama{font-weight:700;}.j-pentagrama{font-size:8px;}.j-pentagrama,.o-pentagrama,.r-pentagrama{font-family:Silka-Regular, Silka;}.k-pentagrama,.o-pentagrama{font-size:16px;}.k-pentagrama{font-family:Silka-Bold, Silka;}.l-pentagrama{clip-path:url(#k-pentagrama);}.m-pentagrama,.o-pentagrama,.p-pentagrama,.r-pentagrama{fill:#182856;}.m-pentagrama{font-size:20px;}.m-pentagrama,.p-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.n-pentagrama{clip-path:url(#l-pentagrama);}.p-pentagrama{font-size:27px;}.q-pentagrama{stroke:#e40032;stroke-width:3px;}.r-pentagrama{font-size:15px;}.s-pentagrama{font-size:18px;}.t-pentagrama{filter:url(#i-pentagrama);}.u-pentagrama{filter:url(#g-pentagrama);}.v-pentagrama{filter:url(#e-pentagrama);}.w-pentagrama{filter:url(#c-pentagrama);}"
 							}
 						</style>
 						<clipPath id="a-pentagrama">
@@ -2862,9 +2862,9 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					</g>
 					<text
 						className="s-pentagrama"
-						transform="translate(139.806 23.21)">
+						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'EVENTOS '}
+							{'Prográmese con Grupo Amarey '}
 						</tspan>
 					</text>
 				</svg>
@@ -2873,7 +2873,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					<defs>
 						<style>
 							{
-								".a-pentagrama,.q-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.i-pentagrama,.j-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:url(#b-pentagrama);}.g-pentagrama,.k-pentagrama,.s-pentagrama{fill:#fff;}.h-pentagrama{fill:#c7c7cc;}.i-pentagrama{font-size:12px;}.i-pentagrama,.s-pentagrama{font-family:'Kiona-Bold';}.i-pentagrama,.k-pentagrama,.s-pentagrama{font-weight:700;}.j-pentagrama{font-size:8px;}.j-pentagrama,.o-pentagrama,.r-pentagrama{font-family:Silka-Regular, Silka;}.k-pentagrama,.o-pentagrama{font-size:16px;}.k-pentagrama{font-family:Silka-Bold, Silka;}.l-pentagrama{clip-path:url(#k-pentagrama);}.m-pentagrama,.o-pentagrama,.p-pentagrama,.r-pentagrama{fill:#182856;}.m-pentagrama{font-size:20px;}.m-pentagrama,.p-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.n-pentagrama{clip-path:url(#l-pentagrama);}.p-pentagrama{font-size:27px;}.q-pentagrama{stroke:#e40032;stroke-width:3px;}.r-pentagrama{font-size:15px;}.s-pentagrama{font-size:32px;}.t-pentagrama{filter:url(#i-pentagrama);}.u-pentagrama{filter:url(#g-pentagrama);}.v-pentagrama{filter:url(#e-pentagrama);}.w-pentagrama{filter:url(#c-pentagrama);}"
+								".a-pentagrama,.q-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.i-pentagrama,.j-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:url(#b-pentagrama);}.g-pentagrama,.k-pentagrama,.s-pentagrama{fill:#fff;}.h-pentagrama{fill:#c7c7cc;}.i-pentagrama{font-size:12px;}.i-pentagrama,.s-pentagrama{font-family:'Kiona-Bold';}.i-pentagrama,.k-pentagrama,.s-pentagrama{font-weight:700;}.j-pentagrama{font-size:8px;}.j-pentagrama,.o-pentagrama,.r-pentagrama{font-family:Silka-Regular, Silka;}.k-pentagrama,.o-pentagrama{font-size:16px;}.k-pentagrama{font-family:Silka-Bold, Silka;}.l-pentagrama{clip-path:url(#k-pentagrama);}.m-pentagrama,.o-pentagrama,.p-pentagrama,.r-pentagrama{fill:#182856;}.m-pentagrama{font-size:20px;}.m-pentagrama,.p-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.n-pentagrama{clip-path:url(#l-pentagrama);}.p-pentagrama{font-size:27px;}.q-pentagrama{stroke:#e40032;stroke-width:3px;}.r-pentagrama{font-size:15px;}.s-pentagrama{font-size:18px;}.t-pentagrama{filter:url(#i-pentagrama);}.u-pentagrama{filter:url(#g-pentagrama);}.v-pentagrama{filter:url(#e-pentagrama);}.w-pentagrama{filter:url(#c-pentagrama);}"
 							}
 						</style>
 						<clipPath id="a-pentagrama">
@@ -3571,9 +3571,9 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					</g>
 					<text
 						className="s-pentagrama"
-						transform="translate(139.806 23.21)">
+						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'EVENTOS '}
+							{'Prográmese con Grupo Amarey '}
 						</tspan>
 					</text>
 				</svg>
@@ -3582,7 +3582,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					<defs>
 						<style>
 							{
-								".a-pentagrama,.t-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.m-pentagrama,.n-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.r-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.m-pentagrama{font-weight:700;}.i-pentagrama,.p-pentagrama,.r-pentagrama,.s-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.r-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:32px;}.j-pentagrama,.m-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{fill:url(#f-pentagrama);}.l-pentagrama{fill:url(#g-pentagrama);}.m-pentagrama{font-size:12px;}.n-pentagrama{font-size:8px;}.o-pentagrama{clip-path:url(#h-pentagrama);}.p-pentagrama{font-size:20px;}.p-pentagrama,.s-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.q-pentagrama{clip-path:url(#i-pentagrama);}.s-pentagrama{font-size:27px;}.t-pentagrama{stroke:#e40032;stroke-width:3px;}.u-pentagrama{filter:url(#d-pentagrama);}.v-pentagrama{filter:url(#b-pentagrama);}"
+								".a-pentagrama,.t-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.m-pentagrama,.n-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.r-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.m-pentagrama{font-weight:700;}.i-pentagrama,.p-pentagrama,.r-pentagrama,.s-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.r-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:18px;}.j-pentagrama,.m-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{fill:url(#f-pentagrama);}.l-pentagrama{fill:url(#g-pentagrama);}.m-pentagrama{font-size:12px;}.n-pentagrama{font-size:8px;}.o-pentagrama{clip-path:url(#h-pentagrama);}.p-pentagrama{font-size:20px;}.p-pentagrama,.s-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.q-pentagrama{clip-path:url(#i-pentagrama);}.s-pentagrama{font-size:27px;}.t-pentagrama{stroke:#e40032;stroke-width:3px;}.u-pentagrama{filter:url(#d-pentagrama);}.v-pentagrama{filter:url(#b-pentagrama);}"
 							}
 						</style>
 						<clipPath id="a-pentagrama">
@@ -3809,9 +3809,9 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					</g>
 					<text
 						className="j-pentagrama"
-						transform="translate(139.806 23.21)">
+						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'EVENTOS '}
+							{'Prográmese con Grupo Amarey '}
 						</tspan>
 					</text>
 					<g transform="translate(-850.194 -164.136)">
@@ -4369,7 +4369,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					<defs>
 						<style>
 							{
-								".a-pentagrama,.p-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.r-pentagrama,.s-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.n-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.r-pentagrama{font-weight:700;}.i-pentagrama,.l-pentagrama,.n-pentagrama,.o-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.s-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:32px;}.j-pentagrama,.r-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{clip-path:url(#f-pentagrama);}.l-pentagrama{font-size:20px;}.l-pentagrama,.o-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.m-pentagrama{clip-path:url(#g-pentagrama);}.o-pentagrama{font-size:27px;}.p-pentagrama{stroke:#e40032;stroke-width:3px;}.q-pentagrama{fill:url(#h-pentagrama);}.r-pentagrama{font-size:11px;}.s-pentagrama{font-size:8px;}.t-pentagrama{filter:url(#k-pentagrama);}.u-pentagrama{filter:url(#i-pentagrama);}.v-pentagrama{filter:url(#d-pentagrama);}.w-pentagrama{filter:url(#b-pentagrama);}"
+								".a-pentagrama,.p-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.r-pentagrama,.s-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.n-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.r-pentagrama{font-weight:700;}.i-pentagrama,.l-pentagrama,.n-pentagrama,.o-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.s-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:18px;}.j-pentagrama,.r-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{clip-path:url(#f-pentagrama);}.l-pentagrama{font-size:20px;}.l-pentagrama,.o-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.m-pentagrama{clip-path:url(#g-pentagrama);}.o-pentagrama{font-size:27px;}.p-pentagrama{stroke:#e40032;stroke-width:3px;}.q-pentagrama{fill:url(#h-pentagrama);}.r-pentagrama{font-size:11px;}.s-pentagrama{font-size:8px;}.t-pentagrama{filter:url(#k-pentagrama);}.u-pentagrama{filter:url(#i-pentagrama);}.v-pentagrama{filter:url(#d-pentagrama);}.w-pentagrama{filter:url(#b-pentagrama);}"
 							}
 						</style>
 						<clipPath id="a-pentagrama">
@@ -4610,9 +4610,9 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					</g>
 					<text
 						className="j-pentagrama"
-						transform="translate(139.806 23.21)">
+						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'EVENTOS '}
+							{'Prográmese con Grupo Amarey '}
 						</tspan>
 					</text>
 					<g transform="translate(47.281 494.018)">
@@ -5132,7 +5132,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					<defs>
 						<style>
 							{
-								".a-pentagrama,.u-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.n-pentagrama,.o-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.s-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.n-pentagrama{font-weight:700;}.i-pentagrama,.q-pentagrama,.s-pentagrama,.t-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.o-pentagrama,.s-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:32px;}.j-pentagrama,.n-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{fill:url(#f-pentagrama);}.l-pentagrama{fill:url(#g-pentagrama);}.m-pentagrama{fill:url(#h-pentagrama);}.n-pentagrama{font-size:12px;}.o-pentagrama{font-size:8px;}.p-pentagrama{clip-path:url(#i-pentagrama);}.q-pentagrama{font-size:20px;}.q-pentagrama,.t-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.r-pentagrama{clip-path:url(#j-pentagrama);}.t-pentagrama{font-size:27px;}.u-pentagrama{stroke:#e40032;stroke-width:3px;}.v-pentagrama{filter:url(#d-pentagrama);}.w-pentagrama{filter:url(#b-pentagrama);}"
+								".a-pentagrama,.u-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.n-pentagrama,.o-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.s-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.n-pentagrama{font-weight:700;}.i-pentagrama,.q-pentagrama,.s-pentagrama,.t-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.o-pentagrama,.s-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:18px;}.j-pentagrama,.n-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{fill:url(#f-pentagrama);}.l-pentagrama{fill:url(#g-pentagrama);}.m-pentagrama{fill:url(#h-pentagrama);}.n-pentagrama{font-size:12px;}.o-pentagrama{font-size:8px;}.p-pentagrama{clip-path:url(#i-pentagrama);}.q-pentagrama{font-size:20px;}.q-pentagrama,.t-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.r-pentagrama{clip-path:url(#j-pentagrama);}.t-pentagrama{font-size:27px;}.u-pentagrama{stroke:#e40032;stroke-width:3px;}.v-pentagrama{filter:url(#d-pentagrama);}.w-pentagrama{filter:url(#b-pentagrama);}"
 							}
 						</style>
 						<clipPath id="a-pentagrama">
@@ -5371,9 +5371,9 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					</g>
 					<text
 						className="j-pentagrama"
-						transform="translate(139.806 23.21)">
+						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'EVENTOS '}
+							{'Prográmese con Grupo Amarey '}
 						</tspan>
 					</text>
 					<g transform="translate(-850.194 -191.966)">
@@ -5967,7 +5967,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					<defs>
 						<style>
 							{
-								".a-pentagrama,.p-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.r-pentagrama,.s-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.n-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.r-pentagrama{font-weight:700;}.i-pentagrama,.l-pentagrama,.n-pentagrama,.o-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.s-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:32px;}.j-pentagrama,.r-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{clip-path:url(#f-pentagrama);}.l-pentagrama{font-size:20px;}.l-pentagrama,.o-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.m-pentagrama{clip-path:url(#g-pentagrama);}.o-pentagrama{font-size:27px;}.p-pentagrama{stroke:#e40032;stroke-width:3px;}.q-pentagrama{fill:url(#h-pentagrama);}.r-pentagrama{font-size:11px;}.s-pentagrama{font-size:8px;}.t-pentagrama{filter:url(#k-pentagrama);}.u-pentagrama{filter:url(#i-pentagrama);}.v-pentagrama{filter:url(#d-pentagrama);}.w-pentagrama{filter:url(#b-pentagrama);}"
+								".a-pentagrama,.p-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.r-pentagrama,.s-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.n-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.r-pentagrama{font-weight:700;}.i-pentagrama,.l-pentagrama,.n-pentagrama,.o-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.s-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:18px;}.j-pentagrama,.r-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{clip-path:url(#f-pentagrama);}.l-pentagrama{font-size:20px;}.l-pentagrama,.o-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.m-pentagrama{clip-path:url(#g-pentagrama);}.o-pentagrama{font-size:27px;}.p-pentagrama{stroke:#e40032;stroke-width:3px;}.q-pentagrama{fill:url(#h-pentagrama);}.r-pentagrama{font-size:11px;}.s-pentagrama{font-size:8px;}.t-pentagrama{filter:url(#k-pentagrama);}.u-pentagrama{filter:url(#i-pentagrama);}.v-pentagrama{filter:url(#d-pentagrama);}.w-pentagrama{filter:url(#b-pentagrama);}"
 							}
 						</style>
 						<clipPath id="a-pentagrama">
@@ -6208,9 +6208,9 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					</g>
 					<text
 						className="j-pentagrama"
-						transform="translate(139.806 23.21)">
+						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'EVENTOS '}
+							{'Prográmese con Grupo Amarey '}
 						</tspan>
 					</text>
 					<g transform="translate(47.281 494.018)">
@@ -6739,7 +6739,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					<defs>
 						<style>
 							{
-								".a-pentagrama,.p-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.r-pentagrama,.s-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.n-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.r-pentagrama{font-weight:700;}.i-pentagrama,.l-pentagrama,.n-pentagrama,.o-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.s-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:32px;}.j-pentagrama,.r-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{clip-path:url(#f-pentagrama);}.l-pentagrama{font-size:20px;}.l-pentagrama,.o-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.m-pentagrama{clip-path:url(#g-pentagrama);}.o-pentagrama{font-size:27px;}.p-pentagrama{stroke:#e40032;stroke-width:3px;}.q-pentagrama{fill:url(#h-pentagrama);}.r-pentagrama{font-size:11px;}.s-pentagrama{font-size:8px;}.t-pentagrama{filter:url(#k-pentagrama);}.u-pentagrama{filter:url(#i-pentagrama);}.v-pentagrama{filter:url(#d-pentagrama);}.w-pentagrama{filter:url(#b-pentagrama);}"
+								".a-pentagrama,.p-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.r-pentagrama,.s-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.n-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.r-pentagrama{font-weight:700;}.i-pentagrama,.l-pentagrama,.n-pentagrama,.o-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.s-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:18px;}.j-pentagrama,.r-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{clip-path:url(#f-pentagrama);}.l-pentagrama{font-size:20px;}.l-pentagrama,.o-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.m-pentagrama{clip-path:url(#g-pentagrama);}.o-pentagrama{font-size:27px;}.p-pentagrama{stroke:#e40032;stroke-width:3px;}.q-pentagrama{fill:url(#h-pentagrama);}.r-pentagrama{font-size:11px;}.s-pentagrama{font-size:8px;}.t-pentagrama{filter:url(#k-pentagrama);}.u-pentagrama{filter:url(#i-pentagrama);}.v-pentagrama{filter:url(#d-pentagrama);}.w-pentagrama{filter:url(#b-pentagrama);}"
 							}
 						</style>
 						<clipPath id="a-pentagrama">
@@ -6980,9 +6980,9 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					</g>
 					<text
 						className="j-pentagrama"
-						transform="translate(139.806 23.21)">
+						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'EVENTOS '}
+							{'Prográmese con Grupo Amarey '}
 						</tspan>
 					</text>
 					<g transform="translate(47.281 494.018)">
@@ -7511,7 +7511,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					<defs>
 						<style>
 							{
-								".a-pentagrama,.t-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.m-pentagrama,.n-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.r-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.m-pentagrama{font-weight:700;}.i-pentagrama,.p-pentagrama,.r-pentagrama,.s-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.r-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:32px;}.j-pentagrama,.m-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{fill:url(#f-pentagrama);}.l-pentagrama{fill:url(#g-pentagrama);}.m-pentagrama{font-size:12px;}.n-pentagrama{font-size:8px;}.o-pentagrama{clip-path:url(#h-pentagrama);}.p-pentagrama{font-size:20px;}.p-pentagrama,.s-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.q-pentagrama{clip-path:url(#i-pentagrama);}.s-pentagrama{font-size:27px;}.t-pentagrama{stroke:#e40032;stroke-width:3px;}.u-pentagrama{filter:url(#d-pentagrama);}.v-pentagrama{filter:url(#b-pentagrama);}"
+								".a-pentagrama,.t-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.m-pentagrama,.n-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.r-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.m-pentagrama{font-weight:700;}.i-pentagrama,.p-pentagrama,.r-pentagrama,.s-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.r-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:18px;}.j-pentagrama,.m-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{fill:url(#f-pentagrama);}.l-pentagrama{fill:url(#g-pentagrama);}.m-pentagrama{font-size:12px;}.n-pentagrama{font-size:8px;}.o-pentagrama{clip-path:url(#h-pentagrama);}.p-pentagrama{font-size:20px;}.p-pentagrama,.s-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.q-pentagrama{clip-path:url(#i-pentagrama);}.s-pentagrama{font-size:27px;}.t-pentagrama{stroke:#e40032;stroke-width:3px;}.u-pentagrama{filter:url(#d-pentagrama);}.v-pentagrama{filter:url(#b-pentagrama);}"
 							}
 						</style>
 						<clipPath id="a-pentagrama">
@@ -7773,9 +7773,9 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					</g>
 					<text
 						className="j-pentagrama"
-						transform="translate(139.806 23.21)">
+						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'EVENTOS '}
+							{'Prográmese con Grupo Amarey '}
 						</tspan>
 					</text>
 					<g transform="translate(-850.194 -164.136)">
@@ -8277,7 +8277,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					<defs>
 						<style>
 							{
-								".a-pentagrama,.t-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.m-pentagrama,.n-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.r-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.m-pentagrama{font-weight:700;}.i-pentagrama,.p-pentagrama,.r-pentagrama,.s-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.r-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:32px;}.j-pentagrama,.m-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{fill:url(#f-pentagrama);}.l-pentagrama{fill:url(#g-pentagrama);}.m-pentagrama{font-size:12px;}.n-pentagrama{font-size:8px;}.o-pentagrama{clip-path:url(#h-pentagrama);}.p-pentagrama{font-size:20px;}.p-pentagrama,.s-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.q-pentagrama{clip-path:url(#i-pentagrama);}.s-pentagrama{font-size:27px;}.t-pentagrama{stroke:#e40032;stroke-width:3px;}.u-pentagrama{filter:url(#d-pentagrama);}.v-pentagrama{filter:url(#b-pentagrama);}"
+								".a-pentagrama,.t-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.m-pentagrama,.n-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.r-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.m-pentagrama{font-weight:700;}.i-pentagrama,.p-pentagrama,.r-pentagrama,.s-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.r-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:18px;}.j-pentagrama,.m-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{fill:url(#f-pentagrama);}.l-pentagrama{fill:url(#g-pentagrama);}.m-pentagrama{font-size:12px;}.n-pentagrama{font-size:8px;}.o-pentagrama{clip-path:url(#h-pentagrama);}.p-pentagrama{font-size:20px;}.p-pentagrama,.s-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.q-pentagrama{clip-path:url(#i-pentagrama);}.s-pentagrama{font-size:27px;}.t-pentagrama{stroke:#e40032;stroke-width:3px;}.u-pentagrama{filter:url(#d-pentagrama);}.v-pentagrama{filter:url(#b-pentagrama);}"
 							}
 						</style>
 						<clipPath id="a-pentagrama">
@@ -8539,9 +8539,9 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					</g>
 					<text
 						className="j-pentagrama"
-						transform="translate(139.806 23.21)">
+						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'EVENTOS '}
+							{'Prográmese con Grupo Amarey '}
 						</tspan>
 					</text>
 					<g transform="translate(-850.194 -164.136)">
@@ -9041,7 +9041,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					<defs>
 						<style>
 							{
-								".a-pentagrama,.t-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.m-pentagrama,.n-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.r-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.m-pentagrama{font-weight:700;}.i-pentagrama,.p-pentagrama,.r-pentagrama,.s-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.r-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:32px;}.j-pentagrama,.m-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{fill:url(#f-pentagrama);}.l-pentagrama{fill:url(#g-pentagrama);}.m-pentagrama{font-size:12px;}.n-pentagrama{font-size:8px;}.o-pentagrama{clip-path:url(#h-pentagrama);}.p-pentagrama{font-size:20px;}.p-pentagrama,.s-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.q-pentagrama{clip-path:url(#i-pentagrama);}.s-pentagrama{font-size:27px;}.t-pentagrama{stroke:#e40032;stroke-width:3px;}.u-pentagrama{filter:url(#d-pentagrama);}.v-pentagrama{filter:url(#b-pentagrama);}"
+								".a-pentagrama,.t-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.m-pentagrama,.n-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.r-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.m-pentagrama{font-weight:700;}.i-pentagrama,.p-pentagrama,.r-pentagrama,.s-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.r-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:18px;}.j-pentagrama,.m-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{fill:url(#f-pentagrama);}.l-pentagrama{fill:url(#g-pentagrama);}.m-pentagrama{font-size:12px;}.n-pentagrama{font-size:8px;}.o-pentagrama{clip-path:url(#h-pentagrama);}.p-pentagrama{font-size:20px;}.p-pentagrama,.s-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.q-pentagrama{clip-path:url(#i-pentagrama);}.s-pentagrama{font-size:27px;}.t-pentagrama{stroke:#e40032;stroke-width:3px;}.u-pentagrama{filter:url(#d-pentagrama);}.v-pentagrama{filter:url(#b-pentagrama);}"
 							}
 						</style>
 						<clipPath id="a-pentagrama">
@@ -9299,9 +9299,9 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					</g>
 					<text
 						className="j-pentagrama"
-						transform="translate(139.806 23.21)">
+						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'EVENTOS '}
+							{'Prográmese con Grupo Amarey '}
 						</tspan>
 					</text>
 					<g transform="translate(-850.194 -164.136)">
@@ -9801,7 +9801,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					<defs>
 						<style>
 							{
-								".a-pentagrama,.t-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.m-pentagrama,.n-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.r-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.m-pentagrama{font-weight:700;}.i-pentagrama,.p-pentagrama,.r-pentagrama,.s-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.r-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:32px;}.j-pentagrama,.m-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{fill:url(#f-pentagrama);}.l-pentagrama{fill:url(#g-pentagrama);}.m-pentagrama{font-size:12px;}.n-pentagrama{font-size:8px;}.o-pentagrama{clip-path:url(#h-pentagrama);}.p-pentagrama{font-size:20px;}.p-pentagrama,.s-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.q-pentagrama{clip-path:url(#i-pentagrama);}.s-pentagrama{font-size:27px;}.t-pentagrama{stroke:#e40032;stroke-width:3px;}.u-pentagrama{filter:url(#d-pentagrama);}.v-pentagrama{filter:url(#b-pentagrama);}"
+								".a-pentagrama,.t-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.m-pentagrama,.n-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.r-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.m-pentagrama{font-weight:700;}.i-pentagrama,.p-pentagrama,.r-pentagrama,.s-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.r-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:18px;}.j-pentagrama,.m-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{fill:url(#f-pentagrama);}.l-pentagrama{fill:url(#g-pentagrama);}.m-pentagrama{font-size:12px;}.n-pentagrama{font-size:8px;}.o-pentagrama{clip-path:url(#h-pentagrama);}.p-pentagrama{font-size:20px;}.p-pentagrama,.s-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.q-pentagrama{clip-path:url(#i-pentagrama);}.s-pentagrama{font-size:27px;}.t-pentagrama{stroke:#e40032;stroke-width:3px;}.u-pentagrama{filter:url(#d-pentagrama);}.v-pentagrama{filter:url(#b-pentagrama);}"
 							}
 						</style>
 						<clipPath id="a-pentagrama">
@@ -10063,9 +10063,9 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					</g>
 					<text
 						className="j-pentagrama"
-						transform="translate(139.806 23.21)">
+						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'EVENTOS '}
+							{'Prográmese con Grupo Amarey '}
 						</tspan>
 					</text>
 					<g transform="translate(-850.194 -164.136)">
@@ -10585,7 +10585,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					<defs>
 						<style>
 							{
-								".a-pentagrama,.p-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.r-pentagrama,.s-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.n-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.r-pentagrama{font-weight:700;}.i-pentagrama,.l-pentagrama,.n-pentagrama,.o-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.s-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:32px;}.j-pentagrama,.r-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{clip-path:url(#f-pentagrama);}.l-pentagrama{font-size:20px;}.l-pentagrama,.o-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.m-pentagrama{clip-path:url(#g-pentagrama);}.o-pentagrama{font-size:27px;}.p-pentagrama{stroke:#e40032;stroke-width:3px;}.q-pentagrama{fill:url(#h-pentagrama);}.r-pentagrama{font-size:11px;}.s-pentagrama{font-size:8px;}.t-pentagrama{filter:url(#k-pentagrama);}.u-pentagrama{filter:url(#i-pentagrama);}.v-pentagrama{filter:url(#d-pentagrama);}.w-pentagrama{filter:url(#b-pentagrama);}"
+								".a-pentagrama,.p-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.r-pentagrama,.s-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.n-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.r-pentagrama{font-weight:700;}.i-pentagrama,.l-pentagrama,.n-pentagrama,.o-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.s-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:18px;}.j-pentagrama,.r-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{clip-path:url(#f-pentagrama);}.l-pentagrama{font-size:20px;}.l-pentagrama,.o-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.m-pentagrama{clip-path:url(#g-pentagrama);}.o-pentagrama{font-size:27px;}.p-pentagrama{stroke:#e40032;stroke-width:3px;}.q-pentagrama{fill:url(#h-pentagrama);}.r-pentagrama{font-size:11px;}.s-pentagrama{font-size:8px;}.t-pentagrama{filter:url(#k-pentagrama);}.u-pentagrama{filter:url(#i-pentagrama);}.v-pentagrama{filter:url(#d-pentagrama);}.w-pentagrama{filter:url(#b-pentagrama);}"
 							}
 						</style>
 						<clipPath id="a-pentagrama">
@@ -10861,9 +10861,9 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					</g>
 					<text
 						className="j-pentagrama"
-						transform="translate(139.806 23.21)">
+						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'EVENTOS '}
+							{'Prográmese con Grupo Amarey '}
 						</tspan>
 					</text>
 					<g transform="translate(47.281 494.018)">
@@ -11339,7 +11339,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					<defs>
 						<style>
 							{
-								".a-pentagrama,.p-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.r-pentagrama,.s-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.n-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.r-pentagrama{font-weight:700;}.i-pentagrama,.l-pentagrama,.n-pentagrama,.o-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.s-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:32px;}.j-pentagrama,.r-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{clip-path:url(#f-pentagrama);}.l-pentagrama{font-size:20px;}.l-pentagrama,.o-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.m-pentagrama{clip-path:url(#g-pentagrama);}.o-pentagrama{font-size:27px;}.p-pentagrama{stroke:#e40032;stroke-width:3px;}.q-pentagrama{fill:url(#h-pentagrama);}.r-pentagrama{font-size:11px;}.s-pentagrama{font-size:8px;}.t-pentagrama{filter:url(#k-pentagrama);}.u-pentagrama{filter:url(#i-pentagrama);}.v-pentagrama{filter:url(#d-pentagrama);}.w-pentagrama{filter:url(#b-pentagrama);}"
+								".a-pentagrama,.p-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.r-pentagrama,.s-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.n-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.r-pentagrama{font-weight:700;}.i-pentagrama,.l-pentagrama,.n-pentagrama,.o-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.s-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:18px;}.j-pentagrama,.r-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{clip-path:url(#f-pentagrama);}.l-pentagrama{font-size:20px;}.l-pentagrama,.o-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.m-pentagrama{clip-path:url(#g-pentagrama);}.o-pentagrama{font-size:27px;}.p-pentagrama{stroke:#e40032;stroke-width:3px;}.q-pentagrama{fill:url(#h-pentagrama);}.r-pentagrama{font-size:11px;}.s-pentagrama{font-size:8px;}.t-pentagrama{filter:url(#k-pentagrama);}.u-pentagrama{filter:url(#i-pentagrama);}.v-pentagrama{filter:url(#d-pentagrama);}.w-pentagrama{filter:url(#b-pentagrama);}"
 							}
 						</style>
 						<clipPath id="a-pentagrama">
@@ -11607,9 +11607,9 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					</g>
 					<text
 						className="j-pentagrama"
-						transform="translate(139.806 23.21)">
+						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'EVENTOS '}
+							{'Prográmese con Grupo Amarey '}
 						</tspan>
 					</text>
 					<g transform="translate(47.281 494.018)">
@@ -12092,7 +12092,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					<defs>
 						<style>
 							{
-								".a-pentagrama,.p-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.r-pentagrama,.s-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.n-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.r-pentagrama{font-weight:700;}.i-pentagrama,.l-pentagrama,.n-pentagrama,.o-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.s-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:32px;}.j-pentagrama,.r-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{clip-path:url(#f-pentagrama);}.l-pentagrama{font-size:20px;}.l-pentagrama,.o-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.m-pentagrama{clip-path:url(#g-pentagrama);}.o-pentagrama{font-size:27px;}.p-pentagrama{stroke:#e40032;stroke-width:3px;}.q-pentagrama{fill:url(#h-pentagrama);}.r-pentagrama{font-size:11px;}.s-pentagrama{font-size:8px;}.t-pentagrama{filter:url(#k-pentagrama);}.u-pentagrama{filter:url(#i-pentagrama);}.v-pentagrama{filter:url(#d-pentagrama);}.w-pentagrama{filter:url(#b-pentagrama);}"
+								".a-pentagrama,.p-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.r-pentagrama,.s-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.n-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.r-pentagrama{font-weight:700;}.i-pentagrama,.l-pentagrama,.n-pentagrama,.o-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.s-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:18px;}.j-pentagrama,.r-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{clip-path:url(#f-pentagrama);}.l-pentagrama{font-size:20px;}.l-pentagrama,.o-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.m-pentagrama{clip-path:url(#g-pentagrama);}.o-pentagrama{font-size:27px;}.p-pentagrama{stroke:#e40032;stroke-width:3px;}.q-pentagrama{fill:url(#h-pentagrama);}.r-pentagrama{font-size:11px;}.s-pentagrama{font-size:8px;}.t-pentagrama{filter:url(#k-pentagrama);}.u-pentagrama{filter:url(#i-pentagrama);}.v-pentagrama{filter:url(#d-pentagrama);}.w-pentagrama{filter:url(#b-pentagrama);}"
 							}
 						</style>
 						<clipPath id="a-pentagrama">
@@ -12361,9 +12361,9 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					</g>
 					<text
 						className="j-pentagrama"
-						transform="translate(139.806 23.21)">
+						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'EVENTOS '}
+							{'Prográmese con Grupo Amarey '}
 						</tspan>
 					</text>
 					<g transform="translate(47.281 494.018)">
@@ -12846,7 +12846,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					<defs>
 						<style>
 							{
-								".a-pentagrama,.p-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.r-pentagrama,.s-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.n-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.r-pentagrama{font-weight:700;}.i-pentagrama,.l-pentagrama,.n-pentagrama,.o-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.s-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:32px;}.j-pentagrama,.r-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{clip-path:url(#f-pentagrama);}.l-pentagrama{font-size:20px;}.l-pentagrama,.o-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.m-pentagrama{clip-path:url(#g-pentagrama);}.o-pentagrama{font-size:27px;}.p-pentagrama{stroke:#e40032;stroke-width:3px;}.q-pentagrama{fill:url(#h-pentagrama);}.r-pentagrama{font-size:11px;}.s-pentagrama{font-size:8px;}.t-pentagrama{filter:url(#k-pentagrama);}.u-pentagrama{filter:url(#i-pentagrama);}.v-pentagrama{filter:url(#d-pentagrama);}.w-pentagrama{filter:url(#b-pentagrama);}"
+								".a-pentagrama,.p-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.r-pentagrama,.s-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.n-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.r-pentagrama{font-weight:700;}.i-pentagrama,.l-pentagrama,.n-pentagrama,.o-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.s-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:18px;}.j-pentagrama,.r-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{clip-path:url(#f-pentagrama);}.l-pentagrama{font-size:20px;}.l-pentagrama,.o-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.m-pentagrama{clip-path:url(#g-pentagrama);}.o-pentagrama{font-size:27px;}.p-pentagrama{stroke:#e40032;stroke-width:3px;}.q-pentagrama{fill:url(#h-pentagrama);}.r-pentagrama{font-size:11px;}.s-pentagrama{font-size:8px;}.t-pentagrama{filter:url(#k-pentagrama);}.u-pentagrama{filter:url(#i-pentagrama);}.v-pentagrama{filter:url(#d-pentagrama);}.w-pentagrama{filter:url(#b-pentagrama);}"
 							}
 						</style>
 						<clipPath id="a-pentagrama">
@@ -13122,9 +13122,9 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					</g>
 					<text
 						className="j-pentagrama"
-						transform="translate(139.806 23.21)">
+						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'EVENTOS '}
+							{'Prográmese con Grupo Amarey '}
 						</tspan>
 					</text>
 					<g transform="translate(47.281 494.018)">
@@ -13600,7 +13600,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					<defs>
 						<style>
 							{
-								".a-pentagrama,.p-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.r-pentagrama,.s-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.n-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.r-pentagrama{font-weight:700;}.i-pentagrama,.l-pentagrama,.n-pentagrama,.o-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.s-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:32px;}.j-pentagrama,.r-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{clip-path:url(#f-pentagrama);}.l-pentagrama{font-size:20px;}.l-pentagrama,.o-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.m-pentagrama{clip-path:url(#g-pentagrama);}.o-pentagrama{font-size:27px;}.p-pentagrama{stroke:#e40032;stroke-width:3px;}.q-pentagrama{fill:url(#h-pentagrama);}.r-pentagrama{font-size:11px;}.s-pentagrama{font-size:8px;}.t-pentagrama{filter:url(#k-pentagrama);}.u-pentagrama{filter:url(#i-pentagrama);}.v-pentagrama{filter:url(#d-pentagrama);}.w-pentagrama{filter:url(#b-pentagrama);}"
+								".a-pentagrama,.p-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.r-pentagrama,.s-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.n-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.r-pentagrama{font-weight:700;}.i-pentagrama,.l-pentagrama,.n-pentagrama,.o-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.s-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:18px;}.j-pentagrama,.r-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{clip-path:url(#f-pentagrama);}.l-pentagrama{font-size:20px;}.l-pentagrama,.o-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.m-pentagrama{clip-path:url(#g-pentagrama);}.o-pentagrama{font-size:27px;}.p-pentagrama{stroke:#e40032;stroke-width:3px;}.q-pentagrama{fill:url(#h-pentagrama);}.r-pentagrama{font-size:11px;}.s-pentagrama{font-size:8px;}.t-pentagrama{filter:url(#k-pentagrama);}.u-pentagrama{filter:url(#i-pentagrama);}.v-pentagrama{filter:url(#d-pentagrama);}.w-pentagrama{filter:url(#b-pentagrama);}"
 							}
 						</style>
 						<clipPath id="a-pentagrama">
@@ -13875,9 +13875,9 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					</g>
 					<text
 						className="j-pentagrama"
-						transform="translate(139.806 23.21)">
+						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'EVENTOS '}
+							{'Prográmese con Grupo Amarey '}
 						</tspan>
 					</text>
 					<g transform="translate(47.281 494.018)">
@@ -14356,7 +14356,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					<defs>
 						<style>
 							{
-								".a-pentagrama,.p-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.r-pentagrama,.s-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.n-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.r-pentagrama{font-weight:700;}.i-pentagrama,.l-pentagrama,.n-pentagrama,.o-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.s-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:32px;}.j-pentagrama,.r-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{clip-path:url(#f-pentagrama);}.l-pentagrama{font-size:20px;}.l-pentagrama,.o-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.m-pentagrama{clip-path:url(#g-pentagrama);}.o-pentagrama{font-size:27px;}.p-pentagrama{stroke:#e40032;stroke-width:3px;}.q-pentagrama{fill:url(#h-pentagrama);}.r-pentagrama{font-size:11px;}.s-pentagrama{font-size:8px;}.t-pentagrama{filter:url(#k-pentagrama);}.u-pentagrama{filter:url(#i-pentagrama);}.v-pentagrama{filter:url(#d-pentagrama);}.w-pentagrama{filter:url(#b-pentagrama);}"
+								".a-pentagrama,.p-pentagrama{fill:none;}.b-pentagrama{clip-path:url(#a-pentagrama);}.c-pentagrama{fill:#e40032;}.d-pentagrama,.r-pentagrama,.s-pentagrama{fill:#001f5f;}.e-pentagrama{fill:#c5dbf7;}.f-pentagrama{fill:#c7c7cc;}.g-pentagrama,.h-pentagrama,.j-pentagrama{fill:#fff;}.h-pentagrama,.n-pentagrama{font-size:16px;}.h-pentagrama{font-family:Silka-Bold, Silka;}.h-pentagrama,.j-pentagrama,.r-pentagrama{font-weight:700;}.i-pentagrama,.l-pentagrama,.n-pentagrama,.o-pentagrama{fill:#182856;}.i-pentagrama{font-size:15px;}.i-pentagrama,.n-pentagrama,.s-pentagrama{font-family:Silka-Regular, Silka;}.j-pentagrama{font-size:18px;}.j-pentagrama,.r-pentagrama{font-family:'Kiona-Bold';}.k-pentagrama{clip-path:url(#f-pentagrama);}.l-pentagrama{font-size:20px;}.l-pentagrama,.o-pentagrama{font-family:Silka-SemiBold, Silka;font-weight:600;}.m-pentagrama{clip-path:url(#g-pentagrama);}.o-pentagrama{font-size:27px;}.p-pentagrama{stroke:#e40032;stroke-width:3px;}.q-pentagrama{fill:url(#h-pentagrama);}.r-pentagrama{font-size:11px;}.s-pentagrama{font-size:8px;}.t-pentagrama{filter:url(#k-pentagrama);}.u-pentagrama{filter:url(#i-pentagrama);}.v-pentagrama{filter:url(#d-pentagrama);}.w-pentagrama{filter:url(#b-pentagrama);}"
 							}
 						</style>
 						<clipPath id="a-pentagrama">
@@ -14632,9 +14632,9 @@ const EventosMobile: React.FC = (): JSX.Element => {
 					</g>
 					<text
 						className="j-pentagrama"
-						transform="translate(139.806 23.21)">
+						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'EVENTOS '}
+							{'Prográmese con Grupo Amarey '}
 						</tspan>
 					</text>
 					<g transform="translate(47.281 494.018)">
