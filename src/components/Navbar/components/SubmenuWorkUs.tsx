@@ -71,6 +71,7 @@ const SubmenuWorkUs: React.FC<{ ref: any }> = ({ ref }) => {
 			</defs>
 			<g>
 				<g transform="translate(0 -104)">
+					<a href="/trabaje-nosotros">
 					<g transform="translate(492.612 -22.409)">
 						<rect
 							className="b-submenu-w"
@@ -101,6 +102,7 @@ const SubmenuWorkUs: React.FC<{ ref: any }> = ({ ref }) => {
 							</g>
 						</g>
 					</g>
+					</a>
 					<path
 						className="b-submenu-w"
 						d="M367.709,339.246H0V0H586.714l-62.14,206.671a173.939,173.939,0,0,1-15.633,36.562c-36.385,63.36-89.124,96.013-141.232,96.013"

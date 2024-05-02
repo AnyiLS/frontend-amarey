@@ -9,6 +9,7 @@ import Responsabilidad from 'components/Responsabilidad/Responsabilidad'
 import Biomedico from 'components/Biomedico/Biomedico'
 import Eventos from 'components/Eventos/Eventos'
 import Filosofia from 'components/Filosofia/Filosofia'
+import TrabajeNosotros from 'components/TrabajeNosotros/TrabajeNosotros'
 
 const useRouter = () => {
 	const {
@@ -72,6 +73,10 @@ const useRouter = () => {
 		{
 			path: 'filosofia',
 			element: <Filosofia />,
+		},
+		{
+			path: 'trabaje-nosotros',
+			element: <TrabajeNosotros />,
 		},
 		{
 			path: 'productos',
