@@ -1835,7 +1835,7 @@ export const ServiciosMovil: React.FC = () => {
 									<image
 										width={1920}
 										height={1080}
-										xlinkHref="/images/ComponentTMP_0-image5.JPG"
+										xlinkHref="/images/fondovideobak.jpg"
 									/>
 								</pattern>
 							</defs>
