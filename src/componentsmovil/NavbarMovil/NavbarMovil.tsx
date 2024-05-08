@@ -1,10 +1,73 @@
+import axios from 'axios'
 import React from 'react'
+import { useForm } from 'react-hook-form'
+import Swal from 'sweetalert2'
 
 export const NavbarMovil: React.FC = () => {
 	/** States */
 	const [openMenu, setOpenMenu] = React.useState<boolean>(false)
 	const [openContact, setOpenContact] = React.useState<boolean>(false)
 	const [step, setStep] = React.useState<number>(3)
+	const [accept, setAccept] = React.useState<boolean>(false)
+
+	const {
+		handleSubmit,
+		formState: { isValid },
+		register,
+		reset,
+	} = useForm({ mode: 'onChange' })
+
+	const handleSentContact = (data: any) => {
+		if (isValid && accept) {
+			axios
+				.post(
+					'http://apiamarey.juegoseml.co/api/guardar-formulario',
+					data
+				)
+				.then((res: any) => {
+					reset({
+						nombre_completo: undefined,
+						email: undefined,
+						asunto: undefined,
+						telefono: undefined,
+						mensaje: undefined,
+						institucion: undefined,
+						pais: undefined,
+					})
+
+					Swal.fire({
+						icon: 'success',
+						title: 'Mensaje enviado exitosamente',
+					})
+
+					setOpenContact(false)
+				})
+				.catch((error: any) => {
+					reset({
+						nombre_completo: undefined,
+						email: undefined,
+						asunto: undefined,
+						telefono: undefined,
+						mensaje: undefined,
+						institucion: undefined,
+						pais: undefined,
+					})
+
+					Swal.fire({
+						icon: 'error',
+						title: 'Ocurrio un problema al enviar el correo!',
+						text: 'Intentalo nuevamente',
+					})
+				})
+		} else {
+			if (isValid && !accept) {
+				Swal.fire({
+					icon: 'warning',
+					title: 'Debes aceptar los terminos de tratamiento de datos personales',
+				})
+			}
+		}
+	}
 
 	React.useEffect(() => {
 		if (!openMenu) setStep(0)
@@ -21,7 +84,7 @@ export const NavbarMovil: React.FC = () => {
 							<defs>
 								<style>
 									{
-										".a-navbar-mobile,.f-navbar-mobile{fill:none;}.b-navbar-mobile,.l-navbar-mobile{fill:#001f5f;}.c-navbar-mobile,.j-navbar-mobile,.k-navbar-mobile{fill:#fff;}.d-navbar-mobile{clip-path:url(#c-navbar-mobile);}.e-navbar-mobile,.i-navbar-mobile{fill:#e40032;}.f-navbar-mobile,.i-navbar-mobile,.k-navbar-mobile{stroke:#001f5f;}.g-navbar-mobile{clip-path:url(#f-navbar-mobile);}.h-navbar-mobile{clip-path:url(#g-navbar-mobile);}.j-navbar-mobile,.l-navbar-mobile{font-size:16px;font-family:Silka-SemiBold, Silka;font-weight:600;}.m-navbar-mobile{stroke:none;}.n-navbar-mobile{filter:url(#v-navbar-mobile);}.o-navbar-mobile{filter:url(#t-navbar-mobile);}.p-navbar-mobile{filter:url(#r-navbar-mobile);}.q-navbar-mobile{filter:url(#p-navbar-mobile);}.r-navbar-mobile{filter:url(#n-navbar-mobile);}.s-navbar-mobile{filter:url(#l-navbar-mobile);}.t-navbar-mobile{filter:url(#j-navbar-mobile);}.u-navbar-mobile{filter:url(#h-navbar-mobile);}.v-navbar-mobile{filter:url(#d-navbar-mobile);}.w-navbar-mobile{filter:url(#a-navbar-mobile);}"
+										'.a-navbar-mobile,.f-navbar-mobile{fill:none;}.b-navbar-mobile,.l-navbar-mobile{fill:#001f5f;}.c-navbar-mobile,.j-navbar-mobile,.k-navbar-mobile{fill:#fff;}.d-navbar-mobile{clip-path:url(#c-navbar-mobile);}.e-navbar-mobile,.i-navbar-mobile{fill:#e40032;}.f-navbar-mobile,.i-navbar-mobile,.k-navbar-mobile{stroke:#001f5f;}.g-navbar-mobile{clip-path:url(#f-navbar-mobile);}.h-navbar-mobile{clip-path:url(#g-navbar-mobile);}.j-navbar-mobile,.l-navbar-mobile{font-size:16px;font-family:Silka-SemiBold, Silka;font-weight:600;}.m-navbar-mobile{stroke:none;}.n-navbar-mobile{filter:url(#v-navbar-mobile);}.o-navbar-mobile{filter:url(#t-navbar-mobile);}.p-navbar-mobile{filter:url(#r-navbar-mobile);}.q-navbar-mobile{filter:url(#p-navbar-mobile);}.r-navbar-mobile{filter:url(#n-navbar-mobile);}.s-navbar-mobile{filter:url(#l-navbar-mobile);}.t-navbar-mobile{filter:url(#j-navbar-mobile);}.u-navbar-mobile{filter:url(#h-navbar-mobile);}.v-navbar-mobile{filter:url(#d-navbar-mobile);}.w-navbar-mobile{filter:url(#a-navbar-mobile);}'
 									}
 								</style>
 								<filter
@@ -516,7 +579,12 @@ export const NavbarMovil: React.FC = () => {
 										</g>
 									</g>
 								</g>
-								<g transform="translate(3 483.058)">
+								<g
+									transform="translate(3 483.058)"
+									onClick={() =>
+										(window.location.href =
+											'/trabaje-nosotros')
+									}>
 									<g
 										className="s-navbar-mobile"
 										transform="matrix(1, 0, 0, 1, -9, -489.06)">
@@ -704,7 +772,7 @@ export const NavbarMovil: React.FC = () => {
 											{'Home'}
 										</tspan>
 									</text>
-								</g>	
+								</g>
 								<path
 									className="e-navbar-mobile"
 									d="M955.324-45.344,948.263-52.4l-6.929,6.929a3.1,3.1,0,0,1-4.382,0,3.1,3.1,0,0,1,0-4.381l6.929-6.929-7.061-7.061a2.911,2.911,0,0,1,0-4.117,2.912,2.912,0,0,1,4.117,0L948-60.9l7.193-7.193a3.1,3.1,0,0,1,4.382,0,3.1,3.1,0,0,1,0,4.381l-7.194,7.194,7.061,7.061a2.911,2.911,0,0,1,0,4.117,2.9,2.9,0,0,1-2.059.853A2.9,2.9,0,0,1,955.324-45.344Z"
@@ -732,7 +800,9 @@ export const NavbarMovil: React.FC = () => {
 							</g>
 						</svg>
 					) : step === 1 ? (
-						<svg viewBox="3 0 414 902" className="absolute z-[1] top-0">
+						<svg
+							viewBox="3 0 414 902"
+							className="absolute z-[1] top-0">
 							<defs>
 								<style>
 									{
@@ -1540,7 +1610,9 @@ export const NavbarMovil: React.FC = () => {
 							</g>
 						</svg>
 					) : step === 2 ? (
-						<svg viewBox="3 0 414 902" className="absolute z-[1] top-0">
+						<svg
+							viewBox="3 0 414 902"
+							className="absolute z-[1] top-0">
 							<defs>
 								<style>
 									{
@@ -2322,7 +2394,9 @@ export const NavbarMovil: React.FC = () => {
 							</g>
 						</svg>
 					) : step === 3 ? (
-						<svg viewBox="3 0 414 902" className="absolute z-[1] top-0">
+						<svg
+							viewBox="3 0 414 902"
+							className="absolute z-[1] top-0">
 							<defs>
 								<style>
 									{
@@ -3078,7 +3152,7 @@ export const NavbarMovil: React.FC = () => {
 					<defs>
 						<style>
 							{
-								".a-navbar-mobile,.i-navbar-mobile{fill:none;}.b-navbar-mobile{fill:url(#a-navbar-mobile);}.c-navbar-mobile{fill:#d9dae4;}.d-navbar-mobile,.e-navbar-mobile,.g-navbar-mobile,.h-navbar-mobile{fill:#001f5f;}.d-navbar-mobile{font-size:22px;font-family:Silka-Bold, Silka;}.d-navbar-mobile,.k-navbar-mobile{font-weight:700;}.e-navbar-mobile{font-size:16px;}.e-navbar-mobile,.g-navbar-mobile,.j-navbar-mobile{font-family:Silka-Regular, Silka;}.f-navbar-mobile,.k-navbar-mobile{fill:#fff;}.g-navbar-mobile,.j-navbar-mobile{font-size:10px;}.i-navbar-mobile{stroke:#001f5f;}.j-navbar-mobile,.m-navbar-mobile{fill:#e40032;}.j-navbar-mobile{text-decoration:underline;}.k-navbar-mobile{font-size:18px;font-family:'Kiona-Bold';}.l-navbar-mobile{clip-path:url(#ac-navbar-mobile);}.n-navbar-mobile{stroke:none;}.o-navbar-mobile{filter:url(#aa-navbar-mobile);}.p-navbar-mobile{filter:url(#y-navbar-mobile);}.q-navbar-mobile{filter:url(#w-navbar-mobile);}.r-navbar-mobile{filter:url(#t-navbar-mobile);}.s-navbar-mobile{filter:url(#q-navbar-mobile);}.t-navbar-mobile{filter:url(#n-navbar-mobile);}.u-navbar-mobile{filter:url(#k-navbar-mobile);}.v-navbar-mobile{filter:url(#h-navbar-mobile);}.w-navbar-mobile{filter:url(#e-navbar-mobile);}.x-navbar-mobile{filter:url(#b-navbar-mobile);}"
+								".shadow-input{box-shadow: inset 6px 6px 6px -4px rgba(0,0,0,0.34); padding-left: 10px; padding-right: 10px;}.a-navbar-mobile,.i-navbar-mobile{fill:none;}.b-navbar-mobile{fill:url(#a-navbar-mobile);}.c-navbar-mobile{fill:#d9dae4;}.d-navbar-mobile,.e-navbar-mobile,.g-navbar-mobile,.h-navbar-mobile{fill:#001f5f;}.d-navbar-mobile{font-size:22px;font-family:Silka-Bold, Silka;}.d-navbar-mobile,.k-navbar-mobile{font-weight:700;}.e-navbar-mobile{font-size:16px;}.e-navbar-mobile,.g-navbar-mobile,.j-navbar-mobile{font-family:Silka-Regular, Silka;}.f-navbar-mobile,.k-navbar-mobile{fill:#fff;}.g-navbar-mobile,.j-navbar-mobile{font-size:10px;}.i-navbar-mobile{stroke:#001f5f;}.j-navbar-mobile,.m-navbar-mobile{fill:#e40032;}.j-navbar-mobile{text-decoration:underline;}.k-navbar-mobile{font-size:18px;font-family:'Kiona-Bold';}.l-navbar-mobile{clip-path:url(#ac-navbar-mobile);}.n-navbar-mobile{stroke:none;}.o-navbar-mobile{filter:url(#aa-navbar-mobile);}.p-navbar-mobile{filter:url(#y-navbar-mobile);}.q-navbar-mobile{filter:url(#w-navbar-mobile);}.r-navbar-mobile{filter:url(#t-navbar-mobile);}.s-navbar-mobile{filter:url(#q-navbar-mobile);}.t-navbar-mobile{filter:url(#n-navbar-mobile);}.u-navbar-mobile{filter:url(#k-navbar-mobile);}.v-navbar-mobile{filter:url(#h-navbar-mobile);}.w-navbar-mobile{filter:url(#e-navbar-mobile);}.x-navbar-mobile{filter:url(#b-navbar-mobile);}"
 							}
 						</style>
 						<pattern
@@ -3304,7 +3378,7 @@ export const NavbarMovil: React.FC = () => {
 								className="e-navbar-mobile"
 								transform="translate(36 230)">
 								<tspan x={0} y={15}>
-									{'Institución '}
+									Institución / empresa
 								</tspan>
 							</text>
 							<text
@@ -3336,124 +3410,118 @@ export const NavbarMovil: React.FC = () => {
 								</tspan>
 							</text>
 							<g data-type="innerShadowGroup">
-								<rect
-									className="f-navbar-mobile"
-									width={342}
-									height={26}
-									rx={13}
+								<foreignObject
+									x={0}
+									y={0}
 									transform="translate(36 140)"
-								/>
-								<g
-									className="x-navbar-mobile"
-									transform="matrix(1, 0, 0, 1, -9, -15)">
-									<rect
-										className="f-navbar-mobile"
-										width={342}
-										height={26}
-										rx={13}
-										transform="translate(45 155)"
+									width={340}
+									height={27}>
+									<input
+										className="w-full h-full rounded-[20px] shadow-input"
+										{...register('nombre_completo', {
+											required: {
+												message:
+													'El campo es requerido',
+												value: true,
+											},
+										})}
 									/>
-								</g>
+								</foreignObject>
 							</g>
 							<g data-type="innerShadowGroup">
-								<rect
-									className="f-navbar-mobile"
-									width={342}
-									height={26}
-									rx={13}
+								<foreignObject
+									x={0}
+									y={0}
 									transform="translate(36 198)"
-								/>
-								<g
-									className="w-navbar-mobile"
-									transform="matrix(1, 0, 0, 1, -9, -15)">
-									<rect
-										className="f-navbar-mobile"
-										width={342}
-										height={26}
-										rx={13}
-										transform="translate(45 213)"
+									width={340}
+									height={27}>
+									<input
+										className="w-full h-full rounded-[20px] shadow-input"
+										{...register('email', {
+											required: {
+												message:
+													'El campo es requerido',
+												value: true,
+											},
+										})}
 									/>
-								</g>
+								</foreignObject>
 							</g>
 							<g data-type="innerShadowGroup">
-								<rect
-									className="f-navbar-mobile"
-									width={342}
-									height={26}
-									rx={13}
+								<foreignObject
+									x={0}
+									y={0}
 									transform="translate(36 255)"
-								/>
-								<g
-									className="v-navbar-mobile"
-									transform="matrix(1, 0, 0, 1, -9, -15)">
-									<rect
-										className="f-navbar-mobile"
-										width={342}
-										height={26}
-										rx={13}
-										transform="translate(45 270)"
+									width={340}
+									height={27}>
+									<input
+										className="w-full h-full rounded-[20px] shadow-input"
+										{...register('instituto', {
+											required: {
+												message:
+													'El campo es requerido',
+												value: true,
+											},
+										})}
 									/>
-								</g>
+								</foreignObject>
 							</g>
 							<g data-type="innerShadowGroup">
-								<rect
-									className="f-navbar-mobile"
-									width={342}
-									height={26}
-									rx={13}
+								<foreignObject
+									x={0}
+									y={0}
 									transform="translate(36 312)"
-								/>
-								<g
-									className="u-navbar-mobile"
-									transform="matrix(1, 0, 0, 1, -9, -15)">
-									<rect
-										className="f-navbar-mobile"
-										width={342}
-										height={26}
-										rx={13}
-										transform="translate(45 327)"
+									width={340}
+									height={27}>
+									<input
+										className="w-full h-full rounded-[20px] shadow-input"
+										{...register('asunto', {
+											required: {
+												message:
+													'El campo es requerido',
+												value: true,
+											},
+										})}
 									/>
-								</g>
+								</foreignObject>
 							</g>
 							<g data-type="innerShadowGroup">
-								<rect
-									className="f-navbar-mobile"
-									width={342}
-									height={26}
-									rx={13}
+								<foreignObject
+									x={0}
+									y={0}
 									transform="translate(36 370)"
-								/>
-								<g
-									className="t-navbar-mobile"
-									transform="matrix(1, 0, 0, 1, -9, -15)">
-									<rect
-										className="f-navbar-mobile"
-										width={342}
-										height={26}
-										rx={13}
-										transform="translate(45 385)"
+									width={340}
+									height={27}>
+									<input
+										className="w-full h-full rounded-[20px] shadow-input"
+										{...register('pais', {
+											required: {
+												message:
+													'El campo es requerido',
+												value: true,
+											},
+										})}
 									/>
-								</g>
+								</foreignObject>
 							</g>
 							<g data-type="innerShadowGroup">
-								<rect
-									className="f-navbar-mobile"
-									width={342}
-									height={26}
-									rx={13}
+								<foreignObject
+									x={0}
+									y={0}
 									transform="translate(36 427)"
-								/>
-								<g
-									className="s-navbar-mobile"
-									transform="matrix(1, 0, 0, 1, -9, -15)">
-									<rect
-										className="f-navbar-mobile"
-										width={342}
-										height={26}
-										rx={13}
-										transform="translate(45 442)"
+									width={340}
+									height={27}>
+									<input
+										className="w-full h-full rounded-[20px] shadow-input"
+										{...register('telefono', {
+											required: {
+												message:
+													'El campo es requerido',
+												value: true,
+											},
+										})}
 									/>
-								</g>
+								</foreignObject>
 							</g>
 						</g>
 						<text
@@ -3468,39 +3536,33 @@ export const NavbarMovil: React.FC = () => {
 								{'de acuerdo con nuestra política de '}
 							</tspan>
 						</text>
-						<g transform="translate(36.504 493.149)">
-							<g data-type="innerShadowGroup">
-								<rect
-									className="f-navbar-mobile"
-									width={341.407}
-									height={90.247}
-									rx={11}
-								/>
-								<g
-									className="r-navbar-mobile"
-									transform="matrix(1, 0, 0, 1, -45, -499.15)">
-									<rect
-										className="f-navbar-mobile"
-										width={341.407}
-										height={90.247}
-										rx={11}
-										transform="translate(45 499.15)"
-									/>
-								</g>
-							</g>
-							<g
-								className="q-navbar-mobile"
-								transform="matrix(1, 0, 0, 1, -45, -499.15)">
-								<rect
-									className="h-navbar-mobile"
-									width={2.906}
-									height={21.983}
-									rx={1.453}
-									transform="translate(379.14 510.72)"
-								/>
-							</g>
-						</g>
-						<g transform="translate(53.335 594.599)">
+						<foreignObject
+							x={0}
+							y={0}
+							transform="translate(36 493)"
+							width={340}
+							height={93}>
+							<textarea
+								className="w-full h-full rounded-[20px] shadow-input"
+								{...register('mensaje', {
+									required: {
+										message: 'El campo es requerido',
+										value: true,
+									},
+								})}
+							/>
+						</foreignObject>
+						<foreignObject transform='translate(53.335 594.599)' x={0} y={0} width={16} height={16}>
+							{
+								!accept ? (
+									<div className='w-full h-full border-solid border-[1px] border-[#001F5F]' onClick={() => setAccept(true)}></div>
+								) : (
+									<div className='w-full h-full bg-[#001F5F] font-bold text-white text-[14px] flex justify-center items-center' onClick={() => setAccept(false)}>X</div>
+								)
+							}
+						</foreignObject>
+						<g
+							transform="translate(53.335 594.599)">
 							<g className="i-navbar-mobile">
 								<rect
 									className="n-navbar-mobile"
@@ -3516,14 +3578,19 @@ export const NavbarMovil: React.FC = () => {
 								/>
 							</g>
 						</g>
-						<text
-							className="j-navbar-mobile"
-							transform="translate(76.504 623)">
-							<tspan x={0} y={0} xmlSpace="preserve">
-								{'Tratamiento de datos personales. '}
-							</tspan>
-						</text>
-						<g transform="translate(0.504 -4)">
+						<a
+							href="https://juegoseml.co/pdf/GRC-F-G-004-V5_FORMATO%20AUTORIZACIO%CC%81N%20DE%20TRATAMIENTO%20DE%20DATOS%20PERSONALES_.pdf"
+							target="_blank"
+							rel="noopener noreferrer">
+							<text
+								className="j-navbar-mobile"
+								transform="translate(76.504 623)">
+								<tspan x={0} y={0} xmlSpace="preserve">
+									{'Tratamiento de datos personales. '}
+								</tspan>
+							</text>
+						</a>
+						<g transform="translate(0.504 -4)" onClick={handleSubmit(handleSentContact)}>
 							<g
 								className="p-navbar-mobile"
 								transform="matrix(1, 0, 0, 1, -9, -2)">
@@ -3784,6 +3851,7 @@ export const NavbarMovil: React.FC = () => {
 								height={4.377}
 								rx={2.189}
 								transform="translate(373.112 12.727)"
+								onClick={() => setOpenMenu(!openMenu)}
 							/>
 							<rect
 								className="e-navbar-mobile"
@@ -3791,6 +3859,7 @@ export const NavbarMovil: React.FC = () => {
 								height={4.377}
 								rx={2.189}
 								transform="translate(373.112 20.023)"
+								onClick={() => setOpenMenu(!openMenu)}
 							/>
 							<rect
 								className="e-navbar-mobile"
@@ -3798,6 +3867,7 @@ export const NavbarMovil: React.FC = () => {
 								height={4.377}
 								rx={2.189}
 								transform="translate(373.112 27.319)"
+								onClick={() => setOpenMenu(!openMenu)}
 							/>
 						</g>
 						<g
@@ -3811,11 +3881,21 @@ export const NavbarMovil: React.FC = () => {
 								className="e-navbar-mobile"
 								d="M37.161,44.643a16.71,16.71,0,0,0,3.358,1.73c.171.063.243.246.355.378a4.984,4.984,0,0,0,2.987,1.956,3.312,3.312,0,0,0,2.3-.529,6.725,6.725,0,0,0,2-1.987,14.125,14.125,0,0,0,2.25-5.849c.052-.314-.073-.375-.337-.388a15.483,15.483,0,0,1-3.5-.458,12.478,12.478,0,0,1-4.973-2.827c-.275-.249-.375-.188-.562.084a6.522,6.522,0,0,1-2.715,2.4c-.267.117-.235.291-.213.5a15.768,15.768,0,0,0,.95,3.95l.133.352a11.318,11.318,0,0,1-1.683-.991.3.3,0,0,1-.081-.154,12.447,12.447,0,0,1-.409-6.392,6.221,6.221,0,0,1,5.5-4.954,10.287,10.287,0,0,1,5.025.371A6.144,6.144,0,0,1,51.722,37.1a12.8,12.8,0,0,1-.466,5.4,1.411,1.411,0,0,0,0,.811,5.654,5.654,0,0,1-.033,3.365A2.468,2.468,0,0,1,48.4,48.531a1.074,1.074,0,0,0-.9.27,4.65,4.65,0,0,1-6.447-.041.9.9,0,0,0-.737-.241A2.537,2.537,0,0,1,37.3,46.359a4.861,4.861,0,0,1-.138-.785c-.023-.279-.005-.561-.005-.931"
 								transform="translate(-33.598 -29.506)"
+								onClick={() => {
+									setOpenMenu(false)
+									setOpenContact(true)
+									setStep(0)
+								}}
 							/>
 							<path
 								className="e-navbar-mobile"
 								d="M36.353,25.2a9.713,9.713,0,0,1,7.53,3.313,7.287,7.287,0,0,1,1.654,3.415.743.743,0,0,0,.395.572,2.159,2.159,0,0,1,1.031,1.518,5.811,5.811,0,0,1-.341,3.562,2.2,2.2,0,0,1-2.169,1.389c-.226,0-.286-.052-.256-.3.182-1.543.334-3.088.388-4.644a6.622,6.622,0,0,0-3.926-6.618,8.922,8.922,0,0,0-9.957.92,6.3,6.3,0,0,0-2.515,5.342,45.419,45.419,0,0,0,.336,4.559.522.522,0,0,0,.22.4,13.972,13.972,0,0,0,5.656,2.7,1.177,1.177,0,0,0,.762-.124,2.55,2.55,0,0,1,1.925-.019.662.662,0,0,1,.355.821.685.685,0,0,1-.653.6c-.444.025-.89.009-1.336,0a.491.491,0,0,1-.443-.236c-.158-.316-.431-.339-.713-.392a14.078,14.078,0,0,1-5.859-2.764,1.472,1.472,0,0,0-.651-.308A2.049,2.049,0,0,1,26.2,37.68a5.672,5.672,0,0,1-.348-3.808,2.128,2.128,0,0,1,1.077-1.428.49.49,0,0,0,.27-.362c.864-3.812,3.413-5.76,6.928-6.629a7.686,7.686,0,0,1,1.02-.17c.414-.044.831-.058,1.2-.083"
 								transform="translate(-25.675 -25.199)"
+								onClick={() => {
+									setOpenMenu(false)
+									setOpenContact(true)
+									setStep(0)
+								}}
 							/>
 						</g>
 					</g>

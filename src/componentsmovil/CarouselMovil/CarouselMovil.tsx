@@ -28,7 +28,7 @@ export const CarouselMovil: React.FC = () => {
 					slide={selectedImage === ''}
 					slideInterval={20000}>
 					<svg
-						viewBox={`0 0 414 906`}
+						viewBox={`2 0 414 906`}
 						width="100%"
 						height="100vh"
 						preserveAspectRatio="none">
@@ -128,7 +128,7 @@ export const CarouselMovil: React.FC = () => {
 								xlinkHref="#e-bienvenida-1"
 							/>
 						</defs>
-						<g transform="translate(19)">
+						<g transform="translate(-3)">
 							<rect
 								className="b-bienvenida-1"
 								width={412}
@@ -302,6 +302,7 @@ export const CarouselMovil: React.FC = () => {
 								className="b-bienvenida-1"
 								d="M0,0V16.967L14.7,8.483,7.68,4.431Z"
 								transform="translate(72.708 316.053) rotate(-76)"
+								onClick={() => setSelectedImage('d')}
 							/>
 							<text
 								className="t-bienvenida-1"
@@ -409,9 +410,10 @@ export const CarouselMovil: React.FC = () => {
 										transform="translate(21 658.65)"
 									/>
 								</g>
+								<a href="/productos/cirugia-robotica">
 								<g
 									transform="translate(72.358 632.356)"
-									onClick={() => setSelectedImage('a')}>
+									>
 									<g
 										className="o-carousel-welcome-2"
 										transform="matrix(1, 0, 0, 1, -93.57, -795)">
@@ -429,6 +431,7 @@ export const CarouselMovil: React.FC = () => {
 										</tspan>
 									</text>
 								</g>
+								</a>
 								<text
 									className="h-carousel-welcome-2"
 									transform="translate(45.358 577.356)">
@@ -585,9 +588,10 @@ export const CarouselMovil: React.FC = () => {
 										{'mundial en investigación y'}
 									</tspan>
 								</text>
+								<a href="/nuestros-aliados">
 								<g
 									transform="translate(65.358 632.356)"
-									onClick={() => setSelectedImage('a')}>
+									>
 									<g
 										className="o-carousel-welcome-3"
 										transform="matrix(1, 0, 0, 1, -86.57, -795)">
@@ -605,6 +609,7 @@ export const CarouselMovil: React.FC = () => {
 										</tspan>
 									</text>
 								</g>
+								</a>
 							</g>
 							<g onClick={() => setSelectedImage('a')}>
 								<path
@@ -2504,7 +2509,7 @@ export const CarouselMovil: React.FC = () => {
 								<g
 									transform="translate(-30.813 -1291.76)"
 									onClick={() =>
-										(window.location.href = '/filosofia')
+										(window.location.href = '/responsabilidad')
 									}>
 									<g transform="translate(30.813 1489.888)">
 										<g

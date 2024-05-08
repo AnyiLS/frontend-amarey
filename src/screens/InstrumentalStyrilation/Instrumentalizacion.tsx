@@ -135,9 +135,10 @@ const InstrumentalStyrilationMobile: React.FC = (): JSX.Element => {
 								className="a-reward-2-mobile"
 								d="M8.8,10.967,5.708,7.874,2.615,10.967A1.531,1.531,0,1,1,.448,8.8L3.542,5.708.448,2.615A1.532,1.532,0,0,1,2.615.448L5.708,3.542,8.8.448a1.531,1.531,0,1,1,2.165,2.166L7.874,5.708,10.967,8.8A1.531,1.531,0,0,1,8.8,10.967Z"
 								transform="translate(0 0)"
+								onClick={() => window.location.href = '/productos'}
 							/>
 						</g>
-						<g transform="translate(91.999 771.493)">
+						<g transform="translate(91.999 771.493)" onClick={() => setView(1)}>
 							<g
 								className="i-reward-2-mobile"
 								transform="matrix(1, 0, 0, 1, -101, -777.49)">

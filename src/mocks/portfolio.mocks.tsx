@@ -78,7 +78,7 @@ export const carouselPortfolio: CarouselPortfolio[] = [
         viewbox: '0 6.532 241.811 269.735'
     },
     {
-        images: '/images/instrumental.png',
+        images: '/images/Instrumentalama.png',
         title: 'Instrumental y',
         title_2: 'esterilización',
         x_2: 67.715,

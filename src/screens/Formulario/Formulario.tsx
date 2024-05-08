@@ -1,13 +1,81 @@
+import axios from 'axios'
 import React from 'react'
+import { useForm } from 'react-hook-form'
+import Swal from 'sweetalert2'
 
 const Formulario: React.FC<{ onClose: () => void }> = ({ onClose }) => {
+	const { handleSubmit, formState: {isValid}, register, reset } = useForm({ mode: 'onChange' })
+	const [accept, setAccept] = React.useState<boolean>(false)
+
+	const handleSentContact = (data: any) => {
+		if (isValid && accept) {
+			axios
+				.post(
+					'http://apiamarey.juegoseml.co/api/guardar-formulario',
+					data
+				)
+				.then((res: any) => {
+					reset({
+						nombre_completo: undefined,
+						email: undefined,
+						asunto: undefined,
+						telefono: undefined,
+						mensaje: undefined,
+						institucion: undefined,
+						pais: undefined,
+					})
+
+					Swal.fire({
+						icon: 'success',
+						title: 'Mensaje enviado exitosamente',
+					})
+
+					onClose()
+				})
+				.catch((error: any) => {
+					reset({
+						nombre_completo: undefined,
+						email: undefined,
+						asunto: undefined,
+						telefono: undefined,
+						mensaje: undefined,
+						institucion: undefined,
+						pais: undefined,
+					})
+
+					Swal.fire({
+						icon: 'error',
+						title: 'Ocurrio un problema al enviar el correo!',
+						text: 'Intentalo nuevamente',
+					})
+				})
+		} else {
+			if (isValid && !accept) {
+				Swal.fire({
+					icon: 'warning',
+					title: 'Debes aceptar los terminos de tratamiento de datos personales',
+				})
+			}
+		}
+	}
+
+	React.useEffect(() => {
+		document.body.style.overflow = 'hidden'
+
+		return () => {
+			document.body.style.overflow = 'auto'
+		}
+	}, [])
+
 	return (
 		<div>
-			<svg viewBox="0 0 1920 1080" className="fixed top-0 left-0 z-[1] bg-[#ffffffa1]">
+			<svg
+				viewBox="0 0 1920 1080"
+				className="fixed top-0 left-0 z-[1] bg-[#ffffffa1]">
 				<defs>
 					<style>
 						{
-							'.a-formu,.d-formu,.e-formu,.i-formu,.o-formu{fill:#fff;}.a-formu{opacity:0.5;}.b-formu{fill:#d9dae4;}.c-formu{fill:url(#a-formu);}.d-formu{opacity:0.36;}.e-formu{font-size:34px;font-family:Helvetica-Bold, Helvetica;}.e-formu,.f-formu,.o-formu{font-weight:700;}.f-formu,.j-formu{fill:#001f5f;}.f-formu{font-size:32px;font-family:Silka-Bold, Silka;}.g-formu,.h-formu{fill:#182856;}.g-formu{font-size:18px;}.g-formu,.h-formu,.k-formu{font-family:Silka-Regular, Silka;}.h-formu,.k-formu{font-size:12px;}.k-formu{fill:#e40032;}.l-formu{text-decoration:underline;}.m-formu{font-size:10px;}.n-formu,.q-formu{fill:none;}.n-formu{stroke:#001f5f;}.o-formu{font-size:16px;font-family:Kiona-Bold, Kiona;}.p-formu{stroke:none;}.r-formu{filter:url(#aa-formu);}.s-formu{filter:url(#y-formu);}.t-formu{filter:url(#v-formu);}.u-formu{filter:url(#s-formu);}.v-formu{filter:url(#p-formu);}.w-formu{filter:url(#m-formu);}.x-formu{filter:url(#j-formu);}.y-formu{filter:url(#g-formu);}.z-formu{filter:url(#d-formu);}.a-formua{filter:url(#b-formu);}'
+							'.shadow-input{box-shadow: inset 6px 6px 6px -4px rgba(0,0,0,0.34); padding-left: 10px; padding-right: 10px;}.shadow-input:focus{outline: none;}.a-formu,.d-formu,.e-formu,.i-formu,.o-formu{fill:#fff;}.a-formu{opacity:0.5;}.b-formu{fill:#d9dae4;}.c-formu{fill:url(#a-formu);}.d-formu{opacity:0.36;}.e-formu{font-size:34px;font-family:Helvetica-Bold, Helvetica;}.e-formu,.f-formu,.o-formu{font-weight:700;}.f-formu,.j-formu{fill:#001f5f;}.f-formu{font-size:32px;font-family:Silka-Bold, Silka;}.g-formu,.h-formu{fill:#182856;}.g-formu{font-size:18px;}.g-formu,.h-formu,.k-formu{font-family:Silka-Regular, Silka;}.h-formu,.k-formu{font-size:12px;}.k-formu{fill:#e40032;}.l-formu{text-decoration:underline;}.m-formu{font-size:10px;}.n-formu,.q-formu{fill:none;}.n-formu{stroke:#001f5f;}.o-formu{font-size:16px;font-family:Kiona-Bold, Kiona;}.p-formu{stroke:none;}.r-formu{filter:url(#aa-formu);}.s-formu{filter:url(#y-formu);}.t-formu{filter:url(#v-formu);}.u-formu{filter:url(#s-formu);}.v-formu{filter:url(#p-formu);}.w-formu{filter:url(#m-formu);}.x-formu{filter:url(#j-formu);}.y-formu{filter:url(#g-formu);}.z-formu{filter:url(#d-formu);}.a-formua{filter:url(#b-formu);}'
 						}
 					</style>
 					<pattern
@@ -189,7 +257,7 @@ const Formulario: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 						<feComposite in="SourceGraphic" />
 					</filter>
 				</defs>
-				<g transform="translate(-5936.927 -14.083)">
+				<g transform="translate(-5936.927 -104.083)">
 					<g transform="translate(6379.139 138.262)">
 						<path
 							className="b-formu"
@@ -292,158 +360,76 @@ const Formulario: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 						</tspan>
 					</text>
 					<g data-type="innerShadowGroup">
-						<rect
-							className="i-formu"
-							width={597.229}
-							height={44.474}
-							rx={20}
+						<foreignObject
+							x={0}
+							y={0}
 							transform="translate(6678.848 292.954)"
-						/>
-						<g
-							className="z-formu"
-							transform="matrix(1, 0, 0, 1, 5936.93, 14.08)">
-							<rect
-								className="i-formu"
-								width={597.229}
-								height={44.474}
-								rx={20}
-								transform="translate(741.92 278.87)"
-							/>
-						</g>
+							width={602}
+							height={47}>
+							<input className="w-full h-full rounded-[20px] shadow-input" {...register('nombre_completo', {required: {message: 'El campo es requerido', value: true}})} />
+						</foreignObject>
 					</g>
 					<g data-type="innerShadowGroup">
-						<rect
-							className="i-formu"
-							width={597.229}
-							height={44.474}
-							rx={20}
+						<foreignObject
+							x={0}
+							y={0}
 							transform="translate(6678.848 374.279)"
-						/>
-						<g
-							className="y-formu"
-							transform="matrix(1, 0, 0, 1, 5936.93, 14.08)">
-							<rect
-								className="i-formu"
-								width={597.229}
-								height={44.474}
-								rx={20}
-								transform="translate(741.92 360.2)"
-							/>
-						</g>
+							width={602}
+							height={47}>
+							<input className="w-full h-full rounded-[20px] shadow-input" {...register('email', {required: {message: 'El campo es requerido', value: true}})} />
+						</foreignObject>
 					</g>
 					<g data-type="innerShadowGroup">
-						<rect
-							className="i-formu"
-							width={597.229}
-							height={44.474}
-							rx={20}
+						<foreignObject
+							x={0}
+							y={0}
 							transform="translate(6678.848 455.604)"
-						/>
-						<g
-							className="x-formu"
-							transform="matrix(1, 0, 0, 1, 5936.93, 14.08)">
-							<rect
-								className="i-formu"
-								width={597.229}
-								height={44.474}
-								rx={20}
-								transform="translate(741.92 441.52)"
-							/>
-						</g>
+							width={602}
+							height={47}>
+							<input className="w-full h-full rounded-[20px] shadow-input" {...register('instituto', {required: {message: 'El campo es requerido', value: true}})}/>
+						</foreignObject>
 					</g>
 					<g data-type="innerShadowGroup">
-						<rect
-							className="i-formu"
-							width={597.229}
-							height={44.474}
-							rx={20}
+						<foreignObject
+							x={0}
+							y={0}
 							transform="translate(6678.848 536.929)"
-						/>
-						<g
-							className="w-formu"
-							transform="matrix(1, 0, 0, 1, 5936.93, 14.08)">
-							<rect
-								className="i-formu"
-								width={597.229}
-								height={44.474}
-								rx={20}
-								transform="translate(741.92 522.85)"
-							/>
-						</g>
+							width={602}
+							height={47}>
+							<input className="w-full h-full rounded-[20px] shadow-input" {...register('asunto', {required: {message: 'El campo es requerido', value: true}})}/>
+						</foreignObject>
 					</g>
 					<g data-type="innerShadowGroup">
-						<rect
-							className="i-formu"
-							width={288.449}
-							height={44.474}
-							rx={20}
+						<foreignObject
+							x={0}
+							y={0}
 							transform="translate(6678.848 618.254)"
-						/>
-						<g
-							className="v-formu"
-							transform="matrix(1, 0, 0, 1, 5936.93, 14.08)">
-							<rect
-								className="i-formu"
-								width={288.449}
-								height={44.474}
-								rx={20}
-								transform="translate(741.92 604.17)"
-							/>
-						</g>
+							width={290}
+							height={47}>
+							<input className="w-full h-full rounded-[20px] shadow-input" {...register('pais', {required: {message: 'El campo es requerido', value: true}})} />
+						</foreignObject>
 					</g>
 					<g data-type="innerShadowGroup">
-						<rect
-							className="i-formu"
-							width={288.449}
-							height={44.474}
-							rx={20}
+						<foreignObject
+							x={0}
+							y={0}
 							transform="translate(6987.627 618.254)"
-						/>
-						<g
-							className="u-formu"
-							transform="matrix(1, 0, 0, 1, 5936.93, 14.08)">
-							<rect
-								className="i-formu"
-								width={288.449}
-								height={44.474}
-								rx={20}
-								transform="translate(1050.7 604.17)"
-							/>
-						</g>
+							width={290}
+							height={47}>
+							<input className="w-full h-full rounded-[20px] shadow-input"  {...register('telefono', {required: {message: 'El campo es requerido', value: true}})}/>
+						</foreignObject>
 					</g>
-					<g transform="translate(6678.848 699.578)">
-						<g data-type="innerShadowGroup">
-							<rect
-								className="i-formu"
-								width={597.229}
-								height={99.115}
-								rx={11}
-							/>
-							<g
-								className="t-formu"
-								transform="matrix(1, 0, 0, 1, -741.92, -685.5)">
-								<rect
-									className="i-formu"
-									width={597.229}
-									height={99.115}
-									rx={11}
-									transform="translate(741.92 685.5)"
-								/>
-							</g>
-						</g>
-						<g
-							className="s-formu"
-							transform="matrix(1, 0, 0, 1, -741.92, -685.5)">
-							<rect
-								className="j-formu"
-								width={5.083}
-								height={24.143}
-								rx={2}
-								transform="translate(1326.44 698.2)"
-							/>
-						</g>
+					<g>
+						<foreignObject
+							x={0}
+							y={0}
+							transform="translate(6678.848 699.578)"
+							width={602}
+							height={100}>
+							<textarea className="w-full h-full rounded-[20px] shadow-input" {...register('mensaje', {required: {message: 'El campo es requerido', value: true}})} />
+						</foreignObject>
 					</g>
-					<g transform="translate(6697.45 826.919)">
+					<g transform="translate(6697.45 826.919)" style={{ cursor: 'pointer' }} onClick={() => window.open('https://juegoseml.co/pdf/GRC-F-G-004-V5_FORMATO%20AUTORIZACIO%CC%81N%20DE%20TRATAMIENTO%20DE%20DATOS%20PERSONALES_.pdf', '_blank')}>
 						<text className="k-formu">
 							<tspan className="l-formu" x={37.826} y={11}>
 								{'Tratamiento de datos personales.'}
@@ -467,7 +453,16 @@ const Formulario: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							/>
 						</g>
 					</g>
-					<g transform="translate(6856.033 882.241)">
+					<foreignObject transform='translate(6690.033 817.241)' x={0} y={0} width={16} height={16}>
+							{
+								!accept ? (
+									<div className='w-full h-full border-solid border-[1px] border-[#001F5F]' onClick={() => setAccept(true)}></div>
+								) : (
+									<div className='w-full h-full bg-[#001F5F] font-bold text-white text-[14px] flex justify-center items-center' onClick={() => setAccept(false)}>X</div>
+								)
+							}
+						</foreignObject>
+					<g transform="translate(6856.033 882.241)" onClick={handleSubmit(handleSentContact)}>
 						<g
 							className="r-formu"
 							transform="matrix(1, 0, 0, 1, -919.11, -868.16)">
@@ -481,7 +476,7 @@ const Formulario: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							className="o-formu"
 							transform="translate(85.215 34.232)">
 							<tspan x={0} y={0}>
-								{'enviar'}
+								enviar
 							</tspan>
 						</text>
 					</g>

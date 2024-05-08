@@ -1,6 +1,8 @@
 import { Carousel } from 'flowbite-react'
 import React from 'react'
 import './Servcios.css'
+import Mute from 'assets/images/mute.png'
+import Mute2 from 'assets/images/Button.png'
 
 export const ServiciosMovil: React.FC = () => {
 	const [open4Tag, setOpen4Tag] = React.useState<boolean>(false)
@@ -8,6 +10,7 @@ export const ServiciosMovil: React.FC = () => {
 	const [changeTo2, setChangeTo2] = React.useState<boolean>(false)
 	const [doHover, setDoHover] = React.useState<boolean>(false)
 	const [mute, setMute] = React.useState(true)
+	const [openVideo, setOpenVideo] = React.useState(false)
 
 	const handleChangeSlide = () => {
 		setChangeTo2(true)
@@ -121,7 +124,7 @@ export const ServiciosMovil: React.FC = () => {
 							{'Servicio'}
 						</tspan>
 					</text>
-					<g transform="translate(92 626.007)">
+					<g transform="translate(92 626.007)" onClick={handleChangeSlide}>
 						<g
 							className="p-servicios-1-mobile"
 							transform="matrix(1, 0, 0, 1, -92, -626.01)">
@@ -268,7 +271,7 @@ export const ServiciosMovil: React.FC = () => {
 								preserveAspectRatio="xMidYMid slice"
 								width={282.83}
 								height={188.553}
-								xlinkHref="/images/services/ComponentTMP_0-image5.jpg"
+								xlinkHref="/images/services/ComponentTMP_0-image5.JPG"
 							/>
 						</pattern>
 						<clipPath id="bla-servicios-1">
@@ -1791,34 +1794,179 @@ export const ServiciosMovil: React.FC = () => {
 						</text>
 					</g>
 					<g transform="translate(1090.452 1.928)">
-						<foreignObject
-							style={{ clipPath: 'url(#b-5)' }}
-							x="0"
-							y="0"
-							width="100%"
-							height="150px">
-							<div className="relative w-full h-full">
-								<video
-									src="https://juegoseml.co/pdf/tinywow_CEDICONOFC.mp4"
-
-									muted={mute}
-									loop
-									style={{ height:200, width: '100%', objectFit: 'cover' }}></video>
-								<img
-									src={
-										mute
-											? '/images/mute.png'
-											: '/images/Button.png'
+						<svg viewBox="0 335 418 236"
+						onClick={() =>  setOpenVideo(true)}
+						>
+							<defs>
+								<style>
+									{
+										'.a{fill:none;}.b{fill:#fff;}.c{clip-path:url(#a);}.d{fill:#001f5f;}.e{clip-path:url(#b);}.f{clip-path:url(#c);}.g{fill:url(#d);}'
 									}
-									className="absolute w-[10%] left-[8%] bottom-[10px]"
-									alt="Mute"
-									onClick={() => setMute(!mute)}
-								/>
-							</div>
-						</foreignObject>
+								</style>
+								<clipPath id="a">
+									<rect
+										className="a"
+										width={418}
+										height={236}
+										transform="translate(-0.38 0)"
+									/>
+								</clipPath>
+								<clipPath id="b">
+									<rect
+										className="b"
+										width={414}
+										height={232}
+										transform="translate(0 0)"
+									/>
+								</clipPath>
+								<clipPath id="c">
+									<path
+										className="b"
+										d="M0,0,8.572,157.77c7.646,45.213,24.814,74.7,72.911,74.7h331.8V0Z"
+										transform="translate(0.358 -0.239)"
+									/>
+								</clipPath>
+								<pattern
+									id="d"
+									preserveAspectRatio="xMidYMid slice"
+									width="100%"
+									height="100%"
+									viewBox="0 0 1920 1080">
+									<image
+										width={1920}
+										height={1080}
+										xlinkHref="/images/ComponentTMP_0-image5.JPG"
+									/>
+								</pattern>
+							</defs>
+							<g transform="translate(0 0)">
+								<g transform="translate(-2.506 -0.206)">
+									<g
+										className="c"
+										transform="translate(2.886 0.206)">
+										<path
+											className="d"
+											d="M0,0,8.647,160.424c7.712,45.974,25.031,75.96,73.549,75.96H416.9V0Z"
+											transform="translate(0.361 -0.243)"
+										/>
+									</g>
+								</g>
+								<g transform="translate(4.459 -0.206)">
+									<g
+										className="e"
+										transform="translate(-0.459 0.206)">
+										<g className="f">
+											<rect
+												className="g"
+												width={413.284}
+												height={232.472}
+												transform="translate(0.358 -0.238)"
+											/>
+										</g>
+									</g>
+								</g>
+								<g transform="translate(-12 -2686)">
+									<circle
+										className="d"
+										cx={22}
+										cy={22}
+										r={22}
+										transform="translate(250 2815) rotate(180)"
+									/>
+									<path
+										className="b"
+										d="M0,0V17.12l14.824-8.56L7.743,4.471Z"
+										transform="translate(223.341 2784.44)"
+									/>
+								</g>
+							</g>
+						</svg>
 					</g>
 				</svg>
 			</Carousel>
+
+			{openVideo && (
+				<div className="fixed w-[100vw] h-[100vh] top-[0] right-[0] z-[1] bg-[#e6e6e6]">
+					<video
+						src="/videos/tinywow_CEDICONOFC (1).mp4"
+						muted={!mute}
+						width="100%"
+						height="100%"
+						autoPlay
+						controls
+						id="video-cifras"
+						style={{
+							height: '100vh',
+							width: '100vw',
+						}}></video>
+					<img
+						src={!mute ? Mute : Mute2}
+						className="absolute w-[11%] left-[3%] top-[3%]"
+						alt="Mute"
+						onClick={() => {
+							setMute(!mute)
+						}}
+					/>
+					<svg
+						viewBox="0 0 48 50"
+						className="w-[80px] right-[20px] absolute top-[20px]"
+						onClick={() => {
+							setOpenVideo(false)
+							document.body.style.overflow = 'auto'
+							const video: HTMLVideoElement =
+								document.getElementById(
+									'video-cifras'
+								) as HTMLVideoElement
+
+							if (video) {
+								video.pause()
+								video.currentTime = 0
+							}
+						}}>
+						<defs>
+							<style>
+								{
+									'.a-cifras-video-close,.b-cifras-video-close{fill:#fff;}.a-cifras-video-close{opacity:0.36;}.b-cifras-video-close{font-size:30px;font-family:Helvetica-Bold, Helvetica;font-weight:700;}.c-cifras-video-close{filter:url(#a-cifras-video-close);}'
+								}
+							</style>
+							<filter
+								id="a-cifras-video-close"
+								x={0}
+								y={0}
+								width={48}
+								height={50}
+								filterUnits="userSpaceOnUse">
+								<feOffset dy={1} />
+								<feGaussianBlur stdDeviation={0.5} result="b" />
+								<feFlood floodOpacity={0.4} />
+								<feComposite operator="in" in2="b" />
+								<feComposite in="SourceGraphic" />
+							</filter>
+						</defs>
+						<g transform="translate(1.5 0.5)">
+							<g
+								className="c-cifras-video-close"
+								transform="matrix(1, 0, 0, 1, -1.5, -0.5)">
+								<ellipse
+									className="a-cifras-video-close"
+									cx={22.5}
+									cy={23.5}
+									rx={22.5}
+									ry={23.5}
+									transform="translate(1.5 0.5)"
+								/>
+							</g>
+							<text
+								className="b-cifras-video-close"
+								transform="translate(13 35)">
+								<tspan x={0} y={0}>
+									{'X'}
+								</tspan>
+							</text>
+						</g>
+					</svg>
+				</div>
+			)}
 		</div>
 	)
 }

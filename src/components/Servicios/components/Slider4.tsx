@@ -173,7 +173,7 @@ export const Slider4: React.FC<ISlider> = ({ height, index, onOpenVideo }) => {
 						<image
 							width={1920}
 							height={1080}
-							xlinkHref="/images/ComponentTMP_0-image5.jpg"
+							xlinkHref="/images/fondovideobak.jpg"
 						/>
 					</pattern>
 					<clipPath id="b-5" clipPathUnits="objectBoundingBox">

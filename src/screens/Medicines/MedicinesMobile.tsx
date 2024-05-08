@@ -138,7 +138,7 @@ const MedicinesMobile: React.FC = (): JSX.Element => {
 								transform="translate(0 0)"
 							/>
 						</g>
-						<g transform="translate(91.999 771.493)">
+						<g transform="translate(91.999 771.493)" onClick={() => setView(1)}>
 							<g
 								className="i-reward-2-mobile"
 								transform="matrix(1, 0, 0, 1, -101, -777.49)">

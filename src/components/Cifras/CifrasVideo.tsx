@@ -105,7 +105,7 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 									id="video-cifras"
 									width="1929"
 									height="1080"
-									src="/images/video/capacitaciones.mp4" 
+									src="/images/video/cidras1.mp4" 
 									autoPlay
 									muted={!mute}
 									loop
@@ -116,7 +116,7 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 									id="video-cifras"
 									width="1929"
 									height="1080"
-									src="/images/video/Roboticaa.mp4" 
+									src="/images/video/cifras-robotica.mp4" 
 									autoPlay
 									muted={!mute}
 									loop
@@ -127,7 +127,7 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 									id="video-cifras"
 									width="1929"
 									height="1080"
-									src="/images/video/Maxiloo.mp4"
+									src="/images/video/cifras-Maxiloo.mp4"
 									autoPlay
 									muted={!mute}
 									loop
@@ -138,7 +138,7 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 									id="video-cifras"
 									width="1929"
 									height="1080"
-									src="/images/video/logistica.mp4"
+									src="/images/video/cifras-logistica.mp4"
 									autoPlay
 									muted={!mute}
 									loop
