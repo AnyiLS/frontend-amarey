@@ -17,6 +17,14 @@ import May30 from '../components/30May'
 import May31 from '../components/31May'
 import Feb3, { ICalendar } from '../components/3Feb'
 import Feb9 from '../components/9Feb'
+import Agoust from '../components/Agoust'
+import December from '../components/December'
+import January from '../components/January'
+import July from '../components/July'
+import June from '../components/June'
+import November from '../components/November'
+import October from '../components/October'
+import September from '../components/September'
 
 export interface CalendarItems {
 	id: number
@@ -44,6 +52,14 @@ export const calendarItems: CalendarItems[] = [
 	{ id: 16, Component: May25, day: 25 },
 	{ id: 17, Component: May30, day: 30 },
 	{ id: 18, Component: May31, day: 31 },
+	{ id: 19, Component: June, day: 31 },
+	{ id: 20, Component: July, day: 31 },
+	{ id: 21, Component: Agoust, day: 31 },
+	{ id: 22, Component: September, day: 31 },
+	{ id: 23, Component: October, day: 31 },
+	{ id: 24, Component: November, day: 31 },
+	{ id: 25, Component: December, day: 31 },
+	{ id: 26, Component: January, day: 31 },
 ]
 
 export const daysMar: any = {

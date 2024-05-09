@@ -13,9 +13,9 @@ const Eventos = () => {
 
 	const [slide, setSlide] = React.useState<number>(0)
 
-	const handleAddPage = (): void => setSlide(slide + 1 > 18 ? 0 : slide + 1)
+	const handleAddPage = (): void => setSlide(slide + 1 > 26 ? 0 : slide + 1)
 
-	const handleLessPage = (): void => setSlide(slide - 1 <= 0 ? 18 : slide - 1)
+	const handleLessPage = (): void => setSlide(slide - 1 <= 0 ? 26 : slide - 1)
 
 	const handleChangeDay = (day: number): void => {
 		const index: CalendarItems | undefined = calendarItems.find(
