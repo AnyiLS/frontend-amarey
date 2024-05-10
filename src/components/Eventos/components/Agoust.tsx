@@ -1,6 +1,20 @@
+import moment from 'moment';
 import React from 'react'
+import { ICalendar } from './02May';
 
-const Agoust: React.FC = (): JSX.Element => {
+const Agoust: React.FC<ICalendar> = ({next, prev}): JSX.Element => {
+	/** Variables */
+	const day = moment().format('DD');
+	const month = moment().format('MM');
+
+	React.useEffect(() => {
+		if (month === '08') {
+			const element = document.getElementById(`day-${day}`);
+
+			if (element) element.style.display = 'block'
+		}
+	}, [day, month])
+
 	return (
 		<React.Fragment>
 			<svg viewBox="-200 0 1920 998.106">
@@ -110,7 +124,7 @@ const Agoust: React.FC = (): JSX.Element => {
 					</text>
 				</g>
 				<g transform="translate(-210.89 -41.981)">
-					<g transform="translate(1440.747 906.884)">
+					<g transform="translate(1440.747 906.884)" onClick={next}>
 						<g
 							className="u-agoust"
 							transform="matrix(1, 0, 0, 1, -1229.86, -864.9)">
@@ -126,7 +140,7 @@ const Agoust: React.FC = (): JSX.Element => {
 							transform="translate(75.679 16.27) rotate(90)"
 						/>
 					</g>
-					<g transform="translate(1224.426 906.884)">
+					<g transform="translate(1224.426 906.884)" onClick={prev}>
 						<g
 							className="t-agoust"
 							transform="matrix(1, 0, 0, 1, -1013.54, -864.9)">
@@ -152,7 +166,7 @@ const Agoust: React.FC = (): JSX.Element => {
 				</text>
 				<g transform="translate(-140 -133.981)">
 					<g className="i-agoust" transform="translate(140 557)">
-						<g transform="translate(-140 -557)">
+						<g transform="translate(-120 -557)">
 							<text
 								className="j-agoust"
 								transform="translate(140 557)">
@@ -161,7 +175,7 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(-54 -557)">
+						<g transform="translate(-34 -557)">
 							<text
 								className="j-agoust"
 								transform="translate(140 557)">
@@ -170,7 +184,7 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(32 -557)">
+						<g transform="translate(52 -557)">
 							<text
 								className="j-agoust"
 								transform="translate(140 557)">
@@ -179,7 +193,7 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(118 -557)">
+						<g transform="translate(138 -557)">
 							<text
 								className="j-agoust"
 								transform="translate(140 557)">
@@ -188,7 +202,7 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(204 -557)">
+						<g transform="translate(224 -557)">
 							<text
 								className="j-agoust"
 								transform="translate(140 557)">
@@ -197,7 +211,7 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(290 -557)">
+						<g transform="translate(310 -557)">
 							<text
 								className="j-agoust"
 								transform="translate(140 557)">
@@ -206,7 +220,7 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(376 -557)">
+						<g transform="translate(396 -557)">
 							<text
 								className="j-agoust"
 								transform="translate(140 557)">
@@ -217,7 +231,7 @@ const Agoust: React.FC = (): JSX.Element => {
 						</g>
 					</g>
 					<g className="k-agoust" transform="translate(140 610)">
-						<g transform="translate(-140 -557)">
+						<g transform="translate(-120 -557)">
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -226,7 +240,7 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(-54 -557)">
+						<g transform="translate(-34 -557)">
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -235,7 +249,7 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(32 -557)">
+						<g transform="translate(52 -557)">
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -244,7 +258,7 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(118 -557)">
+						<g transform="translate(138 -557)">
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -253,7 +267,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(204 -557)">
+						<g transform="translate(224 -557)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-01'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -262,7 +285,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(290 -557)">
+						<g transform="translate(310 -557)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-02'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -271,7 +303,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(376 -557)">
+						<g transform="translate(396 -557)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-03'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -280,7 +321,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(-140 -509)">
+						<g transform="translate(-120 -509)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-04'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -289,7 +339,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(-54 -509)">
+						<g transform="translate(-34 -509)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-05'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -298,7 +357,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(32 -509)">
+						<g transform="translate(52 -509)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-06'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -307,7 +375,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(118 -509)">
+						<g transform="translate(138 -509)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-07'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -316,7 +393,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(204 -509)">
+						<g transform="translate(224 -509)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-08'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -325,7 +411,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(290 -509)">
+						<g transform="translate(310 -509)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-09'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -334,7 +429,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(376 -509)">
+						<g transform="translate(396 -509)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-10'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -343,7 +447,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(-140 -461)">
+						<g transform="translate(-120 -461)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-11'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -352,7 +465,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(-54 -461)">
+						<g transform="translate(-34 -461)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-12'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -361,7 +483,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(32 -461)">
+						<g transform="translate(52 -461)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-13'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -370,7 +501,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(118 -461)">
+						<g transform="translate(138 -461)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-14'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -379,7 +519,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(204 -461)">
+						<g transform="translate(224 -461)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-15'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -388,7 +537,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(290 -461)">
+						<g transform="translate(310 -461)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-16'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -397,7 +555,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(376 -461)">
+						<g transform="translate(396 -461)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-17'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -406,7 +573,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(-140 -413)">
+						<g transform="translate(-120 -413)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-18'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -415,7 +591,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(-54 -413)">
+						<g transform="translate(-34 -413)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-19'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -424,7 +609,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(32 -413)">
+						<g transform="translate(52 -413)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-20'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -433,7 +627,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(118 -413)">
+						<g transform="translate(138 -413)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-21'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -442,7 +645,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(204 -413)">
+						<g transform="translate(224 -413)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-22'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -451,7 +663,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(290 -413)">
+						<g transform="translate(310 -413)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-23'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -460,7 +681,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(376 -413)">
+						<g transform="translate(396 -413)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-24'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -469,7 +699,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(-140 -365)">
+						<g transform="translate(-120 -365)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-25'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -478,7 +717,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(-54 -365)">
+						<g transform="translate(-34 -365)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-26'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -487,7 +735,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(32 -365)">
+						<g transform="translate(52 -365)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-27'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -496,7 +753,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(118 -365)">
+						<g transform="translate(138 -365)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-28'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -505,7 +771,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(204 -365)">
+						<g transform="translate(224 -365)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-29'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -514,7 +789,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(290 -365)">
+						<g transform="translate(310 -365)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-30'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">
@@ -523,7 +807,16 @@ const Agoust: React.FC = (): JSX.Element => {
 								</tspan>
 							</text>
 						</g>
-						<g transform="translate(376 -365)">
+						<g transform="translate(396 -365)">
+							<circle
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								transform='translate(118 551)'
+								id='day-31'
+								style={{ fill: 'red', display: 'none' }}
+							/>
 							<text
 								className="l-agoust"
 								transform="translate(140 557)">

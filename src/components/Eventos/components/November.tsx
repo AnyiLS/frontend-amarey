@@ -1,6 +1,18 @@
+import moment from 'moment';
 import React from 'react'
 
 const November: React.FC = (): JSX.Element => {
+  /** Variables */
+  const day = moment().format('DD');
+  const month = moment().format('MM');
+
+  React.useEffect(() => {
+    if (month === '01') {
+      const element = document.getElementById(`day-${day}`);
+
+      if (element) element.style.display = 'block'
+    }
+  }, [day, month])
 	return (
 		<React.Fragment>
 	<svg viewBox="-200 0 1920 998.106">
@@ -233,6 +245,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(290 -557)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-12.324} y={23}>
               {"01"}
@@ -240,6 +261,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(376 -557)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-14.448} y={23}>
               {"02"}
@@ -247,6 +277,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(-140 -509)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-14.7} y={23}>
               {"03"}
@@ -254,6 +293,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(-54 -509)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-14.844} y={23}>
               {"04"}
@@ -261,6 +309,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(32 -509)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-14.64} y={23}>
               {"05"}
@@ -268,6 +325,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(118 -509)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-14.892} y={23}>
               {"06"}
@@ -275,6 +341,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(204 -509)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-14.1} y={23}>
               {"07"}
@@ -282,6 +357,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(290 -509)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-14.892} y={23}>
               {"08"}
@@ -289,6 +373,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(376 -509)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-14.892} y={23}>
               {"09"}
@@ -296,6 +389,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(-140 -461)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-12.888} y={23}>
               {"10"}
@@ -303,6 +405,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(-54 -461)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-10.944} y={23}>
               {"11"}
@@ -310,6 +421,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(32 -461)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-12.504} y={23}>
               {"12"}
@@ -317,6 +437,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(118 -461)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-12.072} y={23}>
               {"13"}
@@ -324,6 +453,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(204 -461)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-12.528} y={23}>
               {"14"}
@@ -331,6 +469,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(290 -461)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-12.696} y={23}>
               {"15"}
@@ -338,6 +485,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(376 -461)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-12.948} y={23}>
               {"16"}
@@ -345,6 +501,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(-140 -413)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-12.156} y={23}>
               {"17"}
@@ -352,6 +517,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(-54 -413)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-12.948} y={23}>
               {"18"}
@@ -359,6 +533,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(32 -413)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-12.456} y={23}>
               {"19"}
@@ -366,6 +549,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(118 -413)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-14.448} y={23}>
               {"20"}
@@ -373,6 +565,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(204 -413)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-12.504} y={23}>
               {"21"}
@@ -380,6 +581,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(290 -413)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-14.064} y={23}>
               {"22"}
@@ -387,6 +597,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(376 -413)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-14.316} y={23}>
               {"23"}
@@ -394,6 +613,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(-140 -365)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-13.596} y={23}>
               {"24"}
@@ -401,6 +629,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(-54 -365)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-14.256} y={23}>
               {"25"}
@@ -408,6 +645,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(32 -365)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-13.92} y={23}>
               {"26"}
@@ -415,6 +661,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(118 -365)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-13.716} y={23}>
               {"27"}
@@ -422,6 +677,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(204 -365)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-14.508} y={23}>
               {"28"}
@@ -429,6 +693,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(290 -365)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-14.508} y={23}>
               {"29"}
@@ -436,6 +709,15 @@ const November: React.FC = (): JSX.Element => {
           </text>
         </g>
         <g transform="translate(376 -365)">
+        <circle
+                className="b-item-1813"
+                cx={22}
+                cy={22}
+                r={22}
+                transform='translate(118 551)'
+                id='day-03'
+                style={{ fill: 'red', display: 'none' }}
+              />
           <text className="l-november" transform="translate(140 557)">
             <tspan x={-14.7} y={23}>
               {"30"}

@@ -36,6 +36,24 @@ const Eventos = () => {
 		else return setSlide(0)
 	}
 
+	const searchDate = () => {
+		const currentDay = moment().format('DD')
+		const currentMonth = moment().format('MM')
+
+		const currentIndex: number | null = calendarItems.findIndex((item: CalendarItems, index: number) => {
+			if (item.date === `${currentDay}-${currentMonth}`) return index + 1
+			else if (item.date && item.date.includes(currentMonth)) return index
+			else return null
+		});
+
+		if (currentIndex) setSlide(currentIndex)
+		else setSlide(0)
+	}
+
+	React.useEffect(() => {
+		searchDate()
+	}, [])
+
 	return (
 		<React.Fragment>
 			{width > 1024 ? (

@@ -11,8 +11,25 @@ export interface ICalendar {
 	onLessMonth: () => void
 }
 
-const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onChangeMonth, onLessMonth }) => {
-	const currentMonth = moment('02').month() + 1
+const May31: React.FC<ICalendar> = ({
+	next,
+	prev,
+	today,
+	onChangeDay,
+	onChangeMonth,
+	onLessMonth,
+}) => {
+	/** Variables */
+	const day = moment().format('DD')
+	const month = moment().format('MM')
+
+	React.useEffect(() => {
+		if (month === '05') {
+			const element = document.getElementById(`day-${day}`)
+
+			if (element) element.style.display = 'block'
+		}
+	}, [day, month])
 
 	return (
 		<svg viewBox="-150 0 1920 998.106">
@@ -178,7 +195,7 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 				transform="translate(434 660.019)"
 			/>
 			<text className="d-item-1813" transform="translate(0 214.019)">
-			<tspan x={0} y={50}>
+				<tspan x={0} y={50}>
 					{'Prográmese con '}
 				</tspan>
 				<tspan x={0} y={100}>
@@ -254,7 +271,7 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 					{'31 de mayo de 2024'}
 				</tspan>
 			</text>
-			{currentMonth !== 5 && today !== 31 && (
+			{/* {month !== 5 && today !== 31 && (
 				<rect
 					className="f-item-1813"
 					width={40}
@@ -262,7 +279,7 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 					rx={2}
 					transform="translate(437 700.019)"
 				/>
-			)}
+			)} */}
 			<g transform="translate(-140 -133.894)">
 				<g className="j-item-1813" transform="translate(140 557)">
 					<g transform="translate(-140 -557)">
@@ -366,7 +383,9 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 							</tspan>
 						</text>
 					</g>
-					<g transform="translate(204 -557)" onClick={() => onChangeDay(2)}>
+					<g
+						transform="translate(204 -557)"
+						onClick={() => onChangeDay(2)}>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)"
@@ -385,7 +404,9 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 							</tspan>
 						</text>
 					</g>
-					<g transform="translate(376 -557)" onClick={() => onChangeDay(4)}>
+					<g
+						transform="translate(376 -557)"
+						onClick={() => onChangeDay(4)}>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)"
@@ -432,6 +453,15 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 						</text>
 					</g>
 					<g transform="translate(204 -509)">
+						<circle
+							className="b-item-1813"
+							cx={22}
+							cy={22}
+							r={22}
+							transform="translate(142 551)"
+							id="day-09"
+							style={{ fill: 'red', display: 'none' }}
+						/>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)">
@@ -441,6 +471,15 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 						</text>
 					</g>
 					<g transform="translate(290 -509)">
+						<circle
+							className="b-item-1813"
+							cx={22}
+							cy={22}
+							r={22}
+							transform="translate(142 551)"
+							id="day-10"
+							style={{ fill: 'red', display: 'none' }}
+						/>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)">
@@ -450,6 +489,15 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 						</text>
 					</g>
 					<g transform="translate(376 -509)">
+						<circle
+							className="b-item-1813"
+							cx={22}
+							cy={22}
+							r={22}
+							transform='translate(142 551)'
+							id='day-11'
+							style={{ fill: 'red', display: 'none' }}
+						/>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)">
@@ -459,6 +507,15 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 						</text>
 					</g>
 					<g transform="translate(-140 -461)">
+						<circle
+							className="b-item-1813"
+							cx={22}
+							cy={22}
+							r={22}
+							transform='translate(142 551)'
+							id='day-12'
+							style={{ fill: 'red', display: 'none' }}
+						/>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)">
@@ -468,6 +525,15 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 						</text>
 					</g>
 					<g transform="translate(-54 -461)">
+						<circle
+							className="b-item-1813"
+							cx={22}
+							cy={22}
+							r={22}
+							transform='translate(142 551)'
+							id='day-13'
+							style={{ fill: 'red', display: 'none' }}
+						/>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)">
@@ -477,6 +543,15 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 						</text>
 					</g>
 					<g transform="translate(32 -461)">
+						<circle
+							className="b-item-1813"
+							cx={22}
+							cy={22}
+							r={22}
+							transform='translate(142 551)'
+							id='day-14'
+							style={{ fill: 'red', display: 'none' }}
+						/>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)">
@@ -486,6 +561,15 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 						</text>
 					</g>
 					<g transform="translate(118 -461)">
+						<circle
+							className="b-item-1813"
+							cx={22}
+							cy={22}
+							r={22}
+							transform='translate(142 551)'
+							id='day-15'
+							style={{ fill: 'red', display: 'none' }}
+						/>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)">
@@ -494,7 +578,18 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 							</tspan>
 						</text>
 					</g>
-					<g transform="translate(204 -461)" onClick={() => onChangeDay(16)}>
+					<g
+						transform="translate(204 -461)"
+						onClick={() => onChangeDay(16)}>
+						<circle
+							className="b-item-1813"
+							cx={22}
+							cy={22}
+							r={22}
+							transform='translate(142 551)'
+							id='day-16'
+							style={{ fill: 'red', display: 'none' }}
+						/>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)"
@@ -505,15 +600,36 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 						</text>
 					</g>
 					<g transform="translate(290 -461)">
+						<circle
+							className="b-item-1813"
+							cx={22}
+							cy={22}
+							r={22}
+							transform='translate(142 551)'
+							id='day-17'
+							style={{ fill: 'red', display: 'none' }}
+						/>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)">
+
 							<tspan x={-12.156} y={23}>
 								{'17'}
 							</tspan>
 						</text>
 					</g>
-					<g transform="translate(376 -461)" onClick={() => onChangeDay(18)}>
+					<g
+						transform="translate(376 -461)"
+						onClick={() => onChangeDay(18)}>
+						<circle
+							className="b-item-1813"
+							cx={22}
+							cy={22}
+							r={22}
+							transform='translate(142 551)'
+							id='day-18'
+							style={{ fill: 'red', display: 'none' }}
+						/>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)"
@@ -524,6 +640,15 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 						</text>
 					</g>
 					<g transform="translate(-140 -413)">
+						<circle
+							className="b-item-1813"
+							cx={22}
+							cy={22}
+							r={22}
+							transform='translate(142 551)'
+							id='day-19'
+							style={{ fill: 'red', display: 'none' }}
+						/>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)">
@@ -533,6 +658,15 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 						</text>
 					</g>
 					<g transform="translate(-54 -413)">
+						<circle
+							className="b-item-1813"
+							cx={22}
+							cy={22}
+							r={22}
+							transform='translate(142 551)'
+							id='day-20'
+							style={{ fill: 'red', display: 'none' }}
+						/>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)">
@@ -542,6 +676,15 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 						</text>
 					</g>
 					<g transform="translate(32 -413)">
+						<circle
+							className="b-item-1813"
+							cx={22}
+							cy={22}
+							r={22}
+							transform='translate(142 551)'
+							id='day-21'
+							style={{ fill: 'red', display: 'none' }}
+						/>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)">
@@ -550,7 +693,18 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 							</tspan>
 						</text>
 					</g>
-					<g transform="translate(118 -413)" onClick={() => onChangeDay(22)}>
+					<g
+						transform="translate(118 -413)"
+						onClick={() => onChangeDay(22)}>
+						<circle
+							className="b-item-1813"
+							cx={22}
+							cy={22}
+							r={22}
+							transform='translate(142 551)'
+							id='day-22'
+							style={{ fill: 'red', display: 'none' }}
+						/>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)"
@@ -560,7 +714,18 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 							</tspan>
 						</text>
 					</g>
-					<g transform="translate(204 -413)" onClick={() => onChangeDay(30)}>
+					<g
+						transform="translate(204 -413)"
+						onClick={() => onChangeDay(30)}>
+						<circle
+							className="b-item-1813"
+							cx={22}
+							cy={22}
+							r={22}
+							transform='translate(142 551)'
+							id='day-23'
+							style={{ fill: 'red', display: 'none' }}
+						/>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)"
@@ -570,7 +735,18 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 							</tspan>
 						</text>
 					</g>
-					<g transform="translate(290 -413)" onClick={() => onChangeDay(24)}>
+					<g
+						transform="translate(290 -413)"
+						onClick={() => onChangeDay(24)}>
+						<circle
+							className="b-item-1813"
+							cx={22}
+							cy={22}
+							r={22}
+							transform='translate(142 551)'
+							id='day-24'
+							style={{ fill: 'red', display: 'none' }}
+						/>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)"
@@ -580,7 +756,18 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 							</tspan>
 						</text>
 					</g>
-					<g transform="translate(376 -413)" onClick={() => onChangeDay(25)}>
+					<g
+						transform="translate(376 -413)"
+						onClick={() => onChangeDay(25)}>
+						<circle
+							className="b-item-1813"
+							cx={22}
+							cy={22}
+							r={22}
+							transform='translate(142 551)'
+							id='day-25'
+							style={{ fill: 'red', display: 'none' }}
+						/>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)"
@@ -591,6 +778,15 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 						</text>
 					</g>
 					<g transform="translate(-140 -365)">
+						<circle
+							className="b-item-1813"
+							cx={22}
+							cy={22}
+							r={22}
+							transform='translate(142 551)'
+							id='day-26'
+							style={{ fill: 'red', display: 'none' }}
+						/>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)">
@@ -600,6 +796,15 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 						</text>
 					</g>
 					<g transform="translate(-54 -365)">
+						<circle
+							className="b-item-1813"
+							cx={22}
+							cy={22}
+							r={22}
+							transform='translate(142 551)'
+							id='day-27'
+							style={{ fill: 'red', display: 'none' }}
+						/>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)">
@@ -609,6 +814,15 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 						</text>
 					</g>
 					<g transform="translate(32 -365)">
+						<circle
+							className="b-item-1813"
+							cx={22}
+							cy={22}
+							r={22}
+							transform='translate(142 551)'
+							id='day-28'
+							style={{ fill: 'red', display: 'none' }}
+						/>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)">
@@ -618,6 +832,15 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 						</text>
 					</g>
 					<g transform="translate(118 -365)">
+						<circle
+							className="b-item-1813"
+							cx={22}
+							cy={22}
+							r={22}
+							transform='translate(142 551)'
+							id='day-29'
+							style={{ fill: 'red', display: 'none' }}
+						/>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)">
@@ -626,7 +849,18 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 							</tspan>
 						</text>
 					</g>
-					<g transform="translate(204 -365)" onClick={() => onChangeDay(30)}>
+					<g
+						transform="translate(204 -365)"
+						onClick={() => onChangeDay(30)}>
+						<circle
+							className="b-item-1813"
+							cx={22}
+							cy={22}
+							r={22}
+							transform='translate(142 551)'
+							id='day-30'
+							style={{ fill: 'red', display: 'none' }}
+						/>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)">
@@ -636,6 +870,15 @@ const May31: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 						</text>
 					</g>
 					<g transform="translate(290 -365)">
+						<circle
+							className="b-item-1813"
+							cx={22}
+							cy={22}
+							r={22}
+							transform='translate(142 551)'
+							id='day-31'
+							style={{ fill: 'red', display: 'none' }}
+						/>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)">

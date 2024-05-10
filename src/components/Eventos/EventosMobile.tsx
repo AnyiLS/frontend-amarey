@@ -1,4 +1,12 @@
 import React from 'react'
+import June from './componentsMobile/June'
+import July from './componentsMobile/July'
+import Agoust from './componentsMobile/Agoust'
+import September from './componentsMobile/September'
+import October from './componentsMobile/October'
+import November from './componentsMobile/November'
+import December from './componentsMobile/December'
+import January from './componentsMobile/January'
 
 const EventosMobile: React.FC = (): JSX.Element => {
 	/** State */
@@ -168,14 +176,6 @@ const EventosMobile: React.FC = (): JSX.Element => {
 						rx={1.5}
 						transform="translate(310.806 599.21)"
 					/>
-					<ellipse
-						className="c-pentagrama"
-						cx={14.5}
-						cy={14}
-						rx={14.5}
-						ry={14}
-						transform="translate(111.806 574.21)"
-					/>
 					<path
 						className="d-pentagrama"
 						d="M432.355,0H21.3C7.82,0-2.265,11.674.441,24.144L20.452,453.02c2.03,9.355,10.746,16.072,20.855,16.072H432.355Z"
@@ -220,7 +220,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 						</g>
 						<g
 							transform="translate(0 0)"
-							onClick={() => setView('31-05')}>
+							onClick={() => setView('01')}>
 							<g
 								className="t-pentagrama"
 								transform="matrix(1, 0, 0, 1, -148.64, -415.21)">
@@ -674,7 +674,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="d-pentagrama"
 							d="M9.095,0l9.095,15.591H0Z"
 							transform="translate(293.111 30.68) rotate(-90)"
-							onClick={() => setView('02-05')}
+							onClick={() => setView('01')}
 						/>
 						<path
 							className="d-pentagrama"
@@ -8268,7 +8268,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="d-pentagrama"
 							d="M9.095,0l9.095,15.591H0Z"
 							transform="translate(346.524 12.491) rotate(90)"
-							onClick={() => setView('02-02')}
+							onClick={() => setView('06')}
 						/>
 					</g>
 				</svg>
@@ -9786,13 +9786,13 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="d-pentagrama"
 							d="M9.095,0l9.095,15.591H0Z"
 							transform="translate(293.111 30.68) rotate(-90)"
-                            onClick={() => setView('06-03')}
+							onClick={() => setView('06-03')}
 						/>
 						<path
 							className="d-pentagrama"
 							d="M9.095,0l9.095,15.591H0Z"
 							transform="translate(346.524 12.491) rotate(90)"
-                            onClick={() => setView('02-02')}
+							onClick={() => setView('06')}
 						/>
 					</g>
 				</svg>
@@ -10576,7 +10576,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="d-pentagrama"
 							d="M9.095,0l9.095,15.591H0Z"
 							transform="translate(346.524 12.491) rotate(90)"
-							onClick={() => setView('02-02')}
+							onClick={() => setView('06')}
 						/>
 					</g>
 				</svg>
@@ -11295,7 +11295,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="d-pentagrama"
 							d="M9.095,0l9.095,15.591H0Z"
 							transform="translate(346.524 12.491) rotate(90)"
-							onClick={() => setView('02-02')}
+							onClick={() => setView('06')}
 						/>
 					</g>
 					<g
@@ -12041,7 +12041,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="d-pentagrama"
 							d="M9.095,0l9.095,15.591H0Z"
 							transform="translate(346.524 12.491) rotate(90)"
-							onClick={() => setView('02-02')}
+							onClick={() => setView('06')}
 						/>
 					</g>
 					<g
@@ -12795,7 +12795,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="d-pentagrama"
 							d="M9.095,0l9.095,15.591H0Z"
 							transform="translate(346.524 12.491) rotate(90)"
-							onClick={() => setView('02-02')}
+							onClick={() => setView('06')}
 						/>
 					</g>
 					<g
@@ -13556,7 +13556,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="d-pentagrama"
 							d="M9.095,0l9.095,15.591H0Z"
 							transform="translate(346.524 12.491) rotate(90)"
-							onClick={() => setView('02-02')}
+							onClick={() => setView('06')}
 						/>
 					</g>
 					<g
@@ -14309,7 +14309,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="d-pentagrama"
 							d="M9.095,0l9.095,15.591H0Z"
 							transform="translate(346.524 12.491) rotate(90)"
-							onClick={() => setView('02-02')}
+							onClick={() => setView('06')}
 						/>
 					</g>
 					<g
@@ -15066,7 +15066,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="d-pentagrama"
 							d="M9.095,0l9.095,15.591H0Z"
 							transform="translate(346.524 12.491) rotate(90)"
-							onClick={() => setView('02-02')}
+							onClick={() => setView('06')}
 						/>
 					</g>
 					<g
@@ -15108,7 +15108,63 @@ const EventosMobile: React.FC = (): JSX.Element => {
 						</tspan>
 					</text>
 				</svg>
-			) : null}
+			) : view === '06' ?
+				<June
+					onNext={() => setView('07')}
+					onPrev={() => setView('31-05')}
+					onPrevMonth={() => setView('02-05')}
+					onNextMonth={() => setView('07')}
+				/>
+				: view === '07' ?
+					<July
+						onNext={() => setView('08')}
+						onPrev={() => setView('06')}
+						onPrevMonth={() => setView('06')}
+						onNextMonth={() => setView('08')}
+					/>
+					: view === '08' ?
+						<Agoust
+							onNext={() => setView('09')}
+							onPrev={() => setView('07')}
+							onPrevMonth={() => setView('07')}
+							onNextMonth={() => setView('09')}
+						/>
+						: view === '09' ?
+							<September
+								onNext={() => setView('10')}
+								onPrev={() => setView('08')}
+								onPrevMonth={() => setView('08')}
+								onNextMonth={() => setView('10')}
+							/>
+							: view === '10' ?
+								<October
+									onNext={() => setView('11')}
+									onPrev={() => setView('09')}
+									onPrevMonth={() => setView('09')}
+									onNextMonth={() => setView('11')}
+								/>
+								: view === '11' ?
+									<November
+										onNext={() => setView('12')}
+										onPrev={() => setView('10')}
+										onPrevMonth={() => setView('10')}
+										onNextMonth={() => setView('12')}
+									/>
+									: view === '12' ?
+										<December
+											onNext={() => setView('01')}
+											onPrev={() => setView('11')}
+											onPrevMonth={() => setView('11')}
+											onNextMonth={() => setView('01')}
+										/>
+										: view === '01' ?
+											<January
+												onNext={() => setView('02-02')}
+												onPrev={() => setView('12')}
+												onPrevMonth={() => setView('12')}
+												onNextMonth={() => setView('02-02')}
+											/>
+											: null}
 		</React.Fragment>
 	)
 }

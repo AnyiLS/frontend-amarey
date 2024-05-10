@@ -30,6 +30,7 @@ export interface CalendarItems {
 	id: number
 	Component: React.FunctionComponent<ICalendar>
 	day: number
+	date?: string
 }
 
 export const calendarItems: CalendarItems[] = [
@@ -44,22 +45,22 @@ export const calendarItems: CalendarItems[] = [
 	{ id: 8, Component: Mar15, day: 15 },
 	{ id: 9, Component: May02, day: 2 },
 	{ id: 10, Component: May04, day: 4 },
-	{ id: 11, Component: May16, day: 16 },
-	{ id: 12, Component: May18, day: 18 },
-	{ id: 13, Component: May22, day: 22 },
-	{ id: 14, Component: May23, day: 23 },
-	{ id: 15, Component: May24, day: 24 },
-	{ id: 16, Component: May25, day: 25 },
-	{ id: 17, Component: May30, day: 30 },
-	{ id: 18, Component: May31, day: 31 },
-	{ id: 19, Component: June, day: 31 },
-	{ id: 20, Component: July, day: 31 },
-	{ id: 21, Component: Agoust, day: 31 },
-	{ id: 22, Component: September, day: 31 },
-	{ id: 23, Component: October, day: 31 },
-	{ id: 24, Component: November, day: 31 },
-	{ id: 25, Component: December, day: 31 },
-	{ id: 26, Component: January, day: 31 },
+	{ id: 11, Component: May16, day: 16, date: '16-05' },
+	{ id: 12, Component: May18, day: 18, date: '18-05' },
+	{ id: 13, Component: May22, day: 22, date: '22-05' },
+	{ id: 14, Component: May23, day: 23, date: '23-05' },
+	{ id: 15, Component: May24, day: 24, date: '24-05' },
+	{ id: 16, Component: May25, day: 25, date: '25-05' },
+	{ id: 17, Component: May30, day: 30, date: '30-05' },
+	{ id: 18, Component: May31, day: 31, date: '31-05' },
+	{ id: 19, Component: June, day: 31, date: '06' },
+	{ id: 20, Component: July, day: 31, date: '07' },
+	{ id: 21, Component: Agoust, day: 31, date: '08' },
+	{ id: 22, Component: September, day: 31, date: '09'},
+	{ id: 23, Component: October, day: 31, date: '10' },
+	{ id: 24, Component: November, day: 31, date: '11' },
+	{ id: 25, Component: December, day: 31, date: '12' },
+	{ id: 26, Component: January, day: 31, date: '01' },
 ]
 
 export const daysMar: any = {
