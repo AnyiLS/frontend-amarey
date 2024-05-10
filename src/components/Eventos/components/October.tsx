@@ -1,13 +1,14 @@
 import moment from 'moment';
 import React from 'react'
+import { ICalendar } from './02May';
 
-const October: React.FC = (): JSX.Element => {
+const October: React.FC<ICalendar> = ({ next, prev, onChangeMonth, onLessMonth}): JSX.Element => {
   /** Variables */
   const day = moment().format('DD');
   const month = moment().format('MM');
 
   React.useEffect(() => {
-    if (month === '01') {
+    if (month === '10') {
       const element = document.getElementById(`day-${day}`);
 
       if (element) element.style.display = 'block'
@@ -15,11 +16,11 @@ const October: React.FC = (): JSX.Element => {
   }, [day, month])
 	return (
 		<React.Fragment>
-			<svg viewBox="-200 0 1920 998.106">
+			<svg viewBox="-150 0 1920 998.106">
     <defs>
       <style>
         {
-          ".a,.n{fill:none;}.b,.l,.o,.p{fill:#001f5f;}.c{fill:#c5dbf7;}.d,.j,.m{fill:#182856;}.d,.l{font-size:24px;}.d{font-family:Silka-Regular, Silka;}.e{fill:#e40032;}.f{fill:#c7c7cc;}.g,.h{fill:#fff;}.h,.m{font-size:42px;}.h,.j,.m{font-family:Silka-SemiBold, Silka;font-weight:600;}.i{clip-path:url(#e);}.j{font-size:32px;}.k{clip-path:url(#f);}.l{font-family:Silka-Medium, Silka;font-weight:500;}.n{stroke:#e40032;stroke-width:3px;}.o{font-size:55px;}.o,.p{font-family:Kiona-Bold, Kiona;font-weight:700;}.p{font-size:28px;}.q{clip-path:url(#k);}.r{filter:url(#i);}.s{filter:url(#g);}.t{filter:url(#c);}.u{filter:url(#a);}"
+          ".a-october,.n-october{fill:none;}.b-october,.l-october,.o-october,.p-october{fill:#001f5f;}.c-october{fill:#c5dbf7;}.d-october,.j-october,.m-october{fill:#182856;}.d-october,.l-october{font-size:24px;}.d-october{font-family:Silka-Regular, Silka;}.e-october{fill:#e40032;}.f-october{fill:#c7c7cc;}.g-october,.h-october{fill:#fff;}.h-october,.m-october{font-size:42px;}.h-october,.j-october,.m-october{font-family:Silka-SemiBold, Silka;font-weight:600;}.i-october{clip-path:url(#e-october);}.j-october{font-size:32px;}.k-october{clip-path:url(#f-october);}.l-october{font-family:Silka-Medium, Silka;font-weight:500;}.n-october{stroke:#e40032;stroke-width:3px;}.o-october{font-size:55px;}.o-october,.p-october{font-family:Kiona-Bold, Kiona;font-weight:700;}.p-october{font-size:28px;}.q-october{clip-path:url(#k-october);}.r-october{filter:url(#i-october);}.s-october{filter:url(#g-october);}.t-october{filter:url(#c-october);}.u-october{filter:url(#a-october);}"
         }
       </style>
       <filter
@@ -93,7 +94,7 @@ const October: React.FC = (): JSX.Element => {
       d="M1136.187,0H50.372C18.5,0-5.357,24.843,1.043,51.375L39.612,842.591l5.914,121.316c4.8,19.905,25.417,34.2,49.329,34.2H1136.187Z"
       transform="translate(643.813 0.003)"
     />
-    <g transform="translate(-140 -79.981)">
+    <g transform="translate(-120-79.981)">
       <circle
         className="c-october"
         cx={17.5}
@@ -107,7 +108,7 @@ const October: React.FC = (): JSX.Element => {
         </tspan>
       </text>
     </g>
-    <g transform="translate(-140 -79.981)">
+    <g transform="translate(-120-79.981)">
       <circle
         className="e-october"
         cx={17.5}
@@ -122,7 +123,7 @@ const October: React.FC = (): JSX.Element => {
       </text>
     </g>
     <g transform="translate(-210.89 -41.981)">
-      <g transform="translate(1440.747 906.884)">
+      <g transform="translate(1440.747 906.884)" onClick={next}>
         <g className="u-october" transform="matrix(1, 0, 0, 1, -1229.86, -864.9)">
           <path
             className="f-october"
@@ -136,7 +137,7 @@ const October: React.FC = (): JSX.Element => {
           transform="translate(75.679 16.27) rotate(90)"
         />
       </g>
-      <g transform="translate(1224.426 906.884)">
+      <g transform="translate(1224.426 906.884)" onClick={prev}>
         <g className="t-october" transform="matrix(1, 0, 0, 1, -1013.54, -864.9)">
           <path
             className="f-october"
@@ -156,51 +157,51 @@ const October: React.FC = (): JSX.Element => {
         {"Octubre"}
       </tspan>
     </text>
-    <g transform="translate(-140 -133.981)">
+    <g transform="translate(-140-133.981)">
       <g className="i-october" transform="translate(140 557)">
-        <g transform="translate(-140 -557)">
+        <g transform="translate(-120-557)">
           <text className="j-october" transform="translate(140 557)">
             <tspan x={-21.712} y={30}>
               {"Do"}
             </tspan>
           </text>
         </g>
-        <g transform="translate(-54 -557)">
+        <g transform="translate(-34 -557)">
           <text className="j-october" transform="translate(140 557)">
             <tspan x={-17.92} y={30}>
               {"Lu"}
             </tspan>
           </text>
         </g>
-        <g transform="translate(32 -557)">
+        <g transform="translate(52 -557)">
           <text className="j-october" transform="translate(140 557)">
             <tspan x={-24.576} y={30}>
               {"Ma"}
             </tspan>
           </text>
         </g>
-        <g transform="translate(118 -557)">
+        <g transform="translate(138 -557)">
           <text className="j-october" transform="translate(140 557)">
             <tspan x={-18.528} y={30}>
               {"Mi"}
             </tspan>
           </text>
         </g>
-        <g transform="translate(204 -557)">
+        <g transform="translate(224 -557)">
           <text className="j-october" transform="translate(140 557)">
             <tspan x={-19.072} y={30}>
               {"Ju"}
             </tspan>
           </text>
         </g>
-        <g transform="translate(290 -557)">
+        <g transform="translate(310 -557)">
           <text className="j-october" transform="translate(140 557)">
             <tspan x={-15.264} y={30}>
               {"Vi"}
             </tspan>
           </text>
         </g>
-        <g transform="translate(376 -557)">
+        <g transform="translate(396 -557)">
           <text className="j-october" transform="translate(140 557)">
             <tspan x={-19.888} y={30}>
               {"Sa"}
@@ -209,21 +210,21 @@ const October: React.FC = (): JSX.Element => {
         </g>
       </g>
       <g className="k-october" transform="translate(140 610)">
-        <g transform="translate(-140 -557)">
+        <g transform="translate(-120-557)">
           <text className="l-october" transform="translate(140 557)">
             <tspan x={-14.508} y={23}>
               {"29"}
             </tspan>
           </text>
         </g>
-        <g transform="translate(-54 -557)">
+        <g transform="translate(-34 -557)">
           <text className="l-october" transform="translate(140 557)">
             <tspan x={-14.7} y={23}>
               {"30"}
             </tspan>
           </text>
         </g>
-        <g transform="translate(32 -557)">
+        <g transform="translate(52 -557)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -239,7 +240,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(118 -557)">
+        <g transform="translate(138 -557)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -255,7 +256,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(204 -557)">
+        <g transform="translate(224 -557)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -271,7 +272,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(290 -557)">
+        <g transform="translate(310 -557)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -287,7 +288,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(376 -557)">
+        <g transform="translate(396 -557)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -303,7 +304,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(-140 -509)">
+        <g transform="translate(-120-509)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -319,7 +320,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(-54 -509)">
+        <g transform="translate(-34 -509)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -335,7 +336,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(32 -509)">
+        <g transform="translate(52 -509)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -351,7 +352,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(118 -509)">
+        <g transform="translate(138 -509)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -367,7 +368,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(204 -509)">
+        <g transform="translate(224 -509)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -383,7 +384,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(290 -509)">
+        <g transform="translate(310 -509)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -399,7 +400,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(376 -509)">
+        <g transform="translate(396 -509)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -415,7 +416,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(-140 -461)">
+        <g transform="translate(-120-461)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -431,7 +432,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(-54 -461)">
+        <g transform="translate(-34 -461)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -447,7 +448,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(32 -461)">
+        <g transform="translate(52 -461)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -463,7 +464,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(118 -461)">
+        <g transform="translate(138 -461)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -479,7 +480,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(204 -461)">
+        <g transform="translate(224 -461)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -495,7 +496,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(290 -461)">
+        <g transform="translate(310 -461)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -511,7 +512,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(376 -461)">
+        <g transform="translate(396 -461)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -527,7 +528,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(-140 -413)">
+        <g transform="translate(-120-413)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -543,7 +544,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(-54 -413)">
+        <g transform="translate(-34 -413)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -559,7 +560,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(32 -413)">
+        <g transform="translate(52 -413)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -575,7 +576,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(118 -413)">
+        <g transform="translate(138 -413)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -591,7 +592,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(204 -413)">
+        <g transform="translate(224 -413)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -607,14 +608,14 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(290 -413)">
+        <g transform="translate(310 -413)">
           <text className="l-october" transform="translate(140 557)">
             <tspan x={-14.256} y={23}>
               {"25"}
             </tspan>
           </text>
         </g>
-        <g transform="translate(376 -413)">
+        <g transform="translate(396 -413)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -630,7 +631,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(-140 -365)">
+        <g transform="translate(-120-365)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -646,7 +647,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(-54 -365)">
+        <g transform="translate(-34 -365)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -662,7 +663,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(32 -365)">
+        <g transform="translate(52 -365)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -678,7 +679,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(118 -365)">
+        <g transform="translate(138 -365)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -694,7 +695,7 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(204 -365)">
+        <g transform="translate(224 -365)">
         <circle
                 className="b-item-1813"
                 cx={22}
@@ -710,14 +711,14 @@ const October: React.FC = (): JSX.Element => {
             </tspan>
           </text>
         </g>
-        <g transform="translate(290 -365)">
+        <g transform="translate(310 -365)">
           <text className="l-october" transform="translate(140 557)">
             <tspan x={-12.324} y={23}>
               {"01"}
             </tspan>
           </text>
         </g>
-        <g transform="translate(376 -365)">
+        <g transform="translate(396 -365)">
           <text className="l-october" transform="translate(140 557)">
             <tspan x={-14.448} y={23}>
               {"02"}
@@ -735,11 +736,13 @@ const October: React.FC = (): JSX.Element => {
         className="b-october"
         d="M13.947,0,27.893,23.908H0Z"
         transform="translate(616.338 532.048) rotate(-90)"
+        onClick={onLessMonth}
       />
       <path
         className="b-october"
         d="M13.947,0,27.893,23.908H0Z"
         transform="translate(698.246 504.155) rotate(90)"
+        onClick={onChangeMonth}
       />
     </g>
     <text className="o-october" transform="translate(0 185.019)">

@@ -2,7 +2,7 @@ import moment from 'moment';
 import React from 'react'
 import { ICalendar } from './02May';
 
-const Agoust: React.FC<ICalendar> = ({next, prev}): JSX.Element => {
+const Agoust: React.FC<ICalendar> = ({next, prev, onChangeMonth, onLessMonth}): JSX.Element => {
 	/** Variables */
 	const day = moment().format('DD');
 	const month = moment().format('MM');
@@ -17,7 +17,7 @@ const Agoust: React.FC<ICalendar> = ({next, prev}): JSX.Element => {
 
 	return (
 		<React.Fragment>
-			<svg viewBox="-200 0 1920 998.106">
+			<svg viewBox="-150 0 1920 998.106">
 				<defs>
 					<style>
 						{
@@ -840,11 +840,13 @@ const Agoust: React.FC<ICalendar> = ({next, prev}): JSX.Element => {
 						className="b-agoust"
 						d="M13.947,0,27.893,23.908H0Z"
 						transform="translate(616.338 532.048) rotate(-90)"
+						onClick={onLessMonth}
 					/>
 					<path
 						className="b-agoust"
 						d="M13.947,0,27.893,23.908H0Z"
 						transform="translate(698.246 504.155) rotate(90)"
+						onClick={onChangeMonth}
 					/>
 				</g>
 				<text className="o-agoust" transform="translate(0 185.019)">

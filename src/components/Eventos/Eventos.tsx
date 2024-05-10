@@ -25,15 +25,19 @@ const Eventos = () => {
 	}
 
 	const handleAddMonth = () => {
-		if (slide <= 3) return setSlide(4)
-		else if (slide <= 8) return setSlide(9)
-		else return setSlide(0)
+		if (slide <= 3) setSlide(4)
+		else if (slide <= 8) setSlide(9)
+		else if (slide <= 18) setSlide(19)
+		else if (slide <= 25 && slide >= 19) setSlide(slide + 1)
+		else setSlide(0)
 	}
 
 	const handleLessMonth = () => {
-		if (slide <= 3) return setSlide(9)
-		else if (slide <= 8) return setSlide(3)
-		else return setSlide(0)
+		if (slide <= 3) setSlide(26)
+		else if (slide <= 8) setSlide(0)
+		else if (slide <= 18) setSlide(4)
+		else if (slide <= 26 && slide >= 19) setSlide(slide - 1)
+		else setSlide(0)
 	}
 
 	const searchDate = () => {

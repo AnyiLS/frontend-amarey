@@ -31,7 +31,7 @@ const January: React.FC<JanuaryProps> = ({
 
   return (
     <React.Fragment>
-      <svg viewBox="-200 0 1920 998.106">
+      <svg viewBox="-150 0 1920 998.106">
         <defs>
           <style>
             {

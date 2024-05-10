@@ -271,15 +271,13 @@ const May31: React.FC<ICalendar> = ({
 					{'31 de mayo de 2024'}
 				</tspan>
 			</text>
-			{/* {month !== 5 && today !== 31 && (
-				<rect
-					className="f-item-1813"
-					width={40}
-					height={4}
-					rx={2}
-					transform="translate(437 700.019)"
-				/>
-			)} */}
+			<rect
+				className="f-item-1813"
+				width={40}
+				height={4}
+				rx={2}
+				transform="translate(437 700.019)"
+			/>
 			<g transform="translate(-140 -133.894)">
 				<g className="j-item-1813" transform="translate(140 557)">
 					<g transform="translate(-140 -557)">
@@ -494,8 +492,8 @@ const May31: React.FC<ICalendar> = ({
 							cx={22}
 							cy={22}
 							r={22}
-							transform='translate(142 551)'
-							id='day-11'
+							transform="translate(142 551)"
+							id="day-11"
 							style={{ fill: 'red', display: 'none' }}
 						/>
 						<text
@@ -512,8 +510,8 @@ const May31: React.FC<ICalendar> = ({
 							cx={22}
 							cy={22}
 							r={22}
-							transform='translate(142 551)'
-							id='day-12'
+							transform="translate(142 551)"
+							id="day-12"
 							style={{ fill: 'red', display: 'none' }}
 						/>
 						<text
@@ -530,8 +528,8 @@ const May31: React.FC<ICalendar> = ({
 							cx={22}
 							cy={22}
 							r={22}
-							transform='translate(142 551)'
-							id='day-13'
+							transform="translate(142 551)"
+							id="day-13"
 							style={{ fill: 'red', display: 'none' }}
 						/>
 						<text
@@ -548,8 +546,8 @@ const May31: React.FC<ICalendar> = ({
 							cx={22}
 							cy={22}
 							r={22}
-							transform='translate(142 551)'
-							id='day-14'
+							transform="translate(142 551)"
+							id="day-14"
 							style={{ fill: 'red', display: 'none' }}
 						/>
 						<text
@@ -566,8 +564,8 @@ const May31: React.FC<ICalendar> = ({
 							cx={22}
 							cy={22}
 							r={22}
-							transform='translate(142 551)'
-							id='day-15'
+							transform="translate(142 551)"
+							id="day-15"
 							style={{ fill: 'red', display: 'none' }}
 						/>
 						<text
@@ -586,8 +584,8 @@ const May31: React.FC<ICalendar> = ({
 							cx={22}
 							cy={22}
 							r={22}
-							transform='translate(142 551)'
-							id='day-16'
+							transform="translate(142 551)"
+							id="day-16"
 							style={{ fill: 'red', display: 'none' }}
 						/>
 						<text
@@ -605,14 +603,13 @@ const May31: React.FC<ICalendar> = ({
 							cx={22}
 							cy={22}
 							r={22}
-							transform='translate(142 551)'
-							id='day-17'
+							transform="translate(142 551)"
+							id="day-17"
 							style={{ fill: 'red', display: 'none' }}
 						/>
 						<text
 							className="m-item-1813"
 							transform="translate(165 557)">
-
 							<tspan x={-12.156} y={23}>
 								{'17'}
 							</tspan>
@@ -626,8 +623,8 @@ const May31: React.FC<ICalendar> = ({
 							cx={22}
 							cy={22}
 							r={22}
-							transform='translate(142 551)'
-							id='day-18'
+							transform="translate(142 551)"
+							id="day-18"
 							style={{ fill: 'red', display: 'none' }}
 						/>
 						<text
@@ -645,8 +642,8 @@ const May31: React.FC<ICalendar> = ({
 							cx={22}
 							cy={22}
 							r={22}
-							transform='translate(142 551)'
-							id='day-19'
+							transform="translate(142 551)"
+							id="day-19"
 							style={{ fill: 'red', display: 'none' }}
 						/>
 						<text
@@ -663,8 +660,8 @@ const May31: React.FC<ICalendar> = ({
 							cx={22}
 							cy={22}
 							r={22}
-							transform='translate(142 551)'
-							id='day-20'
+							transform="translate(142 551)"
+							id="day-20"
 							style={{ fill: 'red', display: 'none' }}
 						/>
 						<text
@@ -681,8 +678,8 @@ const May31: React.FC<ICalendar> = ({
 							cx={22}
 							cy={22}
 							r={22}
-							transform='translate(142 551)'
-							id='day-21'
+							transform="translate(142 551)"
+							id="day-21"
 							style={{ fill: 'red', display: 'none' }}
 						/>
 						<text
@@ -701,8 +698,8 @@ const May31: React.FC<ICalendar> = ({
 							cx={22}
 							cy={22}
 							r={22}
-							transform='translate(142 551)'
-							id='day-22'
+							transform="translate(142 551)"
+							id="day-22"
 							style={{ fill: 'red', display: 'none' }}
 						/>
 						<text
@@ -722,8 +719,8 @@ const May31: React.FC<ICalendar> = ({
 							cx={22}
 							cy={22}
 							r={22}
-							transform='translate(142 551)'
-							id='day-23'
+							transform="translate(142 551)"
+							id="day-23"
 							style={{ fill: 'red', display: 'none' }}
 						/>
 						<text
@@ -743,8 +740,8 @@ const May31: React.FC<ICalendar> = ({
 							cx={22}
 							cy={22}
 							r={22}
-							transform='translate(142 551)'
-							id='day-24'
+							transform="translate(142 551)"
+							id="day-24"
 							style={{ fill: 'red', display: 'none' }}
 						/>
 						<text
@@ -764,8 +761,8 @@ const May31: React.FC<ICalendar> = ({
 							cx={22}
 							cy={22}
 							r={22}
-							transform='translate(142 551)'
-							id='day-25'
+							transform="translate(142 551)"
+							id="day-25"
 							style={{ fill: 'red', display: 'none' }}
 						/>
 						<text
@@ -783,8 +780,8 @@ const May31: React.FC<ICalendar> = ({
 							cx={22}
 							cy={22}
 							r={22}
-							transform='translate(142 551)'
-							id='day-26'
+							transform="translate(142 551)"
+							id="day-26"
 							style={{ fill: 'red', display: 'none' }}
 						/>
 						<text
@@ -801,8 +798,8 @@ const May31: React.FC<ICalendar> = ({
 							cx={22}
 							cy={22}
 							r={22}
-							transform='translate(142 551)'
-							id='day-27'
+							transform="translate(142 551)"
+							id="day-27"
 							style={{ fill: 'red', display: 'none' }}
 						/>
 						<text
@@ -819,8 +816,8 @@ const May31: React.FC<ICalendar> = ({
 							cx={22}
 							cy={22}
 							r={22}
-							transform='translate(142 551)'
-							id='day-28'
+							transform="translate(142 551)"
+							id="day-28"
 							style={{ fill: 'red', display: 'none' }}
 						/>
 						<text
@@ -837,8 +834,8 @@ const May31: React.FC<ICalendar> = ({
 							cx={22}
 							cy={22}
 							r={22}
-							transform='translate(142 551)'
-							id='day-29'
+							transform="translate(142 551)"
+							id="day-29"
 							style={{ fill: 'red', display: 'none' }}
 						/>
 						<text
@@ -857,8 +854,8 @@ const May31: React.FC<ICalendar> = ({
 							cx={22}
 							cy={22}
 							r={22}
-							transform='translate(142 551)'
-							id='day-30'
+							transform="translate(142 551)"
+							id="day-30"
 							style={{ fill: 'red', display: 'none' }}
 						/>
 						<text
@@ -875,8 +872,8 @@ const May31: React.FC<ICalendar> = ({
 							cx={22}
 							cy={22}
 							r={22}
-							transform='translate(142 551)'
-							id='day-31'
+							transform="translate(142 551)"
+							id="day-31"
 							style={{ fill: 'red', display: 'none' }}
 						/>
 						<text
