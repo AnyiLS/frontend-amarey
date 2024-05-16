@@ -30,7 +30,7 @@ const SubmenuSolution: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 						preserveAspectRatio="xMidYMid slice"
 						width={579.611}
 						height={386.407}
-						xlinkHref="/images/navbar/solution-4.jpg"
+						xlinkHref="/images/navbar/solution-4.webp"
 					/>
 				</pattern>
 				<filter
@@ -77,7 +77,7 @@ const SubmenuSolution: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 						preserveAspectRatio="xMidYMid slice"
 						width={479.529}
 						height={320.034}
-						xlinkHref="/images/navbar/solution-3.jpg"
+						xlinkHref="/images/navbar/solution-3.webp"
 					/>
 				</pattern>
 				<pattern
@@ -89,7 +89,7 @@ const SubmenuSolution: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 					<image
 						width={5472}
 						height={3648}
-						xlinkHref="/images/navbar/solution-2.jpg"
+						xlinkHref="/images/navbar/solution-2.webp"
 					/>
 				</pattern>
 				<pattern
@@ -101,7 +101,7 @@ const SubmenuSolution: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 						preserveAspectRatio="xMidYMid slice"
 						width={479.528}
 						height={319.665}
-						xlinkHref="/images/navbar/solution-1.jpg"
+						xlinkHref="/images/navbar/solution-1.webp"
 					/>
 				</pattern>
 			</defs>

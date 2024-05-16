@@ -93,7 +93,7 @@ const May30: React.FC<CalendarProps> = ({
                     <image
                         width={1500}
                         height={841}
-                        xlinkHref="/images/mobile/events/image-3.jpg"
+                        xlinkHref="/images/mobile/events/image-3.webp"
                     />
                 </pattern>
                 <filter

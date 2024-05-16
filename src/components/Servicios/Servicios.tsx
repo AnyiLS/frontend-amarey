@@ -73,7 +73,7 @@ const Servicios: React.FC = () => {
 			{openVideo && (
 				<div className="fixed w-[100vw] h-[100vh] top-[0] right-[0] z-[1] bg-[#e6e6e6]">
 					<video
-						src="/videos/tinywow_CEDICONOFC (1).mp4"
+						src="https://grupoamarey.com/pdf/video/tinywow_CEDICONOFC (1).mp4"
 						muted={!mute}
 						width="100%"
 						height="100%"

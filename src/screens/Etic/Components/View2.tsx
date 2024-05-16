@@ -38,7 +38,7 @@ const View2: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						preserveAspectRatio="xMidYMid slice"
 						width={528.683}
 						height={297.384}
-						xlinkHref="/images/mobile/etic/etic-2.jpg"
+						xlinkHref="/images/mobile/etic/etic-2.webp"
 					/>
 				</pattern>
 				<filter
@@ -177,7 +177,7 @@ const View2: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						{'Código de ética'}
 					</tspan>
 				</text>
-				<a href="https://juegoseml.co/pdf/codigo-etica.pdf" target='_blank' rel='noreferrer'>
+				<a href="https://grupoamarey.com/pdf/codigo-etica.pdf" target='_blank' rel='noreferrer'>
 					<g transform="translate(166.394 -3645.115)">
 						<g
 							className="o-reward-2-mobile"
@@ -197,7 +197,7 @@ const View2: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						</text>
 					</g>
 				</a>
-				<a href="https://juegoseml.co/pdf/manualcompliance.pdf" target="_blank" rel="noopener noreferrer">
+				<a href="https://grupoamarey.com/pdf/manualcompliance.pdf" target="_blank" rel="noopener noreferrer">
 					<g transform="translate(166.394 -3565.115)">
 						<g
 							className="n-reward-2-mobile"

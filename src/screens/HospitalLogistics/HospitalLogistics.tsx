@@ -38,7 +38,7 @@ const HospitalLogistics: React.FC = (): JSX.Element => {
 									<image
 										width={4032}
 										height={3024}
-										xlinkHref="/images/products/background-hl.jpg"
+										xlinkHref="/images/products/background-hl.webp"
 									/>
 								</pattern>
 								<linearGradient

@@ -40,7 +40,7 @@ const Component20122: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => 
         height="100%"
         viewBox="0 0 693 496"
       >
-        <image width={693} height={496} xlinkHref="/images/mobile/history/20122-1.png" />
+        <image width={693} height={496} xlinkHref="/images/mobile/history/20122-1.webp" />
       </pattern>
       <filter
         id="d-time-line"
@@ -83,7 +83,7 @@ const Component20122: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => 
           preserveAspectRatio="xMidYMid slice"
           width={157.761}
           height={162.257}
-          xlinkHref="/images/mobile/history/20122-2.jpg"
+          xlinkHref="/images/mobile/history/20122-2.webp"
         />
       </pattern>
       <filter

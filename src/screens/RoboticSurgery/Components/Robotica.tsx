@@ -26,7 +26,7 @@ const Robotica: React.FC<{ height: string; onClose: () => void }> = ({
 							preserveAspectRatio="xMidYMid slice"
 							width={1920}
 							height={1280}
-							xlinkHref="/images/cirugia.jpg"
+							xlinkHref="/images/cirugia_11zon.webp"
 						/>
 					</pattern>
 					<linearGradient

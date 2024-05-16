@@ -28,7 +28,7 @@ const SubmenuActualidad: React.FC<{ ref: any }> = ({ ref }) => {
 					<image
 						width={3745}
 						height={2499}
-						xlinkHref="/images/navbar/act-3.jpg"
+						xlinkHref="/images/navbar/act-3.webp"
 					/>
 				</pattern>
 				<filter
@@ -75,7 +75,7 @@ const SubmenuActualidad: React.FC<{ ref: any }> = ({ ref }) => {
 						preserveAspectRatio="xMidYMid slice"
 						width={674.352}
 						height={449.568}
-						xlinkHref="/images/navbar/act-2.jpg"
+						xlinkHref="/images/navbar/act-2.webp"
 					/>
 				</pattern>
 				<pattern
@@ -87,7 +87,7 @@ const SubmenuActualidad: React.FC<{ ref: any }> = ({ ref }) => {
 						preserveAspectRatio="xMidYMid slice"
 						width={674.352}
 						height={341.444}
-						xlinkHref="/images/navbar/act-1.jpg"
+						xlinkHref="/images/navbar/act-1.webp"
 					/>
 				</pattern>
 			</defs>

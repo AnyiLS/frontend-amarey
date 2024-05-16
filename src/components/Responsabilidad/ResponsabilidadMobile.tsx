@@ -38,7 +38,7 @@ const ResponsabilidadMobile: React.FC = (): JSX.Element => {
 						preserveAspectRatio="xMidYMid slice"
 						width={512.814}
 						height={384.611}
-						xlinkHref="/images/mobile/events/image-res-1.jpg"
+						xlinkHref="/images/mobile/events/image-res-1.webp"
 					/>
 				</pattern>
 				<pattern
@@ -50,7 +50,7 @@ const ResponsabilidadMobile: React.FC = (): JSX.Element => {
 						preserveAspectRatio="xMidYMid slice"
 						width={192.029}
 						height={144.035}
-						xlinkHref="/images/mobile/events/image-res-2.jpg"
+						xlinkHref="/images/mobile/events/image-res-2.webp"
 					/>
 				</pattern>
 				<filter
@@ -101,7 +101,7 @@ const ResponsabilidadMobile: React.FC = (): JSX.Element => {
 						preserveAspectRatio="xMidYMid slice"
 						width={189.186}
 						height={141.889}
-						xlinkHref="/images/mobile/events/image-res-3.jpg"
+						xlinkHref="/images/mobile/events/image-res-3.webp"
 					/>
 				</pattern>
 				<filter
@@ -139,7 +139,7 @@ const ResponsabilidadMobile: React.FC = (): JSX.Element => {
 						preserveAspectRatio="xMidYMid slice"
 						width={193.827}
 						height={145.37}
-						xlinkHref="/images/mobile/events/image-res-4.jpg"
+						xlinkHref="/images/mobile/events/image-res-4.webp"
 					/>
 				</pattern>
 				<filter
@@ -164,7 +164,7 @@ const ResponsabilidadMobile: React.FC = (): JSX.Element => {
 						preserveAspectRatio="xMidYMid slice"
 						width={343.09}
 						height={228.584}
-						xlinkHref="/images/mobile/events/images-res-5.jpg"
+						xlinkHref="/images/mobile/events/images-res-5.webp"
 					/>
 				</pattern>
 				<filter

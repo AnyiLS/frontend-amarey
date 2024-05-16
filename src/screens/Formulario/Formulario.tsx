@@ -11,7 +11,7 @@ const Formulario: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 		if (isValid && accept) {
 			axios
 				.post(
-					'http://apiamarey.juegoseml.co/api/guardar-formulario',
+					'http://apiamarey.grupoamarey.com/api/guardar-formulario',
 					data
 				)
 				.then((res: any) => {
@@ -88,7 +88,7 @@ const Formulario: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							preserveAspectRatio="xMidYMid slice"
 							width={1136.776}
 							height={757.906}
-							xlinkHref="/images/contactoformu.jpg"
+							xlinkHref="/images/contactoformu.webp"
 						/>
 					</pattern>
 					<filter
@@ -464,16 +464,16 @@ const Formulario: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 						</foreignObject>
 					<g transform="translate(6856.033 882.241)" onClick={handleSubmit(handleSentContact)}>
 						<g
-							className="r-formu"
+							className="r-formu cursor-pointer"
 							transform="matrix(1, 0, 0, 1, -919.11, -868.16)">
 							<path
-								className="j-formu"
+								className="j-formu cursor-pointer"
 								d="M242.859,0H49.813C29.735,0,11.706,15.351,4.373,38.688L0,52.608H191.444c21.391,0,40.544-16.55,48.08-41.546Z"
 								transform="translate(919.11 868.16)"
 							/>
 						</g>
 						<text
-							className="o-formu"
+							className="o-formu cursor-pointer"
 							transform="translate(85.215 34.232)">
 							<tspan x={0} y={0}>
 								enviar

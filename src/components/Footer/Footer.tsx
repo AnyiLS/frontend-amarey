@@ -194,7 +194,7 @@ const Footer: React.FC = (): JSX.Element => {
 							 <img
 							width={610.636}
 							style={{ objectFit: "contain", width: 841,  objectPosition: "right bottom", height: 360, marginTop: "-19px"}}
-							src="/images/video/mapa.png"
+							src="/images/video/mapa.webp"
 							/>
 						</foreignObject>
 					</g>

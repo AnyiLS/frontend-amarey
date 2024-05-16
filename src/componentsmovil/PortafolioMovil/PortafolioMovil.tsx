@@ -24,7 +24,7 @@ export const PortafolioMovil: React.FC = () => {
 								preserveAspectRatio="xMidYMid slice"
 								width={693.355}
 								height={461.32}
-								xlinkHref="/images/maquinas.png"
+								xlinkHref="/images/maquinas_11zon.webp"
 							/>
 						</pattern>
 						<filter

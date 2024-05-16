@@ -119,7 +119,7 @@ const OurAllises: React.FC = (): JSX.Element => {
 									<image
 										width={4000}
 										height={2250}
-										xlinkHref="/images/our-allises/allises-1.jpg"
+										xlinkHref="/images/our-allises/allises-1.webp"
 									/>
 								</pattern>
 								<filter
@@ -157,7 +157,7 @@ const OurAllises: React.FC = (): JSX.Element => {
 									<image
 										width={4000}
 										height={2250}
-										xlinkHref="/images/our-allises/allises-2.jpg"
+										xlinkHref="/images/our-allises/allises-2.webp"
 									/>
 								</pattern>
 								<filter
@@ -185,7 +185,7 @@ const OurAllises: React.FC = (): JSX.Element => {
 									<image
 										width={4000}
 										height={2250}
-										xlinkHref="/images/our-allises/allises-3.jpg"
+										xlinkHref="/images/our-allises/allises-3.webp"
 									/>
 								</pattern>
 								<clipPath id="t-allises">

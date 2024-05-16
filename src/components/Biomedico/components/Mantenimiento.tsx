@@ -42,7 +42,7 @@ const Mantenimiento: React.FC<IMantenimiento> = ({ onClick }): JSX.Element => {
 							preserveAspectRatio="xMidYMid slice"
 							width={1123.264}
 							height={1495.96}
-							xlinkHref="/images/mantenimiento.jpg"
+							xlinkHref="/images/mantenimiento.webp"
 						/>
 					</pattern>
 				</defs>

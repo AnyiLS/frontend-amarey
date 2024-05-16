@@ -54,7 +54,7 @@ const Cifras: React.FC = () => {
           preserveAspectRatio="xMidYMid slice"
           width={937.511}
           height={625.007}
-          xlinkHref="/images/ComponentTMP_0-image1.png"
+          xlinkHref="/images/ComponentTMP_0-image1_11zon.webp"
         />
       </pattern>
       <filter
@@ -109,7 +109,7 @@ const Cifras: React.FC = () => {
           preserveAspectRatio="xMidYMid slice"
           width={652.069}
           height={435.185}
-          xlinkHref="/images/ComponentTMP_0-image2.png"
+          xlinkHref="/images/ComponentTMP_0-image2_11zon.webp"
         />
       </pattern>
       <linearGradient id="k-2" x1={0.513} x2={0.54} y2={0} xlinkHref="#e" />
@@ -123,7 +123,7 @@ const Cifras: React.FC = () => {
           preserveAspectRatio="xMidYMid slice"
           width={937.511}
           height={625.007}
-          xlinkHref="/images/ComponentTMP_0-image3.png"
+          xlinkHref="/images/ComponentTMP_0-image3_11zon.webp"
         />
       </pattern>
       <filter
@@ -155,7 +155,7 @@ const Cifras: React.FC = () => {
           preserveAspectRatio="xMidYMid slice"
           width={652.069}
           height={434.713}
-          xlinkHref="/images/ComponentTMP_0-image4.png"
+          xlinkHref="/images/ComponentTMP_0-image4_11zon.webp"
         />
       </pattern>
       <filter

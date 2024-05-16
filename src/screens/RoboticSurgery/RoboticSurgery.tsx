@@ -38,7 +38,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 									<image
 										width={1920}
 										height={1280}
-										xlinkHref="/images/products/background-robotic-surgery.jpg"
+										xlinkHref="/images/products/background-robotic-surgery.webp"
 									/>
 								</pattern>
 								<linearGradient

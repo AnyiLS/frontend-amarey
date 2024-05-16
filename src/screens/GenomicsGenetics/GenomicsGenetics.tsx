@@ -38,7 +38,7 @@ const GenomicsGenetics: React.FC = (): JSX.Element => {
 										preserveAspectRatio="xMidYMid slice"
 										width={1920}
 										height={1080}
-										xlinkHref="/images/clave.jpg"
+										xlinkHref="/images/clave.webp"
 									/>
 								</pattern>
 								<linearGradient

@@ -40,7 +40,7 @@ const MedicalDevices: React.FC = (): JSX.Element => {
 										preserveAspectRatio="xMidYMid slice"
 										width={1920}
           height={1077.895}
-										xlinkHref="/images/products/background-medical-devices.jpg"
+										xlinkHref="/images/products/background-medical-devices.webp"
 									/>
 								</pattern>
 								<linearGradient

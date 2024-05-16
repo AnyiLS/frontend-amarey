@@ -30,7 +30,7 @@ const TrabajeNosotros = () => {
 								preserveAspectRatio="xMidYMid slice"
 								width={662.462}
 								height={883.282}
-								xlinkHref="/images/trabajecnosotros.jpg"
+								xlinkHref="/images/trabajecnosotros.webp"
 							/>
 						</pattern>
 						<pattern
@@ -43,7 +43,7 @@ const TrabajeNosotros = () => {
 								preserveAspectRatio="xMidYMid slice"
 								width={718.018}
 								height={478.714}
-								xlinkHref="/images/trabajecn.jpg"
+								xlinkHref="/images/trabajecn.webp"
 							/>
 						</pattern>
 					</defs>
@@ -184,7 +184,7 @@ const TrabajeNosotros = () => {
 								{'vida a '}
 							</tspan>
 							<tspan className="k-trabajo" y={49}>
-								{'atracciondetalento@grupoamarey.c-trabajoom'}
+								{'atracciondetalento@grupoamarey.com'}
 							</tspan>
 							<tspan y={49}>
 								{', indicando la ciudad donde vives.'}
@@ -288,7 +288,7 @@ const TrabajeNosotros = () => {
 								preserveAspectRatio="xMidYMid slice"
 								width={383.462}
 								height={511.283}
-								xlinkHref="/images/trabajecnosotros.jpg"
+								xlinkHref="/images/trabajecnosotros.webp"
 							/>
 						</pattern>
 						<pattern
@@ -301,7 +301,7 @@ const TrabajeNosotros = () => {
 								preserveAspectRatio="xMidYMid slice"
 								width={301.153}
 								height={200.784}
-								xlinkHref="/images/trabajecn.jpg"
+								xlinkHref="/images/trabajecn.webp"
 							/>
 						</pattern>
 					</defs>
@@ -496,7 +496,7 @@ const TrabajeNosotros = () => {
 							{'Amarey, te invitamos a enviar tu hoja de vida a '}
 						</tspan>
 						<tspan className="n-trabajo" x={0} y={45}>
-							{'atracciondetalento@grupoamarey.c-trabajoom'}
+							{'atracciondetalento@grupoamarey.com'}
 						</tspan>
 						<tspan y={45}>{', '}</tspan>
 						<tspan x={0} y={61}>

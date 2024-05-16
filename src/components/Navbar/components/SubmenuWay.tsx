@@ -29,7 +29,7 @@ const SubmenuWay: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 						preserveAspectRatio="xMidYMid slice"
 						width={386.312}
 						height={257.394}
-						xlinkHref="/images/navbar/trayectoria-1.jpg"
+						xlinkHref="/images/navbar/trayectoria-1.webp"
 					/>
 				</pattern>
 				<linearGradient
@@ -50,7 +50,7 @@ const SubmenuWay: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 						preserveAspectRatio="xMidYMid slice"
 						width={386.313}
 						height={257.542}
-						xlinkHref="/images/navbar/trayectoria-2.jpg"
+						xlinkHref="/images/navbar/trayectoria-2.webp"
 					/>
 				</pattern>
 				<pattern
@@ -62,7 +62,7 @@ const SubmenuWay: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 						preserveAspectRatio="xMidYMid slice"
 						width={386.313}
 						height={257.52}
-						xlinkHref="/images/navbar/trayectoria-3.jpg"
+						xlinkHref="/images/navbar/trayectoria-3.webp"
 					/>
 				</pattern>
 				<pattern
@@ -74,7 +74,7 @@ const SubmenuWay: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 					<image
 						width={8688}
 						height={5792}
-						xlinkHref="/images/navbar/trayectoria-4.jpg"
+						xlinkHref="/images/navbar/trayectoria-4.webp"
 					/>
 				</pattern>
 				<pattern
@@ -87,7 +87,7 @@ const SubmenuWay: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 						preserveAspectRatio="xMidYMid slice"
 						width={579.611}
 						height={386.441}
-						xlinkHref="/images/navbar/trayectoria-5.jpg"
+						xlinkHref="/images/navbar/trayectoria-5.webp"
 					/>
 				</pattern>
 				<filter

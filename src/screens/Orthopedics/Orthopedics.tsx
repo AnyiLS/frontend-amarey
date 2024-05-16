@@ -39,7 +39,7 @@ const Orthopedics: React.FC = (): JSX.Element => {
 										preserveAspectRatio="xMidYMid slice"
 										width={1920}
 										height={1080}
-										xlinkHref="/images/products/background-desktop.png"
+										xlinkHref="/images/products/background-desktop.webp"
 									/>
 								</pattern>
 								<linearGradient

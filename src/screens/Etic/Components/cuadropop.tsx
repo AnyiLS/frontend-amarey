@@ -24,7 +24,7 @@ const Cuadropop: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							preserveAspectRatio="xMidYMid slice"
 							width={1463.982}
 							height={975.988}
-							xlinkHref="/images/eticapop.jpg"
+							xlinkHref="/images/eticapop.webp"
 						/>
 					</pattern>
 					<filter

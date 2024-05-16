@@ -149,7 +149,7 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 								<image
 									width={1280}
 									height={720}
-									xlinkHref="/images/fondo-video.png"
+									xlinkHref="/images/fondo-video.webp"
 								/>
 							</pattern>
 							<style>
@@ -182,7 +182,7 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 									preserveAspectRatio="xMidYMid slice"
 									width={635.234}
 									height={399.65}
-									xlinkHref="/images/logo1.png"
+									xlinkHref="/images/logo1.webp"
 								/>
 							</pattern>
 							<filter
@@ -210,7 +210,7 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 									preserveAspectRatio="xMidYMid slice"
 									width={406.584}
 									height={253.223}
-									xlinkHref="/images/logo2.png"
+									xlinkHref="/images/logo2.webp"
 								/>
 							</pattern>
 							<filter
@@ -238,7 +238,7 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 									preserveAspectRatio="xMidYMid slice"
 									width={741.165}
 									height={253.223}
-									xlinkHref="/images/logo3.png"
+									xlinkHref="/images/logo3.webp"
 								/>
 							</pattern>
 							<filter
@@ -399,7 +399,7 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 					</svg>
 					<div className="fixed top-[0] left-[0] h-screen w-full bg-[#e6e6e6] z-[1]" style={{ display: showVideo ? 'flex' : 'none' }}>
 						<video
-							src="/images/video/Reconocimientos_1.mp4"
+							src="https://grupoamarey.com/pdf/video/Reconocimientos_1.mp4"
 							width="100%"
 							height="100%"
 							controls

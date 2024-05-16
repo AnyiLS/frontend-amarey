@@ -34,7 +34,7 @@ const Mantebiomedico: React.FC<IMantenimiento> = ({ onClick }): JSX.Element => {
 							preserveAspectRatio="xMidYMid slice"
 							width={1014.025}
 							height={1482.002}
-							xlinkHref="/images/bio1.jpg"
+							xlinkHref="/images/bio1.webp"
 						/>
 					</pattern>
 					<filter
@@ -59,7 +59,7 @@ const Mantebiomedico: React.FC<IMantenimiento> = ({ onClick }): JSX.Element => {
 							preserveAspectRatio="xMidYMid slice"
 							width={1014.025}
 							height={570.389}
-							xlinkHref="/images/bio2.jpg"
+							xlinkHref="/images/bio2.webp"
 						/>
 					</pattern>
 					<filter

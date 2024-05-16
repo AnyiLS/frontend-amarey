@@ -38,7 +38,7 @@ const View3: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						preserveAspectRatio="xMidYMid slice"
 						width={409.525}
 						height={405.843}
-						xlinkHref="/images/mobile/etic/etic-1.png"
+						xlinkHref="/images/mobile/etic/etic-1.webp"
 					/>
 				</pattern>
 				<filter
@@ -159,7 +159,7 @@ const View3: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 					</tspan>
 					<tspan x={0} y={269}>
 						{
-							'linea.etica@grupoamarey.com'
+							'@grupoamarey.com'
 						}
 					</tspan>
 				</text>

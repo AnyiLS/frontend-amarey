@@ -38,7 +38,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 										preserveAspectRatio="xMidYMid slice"
 										width={1463.982}
 										height={1080}
-										xlinkHref="/images/etic/etic-1.jpg"
+										xlinkHref="/images/etic/etic-1.webp"
 									/>
 								</pattern>
 								<linearGradient
@@ -63,7 +63,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 										preserveAspectRatio="xMidYMid slice"
 										width={1735.09}
 										height={1080}
-										xlinkHref="/images/etic/etic-2.jpg"
+										xlinkHref="/images/etic/etic-2.webp"
 									/>
 								</pattern>
 								<filter

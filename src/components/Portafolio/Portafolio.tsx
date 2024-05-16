@@ -110,7 +110,7 @@ const Portafolio: React.FC = () => {
 								preserveAspectRatio="xMidYMid slice"
 								width={1544.558}
 								height={1027.662}
-								xlinkHref="/images/maquinas.png "
+								xlinkHref="/images/maquinas_11zon.webp"
 							/>
 						</pattern>
 						<filter

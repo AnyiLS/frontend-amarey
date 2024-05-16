@@ -39,7 +39,7 @@ const InstrumentalStyrilation: React.FC = (): JSX.Element => {
 										preserveAspectRatio="xMidYMid slice"
 										width={1920}
 										height={1280}
-										xlinkHref="/images/products/background-instrumental.jpg"
+										xlinkHref="/images/products/background-instrumental.webp"
 									/>
 								</pattern>
 								<linearGradient

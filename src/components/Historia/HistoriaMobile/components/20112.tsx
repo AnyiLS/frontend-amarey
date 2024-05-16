@@ -40,7 +40,7 @@ const Component20112: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => 
         height="100%"
         viewBox="0 0 1018 702"
       >
-        <image width={1018} height={702} xlinkHref="/images/mobile/history/20112-1.png" />
+        <image width={1018} height={702} xlinkHref="/images/mobile/history/20112-1.webp" />
       </pattern>
       <filter
         id="d-time-line"
@@ -83,7 +83,7 @@ const Component20112: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => 
         <image
           width={1920}
           height={1280}
-          xlinkHref="/images/mobile/history/20112-2.jpg"
+          xlinkHref="/images/mobile/history/20112-2.webp"
         />
       </pattern>
       <filter

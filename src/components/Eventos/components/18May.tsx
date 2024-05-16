@@ -39,7 +39,7 @@ const May18: React.FC<ICalendar> = ({ next, prev, today, onChangeDay, onChangeMo
           height="100%"
           viewBox="0 0 1500 841"
         >
-          <image width={1500} height={841} xlinkHref="/images/eventos/29Feb.jpg" />
+          <image width={1500} height={841} xlinkHref="/images/eventos/29Feb.webp" />
         </pattern>
         <pattern
           id="b-item-1813"
@@ -51,7 +51,7 @@ const May18: React.FC<ICalendar> = ({ next, prev, today, onChangeDay, onChangeMo
           <image
             width={6000}
             height={3363}
-            xlinkHref="/images/eventos/3Feb.jpg"
+            xlinkHref="/images/eventos/3Feb.webp"
           />
         </pattern>
         <filter

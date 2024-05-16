@@ -76,7 +76,7 @@ const May23: React.FC<ICalendar> = ({ next, prev, today, onChangeDay, onChangeMo
           <image
             width={6000}
             height={3363}
-            xlinkHref="/images/eventos/3Feb.jpg"
+            xlinkHref="/images/eventos/3Feb.webp"
           />
         </pattern>
         <filter

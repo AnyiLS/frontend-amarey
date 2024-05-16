@@ -26,7 +26,7 @@ const HospitalLogic: React.FC<{ height: string; onClose: () => void }> = ({
 							preserveAspectRatio="xMidYMid slice"
 							width={1920}
 							height={1440}
-							xlinkHref="/images/t-logistic.jpg"
+							xlinkHref="/images/t-logistic.webp"
 						/>
 					</pattern>
 					<clipPath id="b-logistic-t">

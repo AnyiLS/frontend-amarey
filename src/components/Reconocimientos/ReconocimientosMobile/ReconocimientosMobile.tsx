@@ -154,7 +154,7 @@ const ReconocimientosMobile: React.FC = (): JSX.Element => {
 						<image
 							width={1280}
 							height={720}
-							xlinkHref="/images/fondo-video.png"
+							xlinkHref="/images/fondo-video.webp"
 						/>
 					</pattern>
 				</defs>
@@ -272,7 +272,7 @@ const ReconocimientosMobile: React.FC = (): JSX.Element => {
 				className="fixed top-[0] left-[0] h-screen w-full bg-[#e6e6e6] z-[1]"
 				style={{ display: showVideo ? 'flex' : 'none' }}>
 				<video
-					src="/images/video/Reconocimientos_1.mp4"
+					src="https://grupoamarey.com/pdf/video/Reconocimientos_1.mp4"
 					width="100%"
 					height="100%"
 					controls

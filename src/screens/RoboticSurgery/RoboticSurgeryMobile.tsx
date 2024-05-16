@@ -28,7 +28,7 @@ const RoboticSurgeryMobile: React.FC = (): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={1282.5}
 								height={855}
-								xlinkHref="/images/mobile/products/neuro/robotic.jpg"
+								xlinkHref="/images/mobile/products/neuro/robotic.webp"
 							/>
 						</pattern>
 						<linearGradient
@@ -227,7 +227,7 @@ const RoboticSurgeryMobile: React.FC = (): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={1284}
 								height={856}
-								xlinkHref="/images/mobile/products/neuro/robotic.jpg"
+								xlinkHref="/images/mobile/products/neuro/robotic.webp"
 							/>
 						</pattern>
 						<linearGradient

@@ -25,7 +25,7 @@ const Lineacodigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							preserveAspectRatio="xMidYMid slice"
 							width={1463.982}
 							height={975.988}
-							xlinkHref="/images/eticalinea.jpg"
+							xlinkHref="/images/eticalinea.webp"
 						/>
 					</pattern>
 					<clipPath id="b-linea">
@@ -171,7 +171,7 @@ const Lineacodigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 					<text className="l-linea" transform="translate(692 670)">
 						<tspan x={0} y={23}>
 							{
-								'A trav\xE9s del correo electr\xF3nico: linea.e-lineatica@grupoamarey.c-lineaom'
+								'A trav\xE9s del correo electr\xF3nico: @grupoamarey.com'
 							}
 						</tspan>
 					</text>

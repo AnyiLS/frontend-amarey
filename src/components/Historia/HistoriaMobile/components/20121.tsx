@@ -38,7 +38,7 @@ const Component20121: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => 
           preserveAspectRatio="xMidYMid slice"
           width={100.337}
           height={103.197}
-          xlinkHref="/images/mobile/history/20121-1.jpg"
+          xlinkHref="/images/mobile/history/20121-1.webp"
         />
       </pattern>
       <filter
@@ -82,7 +82,7 @@ const Component20121: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => 
         <image
           width={1018}
           height={702}
-          xlinkHref="/images/mobile/history/20121-2.png"
+          xlinkHref="/images/mobile/history/20121-2.webp"
         />
       </pattern>
       <filter

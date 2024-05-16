@@ -26,7 +26,7 @@ const SelecImage: React.FC<{ height: string; onClose: () => void }> = ({
 							preserveAspectRatio="xMidYMid slice"
 							width={1920}
 							height={1280}
-							xlinkHref="/images/instrumental.jpg"
+							xlinkHref="/images/Instrumentalama.webp"
 						/>
 					</pattern>
 					<linearGradient

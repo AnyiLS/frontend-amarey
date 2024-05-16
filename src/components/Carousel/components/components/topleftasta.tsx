@@ -60,7 +60,7 @@ const TopLeftAsta: React.FC<any> = ({onOpenPopup}): JSX.Element => {
 						width={240.325}
 						height={208.367}
 						transform="matrix(0.999, 0.035, -0.035, 0.999, 452.737, 109.716)"
-						xlinkHref="/images/navbar/tt-10.png"
+						xlinkHref="/images/navbar/tt-10.webp"
 					/>
 					<g transform="translate(0)">
 						<g

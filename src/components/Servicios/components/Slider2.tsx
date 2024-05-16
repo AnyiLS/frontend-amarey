@@ -274,7 +274,7 @@ export const Slider2: React.FC<ISlider> = ({ height, index }) => {
 					preserveAspectRatio="xMidYMid slice"
 					width={930.007}
 					height={619.644}
-					xlinkHref="/images/services/ComponentTMP_0-image3.jpg"
+					xlinkHref="/images/services/ComponentTMP_0-image3.webp"
 				/>
 				<pattern
 					id="al-pentagrama"
@@ -303,7 +303,7 @@ export const Slider2: React.FC<ISlider> = ({ height, index }) => {
 						preserveAspectRatio="xMidYMid slice"
 						width={684.388}
 						height={384.958}
-						xlinkHref="	/images/services/ComponentTMP_0-image4.jpg"
+						xlinkHref="	/images/services/ComponentTMP_0-image4.webp"
 					/>
 				</pattern>
 				<pattern
@@ -316,7 +316,7 @@ export const Slider2: React.FC<ISlider> = ({ height, index }) => {
 						preserveAspectRatio="xMidYMid slice"
 						width={684.388}
 						height={456.259}
-						xlinkHref="/images/services/ComponentTMP_0-image5.jpg"
+						xlinkHref="/images/services/ComponentTMP_0-image5.webp"
 					/>
 				</pattern>
 				<clipPath id="bv-pentagrama">

@@ -60,7 +60,7 @@ const Filosofia: React.FC = () => {
 									preserveAspectRatio="xMidYMid slice"
 									width={1163.175}
 									height={773.86}
-									xlinkHref="/images/mobile/filosophy/ComponentTMP_0-image.jpg"
+									xlinkHref="/images/mobile/filosophy/ComponentTMP_0-image.webp"
 								/>
 							</pattern>
 							<filter
@@ -112,7 +112,7 @@ const Filosofia: React.FC = () => {
 									preserveAspectRatio="xMidYMid slice"
 									width={1044.52}
 									height={771.232}
-									xlinkHref="/images/mobile/filosophy/ComponentTMP_0-image2.jpg"
+									xlinkHref="/images/mobile/filosophy/ComponentTMP_0-image2.webp"
 								/>
 							</pattern>
 							<filter
@@ -202,7 +202,7 @@ const Filosofia: React.FC = () => {
 									preserveAspectRatio="xMidYMid slice"
 									width={468.208}
 									height={312.139}
-									xlinkHref="/images/mobile/filosophy/ComponentTMP_0-image3.jpg"
+									xlinkHref="/images/mobile/filosophy/ComponentTMP_0-image3.webp"
 								/>
 							</pattern>
 							<filter
@@ -227,7 +227,7 @@ const Filosofia: React.FC = () => {
 									preserveAspectRatio="xMidYMid slice"
 									width={468.208}
 									height={312.139}
-									xlinkHref="/images/mobile/filosophy/ComponentTMP_0-image4.jpg"
+									xlinkHref="/images/mobile/filosophy/ComponentTMP_0-image4.webp"
 								/>
 							</pattern>
 							<filter
@@ -252,7 +252,7 @@ const Filosofia: React.FC = () => {
 									preserveAspectRatio="xMidYMid slice"
 									width={468.208}
 									height={312.139}
-									xlinkHref="/images/mobile/filosophy/ComponentTMP_0-image5.jpg"
+									xlinkHref="/images/mobile/filosophy/ComponentTMP_0-image5.webp"
 								/>
 							</pattern>
 							<filter
@@ -277,7 +277,7 @@ const Filosofia: React.FC = () => {
 									preserveAspectRatio="xMidYMid slice"
 									width={453.882}
 									height={312.139}
-									xlinkHref="/images/mobile/filosophy/ComponentTMP_0-image6.jpg"
+									xlinkHref="/images/mobile/filosophy/ComponentTMP_0-image6.webp"
 								/>
 							</pattern>
 							<filter
@@ -302,7 +302,7 @@ const Filosofia: React.FC = () => {
 									preserveAspectRatio="xMidYMid slice"
 									width={468.248}
 									height={312.139}
-									xlinkHref="/images/mobile/filosophy/ComponentTMP_0-image7.jpg"
+									xlinkHref="/images/mobile/filosophy/ComponentTMP_0-image7.webp"
 								/>
 							</pattern>
 							<filter
@@ -327,7 +327,7 @@ const Filosofia: React.FC = () => {
 									preserveAspectRatio="xMidYMid slice"
 									width={1139.478}
 									height={854.608}
-									xlinkHref="/images/mobile/filosophy/ComponentTMP_0-image8.jpg"
+									xlinkHref="/images/mobile/filosophy/ComponentTMP_0-image8.webp"
 								/>
 							</pattern>
 						</defs>

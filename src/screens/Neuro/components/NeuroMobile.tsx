@@ -28,7 +28,7 @@ const NeuroMobile: React.FC = (): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={1755.537}
 								height={856}
-								xlinkHref="/images/mobile/products/neuro/neuro.png"
+								xlinkHref="/images/mobile/products/neuro/neuro.webp"
 							/>
 						</pattern>
 						<linearGradient
@@ -173,7 +173,7 @@ const NeuroMobile: React.FC = (): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={1755.537}
 								height={856}
-								xlinkHref="/images/mobile/products/neuro/neuro.png"
+								xlinkHref="/images/mobile/products/neuro/neuro.webp"
 							/>
 						</pattern>
 						<linearGradient

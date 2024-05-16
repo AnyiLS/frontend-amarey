@@ -59,7 +59,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={258}
 								height={172.034}
-								xlinkHref="/images/services/Logistica-Hs.png"
+								xlinkHref="/images/services/Logistica-Hs.webp"
 							/>
 						</pattern>
 						<filter
@@ -85,7 +85,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={170}
 								height={172.034}
-								xlinkHref="/images/services/Equipos-M.png"
+								xlinkHref="/images/services/Equipos-M.webp"
 							/>
 						</pattern>
 						<filter
@@ -111,7 +111,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={308.532}
 								height={205.664}
-								xlinkHref="/images/services/Medicamentos.png"
+								xlinkHref="/images/services/Medicamentos.webp"
 							/>
 						</pattern>
 						<filter
@@ -439,7 +439,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={200}
 								height={172.034}
-								xlinkHref="/images/services/Medicamentos.png"
+								xlinkHref="/images/services/Medicamentos.webp"
 							/>
 						</pattern>
 						<filter
@@ -465,7 +465,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={170.051}
 								height={172.034}
-								xlinkHref="/images/services/Dispositivos-Q.png"
+								xlinkHref="/images/services/Dispositivos-Q.webp"
 							/>
 						</pattern>
 						<filter
@@ -491,7 +491,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={170}
 								height={205.664}
-								xlinkHref="/images/services/Equipos-M.png"
+								xlinkHref="/images/services/Equipos-M.webp"
 							/>
 						</pattern>
 						<filter
@@ -817,7 +817,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={140}
 								height={172.034}
-								xlinkHref="/images/services/Equipos-M.png"
+								xlinkHref="/images/services/Equipos-M.webp"
 							/>
 						</pattern>
 						<filter
@@ -843,7 +843,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={258.051}
 								height={172.034}
-								xlinkHref="/images/services/Ortopedia.png"
+								xlinkHref="/images/services/Ortopedia.webp"
 							/>
 						</pattern>
 						<filter
@@ -869,7 +869,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={170}
 								height={205.664}
-								xlinkHref="/images/services/Dispositivos-Q.png"
+								xlinkHref="/images/services/Dispositivos-Q.webp"
 							/>
 						</pattern>
 						<filter
@@ -1197,7 +1197,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={170}
 								height={172.034}
-								xlinkHref="/images/services/Dispositivos-Q.png"
+								xlinkHref="/images/services/Dispositivos-Q.webp"
 							/>
 						</pattern>
 						<filter
@@ -1223,7 +1223,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={170}
 								height={172.034}
-								xlinkHref="/images/services/Ciruguia-R.png"
+								xlinkHref="/images/services/Ciruguia-R.webp"
 							/>
 						</pattern>
 						<filter
@@ -1249,7 +1249,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={308.532}
 								height={205.664}
-								xlinkHref="/images/mobile/portfolio/image-5.png"
+								xlinkHref="/images/mobile/portfolio/image-5.webp"
 							/>
 						</pattern>
 						<filter
@@ -1575,7 +1575,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={305.839}
 								height={172.034}
-								xlinkHref="/images/mobile/portfolio/image-5.png"
+								xlinkHref="/images/mobile/portfolio/image-5.webp"
 							/>
 						</pattern>
 						<filter
@@ -1601,7 +1601,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={170}
 								height={172.034}
-								xlinkHref="/images/services/Genetica.png"
+								xlinkHref="/images/services/Genetica.webp"
 							/>
 						</pattern>
 						<filter
@@ -1627,7 +1627,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={170}
 								height={205.664}
-								xlinkHref="/images/services/Ciruguia-R.png"
+								xlinkHref="/images/services/Ciruguia-R.webp"
 							/>
 						</pattern>
 						<filter
@@ -1953,7 +1953,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={170}
 								height={172.034}
-								xlinkHref="/images/services/Ciruguia-R.png"
+								xlinkHref="/images/services/Ciruguia-R.webp"
 							/>
 						</pattern>
 						<filter
@@ -2005,7 +2005,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={170}
 								height={205.664}
-								xlinkHref="/images/services/Genetica.png"
+								xlinkHref="/images/services/Genetica.webp"
 							/>
 						</pattern>
 						<filter
@@ -2334,7 +2334,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={170}
 								height={172.034}
-								xlinkHref="/images/services/Genetica.png"
+								xlinkHref="/images/services/Genetica.webp"
 							/>
 						</pattern>
 						<filter
@@ -2360,7 +2360,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={170}
 								height={172.034}
-								xlinkHref="/images/services/Instrumental.png"
+								xlinkHref="/images/services/Instrumental.webp"
 							/>
 						</pattern>
 						<filter
@@ -2386,7 +2386,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={308.532}
 								height={205.664}
-								xlinkHref="/images/mobile/portfolio/imagen-8.jpg"
+								xlinkHref="/images/mobile/portfolio/imagen-8.webp"
 							/>
 						</pattern>
 						<filter
@@ -2744,7 +2744,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={170}
 								height={172.034}
-								xlinkHref="/images/services/Neurointervencionismo.png"
+								xlinkHref="/images/services/Neurointervencionismo.webp"
 							/>
 						</pattern>
 						<filter
@@ -2770,7 +2770,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={170}
 								height={205.664}
-								xlinkHref="/images/services/Instrumental.png"
+								xlinkHref="/images/services/Instrumental.webp"
 							/>
 						</pattern>
 						<filter
@@ -3099,7 +3099,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={170}
 								height={172.034}
-								xlinkHref="/images/services/Instrumental.png"
+								xlinkHref="/images/services/Instrumental.webp"
 							/>
 						</pattern>
 						<filter
@@ -3125,7 +3125,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={170}
 								height={172.034}
-								xlinkHref="/images/services/Logistica-Hs.png"
+								xlinkHref="/images/services/Logistica-Hs.webp"
 							/>
 						</pattern>
 						<filter
@@ -3151,7 +3151,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={220}
 								height={205.664}
-								xlinkHref="/images/services/Neurointervencionismo.png"
+								xlinkHref="/images/services/Neurointervencionismo.webp"
 							/>
 						</pattern>
 						<filter
@@ -3480,7 +3480,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={170}
 								height={172.034}
-								xlinkHref="/images/services/Neurointervencionismo.png"
+								xlinkHref="/images/services/Neurointervencionismo.webp"
 							/>
 						</pattern>
 						<filter
@@ -3506,7 +3506,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={170}
 								height={172.034}
-								xlinkHref="/images/services/Medicamentos.png"
+								xlinkHref="/images/services/Medicamentos.webp"
 							/>
 						</pattern>
 						<filter
@@ -3532,7 +3532,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={170}
 								height={205.664}
-								xlinkHref="/images/services/Logistica-Hs.png"
+								xlinkHref="/images/services/Logistica-Hs.webp"
 							/>
 						</pattern>
 						<filter

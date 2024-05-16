@@ -26,7 +26,7 @@ const Medicinesone: React.FC<{ height: string; onClose: () => void }> = ({
 							preserveAspectRatio="xMidYMid slice"
 							width={1461}
 							height={974}
-							xlinkHref="/images/medicamentos.jpg"
+							xlinkHref="/images/medicamentos.webp"
 						/>
 					</pattern>
 					<linearGradient

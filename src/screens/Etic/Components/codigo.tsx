@@ -23,7 +23,7 @@ const Codigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							preserveAspectRatio="xMidYMid slice"
 							width={1735.09}
 							height={975.988}
-							xlinkHref="/images/codigoetica.jpg"
+							xlinkHref="/images/codigoetica.webp"
 						/>
 					</pattern>
 					<filter
@@ -142,7 +142,7 @@ const Codigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							</tspan>
 						</text>
 						<a
-							href="https://juegoseml.co/pdf/codigo-etica.pdf"
+							href="https://grupoamarey.com/pdf/codigo-etica.pdf"
 							target="_blanck">
 							<g
 								transform="translate(416.637 658.983)"
@@ -176,7 +176,7 @@ const Codigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							</g>
 						</a>
 						<a
-							href="https://juegoseml.co/pdf/manualcompliance.pdf"
+							href="https://grupoamarey.com/pdf/manualcompliance.pdf"
 							target="_blanck">
 							<g
 								transform="translate(774.637 658.983)"

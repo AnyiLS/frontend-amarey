@@ -29,7 +29,7 @@ const InstrumentalStyrilationMobile: React.FC = (): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={1282.5}
 								height={855}
-								xlinkHref="/images/mobile/products/neuro/instrumental.jpg"
+								xlinkHref="/images/mobile/products/neuro/instrumental.webp"
 							/>
 						</pattern>
 						<linearGradient
@@ -176,7 +176,7 @@ const InstrumentalStyrilationMobile: React.FC = (): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={1284}
 								height={856}
-								xlinkHref="/images/mobile/products/neuro/instrumental.jpg"
+								xlinkHref="/images/mobile/products/neuro/instrumental.webp"
 							/>
 						</pattern>
 						<linearGradient

@@ -30,7 +30,7 @@ const SubmenuContact: React.FC<{ ref: any }> = ({ ref }): JSX.Element => {
 						preserveAspectRatio="xMidYMid slice"
 						width={579.611}
 						height={386.407}
-						xlinkHref="/images/navbar/contact-image.jpg"
+						xlinkHref="/images/navbar/contact-image.webp"
 					/>
 				</pattern>
 				<linearGradient

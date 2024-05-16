@@ -720,7 +720,7 @@ const America: React.FC<IAmerica> = ({ height, onClose }): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={106.281}
 								height={59.783}
-								xlinkHref="/images/our-allises/ComponentTMP_0-image12.png"
+								xlinkHref="/images/our-allises/ComponentTMP_0-image12_11zon.webp"
 							/>
 						</pattern>
 						<filter
@@ -755,7 +755,7 @@ const America: React.FC<IAmerica> = ({ height, onClose }): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={106.281}
 								height={59.783}
-								xlinkHref="/images/our-allises/ComponentTMP_0-image13.png"
+								xlinkHref="/images/our-allises/ComponentTMP_0-image13_11zon.webp"
 							/>
 						</pattern>
 						<filter

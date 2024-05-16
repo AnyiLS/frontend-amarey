@@ -80,7 +80,7 @@ const May31: React.FC<ICalendar> = ({
 					<image
 						width={1500}
 						height={841}
-						xlinkHref="/images/eventos/29Feb.jpg"
+						xlinkHref="/images/eventos/29Feb.webp"
 					/>
 				</pattern>
 				<filter

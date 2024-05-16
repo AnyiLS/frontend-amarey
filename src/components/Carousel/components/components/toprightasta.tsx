@@ -34,7 +34,7 @@ const TopRightAsta: React.FC<{ onUnselected: () => void }> = ({
 						<image
 							width={736}
 							height={610}
-							xlinkHref="/images/navbar/tt-7.png"
+							xlinkHref="/images/navbar/tt-7.webp"
 						/>
 					</pattern>
 					<filter
@@ -69,7 +69,7 @@ const TopRightAsta: React.FC<{ onUnselected: () => void }> = ({
 							preserveAspectRatio="xMidYMid slice"
 							width={329.336}
 							height={219.432}
-							xlinkHref="/images/navbar/tt-8.jpg"
+							xlinkHref="/images/navbar/tt-8.webp"
 						/>
 					</pattern>
 				</defs>

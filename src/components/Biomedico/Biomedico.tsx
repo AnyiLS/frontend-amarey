@@ -36,7 +36,7 @@ const Biomedico: React.FC = (): JSX.Element => {
 										preserveAspectRatio="xMidYMid slice"
 										width={1123.264}
 										height={1684.896}
-										xlinkHref="/images/biomedico.jpg"
+										xlinkHref="/images/biomedico.webp"
 									/>
 								</pattern>
 								<filter

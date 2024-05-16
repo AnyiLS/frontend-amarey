@@ -79,7 +79,7 @@ const May18: React.FC<CalendarProps> = ({
                     <image
                         width={1500}
                         height={841}
-                        xlinkHref="/images/mobile/events/image-3.jpg"
+                        xlinkHref="/images/mobile/events/image-3.webp"
                     />
                 </pattern>
                 <pattern
@@ -91,7 +91,7 @@ const May18: React.FC<CalendarProps> = ({
                     <image
                         width={6000}
                         height={3363}
-                        xlinkHref="/images/mobile/events/image-1.jpg"
+                        xlinkHref="/images/mobile/events/image-1.webp"
                     />
                 </pattern>
                 <clipPath id="h-pentagrama">

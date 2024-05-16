@@ -28,7 +28,7 @@ const HospitalLogisticsMobile: React.FC = (): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={1141.333}
 								height={856}
-								xlinkHref="/images/mobile/products/neuro/hospital-log.jpg"
+								xlinkHref="/images/mobile/products/neuro/hospital-log.webp"
 							/>
 						</pattern>
 						<linearGradient
@@ -182,7 +182,7 @@ const HospitalLogisticsMobile: React.FC = (): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={1141.333}
 								height={856}
-								xlinkHref="/images/mobile/products/neuro/hospital-log.jpg"
+								xlinkHref="/images/mobile/products/neuro/hospital-log.webp"
 							/>
 						</pattern>
 						<linearGradient

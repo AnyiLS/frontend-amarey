@@ -54,7 +54,7 @@ const Historia: React.FC = (): JSX.Element => {
 							preserveAspectRatio="xMidYMid slice"
 							width={797}
 							height={1195.5}
-							xlinkHref="/images/imagenbebe.jpg"
+							xlinkHref="/images/imagenbebe.webp"
 						/>
 					</pattern>
 					<clipPath id="b-histo">

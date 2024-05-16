@@ -73,7 +73,7 @@ const May02: React.FC<ICalendar> = ({ next, prev, today, onChangeDay, onLessMont
 					<image
 						width={6000}
 						height={3363}
-						xlinkHref="/images/eventos/3Feb.jpg"
+						xlinkHref="/images/eventos/3Feb.webp"
 					/>
 				</pattern>
 				<pattern
@@ -85,7 +85,7 @@ const May02: React.FC<ICalendar> = ({ next, prev, today, onChangeDay, onLessMont
 					<image
 						width={1500}
 						height={1000}
-						xlinkHref="/images/eventos/9Feb.jpg"
+						xlinkHref="/images/eventos/9Feb.webp"
 					/>
 				</pattern>
 			</defs>

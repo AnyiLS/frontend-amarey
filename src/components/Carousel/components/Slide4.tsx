@@ -449,7 +449,7 @@ const Slide4: React.FC<ISlide> = ({ height, image, onReturn, onOpenPopup }): JSX
 								<image
 									width={752}
 									height={652}
-									xlinkHref="/images/navbar/ComponentTMP_0-image.png"
+									xlinkHref="/images/navbar/ComponentTMP_0-image.webp"
 								/>
 							</pattern>
 							<pattern
@@ -461,7 +461,7 @@ const Slide4: React.FC<ISlide> = ({ height, image, onReturn, onOpenPopup }): JSX
 									preserveAspectRatio="none"
 									width={390}
 									height={323}
-									xlinkHref="/images/navbar/ComponentTMP_0-image2.png"
+									xlinkHref="/images/navbar/ComponentTMP_0-image2.webp"
 								/>
 							</pattern>
 							<pattern
@@ -473,7 +473,7 @@ const Slide4: React.FC<ISlide> = ({ height, image, onReturn, onOpenPopup }): JSX
 								<image
 									width={724}
 									height={744}
-									xlinkHref="/images/navbar/ComponentTMP_0-image3.png"
+									xlinkHref="/images/navbar/ComponentTMP_0-image3.webp"
 								/>
 							</pattern>
 							<pattern
@@ -485,7 +485,7 @@ const Slide4: React.FC<ISlide> = ({ height, image, onReturn, onOpenPopup }): JSX
 								<image
 									width={744}
 									height={752}
-									xlinkHref="/images/navbar/ComponentTMP_0-image4.png"
+									xlinkHref="/images/navbar/ComponentTMP_0-image4.webp"
 								/>
 							</pattern>
 							<pattern
@@ -497,7 +497,7 @@ const Slide4: React.FC<ISlide> = ({ height, image, onReturn, onOpenPopup }): JSX
 								<image
 									width={856}
 									height={644}
-									xlinkHref="/images/navbar/ComponentTMP_0-image5.png"
+									xlinkHref="/images/navbar/ComponentTMP_0-image5.webp"
 								/>
 							</pattern>
 						</defs>

@@ -54,7 +54,7 @@ export const CarouselMovil: React.FC = () => {
 									preserveAspectRatio="xMidYMid slice"
 									width={1092.534}
 									height={728.356}
-									xlinkHref="/images/movil.jpg"
+									xlinkHref="/images/movil.webp"
 								/>
 							</pattern>
 							<filter
@@ -340,7 +340,7 @@ export const CarouselMovil: React.FC = () => {
 									preserveAspectRatio="xMidYMid slice"
 									width={1092.534}
 									height={728.356}
-									xlinkHref="/images/product1.jpg"
+									xlinkHref="/images/product1.webp"
 								/>
 							</pattern>
 							<filter
@@ -495,7 +495,7 @@ export const CarouselMovil: React.FC = () => {
 									preserveAspectRatio="xMidYMid slice"
 									width={1092.534}
 									height={728.356}
-									xlinkHref="/images/slider3.jpg"
+									xlinkHref="/images/slider3.webp"
 								/>
 							</pattern>
 							<filter
@@ -690,7 +690,7 @@ export const CarouselMovil: React.FC = () => {
 										preserveAspectRatio="none"
 										width={148.114}
 										height={122.757}
-										xlinkHref="/images/mobile/ComponentTMP_0-image2.png"
+										xlinkHref="/images/mobile/ComponentTMP_0-image2.webp"
 									/>
 								</pattern>
 							</defs>
@@ -2577,7 +2577,7 @@ export const CarouselMovil: React.FC = () => {
 				className="fixed h-screen w-screen top-0 left-0 z-[100] bg-[#e6e6e6]"
 				style={{ display: showPopup ? 'flex' : 'none' }}>
 				<video
-					src="/images/video/Origen pentamero_1.mp4"
+					src="https://grupoamarey.com/pdf/video/Origen pentamero_1.mp4"
 					muted={mute}
 					controls
 					className="w-full h-full"

@@ -27,7 +27,7 @@ const ProductosMobile: React.FC = (): JSX.Element => {
 							preserveAspectRatio="xMidYMid slice"
 							width={170.144}
 							height={113.429}
-							xlinkHref="/images/mobile/products/neuro/neuro-2.jpg"
+							xlinkHref="/images/mobile/products/neuro/neuro-2.webp"
 						/>
 					</pattern>
 					<filter
@@ -52,7 +52,7 @@ const ProductosMobile: React.FC = (): JSX.Element => {
 						<image
 							width={1920}
 							height={1280}
-							xlinkHref="/images/mobile/products/neuro/robotic.jpg"
+							xlinkHref="/images/mobile/products/neuro/robotic.webp"
 						/>
 					</pattern>
 					<filter
@@ -77,7 +77,7 @@ const ProductosMobile: React.FC = (): JSX.Element => {
 							preserveAspectRatio="xMidYMid slice"
 							width={170.144}
 							height={95.706}
-							xlinkHref="/images/mobile/products/neuro/orthopedic.png"
+							xlinkHref="/images/mobile/products/neuro/orthopedic.webp"
 						/>
 					</pattern>
 					<filter
@@ -102,7 +102,7 @@ const ProductosMobile: React.FC = (): JSX.Element => {
 							preserveAspectRatio="xMidYMid slice"
 							width={170.144}
 							height={95.519}
-							xlinkHref="/images/mobile/products/neuro/medicos-clinicos.png"
+							xlinkHref="/images/mobile/products/neuro/medicos-clinicos.webp"
 						/>
 					</pattern>
 					<filter
@@ -127,7 +127,7 @@ const ProductosMobile: React.FC = (): JSX.Element => {
 						<image
 							width={1966}
 							height={1311}
-							xlinkHref="/images/mobile/products/neuro/image-5.jpg"
+							xlinkHref="/images/mobile/products/neuro/image-5.webp"
 						/>
 					</pattern>
 					<filter
@@ -152,7 +152,7 @@ const ProductosMobile: React.FC = (): JSX.Element => {
 							preserveAspectRatio="xMidYMid slice"
 							width={170.144}
 							height={113.418}
-							xlinkHref="/images/mobile/products/neuro/medic-clinic.png"
+							xlinkHref="/images/mobile/products/neuro/medic-clinic.webp"
 						/>
 					</pattern>
 					<filter
@@ -177,7 +177,7 @@ const ProductosMobile: React.FC = (): JSX.Element => {
 							preserveAspectRatio="xMidYMid slice"
 							width={170.144}
 							height={113.416}
-							xlinkHref="/images/mobile/products/neuro/cuidado.jpg"
+							xlinkHref="/images/mobile/products/neuro/cuidado.webp"
 						/>
 					</pattern>
 					<filter
@@ -202,7 +202,7 @@ const ProductosMobile: React.FC = (): JSX.Element => {
 							preserveAspectRatio="xMidYMid slice"
 							width={189.286}
 							height={92.296}
-							xlinkHref="/images/mobile/products/neuro/neuro.png"
+							xlinkHref="/images/mobile/products/neuro/neuro.webp"
 						/>
 					</pattern>
 					<filter
@@ -227,7 +227,7 @@ const ProductosMobile: React.FC = (): JSX.Element => {
 							preserveAspectRatio="xMidYMid slice"
 							width={170.144}
 							height={113.429}
-							xlinkHref="/images/mobile/products/neuro/instrumental.jpg"
+							xlinkHref="/images/mobile/products/neuro/instrumental.webp"
 						/>
 					</pattern>
 					<filter
@@ -252,7 +252,7 @@ const ProductosMobile: React.FC = (): JSX.Element => {
 							preserveAspectRatio="xMidYMid slice"
 							width={170.144}
 							height={95.706}
-							xlinkHref="/images/mobile/products/neuro/geno.jpg"
+							xlinkHref="/images/mobile/products/neuro/geno.webp"
 						/>
 					</pattern>
 					<filter

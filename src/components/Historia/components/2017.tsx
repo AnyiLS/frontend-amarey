@@ -42,7 +42,7 @@ const LifeLine2017: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeSt
 					<image
 						width={768}
 						height={364}
-						xlinkHref="/images/history/2017-2.png"
+						xlinkHref="/images/history/2017-2.webp"
 					/>
 				</pattern>
 				<filter
@@ -100,7 +100,7 @@ const LifeLine2017: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeSt
 						preserveAspectRatio="xMidYMid slice"
 						width={475.286}
 						height={317.259}
-						xlinkHref="/images/history/2017-1.png"
+						xlinkHref="/images/history/2017-1.webp"
 					/>
 				</pattern>
 				<filter

@@ -23,7 +23,7 @@ const View1: React.FC<IEtic> = ({onNext}): JSX.Element => {
 						preserveAspectRatio="xMidYMid slice"
 						width={523.708}
 						height={519}
-						xlinkHref="/images/mobile/etic/etic-1.png"
+						xlinkHref="/images/mobile/etic/etic-1.webp"
 					/>
 				</pattern>
 				<linearGradient
@@ -45,7 +45,7 @@ const View1: React.FC<IEtic> = ({onNext}): JSX.Element => {
 					<image
 						width={6000}
 						height={3375}
-						xlinkHref="/images/mobile/etic/etic-2.jpg"
+						xlinkHref="/images/mobile/etic/etic-2.webp"
 					/>
 				</pattern>
 				<linearGradient

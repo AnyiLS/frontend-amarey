@@ -31,7 +31,7 @@ const Responsabilidad: React.FC = (): JSX.Element => {
 							preserveAspectRatio="xMidYMid slice"
 							width={1221.353}
 							height={916.015}
-							xlinkHref="/images/grupo.jpg"
+							xlinkHref="/images/grupo.webp"
 						/>
 					</pattern>
 				</defs>
@@ -157,7 +157,7 @@ const Responsabilidad: React.FC = (): JSX.Element => {
 							preserveAspectRatio="xMidYMid slice"
 							width={585.936}
 							height={390.38}
-							xlinkHref="/images/mante1.jpg"
+							xlinkHref="/images/mante1.webp"
 						/>
 					</pattern>
 					<filter
@@ -208,7 +208,7 @@ const Responsabilidad: React.FC = (): JSX.Element => {
 							preserveAspectRatio="xMidYMid slice"
 							width={345.28}
 							height={258.96}
-							xlinkHref="/images/mante2.jpg"
+							xlinkHref="/images/mante2.webp"
 						/>
 					</pattern>
 					<filter
@@ -246,7 +246,7 @@ const Responsabilidad: React.FC = (): JSX.Element => {
 							preserveAspectRatio="xMidYMid slice"
 							width={345.28}
 							height={258.96}
-							xlinkHref="/images/mante3.jpg"
+							xlinkHref="/images/mante3.webp"
 						/>
 					</pattern>
 					<filter
@@ -284,7 +284,7 @@ const Responsabilidad: React.FC = (): JSX.Element => {
 							preserveAspectRatio="xMidYMid slice"
 							width={345.248}
 							height={258.96}
-							xlinkHref="/images/mante4.jpg"
+							xlinkHref="/images/mante4.webp"
 						/>
 					</pattern>
 					<filter

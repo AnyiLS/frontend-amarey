@@ -29,7 +29,7 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={1520}
 								height={855}
-								xlinkHref="/images/mobile/products/neuro/geno.jpg"
+								xlinkHref="/images/mobile/products/neuro/geno.webp"
 							/>
 						</pattern>
 						<filter
@@ -195,7 +195,7 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={1284}
 								height={856}
-								xlinkHref="/images/mobile/products/neuro/geno-1.jpg"
+								xlinkHref="/images/mobile/products/neuro/geno-1.webp"
 							/>
 						</pattern>
 						<linearGradient
@@ -450,7 +450,7 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={1284}
 								height={856}
-								xlinkHref="/images/mobile/products/neuro/geno-2.jpg"
+								xlinkHref="/images/mobile/products/neuro/geno-2.webp"
 							/>
 						</pattern>
 						<linearGradient

@@ -30,7 +30,7 @@ const MedicinesMobile: React.FC = (): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={1284}
 								height={856}
-								xlinkHref="/images/mobile/products/neuro/neuro-2.jpg"
+								xlinkHref="/images/mobile/products/neuro/neuro-2.webp"
 							/>
 						</pattern>
 						<linearGradient
@@ -176,7 +176,7 @@ const MedicinesMobile: React.FC = (): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={1284}
 								height={856}
-								xlinkHref="/images/mobile/products/neuro/neuro-2.jpg"
+								xlinkHref="/images/mobile/products/neuro/neuro-2.webp"
 							/>
 						</pattern>
 						<linearGradient

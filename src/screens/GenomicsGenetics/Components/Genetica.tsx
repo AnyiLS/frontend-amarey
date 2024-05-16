@@ -21,7 +21,7 @@ const Genetica: React.FC<{ onChangeClick: () => void }> = ({
 							preserveAspectRatio="xMidYMid slice"
 							width={1920}
 							height={1280}
-							xlinkHref="/images/gentica.jpg"
+							xlinkHref="/images/gentica.webp"
 						/>
 					</pattern>
 					<linearGradient

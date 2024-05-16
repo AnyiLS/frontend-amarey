@@ -26,7 +26,7 @@ const NeuroImage: React.FC<{ height: string; onClose: () => void }> = ({
 							preserveAspectRatio="xMidYMid slice"
 							width={1999.59}
           height={975}
-							xlinkHref="/images/neuro.jpg"
+							xlinkHref="/images/neuro.webp"
 						/>
 					</pattern>
 					<linearGradient

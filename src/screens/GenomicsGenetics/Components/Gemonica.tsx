@@ -22,7 +22,7 @@ const Gemonica: React.FC<{ onChangeClick: () => void }> = ({
 							preserveAspectRatio="xMidYMid slice"
 							width={1465.728}
 							height={977.152}
-							xlinkHref="/images/geno.jpg"
+							xlinkHref="/images/geno.webp"
 						/>
 					</pattern>
 					<clipPath id="b-genomica">

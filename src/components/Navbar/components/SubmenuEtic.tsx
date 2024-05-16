@@ -29,7 +29,7 @@ const SubmenuEtic: React.FC<{ref: any}> = ({ ref }) => {
 					<image
 						width={7952}
 						height={5304}
-						xlinkHref="/images/navbar/etic-1.jpg"
+						xlinkHref="/images/navbar/etic-1.webp"
 					/>
 				</pattern>
 				<linearGradient

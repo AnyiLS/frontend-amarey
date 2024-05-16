@@ -43,7 +43,7 @@ const BiomedicoMobile: React.FC = (): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={490.013}
 								height={652.598}
-								xlinkHref="/images/mobile/biomedic/biomedico-3.jpg"
+								xlinkHref="/images/mobile/biomedic/biomedico-3.webp"
 							/>
 						</pattern>
 						<filter
@@ -194,7 +194,7 @@ const BiomedicoMobile: React.FC = (): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={490.013}
 								height={652.598}
-								xlinkHref="/images/mobile/biomedic/biomedic-4.jpg"
+								xlinkHref="/images/mobile/biomedic/biomedic-4.webp"
 							/>
 						</pattern>
 						<filter
@@ -422,7 +422,7 @@ const BiomedicoMobile: React.FC = (): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={343.09}
 								height={501.427}
-								xlinkHref="/images/mobile/biomedic/biomedico-1.jpg"
+								xlinkHref="/images/mobile/biomedic/biomedico-1.webp"
 							/>
 						</pattern>
 						<filter
@@ -448,7 +448,7 @@ const BiomedicoMobile: React.FC = (): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={343.09}
 								height={457.453}
-								xlinkHref="/images/mobile/biomedic/biomedico-2.jpg"
+								xlinkHref="/images/mobile/biomedic/biomedico-2.webp"
 							/>
 						</pattern>
 						<filter

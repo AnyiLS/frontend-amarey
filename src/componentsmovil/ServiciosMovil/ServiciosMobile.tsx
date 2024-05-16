@@ -245,20 +245,20 @@ export const ServiciosMovil: React.FC = () => {
 								preserveAspectRatio="xMidYMid slice"
 								width={210}
 								height={139.919}
-								xlinkHref="/images/services/ComponentTMP_0-image3.jpg"
+								xlinkHref="/images/services/ComponentTMP_0-image3.webp"
 							/>
 						</pattern>
 						<pattern
 							id="f-servicios-2-mobile"
 							width={1}
 							height={1}
-							patternTransform="matrix(1, 0, 0, -1, 0, 318.175)"
+							patternTransform="matrix(1, 0, 0, -1, 0, 373.175)"
 							viewBox="4.941 19.084 275.099 120.92">
 							<image
 								preserveAspectRatio="xMidYMid slice"
 								width={282.83}
 								height={159.088}
-								xlinkHref="/images/services/ComponentTMP_0-image4.jpg"
+								xlinkHref="/images/services/ComponentTMP_0-image4.webp"
 							/>
 						</pattern>
 						<pattern
@@ -271,7 +271,7 @@ export const ServiciosMovil: React.FC = () => {
 								preserveAspectRatio="xMidYMid slice"
 								width={282.83}
 								height={188.553}
-								xlinkHref="/images/services/ComponentTMP_0-image5.JPG"
+								xlinkHref="/images/services/ComponentTMP_0-image5.webp"
 							/>
 						</pattern>
 						<clipPath id="bla-servicios-1">
@@ -1888,7 +1888,7 @@ export const ServiciosMovil: React.FC = () => {
 			{openVideo && (
 				<div className="fixed w-[100vw] h-[100vh] top-[0] right-[0] z-[1] bg-[#e6e6e6]">
 					<video
-						src="/videos/tinywow_CEDICONOFC (1).mp4"
+						src="https://grupoamarey.com/pdf/video/tinywow_CEDICONOFC (1).mp4"
 						muted={!mute}
 						width="100%"
 						height="100%"

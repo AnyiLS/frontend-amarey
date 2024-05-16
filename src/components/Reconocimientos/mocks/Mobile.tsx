@@ -2,7 +2,7 @@ import React from 'react'
 
 export const carouselItemsMobile = [
 	{
-		image: '/images/mobile/rewards/carousel-1.png',
+		image: '/images/mobile/rewards/carousel-1.webp',
 		text: (onNext: () => void, onPrev: () => void) => (
 			<React.Fragment>
 				<defs>
@@ -33,7 +33,7 @@ export const carouselItemsMobile = [
 							preserveAspectRatio="xMidYMid slice"
 							width={329.984}
 							height={207.606}
-							xlinkHref="/images/mobile/rewards/carousel-1.png"
+							xlinkHref="/images/mobile/rewards/carousel-1.webp"
 						/>
 					</pattern>
 					<filter
@@ -59,7 +59,7 @@ export const carouselItemsMobile = [
 							preserveAspectRatio="xMidYMid slice"
 							width={237.421}
 							height={147.867}
-							xlinkHref="/images/mobile/rewards/carousel-1.png"
+							xlinkHref="/images/mobile/rewards/carousel-1.webp"
 						/>
 					</pattern>
 					<filter
@@ -85,7 +85,7 @@ export const carouselItemsMobile = [
 							preserveAspectRatio="xMidYMid slice"
 							width={432.796}
 							height={147.867}
-							xlinkHref="/images/mobile/rewards/carousel-2.png"
+							xlinkHref="/images/mobile/rewards/carousel-2.webp"
 						/>
 					</pattern>
 					<filter
@@ -269,7 +269,7 @@ export const carouselItemsMobile = [
 		),
 	},
 	{
-		image: '/images/mobile/rewards/carousel-1.png',
+		image: '/images/mobile/rewards/carousel-1.webp',
 		text: (onNext: () => void, onPrev: () => void) => (
 			<React.Fragment>
 				<defs>
@@ -300,7 +300,7 @@ export const carouselItemsMobile = [
 							preserveAspectRatio="xMidYMid slice"
 							width={333.338}
 							height={207.605}
-							xlinkHref="/images/mobile/rewards/carousel-1.png"
+							xlinkHref="/images/mobile/rewards/carousel-1.webp"
 						/>
 					</pattern>
 					<filter
@@ -326,7 +326,7 @@ export const carouselItemsMobile = [
 							preserveAspectRatio="xMidYMid slice"
 							width={236.069}
 							height={147.867}
-							xlinkHref="/images/mobile/rewards/carousel-1.png"
+							xlinkHref="/images/mobile/rewards/carousel-1.webp"
 						/>
 					</pattern>
 					<filter
@@ -352,7 +352,7 @@ export const carouselItemsMobile = [
 							preserveAspectRatio="xMidYMid slice"
 							width={235.031}
 							height={147.867}
-							xlinkHref="/images/mobile/rewards/carousel-1.png"
+							xlinkHref="/images/mobile/rewards/carousel-1.webp"
 						/>
 					</pattern>
 					<filter
@@ -527,7 +527,7 @@ export const carouselItemsMobile = [
 		),
 	},
 	{
-		image: '/images/mobile/rewards/carousel-1.png',
+		image: '/images/mobile/rewards/carousel-1.webp',
 		text: (onNext: () => void, onPrev: () => void) => (
 			<React.Fragment>
 				<defs>
@@ -558,7 +558,7 @@ export const carouselItemsMobile = [
 							preserveAspectRatio="xMidYMid slice"
 							width={331.44}
 							height={207.606}
-							xlinkHref="/images/mobile/rewards/carousel-1.png"
+							xlinkHref="/images/mobile/rewards/carousel-1.webp"
 						/>
 					</pattern>
 					<filter
@@ -584,7 +584,7 @@ export const carouselItemsMobile = [
 							preserveAspectRatio="xMidYMid slice"
 							width={237.421}
 							height={147.867}
-							xlinkHref="/images/mobile/rewards/carousel-1.png"
+							xlinkHref="/images/mobile/rewards/carousel-1.webp"
 						/>
 					</pattern>
 					<pattern
@@ -597,7 +597,7 @@ export const carouselItemsMobile = [
 							preserveAspectRatio="xMidYMid slice"
 							width={432.796}
 							height={147.867}
-							xlinkHref="/images/mobile/rewards/carousel-2.png"
+							xlinkHref="/images/mobile/rewards/carousel-2.webp"
 						/>
 					</pattern>
 					<filter
@@ -797,7 +797,7 @@ export const carouselItemsMobile = [
 		),
 	},
 	{
-		image: '/images/mobile/rewards/carousel-1.png',
+		image: '/images/mobile/rewards/carousel-1.webp',
 		text: (onNext: () => void, onPrev: () => void) => (
 			<React.Fragment>
 				<defs>
@@ -828,7 +828,7 @@ export const carouselItemsMobile = [
 							preserveAspectRatio="xMidYMid slice"
 							width={607.645}
 							height={207.605}
-							xlinkHref="/images/mobile/rewards/carousel-2.png"
+							xlinkHref="/images/mobile/rewards/carousel-2.webp"
 						/>
 					</pattern>
 					<filter
@@ -854,7 +854,7 @@ export const carouselItemsMobile = [
 							preserveAspectRatio="xMidYMid slice"
 							width={235.031}
 							height={147.867}
-							xlinkHref="/images/mobile/rewards/carousel-1.png"
+							xlinkHref="/images/mobile/rewards/carousel-1.webp"
 						/>
 					</pattern>
 					<filter

@@ -29,7 +29,7 @@ const WoundCareMobile: React.FC = (): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={1284.153}
 								height={856}
-								xlinkHref="/images/mobile/products/neuro/cuidado.jpg"
+								xlinkHref="/images/mobile/products/neuro/cuidado.webp"
 							/>
 						</pattern>
 						<linearGradient
@@ -182,7 +182,7 @@ const WoundCareMobile: React.FC = (): JSX.Element => {
 								preserveAspectRatio="xMidYMid slice"
 								width={1284.153}
 								height={856}
-								xlinkHref="/images/mobile/products/neuro/cuidado.jpg"
+								xlinkHref="/images/mobile/products/neuro/cuidado.webp"
 							/>
 						</pattern>
 						<linearGradient

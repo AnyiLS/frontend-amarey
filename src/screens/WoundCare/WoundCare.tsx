@@ -37,7 +37,7 @@ const WoundCare: React.FC = (): JSX.Element => {
 										preserveAspectRatio="xMidYMid slice"
 										width={1920}
 										height={1080}
-										xlinkHref="/images/products/background-heridas.jpg"
+										xlinkHref="/images/products/background-heridas.webp"
 									/>
 								</pattern>
 								<linearGradient

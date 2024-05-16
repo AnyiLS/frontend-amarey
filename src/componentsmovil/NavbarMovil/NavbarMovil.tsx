@@ -24,7 +24,7 @@ export const NavbarMovil: React.FC = () => {
 		if (isValid && accept) {
 			axios
 				.post(
-					'http://apiamarey.juegoseml.co/api/guardar-formulario',
+					'http://apiamarey.grupoamarey.com/api/guardar-formulario',
 					data
 				)
 				.then((res: any) => {
@@ -3255,7 +3255,7 @@ export const NavbarMovil: React.FC = () => {
 								preserveAspectRatio="xMidYMid slice"
 								width={426.252}
 								height={284.189}
-								xlinkHref="/images/mobile/allises/contactMenu.jpg"
+								xlinkHref="/images/mobile/allises/contactMenu.webp"
 							/>
 						</pattern>
 						<filter

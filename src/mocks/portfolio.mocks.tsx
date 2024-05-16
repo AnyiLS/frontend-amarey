@@ -14,7 +14,7 @@ export interface CarouselPortfolio {
 export const carouselPortfolio: CarouselPortfolio[] = [
     
     {
-        images: '/images/services/Medicamentos.png',
+        images: '/images/services/Medicamentos.webp',
         title: 'Medicamentos',
         x: 55,
         x_selected: 15,
@@ -23,7 +23,7 @@ export const carouselPortfolio: CarouselPortfolio[] = [
         viewbox_2: '0 6.532 241.811 269.735'
     },
     {
-        images: '/images/image_portfolio_2.png',
+        images: '/images/image_portfolio_2.webp',
         title: 'Equipos Médicos',
         x_selected: 15,
         x: 42.715,
@@ -31,7 +31,7 @@ export const carouselPortfolio: CarouselPortfolio[] = [
         viewbox: '0 6.532 241.811 269.735'
     },
     {
-        images: '/images/dispositivo.png',
+        images: '/images/dispositivo.webp',
         title: 'Dispositivos',
         x_selected: 0,
         x: 82.715,
@@ -41,7 +41,7 @@ export const carouselPortfolio: CarouselPortfolio[] = [
         viewbox: '0 6.532 241.811 269.735'
     },
     {
-        images: '/images/services/Ortopedia.png',
+        images: '/images/services/Ortopedia.webp',
         title: 'Ortopedia',
         x_selected: 0,
         x: 93.715,
@@ -50,7 +50,7 @@ export const carouselPortfolio: CarouselPortfolio[] = [
         viewbox_2: '65.554 6.532 241.811 269.735'
     },
     {
-        images: '/images/cirugia.png',
+        images: '/images/cirugia.webp',
         title: 'Cirugía robótica',
         x_selected: 0,
         x: 57.715,
@@ -58,7 +58,7 @@ export const carouselPortfolio: CarouselPortfolio[] = [
         viewbox: '0 6.532 241.811 269.735'
     },
     {
-        images: '/images/genetica.png',
+        images: '/images/genetica.webp',
         title: 'Genómica y genética',
         x_selected: 0,
         x: 27.715,
@@ -68,7 +68,7 @@ export const carouselPortfolio: CarouselPortfolio[] = [
         width: '600'
     },
     {
-        images: '/images/ciudado.png',
+        images: '/images/ciudado.webp',
         title: 'Cuidado avanzado',
         title_2: 'de heridas',
         x_2: 90,
@@ -78,7 +78,7 @@ export const carouselPortfolio: CarouselPortfolio[] = [
         viewbox: '0 6.532 241.811 269.735'
     },
     {
-        images: '/images/Instrumentalama.png',
+        images: '/images/Instrumentalama.webp',
         title: 'Instrumental y',
         title_2: 'esterilización',
         x_2: 67.715,
@@ -90,7 +90,7 @@ export const carouselPortfolio: CarouselPortfolio[] = [
         width: '600'
     },
     {
-        images: '/images/image_portfolio.png',
+        images: '/images/image_portfolio.webp',
         title: 'Neurointervencionismo',
         x: 15,
         x_selected: 0,
@@ -100,7 +100,7 @@ export const carouselPortfolio: CarouselPortfolio[] = [
         width: '600'
     },
     {
-        images: '/images/logistica.png',
+        images: '/images/logistica.webp', 
         title: 'Logística',
         title_2: 'hospitalaria',
         x_2: 80.715,

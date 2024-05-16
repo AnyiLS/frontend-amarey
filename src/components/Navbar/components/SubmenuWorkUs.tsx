@@ -30,7 +30,7 @@ const SubmenuWorkUs: React.FC<{ ref: any }> = ({ ref }) => {
 						preserveAspectRatio="xMidYMid slice"
 						width={579.611}
 						height={386.436}
-						xlinkHref="/images/navbar/trabaja-navbar.jpg"
+						xlinkHref="/images/navbar/trabaja-navbar.webp"
 					/>
 				</pattern>
 				<filter

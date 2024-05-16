@@ -65,7 +65,7 @@ const CarouselHeader: React.FC = () => {
 				className="fixed h-screen w-screen top-0 left-0 z-[100]"
 				style={{ display: showPopup ? 'flex' : 'none' }}>
 				<video
-					src="/images/video/Origen pentamero_1.mp4"
+					src="https://grupoamarey.com/pdf/video/Origen pentamero_1.mp4"
 					muted={mute}
 					className="w-full h-full"
 					id="video-1"></video>

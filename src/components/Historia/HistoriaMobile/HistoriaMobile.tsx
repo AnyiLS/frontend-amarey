@@ -56,7 +56,7 @@ const HistoriaMobile: React.FC = (): JSX.Element => {
 							preserveAspectRatio="xMidYMid slice"
 							width={411.966}
 							height={617.95}
-							xlinkHref="/images/mobile/history/reference.jpg"
+							xlinkHref="/images/mobile/history/reference.webp"
 						/>
 					</pattern>
 				</defs>

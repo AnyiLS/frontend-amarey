@@ -7,10 +7,10 @@ export const CifrasMovil: React.FC = () => {
 	const [mute, setMute] = React.useState(false);
 
 	const video = [
-		{ url: '/videos/Cifras educacion vertical_1.mp4' },
-		{ url: '/videos/Cifras robotica vertical_1.mp4' },
-		{ url: '/videos/Cifras logistica vertical_1.mp4' },
-		{ url: 'videos/Cifras ortopedia vertical_1.mp4' },
+		{ url: 'https://grupoamarey.com/pdf/video/Cifras educacion vertical_1.mp4' },
+		{ url: 'https://grupoamarey.com/pdf/video/Cifras robotica vertical_1.mp4' },
+		{ url: 'https://grupoamarey.com/pdf/video/Cifras logistica vertical_1.mp4' },
+		{ url: 'https://grupoamarey.com/pdf/video/Cifras ortopedia vertical_1.mp4' },
 	]
 
 	return (
@@ -55,7 +55,7 @@ export const CifrasMovil: React.FC = () => {
 						<image
 							width={1920}
 							height={1280}
-							xlinkHref="/images/mobile/cifras/cifras-2.jpg"
+							xlinkHref="/images/mobile/cifras/cifras-2.webp"
 						/>
 					</pattern>
 					<clipPath id="e-cifras-impacto">
@@ -104,7 +104,7 @@ export const CifrasMovil: React.FC = () => {
 							preserveAspectRatio="xMidYMid slice"
 							width={416}
 							height={277.333}
-							xlinkHref="/images/mobile/cifras/cifras-3.jpg"
+							xlinkHref="/images/mobile/cifras/cifras-3.webp"
 						/>
 					</pattern>
 					<filter
@@ -156,7 +156,7 @@ export const CifrasMovil: React.FC = () => {
 							preserveAspectRatio="xMidYMid slice"
 							width={278.329}
 							height={185.754}
-							xlinkHref="/images/mobile/cifras/cifras-1.jpg"
+							xlinkHref="/images/mobile/cifras/cifras-1.webp"
 						/>
 					</pattern>
 					<filter
@@ -208,7 +208,7 @@ export const CifrasMovil: React.FC = () => {
 							preserveAspectRatio="xMidYMid slice"
 							width={278.329}
 							height={185.553}
-							xlinkHref="/images/mobile/cifras/cifras-4.jpg"
+							xlinkHref="/images/mobile/cifras/cifras-4.webp"
 						/>
 					</pattern>
 					<filter

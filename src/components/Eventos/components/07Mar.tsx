@@ -37,7 +37,7 @@ const Mar07: React.FC<ICalendar> = ({ month, next, prev, today, onChangeMonth, o
 						preserveAspectRatio="xMidYMid slice"
 						width={1177.131}
 						height={659.978}
-						xlinkHref="/images/eventos/29Feb.jpg"
+						xlinkHref="/images/eventos/29Feb.webp"
 					/>
 				</pattern>
 				<filter

@@ -44,7 +44,7 @@ const Slide3: React.FC<ISlide> = ({ height, onClick }): JSX.Element => {
 						preserveAspectRatio="xMidYMid slice"
 						width={1626.644}
 						height={1084.43}
-						xlinkHref="/images/slider3.jpg"
+						xlinkHref="/images/slider3.webp"
 					/>
 				</pattern>
 				<filter

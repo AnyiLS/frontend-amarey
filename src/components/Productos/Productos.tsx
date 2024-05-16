@@ -34,7 +34,7 @@ const Productos: React.FC = (): JSX.Element => {
 									preserveAspectRatio="xMidYMid slice"
 									width={408.312}
 									height={199.093}
-									xlinkHref="/images/products05.jpg"
+									xlinkHref="/images/products05.webp"
 								/>
 							</pattern>
 							<filter
@@ -59,7 +59,7 @@ const Productos: React.FC = (): JSX.Element => {
 								<image
 									width={4199}
 									height={2799}
-									xlinkHref="/images/pie.jpg"
+									xlinkHref="/images/pie.webp"
 								/>
 							</pattern>
 							<filter
@@ -84,7 +84,7 @@ const Productos: React.FC = (): JSX.Element => {
 									preserveAspectRatio="xMidYMid slice"
 									width={319.461}
 									height={212.974}
-									xlinkHref="/images/products03.jpg"
+									xlinkHref="/images/products03.webp"
 								/>
 							</pattern>
 							<filter
@@ -109,7 +109,7 @@ const Productos: React.FC = (): JSX.Element => {
 									preserveAspectRatio="xMidYMid slice"
 									width={355.224}
 									height={199.814}
-									xlinkHref="/images/produ2.jpg"
+									xlinkHref="/images/produ2.webp"
 								/>
 							</pattern>
 							<filter
@@ -134,7 +134,7 @@ const Productos: React.FC = (): JSX.Element => {
 									preserveAspectRatio="xMidYMid slice"
 									width={298.668}
 									height={199.093}
-									xlinkHref="/images/quirurgicos.jpg"
+									xlinkHref="/images/quirurgicos.webp"
 								/>
 							</pattern>
 							<filter
@@ -159,7 +159,7 @@ const Productos: React.FC = (): JSX.Element => {
 									preserveAspectRatio="xMidYMid slice"
 									width={298.563}
 									height={199.093}
-									xlinkHref="/images/product04.jpg"
+									xlinkHref="/images/product04.webp"
 								/>
 							</pattern>
 							<filter
@@ -184,7 +184,7 @@ const Productos: React.FC = (): JSX.Element => {
 									preserveAspectRatio="xMidYMid slice"
 									width={355.224}
 									height={199.814}
-									xlinkHref="/images/ortopedi.png"
+									xlinkHref="/images/ortopedi.webp"
 								/>
 							</pattern>
 							<filter
@@ -209,7 +209,7 @@ const Productos: React.FC = (): JSX.Element => {
 									preserveAspectRatio="xMidYMid slice"
 									width={355.918}
 									height={199.814}
-									xlinkHref="/images/product02.jpg"
+									xlinkHref="/images/product02.webp"
 								/>
 							</pattern>
 							<filter
@@ -234,7 +234,7 @@ const Productos: React.FC = (): JSX.Element => {
 								<image
 									width={1920}
 									height={1280}
-									xlinkHref="/images/product1.jpg"
+									xlinkHref="/images/product1.webp"
 								/>
 							</pattern>
 							<filter
@@ -259,7 +259,7 @@ const Productos: React.FC = (): JSX.Element => {
 								<image
 									width={6000}
 									height={4000}
-									xlinkHref="/images/productos.jpg"
+									xlinkHref="/images/productos.webp"
 								/>
 							</pattern>
 							<filter

@@ -57,7 +57,7 @@ const DownRightAsta: React.FC<{ onUnselected: () => void }> = ({
 							preserveAspectRatio="xMidYMid slice"
 							width={328.79}
 							height={219.432}
-							xlinkHref="/images/navbar/tt-6.jpg"
+							xlinkHref="/images/navbar/tt-6.webp"
 						/>
 					</pattern>
 				</defs>
@@ -66,7 +66,7 @@ const DownRightAsta: React.FC<{ onUnselected: () => void }> = ({
 						width={236.061}
 						height={242.582}
 						transform="translate(12.696) rotate(3)"
-						xlinkHref="/images/navbar/tt-5.png"
+						xlinkHref="/images/navbar/tt-5.webp"
 					/>
 					<g transform="translate(162.845 68.596)">
 						<g

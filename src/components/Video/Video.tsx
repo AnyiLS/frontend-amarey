@@ -61,14 +61,14 @@ const Video: React.FC<IVideo> = ({ onCloseVideo }): JSX.Element => {
 					</svg>
 				)}
 				<span
-					className="right-[50px] absolute text-[#001F5F] top-[32%] z-[1] cursor-pointer close-button"
+					className="right-[50px] absolute text-[#001F5F] top-[32%] z-[1] cursor-pointer close-button w-[35px] h-[35px] flex items-center justify-center rounded-[100%] bg-[#ffffffc4]" id='closevideo'
 					onClick={onCloseVideo}>
 					X
 				</span>
 			</div>
 
 			<video
-				src="/images/MANIFIESTOAMAREY.mp4"
+				src="https://grupoamarey.com/pdf/video/MANIFIESTOAMAREY.mp4"
 				className="w-full h-screen object-cover shadow-[rgba(0,0,0,0.25)_0px_0.0625em_0.0625em,rgba(0,0,0,0.25)_0px_0.125em_0.5em,rgba(255,255,255,0.1)_0px_0px_0px_1px_inset] video-mobile"
 				loop
 				autoPlay
