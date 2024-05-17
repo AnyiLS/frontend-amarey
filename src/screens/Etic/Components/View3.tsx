@@ -159,7 +159,7 @@ const View3: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 					</tspan>
 					<tspan x={0} y={269}>
 						{
-							'@grupoamarey.com'
+							'linea.etica@grupoamarey.com'
 						}
 					</tspan>
 				</text>

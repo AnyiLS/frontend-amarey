@@ -14,7 +14,7 @@ export const Videomovil: React.FC = () => {
         className="w-[100%] h-[100vh] object-contain shadow-[rgba(0,0,0,0.25)_0px_0.0625em_0.0625em,rgba(0,0,0,0.25)_0px_0.125em_0.5em,rgba(255,255,255,0.1)_0px_0px_0px_1px_inset]"
         loop
         autoPlay
-        muted={!mute}
+        muted
       ></video>
       <div>
         <img

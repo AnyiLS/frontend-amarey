@@ -68,13 +68,14 @@ const CarouselHeader: React.FC = () => {
 					src="https://grupoamarey.com/pdf/video/Origen pentamero_1.mp4"
 					muted={mute}
 					className="w-full h-full"
-					id="video-1"></video>
-				<img
+					id="video-1"
+					controls></video>
+				{/* <img
 					src={mute ? Mute : Mute2}
 					className="absolute w-[3%] left-[1%] top-[83%] mute-bottom"
 					alt="Mute"
 					onClick={() => setMute(!mute)}
-				/>
+				/> */}
 
 				<span
 					className="absolute top-[5%] right-[5%] text-white text-[30px] text-center font-bold bg-[#00000050] w-[50px] h-[50px] rounded-[100%]"

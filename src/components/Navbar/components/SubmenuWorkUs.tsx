@@ -117,6 +117,7 @@ const SubmenuWorkUs: React.FC<{ ref: any }> = ({ ref }) => {
 							transform="translate(9 -120.41)"
 						/>
 					</g>
+					<a href="/trabaje-nosotros">
 					<g
 						className="j-submenu-w"
 						transform="matrix(1, 0, 0, 1, -9, 98)">
@@ -136,7 +137,12 @@ const SubmenuWorkUs: React.FC<{ ref: any }> = ({ ref }) => {
 							{'NOSOTROS'}
 						</tspan>
 					</text>
+
+					</a>
+					
+					
 				</g>
+				<a href="/trabaje-nosotros">
 				<text className="i-submenu-w" transform="translate(692 116)">
 					<tspan x={0} y={23}>
 						{
@@ -149,6 +155,8 @@ const SubmenuWorkUs: React.FC<{ ref: any }> = ({ ref }) => {
 						{'Encuentre oportunidades de carrera. \u200B'}
 					</tspan>
 				</text>
+				</a>
+				
 			</g>
 		</svg>
 	)

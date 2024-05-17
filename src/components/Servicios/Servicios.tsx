@@ -74,7 +74,6 @@ const Servicios: React.FC = () => {
 				<div className="fixed w-[100vw] h-[100vh] top-[0] right-[0] z-[1] bg-[#e6e6e6]">
 					<video
 						src="https://grupoamarey.com/pdf/video/tinywow_CEDICONOFC (1).mp4"
-						muted={!mute}
 						width="100%"
 						height="100%"
 						autoPlay
@@ -84,14 +83,14 @@ const Servicios: React.FC = () => {
 							height: '100vh',
 							width: '100vw',
 						}}></video>
-					<img
+					{/* <img
 						src={!mute ? Mute : Mute2}
 						className="absolute w-[3%] left-[3%] top-[3%]"
 						alt="Mute"
 						onClick={() => {
 							setMute(!mute)
 						}}
-					/>
+					/> */}
 					<svg
 						viewBox="0 0 48 50"
 						className="w-[80px] right-[20px] absolute top-[20px]"

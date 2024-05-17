@@ -66,7 +66,7 @@ const DownAsta: React.FC<{onUnselected: () => void}> = ({ onUnselected }): JSX.E
 					width={284.225}
 					height={213.833}
 					transform="matrix(1, 0.017, -0.017, 1, 157.556, 0)"
-					xlinkHref="/images/navbar/tt-1.webp"
+					xlinkHref="/images/navbar/tt-1.png"
 				/>
 				<a href='/responsabilidad'>
 				<g transform="translate(0 203.196)">

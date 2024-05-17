@@ -1,6 +1,6 @@
 import React from 'react'
 import BarraVideo from 'assets/images/Home/BarrainicialAmarey.png'
-import Mute from 'assets/images/mute.png'
+import Mute from 'assets/images/Grupo 5828.png'
 import Mute2 from 'assets/images/Button.png'
 import useGeneral from 'hooks/general.hook'
 import './video.css'
@@ -13,6 +13,20 @@ const Video: React.FC<IVideo> = ({ onCloseVideo }): JSX.Element => {
 	/** Hooks */
 	const { width } = useGeneral()
 	const [mute, setMute] = React.useState(false)
+
+	const handlePlayVideo = () => {
+		if(mute){
+			const video: HTMLVideoElement = document.getElementById('play') as HTMLVideoElement;
+
+			video.pause()
+			setMute(false)
+		} else {
+			const video: HTMLVideoElement = document.getElementById('play') as HTMLVideoElement;
+
+			video.play()
+			setMute(true)
+		}
+	}
 
 	return (
 		<div className="container-video mb-[1.2px]">
@@ -69,16 +83,17 @@ const Video: React.FC<IVideo> = ({ onCloseVideo }): JSX.Element => {
 
 			<video
 				src="https://grupoamarey.com/pdf/video/MANIFIESTOAMAREY.mp4"
-				className="w-full h-screen object-cover shadow-[rgba(0,0,0,0.25)_0px_0.0625em_0.0625em,rgba(0,0,0,0.25)_0px_0.125em_0.5em,rgba(255,255,255,0.1)_0px_0px_0px_1px_inset] video-mobile"
+				className="w-full bg-black h-screen object-contain shadow-[rgba(0,0,0,0.25)_0px_0.0625em_0.0625em,rgba(0,0,0,0.25)_0px_0.125em_0.5em,rgba(255,255,255,0.1)_0px_0px_0px_1px_inset] video-mobile"
 				loop
+				id='play'
 				autoPlay
 				muted={!mute}></video>
 			<div>
 				<img
-					src={mute ? Mute : Mute2}
+					src={!mute ? Mute : Mute2}
 					className="absolute w-[3%] left-[1%] bottom-[3%] mute-bottom"
 					alt="Mute"
-					onClick={() => setMute(!mute)}
+					onClick={handlePlayVideo}
 				/>
 			</div>
 		</div>

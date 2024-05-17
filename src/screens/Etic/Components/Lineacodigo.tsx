@@ -171,7 +171,7 @@ const Lineacodigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 					<text className="l-linea" transform="translate(692 670)">
 						<tspan x={0} y={23}>
 							{
-								'A trav\xE9s del correo electr\xF3nico: @grupoamarey.com'
+								'A trav\xE9s del correo electr\xF3nico: linea.etica@grupoamarey.com'
 							}
 						</tspan>
 					</text>

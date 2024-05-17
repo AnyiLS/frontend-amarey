@@ -485,7 +485,7 @@ const Slide4: React.FC<ISlide> = ({ height, image, onReturn, onOpenPopup }): JSX
 								<image
 									width={744}
 									height={752}
-									xlinkHref="/images/navbar/ComponentTMP_0-image4.webp"
+									xlinkHref="/images/navbar/ComponentTMP_0-image4.png"
 								/>
 							</pattern>
 							<pattern
@@ -497,7 +497,7 @@ const Slide4: React.FC<ISlide> = ({ height, image, onReturn, onOpenPopup }): JSX
 								<image
 									width={856}
 									height={644}
-									xlinkHref="/images/navbar/ComponentTMP_0-image5.webp"
+									xlinkHref="/images/navbar/ComponentTMP_0-image5.png"
 								/>
 							</pattern>
 						</defs>

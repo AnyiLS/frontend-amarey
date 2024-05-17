@@ -958,7 +958,7 @@ export const CarouselMovil: React.FC = () => {
 										preserveAspectRatio="none"
 										width={148.114}
 										height={122.757}
-										xlinkHref="/images/mobile/ComponentTMP_0-image2.png"
+										xlinkHref="/images/mobile/ComponentTMP_0-image2.webp"
 									/>
 								</pattern>
 							</defs>
@@ -1309,7 +1309,7 @@ export const CarouselMovil: React.FC = () => {
 										preserveAspectRatio="none"
 										width={80.553}
 										height={66.763}
-										xlinkHref="/images/mobile/ComponentTMP_0-image2.png"
+										xlinkHref="/images/mobile/ComponentTMP_0-image2.webp"
 									/>
 								</pattern>
 								<filter
@@ -1641,7 +1641,7 @@ export const CarouselMovil: React.FC = () => {
 										preserveAspectRatio="none"
 										width={148.114}
 										height={122.757}
-										xlinkHref="/images/mobile/ComponentTMP_0-image2.png"
+										xlinkHref="/images/mobile/ComponentTMP_0-image2.webp"
 									/>
 								</pattern>
 								<filter
@@ -1974,7 +1974,7 @@ export const CarouselMovil: React.FC = () => {
 										preserveAspectRatio="none"
 										width={148.114}
 										height={122.757}
-										xlinkHref="/images/mobile/ComponentTMP_0-image2.png"
+										xlinkHref="/images/mobile/ComponentTMP_0-image2.webp"
 									/>
 								</pattern>
 								<filter
@@ -2306,7 +2306,7 @@ export const CarouselMovil: React.FC = () => {
 										preserveAspectRatio="none"
 										width={148.114}
 										height={122.757}
-										xlinkHref="/images/mobile/ComponentTMP_0-image2.png"
+										xlinkHref="/images/mobile/ComponentTMP_0-image2.webp"
 									/>
 								</pattern>
 								<filter
@@ -2581,7 +2581,9 @@ export const CarouselMovil: React.FC = () => {
 					muted={mute}
 					controls
 					className="w-full h-full"
-					id="video-1"></video>
+					id="video-1"
+					autoPlay
+					></video>
 
 				<span
 					className="absolute top-[5%] right-[5%] text-white text-[30px] text-center font-bold bg-[#00000050] w-[50px] h-[50px] rounded-[100%]"
@@ -2598,12 +2600,12 @@ export const CarouselMovil: React.FC = () => {
 					}}>
 					X
 				</span>
-				<img
+				{/* <img
 					src={mute ? '/images/mute.png' : '/images/Button.png'}
 					className="absolute w-[10%] left-[8%] bottom-[10px]"
 					alt="Mute"
 					onClick={() => setMute(!mute)}
-				/>
+				/> */}
 			</div>
 		</React.Fragment>
 	)

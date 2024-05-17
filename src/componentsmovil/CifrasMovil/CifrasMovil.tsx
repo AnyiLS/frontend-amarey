@@ -644,12 +644,12 @@ export const CifrasMovil: React.FC = () => {
 						muted={mute}
 						id="video-cifras"
 						controls></video>
-					<img
+					{/* <img
 						src={mute ? '/images/mute.png' : '/images/Button.png'}
 						className="absolute w-[10%] left-[2%] bottom-[10px]"
 						alt="Mute"
 						onClick={() => setMute(!mute)}
-					/>
+					/> */}
 				</div>
 			)}
 		</div>

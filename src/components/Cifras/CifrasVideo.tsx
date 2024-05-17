@@ -1,5 +1,5 @@
 import React from 'react'
-import Mute from 'assets/images/mute.png'
+import Mute from 'assets/images/Grupo 5828.png'
 import Mute2 from 'assets/images/Button.png'
 
 interface IcifrasVideo {
@@ -16,6 +16,20 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 	onClose,
 }) => {
 	const [mute, setMute] = React.useState(false)
+
+	const handlePlayVideo = () => {
+		if(mute){
+			const video: HTMLVideoElement = document.getElementById('video-cifras') as HTMLVideoElement;
+
+			video.pause()
+			setMute(false)
+		} else {
+			const video: HTMLVideoElement = document.getElementById('video-cifras') as HTMLVideoElement;
+
+			video.play()
+			setMute(true)
+		}
+	}
 
 	React.useEffect(() => {
 		if (open) document.body.style.overflow = 'hidden'
@@ -106,8 +120,6 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 									width="1929"
 									height="1080"
 									src="https://grupoamarey.com/pdf/video/cidras1.mp4" 
-									autoPlay
-									muted={!mute}
 									loop
 								/>
 							)}
@@ -117,8 +129,6 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 									width="1929"
 									height="1080"
 									src="https://grupoamarey.com/pdf/video/cifras-robotica.mp4" 
-									autoPlay
-									muted={!mute}
 									loop
 								/>
 							)}
@@ -128,8 +138,6 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 									width="1929"
 									height="1080"
 									src="https://grupoamarey.com/pdf/video/cifras-Maxiloo.mp4"
-									autoPlay
-									muted={!mute}
 									loop
 								/>
 							)}
@@ -139,8 +147,6 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 									width="1929"
 									height="1080"
 									src="https://grupoamarey.com/pdf/video/cifras-logistica.mp4"
-									autoPlay
-									muted={!mute}
 									loop
 								/>
 							)}
@@ -151,6 +157,7 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 					const video: HTMLVideoElement = document.getElementById('video-cifras') as HTMLVideoElement
 
 					if (video) video.pause()
+					setMute(false);
 					onClose()
 				}}>
 					<g
@@ -175,10 +182,10 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 			</svg>
 			<div>
 				<img
-					src={mute ? Mute : Mute2}
+					src={!mute ? Mute : Mute2}
 					className="absolute w-[3%] left-[1%] bottom-[3%]"
 					alt="Mute"
-					onClick={() => setMute(!mute)}
+					onClick={handlePlayVideo}
 				/>
 			</div>
 		</div>
