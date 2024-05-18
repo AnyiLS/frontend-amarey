@@ -737,7 +737,7 @@ export const CarouselMovil: React.FC = () => {
 										{'Conoce más de '}
 									</tspan>
 									<tspan x={0} y={33}>
-										{'grupo Amarey dando'}
+										{'Grupo Amarey dando'}
 									</tspan>
 									<tspan x={0} y={51}>
 										{'clic en cada uno '}
@@ -2582,7 +2582,6 @@ export const CarouselMovil: React.FC = () => {
 					controls
 					className="w-full h-full"
 					id="video-1"
-					autoPlay
 					></video>
 
 				<span

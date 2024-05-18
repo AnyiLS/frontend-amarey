@@ -393,13 +393,15 @@ export const NavbarMovil: React.FC = () => {
 								<foreignObject
 									x={0}
 									y={0}
-									width='100%'
+									width="100%"
 									height={266}
 									transform="translate(5 189.188)">
-									<div className='w-full flex justify-between mx-[auto] h-[46px] max-w-[331px] border-solid border-[3px] border-[#001f5f]' style={{
-										borderTopLeftRadius: 100,
-										borderBottomRightRadius: 100,
-									}}>
+									<div
+										className="w-full flex justify-between mx-[auto] h-[46px] max-w-[331px] border-solid border-[3px] border-[#001f5f]"
+										style={{
+											borderTopLeftRadius: 100,
+											borderBottomRightRadius: 100,
+										}}>
 										<input
 											type="text"
 											className="w-[80%] border-[transparent] bg-[transparent] pl-[30px]"
@@ -407,7 +409,13 @@ export const NavbarMovil: React.FC = () => {
 											onChange={handleSearchPage}
 											style={{ outline: 'none' }}
 										/>
-										<img src="/images/lupa.svg" className='mr-[30px]' alt="" width={25} height={25} />
+										<img
+											src="/images/lupa.svg"
+											className="mr-[30px]"
+											alt=""
+											width={25}
+											height={25}
+										/>
 									</div>
 									{results.length > 0 && (
 										<div className="w-full h-[200px] bg-white overflow-y-auto">
@@ -420,8 +428,8 @@ export const NavbarMovil: React.FC = () => {
 														className="h-[40px] w-full flex items-center border-b-solid border-b-[1px] border-[#e6e6e6] px-[10px]"
 														key={index}
 														onClick={() =>
-														(window.location.href =
-															item.url)
+															(window.location.href =
+																item.url)
 														}>
 														<span>
 															{item.label}
@@ -513,8 +521,13 @@ export const NavbarMovil: React.FC = () => {
 										d="M91.4,43.724H0V0H139.029V11.32c0,17.9-21.323,32.4-47.627,32.4"
 									/>
 								</g>
-								<g transform={results.length > 0 ? 'translate(0 161)' : 'translate(0 0)'}>
-									<g transform="translate(3 568.613)">
+								<g
+									transform={
+										results.length > 0
+											? 'translate(0 161)'
+											: 'translate(0 0)'
+									}>
+									{/* <g transform="translate(3 568.613)">
 										<g
 											className="u-navbar-mobile"
 											transform="matrix(1, 0, 0, 1, -9, -574.61)">
@@ -542,12 +555,12 @@ export const NavbarMovil: React.FC = () => {
 												{'Ucitech'}
 											</tspan>
 										</text>
-									</g>
+									</g> */}
 									<g transform="translate(3 461.534)">
 										<g
 											onClick={() =>
-											(window.location.href =
-												'/contactenos')
+												(window.location.href =
+													'/contactenos')
 											}>
 											<g
 												className="t-navbar-mobile"
@@ -605,8 +618,8 @@ export const NavbarMovil: React.FC = () => {
 									<g
 										transform="translate(3 483.058)"
 										onClick={() =>
-										(window.location.href =
-											'/trabaje-nosotros')
+											(window.location.href =
+												'/trabaje-nosotros')
 										}>
 										<g
 											className="s-navbar-mobile"
@@ -639,8 +652,8 @@ export const NavbarMovil: React.FC = () => {
 									<g
 										transform="translate(3 440.796)"
 										onClick={() =>
-										(window.location.href =
-											'/codigo-linea-etica')
+											(window.location.href =
+												'/codigo-linea-etica')
 										}>
 										<g
 											className="r-navbar-mobile"
@@ -1016,7 +1029,7 @@ export const NavbarMovil: React.FC = () => {
 								</filter>
 							</defs>
 							<g>
-							<line
+								<line
 									className="d-navbar-mobile"
 									x2={311}
 									transform="translate(73 400)"
@@ -1065,8 +1078,7 @@ export const NavbarMovil: React.FC = () => {
 										transform="translate(-25.675 -25.199)"
 									/>
 								</g>
-								
-								
+
 								<g transform="translate(4)">
 									<g
 										className="y-navbar-mobile"
@@ -1150,13 +1162,15 @@ export const NavbarMovil: React.FC = () => {
 								<foreignObject
 									x={0}
 									y={0}
-									width='100%'
+									width="100%"
 									height={266}
 									transform="translate(5 189.188)">
-									<div className='w-full flex justify-between mx-[auto] h-[46px] max-w-[331px] border-solid border-[3px] border-[#001f5f]' style={{
-										borderTopLeftRadius: 100,
-										borderBottomRightRadius: 100,
-									}}>
+									<div
+										className="w-full flex justify-between mx-[auto] h-[46px] max-w-[331px] border-solid border-[3px] border-[#001f5f]"
+										style={{
+											borderTopLeftRadius: 100,
+											borderBottomRightRadius: 100,
+										}}>
 										<input
 											type="text"
 											className="w-[80%] border-[transparent] bg-[transparent] pl-[30px]"
@@ -1164,7 +1178,13 @@ export const NavbarMovil: React.FC = () => {
 											onChange={handleSearchPage}
 											style={{ outline: 'none' }}
 										/>
-										<img src="/images/lupa.svg" className='mr-[30px]' alt="" width={25} height={25} />
+										<img
+											src="/images/lupa.svg"
+											className="mr-[30px]"
+											alt=""
+											width={25}
+											height={25}
+										/>
 									</div>
 									{results.length > 0 && (
 										<div className="w-full h-[200px] bg-white overflow-y-auto">
@@ -1177,8 +1197,8 @@ export const NavbarMovil: React.FC = () => {
 														className="h-[40px] w-full flex items-center border-b-solid border-b-[1px] border-[#e6e6e6] px-[10px]"
 														key={index}
 														onClick={() =>
-														(window.location.href =
-															item.url)
+															(window.location.href =
+																item.url)
 														}>
 														<span>
 															{item.label}
@@ -1271,89 +1291,95 @@ export const NavbarMovil: React.FC = () => {
 										d="M91.4,43.724H0V0H139.029V11.32c0,17.9-21.323,32.4-47.627,32.4"
 									/>
 								</g>
-								
-								<g transform={results.length > 0 ? 'translate(0 161)' : 'translate(0 0)'}>
-								
-								<rect
-									className="b-navbar-mobile"
-									width={420}
-									height={47}
-									transform="translate(2 353)"
-									onClick={() =>
-										(window.location.href = '/historia')
-									}
-								/>
-								<rect
-									className="b-navbar-mobile"
-									width={420}
-									height={37}
-									transform="translate(2 399)"
-									onClick={() =>
-										(window.location.href = '/filosofia')
-									}
-								/>
-								<rect
-									className="b-navbar-mobile"
-									width={420}
-									height={37}
-									transform="translate(2 435)"
-									onClick={() =>
-									(window.location.href =
-										'/reconocimientos')
-									}
-								/>
-								<rect
-									className="b-navbar-mobile"
-									width={420}
-									height={43}
-									transform="translate(2 469)"
-									onClick={() =>
-									(window.location.href =
-										'/responsabilidad')
-									}
-								/>
-								<text
-									className="c-navbar-mobile"
-									transform="translate(77 385)"
-									onClick={() =>
-										(window.location.href = '/historia')
+
+								<g
+									transform={
+										results.length > 0
+											? 'translate(0 161)'
+											: 'translate(0 0)'
 									}>
-									<tspan x={0} y={0}>
-										{'Nuestra Historia'}
-									</tspan>
-								</text>
-								<text
-									className="c-navbar-mobile"
-									transform="translate(77 421)"
-									onClick={() =>
-										(window.location.href = '/filosofia')
-									}>
-									<tspan x={0} y={0}>
-										{'Filosofía'}
-									</tspan>
-								</text>
-								<text
-									className="c-navbar-mobile"
-									transform="translate(77 457)"
-									onClick={() =>
-									(window.location.href =
-										'/reconocimientos')
-									}>
-									<tspan x={0} y={0}>
-										{'Reconocimientos'}
-									</tspan>
-								</text>
-								<text
-									className="c-navbar-mobile"
-									transform="translate(77 492)"
-									onClick={() =>
-									(window.location.href =
-										'/responsabilidad')
-									}>
-									<tspan x={0} y={0}>
-										{'RSE'}
-									</tspan>
-								</text>
+									<rect
+										className="b-navbar-mobile"
+										width={420}
+										height={47}
+										transform="translate(2 353)"
+										onClick={() =>
+											(window.location.href = '/historia')
+										}
+									/>
+									<rect
+										className="b-navbar-mobile"
+										width={420}
+										height={37}
+										transform="translate(2 399)"
+										onClick={() =>
+											(window.location.href =
+												'/filosofia')
+										}
+									/>
+									<rect
+										className="b-navbar-mobile"
+										width={420}
+										height={37}
+										transform="translate(2 435)"
+										onClick={() =>
+											(window.location.href =
+												'/reconocimientos')
+										}
+									/>
+									<rect
+										className="b-navbar-mobile"
+										width={420}
+										height={43}
+										transform="translate(2 469)"
+										onClick={() =>
+											(window.location.href =
+												'/responsabilidad')
+										}
+									/>
+									<text
+										className="c-navbar-mobile"
+										transform="translate(77 385)"
+										onClick={() =>
+											(window.location.href = '/historia')
+										}>
+										<tspan x={0} y={0}>
+											{'Nuestra Historia'}
+										</tspan>
+									</text>
+									<text
+										className="c-navbar-mobile"
+										transform="translate(77 421)"
+										onClick={() =>
+											(window.location.href =
+												'/filosofia')
+										}>
+										<tspan x={0} y={0}>
+											{'Filosofía'}
+										</tspan>
+									</text>
+									<text
+										className="c-navbar-mobile"
+										transform="translate(77 457)"
+										onClick={() =>
+											(window.location.href =
+												'/reconocimientos')
+										}>
+										<tspan x={0} y={0}>
+											{'Reconocimientos'}
+										</tspan>
+									</text>
+									<text
+										className="c-navbar-mobile"
+										transform="translate(77 492)"
+										onClick={() =>
+											(window.location.href =
+												'/responsabilidad')
+										}>
+										<tspan x={0} y={0}>
+											{'RSE'}
+										</tspan>
+									</text>
 									<g transform="translate(2 724.613)">
 										<g
 											className="w-navbar-mobile"
@@ -1391,8 +1417,8 @@ export const NavbarMovil: React.FC = () => {
 												className="m-navbar-mobile"
 												transform="translate(9 687)"
 												onClick={() =>
-												(window.location.href =
-													'/contactenos')
+													(window.location.href =
+														'/contactenos')
 												}>
 												<rect
 													className="o-navbar-mobile"
@@ -1472,8 +1498,8 @@ export const NavbarMovil: React.FC = () => {
 									<g
 										transform="translate(2 596.796)"
 										onClick={() =>
-										(window.location.href =
-											'/codigo-linea-etica')
+											(window.location.href =
+												'/codigo-linea-etica')
 										}>
 										<g
 											className="t-navbar-mobile"
@@ -1849,7 +1875,6 @@ export const NavbarMovil: React.FC = () => {
 								</filter>
 							</defs>
 							<g>
-								
 								<g transform="translate(355.487 10.743)">
 									<rect
 										className="b-navbar-mobile"
@@ -1884,7 +1909,7 @@ export const NavbarMovil: React.FC = () => {
 										transform="translate(-25.675 -25.199)"
 									/>
 								</g>
-								
+
 								<path
 									className="d-navbar-mobile"
 									d="M311,0"
@@ -1970,16 +1995,18 @@ export const NavbarMovil: React.FC = () => {
 									d="M0,0H415.878V254.789H0Z"
 									transform="translate(2 38.79)"
 								/>
-									<foreignObject
+								<foreignObject
 									x={0}
 									y={0}
-									width='100%'
+									width="100%"
 									height={266}
 									transform="translate(5 189.188)">
-									<div className='w-full flex justify-between mx-[auto] h-[46px] max-w-[331px] border-solid border-[3px] border-[#001f5f]' style={{
-										borderTopLeftRadius: 100,
-										borderBottomRightRadius: 100,
-									}}>
+									<div
+										className="w-full flex justify-between mx-[auto] h-[46px] max-w-[331px] border-solid border-[3px] border-[#001f5f]"
+										style={{
+											borderTopLeftRadius: 100,
+											borderBottomRightRadius: 100,
+										}}>
 										<input
 											type="text"
 											className="w-[80%] border-[transparent] bg-[transparent] pl-[30px]"
@@ -1987,7 +2014,13 @@ export const NavbarMovil: React.FC = () => {
 											onChange={handleSearchPage}
 											style={{ outline: 'none' }}
 										/>
-										<img src="/images/lupa.svg" className='mr-[30px]' alt="" width={25} height={25} />
+										<img
+											src="/images/lupa.svg"
+											className="mr-[30px]"
+											alt=""
+											width={25}
+											height={25}
+										/>
 									</div>
 									{results.length > 0 && (
 										<div className="w-full h-[200px] bg-white overflow-y-auto">
@@ -2000,8 +2033,8 @@ export const NavbarMovil: React.FC = () => {
 														className="h-[40px] w-full flex items-center border-b-solid border-b-[1px] border-[#e6e6e6] px-[10px]"
 														key={index}
 														onClick={() =>
-														(window.location.href =
-															item.url)
+															(window.location.href =
+																item.url)
 														}>
 														<span>
 															{item.label}
@@ -2087,355 +2120,364 @@ export const NavbarMovil: React.FC = () => {
 										d="M91.4,43.724H0V0H139.029V11.32c0,17.9-21.323,32.4-47.627,32.4"
 									/>
 								</g>
-								<g transform={results.length > 0 ? 'translate(0 161)' : 'translate(0 0)'}>
-								<rect
-									className="b-navbar-mobile"
-									width={420}
-									height={48}
-									transform="translate(0 397)"
-									onClick={() =>
-									(window.location.href =
-										'/nuestros-aliados')
-									}
-								/>
-								<rect
-									className="b-navbar-mobile"
-									width={420}
-									height={38}
-									transform="translate(0 443)"
-									onClick={() =>
-										(window.location.href = '/biomedico')
-									}
-								/>
-								<rect
-									className="b-navbar-mobile"
-									width={420}
-									height={49}
-									transform="translate(0 481)"
-									onClick={() =>
-										(window.location.href = '/productos')
-									}
-								/>
-								<text
-									className="c-navbar-mobile"
-									transform="translate(75 430)"
-									onClick={() =>
-									(window.location.href =
-										'/nuestros-aliados')
+								<g
+									transform={
+										results.length > 0
+											? 'translate(0 161)'
+											: 'translate(0 0)'
 									}>
-									<tspan x={0} y={0}>
-										{'Nuestros aliados'}
-									</tspan>
-								</text>
-								<text
-									className="c-navbar-mobile"
-									transform="translate(75 466)"
-									onClick={() =>
-										(window.location.href = '/biomedico')
-									}>
-									<tspan x={0} y={0}>
-										{'Mantenimiento Biomédico'}
-									</tspan>
-								</text>
-								<text
-									className="c-navbar-mobile"
-									transform="translate(75 502)"
-									onClick={() =>
-										(window.location.href = '/productos')
-									}>
-									<tspan x={0} y={0}>
-										{'Soluciones en salud​'}
-									</tspan>
-								</text>
-								<line
-									className="d-navbar-mobile"
-									x2={311}
-									transform="translate(71 445)"
-								/>
-								<line
-									className="d-navbar-mobile"
-									x2={311}
-									transform="translate(71 481)"
-								/>
-								<g transform="translate(0 693.613)">
-									<g
-										className="v-navbar-mobile"
-										transform="matrix(1, 0, 0, 1, -9, -699.61)">
-										<g
-											className="j-navbar-mobile"
-											transform="translate(9 700)">
-											<rect
-												className="n-navbar-mobile"
-												width={420}
-												height={43}
-											/>
-											<rect
-												className="a-navbar-mobile"
-												x={0.5}
-												y={0.5}
-												width={419}
-												height={42}
-											/>
-										</g>
-									</g>
+									<rect
+										className="b-navbar-mobile"
+										width={420}
+										height={48}
+										transform="translate(0 397)"
+										onClick={() =>
+											(window.location.href =
+												'/nuestros-aliados')
+										}
+									/>
+									<rect
+										className="b-navbar-mobile"
+										width={420}
+										height={38}
+										transform="translate(0 443)"
+										onClick={() =>
+											(window.location.href =
+												'/biomedico')
+										}
+									/>
+									<rect
+										className="b-navbar-mobile"
+										width={420}
+										height={49}
+										transform="translate(0 481)"
+										onClick={() =>
+											(window.location.href =
+												'/productos')
+										}
+									/>
 									<text
-										className="k-navbar-mobile"
-										transform="translate(40 10.387)">
-										<tspan x={0} y={15}>
-											{'Ucitech'}
+										className="c-navbar-mobile"
+										transform="translate(75 430)"
+										onClick={() =>
+											(window.location.href =
+												'/nuestros-aliados')
+										}>
+										<tspan x={0} y={0}>
+											{'Nuestros aliados'}
 										</tspan>
 									</text>
-								</g>
-								<g transform="translate(0 586.534)">
-									<g
+									<text
+										className="c-navbar-mobile"
+										transform="translate(75 466)"
 										onClick={() =>
-										(window.location.href =
-											'/contactenos')
+											(window.location.href =
+												'/biomedico')
 										}>
+										<tspan x={0} y={0}>
+											{'Mantenimiento Biomédico'}
+										</tspan>
+									</text>
+									<text
+										className="c-navbar-mobile"
+										transform="translate(75 502)"
+										onClick={() =>
+											(window.location.href =
+												'/productos')
+										}>
+										<tspan x={0} y={0}>
+											{'Soluciones en salud​'}
+										</tspan>
+									</text>
+									<line
+										className="d-navbar-mobile"
+										x2={311}
+										transform="translate(71 445)"
+									/>
+									<line
+										className="d-navbar-mobile"
+										x2={311}
+										transform="translate(71 481)"
+									/>
+									<g transform="translate(0 693.613)">
 										<g
-											className="u-navbar-mobile"
-											transform="matrix(1, 0, 0, 1, -9, -592.53)">
+											className="v-navbar-mobile"
+											transform="matrix(1, 0, 0, 1, -9, -699.61)">
 											<g
-												className="l-navbar-mobile"
-												transform="translate(9 656)">
+												className="j-navbar-mobile"
+												transform="translate(9 700)">
 												<rect
 													className="n-navbar-mobile"
 													width={420}
-													height={45}
+													height={43}
 												/>
 												<rect
 													className="a-navbar-mobile"
 													x={0.5}
 													y={0.5}
 													width={419}
-													height={44}
+													height={42}
+												/>
+											</g>
+										</g>
+										<text
+											className="k-navbar-mobile"
+											transform="translate(40 10.387)">
+											<tspan x={0} y={15}>
+												{'Ucitech'}
+											</tspan>
+										</text>
+									</g>
+									<g transform="translate(0 586.534)">
+										<g
+											onClick={() =>
+												(window.location.href =
+													'/contactenos')
+											}>
+											<g
+												className="u-navbar-mobile"
+												transform="matrix(1, 0, 0, 1, -9, -592.53)">
+												<g
+													className="l-navbar-mobile"
+													transform="translate(9 656)">
+													<rect
+														className="n-navbar-mobile"
+														width={420}
+														height={45}
+													/>
+													<rect
+														className="a-navbar-mobile"
+														x={0.5}
+														y={0.5}
+														width={419}
+														height={44}
+													/>
+												</g>
+											</g>
+											<text
+												className="m-navbar-mobile"
+												transform="translate(40 74.466)">
+												<tspan x={0} y={15}>
+													{'Contáctenos'}
+												</tspan>
+											</text>
+											<g transform="translate(192.696 0)">
+												<path
+													className="b-navbar-mobile"
+													d="M37.161,44.643a16.71,16.71,0,0,0,3.358,1.73c.171.063.243.246.355.378a4.984,4.984,0,0,0,2.987,1.956,3.312,3.312,0,0,0,2.3-.529,6.725,6.725,0,0,0,2-1.987,14.125,14.125,0,0,0,2.25-5.849c.052-.314-.073-.375-.337-.388a15.483,15.483,0,0,1-3.5-.458,12.478,12.478,0,0,1-4.973-2.827c-.275-.249-.375-.188-.562.084a6.522,6.522,0,0,1-2.715,2.4c-.267.117-.235.291-.213.5a15.768,15.768,0,0,0,.95,3.95l.133.352a11.318,11.318,0,0,1-1.683-.991.3.3,0,0,1-.081-.154,12.447,12.447,0,0,1-.409-6.392,6.221,6.221,0,0,1,5.5-4.954,10.287,10.287,0,0,1,5.025.371A6.144,6.144,0,0,1,51.722,37.1a12.8,12.8,0,0,1-.466,5.4,1.411,1.411,0,0,0,0,.811,5.654,5.654,0,0,1-.033,3.365A2.468,2.468,0,0,1,48.4,48.531a1.074,1.074,0,0,0-.9.27,4.65,4.65,0,0,1-6.447-.041.9.9,0,0,0-.737-.241A2.537,2.537,0,0,1,37.3,46.359a4.861,4.861,0,0,1-.138-.785c-.023-.279-.005-.561-.005-.931"
+													transform="translate(-33.598 -29.506)"
+												/>
+												<path
+													className="b-navbar-mobile"
+													d="M36.353,25.2a9.713,9.713,0,0,1,7.53,3.313,7.287,7.287,0,0,1,1.654,3.415.743.743,0,0,0,.395.572,2.159,2.159,0,0,1,1.031,1.518,5.811,5.811,0,0,1-.341,3.562,2.2,2.2,0,0,1-2.169,1.389c-.226,0-.286-.052-.256-.3.182-1.543.334-3.088.388-4.644a6.622,6.622,0,0,0-3.926-6.618,8.922,8.922,0,0,0-9.957.92,6.3,6.3,0,0,0-2.515,5.342,45.419,45.419,0,0,0,.336,4.559.522.522,0,0,0,.22.4,13.972,13.972,0,0,0,5.656,2.7,1.177,1.177,0,0,0,.762-.124,2.55,2.55,0,0,1,1.925-.019.662.662,0,0,1,.355.821.685.685,0,0,1-.653.6c-.444.025-.89.009-1.336,0a.491.491,0,0,1-.443-.236c-.158-.316-.431-.339-.713-.392a14.078,14.078,0,0,1-5.859-2.764,1.472,1.472,0,0,0-.651-.308A2.049,2.049,0,0,1,26.2,37.68a5.672,5.672,0,0,1-.348-3.808,2.128,2.128,0,0,1,1.077-1.428.49.49,0,0,0,.27-.362c.864-3.812,3.413-5.76,6.928-6.629a7.686,7.686,0,0,1,1.02-.17c.414-.044.831-.058,1.2-.083"
+													transform="translate(-25.675 -25.199)"
+												/>
+											</g>
+											<g transform="translate(192.696 0)">
+												<path
+													className="b-navbar-mobile"
+													d="M37.161,44.643a16.71,16.71,0,0,0,3.358,1.73c.171.063.243.246.355.378a4.984,4.984,0,0,0,2.987,1.956,3.312,3.312,0,0,0,2.3-.529,6.725,6.725,0,0,0,2-1.987,14.125,14.125,0,0,0,2.25-5.849c.052-.314-.073-.375-.337-.388a15.483,15.483,0,0,1-3.5-.458,12.478,12.478,0,0,1-4.973-2.827c-.275-.249-.375-.188-.562.084a6.522,6.522,0,0,1-2.715,2.4c-.267.117-.235.291-.213.5a15.768,15.768,0,0,0,.95,3.95l.133.352a11.318,11.318,0,0,1-1.683-.991.3.3,0,0,1-.081-.154,12.447,12.447,0,0,1-.409-6.392,6.221,6.221,0,0,1,5.5-4.954,10.287,10.287,0,0,1,5.025.371A6.144,6.144,0,0,1,51.722,37.1a12.8,12.8,0,0,1-.466,5.4,1.411,1.411,0,0,0,0,.811,5.654,5.654,0,0,1-.033,3.365A2.468,2.468,0,0,1,48.4,48.531a1.074,1.074,0,0,0-.9.27,4.65,4.65,0,0,1-6.447-.041.9.9,0,0,0-.737-.241A2.537,2.537,0,0,1,37.3,46.359a4.861,4.861,0,0,1-.138-.785c-.023-.279-.005-.561-.005-.931"
+													transform="translate(-33.598 -29.506)"
+												/>
+												<path
+													className="b-navbar-mobile"
+													d="M36.353,25.2a9.713,9.713,0,0,1,7.53,3.313,7.287,7.287,0,0,1,1.654,3.415.743.743,0,0,0,.395.572,2.159,2.159,0,0,1,1.031,1.518,5.811,5.811,0,0,1-.341,3.562,2.2,2.2,0,0,1-2.169,1.389c-.226,0-.286-.052-.256-.3.182-1.543.334-3.088.388-4.644a6.622,6.622,0,0,0-3.926-6.618,8.922,8.922,0,0,0-9.957.92,6.3,6.3,0,0,0-2.515,5.342,45.419,45.419,0,0,0,.336,4.559.522.522,0,0,0,.22.4,13.972,13.972,0,0,0,5.656,2.7,1.177,1.177,0,0,0,.762-.124,2.55,2.55,0,0,1,1.925-.019.662.662,0,0,1,.355.821.685.685,0,0,1-.653.6c-.444.025-.89.009-1.336,0a.491.491,0,0,1-.443-.236c-.158-.316-.431-.339-.713-.392a14.078,14.078,0,0,1-5.859-2.764,1.472,1.472,0,0,0-.651-.308A2.049,2.049,0,0,1,26.2,37.68a5.672,5.672,0,0,1-.348-3.808,2.128,2.128,0,0,1,1.077-1.428.49.49,0,0,0,.27-.362c.864-3.812,3.413-5.76,6.928-6.629a7.686,7.686,0,0,1,1.02-.17c.414-.044.831-.058,1.2-.083"
+													transform="translate(-25.675 -25.199)"
+												/>
+											</g>
+										</g>
+									</g>
+									<g transform="translate(0 608.058)">
+										<g
+											className="t-navbar-mobile"
+											transform="matrix(1, 0, 0, 1, -9, -614.06)">
+											<g
+												className="l-navbar-mobile"
+												transform="translate(9 614)">
+												<rect
+													className="n-navbar-mobile"
+													width={420}
+													height={43}
+												/>
+												<rect
+													className="a-navbar-mobile"
+													x={0.5}
+													y={0.5}
+													width={419}
+													height={42}
 												/>
 											</g>
 										</g>
 										<text
 											className="m-navbar-mobile"
-											transform="translate(40 74.466)">
+											transform="translate(40 9.942)">
 											<tspan x={0} y={15}>
-												{'Contáctenos'}
+												{'Trabaje con nosotros'}
 											</tspan>
 										</text>
-										<g transform="translate(192.696 0)">
-											<path
-												className="b-navbar-mobile"
-												d="M37.161,44.643a16.71,16.71,0,0,0,3.358,1.73c.171.063.243.246.355.378a4.984,4.984,0,0,0,2.987,1.956,3.312,3.312,0,0,0,2.3-.529,6.725,6.725,0,0,0,2-1.987,14.125,14.125,0,0,0,2.25-5.849c.052-.314-.073-.375-.337-.388a15.483,15.483,0,0,1-3.5-.458,12.478,12.478,0,0,1-4.973-2.827c-.275-.249-.375-.188-.562.084a6.522,6.522,0,0,1-2.715,2.4c-.267.117-.235.291-.213.5a15.768,15.768,0,0,0,.95,3.95l.133.352a11.318,11.318,0,0,1-1.683-.991.3.3,0,0,1-.081-.154,12.447,12.447,0,0,1-.409-6.392,6.221,6.221,0,0,1,5.5-4.954,10.287,10.287,0,0,1,5.025.371A6.144,6.144,0,0,1,51.722,37.1a12.8,12.8,0,0,1-.466,5.4,1.411,1.411,0,0,0,0,.811,5.654,5.654,0,0,1-.033,3.365A2.468,2.468,0,0,1,48.4,48.531a1.074,1.074,0,0,0-.9.27,4.65,4.65,0,0,1-6.447-.041.9.9,0,0,0-.737-.241A2.537,2.537,0,0,1,37.3,46.359a4.861,4.861,0,0,1-.138-.785c-.023-.279-.005-.561-.005-.931"
-												transform="translate(-33.598 -29.506)"
-											/>
-											<path
-												className="b-navbar-mobile"
-												d="M36.353,25.2a9.713,9.713,0,0,1,7.53,3.313,7.287,7.287,0,0,1,1.654,3.415.743.743,0,0,0,.395.572,2.159,2.159,0,0,1,1.031,1.518,5.811,5.811,0,0,1-.341,3.562,2.2,2.2,0,0,1-2.169,1.389c-.226,0-.286-.052-.256-.3.182-1.543.334-3.088.388-4.644a6.622,6.622,0,0,0-3.926-6.618,8.922,8.922,0,0,0-9.957.92,6.3,6.3,0,0,0-2.515,5.342,45.419,45.419,0,0,0,.336,4.559.522.522,0,0,0,.22.4,13.972,13.972,0,0,0,5.656,2.7,1.177,1.177,0,0,0,.762-.124,2.55,2.55,0,0,1,1.925-.019.662.662,0,0,1,.355.821.685.685,0,0,1-.653.6c-.444.025-.89.009-1.336,0a.491.491,0,0,1-.443-.236c-.158-.316-.431-.339-.713-.392a14.078,14.078,0,0,1-5.859-2.764,1.472,1.472,0,0,0-.651-.308A2.049,2.049,0,0,1,26.2,37.68a5.672,5.672,0,0,1-.348-3.808,2.128,2.128,0,0,1,1.077-1.428.49.49,0,0,0,.27-.362c.864-3.812,3.413-5.76,6.928-6.629a7.686,7.686,0,0,1,1.02-.17c.414-.044.831-.058,1.2-.083"
-												transform="translate(-25.675 -25.199)"
-											/>
-										</g>
-										<g transform="translate(192.696 0)">
-											<path
-												className="b-navbar-mobile"
-												d="M37.161,44.643a16.71,16.71,0,0,0,3.358,1.73c.171.063.243.246.355.378a4.984,4.984,0,0,0,2.987,1.956,3.312,3.312,0,0,0,2.3-.529,6.725,6.725,0,0,0,2-1.987,14.125,14.125,0,0,0,2.25-5.849c.052-.314-.073-.375-.337-.388a15.483,15.483,0,0,1-3.5-.458,12.478,12.478,0,0,1-4.973-2.827c-.275-.249-.375-.188-.562.084a6.522,6.522,0,0,1-2.715,2.4c-.267.117-.235.291-.213.5a15.768,15.768,0,0,0,.95,3.95l.133.352a11.318,11.318,0,0,1-1.683-.991.3.3,0,0,1-.081-.154,12.447,12.447,0,0,1-.409-6.392,6.221,6.221,0,0,1,5.5-4.954,10.287,10.287,0,0,1,5.025.371A6.144,6.144,0,0,1,51.722,37.1a12.8,12.8,0,0,1-.466,5.4,1.411,1.411,0,0,0,0,.811,5.654,5.654,0,0,1-.033,3.365A2.468,2.468,0,0,1,48.4,48.531a1.074,1.074,0,0,0-.9.27,4.65,4.65,0,0,1-6.447-.041.9.9,0,0,0-.737-.241A2.537,2.537,0,0,1,37.3,46.359a4.861,4.861,0,0,1-.138-.785c-.023-.279-.005-.561-.005-.931"
-												transform="translate(-33.598 -29.506)"
-											/>
-											<path
-												className="b-navbar-mobile"
-												d="M36.353,25.2a9.713,9.713,0,0,1,7.53,3.313,7.287,7.287,0,0,1,1.654,3.415.743.743,0,0,0,.395.572,2.159,2.159,0,0,1,1.031,1.518,5.811,5.811,0,0,1-.341,3.562,2.2,2.2,0,0,1-2.169,1.389c-.226,0-.286-.052-.256-.3.182-1.543.334-3.088.388-4.644a6.622,6.622,0,0,0-3.926-6.618,8.922,8.922,0,0,0-9.957.92,6.3,6.3,0,0,0-2.515,5.342,45.419,45.419,0,0,0,.336,4.559.522.522,0,0,0,.22.4,13.972,13.972,0,0,0,5.656,2.7,1.177,1.177,0,0,0,.762-.124,2.55,2.55,0,0,1,1.925-.019.662.662,0,0,1,.355.821.685.685,0,0,1-.653.6c-.444.025-.89.009-1.336,0a.491.491,0,0,1-.443-.236c-.158-.316-.431-.339-.713-.392a14.078,14.078,0,0,1-5.859-2.764,1.472,1.472,0,0,0-.651-.308A2.049,2.049,0,0,1,26.2,37.68a5.672,5.672,0,0,1-.348-3.808,2.128,2.128,0,0,1,1.077-1.428.49.49,0,0,0,.27-.362c.864-3.812,3.413-5.76,6.928-6.629a7.686,7.686,0,0,1,1.02-.17c.414-.044.831-.058,1.2-.083"
-												transform="translate(-25.675 -25.199)"
-											/>
-										</g>
 									</g>
-								</g>
-								<g transform="translate(0 608.058)">
 									<g
-										className="t-navbar-mobile"
-										transform="matrix(1, 0, 0, 1, -9, -614.06)">
+										transform="translate(0 565.796)"
+										onClick={() =>
+											(window.location.href =
+												'/codigo-linea-etica')
+										}>
 										<g
-											className="l-navbar-mobile"
-											transform="translate(9 614)">
-											<rect
-												className="n-navbar-mobile"
-												width={420}
-												height={43}
-											/>
-											<rect
-												className="a-navbar-mobile"
-												x={0.5}
-												y={0.5}
-												width={419}
-												height={42}
-											/>
+											className="s-navbar-mobile"
+											transform="matrix(1, 0, 0, 1, -9, -571.8)">
+											<g
+												className="l-navbar-mobile"
+												transform="translate(9 572)">
+												<rect
+													className="n-navbar-mobile"
+													width={420}
+													height={43}
+												/>
+												<rect
+													className="a-navbar-mobile"
+													x={0.5}
+													y={0.5}
+													width={419}
+													height={42}
+												/>
+											</g>
 										</g>
+										<text
+											className="m-navbar-mobile"
+											transform="translate(40 10.204)">
+											<tspan x={0} y={15}>
+												{'Ética y compliance​'}
+											</tspan>
+										</text>
 									</g>
-									<text
-										className="m-navbar-mobile"
-										transform="translate(40 9.942)">
-										<tspan x={0} y={15}>
-											{'Trabaje con nosotros'}
-										</tspan>
-									</text>
-								</g>
-								<g
-									transform="translate(0 565.796)"
-									onClick={() =>
-									(window.location.href =
-										'/codigo-linea-etica')
-									}>
 									<g
-										className="s-navbar-mobile"
-										transform="matrix(1, 0, 0, 1, -9, -571.8)">
+										transform="translate(0 523.534)"
+										onClick={() => setStep(3)}>
 										<g
-											className="l-navbar-mobile"
-											transform="translate(9 572)">
-											<rect
-												className="n-navbar-mobile"
-												width={420}
-												height={43}
-											/>
-											<rect
-												className="a-navbar-mobile"
-												x={0.5}
-												y={0.5}
-												width={419}
-												height={42}
-											/>
+											className="r-navbar-mobile"
+											transform="matrix(1, 0, 0, 1, -9, -529.53)">
+											<g
+												className="l-navbar-mobile"
+												transform="translate(9 530)">
+												<rect
+													className="n-navbar-mobile"
+													width={420}
+													height={44}
+												/>
+												<rect
+													className="a-navbar-mobile"
+													x={0.5}
+													y={0.5}
+													width={419}
+													height={43}
+												/>
+											</g>
 										</g>
+										<text
+											className="m-navbar-mobile"
+											transform="translate(40 10.467)">
+											<tspan x={0} y={15}>
+												{'Actualidad​'}
+											</tspan>
+										</text>
 									</g>
-									<text
-										className="m-navbar-mobile"
-										transform="translate(40 10.204)">
-										<tspan x={0} y={15}>
-											{'Ética y compliance​'}
-										</tspan>
-									</text>
-								</g>
-								<g
-									transform="translate(0 523.534)"
-									onClick={() => setStep(3)}>
 									<g
-										className="r-navbar-mobile"
-										transform="matrix(1, 0, 0, 1, -9, -529.53)">
+										transform="translate(0 356.271)"
+										onClick={() => setStep(0)}>
 										<g
-											className="l-navbar-mobile"
-											transform="translate(9 530)">
-											<rect
-												className="n-navbar-mobile"
-												width={420}
-												height={44}
-											/>
-											<rect
-												className="a-navbar-mobile"
-												x={0.5}
-												y={0.5}
-												width={419}
-												height={43}
-											/>
+											className="q-navbar-mobile"
+											transform="matrix(1, 0, 0, 1, -9, -362.27)">
+											<g
+												className="l-navbar-mobile"
+												transform="translate(9 362)">
+												<rect
+													className="n-navbar-mobile"
+													width={420}
+													height={44}
+												/>
+												<rect
+													className="a-navbar-mobile"
+													x={0.5}
+													y={0.5}
+													width={419}
+													height={43}
+												/>
+											</g>
 										</g>
+										<text
+											className="m-navbar-mobile"
+											transform="translate(40 10.729)">
+											<tspan x={0} y={15}>
+												{'Soluciones en salud​'}
+											</tspan>
+										</text>
 									</g>
-									<text
-										className="m-navbar-mobile"
-										transform="translate(40 10.467)">
-										<tspan x={0} y={15}>
-											{'Actualidad​'}
-										</tspan>
-									</text>
-								</g>
-								<g
-									transform="translate(0 356.271)"
-									onClick={() => setStep(0)}>
 									<g
-										className="q-navbar-mobile"
-										transform="matrix(1, 0, 0, 1, -9, -362.27)">
+										transform="translate(0 314.009)"
+										onClick={() => setStep(1)}>
 										<g
-											className="l-navbar-mobile"
-											transform="translate(9 362)">
-											<rect
-												className="n-navbar-mobile"
-												width={420}
-												height={44}
-											/>
-											<rect
-												className="a-navbar-mobile"
-												x={0.5}
-												y={0.5}
-												width={419}
-												height={43}
-											/>
+											className="p-navbar-mobile"
+											transform="matrix(1, 0, 0, 1, -9, -320.01)">
+											<g
+												className="l-navbar-mobile"
+												transform="translate(9 320)">
+												<rect
+													className="n-navbar-mobile"
+													width={420}
+													height={43}
+												/>
+												<rect
+													className="a-navbar-mobile"
+													x={0.5}
+													y={0.5}
+													width={419}
+													height={42}
+												/>
+											</g>
 										</g>
+										<text
+											className="m-navbar-mobile"
+											transform="translate(40 9.991)">
+											<tspan x={0} y={15}>
+												{'Trayectoria'}
+											</tspan>
+										</text>
 									</g>
-									<text
-										className="m-navbar-mobile"
-										transform="translate(40 10.729)">
-										<tspan x={0} y={15}>
-											{'Soluciones en salud​'}
-										</tspan>
-									</text>
-								</g>
-								<g
-									transform="translate(0 314.009)"
-									onClick={() => setStep(1)}>
 									<g
-										className="p-navbar-mobile"
-										transform="matrix(1, 0, 0, 1, -9, -320.01)">
+										transform="translate(0 272.778)"
+										onClick={() =>
+											(window.location.href = '/')
+										}>
 										<g
-											className="l-navbar-mobile"
-											transform="translate(9 320)">
-											<rect
-												className="n-navbar-mobile"
-												width={420}
-												height={43}
-											/>
-											<rect
-												className="a-navbar-mobile"
-												x={0.5}
-												y={0.5}
-												width={419}
-												height={42}
-											/>
+											className="o-navbar-mobile"
+											transform="matrix(1, 0, 0, 1, -9, -278.78)">
+											<g
+												className="l-navbar-mobile"
+												transform="translate(9 279)">
+												<rect
+													className="n-navbar-mobile"
+													width={420}
+													height={42}
+												/>
+												<rect
+													className="a-navbar-mobile"
+													x={0.5}
+													y={0.5}
+													width={419}
+													height={41}
+												/>
+											</g>
 										</g>
+										<text
+											className="m-navbar-mobile"
+											transform="translate(40 9.222)">
+											<tspan x={0} y={15}>
+												{'Home'}
+											</tspan>
+										</text>
 									</g>
-									<text
-										className="m-navbar-mobile"
-										transform="translate(40 9.991)">
-										<tspan x={0} y={15}>
-											{'Trayectoria'}
-										</tspan>
-									</text>
 								</g>
-								<g
-									transform="translate(0 272.778)"
-									onClick={() =>
-										(window.location.href = '/')
-									}>
-									<g
-										className="o-navbar-mobile"
-										transform="matrix(1, 0, 0, 1, -9, -278.78)">
-										<g
-											className="l-navbar-mobile"
-											transform="translate(9 279)">
-											<rect
-												className="n-navbar-mobile"
-												width={420}
-												height={42}
-											/>
-											<rect
-												className="a-navbar-mobile"
-												x={0.5}
-												y={0.5}
-												width={419}
-												height={41}
-											/>
-										</g>
-									</g>
-									<text
-										className="m-navbar-mobile"
-										transform="translate(40 9.222)">
-										<tspan x={0} y={15}>
-											{'Home'}
-										</tspan>
-									</text>
-								</g>
-								</g>
-								
+
 								<path
 									className="g-navbar-mobile"
 									d="M955.324-45.344,948.263-52.4l-6.929,6.929a3.1,3.1,0,0,1-4.382,0,3.1,3.1,0,0,1,0-4.381l6.929-6.929-7.061-7.061a2.911,2.911,0,0,1,0-4.117,2.912,2.912,0,0,1,4.117,0L948-60.9l7.193-7.193a3.1,3.1,0,0,1,4.382,0,3.1,3.1,0,0,1,0,4.381l-7.194,7.194,7.061,7.061a2.911,2.911,0,0,1,0,4.117,2.9,2.9,0,0,1-2.059.853A2.9,2.9,0,0,1,955.324-45.344Z"
@@ -2655,7 +2697,6 @@ export const NavbarMovil: React.FC = () => {
 								</filter>
 							</defs>
 							<g>
-								
 								<g transform="translate(357.487 10.743)">
 									<rect
 										className="b-navbar-mobile"
@@ -2690,7 +2731,7 @@ export const NavbarMovil: React.FC = () => {
 										transform="translate(-25.675 -25.199)"
 									/>
 								</g>
-								
+
 								<path
 									className="d-navbar-mobile"
 									d="M311,0"
@@ -2779,13 +2820,15 @@ export const NavbarMovil: React.FC = () => {
 								<foreignObject
 									x={0}
 									y={0}
-									width='100%'
+									width="100%"
 									height={266}
 									transform="translate(5 189.188)">
-									<div className='w-full flex justify-between mx-[auto] h-[46px] max-w-[331px] border-solid border-[3px] border-[#001f5f]' style={{
-										borderTopLeftRadius: 100,
-										borderBottomRightRadius: 100,
-									}}>
+									<div
+										className="w-full flex justify-between mx-[auto] h-[46px] max-w-[331px] border-solid border-[3px] border-[#001f5f]"
+										style={{
+											borderTopLeftRadius: 100,
+											borderBottomRightRadius: 100,
+										}}>
 										<input
 											type="text"
 											className="w-[80%] border-[transparent] bg-[transparent] pl-[30px]"
@@ -2793,7 +2836,13 @@ export const NavbarMovil: React.FC = () => {
 											onChange={handleSearchPage}
 											style={{ outline: 'none' }}
 										/>
-										<img src="/images/lupa.svg" className='mr-[30px]' alt="" width={25} height={25} />
+										<img
+											src="/images/lupa.svg"
+											className="mr-[30px]"
+											alt=""
+											width={25}
+											height={25}
+										/>
 									</div>
 									{results.length > 0 && (
 										<div className="w-full h-[200px] bg-white overflow-y-auto">
@@ -2806,8 +2855,8 @@ export const NavbarMovil: React.FC = () => {
 														className="h-[40px] w-full flex items-center border-b-solid border-b-[1px] border-[#e6e6e6] px-[10px]"
 														key={index}
 														onClick={() =>
-														(window.location.href =
-															item.url)
+															(window.location.href =
+																item.url)
 														}>
 														<span>
 															{item.label}
@@ -2818,7 +2867,12 @@ export const NavbarMovil: React.FC = () => {
 										</div>
 									)}
 								</foreignObject>
-								<g transform={results.length > 0 ? 'translate(0 161)' : 'translate(0 0)'}>
+								<g
+									transform={
+										results.length > 0
+											? 'translate(0 161)'
+											: 'translate(0 0)'
+									}>
 									<rect
 										className="b-navbar-mobile"
 										width={420}
@@ -2836,13 +2890,6 @@ export const NavbarMovil: React.FC = () => {
 									/>
 									<text
 										className="c-navbar-mobile"
-										transform="translate(77 474)">
-										<tspan x={0} y={0}>
-											{'Noticias'}
-										</tspan>
-									</text>
-									<text
-										className="c-navbar-mobile"
 										transform="translate(77 510)"
 										onClick={() =>
 											(window.location.href = '/eventos')
@@ -2851,286 +2898,295 @@ export const NavbarMovil: React.FC = () => {
 											{'Eventos'}
 										</tspan>
 									</text>
+									{/* <text
+										className="c-navbar-mobile"
+										transform="translate(77 474)">
+										<tspan x={0} y={0}>
+											{'Noticias'}
+										</tspan>
+									</text> */}
+									
 									<line
 										className="d-navbar-mobile"
 										x2={311}
 										transform="translate(73 489)"
 									/>
 									<g transform="translate(2 654.613)">
-									<g
-										className="v-navbar-mobile"
-										transform="matrix(1, 0, 0, 1, -9, -660.61)">
 										<g
-											className="j-navbar-mobile"
-											transform="translate(9 661)">
-											<rect
-												className="n-navbar-mobile"
-												width={420}
-												height={43}
+											className="v-navbar-mobile"
+											transform="matrix(1, 0, 0, 1, -9, -660.61)">
+											<g
+												className="j-navbar-mobile"
+												transform="translate(9 661)">
+												<rect
+													className="n-navbar-mobile"
+													width={420}
+													height={43}
+												/>
+												<rect
+													className="a-navbar-mobile"
+													x={0.5}
+													y={0.5}
+													width={419}
+													height={42}
+												/>
+											</g>
+										</g>
+										<text
+											className="k-navbar-mobile"
+											transform="translate(40 10.387)">
+											<tspan x={0} y={15}>
+												{'Ucitech'}
+											</tspan>
+										</text>
+									</g>
+									<g
+										transform="translate(2 547.534)"
+										onClick={() =>
+											(window.location.href =
+												'/contactenos')
+										}>
+										<g
+											className="u-navbar-mobile"
+											transform="matrix(1, 0, 0, 1, -9, -553.53)">
+											<g
+												className="l-navbar-mobile"
+												transform="translate(9 617)">
+												<rect
+													className="n-navbar-mobile"
+													width={420}
+													height={45}
+												/>
+												<rect
+													className="a-navbar-mobile"
+													x={0.5}
+													y={0.5}
+													width={419}
+													height={44}
+												/>
+											</g>
+										</g>
+										<text
+											className="m-navbar-mobile"
+											transform="translate(40 74.466)">
+											<tspan x={0} y={15}>
+												{'Contáctenos'}
+											</tspan>
+										</text>
+										<g transform="translate(192.696 0)">
+											<path
+												className="b-navbar-mobile"
+												d="M37.161,44.643a16.71,16.71,0,0,0,3.358,1.73c.171.063.243.246.355.378a4.984,4.984,0,0,0,2.987,1.956,3.312,3.312,0,0,0,2.3-.529,6.725,6.725,0,0,0,2-1.987,14.125,14.125,0,0,0,2.25-5.849c.052-.314-.073-.375-.337-.388a15.483,15.483,0,0,1-3.5-.458,12.478,12.478,0,0,1-4.973-2.827c-.275-.249-.375-.188-.562.084a6.522,6.522,0,0,1-2.715,2.4c-.267.117-.235.291-.213.5a15.768,15.768,0,0,0,.95,3.95l.133.352a11.318,11.318,0,0,1-1.683-.991.3.3,0,0,1-.081-.154,12.447,12.447,0,0,1-.409-6.392,6.221,6.221,0,0,1,5.5-4.954,10.287,10.287,0,0,1,5.025.371A6.144,6.144,0,0,1,51.722,37.1a12.8,12.8,0,0,1-.466,5.4,1.411,1.411,0,0,0,0,.811,5.654,5.654,0,0,1-.033,3.365A2.468,2.468,0,0,1,48.4,48.531a1.074,1.074,0,0,0-.9.27,4.65,4.65,0,0,1-6.447-.041.9.9,0,0,0-.737-.241A2.537,2.537,0,0,1,37.3,46.359a4.861,4.861,0,0,1-.138-.785c-.023-.279-.005-.561-.005-.931"
+												transform="translate(-33.598 -29.506)"
 											/>
-											<rect
-												className="a-navbar-mobile"
-												x={0.5}
-												y={0.5}
-												width={419}
-												height={42}
+											<path
+												className="b-navbar-mobile"
+												d="M36.353,25.2a9.713,9.713,0,0,1,7.53,3.313,7.287,7.287,0,0,1,1.654,3.415.743.743,0,0,0,.395.572,2.159,2.159,0,0,1,1.031,1.518,5.811,5.811,0,0,1-.341,3.562,2.2,2.2,0,0,1-2.169,1.389c-.226,0-.286-.052-.256-.3.182-1.543.334-3.088.388-4.644a6.622,6.622,0,0,0-3.926-6.618,8.922,8.922,0,0,0-9.957.92,6.3,6.3,0,0,0-2.515,5.342,45.419,45.419,0,0,0,.336,4.559.522.522,0,0,0,.22.4,13.972,13.972,0,0,0,5.656,2.7,1.177,1.177,0,0,0,.762-.124,2.55,2.55,0,0,1,1.925-.019.662.662,0,0,1,.355.821.685.685,0,0,1-.653.6c-.444.025-.89.009-1.336,0a.491.491,0,0,1-.443-.236c-.158-.316-.431-.339-.713-.392a14.078,14.078,0,0,1-5.859-2.764,1.472,1.472,0,0,0-.651-.308A2.049,2.049,0,0,1,26.2,37.68a5.672,5.672,0,0,1-.348-3.808,2.128,2.128,0,0,1,1.077-1.428.49.49,0,0,0,.27-.362c.864-3.812,3.413-5.76,6.928-6.629a7.686,7.686,0,0,1,1.02-.17c.414-.044.831-.058,1.2-.083"
+												transform="translate(-25.675 -25.199)"
+											/>
+										</g>
+										<g transform="translate(192.696 0)">
+											<path
+												className="b-navbar-mobile"
+												d="M37.161,44.643a16.71,16.71,0,0,0,3.358,1.73c.171.063.243.246.355.378a4.984,4.984,0,0,0,2.987,1.956,3.312,3.312,0,0,0,2.3-.529,6.725,6.725,0,0,0,2-1.987,14.125,14.125,0,0,0,2.25-5.849c.052-.314-.073-.375-.337-.388a15.483,15.483,0,0,1-3.5-.458,12.478,12.478,0,0,1-4.973-2.827c-.275-.249-.375-.188-.562.084a6.522,6.522,0,0,1-2.715,2.4c-.267.117-.235.291-.213.5a15.768,15.768,0,0,0,.95,3.95l.133.352a11.318,11.318,0,0,1-1.683-.991.3.3,0,0,1-.081-.154,12.447,12.447,0,0,1-.409-6.392,6.221,6.221,0,0,1,5.5-4.954,10.287,10.287,0,0,1,5.025.371A6.144,6.144,0,0,1,51.722,37.1a12.8,12.8,0,0,1-.466,5.4,1.411,1.411,0,0,0,0,.811,5.654,5.654,0,0,1-.033,3.365A2.468,2.468,0,0,1,48.4,48.531a1.074,1.074,0,0,0-.9.27,4.65,4.65,0,0,1-6.447-.041.9.9,0,0,0-.737-.241A2.537,2.537,0,0,1,37.3,46.359a4.861,4.861,0,0,1-.138-.785c-.023-.279-.005-.561-.005-.931"
+												transform="translate(-33.598 -29.506)"
+											/>
+											<path
+												className="b-navbar-mobile"
+												d="M36.353,25.2a9.713,9.713,0,0,1,7.53,3.313,7.287,7.287,0,0,1,1.654,3.415.743.743,0,0,0,.395.572,2.159,2.159,0,0,1,1.031,1.518,5.811,5.811,0,0,1-.341,3.562,2.2,2.2,0,0,1-2.169,1.389c-.226,0-.286-.052-.256-.3.182-1.543.334-3.088.388-4.644a6.622,6.622,0,0,0-3.926-6.618,8.922,8.922,0,0,0-9.957.92,6.3,6.3,0,0,0-2.515,5.342,45.419,45.419,0,0,0,.336,4.559.522.522,0,0,0,.22.4,13.972,13.972,0,0,0,5.656,2.7,1.177,1.177,0,0,0,.762-.124,2.55,2.55,0,0,1,1.925-.019.662.662,0,0,1,.355.821.685.685,0,0,1-.653.6c-.444.025-.89.009-1.336,0a.491.491,0,0,1-.443-.236c-.158-.316-.431-.339-.713-.392a14.078,14.078,0,0,1-5.859-2.764,1.472,1.472,0,0,0-.651-.308A2.049,2.049,0,0,1,26.2,37.68a5.672,5.672,0,0,1-.348-3.808,2.128,2.128,0,0,1,1.077-1.428.49.49,0,0,0,.27-.362c.864-3.812,3.413-5.76,6.928-6.629a7.686,7.686,0,0,1,1.02-.17c.414-.044.831-.058,1.2-.083"
+												transform="translate(-25.675 -25.199)"
 											/>
 										</g>
 									</g>
-									<text
-										className="k-navbar-mobile"
-										transform="translate(40 10.387)">
-										<tspan x={0} y={15}>
-											{'Ucitech'}
-										</tspan>
-									</text>
-								</g>
-								<g
-									transform="translate(2 547.534)"
-									onClick={() =>
-										(window.location.href = '/contactenos')
-									}>
-									<g
-										className="u-navbar-mobile"
-										transform="matrix(1, 0, 0, 1, -9, -553.53)">
+									<g transform="translate(2 569.058)">
 										<g
-											className="l-navbar-mobile"
-											transform="translate(9 617)">
-											<rect
-												className="n-navbar-mobile"
-												width={420}
-												height={45}
-											/>
-											<rect
-												className="a-navbar-mobile"
-												x={0.5}
-												y={0.5}
-												width={419}
-												height={44}
-											/>
+											className="t-navbar-mobile"
+											transform="matrix(1, 0, 0, 1, -9, -575.06)">
+											<g
+												className="l-navbar-mobile"
+												transform="translate(9 575)">
+												<rect
+													className="n-navbar-mobile"
+													width={420}
+													height={43}
+												/>
+												<rect
+													className="a-navbar-mobile"
+													x={0.5}
+													y={0.5}
+													width={419}
+													height={42}
+												/>
+											</g>
 										</g>
+										<text
+											className="m-navbar-mobile"
+											transform="translate(40 9.942)">
+											<tspan x={0} y={15}>
+												{'Trabaje con nosotros'}
+											</tspan>
+										</text>
 									</g>
-									<text
-										className="m-navbar-mobile"
-										transform="translate(40 74.466)">
-										<tspan x={0} y={15}>
-											{'Contáctenos'}
-										</tspan>
-									</text>
-									<g transform="translate(192.696 0)">
-										<path
-											className="b-navbar-mobile"
-											d="M37.161,44.643a16.71,16.71,0,0,0,3.358,1.73c.171.063.243.246.355.378a4.984,4.984,0,0,0,2.987,1.956,3.312,3.312,0,0,0,2.3-.529,6.725,6.725,0,0,0,2-1.987,14.125,14.125,0,0,0,2.25-5.849c.052-.314-.073-.375-.337-.388a15.483,15.483,0,0,1-3.5-.458,12.478,12.478,0,0,1-4.973-2.827c-.275-.249-.375-.188-.562.084a6.522,6.522,0,0,1-2.715,2.4c-.267.117-.235.291-.213.5a15.768,15.768,0,0,0,.95,3.95l.133.352a11.318,11.318,0,0,1-1.683-.991.3.3,0,0,1-.081-.154,12.447,12.447,0,0,1-.409-6.392,6.221,6.221,0,0,1,5.5-4.954,10.287,10.287,0,0,1,5.025.371A6.144,6.144,0,0,1,51.722,37.1a12.8,12.8,0,0,1-.466,5.4,1.411,1.411,0,0,0,0,.811,5.654,5.654,0,0,1-.033,3.365A2.468,2.468,0,0,1,48.4,48.531a1.074,1.074,0,0,0-.9.27,4.65,4.65,0,0,1-6.447-.041.9.9,0,0,0-.737-.241A2.537,2.537,0,0,1,37.3,46.359a4.861,4.861,0,0,1-.138-.785c-.023-.279-.005-.561-.005-.931"
-											transform="translate(-33.598 -29.506)"
-										/>
-										<path
-											className="b-navbar-mobile"
-											d="M36.353,25.2a9.713,9.713,0,0,1,7.53,3.313,7.287,7.287,0,0,1,1.654,3.415.743.743,0,0,0,.395.572,2.159,2.159,0,0,1,1.031,1.518,5.811,5.811,0,0,1-.341,3.562,2.2,2.2,0,0,1-2.169,1.389c-.226,0-.286-.052-.256-.3.182-1.543.334-3.088.388-4.644a6.622,6.622,0,0,0-3.926-6.618,8.922,8.922,0,0,0-9.957.92,6.3,6.3,0,0,0-2.515,5.342,45.419,45.419,0,0,0,.336,4.559.522.522,0,0,0,.22.4,13.972,13.972,0,0,0,5.656,2.7,1.177,1.177,0,0,0,.762-.124,2.55,2.55,0,0,1,1.925-.019.662.662,0,0,1,.355.821.685.685,0,0,1-.653.6c-.444.025-.89.009-1.336,0a.491.491,0,0,1-.443-.236c-.158-.316-.431-.339-.713-.392a14.078,14.078,0,0,1-5.859-2.764,1.472,1.472,0,0,0-.651-.308A2.049,2.049,0,0,1,26.2,37.68a5.672,5.672,0,0,1-.348-3.808,2.128,2.128,0,0,1,1.077-1.428.49.49,0,0,0,.27-.362c.864-3.812,3.413-5.76,6.928-6.629a7.686,7.686,0,0,1,1.02-.17c.414-.044.831-.058,1.2-.083"
-											transform="translate(-25.675 -25.199)"
-										/>
-									</g>
-									<g transform="translate(192.696 0)">
-										<path
-											className="b-navbar-mobile"
-											d="M37.161,44.643a16.71,16.71,0,0,0,3.358,1.73c.171.063.243.246.355.378a4.984,4.984,0,0,0,2.987,1.956,3.312,3.312,0,0,0,2.3-.529,6.725,6.725,0,0,0,2-1.987,14.125,14.125,0,0,0,2.25-5.849c.052-.314-.073-.375-.337-.388a15.483,15.483,0,0,1-3.5-.458,12.478,12.478,0,0,1-4.973-2.827c-.275-.249-.375-.188-.562.084a6.522,6.522,0,0,1-2.715,2.4c-.267.117-.235.291-.213.5a15.768,15.768,0,0,0,.95,3.95l.133.352a11.318,11.318,0,0,1-1.683-.991.3.3,0,0,1-.081-.154,12.447,12.447,0,0,1-.409-6.392,6.221,6.221,0,0,1,5.5-4.954,10.287,10.287,0,0,1,5.025.371A6.144,6.144,0,0,1,51.722,37.1a12.8,12.8,0,0,1-.466,5.4,1.411,1.411,0,0,0,0,.811,5.654,5.654,0,0,1-.033,3.365A2.468,2.468,0,0,1,48.4,48.531a1.074,1.074,0,0,0-.9.27,4.65,4.65,0,0,1-6.447-.041.9.9,0,0,0-.737-.241A2.537,2.537,0,0,1,37.3,46.359a4.861,4.861,0,0,1-.138-.785c-.023-.279-.005-.561-.005-.931"
-											transform="translate(-33.598 -29.506)"
-										/>
-										<path
-											className="b-navbar-mobile"
-											d="M36.353,25.2a9.713,9.713,0,0,1,7.53,3.313,7.287,7.287,0,0,1,1.654,3.415.743.743,0,0,0,.395.572,2.159,2.159,0,0,1,1.031,1.518,5.811,5.811,0,0,1-.341,3.562,2.2,2.2,0,0,1-2.169,1.389c-.226,0-.286-.052-.256-.3.182-1.543.334-3.088.388-4.644a6.622,6.622,0,0,0-3.926-6.618,8.922,8.922,0,0,0-9.957.92,6.3,6.3,0,0,0-2.515,5.342,45.419,45.419,0,0,0,.336,4.559.522.522,0,0,0,.22.4,13.972,13.972,0,0,0,5.656,2.7,1.177,1.177,0,0,0,.762-.124,2.55,2.55,0,0,1,1.925-.019.662.662,0,0,1,.355.821.685.685,0,0,1-.653.6c-.444.025-.89.009-1.336,0a.491.491,0,0,1-.443-.236c-.158-.316-.431-.339-.713-.392a14.078,14.078,0,0,1-5.859-2.764,1.472,1.472,0,0,0-.651-.308A2.049,2.049,0,0,1,26.2,37.68a5.672,5.672,0,0,1-.348-3.808,2.128,2.128,0,0,1,1.077-1.428.49.49,0,0,0,.27-.362c.864-3.812,3.413-5.76,6.928-6.629a7.686,7.686,0,0,1,1.02-.17c.414-.044.831-.058,1.2-.083"
-											transform="translate(-25.675 -25.199)"
-										/>
-									</g>
-								</g>
-								<g transform="translate(2 569.058)">
 									<g
-										className="t-navbar-mobile"
-										transform="matrix(1, 0, 0, 1, -9, -575.06)">
+										transform="translate(2 526.796)"
+										onClick={() =>
+											(window.location.href =
+												'codigo-linea-etica')
+										}>
 										<g
-											className="l-navbar-mobile"
-											transform="translate(9 575)">
-											<rect
-												className="n-navbar-mobile"
-												width={420}
-												height={43}
-											/>
-											<rect
-												className="a-navbar-mobile"
-												x={0.5}
-												y={0.5}
-												width={419}
-												height={42}
-											/>
+											className="s-navbar-mobile"
+											transform="matrix(1, 0, 0, 1, -9, -532.8)">
+											<g
+												className="l-navbar-mobile"
+												transform="translate(9 533)">
+												<rect
+													className="n-navbar-mobile"
+													width={420}
+													height={43}
+												/>
+												<rect
+													className="a-navbar-mobile"
+													x={0.5}
+													y={0.5}
+													width={419}
+													height={42}
+												/>
+											</g>
 										</g>
+										<text
+											className="m-navbar-mobile"
+											transform="translate(40 10.204)">
+											<tspan x={0} y={15}>
+												{'Ética y compliance​'}
+											</tspan>
+										</text>
 									</g>
-									<text
-										className="m-navbar-mobile"
-										transform="translate(40 9.942)">
-										<tspan x={0} y={15}>
-											{'Trabaje con nosotros'}
-										</tspan>
-									</text>
-								</g>
-								<g
-									transform="translate(2 526.796)"
-									onClick={() =>
-									(window.location.href =
-										'codigo-linea-etica')
-									}>
 									<g
-										className="s-navbar-mobile"
-										transform="matrix(1, 0, 0, 1, -9, -532.8)">
+										transform="translate(2 398.534)"
+										onClick={() => setStep(0)}>
 										<g
-											className="l-navbar-mobile"
-											transform="translate(9 533)">
-											<rect
-												className="n-navbar-mobile"
-												width={420}
-												height={43}
-											/>
-											<rect
-												className="a-navbar-mobile"
-												x={0.5}
-												y={0.5}
-												width={419}
-												height={42}
-											/>
+											className="r-navbar-mobile"
+											transform="matrix(1, 0, 0, 1, -9, -404.53)">
+											<g
+												className="l-navbar-mobile"
+												transform="translate(9 405)">
+												<rect
+													className="n-navbar-mobile"
+													width={420}
+													height={44}
+												/>
+												<rect
+													className="a-navbar-mobile"
+													x={0.5}
+													y={0.5}
+													width={419}
+													height={43}
+												/>
+											</g>
 										</g>
+										<text
+											className="m-navbar-mobile"
+											transform="translate(40 10.467)">
+											<tspan x={0} y={15}>
+												{'Actualidad​'}
+											</tspan>
+										</text>
 									</g>
-									<text
-										className="m-navbar-mobile"
-										transform="translate(40 10.204)">
-										<tspan x={0} y={15}>
-											{'Ética y compliance​'}
-										</tspan>
-									</text>
-								</g>
-								<g
-									transform="translate(2 398.534)"
-									onClick={() => setStep(0)}>
 									<g
-										className="r-navbar-mobile"
-										transform="matrix(1, 0, 0, 1, -9, -404.53)">
+										transform="translate(2 356.271)"
+										onClick={() => setStep(2)}>
 										<g
-											className="l-navbar-mobile"
-											transform="translate(9 405)">
-											<rect
-												className="n-navbar-mobile"
-												width={420}
-												height={44}
-											/>
-											<rect
-												className="a-navbar-mobile"
-												x={0.5}
-												y={0.5}
-												width={419}
-												height={43}
-											/>
+											className="q-navbar-mobile"
+											transform="matrix(1, 0, 0, 1, -9, -362.27)">
+											<g
+												className="l-navbar-mobile"
+												transform="translate(9 362)">
+												<rect
+													className="n-navbar-mobile"
+													width={420}
+													height={44}
+												/>
+												<rect
+													className="a-navbar-mobile"
+													x={0.5}
+													y={0.5}
+													width={419}
+													height={43}
+												/>
+											</g>
 										</g>
+										<text
+											className="m-navbar-mobile"
+											transform="translate(40 10.729)">
+											<tspan x={0} y={15}>
+												{'Soluciones en salud​'}
+											</tspan>
+										</text>
 									</g>
-									<text
-										className="m-navbar-mobile"
-										transform="translate(40 10.467)">
-										<tspan x={0} y={15}>
-											{'Actualidad​'}
-										</tspan>
-									</text>
-								</g>
-								<g
-									transform="translate(2 356.271)"
-									onClick={() => setStep(2)}>
 									<g
-										className="q-navbar-mobile"
-										transform="matrix(1, 0, 0, 1, -9, -362.27)">
+										transform="translate(2 314.009)"
+										onClick={() => setStep(1)}>
 										<g
-											className="l-navbar-mobile"
-											transform="translate(9 362)">
-											<rect
-												className="n-navbar-mobile"
-												width={420}
-												height={44}
-											/>
-											<rect
-												className="a-navbar-mobile"
-												x={0.5}
-												y={0.5}
-												width={419}
-												height={43}
-											/>
+											className="p-navbar-mobile"
+											transform="matrix(1, 0, 0, 1, -9, -320.01)">
+											<g
+												className="l-navbar-mobile"
+												transform="translate(9 320)">
+												<rect
+													className="n-navbar-mobile"
+													width={420}
+													height={43}
+												/>
+												<rect
+													className="a-navbar-mobile"
+													x={0.5}
+													y={0.5}
+													width={419}
+													height={42}
+												/>
+											</g>
 										</g>
+										<text
+											className="m-navbar-mobile"
+											transform="translate(40 9.991)">
+											<tspan x={0} y={15}>
+												{'Trayectoria'}
+											</tspan>
+										</text>
 									</g>
-									<text
-										className="m-navbar-mobile"
-										transform="translate(40 10.729)">
-										<tspan x={0} y={15}>
-											{'Soluciones en salud​'}
-										</tspan>
-									</text>
-								</g>
-								<g
-									transform="translate(2 314.009)"
-									onClick={() => setStep(1)}>
 									<g
-										className="p-navbar-mobile"
-										transform="matrix(1, 0, 0, 1, -9, -320.01)">
+										transform="translate(2 272.778)"
+										onClick={() =>
+											(window.location.href = '/')
+										}>
 										<g
-											className="l-navbar-mobile"
-											transform="translate(9 320)">
-											<rect
-												className="n-navbar-mobile"
-												width={420}
-												height={43}
-											/>
-											<rect
-												className="a-navbar-mobile"
-												x={0.5}
-												y={0.5}
-												width={419}
-												height={42}
-											/>
+											className="o-navbar-mobile"
+											transform="matrix(1, 0, 0, 1, -9, -278.78)">
+											<g
+												className="l-navbar-mobile"
+												transform="translate(9 279)">
+												<rect
+													className="n-navbar-mobile"
+													width={420}
+													height={42}
+												/>
+												<rect
+													className="a-navbar-mobile"
+													x={0.5}
+													y={0.5}
+													width={419}
+													height={41}
+												/>
+											</g>
 										</g>
+										<text
+											className="m-navbar-mobile"
+											transform="translate(40 9.222)">
+											<tspan x={0} y={15}>
+												{'Home'}
+											</tspan>
+										</text>
 									</g>
-									<text
-										className="m-navbar-mobile"
-										transform="translate(40 9.991)">
-										<tspan x={0} y={15}>
-											{'Trayectoria'}
-										</tspan>
-									</text>
-								</g>
-								<g
-									transform="translate(2 272.778)"
-									onClick={() =>
-										(window.location.href = '/')
-									}>
-									<g
-										className="o-navbar-mobile"
-										transform="matrix(1, 0, 0, 1, -9, -278.78)">
-										<g
-											className="l-navbar-mobile"
-											transform="translate(9 279)">
-											<rect
-												className="n-navbar-mobile"
-												width={420}
-												height={42}
-											/>
-											<rect
-												className="a-navbar-mobile"
-												x={0.5}
-												y={0.5}
-												width={419}
-												height={41}
-											/>
-										</g>
-									</g>
-									<text
-										className="m-navbar-mobile"
-										transform="translate(40 9.222)">
-										<tspan x={0} y={15}>
-											{'Home'}
-										</tspan>
-									</text>
-								</g>
 								</g>
 								<g transform="translate(115.783 116.835)">
 									<g
@@ -3206,7 +3262,7 @@ export const NavbarMovil: React.FC = () => {
 										d="M91.4,43.724H0V0H139.029V11.32c0,17.9-21.323,32.4-47.627,32.4"
 									/>
 								</g>
-								
+
 								<path
 									className="g-navbar-mobile"
 									d="M955.324-45.344,948.263-52.4l-6.929,6.929a3.1,3.1,0,0,1-4.382,0,3.1,3.1,0,0,1,0-4.381l6.929-6.929-7.061-7.061a2.911,2.911,0,0,1,0-4.117,2.912,2.912,0,0,1,4.117,0L948-60.9l7.193-7.193a3.1,3.1,0,0,1,4.382,0,3.1,3.1,0,0,1,0,4.381l-7.194,7.194,7.061,7.061a2.911,2.911,0,0,1,0,4.117,2.9,2.9,0,0,1-2.059.853A2.9,2.9,0,0,1,955.324-45.344Z"
@@ -3876,72 +3932,75 @@ export const NavbarMovil: React.FC = () => {
 								transform="translate(9 6)"
 							/>
 						</g>
-						<g transform="translate(37 7.004)">
-							<g
-								className="c-navbar-mobile"
-								transform="translate(0 -2.512)">
-								<path
-									className="d-navbar-mobile"
-									d="M18.058,19.489l4.281,5.827a.162.162,0,0,1,.03.094l.024,4.562a.16.16,0,0,1-.159.16l-.637,0a.159.159,0,0,1-.16-.158l-.009-1.618-2.3.012.009,1.619a.159.159,0,0,1-.159.16l-.637,0a.158.158,0,0,1-.159-.158L18.16,25.8a.159.159,0,0,1,.158-.16l.637,0a.16.16,0,0,1,.16.159l.009,1.618,2.3-.012-.009-1.731-3.887-5.292-3.307.017L10.39,25.731l.009,1.73,2.3-.012-.009-1.618a.159.159,0,0,1,.158-.16l.637,0a.159.159,0,0,1,.16.159l.022,4.191a.159.159,0,0,1-.158.16l-.637,0a.159.159,0,0,1-.16-.158L12.705,28.4l-2.3.012.009,1.619a.16.16,0,0,1-.159.16l-.637,0a.159.159,0,0,1-.16-.158l-.024-4.562a.159.159,0,0,1,.03-.094l4.22-5.872a.161.161,0,0,1,.128-.066l4.118-.021a.158.158,0,0,1,.129.065m-6.63-4.765-6.888-2.2a.154.154,0,0,0-.1,0L.11,13.959a.159.159,0,0,0-.1.2l.2.6a.159.159,0,0,0,.2.1l1.536-.508.723,2.185-1.537.508a.159.159,0,0,0-.1.2l.2.6a.16.16,0,0,0,.2.1l3.98-1.316a.159.159,0,0,0,.1-.2l-.2-.6a.16.16,0,0,0-.2-.1l-1.537.508-.722-2.185L4.5,13.515l6.256,2,.511,1.546.527,1.594L7.958,23.984l-1.644.543-.722-2.185,1.537-.508a.159.159,0,0,0,.1-.2l-.2-.6a.159.159,0,0,0-.2-.1l-3.98,1.316a.159.159,0,0,0-.1.2l.2.6a.159.159,0,0,0,.2.1l1.537-.508.723,2.185-1.537.508a.159.159,0,0,0-.1.2l.2.6a.159.159,0,0,0,.2.1L8.5,24.809a.159.159,0,0,0,.08-.058L12.8,18.879a.158.158,0,0,0,.022-.143L11.53,14.827a.159.159,0,0,0-.1-.1m8.494-1.076,6.865-2.27a.158.158,0,0,0,.079-.058l2.663-3.7a.159.159,0,0,0-.036-.222l-.517-.372a.159.159,0,0,0-.222.036l-.945,1.314L25.94,7.029l.944-1.314a.159.159,0,0,0-.036-.222l-.517-.372a.158.158,0,0,0-.222.036l-2.446,3.4a.159.159,0,0,0,.036.223l.517.372a.159.159,0,0,0,.222-.036L25.383,7.8l1.869,1.343-1.01,1.405-6.235,2.062-2.686-1.93-.034-6.567L18.3,2.713l1.869,1.343L19.222,5.37a.159.159,0,0,0,.036.222l.517.372A.159.159,0,0,0,20,5.927l2.446-3.4a.159.159,0,0,0-.036-.222L21.89,1.93a.159.159,0,0,0-.222.036L20.723,3.28,18.855,1.938,19.8.623A.159.159,0,0,0,19.763.4L19.246.03a.158.158,0,0,0-.222.036l-2.663,3.7a.162.162,0,0,0-.03.094l.038,7.231a.158.158,0,0,0,.066.128l3.344,2.4a.159.159,0,0,0,.143.022m11.56.953.193-.607a.159.159,0,0,0-.1-.2l-4.346-1.387a.16.16,0,0,0-.1,0l-6.865,2.27a.157.157,0,0,0-.1.1L18.909,18.7a.158.158,0,0,0,.023.142l4.281,5.828a.162.162,0,0,0,.08.057l4.346,1.388a.159.159,0,0,0,.2-.1l.193-.606a.158.158,0,0,0-.1-.2l-1.542-.493.7-2.193,1.542.492a.159.159,0,0,0,.2-.1l.193-.607a.159.159,0,0,0-.1-.2l-3.993-1.274a.158.158,0,0,0-.2.1l-.194.607a.158.158,0,0,0,.1.2l1.541.493-.7,2.193L23.829,23.9l-3.888-5.293,1.006-3.15L27.182,13.4l1.648.527-.7,2.193-1.542-.493a.16.16,0,0,0-.2.1l-.193.607a.159.159,0,0,0,.1.2l3.992,1.274a.159.159,0,0,0,.2-.1l.194-.607a.16.16,0,0,0-.1-.2l-1.542-.492.7-2.193,1.542.493a.16.16,0,0,0,.2-.1m-19.57-.94,3.315-2.442a.16.16,0,0,0,.065-.13L15.244,3.86a.157.157,0,0,0-.031-.093L12.508.093a.159.159,0,0,0-.223-.034l-.513.378a.159.159,0,0,0-.033.223l.96,1.3L10.846,3.328l-.96-1.3a.159.159,0,0,0-.223-.033l-.513.378a.159.159,0,0,0-.033.223L11.6,5.966A.159.159,0,0,0,11.825,6l.513-.378a.159.159,0,0,0,.034-.223l-.96-1.3,1.853-1.365,1.026,1.394.043,6.567-2.663,1.961L5.414,10.665,4.387,9.271,6.24,7.906l.959,1.3a.159.159,0,0,0,.223.033l.513-.378a.16.16,0,0,0,.034-.223L5.483,5.268a.159.159,0,0,0-.223-.034l-.513.378a.159.159,0,0,0-.033.223l.959,1.3L3.821,8.5l-.96-1.3a.159.159,0,0,0-.223-.034l-.513.378a.159.159,0,0,0-.033.223L4.8,11.439a.156.156,0,0,0,.08.057l6.892,2.19a.16.16,0,0,0,.143-.024"
-									transform="translate(0 0)"
-								/>
-								<path
-									className="e-navbar-mobile"
-									d="M90.485,14.8H87.8a3.643,3.643,0,0,1-1.877-.5,3.744,3.744,0,0,1-1.362-1.368,3.794,3.794,0,0,1,0-3.777,3.8,3.8,0,0,1,1.362-1.374,3.684,3.684,0,0,1,3.371-.188,3.756,3.756,0,0,1,1.242.893l-.378.354A3.242,3.242,0,0,0,87.8,7.8a3.141,3.141,0,0,0-1.614.435A3.25,3.25,0,0,0,85,9.411a3.245,3.245,0,0,0,0,3.245,3.276,3.276,0,0,0,1.179,1.184,3.106,3.106,0,0,0,1.614.441h2.152V11.614H87.5V11.1h2.987Z"
-									transform="translate(-32.946 -2.848)"
-								/>
-								<path
-									className="e-navbar-mobile"
-									d="M103.583,14.855,100.492,11.1h.916a3.65,3.65,0,0,0,1.374-.218,1.835,1.835,0,0,0,.676-.555,1.31,1.31,0,0,0,.286-.818,1.349,1.349,0,0,0-.24-.761,1.776,1.776,0,0,0-.686-.589,2.229,2.229,0,0,0-1.03-.229H99.7v6.925h-.515V7.415h2.6a2.864,2.864,0,0,1,.984.166,2.419,2.419,0,0,1,.8.475,2.116,2.116,0,0,1,.51.676,1.839,1.839,0,0,1-.2,1.906,2.18,2.18,0,0,1-.893.716,2.355,2.355,0,0,1-.693.2,6.061,6.061,0,0,1-.715.04l2.689,3.262Z"
-									transform="translate(-38.877 -2.906)"
-								/>
-								<path
-									className="e-navbar-mobile"
-									d="M114.607,14.935a2.726,2.726,0,0,1-1.082-.223,2.826,2.826,0,0,1-.921-.635,2.619,2.619,0,0,1-.612-.916,2.938,2.938,0,0,1-.212-1.11V7.415h.515v4.636a2.4,2.4,0,0,0,.178.916,2.264,2.264,0,0,0,.5.755,2.324,2.324,0,0,0,.755.51,2.257,2.257,0,0,0,.882.178,2.282,2.282,0,0,0,.893-.178,2.327,2.327,0,0,0,.756-.51,2.264,2.264,0,0,0,.5-.755,2.407,2.407,0,0,0,.177-.916V7.415h.516v4.636a2.949,2.949,0,0,1-.212,1.11,2.627,2.627,0,0,1-.612.916,2.843,2.843,0,0,1-.916.635,2.741,2.741,0,0,1-1.1.223"
-									transform="translate(-43.813 -2.906)"
-								/>
-								<path
-									className="e-navbar-mobile"
-									d="M125.5,14.855l-.012-7.44h2.655a2.594,2.594,0,0,1,1.208.286,2.336,2.336,0,0,1,.882.767,1.856,1.856,0,0,1,0,2.1,2.318,2.318,0,0,1-.882.772,2.594,2.594,0,0,1-1.208.286h-2.129v3.227Zm.515-3.766h2.129a2.144,2.144,0,0,0,.95-.212,1.809,1.809,0,0,0,.693-.573,1.322,1.322,0,0,0,.257-.784,1.338,1.338,0,0,0-.257-.8,1.809,1.809,0,0,0-.693-.573,2.143,2.143,0,0,0-.95-.212H126Z"
-									transform="translate(-49.185 -2.906)"
-								/>
-								<path
-									className="e-navbar-mobile"
-									d="M140.621,14.883a3.669,3.669,0,0,1-1.889-.51,3.834,3.834,0,0,1-1.374-5.2,3.735,3.735,0,0,1,1.374-1.385,3.755,3.755,0,0,1,3.777,0,3.834,3.834,0,0,1,1.374,5.2,3.734,3.734,0,0,1-1.374,1.385,3.67,3.67,0,0,1-1.889.51m0-7.074A3.132,3.132,0,0,0,139,8.25a3.315,3.315,0,0,0-1.185,1.191,3.284,3.284,0,0,0,0,3.285A3.31,3.31,0,0,0,139,13.916a3.217,3.217,0,0,0,3.251,0,3.26,3.26,0,0,0,1.179-1.191,3.319,3.319,0,0,0,0-3.285,3.265,3.265,0,0,0-1.179-1.191,3.133,3.133,0,0,0-1.625-.441"
-									transform="translate(-53.642 -2.855)"
-								/>
-								<path
-									className="e-navbar-mobile"
-									d="M80.671,25.8h1.9a.249.249,0,0,1,.249.249v.772a3.248,3.248,0,0,1,2.829-1.277,3.346,3.346,0,0,1,3.2,1.689,3.957,3.957,0,0,1,3.476-1.689A4.192,4.192,0,0,1,96.1,27.367a6.229,6.229,0,0,1,.649,3.025v6.036a.249.249,0,0,1-.249.249H94.381a.249.249,0,0,1-.249-.249V30.706a3.027,3.027,0,0,0-.53-2.141,1.925,1.925,0,0,0-1.512-.629,1.981,1.981,0,0,0-1.866,1.1,5.14,5.14,0,0,0-.334,2.278v5.113a.249.249,0,0,1-.249.249H87.526a.249.249,0,0,1-.249-.249V30.706a3.325,3.325,0,0,0-.491-2.121,2.1,2.1,0,0,0-1.611-.648,1.874,1.874,0,0,0-1.886,1.178,6.437,6.437,0,0,0-.255,2.2v5.113a.249.249,0,0,1-.249.249H80.671a.249.249,0,0,1-.249-.249V26.045a.25.25,0,0,1,.249-.249"
-									transform="translate(-31.522 -10.011)"
-								/>
-								<path
-									className="e-navbar-mobile"
-									d="M121.092,36.677h-1.9a.249.249,0,0,1-.249-.249V35.263a4.327,4.327,0,0,1-3.614,1.67,5.383,5.383,0,0,1-5.48-5.657,5.45,5.45,0,0,1,5.539-5.735,4.045,4.045,0,0,1,3.555,1.709v-1.2a.249.249,0,0,1,.249-.249h1.9a.249.249,0,0,1,.249.249V36.428a.249.249,0,0,1-.249.249m-8.609-5.343a3.192,3.192,0,1,0,6.384-.059,3.2,3.2,0,1,0-6.384.059"
-									transform="translate(-43.057 -10.011)"
-								/>
-								<path
-									className="e-navbar-mobile"
-									d="M132.487,25.8h1.9a.249.249,0,0,1,.249.249v.811a2.408,2.408,0,0,1,2.357-1.316h.2v2.514c-1.572.04-2.337.884-2.337,2.573v5.8a.249.249,0,0,1-.249.249h-2.114a.249.249,0,0,1-.249-.249V26.045a.25.25,0,0,1,.249-.249"
-									transform="translate(-51.832 -10.011)"
-								/>
-								<path
-									className="e-navbar-mobile"
-									d="M144.177,32.4a2.866,2.866,0,0,0,3,2.14,2.747,2.747,0,0,0,2.322-.994.251.251,0,0,1,.187-.086h2.377a.248.248,0,0,1,.231.342,4.932,4.932,0,0,1-.736,1.17,5.338,5.338,0,0,1-4.321,1.965,5.7,5.7,0,0,1-5.891-5.753,5.784,5.784,0,0,1,6.3-5.615,5.57,5.57,0,0,1,5.056,5.828,4.208,4.208,0,0,1-.1,1Zm5.951-2.3a2.78,2.78,0,0,0-3-2.16A2.879,2.879,0,0,0,144.1,30.1Z"
-									transform="translate(-55.403 -10.011)"
-								/>
-								<path
-									className="e-navbar-mobile"
-									d="M164.214,35.82,160.365,26.3a.249.249,0,0,1,.231-.342h2.438a.248.248,0,0,1,.235.168l2.359,6.883,2.571-6.889a.249.249,0,0,1,.233-.162h2.453a.249.249,0,0,1,.229.348l-6.069,14.017a.249.249,0,0,1-.229.15h-2.264a.249.249,0,0,1-.228-.35Z"
-									transform="translate(-62.85 -10.175)"
-								/>
-								<path
-									className="e-navbar-mobile"
-									d="M63.25,19.983H61.128L58.456,26.4a.249.249,0,0,0,.23.345h2.281a.249.249,0,0,0,.235-.167l.988-2.8,1.551,4.4H59.433a2.576,2.576,0,0,0-2.379,1.586l-1.831,4.394a.249.249,0,0,0,.23.345h2.429a.249.249,0,0,0,.229-.151l1.546-3.6h5.166l1.488,3.6a.249.249,0,0,0,.23.154h2.425a.249.249,0,0,0,.23-.345Z"
-									transform="translate(-21.638 -7.833)"
-								/>
+						
+							<g transform="translate(37 7.004)">
+							<a href="/">
+								<g
+									className="c-navbar-mobile"
+									transform="translate(0 -2.512)">
+									<path
+										className="d-navbar-mobile"
+										d="M18.058,19.489l4.281,5.827a.162.162,0,0,1,.03.094l.024,4.562a.16.16,0,0,1-.159.16l-.637,0a.159.159,0,0,1-.16-.158l-.009-1.618-2.3.012.009,1.619a.159.159,0,0,1-.159.16l-.637,0a.158.158,0,0,1-.159-.158L18.16,25.8a.159.159,0,0,1,.158-.16l.637,0a.16.16,0,0,1,.16.159l.009,1.618,2.3-.012-.009-1.731-3.887-5.292-3.307.017L10.39,25.731l.009,1.73,2.3-.012-.009-1.618a.159.159,0,0,1,.158-.16l.637,0a.159.159,0,0,1,.16.159l.022,4.191a.159.159,0,0,1-.158.16l-.637,0a.159.159,0,0,1-.16-.158L12.705,28.4l-2.3.012.009,1.619a.16.16,0,0,1-.159.16l-.637,0a.159.159,0,0,1-.16-.158l-.024-4.562a.159.159,0,0,1,.03-.094l4.22-5.872a.161.161,0,0,1,.128-.066l4.118-.021a.158.158,0,0,1,.129.065m-6.63-4.765-6.888-2.2a.154.154,0,0,0-.1,0L.11,13.959a.159.159,0,0,0-.1.2l.2.6a.159.159,0,0,0,.2.1l1.536-.508.723,2.185-1.537.508a.159.159,0,0,0-.1.2l.2.6a.16.16,0,0,0,.2.1l3.98-1.316a.159.159,0,0,0,.1-.2l-.2-.6a.16.16,0,0,0-.2-.1l-1.537.508-.722-2.185L4.5,13.515l6.256,2,.511,1.546.527,1.594L7.958,23.984l-1.644.543-.722-2.185,1.537-.508a.159.159,0,0,0,.1-.2l-.2-.6a.159.159,0,0,0-.2-.1l-3.98,1.316a.159.159,0,0,0-.1.2l.2.6a.159.159,0,0,0,.2.1l1.537-.508.723,2.185-1.537.508a.159.159,0,0,0-.1.2l.2.6a.159.159,0,0,0,.2.1L8.5,24.809a.159.159,0,0,0,.08-.058L12.8,18.879a.158.158,0,0,0,.022-.143L11.53,14.827a.159.159,0,0,0-.1-.1m8.494-1.076,6.865-2.27a.158.158,0,0,0,.079-.058l2.663-3.7a.159.159,0,0,0-.036-.222l-.517-.372a.159.159,0,0,0-.222.036l-.945,1.314L25.94,7.029l.944-1.314a.159.159,0,0,0-.036-.222l-.517-.372a.158.158,0,0,0-.222.036l-2.446,3.4a.159.159,0,0,0,.036.223l.517.372a.159.159,0,0,0,.222-.036L25.383,7.8l1.869,1.343-1.01,1.405-6.235,2.062-2.686-1.93-.034-6.567L18.3,2.713l1.869,1.343L19.222,5.37a.159.159,0,0,0,.036.222l.517.372A.159.159,0,0,0,20,5.927l2.446-3.4a.159.159,0,0,0-.036-.222L21.89,1.93a.159.159,0,0,0-.222.036L20.723,3.28,18.855,1.938,19.8.623A.159.159,0,0,0,19.763.4L19.246.03a.158.158,0,0,0-.222.036l-2.663,3.7a.162.162,0,0,0-.03.094l.038,7.231a.158.158,0,0,0,.066.128l3.344,2.4a.159.159,0,0,0,.143.022m11.56.953.193-.607a.159.159,0,0,0-.1-.2l-4.346-1.387a.16.16,0,0,0-.1,0l-6.865,2.27a.157.157,0,0,0-.1.1L18.909,18.7a.158.158,0,0,0,.023.142l4.281,5.828a.162.162,0,0,0,.08.057l4.346,1.388a.159.159,0,0,0,.2-.1l.193-.606a.158.158,0,0,0-.1-.2l-1.542-.493.7-2.193,1.542.492a.159.159,0,0,0,.2-.1l.193-.607a.159.159,0,0,0-.1-.2l-3.993-1.274a.158.158,0,0,0-.2.1l-.194.607a.158.158,0,0,0,.1.2l1.541.493-.7,2.193L23.829,23.9l-3.888-5.293,1.006-3.15L27.182,13.4l1.648.527-.7,2.193-1.542-.493a.16.16,0,0,0-.2.1l-.193.607a.159.159,0,0,0,.1.2l3.992,1.274a.159.159,0,0,0,.2-.1l.194-.607a.16.16,0,0,0-.1-.2l-1.542-.492.7-2.193,1.542.493a.16.16,0,0,0,.2-.1m-19.57-.94,3.315-2.442a.16.16,0,0,0,.065-.13L15.244,3.86a.157.157,0,0,0-.031-.093L12.508.093a.159.159,0,0,0-.223-.034l-.513.378a.159.159,0,0,0-.033.223l.96,1.3L10.846,3.328l-.96-1.3a.159.159,0,0,0-.223-.033l-.513.378a.159.159,0,0,0-.033.223L11.6,5.966A.159.159,0,0,0,11.825,6l.513-.378a.159.159,0,0,0,.034-.223l-.96-1.3,1.853-1.365,1.026,1.394.043,6.567-2.663,1.961L5.414,10.665,4.387,9.271,6.24,7.906l.959,1.3a.159.159,0,0,0,.223.033l.513-.378a.16.16,0,0,0,.034-.223L5.483,5.268a.159.159,0,0,0-.223-.034l-.513.378a.159.159,0,0,0-.033.223l.959,1.3L3.821,8.5l-.96-1.3a.159.159,0,0,0-.223-.034l-.513.378a.159.159,0,0,0-.033.223L4.8,11.439a.156.156,0,0,0,.08.057l6.892,2.19a.16.16,0,0,0,.143-.024"
+										transform="translate(0 0)"
+									/>
+									<path
+										className="e-navbar-mobile"
+										d="M90.485,14.8H87.8a3.643,3.643,0,0,1-1.877-.5,3.744,3.744,0,0,1-1.362-1.368,3.794,3.794,0,0,1,0-3.777,3.8,3.8,0,0,1,1.362-1.374,3.684,3.684,0,0,1,3.371-.188,3.756,3.756,0,0,1,1.242.893l-.378.354A3.242,3.242,0,0,0,87.8,7.8a3.141,3.141,0,0,0-1.614.435A3.25,3.25,0,0,0,85,9.411a3.245,3.245,0,0,0,0,3.245,3.276,3.276,0,0,0,1.179,1.184,3.106,3.106,0,0,0,1.614.441h2.152V11.614H87.5V11.1h2.987Z"
+										transform="translate(-32.946 -2.848)"
+									/>
+									<path
+										className="e-navbar-mobile"
+										d="M103.583,14.855,100.492,11.1h.916a3.65,3.65,0,0,0,1.374-.218,1.835,1.835,0,0,0,.676-.555,1.31,1.31,0,0,0,.286-.818,1.349,1.349,0,0,0-.24-.761,1.776,1.776,0,0,0-.686-.589,2.229,2.229,0,0,0-1.03-.229H99.7v6.925h-.515V7.415h2.6a2.864,2.864,0,0,1,.984.166,2.419,2.419,0,0,1,.8.475,2.116,2.116,0,0,1,.51.676,1.839,1.839,0,0,1-.2,1.906,2.18,2.18,0,0,1-.893.716,2.355,2.355,0,0,1-.693.2,6.061,6.061,0,0,1-.715.04l2.689,3.262Z"
+										transform="translate(-38.877 -2.906)"
+									/>
+									<path
+										className="e-navbar-mobile"
+										d="M114.607,14.935a2.726,2.726,0,0,1-1.082-.223,2.826,2.826,0,0,1-.921-.635,2.619,2.619,0,0,1-.612-.916,2.938,2.938,0,0,1-.212-1.11V7.415h.515v4.636a2.4,2.4,0,0,0,.178.916,2.264,2.264,0,0,0,.5.755,2.324,2.324,0,0,0,.755.51,2.257,2.257,0,0,0,.882.178,2.282,2.282,0,0,0,.893-.178,2.327,2.327,0,0,0,.756-.51,2.264,2.264,0,0,0,.5-.755,2.407,2.407,0,0,0,.177-.916V7.415h.516v4.636a2.949,2.949,0,0,1-.212,1.11,2.627,2.627,0,0,1-.612.916,2.843,2.843,0,0,1-.916.635,2.741,2.741,0,0,1-1.1.223"
+										transform="translate(-43.813 -2.906)"
+									/>
+									<path
+										className="e-navbar-mobile"
+										d="M125.5,14.855l-.012-7.44h2.655a2.594,2.594,0,0,1,1.208.286,2.336,2.336,0,0,1,.882.767,1.856,1.856,0,0,1,0,2.1,2.318,2.318,0,0,1-.882.772,2.594,2.594,0,0,1-1.208.286h-2.129v3.227Zm.515-3.766h2.129a2.144,2.144,0,0,0,.95-.212,1.809,1.809,0,0,0,.693-.573,1.322,1.322,0,0,0,.257-.784,1.338,1.338,0,0,0-.257-.8,1.809,1.809,0,0,0-.693-.573,2.143,2.143,0,0,0-.95-.212H126Z"
+										transform="translate(-49.185 -2.906)"
+									/>
+									<path
+										className="e-navbar-mobile"
+										d="M140.621,14.883a3.669,3.669,0,0,1-1.889-.51,3.834,3.834,0,0,1-1.374-5.2,3.735,3.735,0,0,1,1.374-1.385,3.755,3.755,0,0,1,3.777,0,3.834,3.834,0,0,1,1.374,5.2,3.734,3.734,0,0,1-1.374,1.385,3.67,3.67,0,0,1-1.889.51m0-7.074A3.132,3.132,0,0,0,139,8.25a3.315,3.315,0,0,0-1.185,1.191,3.284,3.284,0,0,0,0,3.285A3.31,3.31,0,0,0,139,13.916a3.217,3.217,0,0,0,3.251,0,3.26,3.26,0,0,0,1.179-1.191,3.319,3.319,0,0,0,0-3.285,3.265,3.265,0,0,0-1.179-1.191,3.133,3.133,0,0,0-1.625-.441"
+										transform="translate(-53.642 -2.855)"
+									/>
+									<path
+										className="e-navbar-mobile"
+										d="M80.671,25.8h1.9a.249.249,0,0,1,.249.249v.772a3.248,3.248,0,0,1,2.829-1.277,3.346,3.346,0,0,1,3.2,1.689,3.957,3.957,0,0,1,3.476-1.689A4.192,4.192,0,0,1,96.1,27.367a6.229,6.229,0,0,1,.649,3.025v6.036a.249.249,0,0,1-.249.249H94.381a.249.249,0,0,1-.249-.249V30.706a3.027,3.027,0,0,0-.53-2.141,1.925,1.925,0,0,0-1.512-.629,1.981,1.981,0,0,0-1.866,1.1,5.14,5.14,0,0,0-.334,2.278v5.113a.249.249,0,0,1-.249.249H87.526a.249.249,0,0,1-.249-.249V30.706a3.325,3.325,0,0,0-.491-2.121,2.1,2.1,0,0,0-1.611-.648,1.874,1.874,0,0,0-1.886,1.178,6.437,6.437,0,0,0-.255,2.2v5.113a.249.249,0,0,1-.249.249H80.671a.249.249,0,0,1-.249-.249V26.045a.25.25,0,0,1,.249-.249"
+										transform="translate(-31.522 -10.011)"
+									/>
+									<path
+										className="e-navbar-mobile"
+										d="M121.092,36.677h-1.9a.249.249,0,0,1-.249-.249V35.263a4.327,4.327,0,0,1-3.614,1.67,5.383,5.383,0,0,1-5.48-5.657,5.45,5.45,0,0,1,5.539-5.735,4.045,4.045,0,0,1,3.555,1.709v-1.2a.249.249,0,0,1,.249-.249h1.9a.249.249,0,0,1,.249.249V36.428a.249.249,0,0,1-.249.249m-8.609-5.343a3.192,3.192,0,1,0,6.384-.059,3.2,3.2,0,1,0-6.384.059"
+										transform="translate(-43.057 -10.011)"
+									/>
+									<path
+										className="e-navbar-mobile"
+										d="M132.487,25.8h1.9a.249.249,0,0,1,.249.249v.811a2.408,2.408,0,0,1,2.357-1.316h.2v2.514c-1.572.04-2.337.884-2.337,2.573v5.8a.249.249,0,0,1-.249.249h-2.114a.249.249,0,0,1-.249-.249V26.045a.25.25,0,0,1,.249-.249"
+										transform="translate(-51.832 -10.011)"
+									/>
+									<path
+										className="e-navbar-mobile"
+										d="M144.177,32.4a2.866,2.866,0,0,0,3,2.14,2.747,2.747,0,0,0,2.322-.994.251.251,0,0,1,.187-.086h2.377a.248.248,0,0,1,.231.342,4.932,4.932,0,0,1-.736,1.17,5.338,5.338,0,0,1-4.321,1.965,5.7,5.7,0,0,1-5.891-5.753,5.784,5.784,0,0,1,6.3-5.615,5.57,5.57,0,0,1,5.056,5.828,4.208,4.208,0,0,1-.1,1Zm5.951-2.3a2.78,2.78,0,0,0-3-2.16A2.879,2.879,0,0,0,144.1,30.1Z"
+										transform="translate(-55.403 -10.011)"
+									/>
+									<path
+										className="e-navbar-mobile"
+										d="M164.214,35.82,160.365,26.3a.249.249,0,0,1,.231-.342h2.438a.248.248,0,0,1,.235.168l2.359,6.883,2.571-6.889a.249.249,0,0,1,.233-.162h2.453a.249.249,0,0,1,.229.348l-6.069,14.017a.249.249,0,0,1-.229.15h-2.264a.249.249,0,0,1-.228-.35Z"
+										transform="translate(-62.85 -10.175)"
+									/>
+									<path
+										className="e-navbar-mobile"
+										d="M63.25,19.983H61.128L58.456,26.4a.249.249,0,0,0,.23.345h2.281a.249.249,0,0,0,.235-.167l.988-2.8,1.551,4.4H59.433a2.576,2.576,0,0,0-2.379,1.586l-1.831,4.394a.249.249,0,0,0,.23.345h2.429a.249.249,0,0,0,.229-.151l1.546-3.6h5.166l1.488,3.6a.249.249,0,0,0,.23.154h2.425a.249.249,0,0,0,.23-.345Z"
+										transform="translate(-21.638 -7.833)"
+									/>
+								</g>
+						</a>
 							</g>
-						</g>
 						<g
 							transform="translate(-17.918 -1.985)"
 							onClick={() => setOpenMenu(!openMenu)}>

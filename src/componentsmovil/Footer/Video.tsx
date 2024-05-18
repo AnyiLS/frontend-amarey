@@ -53,7 +53,10 @@ const FooterMobile: React.FC = (): JSX.Element => {
 						transform="translate(150.935 426.925)"
 					/>
 				</a>
-				<a href="https://www.instagram.com/grupoamarey" target="_blank" rel="noopener noreferrer">
+				<a
+					href="https://www.instagram.com/grupoamarey"
+					target="_blank"
+					rel="noopener noreferrer">
 					<g transform="translate(191.283 468.196)">
 						<g transform="translate(0)">
 							<path
@@ -168,13 +171,15 @@ const FooterMobile: React.FC = (): JSX.Element => {
 						<tspan y={11} />
 					</text>
 				</g>
-				<g transform="translate(79 92)">
-					<text className="f-footer-mobile mapa-tap">
-						<tspan x={111.786} y={11}>
-							{'Mapa'}
-						</tspan>
-					</text>
-				</g>
+				<a href="/contactenos">
+					<g transform="translate(79 92)">
+						<text className="f-footer-mobile mapa-tap">
+							<tspan x={111.786} y={11}>
+								{'Mapa'}
+							</tspan>
+						</text>
+					</g>
+				</a>
 				<g transform="translate(41 326)">
 					<text className="f-footer-mobile">
 						<tspan x={39.14} y={11}>

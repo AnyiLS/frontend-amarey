@@ -111,7 +111,7 @@ const Navbar: React.FC = () => {
 							transform="translate(9 6)"
 						/>
 					</g>
-					<g transform="translate(1622 30)">
+					{/* <g transform="translate(1622 30)">
 						<g
 							className="j cursor-pointer"
 							transform="matrix(1, 0, 0, 1, -1631, -36)">
@@ -130,7 +130,7 @@ const Navbar: React.FC = () => {
 								{'UCITECH'}
 							</tspan>
 						</text>
-					</g>
+					</g> */}
 					<g
 						transform="translate(1495.944 36.252)"
 						className="cursor-pointer"
