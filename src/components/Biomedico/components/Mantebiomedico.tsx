@@ -1,10 +1,12 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 export interface IMantenimiento {
 	onClick: () => void
 }
 
 const Mantebiomedico: React.FC<IMantenimiento> = ({ onClick }): JSX.Element => {
+	const {t} = useTranslation()
 	return (
 		<div>
 			<svg  width="100%"
@@ -114,7 +116,7 @@ const Mantebiomedico: React.FC<IMantenimiento> = ({ onClick }): JSX.Element => {
 						className="f-biomante"
 						transform="translate(1823.349 75)">
 						<tspan x={-351.48} y={0}>
-							{'MANTENIMIENTO BIOM\xC9DICO '}
+							{t('MANTENIMIENTO BIOMÉDICO ')}
 						</tspan>
 					</text>
 					<text
@@ -122,33 +124,33 @@ const Mantebiomedico: React.FC<IMantenimiento> = ({ onClick }): JSX.Element => {
 						transform="translate(324.349 177)">
 						<tspan x={34.588} y={23}>
 							{
-								'Nuestras manos expertas pueden entender y cuidar la tecnolog\xEDa para la tranquilidad de nuestros clientes y '
+								t('Nuestras manos expertas pueden entender y cuidar la tecnolog\xEDa para la tranquilidad de nuestros clientes y ')
 							}
 						</tspan>
 						<tspan x={176.908} y={49}>
 							{
-								'proveedores, todo para crear soluciones para el cuidado de la salud y los pacientes. '
+								t('proveedores, todo para crear soluciones para el cuidado de la salud y los pacientes. ')
 							}
 						</tspan>
 					</text>
 					<text
 						className="h-biomante"
-						transform="translate(146.349 341)">
+						transform="translate(116.349 341)">
 						<tspan x={41.052} y={36}>
-							{'12.000 equipos'}
+							{t('12.000 equipos')}
 						</tspan>
 						<tspan
 							className="d-biomante"
 							y={36}
 							xmlSpace="preserve">
-							{' de marcas representadas '}
+							{t(' de marcas representadas ')}
 						</tspan>
 					</text>
 					<text
 						className="g-biomante"
 						transform="translate(243.349 314)">
 						<tspan x={26.964} y={23}>
-							{'Atendemos una capacidad instalada cercana a los '}
+							{t('Atendemos una capacidad instalada cercana a los ')}
 						</tspan>
 					</text>
 					<text
@@ -156,21 +158,21 @@ const Mantebiomedico: React.FC<IMantenimiento> = ({ onClick }): JSX.Element => {
 						transform="translate(1097.349 342)">
 						<tspan x={25.896} y={23}>
 							{
-								'dedicados al cuidado de la tecnolog\xEDa biom\xE9dica y '
+								t('dedicados al cuidado de la tecnolog\xEDa biom\xE9dica y ')
 							}
 						</tspan>
 						<tspan x={32.016} y={49}>
-							{'comprometidos con la seguridad de los pacientes '}
+							{t('comprometidos con la seguridad de los pacientes ')}
 						</tspan>
 					</text>
 					<text
 						className="i-biomante"
 						transform="translate(1019.349 287)">
 						<tspan x={67.851} y={40}>
-							{'Contamos con '}
+							{t('Contamos con ')}
 						</tspan>
 						<tspan className="j-biomante" y={40}>
-							{'130 profesionales'}
+							{t('130 profesionales')}
 						</tspan>
 					</text>
 					<g

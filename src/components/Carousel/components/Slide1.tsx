@@ -1,5 +1,6 @@
 import useGeneral from 'hooks/general.hook'
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 interface ISlide {
 	height: string
@@ -9,6 +10,8 @@ interface ISlide {
 const Slide1: React.FC<ISlide> = ({ height, onClick }): JSX.Element => {
 	// const { width } = useGeneral();
 	// `calc(100vh - ${document.getElementById('navbar__container')?.clientHeight}px)`
+
+	const {t} = useTranslation()
 	return (
 		<div>
 			<svg
@@ -221,7 +224,7 @@ const Slide1: React.FC<ISlide> = ({ height, onClick }): JSX.Element => {
 							transform="translate(226.641 860.695) rotate(-65)"
               onClick={() => onClick(0)}>
 							<tspan x={0} y={0}>
-								{'Conoce Más'}
+								{t('Conoce Más')}
 							</tspan>
 						</text>
 					</g>
@@ -245,10 +248,10 @@ const Slide1: React.FC<ISlide> = ({ height, onClick }): JSX.Element => {
 						className="j-bienvenida-1"
 						transform="translate(800.751 804.638)">
 						<tspan x={-328.734} y={40}>
-							{'Un compromiso inquebrantable '}
+							{t('Un compromiso inquebrantable')}
 						</tspan>
 						<tspan className="k-bienvenida-1" x={-313.83} y={102}>
-							{'con la salud y la vida'}
+							{t('con la salud y la vida')}
 						</tspan>
 					</text>
 					<g transform="translate(383.174 247.268)">

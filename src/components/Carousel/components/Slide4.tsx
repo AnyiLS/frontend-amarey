@@ -6,6 +6,7 @@ import DownLeftAsta from './components/downleftasta'
 import DownRightAsta from './components/downrightasta'
 import Tooltip from './Tooltip'
 import useGeneral from 'hooks/general.hook'
+import { useTranslation } from 'react-i18next'
 
 
 interface ISlide {
@@ -20,6 +21,7 @@ const Slide4: React.FC<ISlide> = ({ height, image, onReturn, onOpenPopup }): JSX
 	/** States */
 	const [selected, setSelected] = React.useState<number>(0)
 
+	const {t} = useTranslation()
 	return (
 		<React.Fragment>
 			<svg
@@ -578,10 +580,10 @@ const Slide4: React.FC<ISlide> = ({ height, image, onReturn, onOpenPopup }): JSX
 						className="iy-slide-6"
 						transform="translate(1000 67.639)">
 						<tspan x={-432.432} y={42}>
-							{'El origen de nuestra historia es hoy'}
+							{t('El origen de nuestra historia es hoy')}
 						</tspan>
 						<tspan x={-351.886} y={79}>
-							{'la esencia de nuestra marca'}
+							{t('la esencia de nuestra marca')}
 						</tspan>
 					</text>
 					{selected === 1 && (

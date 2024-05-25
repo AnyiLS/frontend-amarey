@@ -1,6 +1,8 @@
+import { useTranslation } from 'react-i18next'
 import { ILifeLine2000 } from './2000'
 
 const LifeLine2009: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeStepForce }) => {
+	const {t} = useTranslation()
 	return (
 		<svg viewBox="0 0 1920 874.839">
 			<defs>
@@ -227,22 +229,22 @@ const LifeLine2009: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeSt
 					className="item-104-k"
 					transform="translate(1016 302.286)">
 					<tspan x={0} y={23}>
-						{'Se amplía el portafolio de '}
+						{t('Se amplía el portafolio de ')}
 					</tspan>
 					<tspan x={0} y={49}>
-						{'productos con las líneas de '}
+						{t('productos con las líneas de ')}
 					</tspan>
 					<tspan x={0} y={75}>
-						{'implantes ortopédicos de Stryker, '}
+						{t('implantes ortopédicos de Stryker, ')}
 					</tspan>
 					<tspan x={0} y={101}>
-						{'equipos médicos, pruebas '}
+						{t('equipos médicos, pruebas ')}
 					</tspan>
 					<tspan x={0} y={127}>
-						{'diagnósticas oncológicas y '}
+						{t('diagnósticas oncológicas y ')}
 					</tspan>
 					<tspan x={0} y={153}>
-						{'cuidado avanzado de heridas. '}
+						{t('cuidado avanzado de heridas. ')}
 					</tspan>
 				</text>
 				<g transform="translate(0 -329.714)" onClick={onClick}>
@@ -262,9 +264,9 @@ const LifeLine2009: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeSt
 					/>
 					<text
 						className="item-104-m cursor-pointer"
-						transform="translate(1549 1032)">
+						transform="translate(1539 1032)">
 						<tspan x={0} y={0}>
-							{'Avanzar'}
+							{t('Avanzar')}
 						</tspan>
 					</text>
 				</g>
@@ -314,7 +316,7 @@ const LifeLine2009: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeSt
 						className="item-104-m cursor-pointer"
 						transform="translate(66 52.425)">
 						<tspan x={0} y={0}>
-							{'Regresar'}
+							{t('Regresar')}
 						</tspan>
 					</text>
 				</g>

@@ -1,11 +1,13 @@
 import useGeneral from 'hooks/general.hook'
 import React from 'react'
 import ResponsabilidadMobile from './ResponsabilidadMobile'
+import { useTranslation } from 'react-i18next'
 
 const Responsabilidad: React.FC = (): JSX.Element => {
 	/** States */
 	const { width } = useGeneral()
 
+	const {t} = useTranslation()
 	return (
 		<React.Fragment>
 			{
@@ -59,57 +61,57 @@ const Responsabilidad: React.FC = (): JSX.Element => {
 				</g>
 				<text className="d-res" transform="translate(243 590.268)">
 					<tspan x={0} y={23}>
-						{'La '}
+						{t('La ')}
 					</tspan>
 					<tspan className="e-res" y={23}>
-						{'Fundaci\xF3n OCMAES'}
+						{t(' Fundaci\xF3n OCMAES')}
 					</tspan>
 					<tspan y={23} xmlSpace="preserve">
-						{' es una entidad sin \xE1nimo de lucro con '}
+						{t(' es una entidad sin \xE1nimo de lucro con ')}
 					</tspan>
 					<tspan className="e-res" x={0} y={49}>
-						{'18 a\xF1os de trayectoria'}
+						{t('18 a\xF1os de trayectoria')}
 					</tspan>
-					<tspan y={49}>{', que hace parte del'}</tspan>
+					<tspan y={49}>{t(', que hace parte del')}</tspan>
 					<tspan className="e-res" y={49} xmlSpace="preserve">
-						{' Grupo Amarey y '}
+						{t(' Grupo Amarey y ')}
 					</tspan>
 					<tspan className="e-res" x={0} y={75}>
 						{
-							'que fue creada con el prop\xF3sito de promover el desarrollo '
+							t('que fue creada con el prop\xF3sito de promover el desarrollo ')
 						}
 					</tspan>
 					<tspan className="e-res" x={0} y={101}>
-						{'humano y profesional de j\xF3venes colombianos.'}
+						{t('humano y profesional de j\xF3venes colombianos.')}
 					</tspan>
 					<tspan className="e-res">
 						<tspan x={0} y={127} />
 					</tspan>
 					<tspan x={0} y={153}>
 						{
-							'Apoya a j\xF3venes con potencial acad\xE9mico y dificultades '
+							t('Apoya a j\xF3venes con potencial acad\xE9mico y dificultades ')
 						}
 					</tspan>
 					<tspan x={0} y={179}>
 						{
-							'econ\xF3micas para acceder a educaci\xF3n superior de calidad, '
+							t('econ\xF3micas para acceder a educaci\xF3n superior de calidad, ')
 						}
 					</tspan>
 					<tspan x={0} y={205}>
 						{
-							'contribuyendo a su formaci\xF3n como l\xEDderes y profesionales '
+							t('contribuyendo a su formaci\xF3n como l\xEDderes y profesionales ')
 						}
 					</tspan>
 					<tspan x={0} y={231}>
 						{
-							'competitivos comprometidos con el desarrollo social del pa\xEDs. '
+							t('competitivos comprometidos con el desarrollo social del pa\xEDs. ')
 						}
 					</tspan>
 					<tspan x={0} y={257}>
-						{'Lo que hace la '}
+						{t('Lo que hace la ')}
 					</tspan>
 					<tspan className="e-res" y={257}>
-						{'Fundaci\xF3n OCMAES'}
+						{t('Fundaci\xF3n OCMAES')}
 					</tspan>
 					<tspan y={257} xmlSpace="preserve">
 						{' es simple pero profundo:'}
@@ -117,10 +119,10 @@ const Responsabilidad: React.FC = (): JSX.Element => {
 				</text>
 				<text className="f-res" transform="translate(243 389.268)">
 					<tspan x={0} y={70}>
-						{'RESPONSABILIDAD '}
+						{t('RESPONSABILIDAD ')}
 					</tspan>
 					<tspan x={0} y={142}>
-						{'SOCIAL EMPRESARIAL'}
+						{t('SOCIAL EMPRESARIAL')}
 					</tspan>
 				</text>
 			</svg>
@@ -335,11 +337,11 @@ const Responsabilidad: React.FC = (): JSX.Element => {
 
 				<text className="f-respo" transform="translate(728 1302)">
 					<tspan x={-443.275} y={66}>
-						{'+ DE 4.600 BENEFICIARIOS'}
+						{t('+ DE 4.600 BENEFICIARIOS')}
 					</tspan>
 					<tspan className="g-respo">
 						<tspan x={-313.152} y={108}>
-							{'a lo largo de sus 18 a\xF1os de trayectoria'}
+							{t('a lo largo de sus 18 a\xF1os de trayectoria')}
 						</tspan>
 					</tspan>
 				</text>
@@ -361,9 +363,9 @@ const Responsabilidad: React.FC = (): JSX.Element => {
 						</g>
 						<text
 							className="i-respo"
-							transform="translate(69.43 45.51)">
+							transform="translate(38.43 45.51)">
 							<tspan x={0} y={0}>
-								{'Conoce m\xE1s de La Fundaci\xF3n OCMAES '}
+								{t('Conoce más de La Fundación OCMAES')}
 							</tspan>
 						</text>
 					</g>
@@ -385,31 +387,31 @@ const Responsabilidad: React.FC = (): JSX.Element => {
 				</g>
 				<text className="l-respo" transform="translate(1260 947)">
 					<tspan x={0} y={19}>
-						{'Por eso otorga '}
+						{t('Por eso otorga ')}
 					</tspan>
 					<tspan x={0} y={39}>
-						{'becas universitarias '}
+						{t('becas universitarias ')}
 					</tspan>
 					<tspan x={0} y={59}>
-						{'a estudiantes con '}
+						{t('a estudiantes con ')}
 					</tspan>
 					<tspan x={0} y={79}>
-						{'un alto potencial '}
+						{t('un alto potencial ')}
 					</tspan>
 					<tspan x={0} y={99}>
-						{'acad\xE9mico que se '}
+						{t('acad\xE9mico que se ')}
 					</tspan>
 					<tspan x={0} y={119}>
-						{'encuentran en '}
+						{t('encuentran en ')}
 					</tspan>
 					<tspan x={0} y={139}>
-						{'circunstancias '}
+						{t('circunstancias ')}
 					</tspan>
 					<tspan x={0} y={159}>
-						{'econ\xF3micas y '}
+						{t('econ\xF3micas y ')}
 					</tspan>
 					<tspan x={0} y={179}>
-						{'sociales dif\xEDciles'}
+						{t('sociales dif\xEDciles')}
 					</tspan>
 				</text>
 				<g className="t-respo" transform="matrix(1, 0, 0, 1, 0, 0)">
@@ -428,19 +430,19 @@ const Responsabilidad: React.FC = (): JSX.Element => {
 				</g>
 				<text className="n-respo" transform="translate(767.787 968.31)">
 					<tspan x={0} y={23}>
-						{'Cree en la '}
+						{t('Cree en la ')}
 					</tspan>
 					<tspan x={0} y={51}>
-						{'transformaci\xF3n '}
+						{t('transformaci\xF3n ')}
 					</tspan>
 					<tspan x={0} y={79}>
-						{'de vidas a '}
+						{t('de vidas a ')}
 					</tspan>
 					<tspan x={0} y={107}>
-						{'trav\xE9s de la '}
+						{t('trav\xE9s de la ')}
 					</tspan>
 					<tspan x={0} y={135}>
-						{'educaci\xF3n'}
+						{t('educaci\xF3n')}
 					</tspan>
 				</text>
 				<g className="r-respo" transform="matrix(1, 0, 0, 1, 0, 0)">
@@ -459,16 +461,16 @@ const Responsabilidad: React.FC = (): JSX.Element => {
 				</g>
 				<text className="p-respo" transform="translate(263 982.31)">
 					<tspan x={0} y={23} xmlSpace="preserve">
-						{'Promueve    '}
+						{t('Promueve    ')}
 					</tspan>
 					<tspan x={0} y={51}>
-						{'el desarrollo '}
+						{t('el desarrollo ')}
 					</tspan>
 					<tspan x={0} y={79}>
-						{'humano y '}
+						{t('humano y ')}
 					</tspan>
 					<tspan x={0} y={107}>
-						{'del pa\xEDs'}
+						{t('del pa\xEDs')}
 					</tspan>
 				</text>
 			</svg>

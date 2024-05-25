@@ -1,6 +1,11 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
+
+
 
 const Tooltip: React.FC = (): JSX.Element => {
+
+	const {t} = useTranslation()
 	return (
 		<svg viewBox="0 0 300 279.885" width={300} height={247}>
 			<defs>
@@ -60,13 +65,13 @@ const Tooltip: React.FC = (): JSX.Element => {
 						className="d-item-100"
 						transform="translate(0 215.885)">
 						<tspan x={0} y={0}>
-							{'Conoce m\xE1s de '}
+							{t('Conoce más de')}
 						</tspan>
 						<tspan x={0} y={26}>
-							{'Grupo Amarey dando clic '}
+							{t('Grupo Amarey dando clic')}
 						</tspan>
 						<tspan x={0} y={52}>
-							{'en cada uno '}
+							{t('en cada uno')}
 						</tspan>
 					</text>
 				</g>

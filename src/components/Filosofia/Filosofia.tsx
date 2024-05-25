@@ -1,10 +1,13 @@
 import React from 'react'
 import useGeneral from 'hooks/general.hook'
 import FilosofiaMobile from './FilosofiaMobile'
+import { useTranslation } from 'react-i18next'
 
 const Filosofia: React.FC = () => {
 	/** Hooks */
 	const { width } = useGeneral()
+
+	const {t} = useTranslation()
 
 	return (
 		<div>
@@ -432,40 +435,40 @@ const Filosofia: React.FC = () => {
 								transform="translate(944.668 306)">
 								<tspan x={0} y={23}>
 									{
-										'Somos un grupo empresarial orgullosamente colombiano '
+										t('Somos un grupo empresarial orgullosamente colombiano ')
 									}
 								</tspan>
 								<tspan x={0} y={49}>
 									{
-										'que representa productos y servicios de calidad guiados '
+										t('que representa productos y servicios de calidad guiados ')
 									}
 								</tspan>
 								<tspan x={0} y={75}>
 									{
-										'por nuestra filosofía SER (Servicio, Educación, '
+										t('por nuestra filosofía SER (Servicio, Educación, ')
 									}
 								</tspan>
 								<tspan x={0} y={101}>
-									{'Relacionamiento).'}
+									{t('Relacionamiento).')}
 								</tspan>
 								<tspan x={0} y={127} />
 								<tspan x={0} y={153}>
 									{
-										'Generamos valor a los pacientes, sus familias, instituciones '
+										t('Generamos valor a los pacientes, sus familias, instituciones ')
 									}
 								</tspan>
 								<tspan x={0} y={179}>
 									{
-										'de salud y accionistas con un talento humano excepcional, '
+										t('de salud y accionistas con un talento humano excepcional, ')
 									}
 								</tspan>
 								<tspan x={0} y={205}>
 									{
-										'con sentido ético y altamente comprometido con la salud '
+										t('con sentido ético y altamente comprometido con la salud ')
 									}
 								</tspan>
 								<tspan x={0} y={231}>
-									{'y la vida.'}
+									{t('y la vida.')}
 								</tspan>
 							</text>
 							<text
@@ -473,36 +476,36 @@ const Filosofia: React.FC = () => {
 								transform="translate(281.668 1129.866)">
 								<tspan x={0} y={23}>
 									{
-										'En el 2025 el Grupo Amarey será el aliado preferido de '
+										t('En el 2025 el Grupo Amarey será el aliado preferido de ')
 									}
 								</tspan>
 								<tspan x={0} y={49}>
 									{
-										'las instituciones de salud y de los fabricantes de '
+										t('las instituciones de salud y de los fabricantes de ')
 									}
 								</tspan>
 								<tspan x={0} y={75}>
 									{
-										'productos especializados, en Colombia y los países del '
+										t('productos especializados, en Colombia y los países del ')
 									}
 								</tspan>
 								<tspan x={0} y={101}>
-									{'área andina y Centroamérica.'}
+									{t('área andina y Centroamérica.')}
 								</tspan>
 								<tspan x={0} y={127} />
 								<tspan x={0} y={153}>
 									{
-										'Esto será posible por nuestra trayectoria, reputación, por '
+										t('Esto será posible por nuestra trayectoria, reputación, por ')
 									}
 								</tspan>
 								<tspan x={0} y={179}>
 									{
-										'cumplir lo que prometemos y por la capacidad para '
+										t('cumplir lo que prometemos y por la capacidad para ')
 									}
 								</tspan>
 								<tspan x={0} y={205}>
 									{
-										'ofrecer soluciones integrales innovadoras.'
+										t('ofrecer soluciones integrales innovadoras.')
 									}
 								</tspan>
 							</text>
@@ -511,17 +514,17 @@ const Filosofia: React.FC = () => {
 								transform="translate(281.668 2986.067)">
 								<tspan x={0} y={23}>
 									{
-										'El Grupo Amarey trabaja bajo una única premisa: la filosofía SER '
+										t('El Grupo Amarey trabaja bajo una única premisa: la filosofía SER ')
 									}
 								</tspan>
 								<tspan x={0} y={49}>
 									{
-										'(Servicio, Educación y Relacionamiento), pilares que marcan la '
+										t('(Servicio, Educación y Relacionamiento), pilares que marcan la ')
 									}
 								</tspan>
 								<tspan x={0} y={75}>
 									{
-										'diferencia de la compañía en la industria.'
+										t('diferencia de la compañía en la industria.')
 									}
 								</tspan>
 							</text>
@@ -530,12 +533,12 @@ const Filosofia: React.FC = () => {
 								transform="translate(281.668 3132.866)">
 								<tspan x={0} y={23}>
 									{
-										'Una compañía con sentido humano, que ofrece un servicio que '
+										t('Una compañía con sentido humano, que ofrece un servicio que ')
 									}
 								</tspan>
 								<tspan x={0} y={49}>
 									{
-										'trasciende hacia brindar más oportunidades para la vida. '
+										t('trasciende hacia brindar más oportunidades para la vida. ')
 									}
 								</tspan>
 							</text>
@@ -544,21 +547,21 @@ const Filosofia: React.FC = () => {
 								transform="translate(281.668 3249)">
 								<tspan x={0} y={23}>
 									{
-										'Representa el compromiso del Grupo Amarey con la generación de '
+										t('Representa el compromiso del Grupo Amarey con la generación de ')
 									}
 								</tspan>
 								<tspan x={0} y={49}>
 									{
-										'conocimiento para el personal de la salud, contribuyendo a la '
+										t('conocimiento para el personal de la salud, contribuyendo a la ')
 									}
 								</tspan>
 								<tspan x={0} y={75}>
 									{
-										'construcción de un país que ofrezca mayores beneficios para la '
+										t('construcción de un país que ofrezca mayores beneficios para la ')
 									}
 								</tspan>
 								<tspan x={0} y={101}>
-									{'calidad de vida de los pacientes. '}
+									{t('calidad de vida de los pacientes. ')}
 								</tspan>
 							</text>
 							<text
@@ -566,28 +569,28 @@ const Filosofia: React.FC = () => {
 								transform="translate(281.668 3429)">
 								<tspan x={0} y={23}>
 									{
-										'Ha permitido construir la base de confianza y reputación del '
+										t('Ha permitido construir la base de confianza y reputación del ')
 									}
 								</tspan>
 								<tspan x={0} y={49}>
 									{
-										'Grupo Amarey frente a sus públicos de interés. Hoy la compañía es '
+										t('Grupo Amarey frente a sus públicos de interés. Hoy la compañía es ')
 									}
 								</tspan>
 								<tspan x={0} y={75}>
 									{
-										'reconocida por su integridad, compromiso, excelencia, humanidad '
+										t('reconocida por su integridad, compromiso, excelencia, humanidad ')
 									}
 								</tspan>
 								<tspan x={0} y={101}>
-									{'e innovación. '}
+									{t('e innovación. ')}
 								</tspan>
 							</text>
 							<text
 								className="k-reconocimientos-mobile-3"
 								transform="translate(944.668 258)">
 								<tspan x={0} y={0}>
-									{'Misión'}
+									{t('Misión')}
 								</tspan>
 							</text>
 							<text
@@ -601,14 +604,14 @@ const Filosofia: React.FC = () => {
 								className="k-reconocimientos-mobile-3"
 								transform="translate(961.168 1628.866)">
 								<tspan x={-151.27} y={0}>
-									{'Valores'}
+									{t('Valores')}
 								</tspan>
 							</text>
 							<text
 								className="k-reconocimientos-mobile-3"
 								transform="translate(533.668 2948.866)">
 								<tspan x={-251.79} y={0}>
-									{'Filosofía SER'}
+									{t('Filosofía SER')}
 								</tspan>
 							</text>
 							<g
@@ -625,7 +628,7 @@ const Filosofia: React.FC = () => {
 								className="m-reconocimientos-mobile-3"
 								transform="translate(960.668 60)">
 								<tspan x={-106.722} y={0}>
-									{'FILOSOFÍA'}
+									{t('FILOSOFÍA')}
 								</tspan>
 							</text>
 							<g
@@ -736,157 +739,157 @@ const Filosofia: React.FC = () => {
 								className="t-reconocimientos-mobile-3"
 								transform="translate(212.668 1814)">
 								<tspan x={0} y={0}>
-									{'Respeto y calidez'}
+									{t('Respeto y calidez')}
 								</tspan>
 							</text>
 							<text
 								className="t-reconocimientos-mobile-3"
 								transform="translate(1041.668 2149)">
 								<tspan x={0} y={0}>
-									{'Transparencia'}
+									{t('Transparencia')}
 								</tspan>
 							</text>
 							<text
 								className="t-reconocimientos-mobile-3"
 								transform="translate(593.168 2511)">
 								<tspan x={0} y={0}>
-									{'Sentido de responsabilidad'}
+									{t('Sentido de responsabilidad')}
 								</tspan>
 								<tspan x={0} y={34}>
-									{'con otros'}
+									{t('con otros')}
 								</tspan>
 							</text>
 							<text
 								className="u-reconocimientos-mobile-3"
 								transform="translate(1041.668 1804)">
 								<tspan x={0} y={0}>
-									{'Excelencia en calidad'}
+									{t('Excelencia en calidad')}
 								</tspan>
 							</text>
 							<text
 								className="u-reconocimientos-mobile-3"
 								transform="translate(212.668 2160)">
 								<tspan x={0} y={0}>
-									{'Convicción'}
+									{t('Convicción')}
 								</tspan>
 							</text>
 							<text
 								className="v-reconocimientos-mobile-3"
 								transform="translate(281.668 3120)">
 								<tspan x={0} y={0}>
-									{'Servicio '}
+									{t('Servicio ')}
 								</tspan>
 							</text>
 							<text
 								className="v-reconocimientos-mobile-3"
 								transform="translate(281.668 3241)">
 								<tspan x={0} y={0}>
-									{'Educación '}
+									{t('Educación ')}
 								</tspan>
 							</text>
 							<text
 								className="v-reconocimientos-mobile-3"
 								transform="translate(281.668 3416.134)">
 								<tspan x={0} y={0}>
-									{'Relacionamiento '}
+									{t('Relacionamiento ')}
 								</tspan>
 							</text>
 							<text
 								className="w-reconocimientos-mobile-3"
 								transform="translate(212.668 1837)">
 								<tspan x={0} y={23}>
-									{'Valoramos y respetamos el '}
+									{t('Valoramos y respetamos el ')}
 								</tspan>
 								<tspan x={0} y={49}>
-									{'punto de vista, el saber y el '}
+									{t('punto de vista, el saber y el ')}
 								</tspan>
 								<tspan x={0} y={75}>
-									{'quehacer de otros. Nos '}
+									{t('quehacer de otros. Nos ')}
 								</tspan>
 								<tspan x={0} y={101}>
-									{'caracteriza el relacionamiento '}
+									{t('caracteriza el relacionamiento ')}
 								</tspan>
 								<tspan x={0} y={127}>
-									{'basado en las buenas maneras.'}
+									{t('basado en las buenas maneras.')}
 								</tspan>
 							</text>
 							<text
 								className="w-reconocimientos-mobile-3"
 								transform="translate(1041.668 2172)">
 								<tspan x={0} y={23}>
-									{'Nuestras actuaciones siempre '}
+									{t('Nuestras actuaciones siempre ')}
 								</tspan>
 								<tspan x={0} y={49}>
-									{'se realizan a la luz pública y '}
+									{t('se realizan a la luz pública y ')}
 								</tspan>
 								<tspan x={0} y={75}>
-									{'están regidas siempre por la '}
+									{t('están regidas siempre por la ')}
 								</tspan>
 								<tspan x={0} y={101}>
-									{'buena voluntad, la buena fe y '}
+									{t('buena voluntad, la buena fe y ')}
 								</tspan>
 								<tspan x={0} y={127}>
-									{'la orientación a los resultados '}
+									{t('la orientación a los resultados ')}
 								</tspan>
 								<tspan x={0} y={153}>
-									{'éticos y morales.'}
+									{t('éticos y morales.')}
 								</tspan>
 							</text>
 							<text
 								className="w-reconocimientos-mobile-3"
 								transform="translate(593.168 2559)">
 								<tspan x={0} y={23}>
-									{'Somos sensibles a las necesidades '}
+									{t('Somos sensibles a las necesidades ')}
 								</tspan>
 								<tspan x={0} y={49}>
-									{'de los demás comprometiéndonos '}
+									{t('de los demás comprometiéndonos ')}
 								</tspan>
 								<tspan x={0} y={75}>
-									{'con el mejoramiento de su calidad '}
+									{t('con el mejoramiento de su calidad ')}
 								</tspan>
 								<tspan x={0} y={101}>
-									{'de vida y bienestar.'}
+									{t('de vida y bienestar.')}
 								</tspan>
 							</text>
 							<text
 								className="x-reconocimientos-mobile-3"
 								transform="translate(1041.668 1827)">
 								<tspan x={0} y={23}>
-									{'Realizamos las cosas con '}
+									{t('Realizamos las cosas con ')}
 								</tspan>
 								<tspan x={0} y={49}>
-									{'calidad, oportunidad y actitud '}
+									{t('calidad, oportunidad y actitud ')}
 								</tspan>
 								<tspan x={0} y={75}>
-									{'desde el principio, cumpliendo '}
+									{t('desde el principio, cumpliendo ')}
 								</tspan>
 								<tspan x={0} y={101}>
-									{'con la promesa de valor a '}
+									{t('con la promesa de valor a ')}
 								</tspan>
 								<tspan x={0} y={127}>
-									{'nuestros clientes y propendiendo '}
+									{t('nuestros clientes y propendiendo ')}
 								</tspan>
 								<tspan x={0} y={153}>
-									{'con el mejoramiento continuo.'}
+									{t('con el mejoramiento continuo.')}
 								</tspan>
 							</text>
 							<text
 								className="x-reconocimientos-mobile-3"
 								transform="translate(212.668 2183)">
 								<tspan x={0} y={23}>
-									{'Actuamos con conocimiento '}
+									{t('Actuamos con conocimiento ')}
 								</tspan>
 								<tspan x={0} y={49}>
-									{'profundo sobre los bienes y '}
+									{t('profundo sobre los bienes y ')}
 								</tspan>
 								<tspan x={0} y={75}>
-									{'servicios que le brindamos a la '}
+									{t('servicios que le brindamos a la ')}
 								</tspan>
 								<tspan x={0} y={101}>
-									{'comunidad, identificándonos '}
+									{t('comunidad, identificándonos ')}
 								</tspan>
 								<tspan x={0} y={127}>
-									{'con la filosofía corporativa.'}
+									{t('con la filosofía corporativa.')}
 								</tspan>
 							</text>
 						</g>

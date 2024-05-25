@@ -3,6 +3,7 @@ import { CifrasVideo } from "./CifrasVideo";
 /** Styles */
 import './Cifras.css'
 import useGeneral from "hooks/general.hook";
+import { useTranslation } from "react-i18next";
 
 const Cifras: React.FC = () => {
   const { width } = useGeneral()
@@ -30,6 +31,7 @@ const Cifras: React.FC = () => {
 
     return () => window.removeEventListener("resize", resizeImage);
   }, []);
+  const {t} = useTranslation()
 
   return (
     <div className="relative">
@@ -228,10 +230,10 @@ const Cifras: React.FC = () => {
       </g>
       <text className="h-2" transform="translate(284.131 700.51)">
         <tspan x={0} y={100}>
-          {"Cifras de "}
+          {t("Cifras de")}
         </tspan>
         <tspan x={0} y={205}>
-          {"impacto"}
+          {t("impacto")}
         </tspan>
       </text>
       <g transform="translate(0.208 0)" onClick={() => {setOpenModal(true); setSelected(2)}}>
@@ -260,11 +262,11 @@ const Cifras: React.FC = () => {
           </tspan>
           <tspan className="m-2">
             <tspan x={-402.264} y={25}>
-              {"cirug\xEDas rob\xF3ticas realizadas"}
+              {t("cirugías robóticas realizadas")}
             </tspan>
           </tspan>
         </text>
-        <g className="n-2 cursor-pointer" transform="translate(675.953 508.939)" >
+        <g className="n-2 cursor-pointer" transform="translate(675.953 501.939)" >
           <g className="o-2">
             <path
               className="b-2 cursor-pointer"
@@ -292,7 +294,7 @@ const Cifras: React.FC = () => {
           </tspan>
           <tspan className="m-2">
             <tspan x={-359.664} y={80}>
-              {"profesionales capacitados"}
+              {t("profesionales capacitados")}
             </tspan>
           </tspan>
         </text>
@@ -348,7 +350,7 @@ const Cifras: React.FC = () => {
           </tspan>
           <tspan className="m-2">
             <tspan x={0} y={25}>
-              {"con el modelo de log\xEDstica hospitalaria"}
+              {t("con el modelo de logística hospitalaria")}
             </tspan>
           </tspan>
         </text>
@@ -394,7 +396,7 @@ const Cifras: React.FC = () => {
             <tspan className="m-2" y={0} />
             <tspan className="m-2">
               <tspan x={0} y={25}>
-                {"pacientes atendidos"}
+                {t("pacientes atendidos")}
               </tspan>
             </tspan>
           </text>

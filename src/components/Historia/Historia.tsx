@@ -18,6 +18,7 @@ import LifeLine20233 from './components/20233'
 import LifeLine20234 from './components/20234'
 import useGeneral from 'hooks/general.hook'
 import HistoriaMobile from './HistoriaMobile/HistoriaMobile'
+import { useTranslation } from 'react-i18next'
 
 const Historia: React.FC = (): JSX.Element => {
 	const { width } = useGeneral();
@@ -28,6 +29,8 @@ const Historia: React.FC = (): JSX.Element => {
 	const handleLessStep = () => setSteps(steps - 1 < 0 ? 16 : steps - 1)
 	const handleChangeStepForce = (index: number) => setSteps(index)
 
+
+	const {t} = useTranslation()
 	return (
 		<React.Fragment>
 			{
@@ -77,51 +80,51 @@ const Historia: React.FC = (): JSX.Element => {
 				/>
 				<text className="d-histo" transform="translate(837 774)">
 					<tspan x={0} y={38}>
-						{'\u201Cun compromiso inquebrantable con '}
+						{t('\u201Cun compromiso inquebrantable con')}
 					</tspan>
 					<tspan x={0} y={82} xmlSpace="preserve">
-						{'la salud y la vida\u201D.  '}
+						{t('la salud y la vida\u201D.')}
 					</tspan>
 				</text>
 				<text className="e-histo" transform="translate(837 530)">
 					<tspan x={0} y={23}>
 						{
-							'Grupo Amarey es una compa\xF1\xEDa con m\xE1s de 40 a\xF1os de '
+							t('Grupo Amarey es una compañía con más de 40 años de')
 						}
 					</tspan>
 					<tspan x={0} y={49}>
 						{
-							'trayectoria, comprometida con acercar el conocimiento, la '
+							t('trayectoria, comprometida con acercar el conocimiento, la')
 						}
 					</tspan>
 					<tspan x={0} y={75}>
 						{
-							'ciencia y la tecnolog\xEDa al sector de la salud en Colombia, '
+							t('ciencia y la tecnolog\xEDa al sector de la salud en Colombia,')
 						}
 					</tspan>
 					<tspan x={0} y={101} xmlSpace="preserve">
-						{'Panam\xE1 y Costa Rica.  '}
+						{t('Panam\xE1 y Costa Rica.')}
 					</tspan>
 					<tspan x={0} y={127} />
 					<tspan x={0} y={153}>
 						{
-							'Con 6 sedes en Colombia y operaci\xF3n internacional en '
+							t('Con 6 sedes en Colombia y operaci\xF3n internacional en')
 						}
 					</tspan>
 					<tspan x={0} y={179}>
 						{
-							'Panam\xE1 y Costa Rica, el grupo empresarial cuenta con un '
+							t('Panam\xE1 y Costa Rica, el grupo empresarial cuenta con un')
 						}
 					</tspan>
 					<tspan x={0} y={205}>
 						{
-							'equipo de colaboradores que trabajan bajo una \xFAnica premisa, '
+							t('equipo de colaboradores que trabajan bajo una \xFAnica premisa,')
 						}
 					</tspan>
 				</text>
 				<text className="f-histo" transform="translate(837 399)">
 					<tspan x={0} y={70}>
-						{'NUESTRA HISTORIA '}
+						{t('NUESTRA HISTORIA')}
 					</tspan>
 				</text>
 				<g className="g-histo" transform="translate(1659.069 60.012)">

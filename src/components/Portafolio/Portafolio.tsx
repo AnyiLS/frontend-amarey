@@ -5,6 +5,7 @@ import LeftCard from './components/LeftCard'
 import CenterCard from './components/CenterCard'
 import Elipses from './components/Elipses'
 import './Carousel.css'
+import { useTranslation } from 'react-i18next'
 
 const Portafolio: React.FC = () => {
 	const [height, setHeight] = React.useState<string>('100vh')
@@ -70,6 +71,7 @@ const Portafolio: React.FC = () => {
 
 	console.log(items)
 
+	const {t} = useTranslation()
 	return (
 		<div>
 			{!openState ? (
@@ -162,28 +164,28 @@ const Portafolio: React.FC = () => {
 							className="i-4"
 							transform="translate(1115 500.068)">
 							<tspan x={0} y={66}>
-								{'PORTAFOLIO '}
+								{t('PORTAFOLIO')}
 							</tspan>
 						</text>
 						<text
 							className="j-4"
 							transform="translate(1115 600.52)">
 							<tspan x={0} y={23}>
-								{'Somos un grupo empresarial con una clara '}
+								{t('Somos un grupo empresarial con una clara')}
 							</tspan>
 							<tspan x={0} y={51}>
 								{
-									'inspiraci\xF3n profesional y humana; ofrecemos '
+									t('inspiraci\xF3n profesional y humana; ofrecemos')
 								}
 							</tspan>
 							<tspan x={0} y={79}>
 								{
-									'un portafolio de soluciones en salud de la m\xE1s '
+									t('un portafolio de soluciones en salud de la m\xE1s')
 								}
 							</tspan>
 							<tspan x={0} y={107}>
 								{
-									'alta calidad para el cuidado de los pacientes. '
+									t('alta calidad para el cuidado de los pacientes.')
 								}
 							</tspan>
 						</text>
@@ -225,7 +227,7 @@ const Portafolio: React.FC = () => {
 								className="b-button-32 cursor-pointer"
 								transform="translate(71 51.424)">
 								<tspan x={0} y={0}>
-									{'Conoce M\xE1s'}
+									{t('Conoce M\xE1s')}
 								</tspan>
 							</text>
 							<path
@@ -631,7 +633,7 @@ const Portafolio: React.FC = () => {
 						className="ab-portfolio-3"
 						transform="translate(699 116)">
 						<tspan x={42.715} y={66}>
-							{'PORTAFOLIO '}
+							{t('PORTAFOLIO')}
 						</tspan>
 					</text>
 					<Elipses />

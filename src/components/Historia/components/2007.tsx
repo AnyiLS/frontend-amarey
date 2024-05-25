@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next"
 import { ILifeLine2000 } from "./2000"
 
 const LifeLine2007: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeStepForce }) => {
+  const {t} = useTranslation()
     return (
         <svg viewBox="0 0 1920 874.839">
     <defs>
@@ -214,22 +216,22 @@ const LifeLine2007: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeSt
       </g>
       <text className="item-103-k" transform="translate(537.856 295.365)">
         <tspan x={0} y={23}>
-          {"La compañía se expande a "}
+          {t("La compañía se expande a ")}
         </tspan>
         <tspan x={0} y={49}>
-          {"Panamá y Costa Rica con la "}
+          {t("Panamá y Costa Rica con la ")}
         </tspan>
         <tspan x={0} y={75}>
-          {"distribución del portafolio "}
+          {t("distribución del portafolio ")}
         </tspan>
         <tspan x={0} y={101}>
-          {"quirúrgico y de ortopedia, a "}
+          {t("quirúrgico y de ortopedia, a ")}
         </tspan>
         <tspan x={0} y={127}>
-          {"través de su marca "}
+          {t("través de su marca ")}
         </tspan>
         <tspan x={0} y={153}>
-          {"internacional UCITECH. "}
+          {t("internacional UCITECH. ")}
         </tspan>
       </text>
       <g transform="translate(0 -329.714)" onClick={onClick}>
@@ -245,9 +247,9 @@ const LifeLine2007: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeSt
           d="M45.263,0V24.412L66.419,12.2,56.314,6.375Z"
           transform="translate(1673.737 1007.794)"
         />
-        <text className="item-103-m cursor-pointer" transform="translate(1549 1032)">
+        <text className="item-103-m cursor-pointer" transform="translate(1539 1032)">
           <tspan x={0} y={0}>
-            {"Avanzar"}
+            {t("Avanzar")}
           </tspan>
         </text>
       </g>
@@ -287,7 +289,7 @@ const LifeLine2007: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeSt
         />
         <text className="item-103-m cursor-pointer" transform="translate(66 52.425)">
           <tspan x={0} y={0}>
-            {"Regresar"}
+            {t("Regresar")}
           </tspan>
         </text>
       </g>

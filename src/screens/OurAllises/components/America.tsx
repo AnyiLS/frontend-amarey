@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 interface IAmerica {
 	onClose: () => void
@@ -7,6 +8,8 @@ interface IAmerica {
 
 const America: React.FC<IAmerica> = ({ height, onClose }): JSX.Element => {
 	const [showBrands, setShowBrands] = React.useState<boolean>(true)
+
+	const {t} = useTranslation()
 
 	return (
 		<React.Fragment>
@@ -451,11 +454,11 @@ const America: React.FC<IAmerica> = ({ height, onClose }): JSX.Element => {
 								className="g-america-1"
 								transform="translate(0 42.062)">
 								<tspan x={0} y={60}>
-									{'NUESTROS'}
+									{t('NUESTROS')}
 								</tspan>
 								<tspan className="h-america-1" y={60} />
 								<tspan className="i-america-1" x={0} y={130}>
-									{'ALIADOS'}
+									{t('ALIADOS')}
 								</tspan>
 							</text>
 							<g transform="translate(360 -74)" onClick={onClose}>
@@ -1170,11 +1173,11 @@ const America: React.FC<IAmerica> = ({ height, onClose }): JSX.Element => {
 								className="h-item-1826"
 								transform="translate(0 42.062)">
 								<tspan x={0} y={60}>
-									{'NUESTROS'}
+									{t('NUESTROS')}
 								</tspan>
 								<tspan className="i-item-1826" y={60} />
 								<tspan className="j-item-1826" x={0} y={130}>
-									{'ALIADOS'}
+									{t('ALIADOS')}
 								</tspan>
 							</text>
 							<rect

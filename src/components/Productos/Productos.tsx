@@ -1,11 +1,14 @@
 import useGeneral from 'hooks/general.hook'
 import React from 'react'
 import ProductosMobile from './ProductosMobile'
+import { useTranslation } from 'react-i18next'
 
 const Productos: React.FC = (): JSX.Element => {
 	const { width } = useGeneral()
 	/** Hooks */
 	const [hover, setHover] = React.useState<number | null>(2)
+
+	const {t} = useTranslation()
 
 	return (
 		<React.Fragment>
@@ -342,7 +345,7 @@ const Productos: React.FC = (): JSX.Element => {
 									className="g-products"
 									transform="translate(1464.2 976.405)">
 									<tspan x={0} y={0}>
-										{'Neurointervencionismo'}
+										{t('Neurointervencionismo')}
 									</tspan>
 								</text>
 							</g>
@@ -373,10 +376,10 @@ const Productos: React.FC = (): JSX.Element => {
 									className="g-products"
 									transform="translate(1282 932.405)">
 									<tspan x={-111.852} y={0}>
-										{'Cuidado avanzado'}
+										{t('Cuidado avanzado')}
 									</tspan>
 									<tspan x={-62.784} y={26}>
-										{'de heridas'}
+										{t('de heridas')}
 									</tspan>
 								</text>
 							</g>
@@ -407,7 +410,7 @@ const Productos: React.FC = (): JSX.Element => {
 									className="g-products"
 									transform="translate(789.773 976.405)">
 									<tspan x={0} y={0}>
-										{'Instrumental y esterilización'}
+										{t('Instrumental y esterilización')}
 									</tspan>
 								</text>
 							</g>
@@ -438,7 +441,7 @@ const Productos: React.FC = (): JSX.Element => {
 									className="g-products"
 									transform="translate(516 931.487)">
 									<tspan x={0} y={0}>
-										{'Genómica y genética'}
+										{t('Genómica y genética')}
 									</tspan>
 								</text>
 							</g>
@@ -469,10 +472,10 @@ const Productos: React.FC = (): JSX.Element => {
 									className="g-products"
 									transform="translate(326.864 979.871)">
 									<tspan x={-71.928} y={0}>
-										{'Dispositivos'}
+										{t('Dispositivos')}
 									</tspan>
 									<tspan x={-116.52} y={28}>
-										{'médico-quirúrgicos'}
+										{t('médico-quirúrgicos')}
 									</tspan>
 								</text>
 							</g>
@@ -504,7 +507,7 @@ const Productos: React.FC = (): JSX.Element => {
 									className="g-products"
 									transform="translate(1486 600)">
 									<tspan x={0} y={0}>
-										{'Logística hospitalaria'}
+										{t('Logística hospitalaria')}
 									</tspan>
 								</text>
 							</g>
@@ -535,7 +538,7 @@ const Productos: React.FC = (): JSX.Element => {
 									className="g-products"
 									transform="translate(1281 644)">
 									<tspan x={-61.824} y={0}>
-										{'Ortopedia'}
+										{t('Ortopedia')}
 									</tspan>
 								</text>
 							</g>
@@ -566,7 +569,7 @@ const Productos: React.FC = (): JSX.Element => {
 									className="g-products"
 									transform="translate(860 600)">
 									<tspan x={0} y={0}>
-										{'Equipos médicos'}
+										{t('Equipos médicos')}
 									</tspan>
 								</text>
 							</g>
@@ -598,7 +601,7 @@ const Productos: React.FC = (): JSX.Element => {
 									className="g-products"
 									transform="translate(545 643)">
 									<tspan x={0} y={0}>
-										{'Cirugía robótica'}
+										{t('Cirugía robótica')}
 									</tspan>
 								</text>
 							</g>
@@ -629,7 +632,7 @@ const Productos: React.FC = (): JSX.Element => {
 									className="g-products"
 									transform="translate(226 600)">
 									<tspan x={0} y={0}>
-										{'Medicamentos'}
+										{t('Medicamentos')}
 									</tspan>
 								</text>
 							</g>
@@ -638,7 +641,7 @@ const Productos: React.FC = (): JSX.Element => {
 							className="q-products"
 							transform="translate(357 170.384)">
 							<tspan x={28.487} y={100} xmlSpace="preserve">
-								{' SOLUCIONES EN SALUD'}
+								{t(' SOLUCIONES EN SALUD')}
 							</tspan>
 						</text>
 					</svg>

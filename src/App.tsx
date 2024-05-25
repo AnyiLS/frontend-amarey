@@ -11,6 +11,9 @@ import FixedContact from 'components/fixed-components/FixedContact'
 import FixedSocialNetworks from 'components/fixed-components/FixedSocialNetworks'
 import Navbar from 'components/Navbar/Navbar'
 import Footer from 'components/Footer/Footer'
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import { customTexts } from 'mocks/translations'
 
 const App: React.FC = (): JSX.Element => {
 	/** Hooks */
@@ -19,6 +22,17 @@ const App: React.FC = (): JSX.Element => {
 
 	/** States */
 	const [showVideoPopup, setShowVideoPopup] = React.useState<boolean>(true)
+
+	i18n
+		.use(initReactI18next)
+		.init({
+			resources: customTexts,
+			lng: "en",
+			fallbackLng: "en",
+			interpolation: {
+				escapeValue: false
+			}
+		})
 
 	return (
 		<React.Suspense fallback={null}>
@@ -33,6 +47,7 @@ const App: React.FC = (): JSX.Element => {
 							{width >= 768 ? <Footer /> : <FooterMobile />}
 						</main>
 						{window.location.pathname !== '/contactenos' &&
+						
 							width > 767 && (
 								<React.Fragment>
 									<FixedContact />

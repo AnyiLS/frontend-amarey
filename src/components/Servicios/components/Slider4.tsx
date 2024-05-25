@@ -1,6 +1,7 @@
 import React from 'react'
 
 import useGeneral from 'hooks/general.hook'
+import { useTranslation } from 'react-i18next'
 
 interface ISlider {
 	height: string
@@ -24,6 +25,7 @@ export const Slider4: React.FC<ISlider> = ({ height, index, onOpenVideo }) => {
 		if (index === 3) setTimeout(() => setSelectedImage(true), 800)
 	}, [index])
 
+	const {t} = useTranslation()
 	return (
 		<div className="relative">
 			<svg
@@ -248,13 +250,13 @@ export const Slider4: React.FC<ISlider> = ({ height, index, onOpenVideo }) => {
 						className="g-item-1820"
 						transform="translate(142 162.191)">
 						<tspan x={0} y={65}>
-							{'Servicio '}
+							{t('Servicio - 3')}
 						</tspan>
 						<tspan x={0} y={132}>
-							{'logístico de '}
+							{t('logístico de')}
 						</tspan>
 						<tspan x={0} y={199}>
-							{'clase mundial'}
+							{t('clase mundial')}
 						</tspan>
 					</text>
 					<g className="h-item-1820" transform="translate(0 970.394)">
@@ -278,25 +280,25 @@ export const Slider4: React.FC<ISlider> = ({ height, index, onOpenVideo }) => {
 							className="m-item-1820"
 							transform="translate(178.236 15.436)">
 							<tspan x={-87.576} y={23}>
-								{'Nuestra red en '}
+								{t('Nuestra red en')}
 							</tspan>
 							<tspan x={-131.352} y={49}>
-								{'distribución incluye '}
+								{t('distribución incluye')}
 							</tspan>
 							<tspan className="n-item-1820" y={49}>
 								{'18 '}
 							</tspan>
 							<tspan className="n-item-1820" x={-124.812} y={75}>
-								{'transportadoras'}
+								{t('transportadoras que')}
 							</tspan>
-							<tspan y={75} xmlSpace="preserve">
-								{' que '}
-							</tspan>
+							{/* <tspan y={75} xmlSpace="preserve">
+								{t(' que ')}
+							</tspan> */}
 							<tspan x={-126.996} y={101}>
-								{'nos permiten llegar a '}
+								{t('nos permiten llegar a')}
 							</tspan>
 							<tspan className="n-item-1820" x={-142.632} y={127}>
-								{'cualquier parte del país'}
+								{t('cualquier parte del país')}
 							</tspan>
 						</text>
 					</g>
@@ -316,13 +318,13 @@ export const Slider4: React.FC<ISlider> = ({ height, index, onOpenVideo }) => {
 							className="m-item-1820"
 							transform="translate(175 43.436)">
 							<tspan x={-97.74} y={23}>
-								{'Seguimiento por '}
+								{t('Seguimiento por')}
 							</tspan>
 							<tspan className="n-item-1820" x={-120.852} y={49}>
-								{'GPS para garantizar '}
+								{t('GPS para garantizar')}
 							</tspan>
 							<tspan className="n-item-1820" x={-61.476} y={75}>
-								{'la entrega'}
+								{t('la entrega')}
 							</tspan>
 						</text>
 					</g>
@@ -341,17 +343,17 @@ export const Slider4: React.FC<ISlider> = ({ height, index, onOpenVideo }) => {
 								className="o-item-1820"
 								transform="translate(-513.764 3303.307)">
 								<tspan x={-124.26} y={23}>
-									{'Pedidos electrónicos '}
+									{t('Pedidos electrónicos')}
 								</tspan>
 							</text>
 							<text
 								className="m-item-1820"
 								transform="translate(-601 3340.469)">
 								<tspan x={0} y={23}>
-									{'CRM Salesforce '}
+									{t('CRM Salesforce')}
 								</tspan>
 								<tspan x={0} y={49}>
-									{'SAP S/4HANA '}
+									{t('SAP S/4HANA')}
 								</tspan>
 							</text>
 							<circle
@@ -384,16 +386,16 @@ export const Slider4: React.FC<ISlider> = ({ height, index, onOpenVideo }) => {
 							className="p-item-1820"
 							transform="translate(188.057 43.435)">
 							<tspan x={-132.384} y={23}>
-								{'Entregas urgencias en '}
+								{t('Entregas urgencias en')}
 							</tspan>
 							<tspan className="n-item-1820" x={-133.452} y={51}>
-								{'máximo 4 horas'}
+								{t('máximo 4 horas')}
 							</tspan>
 							<tspan y={51} xmlSpace="preserve">
-								{' en las '}
+								{t(' en las ')}
 							</tspan>
 							<tspan className="n-item-1820" x={-124.26} y={79}>
-								{'principales ciudades'}
+								{t('principales ciudades')}
 							</tspan>
 						</text>
 					</g>
@@ -413,16 +415,16 @@ export const Slider4: React.FC<ISlider> = ({ height, index, onOpenVideo }) => {
 							className="m-item-1820"
 							transform="translate(188.557 29.436)">
 							<tspan x={-113.208} y={23} xmlSpace="preserve">
-								{'Equipo logístico de      '}
+								{t('Equipo logístico de')}
 							</tspan>
 							<tspan className="n-item-1820" x={-89.484} y={49}>
-								{'91 personas en '}
+								{t('91 personas en')}
 							</tspan>
 							<tspan className="n-item-1820" x={-122.352} y={75}>
-								{'Colombia, Panamá y '}
+								{t('Colombia, Panamá y')}
 							</tspan>
 							<tspan className="n-item-1820" x={-65.712} y={101}>
-								{'Costa Rica '}
+								{t('Costa Rica')}
 							</tspan>
 						</text>
 					</g>
@@ -441,16 +443,16 @@ export const Slider4: React.FC<ISlider> = ({ height, index, onOpenVideo }) => {
 								className="m-item-1820"
 								transform="translate(-130.382 3316.197)">
 								<tspan x={-82.476} y={23}>
-									{'Trazabilidad y '}
-								</tspan>
+									{t('Trazabilidad y')}
+								</tspan>``
 								<tspan x={-93.984} y={49}>
-									{'monitoreo de la '}
+									{t('monitoreo de la')}
 								</tspan>
 								<tspan
 									className="n-item-1820"
 									x={-87.492}
 									y={75}>
-									{'cadena de frío'}
+									{t('cadena de frío')}
 								</tspan>
 							</text>
 						</g>

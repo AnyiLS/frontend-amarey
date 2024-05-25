@@ -121,6 +121,7 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 									height="1080"
 									src="https://grupoamarey.com/pdf/video/cidras1.mp4" 
 									loop
+									autoPlay
 								/>
 							)}
 							{selected === 2 && (
@@ -130,6 +131,7 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 									height="1080"
 									src="https://grupoamarey.com/pdf/video/cifras-robotica.mp4" 
 									loop
+									autoPlay
 								/>
 							)}
 							{selected === 3 && (
@@ -139,6 +141,7 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 									height="1080"
 									src="https://grupoamarey.com/pdf/video/cifras-Maxiloo.mp4"
 									loop
+									autoPlay
 								/>
 							)}
 							{selected === 4 && (
@@ -148,6 +151,7 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 									height="1080"
 									src="https://grupoamarey.com/pdf/video/cifras-logistica.mp4"
 									loop
+									autoPlay
 								/>
 							)}
 						</div>

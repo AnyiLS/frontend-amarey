@@ -1,5 +1,6 @@
 import useGeneral from 'hooks/general.hook'
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 interface ISlide {
 	height: string
@@ -8,6 +9,7 @@ interface ISlide {
 
 const Slide2: React.FC<ISlide> = ({ height, onClick }): JSX.Element => {
 	const { width } = useGeneral()
+	const {t} = useTranslation()
 	return (
 		<svg
 			width="100%"
@@ -127,7 +129,7 @@ const Slide2: React.FC<ISlide> = ({ height, onClick }): JSX.Element => {
 					className="h-slide-2"
 					transform="translate(809.445 772.835)">
 					<tspan x={-231.54} y={57}>
-						{'ROBOT DAVINCI'}
+						{t('ROBOT DAVINCI')}
 					</tspan>
 				</text>
 				<a href="/productos/cirugia-robotica">
@@ -145,7 +147,7 @@ const Slide2: React.FC<ISlide> = ({ height, onClick }): JSX.Element => {
 							className="m-slide-2"
 							transform="translate(100 43.753)">
 							<tspan x={0} y={0}>
-								{'Conoce M\xE1s'}
+								{t('Conoce Más')}
 							</tspan>
 						</text>
 					</g>
@@ -154,12 +156,10 @@ const Slide2: React.FC<ISlide> = ({ height, onClick }): JSX.Element => {
 					className="n-slide-2"
 					transform="translate(804.066 855.303)">
 					<tspan x={-455.168} y={30}>
-						{
-							'Llevando la precisi\xF3n quir\xFArgica m\xE1s all\xE1 de los l\xEDmites de '
-						}
+						{t('Llevando la precisión quirúrgica más allá de los límites de')}
 					</tspan>
 					<tspan x={-125.776} y={64}>
-						{'nuestras\u202Fmanos'}
+						{t('nuestras manos')}
 					</tspan>
 				</text>
 			</g>

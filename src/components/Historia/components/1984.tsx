@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 interface ILifeLine1984 {
     onClick: () => void
@@ -6,6 +7,7 @@ interface ILifeLine1984 {
 }
 
 const LifeLine1984: React.FC<ILifeLine1984> = ({ onClick, handleChangeStepForce }): JSX.Element => {
+	const {t} = useTranslation()
 	return (
 		<svg viewBox="0 0 1920 834.49">
 			<defs>
@@ -220,22 +222,22 @@ const LifeLine1984: React.FC<ILifeLine1984> = ({ onClick, handleChangeStepForce 
 						className="k-lineat"
 						transform="translate(1026 298.286)">
 						<tspan x={0} y={23}>
-							{'Nace Amarey Nova Medical al '}
+							{t('Nace Amarey Nova Medical al')}
 						</tspan>
 						<tspan x={0} y={49}>
-							{'obtener la distribuci\xF3n de la '}
+							{t('obtener la distribuci\xF3n de la')}
 						</tspan>
 						<tspan x={0} y={75}>
-							{'inmunoglobulina humana IgG '}
+							{t('inmunoglobulina humana IgG')}
 						</tspan>
 						<tspan x={0} y={101}>
-							{'enriquecida, que le dio vida al '}
+							{t('enriquecida, que le dio vida al')}
 						</tspan>
 						<tspan x={0} y={127}>
-							{'pent\xE1mero que ha sido el '}
+							{t('pent\xE1mero que ha sido el')}
 						</tspan>
 						<tspan x={0} y={153}>
-							{'s\xEDmbolo de la compa\xF1\xEDa.'}
+							{t('s\xEDmbolo de la compa\xF1\xEDa.')}
 						</tspan>
 					</text>
 					<g transform="translate(1498 649.861)" onClick={onClick}>
@@ -255,9 +257,9 @@ const LifeLine1984: React.FC<ILifeLine1984> = ({ onClick, handleChangeStepForce 
 						/>
 						<text
 							className="m-lineat cursor-pointer"
-							transform="translate(51 52.425)">
+							transform="translate(45 52.425)">
 							<tspan x={0} y={0}>
-								{'Avanzar'}
+								{t('Avanzar')}
 							</tspan>
 						</text>
 					</g>

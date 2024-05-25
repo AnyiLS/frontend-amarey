@@ -3,6 +3,7 @@ import Mantebiomedico from './components/Mantebiomedico'
 import Mantenimiento from './components/Mantenimiento'
 import useGeneral from 'hooks/general.hook'
 import BiomedicoMobile from './BiomedicoMobile'
+import { useTranslation } from 'react-i18next'
 
 const Biomedico: React.FC = (): JSX.Element => {
 	/** States */
@@ -11,6 +12,7 @@ const Biomedico: React.FC = (): JSX.Element => {
 	/** Hooks */
 	const { width } = useGeneral()
 
+	const {t} = useTranslation()
 	return (
 		<React.Fragment>
 			{width > 1024 ? (
@@ -101,45 +103,45 @@ const Biomedico: React.FC = (): JSX.Element => {
 							/>
 							<text
 								className="e-bio"
-								transform="translate(265.439 595)">
+								transform="translate(215.439 595)">
 								<tspan x={0} y={23}>
 									{
-										'Somos la compa\xF1\xEDa de servicio t\xE9cnico '
+										t('Somos la compañía de servicio técnico ')
 									}
 								</tspan>
 								<tspan x={0} y={49}>
 									{
-										'biom\xE9dico m\xE1s grande del pa\xEDs y la primera '
+										t('biom\xE9dico m\xE1s grande del pa\xEDs y la primera ')
 									}
 								</tspan>
 								<tspan x={0} y={75}>
 									{
-										'empresa a nivel nacional en certificarse con '
+										t('empresa a nivel nacional en certificarse con ')
 									}
 								</tspan>
 								<tspan x={0} y={101}>
-									{'la '}
+									{t('la')}
 								</tspan>
 								<tspan className="f-bio" y={101}>
-									{'norma ISO 13485 de ICONTEC'}
+									{t('norma ISO 13485 de ICONTEC')}
 								</tspan>
 								<tspan y={101} xmlSpace="preserve">
-									{' para el '}
+									{t(' para el ')}
 								</tspan>
 								<tspan x={0} y={127}>
 									{
-										'servicio t\xE9cnico de dispositivos m\xE9dicos. '
+										t('servicio t\xE9cnico de dispositivos m\xE9dicos. ')
 									}
 								</tspan>
 							</text>
 							<text
 								className="g-bio"
-								transform="translate(265.439 392)">
+								transform="translate(212.439 392)">
 								<tspan x={0} y={70}>
-									{'mantenimiento '}
+									{t('mantenimiento ')}
 								</tspan>
 								<tspan x={0} y={142}>
-									{'biom\xE9dico '}
+									{t('biom\xE9dico ')}
 								</tspan>
 							</text>
 							<path
@@ -161,7 +163,7 @@ const Biomedico: React.FC = (): JSX.Element => {
 									className="i-bio cursor-pointer"
 									transform="translate(421.439 848.424)">
 									<tspan x={0} y={0}>
-										{'Conoce M\xE1s'}
+										{t('Conoce Más')}
 									</tspan>
 								</text>
 							</g>

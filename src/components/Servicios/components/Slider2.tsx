@@ -1,5 +1,6 @@
 import useGeneral from 'hooks/general.hook'
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 interface ISlider {
 	height: string
 	index: number
@@ -17,6 +18,7 @@ export const Slider2: React.FC<ISlider> = ({ height, index }) => {
 		else setTimeout(() => setGrandImage(false), 1000)
 	}, [index])
 
+	const {t} = useTranslation()
 	return (
 		<svg viewBox="1590 10 1920 1080" preserveAspectRatio='none'  style={{ height: '100%'}} width='100%'>
 			<defs>
@@ -443,10 +445,10 @@ export const Slider2: React.FC<ISlider> = ({ height, index }) => {
 			</g>
 			<text className="s-pentagrama" transform="translate(2015 442.426)">
 				<tspan x={80.416} y={30}>
-					{'Resultados medición de'}
+					{t('Resultados medición de')}
 				</tspan>
 				<tspan className="t-pentagrama" y={30} xmlSpace="preserve">
-					{' experiencia y lealtad (NPS) 2023:'}
+					{t(' experiencia y lealtad (NPS) 2023:')}
 				</tspan>
 				<tspan y={30} />
 			</text>
@@ -457,10 +459,10 @@ export const Slider2: React.FC<ISlider> = ({ height, index }) => {
 			</text>
 			<text className="v-pentagrama" transform="translate(2565 252.425)">
 				<tspan x={-365.855} y={66}>
-					{'NUESTROS CLIENTES, '}
+					{t('NUESTROS CLIENTES,')}
 				</tspan>
 				<tspan x={-416.605} y={138}>
-					{'NUESTRA RAZÓN DE SER'}
+					{t('NUESTRA RAZÓN DE SER')}
 				</tspan>
 			</text>
 			<g
@@ -519,7 +521,7 @@ export const Slider2: React.FC<ISlider> = ({ height, index }) => {
 							className="aa-pentagrama"
 							transform="translate(54.107 88.799)">
 							<tspan x={117.875} y={47}>
-								{'SATISFACCIÓN '}
+								{t('SATISFACCIÓN ')}
 							</tspan>
 							<tspan className="ab-pentagrama" x={173.16} y={147}>
 								{'89%'}

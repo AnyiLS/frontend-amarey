@@ -2,6 +2,7 @@ import React from 'react'
 import { mocksRewards } from './mocks/Rewards.mocks'
 import useGeneral from 'hooks/general.hook'
 import ReconocimientosMobile from './ReconocimientosMobile/ReconocimientosMobile'
+import { useTranslation } from 'react-i18next'
 
 const Reconocimientos: React.FC = (): JSX.Element => {
 	const { width } = useGeneral()
@@ -12,6 +13,8 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 	const handleLessSlide = () => setSlide(slide - 1 < 0 ? 3 : slide - 1)
 
 	const handleAddSlide = () => setSlide(slide + 1 > 3 ? 0 : slide + 1)
+
+	const {t} = useTranslation()
 
 	return (
 		<React.Fragment>
@@ -345,14 +348,14 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 								className="f-pentagrama"
 								transform="translate(474 986.632)">
 								<tspan x={216.06} y={38}>
-									{'Premios y reconocimientos'}
+									{t('Premios y reconocimientos')}
 								</tspan>
 							</text>
 						</g>
 						<g transform="translate(300.989 96)">
 							<g transform="translate(0 106.497)">
 								<g transform="translate(0 -100.875)">
-									{mocksRewards.map((item, index) => (
+									{mocksRewards(t).map((item, index) => (
 										<React.Fragment>
 											{index === slide &&
 												item.component(
@@ -368,7 +371,7 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 								className="f-pentagrama"
 								transform="translate(474 295.988)">
 								<tspan x={329.76} y={38}>
-									{'Certificaciones'}
+									{t('Certificaciones')}
 								</tspan>
 							</text>
 						</g>
@@ -376,7 +379,7 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 							className="q-pentagrama"
 							transform="translate(774.989 281)">
 							<tspan x={154.515} y={70}>
-								{'RECONOCIMIENTOS'}
+								{t('RECONOCIMIENTOS')}
 							</tspan>
 						</text>
 						<rect

@@ -1,7 +1,9 @@
 import React from 'react'
 import { IMantenimiento } from './Mantebiomedico'
+import { useTranslation } from 'react-i18next'
 
 const Mantenimiento: React.FC<IMantenimiento> = ({ onClick }): JSX.Element => {
+	const {t} = useTranslation()
 	return (
 		<div>
 			<svg
@@ -97,9 +99,9 @@ const Mantenimiento: React.FC<IMantenimiento> = ({ onClick }): JSX.Element => {
 					</g>
 					<text
 						className="f-mante cursor-pointer"
-						transform="translate(93.172 44.424)">
+						transform="translate(73.172 44.424)">
 						<tspan x={0} y={0}>
-							{'M\xE1s'}
+							{t('Más')}
 						</tspan>
 					</text>
 					<path
@@ -110,64 +112,64 @@ const Mantenimiento: React.FC<IMantenimiento> = ({ onClick }): JSX.Element => {
 				</g>
 				<text className="g-mante" transform="translate(1202 405)">
 					<tspan x={0} y={23}>
-						{'Ofrecemos soluciones de mantenimiento '}
+						{t('Ofrecemos soluciones de mantenimiento ')}
 					</tspan>
 					<tspan x={0} y={49}>
-						{'biom\xE9dico'}
+						{t('biom\xE9dico')}
 					</tspan>
 					<tspan className="h-mante" y={49} xmlSpace="preserve">
-						{' para todos los actores del '}
+						{t(' para todos los actores del ')}
 					</tspan>
 					<tspan className="h-mante" x={0} y={75}>
-						{'sector salud. Nuestro apoyo es '}
+						{t('sector salud. Nuestro apoyo es ')}
 					</tspan>
 					<tspan className="h-mante" x={0} y={101}>
-						{'ejecutado con entrenamiento, '}
+						{t('ejecutado con entrenamiento, ')}
 					</tspan>
 					<tspan className="h-mante" x={0} y={127}>
-						{'experiencia e innovaci\xF3n en los procesos '}
+						{t('experiencia e innovaci\xF3n en los procesos ')}
 					</tspan>
 					<tspan
 						className="h-mante"
 						x={0}
 						y={153}
 						xmlSpace="preserve">
-						{'humanos y t\xE9cnicos.  '}
+						{t('humanos y t\xE9cnicos.  ')}
 					</tspan>
 					<tspan className="h-mante">
 						<tspan x={0} y={179} />
 						<tspan x={0} y={205}>
-							{'Nuestro modelo de '}
+							{t('Nuestro modelo de ')}
 						</tspan>
 						<tspan className="i-mante" y={205}>
-							{'mantenimiento '}
+							{t('mantenimiento 5')}
 						</tspan>
 						<tspan className="i-mante" x={0} y={231}>
-							{'inhouse y mantenimiento posventa'}
+							{t('inhouse y mantenimiento posventa')}
 						</tspan>
 						<tspan y={231} xmlSpace="preserve">
-							{' nos '}
+							{t(' nos ')}
 						</tspan>
 						<tspan x={0} y={257}>
-							{'permiten construir soluciones '}
+							{t('permiten construir soluciones ')}
 						</tspan>
 						<tspan x={0} y={283}>
-							{'personalizadas para cada cliente, '}
+							{t('personalizadas para cada cliente, ')}
 						</tspan>
 						<tspan x={0} y={309}>
-							{'asegurando los m\xE1s altos est\xE1ndares de '}
+							{t('asegurando los m\xE1s altos est\xE1ndares de ')}
 						</tspan>
 						<tspan x={0} y={335}>
-							{'calidad y un plan de mantenimiento '}
+							{t('calidad y un plan de mantenimiento ')}
 						</tspan>
 						<tspan x={0} y={361}>
-							{'eficiente para toda la '}
+							{t('eficiente para toda la ')}
 						</tspan>
 						<tspan className="i-mante" y={361}>
-							{'tecnolog\xEDa '}
+							{t('tecnolog\xEDa ')}
 						</tspan>
 						<tspan className="i-mante" x={0} y={387}>
-							{'biom\xE9dica involucrada. '}
+							{t('biom\xE9dica involucrada. ')}
 						</tspan>
 					</tspan>
 				</text>
@@ -183,7 +185,7 @@ const Mantenimiento: React.FC<IMantenimiento> = ({ onClick }): JSX.Element => {
 				/>
 				<text className="k-mante" transform="translate(1811 166)">
 					<tspan x={-351.48} y={0}>
-						{'MANTENIMIENTO BIOM\xC9DICO '}
+						{t('MANTENIMIENTO BIOM\xC9DICO ')}
 					</tspan>
 				</text>
 			</svg>

@@ -3,6 +3,7 @@ import './Slide3.css'
 import BluePoint from './BluePoint'
 import RedPoint from './RedPoint'
 import useGeneral from 'hooks/general.hook'
+import { useTranslation } from 'react-i18next'
 
 interface ISlider {
 	height: string
@@ -15,7 +16,7 @@ export const Slider3: React.FC<ISlider> = ({ height }) => {
 	const [selectedImage, setSelectedImage] = React.useState<null | number>(
 		null
 	)
-
+	const {t} = useTranslation()
 	return (
 		<svg
 			viewBox="0 0 1920 1080"
@@ -1343,7 +1344,7 @@ export const Slider3: React.FC<ISlider> = ({ height }) => {
 				className="ak-item-1821"
 				transform="translate(201.322 321.829)">
 				<tspan x={0} y={66}>
-					{'COBERTURA '}
+					{t('COBERTURA')}
 				</tspan>
 			</text>
 			<g
@@ -5029,14 +5030,14 @@ export const Slider3: React.FC<ISlider> = ({ height }) => {
 				className="bw-item-1821"
 				transform="translate(251.193 463.505)">
 				<tspan x={0} y={30}>
-					{'CEDIS en ciudades principales '}
+					{t('CEDIS en ciudades principales')}
 				</tspan>
 			</text>
 			<text
 				className="bw-item-1821"
 				transform="translate(251.193 803.505)">
 				<tspan x={0} y={30}>
-					{'CEDIS en ciudades intermedias '}
+					{t('CEDIS en ciudades intermedias')}
 				</tspan>
 			</text>
 			<circle

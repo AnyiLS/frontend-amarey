@@ -1,5 +1,6 @@
 import useGeneral from 'hooks/general.hook'
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 interface ISlider {
 	height: string
@@ -9,6 +10,7 @@ interface ISlider {
 
 export const Slider1: React.FC<ISlider> = ({ height, handleChangeSlide }) => {
 	const { width } = useGeneral()
+	const {t} = useTranslation()
 	return (
 		<div>
 			<svg viewBox="0 0 1920 1080" width='100%' style={{ height: '100%'}} preserveAspectRatio='none'>
@@ -352,7 +354,7 @@ export const Slider1: React.FC<ISlider> = ({ height, handleChangeSlide }) => {
 					className="n-pentagrama80"
 					transform="translate(269 581.806)">
 					<tspan x={0} y={0}>
-						{'Servicio'}
+						{t('Servicio')}
 					</tspan>
 				</text>
 				<text
@@ -360,21 +362,21 @@ export const Slider1: React.FC<ISlider> = ({ height, handleChangeSlide }) => {
 					transform="translate(281 632.515)">
 					<tspan x={0} y={23}>
 						{
-							'El servicio es uno de los pilares del Grupo Amarey, una misión '
+							t('El servicio es uno de los pilares del Grupo Amarey, una misión')
 						}
 					</tspan>
 					<tspan x={0} y={51}>
 						{
-							'que se ha convertido en la vocación de la compañía para '
+							t('que se ha convertido en la vocación de la compañía para')
 						}
 					</tspan>
 					<tspan x={0} y={79}>
 						{
-							'cumplir el compromiso de ser un actor determinante en la '
+							t('cumplir el compromiso de ser un actor determinante en la')
 						}
 					</tspan>
 					<tspan x={0} y={107}>
-						{'labor de cuidar y salvar vidas.'}
+						{t('labor de cuidar y salvar vidas.')}
 					</tspan>
 				</text>
 				<text
@@ -382,7 +384,7 @@ export const Slider1: React.FC<ISlider> = ({ height, handleChangeSlide }) => {
 					transform="translate(281 745.515)">
 					<tspan x={0} y={30} />
 					<tspan x={0} y={62}>
-						{'Grupo Amarey, la cadena que salva vidas. '}
+						{t('Grupo Amarey, la cadena que salva vidas.')}
 					</tspan>
 				</text>
 				<g transform="translate(1299 734.666)" onClick={() => handleChangeSlide(1)}>
@@ -399,7 +401,7 @@ export const Slider1: React.FC<ISlider> = ({ height, handleChangeSlide }) => {
 						className="q-pentagrama80"
 						transform="translate(71 51.424)">
 						<tspan x={0} y={0}>
-							{'Conoce Más'}
+							{t('Conoce Más')}
 						</tspan>
 					</text>
 					<path

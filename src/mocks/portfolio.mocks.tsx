@@ -15,7 +15,7 @@ export const carouselPortfolio: CarouselPortfolio[] = [
     
     {
         images: '/images/services/Medicamentos.webp',
-        title: 'Medicamentos',
+        title: ('Medicamentos'),
         x: 55,
         x_selected: 15,
         to: '/productos/medicamentos',

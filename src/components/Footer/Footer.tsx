@@ -1,6 +1,8 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const Footer: React.FC = (): JSX.Element => {
+	const {t} = useTranslation()
 	return (
 		<div>
 			<svg viewBox="0 0 1920 318.202" xmlns="http://www.w3.org/2000/svg">
@@ -39,23 +41,23 @@ const Footer: React.FC = (): JSX.Element => {
 
 				<text className="d-5" transform="translate(605 96)">
 					<tspan x={262.478} y={11}>
-						{'Carrera 7 # 99-53, pisos 19 y 20 '}
+						{t('Carrera 7 # 99-53, pisos 19 y 20')}
 					</tspan>
 					<tspan x={354.5} y={20} />
 					<tspan x={180.056} y={29}>
 						{
-							'L\xEDnea de atenci\xF3n al cliente 018000 180066 - (601) 7447300 '
+							t('L\xEDnea de atenci\xF3n al cliente 018000 180066 - (601) 7447300')
 						}
 					</tspan>
 					<tspan x={354.5} y={38} />
 					<tspan x={137.12} y={47}>
 						{
-							'Reporte de eventos adversos o PQR: servicioalcliente@grupoamarey.c-5om '
+							t('Reporte de eventos adversos o PQR: servicioalcliente@grupoamarey.c-5om')
 						}
 					</tspan>
 					<tspan x={354.5} y={56} />
 					<tspan x={228.41} y={65}>
-						{'L\xEDnea \xE9tica: linea.etica@grupoamarey.c-5om '}
+						{t('Línea ética: linea.etica@grupoamarey.c-5om')}
 					</tspan>
 				</text>
 				<a href="https://facebook.com/GrupoAmarey/" target='_blank' rel='noreferrer'>
@@ -203,7 +205,7 @@ const Footer: React.FC = (): JSX.Element => {
 					<a href="https://www.google.com" target="_blank" rel='noreferrer'>
 						<text className="d-5">
 							<tspan className="h-5" x={9.712} y={11}>
-								{'Tratamiento de datos personales'}
+								{t('Tratamiento de datos personales')}
 							</tspan>
 							<tspan className="i-5" y={11} />
 						</text>
@@ -214,7 +216,7 @@ const Footer: React.FC = (): JSX.Element => {
 						<text className="j-5">
 							<tspan x={134.14} y={11}>
 								{
-									'Pol\xEDtica de protecci\xF3n de datos personales'
+									t('Pol\xEDtica de protecci\xF3n de datos personales')
 								}
 							</tspan>
 						</text>

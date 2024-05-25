@@ -4,6 +4,7 @@ import America from './components/America'
 import Asia from './components/Asia'
 import Europa from './components/Europa'
 import OurAllisesMobile from './OurAllisesMobile'
+import { useTranslation } from 'react-i18next'
 
 const OurAllises: React.FC = (): JSX.Element => {
 	/** Hooks */
@@ -13,6 +14,7 @@ const OurAllises: React.FC = (): JSX.Element => {
 	const [showAsia, setShowAsia] = React.useState<boolean>(false)
 	const [showEuropa, setShowEuropa] = React.useState<boolean>(false)
 
+	const {t} = useTranslation()
 	return (
 		<React.Fragment>
 			{width > 1024 ? (
@@ -201,11 +203,11 @@ const OurAllises: React.FC = (): JSX.Element => {
 								className="d-allises"
 								transform="translate(557.407 154.245)">
 								<tspan x={197.913} y={80}>
-									{'NUESTROS'}
+									{t('NUESTROS')}
 								</tspan>
 								<tspan className="e-allises">
 									<tspan x={36.838} y={210}>
-										{'ALIADOS'}
+										{t('ALIADOS')}
 									</tspan>
 								</tspan>
 							</text>
@@ -300,7 +302,7 @@ const OurAllises: React.FC = (): JSX.Element => {
 									className="j-allises cursor-pointer"
 									transform="translate(192.843 55.246)">
 									<tspan x={0} y={0}>
-										{'Am\xE9rica'}
+										{'América'}
 									</tspan>
 								</text>
 								<path
@@ -338,7 +340,7 @@ const OurAllises: React.FC = (): JSX.Element => {
 									transform="translate(212.75 57.223)"
 									onClick={() => setShowEuropa(true)}>
 									<tspan x={0} y={0}>
-										{'Europa'}
+										{t('Europa')}
 									</tspan>
 								</text>
 								<path

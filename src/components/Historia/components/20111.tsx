@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next"
 import { ILifeLine2000 } from "./2000"
 
 const LifeLine20111: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeStepForce }) => {
+  const {t} = useTranslation()
 	return (
 		<svg viewBox="0 0 1920 874.839">
 			<defs>
@@ -211,19 +213,19 @@ const LifeLine20111: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeS
       </g>
       <text className="item-105-k" transform="translate(531.983 309.365)">
         <tspan x={0} y={23}>
-          {"Se crea la línea de apoyo en "}
+          {t("Se crea la línea de apoyo en ")}
         </tspan>
         <tspan x={0} y={49}>
-          {"gestión de tecnología "}
+          {t("gestión de tecnología ")}
         </tspan>
         <tspan x={0} y={75}>
-          {"biomédica en el modelo inhouse "}
+          {t("biomédica en el modelo inhouse ")}
         </tspan>
         <tspan x={0} y={101}>
-          {"y servicio de mantenimiento "}
+          {t("y servicio de mantenimiento ")}
         </tspan>
         <tspan x={0} y={127}>
-          {"biomédico."}
+          {t("biomédico.")}
         </tspan>
       </text>
       <g transform="translate(0 -329.714)" onClick={onClick}>
@@ -239,9 +241,9 @@ const LifeLine20111: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeS
           d="M45.263,0V24.412L66.419,12.2,56.314,6.375Z"
           transform="translate(1673.737 1007.794)"
         />
-        <text className="item-105-m cursor-pointer" transform="translate(1549 1032)">
+        <text className="item-105-m cursor-pointer" transform="translate(1539 1032)">
           <tspan x={0} y={0}>
-            {"Avanzar"}
+            {t("Avanzar")}
           </tspan>
         </text>
       </g>
@@ -281,7 +283,7 @@ const LifeLine20111: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeS
         />
         <text className="item-105-m cursor-pointer" transform="translate(66 52.425)">
           <tspan x={0} y={0}>
-            {"Regresar"}
+            {t("Regresar")}
           </tspan>
         </text>
       </g>
