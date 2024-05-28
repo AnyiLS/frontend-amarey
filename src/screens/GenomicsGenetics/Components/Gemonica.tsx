@@ -1,8 +1,10 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const Gemonica: React.FC<{ onChangeClick: () => void }> = ({
 	onChangeClick,
 }) => {
+	const {t} = useTranslation()
 	return (
 		<div>
 			<svg viewBox="269 30 1920 968.156">
@@ -82,7 +84,7 @@ const Gemonica: React.FC<{ onChangeClick: () => void }> = ({
 				</g>
 				<text className="f-genomica" transform="translate(2050.639 97)">
 					<tspan x={-218.8} y={0}>
-						{'SOLUCIONES EN SALUD'}
+						{t('SOLUCIONES EN SALUD')}
 					</tspan>
 				</text>
 				<path
@@ -103,64 +105,64 @@ const Gemonica: React.FC<{ onChangeClick: () => void }> = ({
 				</g>
 				<text className="i-genomica" transform="translate(548.639 289)">
 					<tspan x={0} y={0}>
-						{'Gen\xF3mica'}
+						{t('Gen\xF3mica')}
 					</tspan>
 				</text>
 				<text className="j-genomica" transform="translate(548.639 345)">
 					<tspan x={0} y={23}>
-						{'Las pruebas gen\xF3micas (tambi\xE9n conocidas como '}
+						{t('Las pruebas gen\xF3micas (tambi\xE9n conocidas como ')}
 					</tspan>
 					<tspan x={0} y={51}>
-						{'pruebas multig\xE9nicas) analizan una muestra del '}
+						{t('pruebas multig\xE9nicas) analizan una muestra del ')}
 					</tspan>
 					<tspan x={0} y={79}>
 						{
-							'tumor del c\xE1ncer para analizar el nivel de actividad '
+							t('tumor del c\xE1ncer para analizar el nivel de actividad ')
 						}
 					</tspan>
 					<tspan x={0} y={107}>
-						{'de determinados genes, el cual afecta el '}
+						{t('de determinados genes, el cual afecta el ')}
 					</tspan>
 					<tspan x={0} y={135}>
 						{'comportamiento del c\xE1ncer, incluyendo su '}
 					</tspan>
 					<tspan x={0} y={163}>
 						{
-							'probabilidad de crecimiento y propagaci\xF3n. Una de '
+							t('probabilidad de crecimiento y propagaci\xF3n. Una de ')
 						}
 					</tspan>
 					<tspan x={0} y={191}>
-						{'estas pruebas gen\xF3micas en particular '}
+						{t('estas pruebas gen\xF3micas en particular ')}
 					</tspan>
 					<tspan x={0} y={219}>
 						{
-							'proporciona, adem\xE1s, una estimaci\xF3n del beneficio '
+							t('proporciona, adem\xE1s, una estimaci\xF3n del beneficio ')
 						}
 					</tspan>
 					<tspan x={0} y={247}>
-						{'de la quimioterapia. Se usan para ayudar en la '}
+						{t('de la quimioterapia. Se usan para ayudar en la ')}
 					</tspan>
 					<tspan x={0} y={275}>
-						{'toma de decisiones sobre tratamiento despu\xE9s de '}
+						{t('toma de decisiones sobre tratamiento despu\xE9s de ')}
 					</tspan>
 					<tspan x={0} y={303}>
-						{'la cirug\xEDa. '}
+						{t('la cirug\xEDa. ')}
 					</tspan>
 					<tspan x={0} y={331} />
 					<tspan x={0} y={359}>
-						{'En el caso del c\xE1ncer de mama puede ayudar a '}
+						{t('En el caso del c\xE1ncer de mama puede ayudar a ')}
 					</tspan>
 					<tspan x={0} y={387}>
-						{'determinar la agresividad de un tumor o la '}
+						{t('determinar la agresividad de un tumor o la ')}
 					</tspan>
 					<tspan x={0} y={415}>
-						{'probabilidad que un determinado tratamiento '}
+						{t('probabilidad que un determinado tratamiento ')}
 					</tspan>
 					<tspan x={0} y={443}>
-						{'mejore el resultado, permitiendo escoger el plan de '}
+						{t('mejore el resultado, permitiendo escoger el plan de ')}
 					</tspan>
 					<tspan x={0} y={471}>
-						{'cuidado adecuado para el paciente.'}
+						{t('cuidado adecuado para el paciente.')}
 					</tspan>
 				</text>
 				<path

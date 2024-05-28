@@ -1,11 +1,14 @@
 import moment from 'moment';
 import React from 'react'
 import { ICalendar } from './02May';
+import { useTranslation } from 'react-i18next';
 
 const June: React.FC<ICalendar> = ({next, prev, onChangeMonth, onLessMonth}): JSX.Element => {
 	/** Variables */
 	const day = moment().format('DD');
 	const month = moment().format('MM');
+
+	const {t} = useTranslation()
 
 	React.useEffect(() => {
 		if (month === '06') {
@@ -105,7 +108,7 @@ const June: React.FC<ICalendar> = ({next, prev, onChangeMonth, onLessMonth}): JS
 					/>
 					<text className="d-june" transform="translate(458 893)">
 						<tspan x={0} y={0}>
-							{'Fecha evento'}
+							{t('Fecha evento')}
 						</tspan>
 					</text>
 				</g>
@@ -119,7 +122,7 @@ const June: React.FC<ICalendar> = ({next, prev, onChangeMonth, onLessMonth}): JS
 					/>
 					<text className="d-june" transform="translate(182 893)">
 						<tspan x={0} y={0}>
-							{'Fecha de hoy'}
+							{t('Fecha de hoy')}
 						</tspan>
 					</text>
 				</g>
@@ -161,7 +164,7 @@ const June: React.FC<ICalendar> = ({next, prev, onChangeMonth, onLessMonth}): JS
 					className="h-june"
 					transform="translate(1142.135 126.019)">
 					<tspan x={0} y={0}>
-						{'Junio'}
+						{t('Junio')}
 					</tspan>
 				</text>
 				<g transform="translate(-140 -133.981)">
@@ -171,7 +174,7 @@ const June: React.FC<ICalendar> = ({next, prev, onChangeMonth, onLessMonth}): JS
 								className="j-june"
 								transform="translate(140 557)">
 								<tspan x={-21.712} y={30}>
-									{'Do'}
+									{t('Do')}
 								</tspan>
 							</text>
 						</g>
@@ -180,7 +183,7 @@ const June: React.FC<ICalendar> = ({next, prev, onChangeMonth, onLessMonth}): JS
 								className="j-june"
 								transform="translate(140 557)">
 								<tspan x={-17.92} y={30}>
-									{'Lu'}
+									{t('Lu')}
 								</tspan>
 							</text>
 						</g>
@@ -189,7 +192,7 @@ const June: React.FC<ICalendar> = ({next, prev, onChangeMonth, onLessMonth}): JS
 								className="j-june"
 								transform="translate(140 557)">
 								<tspan x={-24.576} y={30}>
-									{'Ma'}
+									{t('Ma')}
 								</tspan>
 							</text>
 						</g>
@@ -198,7 +201,7 @@ const June: React.FC<ICalendar> = ({next, prev, onChangeMonth, onLessMonth}): JS
 								className="j-june"
 								transform="translate(140 557)">
 								<tspan x={-18.528} y={30}>
-									{'Mi'}
+									{t('Mi')}
 								</tspan>
 							</text>
 						</g>
@@ -207,7 +210,7 @@ const June: React.FC<ICalendar> = ({next, prev, onChangeMonth, onLessMonth}): JS
 								className="j-june"
 								transform="translate(140 557)">
 								<tspan x={-19.072} y={30}>
-									{'Ju'}
+									{t('Ju')}
 								</tspan>
 							</text>
 						</g>
@@ -216,7 +219,7 @@ const June: React.FC<ICalendar> = ({next, prev, onChangeMonth, onLessMonth}): JS
 								className="j-june"
 								transform="translate(140 557)">
 								<tspan x={-15.264} y={30}>
-									{'Vi'}
+									{t('Vi')}
 								</tspan>
 							</text>
 						</g>
@@ -225,7 +228,7 @@ const June: React.FC<ICalendar> = ({next, prev, onChangeMonth, onLessMonth}): JS
 								className="j-june"
 								transform="translate(140 557)">
 								<tspan x={-19.888} y={30}>
-									{'Sa'}
+									{t('Sa')}
 								</tspan>
 							</text>
 						</g>
@@ -883,7 +886,7 @@ const June: React.FC<ICalendar> = ({next, prev, onChangeMonth, onLessMonth}): JS
 					</g>
 					<text className="m-june" transform="translate(140 525)">
 						<tspan x={0} y={0}>
-							{'Junio 2024'}
+							{t('Junio 2024')}
 						</tspan>
 					</text>
 					<line
@@ -906,10 +909,10 @@ const June: React.FC<ICalendar> = ({next, prev, onChangeMonth, onLessMonth}): JS
 				</g>
 				<text className="o-june" transform="translate(0 185.019)">
 					<tspan x={0} y={55}>
-						{'Prográmese con '}
+						{t('Prográmese con ')}
 					</tspan>
 					<tspan x={0} y={112}>
-						{'Grupo Amarey'}
+						{t('Grupo Amarey')}
 					</tspan>
 				</text>
 				<g className="s-june" transform="matrix(1, 0, 0, 1, 0, 0)">

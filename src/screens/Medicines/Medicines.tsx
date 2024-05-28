@@ -2,6 +2,7 @@ import React from 'react'
 import useGeneral from 'hooks/general.hook'
 import Medicinesone from './Components/Medicinesone'
 import MedicinesMobile from './MedicinesMobile'
+import { useTranslation } from 'react-i18next'
 
 const Medicines: React.FC = (): JSX.Element => {
 	/** Hooks */
@@ -9,6 +10,7 @@ const Medicines: React.FC = (): JSX.Element => {
 	const [ShowModal, setShowModal] = React.useState(false)
 	const [openShow, setOpenShow] = React.useState(false)
 
+	const {t} = useTranslation()
 	return (
 		<React.Fragment>
 			{width > 1024 ? (
@@ -104,7 +106,7 @@ const Medicines: React.FC = (): JSX.Element => {
 									className="c-medicines"
 									transform="translate(363 842)">
 									<tspan x={-223.273} y={0}>
-										{'MEDICAMENTOS '}
+										{t('MEDICAMENTOS ')}
 									</tspan>
 								</text>
 								<text
@@ -112,17 +114,17 @@ const Medicines: React.FC = (): JSX.Element => {
 									transform="translate(968 756)">
 									<tspan x={0} y={23}>
 										{
-											'Con medicamentos de la m\xE1s alta tecnolog\xEDa para el cuidado de la '
+											t('Con medicamentos de la más alta tecnología para el cuidado de la ')
 										}
 									</tspan>
 									<tspan x={0} y={51}>
 										{
-											'salud de los pacientes, ya sea adultos, ni\xF1os o neonatos, '
+											t('salud de los pacientes, ya sea adultos, ni\xF1os o neonatos, ')
 										}
 									</tspan>
 									<tspan x={0} y={79}>
 										{
-											'ofrecemos mayor eficacia y tolerabilidad al paciente en productos.'
+											t('ofrecemos mayor eficacia y tolerabilidad al paciente en productos.')
 										}
 									</tspan>
 								</text>
@@ -140,7 +142,7 @@ const Medicines: React.FC = (): JSX.Element => {
 									className="f-medicines"
 									transform="translate(960 54)">
 									<tspan x={-125.412} y={0}>
-										{'SOLUCIONES EN SALUD'}
+										{t('SOLUCIONES EN SALUD')}
 									</tspan>
 								</text>
 								<g
@@ -195,7 +197,7 @@ const Medicines: React.FC = (): JSX.Element => {
 													: '#ffffff',
 											}}>
 											<tspan x={0} y={0}>
-												{'Conoce M\xE1s'}
+												{t('Conoce M\xE1s')}
 											</tspan>
 										</text>
 									</g>
@@ -210,7 +212,7 @@ const Medicines: React.FC = (): JSX.Element => {
 										className="j-medicines"
 										transform="translate(232.852 49.768)">
 										<tspan x={-71.52} y={0}>
-											{'Volver'}
+											{t('Volver')}
 										</tspan>
 									</text>
 								</a>

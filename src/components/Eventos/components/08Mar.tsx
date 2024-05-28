@@ -1,6 +1,7 @@
 import moment from 'moment'
 import React from 'react'
 import { daysMar } from '../mocks/calendar.mock'
+import { useTranslation } from 'react-i18next'
 
 export interface ICalendar {
 	next: () => void
@@ -26,6 +27,8 @@ const Mar08: React.FC<ICalendar> = ({
 	const currentTransform = daysMar[`${today}-${currentMonth}`]
 		? daysMar[`${today}-${currentMonth}`].transform
 		: 'translate(0px, 0px)'
+
+		const {t} = useTranslation()
 
 	return (
 		<svg viewBox="-150 0 1920 998.106">
@@ -182,10 +185,10 @@ const Mar08: React.FC<ICalendar> = ({
 			</g>
 			<text className="h-item-1813" transform="translate(0 214.019)">
 				<tspan x={0} y={50}>
-					{'Prográmese con '}
+					{t('Prográmese con ')}
 				</tspan>
 				<tspan x={0} y={100}>
-					{'Grupo Amarey '}
+					{t('Grupo Amarey ')}
 				</tspan>
 			</text>
 			<g transform="translate(-130 -79.981)">
@@ -198,7 +201,7 @@ const Mar08: React.FC<ICalendar> = ({
 				/>
 				<text className="i-item-1813" transform="translate(458 893)">
 					<tspan x={0} y={0}>
-						{'Fecha evento'}
+						{t('Fecha evento')}
 					</tspan>
 				</text>
 			</g>
@@ -212,7 +215,7 @@ const Mar08: React.FC<ICalendar> = ({
 				/>
 				<text className="i-item-1813" transform="translate(182 893)">
 					<tspan x={0} y={0}>
-						{'Fecha de hoy'}
+						{t('Fecha de hoy')}
 					</tspan>
 				</text>
 			</g>
@@ -271,7 +274,7 @@ const Mar08: React.FC<ICalendar> = ({
 			</text>
 			<text className="n-item-1813" transform="translate(1002 126.019)">
 				<tspan x={0} y={0}>
-					{'08 de marzo de 2024'}
+					{t('08 de marzo de 2024')}
 				</tspan>
 			</text>
 			<rect
@@ -288,7 +291,7 @@ const Mar08: React.FC<ICalendar> = ({
 							className="p-item-1813"
 							transform="translate(140 557)">
 							<tspan x={0} y={30}>
-								{'Do'}
+								{t('Do')}
 							</tspan>
 						</text>
 					</g>
@@ -297,7 +300,7 @@ const Mar08: React.FC<ICalendar> = ({
 							className="p-item-1813"
 							transform="translate(140 557)">
 							<tspan x={0} y={30}>
-								{'Lu'}
+								{t('Lu')}
 							</tspan>
 						</text>
 					</g>
@@ -306,7 +309,7 @@ const Mar08: React.FC<ICalendar> = ({
 							className="p-item-1813"
 							transform="translate(140 557)">
 							<tspan x={0} y={30}>
-								{'Ma'}
+								{t('Ma')}
 							</tspan>
 						</text>
 					</g>
@@ -315,7 +318,7 @@ const Mar08: React.FC<ICalendar> = ({
 							className="p-item-1813"
 							transform="translate(140 557)">
 							<tspan x={0} y={30}>
-								{'Mi'}
+								{t('Mi')}
 							</tspan>
 						</text>
 					</g>
@@ -324,7 +327,7 @@ const Mar08: React.FC<ICalendar> = ({
 							className="p-item-1813"
 							transform="translate(140 557)">
 							<tspan x={0} y={30}>
-								{'Ju'}
+								{t('Ju')}
 							</tspan>
 						</text>
 					</g>
@@ -333,7 +336,7 @@ const Mar08: React.FC<ICalendar> = ({
 							className="p-item-1813"
 							transform="translate(140 557)">
 							<tspan x={0} y={30}>
-								{'Vi'}
+								{t('Vi')}
 							</tspan>
 						</text>
 					</g>
@@ -342,7 +345,7 @@ const Mar08: React.FC<ICalendar> = ({
 							className="p-item-1813"
 							transform="translate(140 557)">
 							<tspan x={0} y={30}>
-								{'Sa'}
+								{t('Sa')}
 							</tspan>
 						</text>
 					</g>

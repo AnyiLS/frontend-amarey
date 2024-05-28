@@ -3,6 +3,7 @@ import React from 'react'
 import './Servcios.css'
 import Mute from 'assets/images/mute.png'
 import Mute2 from 'assets/images/Button.png'
+import { useTranslation } from 'react-i18next'
 
 export const ServiciosMovil: React.FC = () => {
 	const [open4Tag, setOpen4Tag] = React.useState<boolean>(false)
@@ -11,6 +12,8 @@ export const ServiciosMovil: React.FC = () => {
 	const [doHover, setDoHover] = React.useState<boolean>(false)
 	const [mute, setMute] = React.useState(true)
 	const [openVideo, setOpenVideo] = React.useState(false)
+
+	const {t} = useTranslation()
 
 	const handleChangeSlide = () => {
 		setChangeTo2(true)
@@ -92,36 +95,36 @@ export const ServiciosMovil: React.FC = () => {
 						className="e-servicios-1-mobile"
 						transform="translate(210 409.681)">
 						<tspan x={-143.542} y={13}>
-							{'El servicio es uno de los pilares del Grupo '}
+							{t('El servicio es uno de los pilares del Grupo ')}
 						</tspan>
 						<tspan x={-151.844} y={29}>
-							{'Amarey, una misión que se ha convertido en '}
+							{t('Amarey, una misión que se ha convertido en ')}
 						</tspan>
 						<tspan x={-149.541} y={45}>
-							{'la vocación de la compañía para cumplir el '}
+							{t('la vocación de la compañía para cumplir el ')}
 						</tspan>
 						<tspan x={-147.826} y={61}>
-							{'compromiso de ser un actor determinante '}
+							{t('compromiso de ser un actor determinante ')}
 						</tspan>
 						<tspan x={-122.507} y={77}>
-							{'en la labor de cuidar y salvar vidas.'}
+							{t('en la labor de cuidar y salvar vidas.')}
 						</tspan>
 					</text>
 					<text
 						className="f-servicios-1-mobile"
 						transform="translate(210 509.681)">
 						<tspan x={-117.296} y={15}>
-							{'Grupo Amarey, la cadena que '}
+							{t('Grupo Amarey, la cadena que ')}
 						</tspan>
 						<tspan x={-46.16} y={33}>
-							{'salva vidas. '}
+							{t('salva vidas. ')}
 						</tspan>
 					</text>
 					<text
 						className="g-servicios-1-mobile"
 						transform="translate(210 329.076)">
 						<tspan x={-125.263} y={55}>
-							{'Servicio'}
+							{t('Servicio')}
 						</tspan>
 					</text>
 					<g transform="translate(92 626.007)" onClick={handleChangeSlide}>
@@ -139,7 +142,7 @@ export const ServiciosMovil: React.FC = () => {
 							transform="translate(55.5 28.584)"
 							onClick={handleChangeSlide}>
 							<tspan x={0} y={0}>
-								{'Conoce Más'}
+								{t('Conoce Más')}
 							</tspan>
 						</text>
 					</g>
@@ -359,32 +362,32 @@ export const ServiciosMovil: React.FC = () => {
 						className="o-servicios-2-mobile"
 						transform="translate(210 272.186)">
 						<tspan x={-167.248} y={30}>
-							{'NUESTROS CLIENTES, '}
+							{t('NUESTROS CLIENTES, ')}
 						</tspan>
 						<tspan x={-132.688} y={64} xmlSpace="preserve">
-							{'NUESTRA RAZÓN    '}
+							{t('NUESTRA RAZÓN    ')}
 						</tspan>
 						<tspan x={-53.52} y={98}>
-							{'DE SER'}
+							{t('DE SER')}
 						</tspan>
 					</text>
 					<text
 						className="p-servicios-2-mobile"
 						transform="translate(39 386.258)">
 						<tspan x={20.504} y={15}>
-							{'Resultados medición de'}
+							{t('Resultados medición de')}
 						</tspan>
 						<tspan
 							className="q-servicios-2-mobile"
 							y={15}
 							xmlSpace="preserve">
-							{' experiencia y '}
+							{t(' experiencia y ')}
 						</tspan>
 						<tspan
 							className="q-servicios-2-mobile"
 							x={93.768}
 							y={33}>
-							{'lealtad (NPS) 2023:'}
+							{t('lealtad (NPS) 2023:')}
 						</tspan>
 						<tspan y={33} />
 					</text>
@@ -392,7 +395,7 @@ export const ServiciosMovil: React.FC = () => {
 						className="r-servicios-2-mobile"
 						transform="translate(41 785.481)">
 						<tspan x={94.666} y={11}>
-							{'NPS: Net Promoter Score '}
+							{t('NPS: Net Promoter Score ')}
 						</tspan>
 					</text>
 					<g transform="translate(-181.942 -3193.069)">
@@ -450,7 +453,7 @@ export const ServiciosMovil: React.FC = () => {
 										className="w-servicios-2-mobile"
 										transform="translate(55.651 33.683)">
 										<tspan x={7.05} y={22}>
-											{'SATISFACCIÓN'}
+											{t('SATISFACCIÓN ')}
 										</tspan>
 										<tspan className="x-servicios-2-mobile">
 											<tspan x={48.167} y={62}>
@@ -1108,7 +1111,7 @@ export const ServiciosMovil: React.FC = () => {
 						className="t-services2-hover-2"
 						transform="translate(210 87.302)">
 						<tspan x={-84.048} y={30}>
-							{'Cobertura'}
+							{t('Cobertura')}
 						</tspan>
 					</text>
 					<text
@@ -1152,7 +1155,7 @@ export const ServiciosMovil: React.FC = () => {
 						className="v-services2-hover-2"
 						transform="translate(37.5 143.982)">
 						<tspan x={0} y={15}>
-							{'CEDIS en ciudades principales '}
+							{t('CEDIS en ciudades principales')}
 						</tspan>
 					</text>
 					<text
@@ -1180,7 +1183,7 @@ export const ServiciosMovil: React.FC = () => {
 						className="v-services2-hover-2"
 						transform="translate(37.5 342.322)">
 						<tspan x={0} y={15}>
-							{'CEDIS ciudades intermedias '}
+							{t('CEDIS en ciudades intermedias')}
 						</tspan>
 					</text>
 					<text
@@ -1562,10 +1565,10 @@ export const ServiciosMovil: React.FC = () => {
 						className="p-services2-hover-80"
 						transform="translate(1127.958 274.134)">
 						<tspan x={6.584} y={30}>
-							{'SERVICIO LOGÍSTICO '}
+							{t('SERVICIO LOGÍSTICO')}
 						</tspan>
 						<tspan x={18.312} y={64}>
-							{'DE CLASE MUNDIAL'}
+							{t('DE CLASE MUNDIAL')}
 						</tspan>
 					</text>
 					<g
@@ -1584,32 +1587,32 @@ export const ServiciosMovil: React.FC = () => {
 							className="e-services2-hover-80 text"
 							transform="translate(85 15.436)">
 							<tspan x={-51.086} y={13}>
-								{'Nuestra red en '}
+								{t('Nuestra red en ')}
 							</tspan>
 							<tspan x={-67.109} y={29}>
-								{'distribución incluye '}
+								{t('distribución incluye ')}
 							</tspan>
 							<tspan
 								className="q-services2-hover-80"
 								x={-67.263}
 								y={45}>
-								{'18 transportadoras'}
+								{t('18 transportadoras')}
 							</tspan>
 							<tspan y={45} />
 							<tspan x={-60.823} y={61}>
-								{'que nos permiten '}
+								{t('que nos permiten ')}
 							</tspan>
 							<tspan x={-61.04} y={77}>
-								{'llegar a '}
+								{t('llegar a ')}
 							</tspan>
 							<tspan className="q-services2-hover-80" y={77}>
-								{'cualquier '}
+								{t('cualquier ')}
 							</tspan>
 							<tspan
 								className="q-services2-hover-80"
 								x={-48.517}
 								y={93}>
-								{'parte del país'}
+								{t('parte del país')}
 							</tspan>
 						</text>
 					</g>

@@ -1,9 +1,11 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 const SelecImage: React.FC<{ height: string; onClose: () => void }> = ({
 	height,
 	onClose,
 }) => {
+	const {t} = useTranslation()
 	return (
 		<div>
 			<svg
@@ -62,7 +64,7 @@ const SelecImage: React.FC<{ height: string; onClose: () => void }> = ({
 				/>
 				<text className="e-instru" transform="translate(1794.247 97)">
 					<tspan x={-268.8} y={0}>
-						{'SOLUCIONES EN SALUD'}
+						{t('SOLUCIONES EN SALUD')}
 					</tspan>
 				</text>
 				<g className="f-instru" transform="translate(14.247)">
@@ -123,58 +125,58 @@ const SelecImage: React.FC<{ height: string; onClose: () => void }> = ({
 						className="k-instru"
 						transform="translate(247.099 80.768)">
 						<tspan x={-71.52} y={0}>
-							{'Volver'}
+							{t('Volver')}
 						</tspan>
 					</text>
 				</a>
 				<text className="l-instru" transform="translate(351.247 306)">
 					<tspan x={0} y={0}>
-						{'INSTRUMENTAL'}
+						{t('INSTRUMENTAL Y')}
 					</tspan>
 					<tspan x={0} y={57}>
-						{'Y ESTERILIZACI\xD3N'}
+						{t('ESTERILIZACIÓN')}
 					</tspan>
 				</text>
 				<text className="m-instru" transform="translate(351.247 433)">
 					<tspan x={0} y={23}>
-						{'nuestro equipo profesional est\xE1 presto a '}
+						{t('nuestro equipo profesional est\xE1 presto a ')}
 					</tspan>
 					<tspan x={0} y={51}>
-						{'brindar informaci\xF3n, asesor\xEDa, '}
+						{t('brindar informaci\xF3n, asesor\xEDa, ')}
 					</tspan>
 					<tspan x={0} y={79}>
-						{'acompa\xF1amiento, sugerencias y soluciones '}
+						{t('acompa\xF1amiento, sugerencias y soluciones ')}
 					</tspan>
 					<tspan x={0} y={107}>
-						{'a sus planes y proyectos con:'}
+						{t('a sus planes y proyectos con:')}
 					</tspan>
 				</text>
 				<text className="m-instru" transform="translate(351.247 796)">
 					<tspan x={0} y={23}>
-						{'Siempre enfocados en optimizar y preservar '}
+						{t('Siempre enfocados en optimizar y preservar ')}
 					</tspan>
 					<tspan x={0} y={51}>
-						{'su inversi\xF3n. '}
+						{t('su inversi\xF3n. ')}
 					</tspan>
 				</text>
 				<text className="m-instru" transform="translate(398.247 579)">
 					<tspan x={0} y={23}>
-						{'Instrumental quir\xFArgico y su '}
+						{t('Instrumental quir\xFArgico y su ')}
 					</tspan>
 					<tspan x={0} y={51}>
-						{'mantenimiento '}
+						{t('mantenimiento -2')}
 					</tspan>
 					<tspan x={0} y={79}>
-						{'Contenedores ecol\xF3gicos '}
+						{t('Contenedores ecol\xF3gicos ')}
 					</tspan>
 					<tspan x={0} y={107}>
-						{'Equipos para lavado y '}
+						{t('Equipos para lavado y ')}
 					</tspan>
 					<tspan x={0} y={135}>
-						{'termodesinfecci\xF3n '}
+						{t('termodesinfecci\xF3n ')}
 					</tspan>
 					<tspan x={0} y={163}>
-						{'Equipos para esterilizaci\xF3n '}
+						{t('Equipos para esterilizaci\xF3n ')}
 					</tspan>
 				</text>
 				<circle

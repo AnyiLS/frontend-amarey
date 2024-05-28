@@ -1,6 +1,7 @@
 import moment from 'moment'
 import React from 'react'
 import { daysMar } from '../mocks/calendar.mock'
+import { useTranslation } from 'react-i18next'
 
 export interface ICalendar {
 	next: () => void
@@ -20,6 +21,8 @@ const Mar09: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 	const currentTransform = daysMar[`${today}-${currentMonth}`]
 		? daysMar[`${today}-${currentMonth}`].transform
 		: 'translate(0px, 0px)'
+
+		const {t} = useTranslation()
 
 	return (
 		<svg viewBox="-150 0 1920 998.106">
@@ -142,10 +145,10 @@ const Mar09: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 			/>
 			<text className="d-item-1813" transform="translate(0 214.019)">
 			<tspan x={0} y={50}>
-					{'Prográmese con '}
+					{t('Prográmese con ')}
 				</tspan>
 				<tspan x={0} y={100}>
-					{'Grupo Amarey '}
+					{t('Grupo Amarey ')}
 				</tspan>
 			</text>
 			<g className="v-item-1813" transform="matrix(1, 0, 0, 1, 0, 0)">
@@ -172,7 +175,7 @@ const Mar09: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 				/>
 				<text className="g-item-1813" transform="translate(458 893)">
 					<tspan x={0} y={0}>
-						{'Fecha evento'}
+						{t('Fecha evento')}
 					</tspan>
 				</text>
 			</g>
@@ -186,7 +189,7 @@ const Mar09: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 				/>
 				<text className="g-item-1813" transform="translate(182 893)">
 					<tspan x={0} y={0}>
-						{'Fecha de hoy'}
+						{t('Fecha de hoy')}
 					</tspan>
 				</text>
 			</g>
@@ -239,7 +242,7 @@ const Mar09: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 			</text>
 			<text className="l-item-1813" transform="translate(966 126.019)">
 				<tspan x={0} y={0}>
-					{'09 de marzo de 2024'}
+					{t('09 de marzo de 2024')}
 				</tspan>
 			</text>
 			{currentMonth !== 3 && today !== 9 && (
@@ -258,7 +261,7 @@ const Mar09: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 							className="n-item-1813"
 							transform="translate(140 557)">
 							<tspan x={0} y={30}>
-								{'Do'}
+								{t('Do')}
 							</tspan>
 						</text>
 					</g>
@@ -267,7 +270,7 @@ const Mar09: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 							className="n-item-1813"
 							transform="translate(140 557)">
 							<tspan x={0} y={30}>
-								{'Lu'}
+								{t('Lu')}
 							</tspan>
 						</text>
 					</g>
@@ -276,7 +279,7 @@ const Mar09: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 							className="n-item-1813"
 							transform="translate(140 557)">
 							<tspan x={0} y={30}>
-								{'Ma'}
+								{t('Ma')}
 							</tspan>
 						</text>
 					</g>
@@ -285,7 +288,7 @@ const Mar09: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 							className="n-item-1813"
 							transform="translate(140 557)">
 							<tspan x={0} y={30}>
-								{'Mi'}
+								{t('Mi')}
 							</tspan>
 						</text>
 					</g>
@@ -294,7 +297,7 @@ const Mar09: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 							className="n-item-1813"
 							transform="translate(140 557)">
 							<tspan x={0} y={30}>
-								{'Ju'}
+								{t('Ju')}
 							</tspan>
 						</text>
 					</g>
@@ -303,7 +306,7 @@ const Mar09: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 							className="n-item-1813"
 							transform="translate(140 557)">
 							<tspan x={0} y={30}>
-								{'Vi'}
+								{t('Vi')}
 							</tspan>
 						</text>
 					</g>
@@ -312,7 +315,7 @@ const Mar09: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 							className="n-item-1813"
 							transform="translate(140 557)">
 							<tspan x={0} y={30}>
-								{'Sa'}
+								{t('Sa')}
 							</tspan>
 						</text>
 					</g>
@@ -699,7 +702,7 @@ const Mar09: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onC
 				</g>
 				<text className="q-item-1813" transform="translate(140 525)">
 					<tspan x={0} y={0}>
-						{'Marzo 2024'}
+						{t('Marzo 2024')}
 					</tspan>
 				</text>
 				<line

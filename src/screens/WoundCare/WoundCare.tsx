@@ -2,12 +2,14 @@ import React from 'react'
 import useGeneral from 'hooks/general.hook'
 import SelectImage from './components/SelectImage'
 import WoundCareMobile from './WoundCareMobile'
+import { useTranslation } from 'react-i18next'
 
 const WoundCare: React.FC = (): JSX.Element => {
 	/** Hooks */
 	const { width, height } = useGeneral()
 	const [showModal, setShowModal] = React.useState(false)
 
+	const {t} = useTranslation()
 	return (
 		<React.Fragment>
 			{width > 1024 ? (
@@ -103,10 +105,10 @@ const WoundCare: React.FC = (): JSX.Element => {
 									className="c-products-heridas-desktop"
 									transform="translate(140 870)">
 									<tspan x={0} y={0}>
-										{'CUIDADO AVANZADO'}
+										{t('CUIDADO AVANZADO DE')}
 									</tspan>
 									<tspan x={0} y={57}>
-										{'DE HERIDAS'}
+										{t('HERIDAS')}
 									</tspan>
 								</text>
 								<text
@@ -114,22 +116,22 @@ const WoundCare: React.FC = (): JSX.Element => {
 									transform="translate(968 820)">
 									<tspan x={0} y={23}>
 										{
-											'Ofrecemos una l\xEDnea de ap\xF3sitos avanzados y terapia de presi\xF3n '
+											t('Ofrecemos una l\xEDnea de ap\xF3sitos avanzados y terapia de presi\xF3n ')
 										}
 									</tspan>
 									<tspan x={0} y={51}>
 										{
-											'negativa para el tratamiento integral de heridas agudas, cr\xF3nicas y '
+											t('negativa para el tratamiento integral de heridas agudas, cr\xF3nicas y ')
 										}
 									</tspan>
 									<tspan x={0} y={79}>
 										{
-											'complejas, como las ocasionadas por pie diab\xE9tico, lesiones por '
+											t('complejas, como las ocasionadas por pie diab\xE9tico, lesiones por ')
 										}
 									</tspan>
 									<tspan x={0} y={107}>
 										{
-											'presi\xF3n y lesiones de origen vascular.'
+											t('presi\xF3n y lesiones de origen vascular.')
 										}
 									</tspan>
 								</text>
@@ -147,7 +149,7 @@ const WoundCare: React.FC = (): JSX.Element => {
 									className="f-products-heridas-desktop"
 									transform="translate(960 54)">
 									<tspan x={-125.412} y={0}>
-										{'SOLUCIONES EN SALUD'}
+										{t('SOLUCIONES EN SALUD')}
 									</tspan>
 								</text>
 								<g
@@ -177,7 +179,7 @@ const WoundCare: React.FC = (): JSX.Element => {
 										className="j-products-heridas-desktop"
 										transform="translate(232.852 49.768)">
 										<tspan x={-71.52} y={0}>
-											{'Volver'}
+											{t('Volver')}
 										</tspan>
 									</text>
 								</a>

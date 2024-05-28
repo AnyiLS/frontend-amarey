@@ -1,11 +1,13 @@
 import React from 'react'
 import Popups from './popups'
+import { useTranslation } from 'react-i18next'
 
 const Cuadropop: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 	/** States */
 	const [openModal, setOpenModal] = React.useState<boolean>(false)
 	const [selected, setSelected] = React.useState<string>('')
 
+	const {t} = useTranslation()
 	return (
 		<div className='relative'>
 			<svg viewBox="0 0 1938 975.988">
@@ -147,7 +149,7 @@ const Cuadropop: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							className="c-pop cursor-pointer"
 							transform="translate(232.852 114.756)">
 							<tspan x={-71.52} y={0}>
-								{'Volver'}
+								{t('Volver')}
 							</tspan>
 						</text>
 					</g>
@@ -166,17 +168,17 @@ const Cuadropop: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 					<text className="e-pop" transform="translate(600 293.14)">
 						<tspan x={-130} y={23}>
 							{
-								'Cuando identifique situaciones no \xE9ticas que puedan afectar los intereses del Grupo '
+								t('Cuando identifique situaciones no \xE9ticas que puedan afectar los intereses del Grupo ')
 							}
 						</tspan>
 						<tspan x={260} y={51}>
-							{'Amarey como:'}
+							{t('Amarey como:')}
 						</tspan>
 					</text>
 					<text className="f-pop" transform="translate(370 210.14)">
 						<tspan x={280} y={30}>
 							{
-								'\xBFCu\xE1ndo debo utilizar la l\xEDnea \xE9tica?'
+								t('¿Cuándo debo utilizar la línea ética?')
 							}
 						</tspan>
 					</text>
@@ -194,7 +196,7 @@ const Cuadropop: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							className="h-pop cursor-pointer"
 							transform="translate(40.5 34.25)">
 							<tspan x={40} y={23}>
-								{'Conflicto de inter\xE9s'}
+								{t('Conflicto de interés')}
 							</tspan>
 						</text>
 					</g>
@@ -212,7 +214,7 @@ const Cuadropop: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							className="h-pop cursor-pointer"
 							transform="translate(40.5 34.25)">
 							<tspan x={40} y={23}>
-								{'Lavado de activos'}
+								{t('Lavado de activos')}
 							</tspan>
 						</text>
 					</g>
@@ -230,7 +232,7 @@ const Cuadropop: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							className="h-pop cursor-pointer"
 							transform="translate(40.5 34.25)">
 							<tspan x={40} y={23}>
-								{'D\xE1divas o prebendas'}
+								{t('D\xE1divas o prebendas')}
 							</tspan>
 						</text>
 					</g>
@@ -248,10 +250,10 @@ const Cuadropop: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							className="h-pop cursor-pointer"
 							transform="translate(58.5 20.25)">
 							<tspan x={0} y={23}>
-								{'Incumplimiento de leyes '}
+								{t('Incumplimiento de leyes ')}
 							</tspan>
 							<tspan x={50} y={51}>
-								{'y regulaciones'}
+								{t('y regulaciones')}
 							</tspan>
 						</text>
 					</g>
@@ -269,7 +271,7 @@ const Cuadropop: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							className="h-pop cursor-pointer"
 							transform="translate(40.5 34.25)">
 							<tspan x={10} y={23}>
-								{'Actividades inapropiadas'}
+								{t('Actividades inapropiadas')}
 							</tspan>
 						</text>
 					</g>
@@ -287,7 +289,7 @@ const Cuadropop: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							className="h-pop cursor-pointer"
 							transform="translate(40.5 34.25)">
 							<tspan x={60} y={23}>
-								{'Confidencialidad'}
+								{t('Confidencialidad')}
 							</tspan>
 						</text>
 					</g>
@@ -305,10 +307,10 @@ const Cuadropop: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							className="h-pop cursor-pointer"
 							transform="translate(40.5 20.25)">
 							<tspan x={30} y={23}>
-								{'Pr\xE1cticas comerciales '}
+								{t('Pr\xE1cticas comerciales ')}
 							</tspan>
 							<tspan x={80} y={51}>
-								{'inadecuadas'}
+								{t('inadecuadas')}
 							</tspan>
 						</text>
 					</g>
@@ -328,7 +330,7 @@ const Cuadropop: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 						className="j-pop"
 						transform="translate(693.578 11.706)">
 						<tspan x={43.834} y={42}>
-							{'\xC9TICA Y COMPLIANCE'}
+							{t('\xC9TICA Y COMPLIANCE')}
 						</tspan>
 					</text>
 				</g>

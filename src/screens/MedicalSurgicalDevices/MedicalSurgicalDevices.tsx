@@ -2,6 +2,7 @@ import React from 'react'
 import useGeneral from 'hooks/general.hook'
 import Medical from './Components/Medical'
 import MedicalDevicesMobile from './MedicalDevicesSurgicalMobile'
+import { useTranslation } from 'react-i18next'
 
 const MedicalSurgicalDevices: React.FC = (): JSX.Element => {
 	/** Hooks */
@@ -9,6 +10,7 @@ const MedicalSurgicalDevices: React.FC = (): JSX.Element => {
 	const [ShowModal, setShowModal] = React.useState(false)
 	const [openShow, setOpenShow] = React.useState(false)
 
+	const {t} = useTranslation()
 	return (
 		<React.Fragment>
 			{width > 1024 ? (
@@ -107,10 +109,10 @@ const MedicalSurgicalDevices: React.FC = (): JSX.Element => {
 									className="c-medical-survery"
 									transform="translate(140 776)">
 									<tspan x={0} y={0}>
-										{'Dispositivos'}
+										{t('Dispositivos')}
 									</tspan>
 									<tspan x={0} y={57}>
-										{'m\xE9dico-quir\xFArgicos'}
+										{t('médico-quirúrgicos')}
 									</tspan>
 								</text>
 								<text
@@ -118,12 +120,12 @@ const MedicalSurgicalDevices: React.FC = (): JSX.Element => {
 									transform="translate(968 757)">
 									<tspan x={0} y={23}>
 										{
-											'Somos un aliado estrat\xE9gico para los profesionales que realizan '
+											t('Somos un aliado estrat\xE9gico para los profesionales que realizan ')
 										}
 									</tspan>
 									<tspan x={0} y={51}>
 										{
-											'procedimientos quir\xFArgicos con equipos y dispositivos m\xE9dicos que '
+											t('procedimientos quir\xFArgicos con equipos y dispositivos m\xE9dicos que ')
 										}
 									</tspan>
 									<tspan x={0} y={79}>
@@ -146,7 +148,7 @@ const MedicalSurgicalDevices: React.FC = (): JSX.Element => {
 									className="f-medical-survery"
 									transform="translate(960 54)">
 									<tspan x={-125.412} y={0}>
-										{'SOLUCIONES EN SALUD'}
+										{t('SOLUCIONES EN SALUD')}
 									</tspan>
 								</text>
 								<g
@@ -194,7 +196,7 @@ const MedicalSurgicalDevices: React.FC = (): JSX.Element => {
 											transform="translate(3835.929 5863.388)"
 											style={{ fill: openShow ? "#001f5f" : '#ffffff' }}>
 											<tspan x={0} y={0}>
-												{'Conoce M\xE1s'}
+												{t('Conoce M\xE1s')}
 											</tspan>
 										</text>
 									</g>
@@ -209,7 +211,7 @@ const MedicalSurgicalDevices: React.FC = (): JSX.Element => {
 										className="j-medical-survery"
 										transform="translate(232.852 49.768)">
 										<tspan x={-71.52} y={0}>
-											{'Volver'}
+											{t('Volver')}
 										</tspan>
 									</text>
 								</a>

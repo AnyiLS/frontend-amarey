@@ -1,5 +1,6 @@
 import moment from 'moment'
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 interface JanuaryProps {
   next: () => void
@@ -20,6 +21,8 @@ const January: React.FC<JanuaryProps> = ({
   /** Variables */
   const day = moment().format('DD');
   const month = moment().format('MM');
+
+  const {t} = useTranslation()
 
   React.useEffect(() => {
     if (month === '01') {
@@ -119,7 +122,7 @@ const January: React.FC<JanuaryProps> = ({
           />
           <text className="d-january" transform="translate(458 893)">
             <tspan x={0} y={0}>
-              {"Fecha evento"}
+              {t("Fecha evento")}
             </tspan>
           </text>
         </g>
@@ -133,7 +136,7 @@ const January: React.FC<JanuaryProps> = ({
           />
           <text className="d-january" transform="translate(182 893)">
             <tspan x={0} y={0}>
-              {"Fecha de hoy"}
+              {t("Fecha de hoy")}
             </tspan>
           </text>
         </g>
@@ -169,7 +172,7 @@ const January: React.FC<JanuaryProps> = ({
         </g>
         <text className="h-january" transform="translate(1127.787 126.019)">
           <tspan x={0} y={0}>
-            {"Enero"}
+            {t("Enero")}
           </tspan>
         </text>
         <g transform="translate(-140 -133.894)">
@@ -177,49 +180,49 @@ const January: React.FC<JanuaryProps> = ({
             <g transform="translate(-120 -557)">
               <text className="j-january" transform="translate(140 557)">
                 <tspan x={-21.712} y={30}>
-                  {"Do"}
+                  {t("Do")}
                 </tspan>
               </text>
             </g>
             <g transform="translate(-34 -557)">
               <text className="j-january" transform="translate(140 557)">
                 <tspan x={-17.92} y={30}>
-                  {"Lu"}
+                  {t("Lu")}
                 </tspan>
               </text>
             </g>
             <g transform="translate(52 -557)">
               <text className="j-january" transform="translate(140 557)">
                 <tspan x={-24.576} y={30}>
-                  {"Ma"}
+                  {t("Ma")}
                 </tspan>
               </text>
             </g>
             <g transform="translate(138 -557)">
               <text className="j-january" transform="translate(140 557)">
                 <tspan x={-18.528} y={30}>
-                  {"Mi"}
+                  {t("Mi")}
                 </tspan>
               </text>
             </g>
             <g transform="translate(224 -557)">
               <text className="j-january" transform="translate(140 557)">
                 <tspan x={-19.072} y={30}>
-                  {"Ju"}
+                  {t("Ju")}
                 </tspan>
               </text>
             </g>
             <g transform="translate(310 -557)">
               <text className="j-january" transform="translate(140 557)">
                 <tspan x={-15.264} y={30}>
-                  {"Vi"}
+                  {t("Vi")}
                 </tspan>
               </text>
             </g>
             <g transform="translate(396 -557)">
               <text className="j-january" transform="translate(140 557)">
                 <tspan x={-19.888} y={30}>
-                  {"Sa"}
+                  {t("Sa")}
                 </tspan>
               </text>
             </g>
@@ -784,7 +787,7 @@ const January: React.FC<JanuaryProps> = ({
           </g>
           <text className="m-january" transform="translate(140 525)">
             <tspan x={0} y={0}>
-              {"Enero 2025"}
+              {t("Enero 2025")}
             </tspan>
           </text>
           <line className="n-january" x2={567} transform="translate(140 546)" />
@@ -803,10 +806,10 @@ const January: React.FC<JanuaryProps> = ({
         </g>
         <text className="o-january" transform="translate(0 185.019)">
           <tspan x={0} y={55}>
-            {"Prográmese con "}
+            {t("Prográmese con ")}
           </tspan>
           <tspan x={0} y={112}>
-            {"Grupo Amarey"}
+            {t("Grupo Amarey")}
           </tspan>
         </text>
         <g className="s-january" transform="matrix(1, 0, 0, 1, 0, 0)">

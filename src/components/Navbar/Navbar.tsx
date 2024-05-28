@@ -8,6 +8,7 @@ import SubmenuWorkUs from './components/SubmenuWorkUs'
 import SubmenuActualidad from './components/SubmenuActualidad'
 import useNavbar from './useNavbar'
 import { SiteMapMock } from 'mocks/navbar.mocks'
+import { useTranslation } from 'react-i18next'
 
 const Navbar: React.FC = () => {
 	const [hover, setHover] = React.useState<string>('')
@@ -18,6 +19,8 @@ const Navbar: React.FC = () => {
 	const subItemRef = React.useRef(null)
 	const [previousScrollPosition, setPreviousScrollPosition] =
 		React.useState(0)
+
+		const {t} = useTranslation()
 
 	React.useEffect(() => {
 		const handleScroll = () => {
@@ -173,7 +176,7 @@ const Navbar: React.FC = () => {
 										: '#fff',
 							}}>
 							<tspan x={-58.905} y={0}>
-								{'Cont\xE1ctenos'}
+								{t('Cont\xE1ctenos')}
 							</tspan>
 						</text>
 						{hover1 === 'contactenos' && (
@@ -210,10 +213,10 @@ const Navbar: React.FC = () => {
 								fill: hover1 === 'trabaje' ? '#fff' : '#001F5F',
 							}}>
 							<tspan x={-33.246} y={0}>
-								{'Trabaje'}
+								{t('Trabaje')}
 							</tspan>
 							<tspan x={-58.725} y={20}>
-								{'con nosotros'}
+								{t('con nosotros')}
 							</tspan>
 						</text>
 						{hover1 === 'trabaje' && (
@@ -249,10 +252,10 @@ const Navbar: React.FC = () => {
 								fill: hover1 !== 'etica' ? '#001F5F' : '#fff',
 							}}>
 							<tspan x={-30.114} y={0}>
-								{'\xC9tica y'}
+								{t('\xC9tica y')}
 							</tspan>
 							<tspan x={-51.912} y={20}>
-								{'compliance\u200B'}
+								{t('compliance\u200B')}
 							</tspan>
 						</text>
 						{hover1 === 'etica' && (
@@ -290,7 +293,7 @@ const Navbar: React.FC = () => {
 										: '#001F5F',
 							}}>
 							<tspan x={-57.555} y={0}>
-								{'Actualidad\u200B'}
+								{t('Actualidad\u200B')}
 							</tspan>
 						</text>
 						{hover1 === 'actualidad' && (
@@ -328,10 +331,10 @@ const Navbar: React.FC = () => {
 									hover1 === 'solucion' ? '#fff' : '#001F5F',
 							}}>
 							<tspan x={-47.772} y={0}>
-								{'Soluciones'}
+								{t('Soluciones')}
 							</tspan>
 							<tspan x={-37.935} y={20}>
-								{'en salud\u200B'}
+								{t('en salud\u200B')}
 							</tspan>
 						</text>
 						{hover1 === 'solucion' && (
@@ -372,7 +375,7 @@ const Navbar: React.FC = () => {
 										: '#001F5F',
 							}}>
 							<tspan x={-50.697} y={0}>
-								{'Trayectoria'}
+								{t('Trayectoria')}
 							</tspan>
 						</text>
 						{hover1 === 'trayectoria' && (
@@ -420,7 +423,7 @@ const Navbar: React.FC = () => {
 												? '#fff'
 												: '#001F5F',
 									}}>
-									{'Home'}
+									{t('Home')}
 								</tspan>
 							</text>
 							{hover1 === 'home' && (

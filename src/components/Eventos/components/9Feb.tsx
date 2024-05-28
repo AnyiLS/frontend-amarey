@@ -1,6 +1,7 @@
 import moment from 'moment'
 import React from 'react'
 import { daysFeb } from '../mocks/calendar.mock'
+import { useTranslation } from 'react-i18next'
 
 export interface ICalendar {
 	next: () => void
@@ -18,6 +19,7 @@ const Feb9: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onCh
 		(item: any) => item.hasEvent === true
 	)
 	const currentTransform = daysFeb[`${today}-${currentMonth}`].transform
+	const {t} = useTranslation()
 
 	return (
 		<svg viewBox="-150 0 1920 998.106">
@@ -131,7 +133,7 @@ const Feb9: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onCh
 							className="f-item-1813"
 							transform="translate(140 557)">
 							<tspan x={0} y={30}>
-								{'Do'}
+								{t('Do')}
 							</tspan>
 						</text>
 					</g>
@@ -140,7 +142,7 @@ const Feb9: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onCh
 							className="f-item-1813"
 							transform="translate(140 557)">
 							<tspan x={0} y={30}>
-								{'Lu'}
+								{t('Lu')}
 							</tspan>
 						</text>
 					</g>
@@ -149,7 +151,7 @@ const Feb9: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onCh
 							className="f-item-1813"
 							transform="translate(140 557)">
 							<tspan x={0} y={30}>
-								{'Ma'}
+								{t('Ma')}
 							</tspan>
 						</text>
 					</g>
@@ -158,7 +160,7 @@ const Feb9: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onCh
 							className="f-item-1813"
 							transform="translate(140 557)">
 							<tspan x={0} y={30}>
-								{'Mi'}
+								{t('Mi')}
 							</tspan>
 						</text>
 					</g>
@@ -167,7 +169,7 @@ const Feb9: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onCh
 							className="f-item-1813"
 							transform="translate(140 557)">
 							<tspan x={0} y={30}>
-								{'Ju'}
+								{t('Ju')}
 							</tspan>
 						</text>
 					</g>
@@ -176,7 +178,7 @@ const Feb9: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onCh
 							className="f-item-1813"
 							transform="translate(140 557)">
 							<tspan x={0} y={30}>
-								{'Vi'}
+								{t('Vi')}
 							</tspan>
 						</text>
 					</g>
@@ -185,7 +187,7 @@ const Feb9: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onCh
 							className="f-item-1813"
 							transform="translate(140 557)">
 							<tspan x={0} y={30}>
-								{'Sa'}
+								{t('Sa')}
 							</tspan>
 						</text>
 					</g>
@@ -509,7 +511,7 @@ const Feb9: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onCh
 				</g>
 				<text className="i-item-1813" transform="translate(140 525)">
 					<tspan x={0} y={0}>
-						{'Febrero 2024'}
+						{t('Febrero 2024')}
 					</tspan>
 				</text>
 				<line
@@ -532,10 +534,10 @@ const Feb9: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onCh
 			</g>
 			<text className="k-item-1813" transform="translate(0 214.019)">
 			<tspan x={0} y={50}>
-					{'Prográmese con '}
+					{t('Prográmese con ')}
 				</tspan>
 				<tspan x={0} y={100}>
-					{'Grupo Amarey '}
+					{t('Grupo Amarey ')}
 				</tspan>
 			</text>
 			<g className="v-item-1813" transform="matrix(1, 0, 0, 1, 0, 0)">
@@ -562,7 +564,7 @@ const Feb9: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onCh
 				/>
 				<text className="n-item-1813" transform="translate(458 893)">
 					<tspan x={0} y={0}>
-						{'Fecha evento'}
+						{t('Fecha evento')}
 					</tspan>
 				</text>
 			</g>
@@ -576,7 +578,7 @@ const Feb9: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onCh
 				/>
 				<text className="n-item-1813" transform="translate(182 893)">
 					<tspan x={0} y={0}>
-						{'Fecha de hoy'}
+						{t('Fecha de hoy')}
 					</tspan>
 				</text>
 			</g>
@@ -626,7 +628,7 @@ const Feb9: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onCh
 			</text>
 			<text className="r-item-1813" transform="translate(970 126.019)">
 				<tspan x={0} y={0}>
-					{'09 de febrero de 2024'}
+					{t('09 de febrero de 2024')}
 				</tspan>
 			</text>
 			<rect

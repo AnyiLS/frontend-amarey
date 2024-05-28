@@ -3,12 +3,15 @@ import useGeneral from 'hooks/general.hook'
 import Codigo from './Components/codigo'
 import Lineacodigo from './Components/Lineacodigo'
 import EticMobile from './EticMobile'
+import { useTranslation } from 'react-i18next'
 
 const RoboticSurgery: React.FC = (): JSX.Element => {
 	/** Hooks */
 	const { width, height } = useGeneral()
 
 	const [view, setView] = React.useState(0)
+	const {t} = useTranslation()
+
 
 	return (
 		<React.Fragment>
@@ -144,13 +147,13 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 										className="c-etic"
 										transform="translate(572.846 732.688)">
 										<tspan x={179.02} y={55}>
-											{'L\xEDnea '}
+											{t('L\xEDnea ')}
 										</tspan>
 										<tspan
 											className="d-etic"
 											x={48.6}
 											y={145}>
-											{'\xE9tica'}
+											{t('ética')}
 										</tspan>
 									</text>
 								</g>
@@ -176,11 +179,11 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 									className="g-etic"
 									transform="translate(278 735.688)">
 									<tspan x={0} y={55}>
-										{'C\xF3digo de'}
+										{t('C\xF3digo de')}
 									</tspan>
 									<tspan className="d-etic">
 										<tspan x={0} y={145}>
-											{'\xE9tica'}
+											{t('\xE9tica')}
 										</tspan>
 									</tspan>
 								</text>
@@ -198,7 +201,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 									className="i-etic"
 									transform="translate(692.789 10.566)">
 									<tspan x={43.834} y={42}>
-										{'\xC9TICA Y COMPLIANCE'}
+										{t('\xC9TICA Y COMPLIANCE')}
 									</tspan>
 								</text>
 								<g

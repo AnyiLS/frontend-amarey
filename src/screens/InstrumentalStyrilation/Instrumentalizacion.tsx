@@ -1,9 +1,11 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const InstrumentalStyrilationMobile: React.FC = (): JSX.Element => {
 	/** States */
 	const [view, setView] = React.useState<number>(0)
 	const [height, setHeight] = React.useState<number>(0)
+	const {t} = useTranslation()
 
 	React.useEffect(() => {
 		if (document.getElementById('navbar__container')) setHeight(document.getElementById('navbar__container')?.clientHeight ?? 0)
@@ -87,10 +89,10 @@ const InstrumentalStyrilationMobile: React.FC = (): JSX.Element => {
 							className="d-reward-2-mobile"
 							transform="translate(207 632)">
 							<tspan x={-100.932} y={0}>
-								{'INSTRUMENTAL Y'}
+								{t('INSTRUMENTAL Y')}
 							</tspan>
 							<tspan x={-93.996} y={26}>
-								{'ESTERILIZACIÓN'}
+								{t('ESTERILIZACIÓN')}
 							</tspan>
 						</text>
 						<text
@@ -244,10 +246,10 @@ const InstrumentalStyrilationMobile: React.FC = (): JSX.Element => {
 							className="e-reward-2-mobile"
 							transform="translate(207 457)">
 							<tspan x={-100.932} y={0}>
-								{'INSTRUMENTAL Y'}
+								{t('INSTRUMENTAL Y')}
 							</tspan>
 							<tspan x={-93.996} y={26}>
-								{'ESTERILIZACIÓN'}
+								{t('ESTERILIZACIÓN')}
 							</tspan>
 						</text>
 						<text

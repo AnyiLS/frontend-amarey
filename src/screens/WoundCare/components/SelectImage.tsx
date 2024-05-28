@@ -1,9 +1,11 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 const SelectImage: React.FC<{ height: string; onClose: () => void }> = ({
 	height,
 	onClose,
 }) => {
+	const {t} = useTranslation()
 	return (
 		<div>
 			<svg
@@ -81,43 +83,43 @@ const SelectImage: React.FC<{ height: string; onClose: () => void }> = ({
 				</g>
 				<text className="f-cuidado" transform="translate(1160.817 448)">
 					<tspan x={0} y={0}>
-						{'CUIDADO'}
+						{t('CUIDADO')}
 					</tspan>
 					<tspan x={0} y={57}>
-						{'AVANZADO'}
+						{t('AVANZADO')}
 					</tspan>
 					<tspan x={0} y={114}>
-						{'DE HERIDAS'}
+						{t('DE HERIDAS')}
 					</tspan>
 				</text>
 				<text className="g-cuidado" transform="translate(1160.817 791)">
 					<tspan x={0} y={23}>
-						{'Nuestro compromiso es asesorar a los profesionales '}
+						{t('Nuestro compromiso es asesorar a los profesionales ')}
 					</tspan>
 					<tspan x={0} y={51}>
-						{'de la salud en el uso, manejo y aprovechamiento '}
+						{t('de la salud en el uso, manejo y aprovechamiento ')}
 					</tspan>
 					<tspan x={0} y={79}>
-						{'correcto de dichas tecnolog\xEDas. '}
+						{t('correcto de dichas tecnolog\xEDas. ')}
 					</tspan>
 				</text>
 				<text className="g-cuidado" transform="translate(1160.817 587)">
 					<tspan x={0} y={23}>
-						{'Ayudando al paciente a mejorar su '}
+						{t('Ayudando al paciente a mejorar su ')}
 					</tspan>
 				</text>
 				<text className="g-cuidado" transform="translate(1191.817 647)">
 					<tspan x={0} y={23}>
-						{'Soluciones simples y efectivas '}
+						{t('Soluciones simples y efectivas ')}
 					</tspan>
 					<tspan x={0} y={51} xmlSpace="preserve">
-						{'Aceleraci\xF3n del proceso de cicatrizaci\xF3n  '}
+						{t('Aceleraci\xF3n del proceso de cicatrizaci\xF3n  ')}
 					</tspan>
 					<tspan x={0} y={79} xmlSpace="preserve">
-						{'Estimulaci\xF3n de la formaci\xF3n de nuevo tejido  '}
+						{t('Estimulaci\xF3n de la formaci\xF3n de nuevo tejido  ')}
 					</tspan>
 					<tspan x={0} y={107}>
-						{'Prevenci\xF3n de infecciones '}
+						{t('Prevenci\xF3n de infecciones ')}
 					</tspan>
 				</text>
 				<g transform="translate(1181.175 547)">
@@ -197,7 +199,7 @@ const SelectImage: React.FC<{ height: string; onClose: () => void }> = ({
 				</g>
 				<text className="m-cuidado" transform="translate(1834.817 88)">
 					<tspan x={-267.8} y={0}>
-						{'SOLUCIONES EN SALUD'}
+						{t('SOLUCIONES EN SALUD')}
 					</tspan>
 				</text>
 				<g transform="translate(194.817 60.768)">

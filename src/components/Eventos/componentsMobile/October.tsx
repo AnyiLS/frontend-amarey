@@ -1,5 +1,6 @@
 import moment from 'moment';
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 interface CalendarProps {
     onNext: () => void
@@ -12,6 +13,8 @@ const October: React.FC<CalendarProps> = ({ onNext, onPrev, onNextMonth, onPrevM
     /** Variables */
     const day = moment().format('DD');
     const month = moment().format('MM');
+
+    const {t} = useTranslation()
 
     React.useEffect(() => {
         if (month === '10') {
@@ -163,7 +166,7 @@ const October: React.FC<CalendarProps> = ({ onNext, onPrev, onNextMonth, onPrevM
             </g>
             <text className="g-mobile" transform="translate(200.806 87.21)">
                 <tspan x={0} y={0}>
-                    {"Octubre"}
+                    {t("Octubre")}
                 </tspan>
             </text>
             <g transform="translate(228.262 782.336)">
@@ -837,7 +840,7 @@ const October: React.FC<CalendarProps> = ({ onNext, onPrev, onNextMonth, onPrevM
                 </g>
                 <text className="p-mobile" transform="translate(4.524 25.192)">
                     <tspan x={0} y={0}>
-                        {"Octubre 2024"}
+                        {t("Octubre 2024")}
                     </tspan>
                 </text>
                 <line className="q-mobile" x2={342} transform="translate(4.524 40.192)" />

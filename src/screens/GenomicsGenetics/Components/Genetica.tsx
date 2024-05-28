@@ -1,8 +1,10 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const Genetica: React.FC<{ onChangeClick: () => void }> = ({
 	onChangeClick,
 }) => {
+	const {t} = useTranslation()
 	return (
 		<div>
 			<svg viewBox="0 25 1920 975.515">
@@ -94,7 +96,7 @@ const Genetica: React.FC<{ onChangeClick: () => void }> = ({
 				</g>
 				<text className="h-genetica" transform="translate(1780 91.762)">
 					<tspan x={-238.8} y={0}>
-						{'SOLUCIONES EN SALUD'}
+						{t('SOLUCIONES EN SALUD')}
 					</tspan>
 				</text>
 				<g
@@ -118,7 +120,7 @@ const Genetica: React.FC<{ onChangeClick: () => void }> = ({
 					className="k-genetica"
 					transform="translate(1106 304.762)">
 					<tspan x={0} y={0}>
-						{'Gen\xE9tica '}
+						{t('Gen\xE9tica ')}
 					</tspan>
 				</text>
 				<text
@@ -126,58 +128,58 @@ const Genetica: React.FC<{ onChangeClick: () => void }> = ({
 					transform="translate(1106 332.762)">
 					<tspan x={0} y={23}>
 						{
-							'Esto significa que si usted tiene un historial familiar '
+							t('Esto significa que si usted tiene un historial familiar ')
 						}
 					</tspan>
 					<tspan x={0} y={51}>
-						{'marcado de c\xE1ncer de mama, es probable que haya '}
+						{t('marcado de c\xE1ncer de mama, es probable que haya ')}
 					</tspan>
 					<tspan x={0} y={79}>
-						{'heredado un gen anormal vinculado a un mayor riesgo '}
+						{t('heredado un gen anormal vinculado a un mayor riesgo ')}
 					</tspan>
 					<tspan x={0} y={107}>
 						{
-							'de sufrir c\xE1ncer de mama (como las mutaciones de los '
+							t('de sufrir c\xE1ncer de mama (como las mutaciones de los ')
 						}
 					</tspan>
 					<tspan x={0} y={135}>
-						{'genes BRCA 1 o 2). '}
+						{t('genes BRCA 1 o 2). ')}
 					</tspan>
 				</text>
 				<text
 					className="l-genetica"
 					transform="translate(1162 510.762)">
 					<tspan x={0} y={23}>
-						{'Son las pruebas base de medicina de precisi\xF3n o '}
+						{t('Son las pruebas base de medicina de precisi\xF3n o ')}
 					</tspan>
 					<tspan x={0} y={51}>
-						{'medicina personalizada, ya que cada individuo es '}
+						{t('medicina personalizada, ya que cada individuo es ')}
 					</tspan>
 					<tspan x={0} y={79}>
-						{'diferente '}
+						{t('diferente ')}
 					</tspan>
 					<tspan x={0} y={107}>
 						{
-							'Gu\xEDan al profesional en la elecci\xF3n del tratamiento '
+							t('Gu\xEDan al profesional en la elecci\xF3n del tratamiento ')
 						}
 					</tspan>
 					<tspan x={0} y={135}>
-						{'m\xE1s adecuado para el paciente. '}
+						{t('m\xE1s adecuado para el paciente. ')}
 					</tspan>
 					<tspan x={0} y={163}>
-						{'Permite calcular el riesgo de recurrencia. '}
+						{t('Permite calcular el riesgo de recurrencia. ')}
 					</tspan>
 					<tspan x={0} y={191}>
-						{'Muestra un beneficio real para el paciente y su '}
+						{t('Muestra un beneficio real para el paciente y su ')}
 					</tspan>
 					<tspan x={0} y={219}>
-						{'familia. '}
+						{t('familia. ')}
 					</tspan>
 					<tspan x={0} y={247}>
-						{'Se pueden analizar m\xE1s de 3.800 enfermedades. '}
+						{t('Se pueden analizar m\xE1s de 3.800 enfermedades. ')}
 					</tspan>
 					<tspan x={0} y={275}>
-						{'Determinan calidad de vida del paciente.'}
+						{t('Determinan calidad de vida del paciente.')}
 					</tspan>
 				</text>
 				<g transform="translate(1141.358 499.762)">
@@ -240,7 +242,7 @@ const Genetica: React.FC<{ onChangeClick: () => void }> = ({
 							className="m-genetica"
 							transform="translate(92.852 23)">
 							<tspan x={-71.52} y={0}>
-								{'Volver'}
+								{t('Volver')}
 							</tspan>
 						</text>
 					</a>

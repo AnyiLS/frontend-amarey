@@ -4,6 +4,7 @@ import Genetica from './Components/Genetica'
 import Gemonica from './Components/Gemonica'
 import GenomicsGeneticsMobile from './GenomicsGeneticsMobile'
 import '../styles.css'
+import { useTranslation } from 'react-i18next'
 
 const GenomicsGenetics: React.FC = (): JSX.Element => {
 	/** Hooks */
@@ -13,6 +14,7 @@ const GenomicsGenetics: React.FC = (): JSX.Element => {
 	const [openShow, setOpenShow] = React.useState(false)
 	const [openShow1, setOpenShow1] = React.useState(false)
 
+	const {t} = useTranslation()
 	return (
 		<React.Fragment>
 			{width > 1024 ? (
@@ -112,7 +114,7 @@ const GenomicsGenetics: React.FC = (): JSX.Element => {
 									className="c-products-gg-desktop"
 									transform="translate(646 510)">
 									<tspan x={0} y={0}>
-										{'Gen\xF3mica Y Gen\xE9ticA'}
+										{t('Gen\xF3mica Y Gen\xE9ticA')}
 									</tspan>
 								</text>
 								<text
@@ -120,16 +122,16 @@ const GenomicsGenetics: React.FC = (): JSX.Element => {
 									transform="translate(1026 738)">
 									<tspan x={0} y={23}>
 										{
-											'La gen\xE9tica es el estudio de rasgos y genes heredados que '
+											t('La gen\xE9tica es el estudio de rasgos y genes heredados que ')
 										}
 									</tspan>
 									<tspan x={0} y={51}>
 										{
-											'pueden predisponer a una persona a una condici\xF3n de salud '
+											t('pueden predisponer a una persona a una condici\xF3n de salud ')
 										}
 									</tspan>
 									<tspan x={0} y={79}>
-										{'particular.'}
+										{t('particular.')}
 									</tspan>
 								</text>
 								<text
@@ -137,11 +139,11 @@ const GenomicsGenetics: React.FC = (): JSX.Element => {
 									transform="translate(140 738)">
 									<tspan x={0} y={23}>
 										{
-											'La gen\xF3mica analiza la forma en que se comporta un conjunto '
+											t('La gen\xF3mica analiza la forma en que se comporta un conjunto ')
 										}
 									</tspan>
 									<tspan x={0} y={51}>
-										{'de genes. '}
+										{t('de genes. ')}
 									</tspan>
 								</text>
 								<g
@@ -158,7 +160,7 @@ const GenomicsGenetics: React.FC = (): JSX.Element => {
 									className="f-products-gg-desktop"
 									transform="translate(960 54)">
 									<tspan x={-245.412} y={0}>
-										{'SOLUCIONES EN SALUD'}
+										{t('SOLUCIONES EN SALUD')}
 									</tspan>
 								</text>
 								<g
@@ -206,7 +208,7 @@ const GenomicsGenetics: React.FC = (): JSX.Element => {
 											transform="translate(3835.929 5863.388)"
 											style={{ fill: openShow ? "#001f5f" : '#ffffff' }}>
 											<tspan x={0} y={0}>
-												{'Conoce M\xE1s'}
+												{t('Conoce M\xE1s')}
 											</tspan>
 										</text>
 									</g>
@@ -256,7 +258,7 @@ const GenomicsGenetics: React.FC = (): JSX.Element => {
 											transform="translate(3835.929 5863.388)"
 											style={{ fill: openShow1 ? "#001f5f" : '#ffffff' }}>
 											<tspan x={0} y={0}>
-												{'Conoce M\xE1s'}
+												{t('Conoce M\xE1s')}
 											</tspan>
 										</text>
 									</g>
@@ -265,14 +267,14 @@ const GenomicsGenetics: React.FC = (): JSX.Element => {
 									className="f-products-gg-desktop"
 									transform="translate(1025 718)">
 									<tspan x={0} y={0}>
-										{'Gen\xE9ticA'}
+										{t('Gen\xE9ticA')}
 									</tspan>
 								</text>
 								<text
 									className="f-products-gg-desktop"
 									transform="translate(140 718)">
 									<tspan x={0} y={0}>
-										{'Gen\xF3mica'}
+										{t('Gen\xF3mica')}
 									</tspan>
 								</text>
 								<a href="/productos">
@@ -285,7 +287,7 @@ const GenomicsGenetics: React.FC = (): JSX.Element => {
 										className="j-products-gg-desktop"
 										transform="translate(232.852 49.768)">
 										<tspan x={-71.52} y={0}>
-											{'Volver'}
+											{t('Volver')}
 										</tspan>
 									</text>
 								</a>

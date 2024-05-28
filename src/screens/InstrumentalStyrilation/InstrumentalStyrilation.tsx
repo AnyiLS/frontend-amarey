@@ -2,6 +2,7 @@ import React from 'react'
 import useGeneral from 'hooks/general.hook'
 import SelecImage from './components/SelecImage'
 import InstrumentalStyrilationMobile from './Instrumentalizacion'
+import { useTranslation } from 'react-i18next'
 
 const InstrumentalStyrilation: React.FC = (): JSX.Element => {
 	/** Hooks */
@@ -10,6 +11,7 @@ const InstrumentalStyrilation: React.FC = (): JSX.Element => {
 	const [showModal, setShowModal] = React.useState(false)
 	const [openShow, setOpenShow] = React.useState(false)
 
+	const {t} = useTranslation()
 	return (
 		<React.Fragment>
 			{width > 1024 ? (
@@ -108,10 +110,10 @@ const InstrumentalStyrilation: React.FC = (): JSX.Element => {
 									className="e-products-instrumental-desktop"
 									transform="translate(140 847)">
 									<tspan x={0} y={0}>
-										{'INSTRUMENTAL Y'}
+										{t('INSTRUMENTAL Y')}
 									</tspan>
 									<tspan x={0} y={57}>
-										{'ESTERILIZACI\xD3N '}
+										{t('ESTERILIZACIÓN')}
 									</tspan>
 								</text>
 								<text
@@ -119,17 +121,17 @@ const InstrumentalStyrilation: React.FC = (): JSX.Element => {
 									transform="translate(968 827)">
 									<tspan x={0} y={23}>
 										{
-											'Con un completo portafolio de instrumentos para las diferentes '
+											t('Con un completo portafolio de instrumentos para las diferentes ')
 										}
 									</tspan>
 									<tspan x={0} y={51}>
 										{
-											'especialidades quir\xFArgicas, y la interacci\xF3n entre los productos y '
+											t('especialidades quir\xFArgicas, y la interacci\xF3n entre los productos y ')
 										}
 									</tspan>
 									<tspan x={0} y={79}>
 										{
-											'los procesos de lavado y esterilizaci\xF3n.'
+											t('los procesos de lavado y esterilizaci\xF3n.')
 										}
 									</tspan>
 								</text>
@@ -147,7 +149,7 @@ const InstrumentalStyrilation: React.FC = (): JSX.Element => {
 									className="h-products-instrumental-desktop"
 									transform="translate(960 54)">
 									<tspan x={-165.412} y={0}>
-										{'SOLUCIONES EN SALUD'}
+										{t('SOLUCIONES EN SALUD')}
 									</tspan>
 								</text>
 								<g
@@ -195,7 +197,7 @@ const InstrumentalStyrilation: React.FC = (): JSX.Element => {
 											transform="translate(3835.929 5863.388)"
 											style={{ fill: openShow ? "#001f5f" : '#ffffff' }}>
 											<tspan x={0} y={0}>
-												{'Conoce M\xE1s'}
+												{t('Conoce M\xE1s')}
 											</tspan>
 										</text>
 									</g>
@@ -211,7 +213,7 @@ const InstrumentalStyrilation: React.FC = (): JSX.Element => {
 											className="k-products-instrumental-desktop"
 											transform="translate(92.852 23)">
 											<tspan x={-71.52} y={0}>
-												{'Volver'}
+												{t('Volver')}
 											</tspan>
 										</text>
 									</g>

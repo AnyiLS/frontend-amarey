@@ -1,9 +1,11 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 const HospitalLogic: React.FC<{ height: string; onClose: () => void }> = ({
 	height,
 	onClose,
 }) => {
+	const {t} = useTranslation()
 	return (
 		<div>
 			<svg
@@ -67,46 +69,46 @@ const HospitalLogic: React.FC<{ height: string; onClose: () => void }> = ({
 						className="e-logistic-t"
 						transform="translate(1784.787 66.001)">
 						<tspan x={-238.8} y={0}>
-							{'SOLUCIONES EN SALUD'}
+							{t('SOLUCIONES EN SALUD')}
 						</tspan>
 					</text>
 					<text
 						className="f-logistic-t"
 						transform="translate(1110.787 414.317)">
 						<tspan x={0} y={0}>
-							{'LOG\xCDSTICA'}
+							{t('LOG\xCDSTICA')}
 						</tspan>
 						<tspan x={0} y={57}>
-							{'HOSPITALARIA '}
+							{t('HOSPITALARIA')}
 						</tspan>
 					</text>
 					<text
 						className="g-logistic-t"
 						transform="translate(1110.787 533.702)">
 						<tspan x={0} y={23}>
-							{'Alineamos estos procesos a los '}
+							{t('Alineamos estos procesos a los ')}
 						</tspan>
 						<tspan x={0} y={51}>
-							{'lineamientos de la '}
+							{t('lineamientos de la ')}
 						</tspan>
 						<tspan className="h-logistic-t" y={51}>
-							{'Joint Commission '}
+							{t('Joint Commission ')}
 						</tspan>
 						<tspan className="h-logistic-t" x={0} y={79}>
-							{'International'}
+							{t('International')}
 						</tspan>
-						<tspan y={79}>{', buscando las mejores '}</tspan>
+						<tspan y={79}>{t(', buscando las mejores ')}</tspan>
 						<tspan x={0} y={107}>
-							{'pr\xE1cticas para asegurar la trazabilidad '}
+							{t('pr\xE1cticas para asegurar la trazabilidad ')}
 						</tspan>
 						<tspan x={0} y={135}>
-							{'de medicamentos y generando en '}
+							{t('de medicamentos y generando en ')}
 						</tspan>
 						<tspan x={0} y={163}>
-							{'tiempo real los movimientos de '}
+							{t('tiempo real los movimientos de ')}
 						</tspan>
 						<tspan x={0} y={191}>
-							{'inventario. '}
+							{t('inventario. ')}
 						</tspan>
 					</text>
 					<g transform="translate(643.432 314.882)">
@@ -165,7 +167,7 @@ const HospitalLogic: React.FC<{ height: string; onClose: () => void }> = ({
 								className="n-logistic-t"
 								transform="translate(92.852 23)">
 								<tspan x={-71.52} y={0}>
-									{'Volver'}
+									{t('Volver')}
 								</tspan>
 							</text>
 						</g>

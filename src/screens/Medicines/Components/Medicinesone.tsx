@@ -1,9 +1,12 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 const Medicinesone: React.FC<{ height: string; onClose: () => void }> = ({
+	
 	height,
 	onClose,
 }) => {
+	const {t} = useTranslation()
 	return (
 		<div>
 			<svg
@@ -70,50 +73,50 @@ const Medicinesone: React.FC<{ height: string; onClose: () => void }> = ({
 						className="f-medicamentos"
 						transform="translate(950 225)">
 						<tspan x={0} y={23}>
-							{'Trasplantes '}
+							{t('Trasplantes ')}
 						</tspan>
 						<tspan x={0} y={51} />
 						<tspan x={0} y={79}>
-							{'Hemoderivados '}
+							{t('Hemoderivados ')}
 						</tspan>
 						<tspan x={0} y={107} />
 						<tspan x={0} y={135} xmlSpace="preserve">
-							{'Antibi\xF3ticos  '}
+							{t('Antibi\xF3ticos  ')}
 						</tspan>
 						<tspan x={0} y={163} />
 						<tspan x={0} y={191}>
-							{'Reumatolog\xEDa '}
+							{t('Reumatolog\xEDa ')}
 						</tspan>
 						<tspan x={0} y={219} />
 						<tspan x={0} y={247} xmlSpace="preserve">
-							{'Respiratoria  '}
+							{t('Respiratoria  ')}
 						</tspan>
 						<tspan x={0} y={275} />
 						<tspan x={0} y={303}>
-							{'UCI Neonatolog\xEDa '}
+							{t('UCI Neonatolog\xEDa ')}
 						</tspan>
 					</text>
 					<text
 						className="f-medicamentos"
 						transform="translate(1259 225)">
 						<tspan x={0} y={23} xmlSpace="preserve">
-							{'UCI Pedi\xE1trica  '}
+							{t('UCI Pedi\xE1trica  ')}
 						</tspan>
 						<tspan x={0} y={51} />
 						<tspan x={0} y={79}>
-							{'UCI Adultos '}
+							{t('UCI Adultos ')}
 						</tspan>
 						<tspan x={0} y={107} />
 						<tspan x={0} y={135}>
-							{'Dolor '}
+							{t('Dolor ')}
 						</tspan>
 						<tspan x={0} y={163} />
 						<tspan x={0} y={191}>
-							{'Gen\xE9tica\u202Fy\u202Fgen\xF3mica '}
+							{t('Gen\xE9tica\u202Fy\u202Fgen\xF3mica ')}
 						</tspan>
 						<tspan x={0} y={219} />
 						<tspan x={0} y={247}>
-							{'Neurointervencionismo '}
+							{t('Neurointervencionismo ')}
 						</tspan>
 					</text>
 					<circle
@@ -196,14 +199,14 @@ const Medicinesone: React.FC<{ height: string; onClose: () => void }> = ({
 				</g>
 				<text className="h-medicamentos" transform="translate(1780 66)">
 					<tspan x={-148.8} y={0}>
-						{'SOLUCIONES EN SALUD'}
+						{t('SOLUCIONES EN SALUD')}
 					</tspan>
 				</text>
 				<text
 					className="i-medicamentos"
 					transform="translate(1381 358)">
 					<tspan x={-164.176} y={0}>
-						{'especializados para:'}
+						{t('especializados para:')}
 					</tspan>
 				</text>
 				<path
@@ -215,7 +218,7 @@ const Medicinesone: React.FC<{ height: string; onClose: () => void }> = ({
 					<g className="j-medicamentos" transform="translate(0 0)">
 						<path
 							className="k-medicamentos"
-							d="M1.239,0,0,.517,94.794,227.967a134.089,134.089,0,0,0,123.767,82.5H642.208v-1.343H218.561A132.394,132.394,0,0,1,96.035,227.451Z"
+							d="M1.239,0,0,.517,94.794,227.967a134.089,134.089,0,0Trasplantes ,0,123.767,82.5H642.208v-1.343H218.561A132.394,132.394,0,0,1,96.035,227.451Z"
 							transform="translate(568.57 0)"
 						/>
 						<path
@@ -247,7 +250,7 @@ const Medicinesone: React.FC<{ height: string; onClose: () => void }> = ({
 					className="n-medicamentos cursor-pointer"
 					transform="translate(1164 261)">
 					<tspan x={0} y={55}>
-						{'MEDICAMENTOS '}
+						{t('MEDICAMENTOS ')}
 					</tspan>
 				</text>
 				<a href="/productos">
@@ -261,7 +264,7 @@ const Medicinesone: React.FC<{ height: string; onClose: () => void }> = ({
 							className="o-medicamentos"
 							transform="translate(92.852 23)">
 							<tspan x={-71.52} y={0}>
-								{'Volver'}
+								{t('Volver')}
 							</tspan>
 						</text>
 					</g>

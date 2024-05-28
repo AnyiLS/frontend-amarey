@@ -1,5 +1,6 @@
 import moment from 'moment'
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 export interface ICalendar {
 	next: () => void
@@ -22,6 +23,8 @@ const May31: React.FC<ICalendar> = ({
 	/** Variables */
 	const day = moment().format('DD')
 	const month = moment().format('MM')
+
+	const {t} = useTranslation()
 
 	React.useEffect(() => {
 		if (month === '05') {
@@ -196,10 +199,10 @@ const May31: React.FC<ICalendar> = ({
 			/>
 			<text className="d-item-1813" transform="translate(0 214.019)">
 				<tspan x={0} y={50}>
-					{'Prográmese con '}
+					{t('Prográmese con ')}
 				</tspan>
 				<tspan x={0} y={100}>
-					{'Grupo Amarey '}
+					{t('Grupo Amarey ')}
 				</tspan>
 			</text>
 			<g transform="translate(-140 -79.981)">
@@ -212,7 +215,7 @@ const May31: React.FC<ICalendar> = ({
 				/>
 				<text className="e-item-1813" transform="translate(458 893)">
 					<tspan x={0} y={0}>
-						{'Fecha evento'}
+						{t('Fecha evento')}
 					</tspan>
 				</text>
 			</g>
@@ -226,7 +229,7 @@ const May31: React.FC<ICalendar> = ({
 				/>
 				<text className="e-item-1813" transform="translate(182 893)">
 					<tspan x={0} y={0}>
-						{'Fecha de hoy'}
+						{t('Fecha de hoy')}
 					</tspan>
 				</text>
 			</g>
@@ -268,7 +271,7 @@ const May31: React.FC<ICalendar> = ({
 				className="i-item-1813"
 				transform="translate(1006.135 126.019)">
 				<tspan x={0} y={0}>
-					{'31 de mayo de 2024'}
+					{t('31 de mayo de 2024')}
 				</tspan>
 			</text>
 			<rect
@@ -285,7 +288,7 @@ const May31: React.FC<ICalendar> = ({
 							className="k-item-1813"
 							transform="translate(165 557)">
 							<tspan x={-21.712} y={30}>
-								{'Do'}
+								{t('Do')}
 							</tspan>
 						</text>
 					</g>
@@ -294,7 +297,7 @@ const May31: React.FC<ICalendar> = ({
 							className="k-item-1813"
 							transform="translate(165 557)">
 							<tspan x={-17.92} y={30}>
-								{'Lu'}
+								{t('Lu')}
 							</tspan>
 						</text>
 					</g>
@@ -303,7 +306,7 @@ const May31: React.FC<ICalendar> = ({
 							className="k-item-1813"
 							transform="translate(165 557)">
 							<tspan x={-24.576} y={30}>
-								{'Ma'}
+								{t('Ma')}
 							</tspan>
 						</text>
 					</g>
@@ -312,7 +315,7 @@ const May31: React.FC<ICalendar> = ({
 							className="k-item-1813"
 							transform="translate(165 557)">
 							<tspan x={-18.528} y={30}>
-								{'Mi'}
+								{t('Mi')}
 							</tspan>
 						</text>
 					</g>
@@ -321,7 +324,7 @@ const May31: React.FC<ICalendar> = ({
 							className="k-item-1813"
 							transform="translate(165 557)">
 							<tspan x={-19.072} y={30}>
-								{'Ju'}
+								{t('Ju')}
 							</tspan>
 						</text>
 					</g>
@@ -330,7 +333,7 @@ const May31: React.FC<ICalendar> = ({
 							className="k-item-1813"
 							transform="translate(165 557)">
 							<tspan x={-15.264} y={30}>
-								{'Vi'}
+								{t('Vi')}
 							</tspan>
 						</text>
 					</g>
@@ -339,7 +342,7 @@ const May31: React.FC<ICalendar> = ({
 							className="k-item-1813"
 							transform="translate(165 557)">
 							<tspan x={-19.888} y={30}>
-								{'Sa'}
+								{t('Sa')}
 							</tspan>
 						</text>
 					</g>
@@ -896,7 +899,7 @@ const May31: React.FC<ICalendar> = ({
 				</g>
 				<text className="n-item-1813" transform="translate(140 525)">
 					<tspan x={0} y={0}>
-						{'Mayo 2024'}
+						{t('Mayo 2024')}
 					</tspan>
 				</text>
 				<line

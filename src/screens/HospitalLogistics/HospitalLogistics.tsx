@@ -2,12 +2,15 @@ import React from 'react'
 import useGeneral from 'hooks/general.hook'
 import HospitalLogic from './Components/HospitalLogic'
 import HospitalLogisticsMobile from './HospitalLogisticsMobile'
+import { useTranslation } from 'react-i18next'
 
 const HospitalLogistics: React.FC = (): JSX.Element => {
 	/** Hooks */
 	const { width, height } = useGeneral()
 	const [showModal, setShowModal] = React.useState(false)
 	const [openShow, setOpenShow] = React.useState(false)
+
+	const {t} = useTranslation()
 
 	return (
 		<React.Fragment>
@@ -107,10 +110,10 @@ const HospitalLogistics: React.FC = (): JSX.Element => {
 									className="c-products-hl-desktop"
 									transform="translate(140 776)">
 									<tspan x={0} y={0}>
-										{'LOG\xCDSTICA'}
+										{t('LOG\xCDSTICA')}
 									</tspan>
 									<tspan x={0} y={57}>
-										{'HOSPITALARIA'}
+										{t('HOSPITALARIA')}
 									</tspan>
 								</text>
 								<text
@@ -118,26 +121,26 @@ const HospitalLogistics: React.FC = (): JSX.Element => {
 									transform="translate(968 700)">
 									<tspan x={0} y={23}>
 										{
-											'Nuestro portafolio de soluciones tecnol\xF3gicas est\xE1 enfocado en la '
+											t('Nuestro portafolio de soluciones tecnol\xF3gicas est\xE1 enfocado en la ')
 										}
 									</tspan>
 									<tspan x={0} y={51}>
 										{
-											'automatizaci\xF3n de procesos intrahospitalarios para el '
+											t('automatizaci\xF3n de procesos intrahospitalarios para el ')
 										}
 									</tspan>
 									<tspan x={0} y={79}>
 										{
-											'almacenamiento y la dispensaci\xF3n de medicamentos y material '
+											t('almacenamiento y la dispensaci\xF3n de medicamentos y material ')
 										}
 									</tspan>
 									<tspan x={0} y={107}>
 										{
-											'm\xE9dico-quir\xFArgico, aumentando la seguridad del paciente y la '
+											t('m\xE9dico-quir\xFArgico, aumentando la seguridad del paciente y la ')
 										}
 									</tspan>
 									<tspan x={0} y={135}>
-										{'eficiencia en los procesos. '}
+										{t('eficiencia en los procesos. ')}
 									</tspan>
 								</text>
 								<g
@@ -154,7 +157,7 @@ const HospitalLogistics: React.FC = (): JSX.Element => {
 									className="f-products-hl-desktop"
 									transform="translate(960 54)">
 									<tspan x={-125.412} y={0}>
-										{'SOLUCIONES EN SALUD'}
+										{t('SOLUCIONES EN SALUD')}
 									</tspan>
 								</text>
 								<g
@@ -202,7 +205,7 @@ const HospitalLogistics: React.FC = (): JSX.Element => {
 											transform="translate(3835.929 5863.388)"
 											style={{ fill: openShow ? "#001f5f" : '#ffffff' }}>
 											<tspan x={0} y={0}>
-												{'Conoce M\xE1s'}
+												{t('Conoce M\xE1s')}
 											</tspan>
 										</text>
 									</g>
@@ -217,7 +220,7 @@ const HospitalLogistics: React.FC = (): JSX.Element => {
 										className="j-products-hl-desktop"
 										transform="translate(232.852 49.768)">
 										<tspan x={-71.52} y={0}>
-											{'Volver'}
+											{t('Volver')}
 										</tspan>
 									</text>
 								</a>

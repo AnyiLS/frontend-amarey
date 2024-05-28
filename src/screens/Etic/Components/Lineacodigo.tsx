@@ -1,10 +1,12 @@
 import React from 'react'
 import Cuadropop from './cuadropop'
+import { useTranslation } from 'react-i18next'
 
 const Lineacodigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 	/** States */
 	const [showPop, setShowPop] = React.useState<boolean>(false)
 
+	const {t} = useTranslation()
 	return (
 		<div>
 			{
@@ -81,7 +83,7 @@ const Lineacodigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							className="e-linea cursor-pointer"
 							transform="translate(268.852 114.756)">
 							<tspan x={-71.52} y={0}>
-								{'Volver'}
+								{t('Volver')}
 							</tspan>
 						</text>
 					</g>
@@ -120,7 +122,7 @@ const Lineacodigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 						className="k-linea"
 						transform="translate(692 219.271)">
 						<tspan x={0} y={55}>
-							{'L\xEDnea \xE9tica'}
+							{t('L\xEDnea \xE9tica')}
 						</tspan>
 					</text>
 					<text
@@ -128,35 +130,35 @@ const Lineacodigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 						transform="translate(692 335.868)">
 						<tspan x={0} y={23}>
 							{
-								'La l\xEDnea \xE9tica es un canal dise\xF1ado para que empleados, proveedores, aliados '
+								t('La l\xEDnea \xE9tica es un canal dise\xF1ado para que empleados, proveedores, aliados ')
 							}
 						</tspan>
 						<tspan x={0} y={51}>
 							{
-								'estrat\xE9gicos y clientes puedan reportar de forma an\xF3nima y confidencial '
+								t('estrat\xE9gicos y clientes puedan reportar de forma an\xF3nima y confidencial ')
 							}
 						</tspan>
 						<tspan x={0} y={79}>
 							{
-								'presuntas violaciones a nuestro C\xF3digo de \xE9tica, as\xED como posibles actos '
+								t('presuntas violaciones a nuestro C\xF3digo de \xE9tica, as\xED como posibles actos ')
 							}
 						</tspan>
 						<tspan x={0} y={107}>
 							{
-								'incorrectos, fraudes, corrupci\xF3n, acoso y otros aspectos que afecten la '
+								t('incorrectos, fraudes, corrupci\xF3n, acoso y otros aspectos que afecten la ')
 							}
 						</tspan>
 						<tspan x={0} y={135}>
-							{'imagen y buen nombre de la compa\xF1\xEDa.'}
+							{t('imagen y buen nombre de la compa\xF1\xEDa.')}
 						</tspan>
 						<tspan x={0} y={163} />
 						<tspan x={0} y={191}>
 							{
-								'Las denuncias pueden realizarse a trav\xE9s del correo electr\xF3nico los 7 d\xEDas de la '
+								t('Las denuncias pueden realizarse a trav\xE9s del correo electr\xF3nico los 7 d\xEDas de la ')
 							}
 						</tspan>
 						<tspan x={0} y={219}>
-							{'semana, las 24 horas del d\xEDa.'}
+							{t('semana, las 24 horas del d\xEDa.')}
 						</tspan>
 					</text>
 					<text
@@ -164,14 +166,14 @@ const Lineacodigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 						transform="translate(692 607.434)">
 						<tspan x={0} y={30}>
 							{
-								'\xBFC\xF3mo puedo comunicarme con la l\xEDnea \xE9tica?'
+								t('\xBFC\xF3mo puedo comunicarme con la l\xEDnea \xE9tica?')
 							}
 						</tspan>
 					</text>
 					<text className="l-linea" transform="translate(692 670)">
 						<tspan x={0} y={23}>
 							{
-								'A trav\xE9s del correo electr\xF3nico: linea.etica@grupoamarey.com'
+								t('A trav\xE9s del correo electr\xF3nico: linea.etica@grupoamarey.com')
 							}
 						</tspan>
 					</text>
@@ -190,7 +192,7 @@ const Lineacodigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							transform="translate(1081.651 679.63)">
 							<tspan x={-248.568} y={0}>
 								{
-									'\xBFCu\xE1ndo debo utilizar la l\xEDnea \xE9tica?'
+									t('\xBFCu\xE1ndo debo utilizar la l\xEDnea \xE9tica?')
 								}
 							</tspan>
 						</text>
@@ -211,7 +213,7 @@ const Lineacodigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 						className="p-linea"
 						transform="translate(693.578 11.566)">
 						<tspan x={43.834} y={42}>
-							{'\xC9TICA Y COMPLIANCE'}
+							{t('ÉTICA Y COMPLIANCE')}
 						</tspan>
 					</text>
 				</g>

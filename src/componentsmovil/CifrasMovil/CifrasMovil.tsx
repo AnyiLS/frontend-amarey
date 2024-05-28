@@ -1,10 +1,13 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 export const CifrasMovil: React.FC = () => {
 	/** States */
 	const [openVideo, setOpenVideo] = React.useState<boolean>(false)
 	const [numberVideo, setNumberVideo] = React.useState<number>(0)
 	const [mute, setMute] = React.useState(false);
+
+	const {t} = useTranslation()
 
 	const video = [
 		{ url: 'https://grupoamarey.com/pdf/video/Cifras educacion vertical_1.mp4' },
@@ -309,10 +312,10 @@ export const CifrasMovil: React.FC = () => {
 						className="i-cifras-impacto"
 						transform="translate(220 398.119)">
 						<tspan x={-112.567} y={45}>
-							{'Cifras de '}
+							{t('Cifras de')}
 						</tspan>
 						<tspan x={-97.897} y={92}>
-							{'impacto'}
+							{t('impacto')}
 						</tspan>
 					</text>
 					<g transform="translate(12.381 0.119)">
@@ -342,7 +345,7 @@ export const CifrasMovil: React.FC = () => {
 							</tspan>
 							<tspan className="m-cifras-impacto">
 								<tspan x={-184.371} y={13}>
-									{'cirugías robóticas realizadas'}
+									{t('cirugías robóticas realizadas')}
 								</tspan>
 							</tspan>
 						</text>
@@ -404,7 +407,7 @@ export const CifrasMovil: React.FC = () => {
 							</tspan>
 							<tspan className="m-cifras-impacto">
 								<tspan x={0} y={13}>
-									{'con el modelo de logística hospitalaria'}
+									{t('con el modelo de logística hospitalaria')}
 								</tspan>
 							</tspan>
 						</text>
@@ -471,7 +474,7 @@ export const CifrasMovil: React.FC = () => {
 							</tspan>
 							<tspan className="m-cifras-impacto">
 								<tspan x={-164.846} y={13}>
-									{'profesionales capacitados'}
+									{t('profesionales capacitados')}
 								</tspan>
 							</tspan>
 						</text>
@@ -556,7 +559,7 @@ export const CifrasMovil: React.FC = () => {
 							</tspan>
 							<tspan className="m-cifras-impacto">
 								<tspan x={0} y={13}>
-									{'pacientes atendidos'}
+									{t('pacientes atendidos')}
 								</tspan>
 							</tspan>
 						</text>

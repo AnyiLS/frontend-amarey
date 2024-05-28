@@ -1,12 +1,14 @@
 import moment from 'moment';
 import React from 'react'
 import { ICalendar } from './02May';
+import { useTranslation } from 'react-i18next';
 
 const September: React.FC<ICalendar> = ({ next, prev, onChangeMonth, onLessMonth }): JSX.Element => {
   /** Variables */
   const day = moment().format('DD');
   const month = moment().format('MM');
 
+  const {t} = useTranslation()
   React.useEffect(() => {
     if (month === '01') {
       const element = document.getElementById(`day-${day}`);
@@ -104,7 +106,7 @@ const September: React.FC<ICalendar> = ({ next, prev, onChangeMonth, onLessMonth
           />
           <text className="d-september" transform="translate(458 893)">
             <tspan x={0} y={0}>
-              {"Fecha evento"}
+              {t("Fecha evento")}
             </tspan>
           </text>
         </g>
@@ -118,7 +120,7 @@ const September: React.FC<ICalendar> = ({ next, prev, onChangeMonth, onLessMonth
           />
           <text className="d-september" transform="translate(182 893)">
             <tspan x={0} y={0}>
-              {"Fecha de hoy"}
+              {t("Fecha de hoy")}
             </tspan>
           </text>
         </g>
@@ -154,7 +156,7 @@ const September: React.FC<ICalendar> = ({ next, prev, onChangeMonth, onLessMonth
         </g>
         <text className="h-september" transform="translate(1064.437 126.019)">
           <tspan x={0} y={0}>
-            {"Septiembre"}
+            {t("Septiembre")}
           </tspan>
         </text>
         <g transform="translate(-140 -133.981)">
@@ -162,49 +164,49 @@ const September: React.FC<ICalendar> = ({ next, prev, onChangeMonth, onLessMonth
             <g transform="translate(-120 -557)">
               <text className="j-september" transform="translate(140 557)">
                 <tspan x={-21.712} y={30}>
-                  {"Do"}
+                  {t("Do")}
                 </tspan>
               </text>
             </g>
             <g transform="translate(-34 -557)">
               <text className="j-september" transform="translate(140 557)">
                 <tspan x={-17.92} y={30}>
-                  {"Lu"}
+                  {t("Lu")}
                 </tspan>
               </text>
             </g>
             <g transform="translate(52 -557)">
               <text className="j-september" transform="translate(140 557)">
                 <tspan x={-24.576} y={30}>
-                  {"Ma"}
+                  {t("Ma")}
                 </tspan>
               </text>
             </g>
             <g transform="translate(138 -557)">
               <text className="j-september" transform="translate(140 557)">
                 <tspan x={-18.528} y={30}>
-                  {"Mi"}
+                  {t("Mi")}
                 </tspan>
               </text>
             </g>
             <g transform="translate(224 -557)">
               <text className="j-september" transform="translate(140 557)">
                 <tspan x={-19.072} y={30}>
-                  {"Ju"}
+                  {t("Ju")}
                 </tspan>
               </text>
             </g>
             <g transform="translate(310 -557)">
               <text className="j-september" transform="translate(140 557)">
                 <tspan x={-15.264} y={30}>
-                  {"Vi"}
+                  {t("Vi")}
                 </tspan>
               </text>
             </g>
             <g transform="translate(396 -557)">
               <text className="j-september" transform="translate(140 557)">
                 <tspan x={-19.888} y={30}>
-                  {"Sa"}
+                  {t("Sa")}
                 </tspan>
               </text>
             </g>
@@ -728,7 +730,7 @@ const September: React.FC<ICalendar> = ({ next, prev, onChangeMonth, onLessMonth
           </g>
           <text className="m-september" transform="translate(140 525)">
             <tspan x={0} y={0}>
-              {"Septiembre 2024"}
+              {t("Septiembre 2024")}
             </tspan>
           </text>
           <line className="n-september" x2={567} transform="translate(140 546)" />
@@ -747,10 +749,10 @@ const September: React.FC<ICalendar> = ({ next, prev, onChangeMonth, onLessMonth
         </g>
         <text className="o-september" transform="translate(0 185.019)">
           <tspan x={0} y={55}>
-            {"Prográmese con "}
+            {t("Prográmese con ")}
           </tspan>
           <tspan x={0} y={112}>
-            {"Grupo Amarey"}
+            {t("Grupo Amarey")}
           </tspan>
         </text>
         <g className="s-september" transform="matrix(1, 0, 0, 1, 0, 0)">

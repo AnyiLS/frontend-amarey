@@ -1,9 +1,11 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 const DevicesMedical: React.FC<{ height: string; onClose: () => void }> = ({
 	height,
 	onClose,
 }) => {
+	const {t} = useTranslation()
 	return (
 		<div>
 			<svg
@@ -65,7 +67,7 @@ const DevicesMedical: React.FC<{ height: string; onClose: () => void }> = ({
 				</text>
 				<text className="e-medical" transform="translate(962.864 399)">
 					<tspan x={-259.27} y={0}>
-						{'EQUIPOS M\xC9DICOS '}
+						{t('EQUIPOS M\xC9DICOS ')}
 					</tspan>
 				</text>
 				<path
@@ -76,94 +78,94 @@ const DevicesMedical: React.FC<{ height: string; onClose: () => void }> = ({
 				<text className="g-medical" transform="translate(264.864 729)">
 					<tspan x={0} y={23}>
 						{
-							'Con una variada gama de soluciones para \xE1reas especializadas, UCIs, quir\xF3fanos, urgencias y hospitalizaci\xF3n. '
+							t('Con una variada gama de soluciones para \xE1reas especializadas, UCIs, quir\xF3fanos, urgencias y hospitalizaci\xF3n. ')
 						}
 					</tspan>
 					<tspan x={0} y={51} />
 					<tspan x={0} y={79}>
 						{
-							'En cumplimiento de la Ley 1672 del 19 de julio de 2013, Decreto 284 de 2018 y Resoluci\xF3n 851 del 2022. Amarey Nova '
+							t('En cumplimiento de la Ley 1672 del 19 de julio de 2013, Decreto 284 de 2018 y Resoluci\xF3n 851 del 2022. Amarey Nova ')
 						}
 					</tspan>
 					<tspan x={0} y={107}>
 						{
-							'Medical S.a-medical, Ucipharma S.a-medical. y Novat\xE9cnica S.a-medical.S., ponen a su disposici\xF3n nuestro proceso '
+							t('Medical S.a-medical, Ucipharma S.a-medical. y Novat\xE9cnica S.a-medical.S., ponen a su disposici\xF3n nuestro proceso ')
 						}
 					</tspan>
 					<tspan x={0} y={135}>
 						{
-							'de disposici\xF3n y gesti\xF3n de los residuos de aparatos el\xE9ctricos y electr\xF3nicos (RAEE) relacionados espec\xEDficamente con los equipos '
+							t('de disposici\xF3n y gesti\xF3n de los residuos de aparatos el\xE9ctricos y electr\xF3nicos (RAEE) relacionados espec\xEDficamente con los equipos ')
 						}
 					</tspan>
 					<tspan x={0} y={163}>
 						{
-							'biom\xE9dicos el\xE9ctricos o electr\xF3nicos (con excepci\xF3n de todos los productos implantados e infectados) que '
+							t('biom\xE9dicos el\xE9ctricos o electr\xF3nicos (con excepci\xF3n de todos los productos implantados e infectados) que ')
 						}
 					</tspan>
 					<tspan x={0} y={191}>
 						{
-							'distribuye nuestras compa\xF1\xEDas. Para este fin, solicitamos comunicarse directamente con nuestro representante de '
+							t('distribuye nuestras compa\xF1\xEDas. Para este fin, solicitamos comunicarse directamente con nuestro representante de ')
 						}
 					</tspan>
 					<tspan x={0} y={219}>
 						{
-							'ventas asignado a su instituci\xF3n con el objetivo de programar su recolecci\xF3n. Para la disposici\xF3n final de los RAEE '
+							t('ventas asignado a su instituci\xF3n con el objetivo de programar su recolecci\xF3n. Para la disposici\xF3n final de los RAEE ')
 						}
 					</tspan>
 					<tspan x={0} y={247} xmlSpace="preserve">
 						{
-							'realizamos la gesti\xF3n a trav\xE9s de una empresa autorizada por la Autoridad Ambiental.  '
+							t('realizamos la gesti\xF3n a trav\xE9s de una empresa autorizada por la Autoridad Ambiental.  ')
 						}
 					</tspan>
 				</text>
 				<text className="g-medical" transform="translate(441.864 476)">
 					<tspan x={0} y={23}>
-						{'Monitores de signos vitales '}
+						{t('Monitores de signos vitales ')}
 					</tspan>
 					<tspan x={0} y={51}>
-						{'Centrales de monitoreo '}
+						{t('Centrales de monitoreo ')}
 					</tspan>
 					<tspan x={0} y={79}>
-						{'Electrocardiograf\xEDa '}
+						{t('Electrocardiograf\xEDa ')}
 					</tspan>
 					<tspan x={0} y={107} xmlSpace="preserve">
-						{'Ventilaci\xF3n  '}
+						{t('Ventilaci\xF3n  ')}
 					</tspan>
 					<tspan x={0} y={135}>
-						{'Equipos para neurolog\xEDa: '}
+						{t('Equipos para neurolog\xEDa: ')}
 					</tspan>
 					<tspan x={0} y={163}>
-						{'electroencefalograf\xEDa, polisomnograf\xEDa '}
+						{t('electroencefalograf\xEDa, polisomnograf\xEDa ')}
 					</tspan>
 					<tspan x={0} y={191}>
-						{'y electromiograf\xEDa. '}
+						{t('y electromiograf\xEDa. ')}
 					</tspan>
 					<tspan x={0} y={219}>
-						{'Camas y camillas hospitalarias '}
+						{t('Camas y camillas hospitalarias ')}
 					</tspan>
 					<tspan x={0} y={247} />
 				</text>
 				<text className="g-medical" transform="translate(1089.864 476)">
 					<tspan x={0} y={23}>
-						{'Mesas de cirug\xEDa '}
+						{t('Mesas de cirug\xEDa ')}
 					</tspan>
 					<tspan x={0} y={51}>
-						{'Incubadora neonatal y l\xE1mparas de '}
+						{t('Incubadora neonatal y l\xE1mparas de ')}
 					</tspan>
 					<tspan x={0} y={79}>
-						{'fototerapia '}
+						{t('fototerapia ')}
 					</tspan>
 					<tspan x={0} y={107}>
-						{'Desfibrilador Externo Autom\xE1tico (DEA) '}
+						{t('Desfibrilador Externo Autom\xE1tico (DEA) ')}
 					</tspan>
 					<tspan x={0} y={135}>
-						{'L\xE1mparas para quir\xF3fano, '}
+						{t('L\xE1mparas para quir\xF3fano, ')}
 					</tspan>
 					<tspan x={0} y={163}>
-						{'procedimientos y exploraci\xF3n '}
+						{t('procedimientos y exploraci\xF3n ')}
 					</tspan>
 					<tspan x={0} y={191}>
-						{'Unidades de suministro medicinales '}
+						{t('Unidades de suministro medicinales ')}
 					</tspan>
 				</text>
 				<g transform="translate(419.175 491.072)">
@@ -294,7 +296,7 @@ const DevicesMedical: React.FC<{ height: string; onClose: () => void }> = ({
 							className="d-medical"
 							transform="translate(92.852 23)">
 							<tspan x={-71.52} y={0}>
-								{'Volver'}
+								{t('Volver')}
 							</tspan>
 						</text>
 					</a>

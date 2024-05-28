@@ -2,6 +2,7 @@ import React from 'react'
 import useGeneral from 'hooks/general.hook'
 import NeuroImage from './components/NeuroImage'
 import NeuroMobile from './components/NeuroMobile'
+import { useTranslation } from 'react-i18next'
 
 const WoundCare: React.FC = (): JSX.Element => {
 	/** Hooks */
@@ -9,6 +10,8 @@ const WoundCare: React.FC = (): JSX.Element => {
 
 	const [showModal, setShowModal] = React.useState(false)
 	const [openShow, setOpenShow] = React.useState(false)
+
+	const {t} = useTranslation()
 
 	return (
 		<React.Fragment>
@@ -105,7 +108,7 @@ const WoundCare: React.FC = (): JSX.Element => {
 									className="c-products-neuro-desktop"
 									transform="translate(506 833)">
 									<tspan x={-366.438} y={0}>
-										{'NEUROINTERVENCIONISMO '}
+										{t('NEUROINTERVENCIONISMO ')}
 									</tspan>
 								</text>
 								<text
@@ -113,16 +116,16 @@ const WoundCare: React.FC = (): JSX.Element => {
 									transform="translate(968 754)">
 									<tspan x={0} y={23}>
 										{
-											'El ACV - Accidente Cerebro Vascular es algo que le puede ocurrir a '
+											t('El ACV - Accidente Cerebro Vascular es algo que le puede ocurrir a ')
 										}
 									</tspan>
 									<tspan x={0} y={51}>
 										{
-											'1 de cada 4 personas y menos del 5% de las personas que lo sufren '
+											t('1 de cada 4 personas y menos del 5% de las personas que lo sufren ')
 										}
 									</tspan>
 									<tspan x={0} y={79}>
-										{'son atendidas a tiempo.'}
+										{t('son atendidas a tiempo.')}
 									</tspan>
 								</text>
 								<g
@@ -139,7 +142,7 @@ const WoundCare: React.FC = (): JSX.Element => {
 									className="f-products-neuro-desktop"
 									transform="translate(960 54)">
 									<tspan x={-251.412} y={0}>
-										{'SOLUCIONES EN SALUD'}
+										{t('SOLUCIONES EN SALUD')}
 									</tspan>
 								</text>
 								<g
@@ -187,7 +190,7 @@ const WoundCare: React.FC = (): JSX.Element => {
 											transform="translate(3835.929 5863.388)"
 											style={{ fill: openShow ? "#001f5f" : '#ffffff' }}>
 											<tspan x={0} y={0}>
-												{'Conoce M\xE1s'}
+												{t('Conoce M\xE1s')}
 											</tspan>
 										</text>
 									</g>
@@ -203,7 +206,7 @@ const WoundCare: React.FC = (): JSX.Element => {
 											className="j-products-neuro-desktop"
 											transform="translate(92.852 23)">
 											<tspan x={-71.52} y={0}>
-												{'Volver'}
+												{t('Volver')}
 											</tspan>
 										</text>
 									</g>

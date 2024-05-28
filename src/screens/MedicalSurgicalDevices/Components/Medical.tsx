@@ -1,9 +1,11 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 const Medical: React.FC<{ height: string; onClose: () => void }> = ({
 	height,
 	onClose,
 }) => {
+	const {t} = useTranslation()
 	return (
 		<div>
 			<svg
@@ -63,12 +65,12 @@ const Medical: React.FC<{ height: string; onClose: () => void }> = ({
 				<path className="c-devices" d="M0,0H1929V1005.452H0Z" />
 				<text className="d-devices" transform="translate(1780 115)">
 					<tspan x={-260.8} y={0}>
-						{'SOLUCIONES EN SALUD'}
+						{t('SOLUCIONES EN SALUD')}
 					</tspan>
 				</text>
 				<text className="e-devices" transform="translate(960 353)">
 					<tspan x={-501.957} y={0}>
-						{'Dispositivos m\xE9dico-quir\xFArgicos'}
+						{t('Dispositivos m\xE9dico-quir\xFArgicos')}
 					</tspan>
 				</text>
 				<path
@@ -117,49 +119,49 @@ const Medical: React.FC<{ height: string; onClose: () => void }> = ({
 				<text className="l-devices" transform="translate(278 778)">
 					<tspan x={0} y={23}>
 						{
-							'Todos productos de nuestro portafolio est\xE1n aprobados por la FDA y cuentan con altos est\xE1ndares de calidad. '
+							t('Todos productos de nuestro portafolio est\xE1n aprobados por la FDA y cuentan con altos est\xE1ndares de calidad. ')
 						}
 					</tspan>
 					<tspan className="m-devices">
 						<tspan x={0} y={51} />
 						<tspan x={0} y={79}>
 							{
-								'Contamos con un centro de lavado con la \xFAltima tecnolog\xEDa y est\xE1ndares, para permitirnos ofrecer un producto '
+								t('Contamos con un centro de lavado con la \xFAltima tecnolog\xEDa y est\xE1ndares, para permitirnos ofrecer un producto ')
 							}
 						</tspan>
 						<tspan x={0} y={107}>
 							{
-								'con la mejor calidad y garantizar las condiciones sanitarias de kits de cirug\xEDa utilizados. Adicionalmente, '
+								t('con la mejor calidad y garantizar las condiciones sanitarias de kits de cirug\xEDa utilizados. Adicionalmente, ')
 							}
 						</tspan>
 						<tspan x={0} y={135}>
 							{
-								'realizamos acompa\xF1amiento quir\xFArgico en cirug\xEDa. '
+								t('realizamos acompa\xF1amiento quir\xFArgico en cirug\xEDa. ')
 							}
 						</tspan>
 					</tspan>
 				</text>
 				<text className="n-devices" transform="translate(340 512)">
 					<tspan x={0} y={23}>
-						{'Equipos y dispositivos m\xE9dicos para cirug\xEDa '}
+						{t('Equipos y dispositivos m\xE9dicos para cirug\xEDa ')}
 					</tspan>
 					<tspan x={0} y={51}>
-						{'laparosc\xF3pica '}
+						{t('laparosc\xF3pica ')}
 					</tspan>
 					<tspan x={0} y={79}>
-						{'Dispositivos para reparo de hernias inguinales '}
+						{t('Dispositivos para reparo de hernias inguinales ')}
 					</tspan>
 					<tspan x={0} y={107}>
-						{'y ventrales '}
+						{t('y ventrales ')}
 					</tspan>
 					<tspan x={0} y={135}>
-						{'Ropa quir\xFArgica y barreras de protecci\xF3n '}
+						{t('Ropa quir\xFArgica y barreras de protecci\xF3n ')}
 					</tspan>
 					<tspan x={0} y={163}>
-						{'especializadas '}
+						{t('especializadas ')}
 					</tspan>
 					<tspan x={0} y={191}>
-						{'Hemost\xE1ticos y sellantes para cirug\xEDa '}
+						{t('Hemost\xE1ticos y sellantes para cirug\xEDa ')}
 					</tspan>
 					<tspan x={0} y={219}>
 						{'m\xEDnimamente invasiva'}
@@ -167,22 +169,22 @@ const Medical: React.FC<{ height: string; onClose: () => void }> = ({
 				</text>
 				<text className="n-devices" transform="translate(1047 512)">
 					<tspan x={0} y={23}>
-						{'Protecci\xF3n de la herida quir\xFArgica. '}
+						{t('Protecci\xF3n de la herida quir\xFArgica. ')}
 					</tspan>
 					<tspan x={0} y={51}>
-						{'Control del sangrado. '}
+						{t('Control del sangrado. ')}
 					</tspan>
 					<tspan x={0} y={79}>
-						{'Disminuci\xF3n de la infecci\xF3n en el sitio '}
+						{t('Disminuci\xF3n de la infecci\xF3n en el sitio ')}
 					</tspan>
 					<tspan x={0} y={107}>
-						{'operatorio. '}
+						{t('operatorio. ')}
 					</tspan>
 					<tspan x={0} y={135}>
-						{'Disminuci\xF3n de tiempos quir\xFArgicos. '}
+						{t('Disminuci\xF3n de tiempos quir\xFArgicos. ')}
 					</tspan>
 					<tspan x={0} y={163}>
-						{'Disminuci\xF3n de estancias hospitalarias '}
+						{t('Disminuci\xF3n de estancias hospitalarias ')}
 					</tspan>
 				</text>
 				<g transform="translate(324.358 477)">
@@ -254,18 +256,18 @@ const Medical: React.FC<{ height: string; onClose: () => void }> = ({
 				</g>
 				<text className="o-devices" transform="translate(1259 420)">
 					<tspan x={-215.392} y={30}>
-						{'Apoyamos la seguridad del '}
+						{t('Apoyamos la seguridad del ')}
 					</tspan>
 					<tspan x={-109.328} y={64}>
-						{'paciente con: '}
+						{t('paciente con:')}
 					</tspan>
 				</text>
 				<text className="o-devices" transform="translate(630 420)">
 					<tspan x={-261.488} y={30}>
-						{'Mejoramos los resultados en una '}
+						{t('Mejoramos los resultados en una ')}
 					</tspan>
 					<tspan x={-138} y={64} xmlSpace="preserve">
-						{'intervenci\xF3n con:  '}
+						{t('intervenci\xF3n con:  ')}
 					</tspan>
 				</text>
 				<g
@@ -295,7 +297,7 @@ const Medical: React.FC<{ height: string; onClose: () => void }> = ({
 						className="d-devices"
 						transform="translate(232.852 98.768)">
 						<tspan x={-71.52} y={0}>
-							{'Volver'}
+							{t('Volver')}
 						</tspan>
 					</text>
 				</a>

@@ -1,9 +1,12 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const Codigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 	/** States */
 	const [hover, setHover] = React.useState<boolean>(false)
 	const [hover2, setHover2] = React.useState<boolean>(false)
+
+	const {t} = useTranslation()
 
 	return (
 		<div>
@@ -96,7 +99,7 @@ const Codigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							className="e-codigo"
 							transform="translate(278.637 273.483)">
 							<tspan x={0} y={55}>
-								{'C\xF3digo de \xE9tica'}
+								{t('C\xF3digo de \xE9tica')}
 							</tspan>
 						</text>
 						<text
@@ -104,41 +107,41 @@ const Codigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							transform="translate(278.637 361.515)">
 							<tspan x={0} y={23}>
 								{
-									'En el Grupo Amarey estamos comprometidos en mantener relaciones honestas, '
+									t('En el Grupo Amarey estamos comprometidos en mantener relaciones honestas, ')
 								}
 							</tspan>
 							<tspan x={0} y={51}>
 								{
-									'constructivas e id\xF3neas con nuestros grupos de inter\xE9s. Guiados por nuestros '
+									t('constructivas e id\xF3neas con nuestros grupos de inter\xE9s. Guiados por nuestros ')
 								}
 							</tspan>
 							<tspan x={0} y={79}>
 								{
-									'valores corporativos hemos creado el presente C\xF3digo de \xE9tica, a trav\xE9s del '
+									t('valores corporativos hemos creado el presente C\xF3digo de \xE9tica, a trav\xE9s del ')
 								}
 							</tspan>
 							<tspan x={0} y={107}>
 								{
-									'cual establecemos las reglas de conducta \xE9tica que deben ser seguidas y '
+									t('cual establecemos las reglas de conducta \xE9tica que deben ser seguidas y ')
 								}
 							</tspan>
 							<tspan x={0} y={135}>
 								{
-									'observadas en su comportamiento diario por todas las personas vinculadas a '
+									t('observadas en su comportamiento diario por todas las personas vinculadas a ')
 								}
 							</tspan>
 							<tspan x={0} y={163}>
 								{
-									'la empresa, tanto los miembros de la junta directiva, directores, empleados de '
+									t('la empresa, tanto los miembros de la junta directiva, directores, empleados de ')
 								}
 							</tspan>
 							<tspan x={0} y={191}>
 								{
-									'todos los niveles, proveedores, asesores y contratistas, as\xED como para los '
+									t('todos los niveles, proveedores, asesores y contratistas, as\xED como para los ')
 								}
 							</tspan>
 							<tspan x={0} y={219}>
-								{'empleados indirectos.'}
+								{t('empleados indirectos.')}
 							</tspan>
 						</text>
 						<a
@@ -167,10 +170,10 @@ const Codigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 									}}
 									transform="translate(158 30.925)">
 									<tspan x={-72.612} y={0}>
-										{'Ver C\xF3digo'}
+										{t('Ver C\xF3digo')}
 									</tspan>
 									<tspan x={-52.848} y={20}>
-										{'de \xE9tica'}
+										{t('de \xE9tica')}
 									</tspan>
 								</text>
 							</g>
@@ -201,7 +204,7 @@ const Codigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 									}}
 									transform="translate(158 29.425)">
 									<tspan x={-93.84} y={0}>
-										{'Ver Manual de'}
+										{t('Ver Manual de')}
 									</tspan>
 									<tspan x={-77.088} y={20}>
 										{'Compliance'}
@@ -220,7 +223,7 @@ const Codigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 								className="i-codigo"
 								transform="translate(92.852 23)">
 								<tspan x={-71.52} y={0}>
-									{'Volver'}
+									{t('Volver')}
 								</tspan>
 							</text>
 						</g>
@@ -265,7 +268,7 @@ const Codigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 						className="m-codigo"
 						transform="translate(694.214 10.893)">
 						<tspan x={43.834} y={42}>
-							{'\xC9TICA Y COMPLIANCE'}
+							{t('ÉTICA Y COMPLIANCE')}
 						</tspan>
 					</text>
 					<g transform="translate(0)" onClick={onClose}>
@@ -278,7 +281,7 @@ const Codigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							className="n-codigo cursor-pointer"
 							transform="translate(233.488 115.083)">
 							<tspan x={-71.52} y={0}>
-								{'Volver'}
+								{t('Volver')}
 							</tspan>
 						</text>
 					</g>

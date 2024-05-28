@@ -1,10 +1,12 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 export interface IEtic {
 	onNext: (number: number) => void
 }
 
 const View8: React.FC<IEtic> = ({ onNext }): JSX.Element => {
+	const {t} = useTranslation()
 	return (
 		<svg viewBox="0 40 414 855">
 			<defs>
@@ -225,7 +227,7 @@ const View8: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 					</g>
 					<text className="l-reward-2-mobile" transform="translate(120 16.386)">
 						<tspan x={-68.81} y={13}>
-							{'Conflicto de interés'}
+							{t('Conflicto de interés')}
 						</tspan>
 					</text>
 				</g>

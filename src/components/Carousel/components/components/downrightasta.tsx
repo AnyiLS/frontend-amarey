@@ -1,8 +1,11 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const DownRightAsta: React.FC<{ onUnselected: () => void }> = ({
 	onUnselected,
 }): JSX.Element => {
+	const {t} = useTranslation()
+
 	return (
 		<React.Fragment>
 			<g onClick={onUnselected} transform="translate(1064 480)">
@@ -96,7 +99,7 @@ const DownRightAsta: React.FC<{ onUnselected: () => void }> = ({
 						className="e-tt-5"
 						transform="translate(439.064 170.05)">
 						<tspan x={2.932} y={28}>
-							{'Nuestros aliados '}
+							{t('Nuestros aliados ')}
 						</tspan>
 					</text>
 				</a>

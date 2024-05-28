@@ -1,11 +1,14 @@
 import axios from 'axios'
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import { useTranslation } from 'react-i18next'
 import Swal from 'sweetalert2'
 
 const Formulario: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 	const { handleSubmit, formState: {isValid}, register, reset } = useForm({ mode: 'onChange' })
 	const [accept, setAccept] = React.useState<boolean>(false)
+
+	const {t} = useTranslation()
 
 	const handleSentContact = (data: any) => {
 		if (isValid && accept) {
@@ -295,56 +298,56 @@ const Formulario: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 						className="f-formu"
 						transform="translate(6702.991 183.674)">
 						<tspan x={61.464} y={30}>
-							{'Formulario de contacto'}
+							{t('Formulario de contacto')}
 						</tspan>
 					</text>
 					<text
 						className="g-formu"
 						transform="translate(6678.848 270.458)">
 						<tspan x={0} y={17}>
-							{'Nombre completo '}
+							{t('Nombre completo ')}
 						</tspan>
 					</text>
 					<text
 						className="g-formu"
 						transform="translate(6678.848 351.782)">
 						<tspan x={0} y={17}>
-							{'Email '}
+							{t('Email ')}
 						</tspan>
 					</text>
 					<text
 						className="g-formu"
 						transform="translate(6678.848 433.107)">
 						<tspan x={0} y={17}>
-							{'Instituci\xF3n '}
+							{t('Instituci\xF3n ')}
 						</tspan>
 					</text>
 					<text
 						className="g-formu"
 						transform="translate(6678.848 514.432)">
 						<tspan x={0} y={17}>
-							{'Asunto '}
+							{t('Asunto ')}
 						</tspan>
 					</text>
 					<text
 						className="g-formu"
 						transform="translate(6678.848 595.757)">
 						<tspan x={0} y={17}>
-							{'Pa\xEDs '}
+							{t('Pa\xEDs ')}
 						</tspan>
 					</text>
 					<text
 						className="g-formu"
 						transform="translate(6987.627 595.757)">
 						<tspan x={0} y={17}>
-							{'Tel\xE9fono '}
+							{t('Tel\xE9fono ')}
 						</tspan>
 					</text>
 					<text
 						className="g-formu"
 						transform="translate(6678.848 677.082)">
 						<tspan x={0} y={17}>
-							{'Mensaje '}
+							{t('Mensaje ')}
 						</tspan>
 					</text>
 					<text
@@ -352,11 +355,11 @@ const Formulario: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 						transform="translate(6719.51 811.4)">
 						<tspan x={0} y={11}>
 							{
-								'Al enviar este formulario, usted reconoce haber le\xEDdo y estar de acuerdo con nuestra pol\xEDtica '
+								t('Al enviar este formulario, usted reconoce haber le\xEDdo y estar de acuerdo con nuestra pol\xEDtica ')
 							}
 						</tspan>
 						<tspan x={0} y={26}>
-							{'de '}
+							{t('de ')}
 						</tspan>
 					</text>
 					<g data-type="innerShadowGroup">
@@ -432,7 +435,7 @@ const Formulario: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 					<g transform="translate(6697.45 826.919)" style={{ cursor: 'pointer' }} onClick={() => window.open('https://juegoseml.co/pdf/GRC-F-G-004-V5_FORMATO%20AUTORIZACIO%CC%81N%20DE%20TRATAMIENTO%20DE%20DATOS%20PERSONALES_.pdf', '_blank')}>
 						<text className="k-formu">
 							<tspan className="l-formu" x={37.826} y={11}>
-								{'Tratamiento de datos personales.'}
+								{t('Tratamiento de datos personales.')}
 							</tspan>
 							<tspan className="m-formu" y={11} />
 						</text>
@@ -476,7 +479,7 @@ const Formulario: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							className="o-formu cursor-pointer"
 							transform="translate(85.215 34.232)">
 							<tspan x={0} y={0}>
-								enviar
+							{t('enviar')}
 							</tspan>
 						</text>
 					</g>

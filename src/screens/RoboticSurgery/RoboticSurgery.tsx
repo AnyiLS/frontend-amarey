@@ -2,12 +2,14 @@ import React from 'react'
 import useGeneral from 'hooks/general.hook'
 import Robotica from './Components/Robotica'
 import RoboticSurgeryMobile from './RoboticSurgeryMobile'
+import { useTranslation } from 'react-i18next'
 
 const RoboticSurgery: React.FC = (): JSX.Element => {
 	/** Hooks */
 	const { width, height } = useGeneral()
 	const [showModal, setShowModal] = React.useState(false)
 	const [openShow, setOpenShow] = React.useState(false)
+	const {t} = useTranslation()
 
 	return (
 		<React.Fragment>
@@ -112,66 +114,66 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 									transform="translate(968 421)">
 									<tspan x={0} y={23}>
 										{
-											'Una extensi\xF3n natural de los ojos, a trav\xE9s de una visi\xF3n en 3D y '
+											t('Una extensi\xF3n natural de los ojos, a trav\xE9s de una visi\xF3n en 3D y ')
 										}
 									</tspan>
 									<tspan x={0} y={51}>
 										{
-											'magnificaci\xF3n hasta 10 veces. Movimientos intuitivos con mayor '
+											t('magnificaci\xF3n hasta 10 veces. Movimientos intuitivos con mayor ')
 										}
 									</tspan>
 									<tspan x={0} y={79}>
 										{
-											'rango de movimiento que exceden las capacidades de la mano '
+											t('rango de movimiento que exceden las capacidades de la mano ')
 										}
 									</tspan>
 									<tspan x={0} y={107}>
-										{'humana. '}
+										{t('humana. ')}
 									</tspan>
 									<tspan x={0} y={135} />
 									<tspan x={0} y={163}>
 										{
-											'Somos el comercializador del sistema quir\xFArgico da Vinci, con una '
+											t('Somos el comercializador del sistema quir\xFArgico da Vinci, con una ')
 										}
 									</tspan>
 									<tspan x={0} y={191}>
 										{
-											'experiencia de m\xE1s de 3.000 cirug\xEDas en nuestro pa\xEDs, una '
+											t('experiencia de m\xE1s de 3.000 cirug\xEDas en nuestro pa\xEDs, una ')
 										}
 									</tspan>
 									<tspan x={0} y={219}>
 										{
-											'sofisticada plataforma rob\xF3tica que permite potenciar las '
+											t('sofisticada plataforma rob\xF3tica que permite potenciar las ')
 										}
 									</tspan>
 									<tspan x={0} y={247}>
 										{
-											'capacidades del cirujano y ofrecer una opci\xF3n m\xEDnimamente '
+											t('capacidades del cirujano y ofrecer una opci\xF3n m\xEDnimamente ')
 										}
 									</tspan>
 									<tspan x={0} y={275} xmlSpace="preserve">
 										{
-											'invasiva en procedimientos de cirug\xEDa compleja.  '
+											t('invasiva en procedimientos de cirug\xEDa compleja.  ')
 										}
 									</tspan>
 									<tspan x={0} y={303} />
 									<tspan x={0} y={331}>
 										{
-											'El sistema da Vinci da tratamiento a cuatro de los cinco tipos de '
+											t('El sistema da Vinci da tratamiento a cuatro de los cinco tipos de ')
 										}
 									</tspan>
 									<tspan x={0} y={359}>
 										{
-											'c\xE1ncer m\xE1s frecuente en Colombia: c\xE1ncer de pr\xF3stata, c\xE1ncer de '
+											t('c\xE1ncer m\xE1s frecuente en Colombia: c\xE1ncer de pr\xF3stata, c\xE1ncer de ')
 										}
 									</tspan>
 									<tspan x={0} y={387}>
 										{
-											'est\xF3mago, c\xE1ncer de pulm\xF3n, c\xE1ncer colorrectal y muchas m\xE1s '
+											t('est\xF3mago, c\xE1ncer de pulm\xF3n, c\xE1ncer colorrectal y muchas m\xE1s ')
 										}
 									</tspan>
 									<tspan x={0} y={415}>
-										{'patolog\xEDas.'}
+										{t('patolog\xEDas.')}
 									</tspan>
 								</text>
 								<g
@@ -188,7 +190,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 									className="f-robotic-surgery"
 									transform="translate(960 54)">
 									<tspan x={-125.412} y={0}>
-										{'SOLUCIONES EN SALUD'}
+										{t('SOLUCIONES EN SALUD')}
 									</tspan>
 								</text>
 								<g
@@ -238,7 +240,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 											transform="translate(3835.929 5863.388)"
 											style={{ fill: openShow ? "#001f5f" : '#ffffff' }}>
 											<tspan x={0} y={0}>
-												{'Conoce M\xE1s'}
+												{t('Conoce M\xE1s')}
 											</tspan>
 										</text>
 									</g>
@@ -253,7 +255,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 									className="j-robotic-surgery"
 									transform="translate(232.852 49.768)">
 									<tspan x={-71.52} y={0}>
-										{'Volver'}
+										{t('Volver')}
 									</tspan>
 								</text>
 								</a>

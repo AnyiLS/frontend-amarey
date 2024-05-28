@@ -1,6 +1,8 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 const TopLeftAsta: React.FC<any> = ({onOpenPopup}): JSX.Element => {
+	const {t} = useTranslation()
 	return (
 		<React.Fragment>
 			<g transform='translate(300 170)'>
@@ -88,7 +90,7 @@ const TopLeftAsta: React.FC<any> = ({onOpenPopup}): JSX.Element => {
 							className="f-tt-8"
 							transform="translate(27 96.454)">
 							<tspan x={42.041} y={28}>
-								{'Nuestro origen'}
+								{t('Nuestro origen')}
 							</tspan>
 						</text>
 					</g>

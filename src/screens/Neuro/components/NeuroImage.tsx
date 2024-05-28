@@ -1,9 +1,11 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 const NeuroImage: React.FC<{ height: string; onClose: () => void }> = ({
 	height,
 	onClose,
 }) => {
+	const {t} = useTranslation()
 	return (
 		<div>
 			<svg
@@ -77,7 +79,7 @@ const NeuroImage: React.FC<{ height: string; onClose: () => void }> = ({
 				</g>
 				<text className="g-neuro" transform="translate(960 597.762)">
 					<tspan x={-358.188} y={0}>
-						{'Neurointervencionismo'}
+						{t('Neurointervencionismo')}
 					</tspan>
 				</text>
 				<path
@@ -88,37 +90,37 @@ const NeuroImage: React.FC<{ height: string; onClose: () => void }> = ({
 				<text className="i-neuro" transform="translate(278 700.762)">
 					<tspan x={0} y={23}>
 						{
-							'La ciencia viene evolucionando en forma r\xE1pida para identificar y tratar esta patolog\xEDa conocida como ictus, '
+							t('La ciencia viene evolucionando en forma r\xE1pida para identificar y tratar esta patolog\xEDa conocida como ictus, ')
 						}
 					</tspan>
 					<tspan x={0} y={51}>
 						{
-							'dividido entre isqu\xE9mico (trombo) y hemorr\xE1gico (aneurisma), donde el neurointervencionismo como disciplina '
+							t('dividido entre isqu\xE9mico (trombo) y hemorr\xE1gico (aneurisma), donde el neurointervencionismo como disciplina ')
 						}
 					</tspan>
 					<tspan x={0} y={79}>
 						{
-							'joven se va consolidando como alternativa para determinados casos. '
+							t('joven se va consolidando como alternativa para determinados casos. ')
 						}
 					</tspan>
 					<tspan x={0} y={107} />
 					<tspan x={0} y={135}>
 						{
-							'Nuestro portafolio es reconocido por su calidad y renombre, con fortalezas en opciones de ACCESO, una gran '
+							t('Nuestro portafolio es reconocido por su calidad y renombre, con fortalezas en opciones de ACCESO, una gran ')
 						}
 					</tspan>
 					<tspan x={0} y={163}>
 						{
-							'variedad de Coils y una tecnolog\xEDa \xFAnica para trombectom\xEDa, incluyendo una estructura de log\xEDstica inversa que '
+							t('variedad de Coils y una tecnolog\xEDa \xFAnica para trombectom\xEDa, incluyendo una estructura de log\xEDstica inversa que ')
 						}
 					</tspan>
 					<tspan x={0} y={191}>
 						{
-							'nos permite asegurar un servicio de alta calidad para los requerimientos de tiempo y disponibilidad en las '
+							t('nos permite asegurar un servicio de alta calidad para los requerimientos de tiempo y disponibilidad en las ')
 						}
 					</tspan>
 					<tspan x={0} y={219}>
-						{'ventanas terap\xE9uticas. '}
+						{t('ventanas terap\xE9uticas. ')}
 					</tspan>
 				</text>
 				<path
@@ -168,7 +170,7 @@ const NeuroImage: React.FC<{ height: string; onClose: () => void }> = ({
 						className="d-neuro"
 						transform="translate(232.852 75.529)">
 						<tspan x={-71.52} y={0}>
-							{'Volver'}
+							{t('Volver')}
 						</tspan>
 					</text>
 				</a>

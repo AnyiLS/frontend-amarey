@@ -1,6 +1,7 @@
 import React from 'react'
 import { Carousel } from 'flowbite-react'
 import useGeneral from 'hooks/general.hook'
+import { useTranslation } from 'react-i18next'
 
 export const CarouselMovil: React.FC = () => {
 	const { width } = useGeneral()
@@ -10,6 +11,8 @@ export const CarouselMovil: React.FC = () => {
 	const [step, setStep] = React.useState<number>(0)
 	const [showPopup, setShowPopup] = React.useState<boolean>(false)
 	const [mute, setMute] = React.useState(true)
+
+	const {t} = useTranslation()
 
 	React.useEffect(() => {
 		if (document.getElementById('navbar__container')) {
@@ -177,14 +180,14 @@ export const CarouselMovil: React.FC = () => {
 											y={15}
 											xmlSpace="preserve">
 											{
-												'Un compromiso inquebrantable                  '
+												t('Un compromiso inquebrantable')
 											}
 										</tspan>
 										<tspan
 											className="g-bienvenida-1"
 											x={-115.071}
 											y={37}>
-											{'con la salud y la vida'}
+											{t('con la salud y la vida')}
 										</tspan>
 									</text>
 									<g transform="translate(-51.186 -361.837)">
@@ -308,7 +311,7 @@ export const CarouselMovil: React.FC = () => {
 								className="t-bienvenida-1"
 								transform="translate(52.483 460.518) rotate(-76)" onClick={() => setSelectedImage('d')}>
 								<tspan x={0} y={0}>
-									{'Conoce Más'}
+									{t('Conoce Más')}
 								</tspan>
 							</text>
 						</g>
@@ -427,7 +430,7 @@ export const CarouselMovil: React.FC = () => {
 										className="g-carousel-welcome-2"
 										transform="translate(81.714 28.584)">
 										<tspan x={0} y={0}>
-											{'Conoce Más'}
+											{t('Conoce Más')}
 										</tspan>
 									</text>
 								</g>
@@ -437,18 +440,18 @@ export const CarouselMovil: React.FC = () => {
 									transform="translate(45.358 577.356)">
 									<tspan x={7.554} y={15}>
 										{
-											'Llevando la precisión quirúrgica más allá '
+											t('Llevando la precisión quirúrgica más allá ')
 										}
 									</tspan>
 									<tspan x={39.402} y={33}>
-										{'de los límites de nuestras manos'}
+										{t('de los límites de nuestras manos')}
 									</tspan>
 								</text>
 								<text
 									className="i-carousel-welcome-2"
 									transform="translate(220 531.356)">
 									<tspan x={-119.552} y={32}>
-										{'Robot davinci'}
+										{t('Robot davinci')}
 									</tspan>
 								</text>
 							</g>
@@ -462,7 +465,7 @@ export const CarouselMovil: React.FC = () => {
 									className="n-carousel-welcome-2"
 									transform="translate(68.462 495.922) rotate(-77)">
 									<tspan x={0} y={0}>
-										{'Conoce Más'}
+										{t('Conoce Más')}
 									</tspan>
 								</text>
 							</g>
@@ -569,23 +572,23 @@ export const CarouselMovil: React.FC = () => {
 									className="f-carousel-welcome-3"
 									transform="translate(210 568.356)">
 									<tspan x={-72.71} y={21}>
-										{'desarrollo de '}
+										{t('desarrollo de ')}
 									</tspan>
 									<tspan x={-108.163} y={45}>
-										{'tecnología en salud'}
+										{t('tecnología en salud')}
 									</tspan>
 								</text>
 								<text
 									className="g-carousel-welcome-3"
 									transform="translate(92.51 514.356)">
 									<tspan x={6.364} y={15}>
-										{'Representamos las marcas '}
+										{t('Representamos las marcas ')}
 									</tspan>
 									<tspan x={12.412} y={33}>
-										{'de mayor prestigio a nivel '}
+										{t('de mayor prestigio a nivel ')}
 									</tspan>
 									<tspan x={8.924} y={51}>
-										{'mundial en investigación y'}
+										{t('mundial en investigación y')}
 									</tspan>
 								</text>
 								<a href="/nuestros-aliados">
@@ -605,7 +608,7 @@ export const CarouselMovil: React.FC = () => {
 										className="i-carousel-welcome-3"
 										transform="translate(81.714 28.584)">
 										<tspan x={0} y={0}>
-											{'Conoce Más'}
+											{t('Conoce Más')}
 										</tspan>
 									</text>
 								</g>
@@ -621,7 +624,7 @@ export const CarouselMovil: React.FC = () => {
 									className="n-carousel-welcome-3"
 									transform="translate(68.462 495.922) rotate(-77)">
 									<tspan x={0} y={0}>
-										{'Conoce Más'}
+										{t('Conoce Más')}
 									</tspan>
 								</text>
 							</g>
@@ -734,13 +737,13 @@ export const CarouselMovil: React.FC = () => {
 									className="f-pentagrama"
 									transform="translate(50 1530)">
 									<tspan x={0} y={15}>
-										{'Conoce más de '}
+										{t('Conoce más de ')}
 									</tspan>
 									<tspan x={0} y={33}>
-										{'Grupo Amarey dando'}
+										{t('Grupo Amarey dando')}
 									</tspan>
 									<tspan x={0} y={51}>
-										{'clic en cada uno '}
+										{t('clic en cada uno ')}
 									</tspan>
 								</text>
 							</g>
@@ -753,13 +756,13 @@ export const CarouselMovil: React.FC = () => {
 								className="h-pentagrama"
 								transform="translate(210 116.557)">
 								<tspan x={-102.024} y={18}>
-									{'El origen de nuestra '}
+									{t('El origen de nuestra ')}
 								</tspan>
 								<tspan x={-129.438} y={37}>
-									{'historia es hoy la esencia '}
+									{t('historia es hoy la esencia ')}
 								</tspan>
 								<tspan x={-87.678} y={56}>
-									{'de nuestra marca'}
+									{t('de nuestra marca')}
 								</tspan>
 							</text>
 							<g transform="translate(184.884 718.571)">
@@ -780,7 +783,7 @@ export const CarouselMovil: React.FC = () => {
 										className="i-pentagrama"
 										transform="translate(72.852 15.238)">
 										<tspan x={-46.928} y={0}>
-											{'Volver'}
+											{t('Volver')}
 										</tspan>
 									</text>
 								</g>
@@ -1002,13 +1005,13 @@ export const CarouselMovil: React.FC = () => {
 									className="g-pentagrama"
 									transform="translate(71 1530)">
 									<tspan x={0} y={15}>
-										{'Conoce más de '}
+										{t('Conoce más de')}
 									</tspan>
 									<tspan x={0} y={33}>
-										{'Amarey dando clic '}
+										{t('Amarey dando clic')}
 									</tspan>
 									<tspan x={0} y={51}>
-										{'en cada uno '}
+										{t('en cada uno')}
 									</tspan>
 								</text>
 							</g>
@@ -1048,7 +1051,7 @@ export const CarouselMovil: React.FC = () => {
 										className="j-pentagrama"
 										transform="translate(72.852 15.238)">
 										<tspan x={-46.928} y={0}>
-											{'Volver'}
+											{t('Volver')}
 										</tspan>
 									</text>
 								</g>
@@ -1104,7 +1107,7 @@ export const CarouselMovil: React.FC = () => {
 											className="m-pentagrama"
 											transform="translate(15.74 56.229)">
 											<tspan x={10.373} y={18}>
-												{'Nuestro origen'}
+												{t('Nuestro origen')}
 											</tspan>
 										</text>
 									</g>
@@ -1409,13 +1412,13 @@ export const CarouselMovil: React.FC = () => {
 									className="f-pentagrama"
 									transform="translate(71 1530)">
 									<tspan x={0} y={15}>
-										{'Conoce más de '}
+										{t('Conoce más de ')}
 									</tspan>
 									<tspan x={0} y={33}>
-										{'Amarey dando clic '}
+										{t('Amarey dando clic ')}
 									</tspan>
 									<tspan x={0} y={51}>
-										{'en cada uno '}
+										{t('en cada uno ')}
 									</tspan>
 								</text>
 							</g>
@@ -1453,7 +1456,7 @@ export const CarouselMovil: React.FC = () => {
 										className="i-pentagrama"
 										transform="translate(72.852 15.238)">
 										<tspan x={-46.928} y={0}>
-											{'Volver'}
+											{t('Volver')}
 										</tspan>
 									</text>
 								</g>
@@ -1510,7 +1513,7 @@ export const CarouselMovil: React.FC = () => {
 											className="n-pentagrama"
 											transform="translate(18.74 57.229)">
 											<tspan x={2.171} y={18}>
-												{'Nuestra historia '}
+												{t('Nuestra historia ')}
 											</tspan>
 										</text>
 									</g>
@@ -1741,13 +1744,13 @@ export const CarouselMovil: React.FC = () => {
 									className="f-pentagrama"
 									transform="translate(71 1530)">
 									<tspan x={0} y={15}>
-										{'Conoce más de '}
+										{t('Conoce más de ')}
 									</tspan>
 									<tspan x={0} y={33}>
-										{'Amarey dando clic '}
+										{t('Amarey dando clic ')}
 									</tspan>
 									<tspan x={0} y={51}>
-										{'en cada uno '}
+										{t('en cada uno ')}
 									</tspan>
 								</text>
 							</g>
@@ -1787,7 +1790,7 @@ export const CarouselMovil: React.FC = () => {
 										className="i-pentagrama"
 										transform="translate(72.852 15.238)">
 										<tspan x={-46.928} y={0}>
-											{'Volver'}
+											{t('Volver')}
 										</tspan>
 									</text>
 								</g>
@@ -1853,7 +1856,7 @@ export const CarouselMovil: React.FC = () => {
 											className="n-pentagrama"
 											transform="translate(12.74 56.229)">
 											<tspan x={0.117} y={18}>
-												{'Nuestros aliados '}
+												{t('Nuestros aliados ')}
 											</tspan>
 										</text>
 									</g>
@@ -2074,13 +2077,13 @@ export const CarouselMovil: React.FC = () => {
 									className="f-pentagrama"
 									transform="translate(71 1530)">
 									<tspan x={0} y={15}>
-										{'Conoce más de '}
+										{t('Conoce más de ')}
 									</tspan>
 									<tspan x={0} y={33}>
-										{'Amarey dando clic '}
+										{t('Amarey dando clic ')}
 									</tspan>
 									<tspan x={0} y={51}>
-										{'en cada uno '}
+										{t('en cada uno ')}
 									</tspan>
 								</text>
 							</g>
@@ -2120,7 +2123,7 @@ export const CarouselMovil: React.FC = () => {
 										className="i-pentagrama"
 										transform="translate(72.852 15.238)">
 										<tspan x={-46.928} y={0}>
-											{'Volver'}
+											{t('Volver')}
 										</tspan>
 									</text>
 								</g>
@@ -2197,7 +2200,7 @@ export const CarouselMovil: React.FC = () => {
 											className="n-pentagrama"
 											transform="translate(23.74 56.229)">
 											<tspan x={35.3} y={18}>
-												{'Filosofía '}
+												{t('Filosofía ')}
 											</tspan>
 										</text>
 									</g>
@@ -2406,13 +2409,13 @@ export const CarouselMovil: React.FC = () => {
 									className="f-pentagrama"
 									transform="translate(71 1530)">
 									<tspan x={0} y={15}>
-										{'Conoce más de '}
+										{t('Conoce más de ')}
 									</tspan>
 									<tspan x={0} y={33}>
-										{'Amarey dando clic '}
+										{t('Amarey dando clic ')}
 									</tspan>
 									<tspan x={0} y={51}>
-										{'en cada uno '}
+										{t('en cada uno ')}
 									</tspan>
 								</text>
 							</g>
@@ -2452,7 +2455,7 @@ export const CarouselMovil: React.FC = () => {
 										className="i-pentagrama"
 										transform="translate(72.852 15.238)">
 										<tspan x={-46.928} y={0}>
-											{'Volver'}
+											{t('Volver')}
 										</tspan>
 									</text>
 								</g>
@@ -2539,7 +2542,7 @@ export const CarouselMovil: React.FC = () => {
 											className="n-pentagrama"
 											transform="translate(27.74 56.229)">
 											<tspan x={64.685} y={18}>
-												{'RSE'}
+												{t('RSE')}
 											</tspan>
 										</text>
 									</g>

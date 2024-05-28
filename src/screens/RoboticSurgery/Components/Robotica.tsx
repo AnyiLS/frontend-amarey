@@ -1,9 +1,11 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 const Robotica: React.FC<{ height: string; onClose: () => void }> = ({
 	height,
 	onClose,
 }) => {
+	const {t} = useTranslation()
 	return (
 		<div>
 			<svg
@@ -76,85 +78,85 @@ const Robotica: React.FC<{ height: string; onClose: () => void }> = ({
 				</text>
 				<text className="g-robotica" transform="translate(414.577 642)">
 					<tspan x={-69.392} y={30}>
-						{'Paciente'}
+						{t('Paciente')}
 					</tspan>
 				</text>
 				<text className="g-robotica" transform="translate(964.577 642)">
 					<tspan x={-68.752} y={30}>
-						{'Cirujano'}
+						{t('Cirujano')}
 					</tspan>
 				</text>
 				<text
 					className="g-robotica"
 					transform="translate(1502.577 642)">
 					<tspan x={-85.072} y={30}>
-						{'Instituci\xF3n'}
+						{t('Instituci\xF3n')}
 					</tspan>
 				</text>
 				<text
 					className="h-robotica"
 					transform="translate(207.577 706.204)">
 					<tspan x={0} y={23}>
-						{'Menor tiempo de hospitalizaci\xF3n. '}
+						{t('Menor tiempo de hospitalizaci\xF3n. ')}
 					</tspan>
 					<tspan x={0} y={51}>
-						{'Recuperaci\xF3n con menos dolor y riesgo '}
+						{t('Recuperaci\xF3n con menos dolor y riesgo ')}
 					</tspan>
 					<tspan x={0} y={79}>
-						{'de infecci\xF3n. '}
+						{t('de infecci\xF3n. ')}
 					</tspan>
 					<tspan x={0} y={107}>
-						{'Cicatrices m\xE1s peque\xF1as. '}
+						{t('Cicatrices m\xE1s peque\xF1as. ')}
 					</tspan>
 					<tspan x={0} y={135}>
-						{'R\xE1pido retorno a las actividades '}
+						{t('R\xE1pido retorno a las actividades ')}
 					</tspan>
 					<tspan x={0} y={163}>
-						{'diarias. '}
+						{t('diarias. ')}
 					</tspan>
 					<tspan x={0} y={191}>
-						{'Mejor calidad de vida. '}
+						{t('Mejor calidad de vida. ')}
 					</tspan>
 				</text>
 				<text
 					className="h-robotica"
 					transform="translate(763.577 706.204)">
 					<tspan x={0} y={23}>
-						{'Movimientos intuitivos. Rotaci\xF3n de '}
+						{t('Movimientos intuitivos. Rotaci\xF3n de ')}
 					</tspan>
 					<tspan x={0} y={51}>
-						{'540\xB0, articulaci\xF3n de 180\xB0.'}
+						{t('540\xB0, articulaci\xF3n de 180\xB0.')}
 					</tspan>
 					<tspan x={0} y={79}>
-						{'Visi\xF3n 3D y magnificaci\xF3n 10X.'}
+						{t('Visi\xF3n 3D y magnificaci\xF3n 10X.')}
 					</tspan>
 					<tspan x={0} y={107}>
-						{'Mayor visi\xF3n, control y ergonom\xEDa. '}
+						{t('Mayor visi\xF3n, control y ergonom\xEDa. ')}
 					</tspan>
 					<tspan x={0} y={135}>
-						{'Mayor precisi\xF3n y seguridad. '}
+						{t('Mayor precisi\xF3n y seguridad. ')}
 					</tspan>
 				</text>
 				<text
 					className="h-robotica"
 					transform="translate(1305.577 706.204)">
 					<tspan x={0} y={23}>
-						{'Innovaci\xF3n y diferenciaci\xF3n. '}
+						{t('Innovaci\xF3n y diferenciaci\xF3n. ')}
 					</tspan>
 					<tspan x={0} y={51}>
-						{'Investigaci\xF3n y academia. '}
+						{t('Investigaci\xF3n y academia. ')}
 					</tspan>
 					<tspan x={0} y={79}>
-						{'Tecnolog\xEDa de vanguardia. '}
+						{t('Tecnolog\xEDa de vanguardia. ')}
 					</tspan>
 					<tspan x={0} y={107}>
-						{'Atracci\xF3n de nuevos pacientes y '}
+						{t('Atracci\xF3n de nuevos pacientes y ')}
 					</tspan>
 					<tspan x={0} y={135}>
-						{'cirujanos. '}
+						{t('cirujanos. ')}
 					</tspan>
 					<tspan x={0} y={163}>
-						{'Mejores resultados cl\xEDnicos. '}
+						{t('Mejores resultados cl\xEDnicos. ')}
 					</tspan>
 				</text>
 				<g transform="translate(1288.577 710.807)">
@@ -295,7 +297,7 @@ const Robotica: React.FC<{ height: string; onClose: () => void }> = ({
 				</g>
 				<text className="n-robotica cursor-pointer" transform="translate(962.577 492)">
 					<tspan x={-263.34} y={0}>
-						{'CIRUG\xCDA ROB\xD3TICA '}
+						{t('CIRUG\xCDA ROB\xD3TICA ')}
 					</tspan>
 				</text>
 				<g transform="translate(142.577 26.768)">
