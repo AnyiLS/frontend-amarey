@@ -1,7 +1,10 @@
 import React from 'react'
 import { TimeLine } from '../HistoriaMobile'
+import { useTranslation } from 'react-i18next'
 
 const Component20234: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => {
+  const { t } = useTranslation()
+
 	return (
 		<React.Fragment>
 			<svg viewBox="85 0 414 485.06" preserveAspectRatio="none">
@@ -165,25 +168,25 @@ const Component20234: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => 
         </g>
         <text className="h-time-line" transform="translate(293.09 172.093)">
           <tspan x={0} y={11}>
-            {"Se inaugura el Centro de "}
+            {t("Se inaugura el Centro de ")}
           </tspan>
           <tspan x={0} y={25}>
-            {"Distribución Logística – CEDI "}
+            {t("Distribución Logística – CEDI ")}
           </tspan>
           <tspan x={0} y={39}>
-            {"en la zona industrial de "}
+            {t("en la zona industrial de ")}
           </tspan>
           <tspan x={0} y={53}>
-            {"Montevideo en Bogotá, con "}
+            {t("Montevideo en Bogotá, con ")}
           </tspan>
           <tspan x={0} y={67}>
-            {"el objetivo de lograr mejores "}
+            {t("el objetivo de lograr mejores ")}
           </tspan>
           <tspan x={0} y={81}>
-            {"niveles de servicio logístico "}
+            {t("niveles de servicio logístico ")}
           </tspan>
           <tspan x={0} y={95}>
-            {"para los clientes."}
+            {t("para los clientes.")}
           </tspan>
         </text>
         <g transform="translate(112.09 167.525)">
@@ -222,7 +225,7 @@ const Component20234: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => 
           />
           <text className="l-time-line" transform="translate(16.928 16.788)">
             <tspan x={0} y={0}>
-              {"Avanzar"}
+              {t("Avanzar")}
             </tspan>
           </text>
         </g>
@@ -434,7 +437,7 @@ const Component20234: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => 
           />
           <text className="l-time-line" transform="translate(21.907 16.788)">
             <tspan x={0} y={0}>
-              {"Regresar"}
+              {t("Regresar")}
             </tspan>
           </text>
         </g>

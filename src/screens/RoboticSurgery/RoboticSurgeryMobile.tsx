@@ -1,9 +1,13 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const RoboticSurgeryMobile: React.FC = (): JSX.Element => {
 	/** States */
 	const [view, setView] = React.useState<number>(0)
 	const [height, setHeight] = React.useState<number>(0)
+
+	const {t} = useTranslation()
+
 
 	React.useEffect(() => {
 		if (document.getElementById('navbar__container')) setHeight(document.getElementById('navbar__container')?.clientHeight ?? 0)
@@ -86,7 +90,7 @@ const RoboticSurgeryMobile: React.FC = (): JSX.Element => {
 							className="d-reward-2-mobile"
 							transform="translate(207 360)">
 							<tspan x={-111.312} y={0}>
-								{'CIRUGÍA ROBÓTICA'}
+								{t('CIRUGÍA ROBÓTICA')}
 							</tspan>
 						</text>
 						<text
@@ -94,74 +98,74 @@ const RoboticSurgeryMobile: React.FC = (): JSX.Element => {
 							transform="translate(35 396)">
 							<tspan x={0} y={13}>
 								{
-									'Una extensión natural de los ojos, a través de '
+									t('Una extensión natural de los ojos, a través de ')
 								}
 							</tspan>
 							<tspan x={0} y={31}>
 								{
-									'una visión en 3D y magnificación hasta 10 veces. '
+									t('una visión en 3D y magnificación hasta 10 veces. ')
 								}
 							</tspan>
 							<tspan x={0} y={49}>
-								{'Movimientos intuitivos con mayor rango de '}
+								{t('Movimientos intuitivos con mayor rango de ')}
 							</tspan>
 							<tspan x={0} y={67}>
 								{
-									'movimiento que exceden las capacidades de la '
+									t('movimiento que exceden las capacidades de la ')
 								}
 							</tspan>
 							<tspan x={0} y={85}>
-								{'mano humana. '}
+								{t('mano humana. ')}
 							</tspan>
 							<tspan x={0} y={103} />
 							<tspan x={0} y={121}>
 								{
-									'Somos el comercializador del sistema quirúrgico '
+									t('Somos el comercializador del sistema quirúrgico ')
 								}
 							</tspan>
 							<tspan x={0} y={139}>
 								{
-									'da Vinci, con una experiencia de más de 3.000 '
+									t('da Vinci, con una experiencia de más de 3.000 ')
 								}
 							</tspan>
 							<tspan x={0} y={157}>
-								{'cirugías en nuestro país, una sofisticada '}
+								{t('cirugías en nuestro país, una sofisticada ')}
 							</tspan>
 							<tspan x={0} y={175}>
 								{
-									'plataforma robótica que permite potenciar las '
+									t('plataforma robótica que permite potenciar las ')
 								}
 							</tspan>
 							<tspan x={0} y={193}>
 								{
-									'capacidades del cirujano y ofrecer una opción '
+									t('capacidades del cirujano y ofrecer una opción ')
 								}
 							</tspan>
 							<tspan x={0} y={211}>
-								{'mínimamente invasiva en procedimientos de '}
+								{t('mínimamente invasiva en procedimientos de ')}
 							</tspan>
 							<tspan x={0} y={229} xmlSpace="preserve">
-								{'cirugía compleja.  '}
+								{t('cirugía compleja.  ')}
 							</tspan>
 							<tspan x={0} y={247} />
 							<tspan x={0} y={265}>
 								{
-									'El sistema da Vinci da tratamiento a cuatro de '
+									t('El sistema da Vinci da tratamiento a cuatro de ')
 								}
 							</tspan>
 							<tspan x={0} y={283}>
-								{'los cinco tipos de cáncer más frecuente en '}
+								{t('los cinco tipos de cáncer más frecuente en ')}
 							</tspan>
 							<tspan x={0} y={301}>
-								{'Colombia: cáncer de próstata, cáncer de '}
+								{t('Colombia: cáncer de próstata, cáncer de ')}
 							</tspan>
 							<tspan x={0} y={319}>
 								{
-									'estómago, cáncer de pulmón, cáncer colorrectal '
+									t('estómago, cáncer de pulmón, cáncer colorrectal ')
 								}
 							</tspan>
 							<tspan x={0} y={337}>
-								{'y muchas más patologías.'}
+								{t('y muchas más patologías.')}
 							</tspan>
 						</text>
 						<g
@@ -178,7 +182,7 @@ const RoboticSurgeryMobile: React.FC = (): JSX.Element => {
 							className="g-reward-2-mobile"
 							transform="translate(207 26)">
 							<tspan x={-101.322} y={0}>
-								{'Soluciones en salud'}
+								{t('Soluciones en salud ')}
 							</tspan>
 						</text>
 						<g transform="translate(366.585 13.292)" onClick={() => window.location.href = '/productos'}>
@@ -204,7 +208,7 @@ const RoboticSurgeryMobile: React.FC = (): JSX.Element => {
 								className="g-reward-2-mobile"
 								transform="translate(55.5 28.584)">
 								<tspan x={0} y={0}>
-									{'Conoce Más'}
+									{t('Conoce Más')}
 								</tspan>
 							</text>
 						</g>
@@ -295,67 +299,67 @@ const RoboticSurgeryMobile: React.FC = (): JSX.Element => {
 							className="e-reward-2-mobile"
 							transform="translate(207 294)">
 							<tspan x={-111.312} y={0}>
-								{'CIRUGÍA ROBÓTICA'}
+								{t('CIRUGÍA ROBÓTICA')}
 							</tspan>
 						</text>
 						<text
 							className="f-reward-2-mobile"
 							transform="translate(75 395)">
 							<tspan x={0} y={13}>
-								{'Menor tiempo de hospitalización. '}
+								{t('Menor tiempo de hospitalización. ')}
 							</tspan>
 							<tspan x={0} y={31}>
-								{'Recuperación con menos dolor y riesgo de '}
+								{t('Recuperación con menos dolor y riesgo de')}
 							</tspan>
 							<tspan x={0} y={49}>
-								{'infección. '}
+								{t('infección. ')}
 							</tspan>
 							<tspan x={0} y={67}>
-								{'Cicatrices más pequeñas. '}
+								{t('Cicatrices más pequeñas. ')}
 							</tspan>
 							<tspan x={0} y={85}>
-								{'Rápido retorno a las actividades diarias. '}
+								{t('Rápido retorno a las actividades diarias.')}
 							</tspan>
 							<tspan x={0} y={103}>
-								{'Mejor calidad de vida. '}
+								{t('Mejor calidad de vida. ')}
 							</tspan>
 						</text>
 						<text
 							className="f-reward-2-mobile"
 							transform="translate(75 541)">
 							<tspan x={0} y={13}>
-								{'Movimientos intuitivos. Rotación de 540°, '}
+								{t('Movimientos intuitivos. Rotación de 540°,')}
 							</tspan>
 							<tspan x={0} y={31}>
-								{'articulación de 180°.'}
+								{t('articulación de 180°.')}
 							</tspan>
 							<tspan x={0} y={49}>
-								{'Visión 3D y magnificación 10X.'}
+								{t('Visión 3D y magnificación 10X.')}
 							</tspan>
 							<tspan x={0} y={67}>
-								{'Mayor visión, control y ergonomía. '}
+								{t('Mayor visión, control y ergonomía. ')}
 							</tspan>
 							<tspan x={0} y={85}>
-								{'Mayor precisión y seguridad.'}
+								{t('Mayor precisión y seguridad.')}
 							</tspan>
 						</text>
 						<text
 							className="f-reward-2-mobile"
 							transform="translate(75 669)">
 							<tspan x={0} y={13}>
-								{'Innovación y diferenciación. '}
+								{t('Innovación y diferenciación. ')}
 							</tspan>
 							<tspan x={0} y={31}>
-								{'Investigación y academia. '}
+								{t('Investigación y academia. ')}
 							</tspan>
 							<tspan x={0} y={49}>
-								{'Tecnología de vanguardia. '}
+								{t('Tecnología de vanguardia. ')}
 							</tspan>
 							<tspan x={0} y={67}>
-								{'Atracción de nuevos pacientes y cirujanos. '}
+								{t('Atracción de nuevos pacientes y cirujanos. ')}
 							</tspan>
 							<tspan x={0} y={85}>
-								{'Mejores resultados clínicos. '}
+								{t('Mejores resultados clínicos. ')}
 							</tspan>
 						</text>
 						<g
@@ -379,28 +383,28 @@ const RoboticSurgeryMobile: React.FC = (): JSX.Element => {
 							className="j-reward-2-mobile"
 							transform="translate(207 350)">
 							<tspan x={-131.808} y={0}>
-								{'Beneficios de la cirugía robótica:'}
+								{t('Beneficios de la cirugía robótica:')}
 							</tspan>
 						</text>
 						<text
 							className="k-reward-2-mobile"
 							transform="translate(207 385)">
 							<tspan x={-34.696} y={0}>
-								{'Paciente'}
+								{t('Paciente')}
 							</tspan>
 						</text>
 						<text
 							className="k-reward-2-mobile"
 							transform="translate(207 529)">
 							<tspan x={-34.376} y={0}>
-								{'Cirujano'}
+								{t('Cirujano')}
 							</tspan>
 						</text>
 						<text
 							className="k-reward-2-mobile"
 							transform="translate(207 661)">
 							<tspan x={-42.536} y={0}>
-								{'Institución'}
+								{t('Institución')}
 							</tspan>
 						</text>
 						<circle
@@ -463,7 +467,7 @@ const RoboticSurgeryMobile: React.FC = (): JSX.Element => {
 							className="m-reward-2-mobile"
 							transform="translate(207 26)">
 							<tspan x={-101.322} y={0}>
-								{'Soluciones en salud'}
+								{t('Soluciones en salud ')}
 							</tspan>
 						</text>
 						<g

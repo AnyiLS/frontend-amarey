@@ -5,6 +5,7 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import Swal from 'sweetalert2'
 import './Nav.css'
+import { useTranslation } from 'react-i18next'
 
 export const NavbarMovil: React.FC = () => {
 	/** States */
@@ -19,6 +20,8 @@ export const NavbarMovil: React.FC = () => {
 		register,
 		reset,
 	} = useForm({ mode: 'onChange' })
+
+	const { t } = useTranslation()
 
 	const handleSentContact = (data: any) => {
 		if (isValid && accept) {
@@ -527,7 +530,7 @@ export const NavbarMovil: React.FC = () => {
 											? 'translate(0 161)'
 											: 'translate(0 0)'
 									}>
-									{/* <g transform="translate(3 568.613)">
+									<g transform="translate(3 568.613)">
 										<g
 											className="u-navbar-mobile"
 											transform="matrix(1, 0, 0, 1, -9, -574.61)">
@@ -555,7 +558,7 @@ export const NavbarMovil: React.FC = () => {
 												{'Ucitech'}
 											</tspan>
 										</text>
-									</g> */}
+									</g>
 									<g transform="translate(3 461.534)">
 										<g
 											onClick={() =>
@@ -586,7 +589,7 @@ export const NavbarMovil: React.FC = () => {
 												className="l-navbar-mobile"
 												transform="translate(40 74.466)">
 												<tspan x={0} y={15}>
-													{'Contáctenos'}
+													{t('Contáctenos')}
 												</tspan>
 											</text>
 											<g transform="translate(192.696 0)">
@@ -645,7 +648,7 @@ export const NavbarMovil: React.FC = () => {
 											className="l-navbar-mobile"
 											transform="translate(40 9.942)">
 											<tspan x={0} y={15}>
-												{'Trabaje con nosotros'}
+												{t('Trabaje con nosotros')}
 											</tspan>
 										</text>
 									</g>
@@ -679,7 +682,7 @@ export const NavbarMovil: React.FC = () => {
 											className="l-navbar-mobile"
 											transform="translate(40 10.204)">
 											<tspan x={0} y={15}>
-												{'Ética y compliance​'}
+												{t('Ética y compliance​')}
 											</tspan>
 										</text>
 									</g>
@@ -710,7 +713,7 @@ export const NavbarMovil: React.FC = () => {
 											className="l-navbar-mobile"
 											transform="translate(40 10.467)">
 											<tspan x={0} y={15}>
-												{'Actualidad​'}
+												{t('Actualidad​')}
 											</tspan>
 										</text>
 									</g>
@@ -741,7 +744,7 @@ export const NavbarMovil: React.FC = () => {
 											className="l-navbar-mobile"
 											transform="translate(40 10.729)">
 											<tspan x={0} y={15}>
-												{'Soluciones en salud​'}
+												{t('Soluciones en salud​')}
 											</tspan>
 										</text>
 									</g>
@@ -772,7 +775,7 @@ export const NavbarMovil: React.FC = () => {
 											className="l-navbar-mobile"
 											transform="translate(40 9.991)">
 											<tspan x={0} y={15}>
-												{'Trayectoria'}
+												{t('Trayectoria')}
 											</tspan>
 										</text>
 									</g>
@@ -805,7 +808,7 @@ export const NavbarMovil: React.FC = () => {
 											className="l-navbar-mobile"
 											transform="translate(40 9.222)">
 											<tspan x={0} y={15}>
-												{'Home'}
+												{t('Home')}
 											</tspan>
 										</text>
 									</g>
@@ -1344,7 +1347,7 @@ export const NavbarMovil: React.FC = () => {
 											(window.location.href = '/historia')
 										}>
 										<tspan x={0} y={0}>
-											{'Nuestra Historia'}
+											{t('Nuestra Historia')}
 										</tspan>
 									</text>
 									<text
@@ -1355,7 +1358,7 @@ export const NavbarMovil: React.FC = () => {
 												'/filosofia')
 										}>
 										<tspan x={0} y={0}>
-											{'Filosofía'}
+											{t('Filosofía')}
 										</tspan>
 									</text>
 									<text
@@ -1366,7 +1369,7 @@ export const NavbarMovil: React.FC = () => {
 												'/reconocimientos')
 										}>
 										<tspan x={0} y={0}>
-											{'Reconocimientos'}
+											{t('Reconocimientos')}
 										</tspan>
 									</text>
 									<text
@@ -1377,7 +1380,7 @@ export const NavbarMovil: React.FC = () => {
 												'/responsabilidad')
 										}>
 										<tspan x={0} y={0}>
-											{'RSE'}
+											{t('RSE')}
 										</tspan>
 									</text>
 									<g transform="translate(2 724.613)">
@@ -1438,7 +1441,7 @@ export const NavbarMovil: React.FC = () => {
 											className="n-navbar-mobile"
 											transform="translate(40 74.466)">
 											<tspan x={0} y={15}>
-												{'Contáctenos'}
+												{t('Contáctenos')}
 											</tspan>
 										</text>
 										<g transform="translate(192.696 0)">
@@ -1491,7 +1494,7 @@ export const NavbarMovil: React.FC = () => {
 											className="n-navbar-mobile"
 											transform="translate(40 9.942)">
 											<tspan x={0} y={15}>
-												{'Trabaje con nosotros'}
+												{t('Trabaje con nosotros')}
 											</tspan>
 										</text>
 									</g>
@@ -1525,7 +1528,7 @@ export const NavbarMovil: React.FC = () => {
 											className="n-navbar-mobile"
 											transform="translate(40 10.204)">
 											<tspan x={0} y={15}>
-												{'Ética y compliance​'}
+												{t('Ética y compliance​')}
 											</tspan>
 										</text>
 									</g>
@@ -1556,7 +1559,7 @@ export const NavbarMovil: React.FC = () => {
 											className="n-navbar-mobile"
 											transform="translate(40 10.467)">
 											<tspan x={0} y={15}>
-												{'Actualidad​'}
+												{t('Actualidad​')}
 											</tspan>
 										</text>
 									</g>
@@ -1587,7 +1590,7 @@ export const NavbarMovil: React.FC = () => {
 											className="n-navbar-mobile"
 											transform="translate(40 10.729)">
 											<tspan x={0} y={15}>
-												{'Soluciones en salud​'}
+												{t('Soluciones en salud​')}
 											</tspan>
 										</text>
 									</g>
@@ -1618,7 +1621,7 @@ export const NavbarMovil: React.FC = () => {
 											className="n-navbar-mobile"
 											transform="translate(40 9.991)">
 											<tspan x={0} y={15}>
-												{'Trayectoria'}
+												{t('Trayectoria')}
 											</tspan>
 										</text>
 									</g>
@@ -2164,7 +2167,7 @@ export const NavbarMovil: React.FC = () => {
 												'/nuestros-aliados')
 										}>
 										<tspan x={0} y={0}>
-											{'Nuestros aliados'}
+											{t('Nuestros aliados')}
 										</tspan>
 									</text>
 									<text
@@ -2175,7 +2178,7 @@ export const NavbarMovil: React.FC = () => {
 												'/biomedico')
 										}>
 										<tspan x={0} y={0}>
-											{'Mantenimiento Biomédico'}
+											{t('Mantenimiento Biomédico')}
 										</tspan>
 									</text>
 									<text
@@ -2186,7 +2189,7 @@ export const NavbarMovil: React.FC = () => {
 												'/productos')
 										}>
 										<tspan x={0} y={0}>
-											{'Soluciones en salud​'}
+											{t('Soluciones en salud​')}
 										</tspan>
 									</text>
 									<line
@@ -2258,7 +2261,7 @@ export const NavbarMovil: React.FC = () => {
 												className="m-navbar-mobile"
 												transform="translate(40 74.466)">
 												<tspan x={0} y={15}>
-													{'Contáctenos'}
+													{t('Contáctenos')}
 												</tspan>
 											</text>
 											<g transform="translate(192.696 0)">
@@ -2312,7 +2315,7 @@ export const NavbarMovil: React.FC = () => {
 											className="m-navbar-mobile"
 											transform="translate(40 9.942)">
 											<tspan x={0} y={15}>
-												{'Trabaje con nosotros'}
+												{t('Trabaje con nosotros')}
 											</tspan>
 										</text>
 									</g>
@@ -2346,7 +2349,7 @@ export const NavbarMovil: React.FC = () => {
 											className="m-navbar-mobile"
 											transform="translate(40 10.204)">
 											<tspan x={0} y={15}>
-												{'Ética y compliance​'}
+												{t('Ética y compliance​')}
 											</tspan>
 										</text>
 									</g>
@@ -2377,7 +2380,7 @@ export const NavbarMovil: React.FC = () => {
 											className="m-navbar-mobile"
 											transform="translate(40 10.467)">
 											<tspan x={0} y={15}>
-												{'Actualidad​'}
+												{t('Actualidad​')}
 											</tspan>
 										</text>
 									</g>
@@ -2408,7 +2411,7 @@ export const NavbarMovil: React.FC = () => {
 											className="m-navbar-mobile"
 											transform="translate(40 10.729)">
 											<tspan x={0} y={15}>
-												{'Soluciones en salud​'}
+												{t('Soluciones en salud​')}
 											</tspan>
 										</text>
 									</g>
@@ -2439,7 +2442,7 @@ export const NavbarMovil: React.FC = () => {
 											className="m-navbar-mobile"
 											transform="translate(40 9.991)">
 											<tspan x={0} y={15}>
-												{'Trayectoria'}
+												{t('Trayectoria')}
 											</tspan>
 										</text>
 									</g>
@@ -2895,16 +2898,18 @@ export const NavbarMovil: React.FC = () => {
 											(window.location.href = '/eventos')
 										}>
 										<tspan x={0} y={0}>
-											{'Eventos'}
+											{t('Eventos')}
 										</tspan>
 									</text>
-									{/* <text
+									<a href="/noticias">
+									<text
 										className="c-navbar-mobile"
 										transform="translate(77 474)">
 										<tspan x={0} y={0}>
-											{'Noticias'}
+											{t('Noticias')}
 										</tspan>
-									</text> */}
+									</text>
+									</a>
 									
 									<line
 										className="d-navbar-mobile"
@@ -2970,7 +2975,7 @@ export const NavbarMovil: React.FC = () => {
 											className="m-navbar-mobile"
 											transform="translate(40 74.466)">
 											<tspan x={0} y={15}>
-												{'Contáctenos'}
+												{t('Contáctenos')}
 											</tspan>
 										</text>
 										<g transform="translate(192.696 0)">
@@ -3023,7 +3028,7 @@ export const NavbarMovil: React.FC = () => {
 											className="m-navbar-mobile"
 											transform="translate(40 9.942)">
 											<tspan x={0} y={15}>
-												{'Trabaje con nosotros'}
+												{t('Trabaje con nosotros')}
 											</tspan>
 										</text>
 									</g>
@@ -3057,7 +3062,7 @@ export const NavbarMovil: React.FC = () => {
 											className="m-navbar-mobile"
 											transform="translate(40 10.204)">
 											<tspan x={0} y={15}>
-												{'Ética y compliance​'}
+												{t('Ética y compliance​')}
 											</tspan>
 										</text>
 									</g>
@@ -3088,7 +3093,7 @@ export const NavbarMovil: React.FC = () => {
 											className="m-navbar-mobile"
 											transform="translate(40 10.467)">
 											<tspan x={0} y={15}>
-												{'Actualidad​'}
+												{t('Actualidad​')}
 											</tspan>
 										</text>
 									</g>
@@ -3119,7 +3124,7 @@ export const NavbarMovil: React.FC = () => {
 											className="m-navbar-mobile"
 											transform="translate(40 10.729)">
 											<tspan x={0} y={15}>
-												{'Soluciones en salud​'}
+												{t('Soluciones en salud​')}
 											</tspan>
 										</text>
 									</g>
@@ -3150,7 +3155,7 @@ export const NavbarMovil: React.FC = () => {
 											className="m-navbar-mobile"
 											transform="translate(40 9.991)">
 											<tspan x={0} y={15}>
-												{'Trayectoria'}
+												{t('Trayectoria')}
 											</tspan>
 										</text>
 									</g>

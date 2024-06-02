@@ -155,16 +155,19 @@ const SubmenuActualidad: React.FC<{ ref: any }> = ({ ref }) => {
 					d="M66.392,0,0,206.606H607.96L674.352,0Z"
 					transform="translate(525 103.094)"
 				/>
+				
+				<a href="/noticias">
 				<path
 					className="j-submenu-p"
 					d="M66.392,0,0,206.606H607.96L674.352,0Z"
 					transform="translate(525 103.094)"
 				/>
-				{/* <text className="k-submenu-p" transform="translate(712 265)">
+				<text className="k-submenu-p" transform="translate(712 265)">
 					<tspan x={78.168} y={24}>
 						{'nOTICIAS'}
 					</tspan>
-				</text> */}
+				</text>
+				</a>
 				<path
 					className="l-submenu-p"
 					d="M692.66,0,626.268,206.606h607.96L1300.62,0Z"

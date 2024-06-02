@@ -1,7 +1,10 @@
 import React from 'react'
 import { TimeLine } from '../HistoriaMobile'
+import { useTranslation } from 'react-i18next'
 
 const Component20231: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => {
+  const { t } = useTranslation()
+
 	return (
 		<React.Fragment>
 			<svg viewBox="85 0 414 485.06" preserveAspectRatio="none">
@@ -218,22 +221,22 @@ const Component20231: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => 
         </g>
         <text className="k-time-line" transform="translate(128.09 179.093)">
           <tspan x={0} y={11}>
-            {"El portafolio del Grupo "}
+            {t("El portafolio del Grupo ")}
           </tspan>
           <tspan x={0} y={25} xmlSpace="preserve">
-            {"Amarey sigue creciendo   "}
+            {t("Amarey sigue creciendo   ")}
           </tspan>
           <tspan x={0} y={39} xmlSpace="preserve">
-            {"con la representación de  "}
+            {t("con la representación de  ")}
           </tspan>
           <tspan x={0} y={53}>
-            {"KLS Martin para ortopedia "}
+            {t("KLS Martin para ortopedia ")}
           </tspan>
           <tspan x={0} y={67}>
-            {"cráneo maxilofacial, "}
+            {t("cráneo maxilofacial, ")}
           </tspan>
           <tspan x={0} y={81}>
-            {"instrumental y esterilización."}
+            {t("instrumental y esterilización.")}
           </tspan>
         </text>
         <g transform="translate(311.798 167.525)">
@@ -272,7 +275,7 @@ const Component20231: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => 
           />
           <text className="o-time-line" transform="translate(16.928 16.788)">
             <tspan x={0} y={0}>
-              {"Avanzar"}
+              {t("Avanzar")}
             </tspan>
           </text>
         </g>
@@ -484,7 +487,7 @@ const Component20231: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => 
           />
           <text className="o-time-line" transform="translate(21.907 16.788)">
             <tspan x={0} y={0}>
-              {"Regresar"}
+              {t("Regresar")}
             </tspan>
           </text>
         </g>

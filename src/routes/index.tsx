@@ -10,6 +10,8 @@ import Biomedico from 'components/Biomedico/Biomedico'
 import Eventos from 'components/Eventos/Eventos'
 import Filosofia from 'components/Filosofia/Filosofia'
 import TrabajeNosotros from 'components/TrabajeNosotros/TrabajeNosotros'
+import Noticias from 'components/Noticias/Noticias'
+import Detalle1mobil from 'components/Noticias/detalle1mobil'
 
 const useRouter = () => {
 	const {
@@ -69,6 +71,14 @@ const useRouter = () => {
 		{
 			path: 'eventos',
 			element: <Eventos />,
+		},
+		{
+			path: 'noticias',
+			element: <Noticias />,
+		},
+		{
+			path: 'noticias/detalle',
+			element: <Detalle1mobil />,
 		},
 		{
 			path: 'filosofia',

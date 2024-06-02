@@ -1,9 +1,12 @@
 import React from 'react'
 import PortfolioCarousel from './components/PortfolioCarousel'
+import { useTranslation } from 'react-i18next'
 
 export const PortafolioMovil: React.FC = () => {
 	/** States */
 	const [isCarousel, setIsCarousel] = React.useState<boolean>(false)
+
+	const {t} = useTranslation()
 
 	return (
 		<React.Fragment>
@@ -83,27 +86,27 @@ export const PortafolioMovil: React.FC = () => {
 							className="e-portfolio"
 							transform="translate(210 654.159)">
 							<tspan x={-149.093} y={13}>
-								{'Somos un grupo empresarial con una clara '}
+								{t('Somos un grupo empresarial con una clara ')}
 							</tspan>
 							<tspan x={-166.887} y={29}>
 								{
-									'inspiración profesional y humana; ofrecemos un '
+									t('inspiración profesional y humana; ofrecemos un ')
 								}
 							</tspan>
 							<tspan x={-166.481} y={45}>
 								{
-									'portafolio de soluciones en salud de la más alta '
+									t('portafolio de soluciones en salud de la más alta ')
 								}
 							</tspan>
 							<tspan x={-143.325} y={61}>
-								{'calidad para el cuidado de los pacientes. '}
+								{t('calidad para el cuidado de los pacientes. ')}
 							</tspan>
 						</text>
 						<text
 							className="f-portfolio"
 							transform="translate(210 553.524)">
 							<tspan x={-140.3} y={46}>
-								{'Portafolio '}
+								{t('Portafolio')}
 							</tspan>
 						</text>
 						<g
@@ -122,7 +125,7 @@ export const PortafolioMovil: React.FC = () => {
 								className="g-portfolio"
 								transform="translate(147.5 4342.584)">
 								<tspan x={0} y={0}>
-									{'Conoce Más'}
+									{t('Conoce Más')}
 								</tspan>
 							</text>
 						</g>

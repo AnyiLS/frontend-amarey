@@ -1,11 +1,15 @@
 import useGeneral from 'hooks/general.hook'
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 const MedicinesMobile: React.FC = (): JSX.Element => {
 	const { width } = useGeneral();
 	/** States */
 	const [view, setView] = React.useState<number>(0)
 	const [height, setHeight] = React.useState<number>(0)
+
+	const {t} = useTranslation()
+
 
 	React.useEffect(() => {
 		if (document.getElementById('navbar__container')) setHeight(document.getElementById('navbar__container')?.clientHeight ?? 0)
@@ -88,30 +92,30 @@ const MedicinesMobile: React.FC = (): JSX.Element => {
 							className="c-reward-2-mobile"
 							transform="translate(207 623)">
 							<tspan x={-97.428} y={0}>
-								{'MEDICAMENTOS '}
+								{t('MEDICAMENTOS ')}
 							</tspan>
 						</text>
 						<text
 							className="d-reward-2-mobile"
 							transform="translate(36 653)">
 							<tspan x={0} y={13}>
-								{'Con medicamentos de la más alta tecnología '}
+								{t('Con medicamentos de la más alta tecnología  ')}
 							</tspan>
 							<tspan x={0} y={31}>
 								{
-									'para el cuidado de la salud de los pacientes, ya '
+									t('para el cuidado de la salud de los pacientes, ya ')
 								}
 							</tspan>
 							<tspan x={0} y={49}>
 								{
-									'sea adultos, niños o neonatos, ofrecemos mayor '
+									t('sea adultos, niños o neonatos, ofrecemos mayor ')
 								}
 							</tspan>
 							<tspan x={0} y={67}>
-								{'eficacia y tolerabilidad al paciente en '}
+								{t('eficacia y tolerabilidad al paciente en ')}
 							</tspan>
 							<tspan x={0} y={85}>
-								{'productos.'}
+								{t('productos.')}
 							</tspan>
 						</text>
 						<g
@@ -128,7 +132,7 @@ const MedicinesMobile: React.FC = (): JSX.Element => {
 							className="f-reward-2-mobile"
 							transform="translate(207 26)">
 							<tspan x={-101.322} y={0}>
-								{'Soluciones en salud'}
+								{t('Soluciones en salud ')}
 							</tspan>
 						</text>
 						<g transform="translate(366.585 13.292)" onClick={() => window.location.href = '/productos'}>
@@ -153,7 +157,7 @@ const MedicinesMobile: React.FC = (): JSX.Element => {
 								transform="translate(55.5 28.584)"
 								onClick={() => setView(1)}>
 								<tspan x={0} y={0}>
-									{'Conoce Más'}
+									{t('Conoce Más')}
 								</tspan>
 							</text>
 						</g>
@@ -253,34 +257,34 @@ const MedicinesMobile: React.FC = (): JSX.Element => {
 							className="f-reward-2-mobile"
 							transform="translate(215 464)">
 							<tspan x={-97.428} y={0}>
-								{'MEDICAMENTOS '}
+								{t('MEDICAMENTOS  ')}
 							</tspan>
 						</text>
 						<text
 							className="g-reward-2-mobile"
 							transform="translate(60 543)">
 							<tspan x={0} y={13}>
-								{'Trasplantes '}
+								{t('Trasplantes ')}
 							</tspan>
 							<tspan x={0} y={31} />
 							<tspan x={0} y={49}>
-								{'Hemoderivados '}
+								{t('Hemoderivados ')}
 							</tspan>
 							<tspan x={0} y={67} />
 							<tspan x={0} y={85} xmlSpace="preserve">
-								{'Antibióticos  '}
+								{t('Antibióticos  ')}
 							</tspan>
 							<tspan x={0} y={103} />
 							<tspan x={0} y={121}>
-								{'Reumatología '}
+								{t('Reumatología ')}
 							</tspan>
 							<tspan x={0} y={139} />
 							<tspan x={0} y={157} xmlSpace="preserve">
-								{'Respiratoria  '}
+								{t('Respiratoria  ')}
 							</tspan>
 							<tspan x={0} y={175} />
 							<tspan x={0} y={193}>
-								{'UCI Neonatología '}
+								{t('UCI Neonatología')}
 							</tspan>
 							<tspan x={0} y={211} />
 						</text>
@@ -288,24 +292,24 @@ const MedicinesMobile: React.FC = (): JSX.Element => {
 							className="g-reward-2-mobile"
 							transform="translate(233 543)">
 							<tspan x={0} y={13} xmlSpace="preserve">
-								{'UCI Pediátrica  '}
+								{t('UCI Pediátrica  ')}
 							</tspan>
 							<tspan x={0} y={31} />
 							<tspan x={0} y={49}>
-								{'UCI Adultos '}
+								{t('UCI Adultos ')}
 							</tspan>
 							<tspan x={0} y={67} />
 							<tspan x={0} y={85}>
-								{'Dolor '}
+								{t('Dolor ')}
 							</tspan>
 							<tspan x={0} y={103} />
 							<tspan x={0} y={121}>
-								{'Genética y genómica '}
+								{t('Genética y genómica ')}
 							</tspan>
 							<tspan x={0} y={139} />
 							<tspan className="h-reward-2-mobile">
 								<tspan x={0} y={157}>
-									{'Neurointervencionismo '}
+									{t('Neurointervencionismo ')}
 								</tspan>
 								<tspan x={0} y={175} />
 							</tspan>
@@ -331,7 +335,7 @@ const MedicinesMobile: React.FC = (): JSX.Element => {
 							className="l-reward-2-mobile"
 							transform="translate(215 484)">
 							<tspan x={-82.088} y={0}>
-								{'especializados para:'}
+								{t('especializados para:')}
 							</tspan>
 						</text>
 						<circle
@@ -440,7 +444,7 @@ const MedicinesMobile: React.FC = (): JSX.Element => {
 							className="r-reward-2-mobile"
 							transform="translate(215 26)">
 							<tspan x={-101.322} y={0}>
-								{'Soluciones en salud'}
+								{t('Soluciones en salud ')}
 							</tspan>
 						</text>
 						<g

@@ -1,7 +1,10 @@
 import React from 'react'
 import { TimeLine } from '../HistoriaMobile'
+import { useTranslation } from 'react-i18next'
 
 const Component20121: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => {
+  const { t } = useTranslation()
+
 	return (
 		<React.Fragment>
 			<svg viewBox="85 0 414 485.06" preserveAspectRatio="none">
@@ -261,7 +264,7 @@ const Component20121: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => 
           />
           <text className="o-time-line" transform="translate(16.928 16.788)">
             <tspan x={0} y={0}>
-              {"Avanzar"}
+              {t("Avanzar")}
             </tspan>
           </text>
         </g>
@@ -473,7 +476,7 @@ const Component20121: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => 
           />
           <text className="o-time-line" transform="translate(21.907 16.788)">
             <tspan x={0} y={0}>
-              {"Regresar"}
+              {t("Regresar")}
             </tspan>
           </text>
         </g>

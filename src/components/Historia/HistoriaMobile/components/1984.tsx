@@ -1,7 +1,9 @@
 import React from 'react'
 import { TimeLine } from '../HistoriaMobile'
+import { useTranslation } from 'react-i18next'
 
 const Component1984: React.FC<TimeLine> = ({ onNext }): JSX.Element => {
+	const { t } = useTranslation()
 	return (
 		<React.Fragment>
 			<svg viewBox="85 0 414 485.06" preserveAspectRatio="none">
@@ -223,25 +225,25 @@ const Component1984: React.FC<TimeLine> = ({ onNext }): JSX.Element => {
 							className="k-time-line"
 							transform="translate(294.09 172.093)">
 							<tspan x={0} y={11}>
-								{'Nace Amarey Nova Medical '}
+								{t('Nace Amarey Nova Medical')}
 							</tspan>
 							<tspan x={0} y={25}>
-								{'al obtener la distribución '}
+								{t('al obtener la distribución')}
 							</tspan>
 							<tspan x={0} y={39}>
-								{'de la inmunoglobulina '}
+								{t('de la inmunoglobulina')}
 							</tspan>
 							<tspan x={0} y={53}>
-								{'humana IgG enriquecida, '}
+								{t('humana IgG enriquecida,')}
 							</tspan>
 							<tspan x={0} y={67}>
-								{'que le dio vida al '}
+								{t('que le dio vida al')}
 							</tspan>
 							<tspan x={0} y={81}>
-								{'pentámero que ha sido el '}
+								{t('pentámero que ha sido el ')}
 							</tspan>
 							<tspan x={0} y={95}>
-								{'símbolo de la compañía.'}
+								{t('símbolo de la compañía. ')}
 							</tspan>
 						</text>
 						<g transform="translate(112.09 167.525)">
@@ -290,7 +292,7 @@ const Component1984: React.FC<TimeLine> = ({ onNext }): JSX.Element => {
 								className="o-time-line"
 								transform="translate(16.928 16.788)">
 								<tspan x={0} y={0}>
-									{'Avanzar'}
+									{t('Avanzar')}
 								</tspan>
 							</text>
 						</g>

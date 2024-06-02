@@ -1,13 +1,19 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 	/** States */
 	const [view, setView] = React.useState<number>(0)
+	const { t } = useTranslation()
 
 	return (
 		<React.Fragment>
 			{view === 0 ? (
-				<svg viewBox="106 0 414 960" preserveAspectRatio='none' width='100%' height='100vh'>
+				<svg
+					viewBox="106 0 414 960"
+					preserveAspectRatio="none"
+					width="100%"
+					height="100vh">
 					<defs>
 						<style>
 							{
@@ -208,7 +214,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 						className="m-portfolio-1"
 						transform="translate(320 165.842)">
 						<tspan x={-140.3} y={46}>
-							{'Portafolio '}
+							{t('Portafolio')}
 						</tspan>
 					</text>
 					<g transform="translate(316.562 869.166)" onClick={onClose}>
@@ -227,7 +233,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								className="o-portfolio-1"
 								transform="translate(72.852 15.238)">
 								<tspan x={-46.928} y={0}>
-									{'Volver'}
+									{t('Volver')}
 								</tspan>
 							</text>
 						</g>
@@ -258,10 +264,10 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										className="s-portfolio-1"
 										transform="translate(72.297 208.235)">
 										<tspan x={-22.923} y={0}>
-											{'Logistica'}
+											{t('Logistica')}
 										</tspan>
 										<tspan x={-27.747} y={10}>
-											{'hospitalario'}
+											{t('hospitalario')}
 										</tspan>
 									</text>
 								</g>
@@ -290,7 +296,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										className="s-portfolio-1"
 										transform="translate(71.47 211.235)">
 										<tspan x={-28.985} y={0}>
-											{'Equipos médicos'}
+											{t('Equipos médicos')}
 										</tspan>
 									</text>
 								</g>
@@ -316,7 +322,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 											className="v-portfolio-1"
 											transform="translate(100.446 268.095)">
 											<tspan x={-60.417} y={0}>
-												{'Medicamentos'}
+												{t('Medicamentos')}
 											</tspan>
 										</text>
 									</g>
@@ -387,7 +393,11 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					</g>
 				</svg>
 			) : view === 1 ? (
-				<svg viewBox="106 0 414 960" preserveAspectRatio='none' width='100%' height='100vh'>
+				<svg
+					viewBox="106 0 414 960"
+					preserveAspectRatio="none"
+					width="100%"
+					height="100vh">
 					<defs>
 						<style>
 							{
@@ -588,7 +598,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 						className="m-portfolio-1"
 						transform="translate(320 165.842)">
 						<tspan x={-140.3} y={46}>
-							{'Portafolio '}
+							{t('Portafolio ')}
 						</tspan>
 					</text>
 					<g transform="translate(316.562 869.166)" onClick={onClose}>
@@ -607,7 +617,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								className="o-portfolio-1"
 								transform="translate(72.852 15.238)">
 								<tspan x={-46.928} y={0}>
-									{'Volver'}
+									{t('Volver')}
 								</tspan>
 							</text>
 						</g>
@@ -638,7 +648,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										className="s-portfolio-1"
 										transform="translate(72.297 208.235)">
 										<tspan x={-33.269} y={0}>
-											{'Medicamentos'}
+											{t('Medicamentos')}
 										</tspan>
 									</text>
 								</g>
@@ -667,10 +677,10 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										className="s-portfolio-1"
 										transform="translate(71.47 211.235)">
 										<tspan x={-27.112} y={0}>
-											{'Dispositivos'}
+											{t('Dispositivos')}
 										</tspan>
 										<tspan x={-43.843} y={9}>
-											{'m\xE9dico-quir\xFArgicos'}
+											{t('médico-quirúrgicos')}
 										</tspan>
 									</text>
 								</g>
@@ -696,7 +706,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 											className="v-portfolio-1"
 											transform="translate(86.446 268.095)">
 											<tspan x={-54.451} y={0}>
-												{'Equipos m\xE9dicos'}
+												{t('Equipos médicos')}
 											</tspan>
 										</text>
 									</g>
@@ -765,7 +775,11 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					</g>
 				</svg>
 			) : view === 2 ? (
-				<svg viewBox="106 0 414 960" preserveAspectRatio='none' width='100%' height='100vh'>
+				<svg
+					viewBox="106 0 414 960"
+					preserveAspectRatio="none"
+					width="100%"
+					height="100vh">
 					<defs>
 						<style>
 							{
@@ -966,7 +980,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 						className="m-portfolio-1"
 						transform="translate(320 165.842)">
 						<tspan x={-140.3} y={46}>
-							{'Portafolio '}
+							{t('Portafolio ')}
 						</tspan>
 					</text>
 					<g transform="translate(316.562 869.166)" onClick={onClose}>
@@ -985,7 +999,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								className="o-portfolio-1"
 								transform="translate(72.852 15.238)">
 								<tspan x={-46.928} y={0}>
-									{'Volver'}
+									{t('Volver')}
 								</tspan>
 							</text>
 						</g>
@@ -1017,7 +1031,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 											className="s-portfolio-1"
 											transform="translate(72.297 208.235)">
 											<tspan x={-37.696} y={0}>
-												{'Equipos m\xE9dicos'}
+												{t('Equipos médicos')}
 											</tspan>
 										</text>
 									</g>
@@ -1047,7 +1061,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										className="s-portfolio-1"
 										transform="translate(71.47 211.235)">
 										<tspan x={-23.251} y={0}>
-											{'Ortopedia'}
+											{t('Ortopedia')}
 										</tspan>
 									</text>
 								</g>
@@ -1073,10 +1087,10 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 											className="v-portfolio-1"
 											transform="translate(86.446 268.095)">
 											<tspan x={-39.162} y={0}>
-												{'Dispositivos'}
+												{t('Dispositivos')}
 											</tspan>
 											<tspan x={-63.329} y={14}>
-												{'m\xE9dico-quir\xFArgicos'}
+												{t('médico-quirúrgicos')}
 											</tspan>
 										</text>
 									</g>
@@ -1145,7 +1159,11 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					</g>
 				</svg>
 			) : view === 3 ? (
-				<svg viewBox="106 0 414 960" preserveAspectRatio='none' width='100%' height='100vh'>
+				<svg
+					viewBox="106 0 414 960"
+					preserveAspectRatio="none"
+					width="100%"
+					height="100vh">
 					<defs>
 						<style>
 							{
@@ -1346,7 +1364,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 						className="m-portfolio-1"
 						transform="translate(320 165.842)">
 						<tspan x={-140.3} y={46}>
-							{'Portafolio '}
+							{t('Portafolio ')}
 						</tspan>
 					</text>
 					<g transform="translate(316.562 869.166)" onClick={onClose}>
@@ -1365,7 +1383,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								className="o-portfolio-1"
 								transform="translate(72.852 15.238)">
 								<tspan x={-46.928} y={0}>
-									{'Volver'}
+									{t('Volver')}
 								</tspan>
 							</text>
 						</g>
@@ -1396,10 +1414,10 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										className="s-portfolio-1"
 										transform="translate(72.297 208.235)">
 										<tspan x={-24.1} y={0}>
-											{'Dispositivos'}
+											{t('Dispositivos')}
 										</tspan>
 										<tspan x={-38.972} y={9}>
-											{'m\xE9dico-quir\xFArgicos'}
+											{t('médico-quirúrgicos')}
 										</tspan>
 									</text>
 								</g>
@@ -1428,7 +1446,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										className="s-portfolio-1"
 										transform="translate(71.47 211.235)">
 										<tspan x={-38.218} y={0}>
-											{'Cirug\xEDa rob\xF3tica '}
+											{t('Cirugía robótica')}
 										</tspan>
 									</text>
 								</g>
@@ -1454,7 +1472,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 											className="v-portfolio-1"
 											transform="translate(100.446 268.095)">
 											<tspan x={-48.055} y={0}>
-												{'Ortopedia'}
+												{t('Ortopedia')}
 											</tspan>
 										</text>
 									</g>
@@ -1523,7 +1541,11 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					</g>
 				</svg>
 			) : view === 4 ? (
-				<svg viewBox="106 0 414 960" preserveAspectRatio='none' width='100%' height='100vh'>
+				<svg
+					viewBox="106 0 414 960"
+					preserveAspectRatio="none"
+					width="100%"
+					height="100vh">
 					<defs>
 						<style>
 							{
@@ -1724,7 +1746,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 						className="m-portfolio-1"
 						transform="translate(320 165.842)">
 						<tspan x={-140.3} y={46}>
-							{'Portafolio '}
+							{t('Portafolio ')}
 						</tspan>
 					</text>
 					<g transform="translate(316.562 869.166)" onClick={onClose}>
@@ -1743,7 +1765,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								className="o-portfolio-1"
 								transform="translate(72.852 15.238)">
 								<tspan x={-46.928} y={0}>
-									{'Volver'}
+									{t('Volver')}
 								</tspan>
 							</text>
 						</g>
@@ -1774,7 +1796,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										className="s-portfolio-1"
 										transform="translate(72.297 208.235)">
 										<tspan x={-23.251} y={0}>
-											{'Ortopedia'}
+											{t('Ortopedia')}
 										</tspan>
 									</text>
 								</g>
@@ -1803,10 +1825,10 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										className="s-portfolio-1"
 										transform="translate(71.47 211.235)">
 										<tspan x={-22.923} y={0}>
-											{'Gen\xF3mica'}
+											{t('Genómica')}
 										</tspan>
 										<tspan x={-23.747} y={10}>
-											{'y gen\xE9tica'}
+											{t('y genética')}
 										</tspan>
 									</text>
 								</g>
@@ -1832,7 +1854,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 											className="v-portfolio-1"
 											transform="translate(86.446 268.095)">
 											<tspan x={-53.528} y={0}>
-												{'Cirug\xEDa rob\xF3tica'}
+												{t('Cirugía robótica')}
 											</tspan>
 										</text>
 									</g>
@@ -1901,7 +1923,11 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					</g>
 				</svg>
 			) : view === 5 ? (
-				<svg viewBox="106 0 414 960" preserveAspectRatio='none' width='100%' height='100vh'>
+				<svg
+					viewBox="106 0 414 960"
+					preserveAspectRatio="none"
+					width="100%"
+					height="100vh">
 					<defs>
 						<style>
 							{
@@ -2102,7 +2128,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 						className="m-portfolio-1"
 						transform="translate(320 165.842)">
 						<tspan x={-140.3} y={46}>
-							{'Portafolio '}
+							{t('Portafolio ')}
 						</tspan>
 					</text>
 					<g transform="translate(316.562 869.166)" onClick={onClose}>
@@ -2121,7 +2147,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								className="o-portfolio-1"
 								transform="translate(72.852 15.238)">
 								<tspan x={-46.928} y={0}>
-									{'Volver'}
+									{t('Volver')}
 								</tspan>
 							</text>
 						</g>
@@ -2152,7 +2178,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										className="s-portfolio-1"
 										transform="translate(60.297 208.235)">
 										<tspan x={-23.251} y={0}>
-											{'Cirugia Robotica'}
+											{t('Cirugía robótica')}
 										</tspan>
 									</text>
 								</g>
@@ -2181,10 +2207,10 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										className="s-portfolio-1"
 										transform="translate(71.47 211.235)">
 										<tspan x={-22.923} y={0}>
-											{'Cuidado avanzado'}
+											{t('Cuidado avanzado')}
 										</tspan>
 										<tspan x={-15.747} y={10}>
-											{'de heridas'}
+											{t('de heridas')}
 										</tspan>
 									</text>
 								</g>
@@ -2210,10 +2236,10 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 											className="v-portfolio-1"
 											transform="translate(75.446 268.095)">
 											<tspan x={-22.923} y={0}>
-												{'Gen\xF3mica'}
+												{t('Genómica')}
 											</tspan>
 											<tspan x={-23.747} y={15}>
-												{'y gen\xE9tica'}
+												{t('y genética')}
 											</tspan>
 										</text>
 									</g>
@@ -2282,7 +2308,11 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					</g>
 				</svg>
 			) : view === 6 ? (
-				<svg viewBox="106 0 414 960" preserveAspectRatio='none' width='100%' height='100vh'>
+				<svg
+					viewBox="106 0 414 960"
+					preserveAspectRatio="none"
+					width="100%"
+					height="100vh">
 					<defs>
 						<style>
 							{
@@ -2483,7 +2513,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 						className="m-portfolio-1"
 						transform="translate(320 165.842)">
 						<tspan x={-140.3} y={46}>
-							{'Portafolio '}
+							{t('Portafolio ')}
 						</tspan>
 					</text>
 					<g transform="translate(316.562 869.166)" onClick={onClose}>
@@ -2502,7 +2532,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								className="o-portfolio-1"
 								transform="translate(72.852 15.238)">
 								<tspan x={-46.928} y={0}>
-									{'Volver'}
+									{t('Volver')}
 								</tspan>
 							</text>
 						</g>
@@ -2533,10 +2563,10 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										className="s-portfolio-1"
 										transform="translate(72.297 208.235)">
 										<tspan x={-22.923} y={0}>
-											{'Gen\xF3mica'}
+											{t('Genomics')}
 										</tspan>
 										<tspan x={-23.747} y={8}>
-											{'y gen\xE9tica'}
+											{t('y genética')}
 										</tspan>
 									</text>
 								</g>
@@ -2565,10 +2595,10 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										className="s-portfolio-1"
 										transform="translate(71.47 211.235)">
 										<tspan x={-28.985} y={0}>
-											{'Instrumental'}
+											{t('Instrumental')}
 										</tspan>
 										<tspan x={-34.056} y={8}>
-											{'y esterilizaci\xF3n'}
+											{t('y esterilización')}
 										</tspan>
 									</text>
 								</g>
@@ -2594,10 +2624,10 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 											className="v-portfolio-1"
 											transform="translate(86.446 268.095)">
 											<tspan x={-60.417} y={0}>
-												{'Cuidado avanzado'}
+												{t('Cuidado avanzado')}
 											</tspan>
 											<tspan x={-33.989} y={14}>
-												{'de heridas'}
+												{t('de heridas')}
 											</tspan>
 										</text>
 									</g>
@@ -2666,7 +2696,11 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					</g>
 				</svg>
 			) : view === 7 ? (
-				<svg viewBox="106 0 414 960" preserveAspectRatio='none' width='100%' height='100vh'>
+				<svg
+					viewBox="106 0 414 960"
+					preserveAspectRatio="none"
+					width="100%"
+					height="100vh">
 					<defs>
 						<style>
 							{
@@ -2867,7 +2901,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 						className="m-portfolio-1"
 						transform="translate(320 165.842)">
 						<tspan x={-140.3} y={46}>
-							{'Portafolio '}
+							{t('Portafolio ')}
 						</tspan>
 					</text>
 					<g transform="translate(316.562 869.166)" onClick={onClose}>
@@ -2886,7 +2920,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								className="o-portfolio-1"
 								transform="translate(72.852 15.238)">
 								<tspan x={-46.928} y={0}>
-									{'Volver'}
+									{t('Volver')}
 								</tspan>
 							</text>
 						</g>
@@ -2917,10 +2951,10 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										className="s-portfolio-1"
 										transform="translate(72.297 208.235)">
 										<tspan x={-41.827} y={0}>
-											{'Cuidado avanzado'}
+											{t('Cuidado avanzado')}
 										</tspan>
 										<tspan x={-23.531} y={9}>
-											{'de heridas'}
+											{t('de heridas')}
 										</tspan>
 									</text>
 								</g>
@@ -2949,7 +2983,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										className="s-portfolio-1"
 										transform="translate(71.47 211.235)">
 										<tspan x={-52.321} y={0}>
-											{'Neurointervencionismo'}
+											{t('Neurointervencionismo')}
 										</tspan>
 									</text>
 								</g>
@@ -2975,10 +3009,10 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 											className="v-portfolio-1"
 											transform="translate(86.446 268.095)">
 											<tspan x={-41.866} y={0}>
-												{'Instrumental'}
+												{t('Instrumental')}
 											</tspan>
 											<tspan x={-49.192} y={14}>
-												{'y esterilizaci\xF3n'}
+												{t('y esterilización')}
 											</tspan>
 										</text>
 									</g>
@@ -3047,7 +3081,11 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					</g>
 				</svg>
 			) : view === 8 ? (
-				<svg viewBox="106 0 414 960" preserveAspectRatio='none' width='100%' height='100vh'>
+				<svg
+					viewBox="106 0 414 960"
+					preserveAspectRatio="none"
+					width="100%"
+					height="100vh">
 					<defs>
 						<style>
 							{
@@ -3248,7 +3286,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 						className="m-portfolio-1"
 						transform="translate(320 165.842)">
 						<tspan x={-140.3} y={46}>
-							{'Portafolio '}
+							{t('Portafolio ')}
 						</tspan>
 					</text>
 					<g transform="translate(316.562 869.166)" onClick={onClose}>
@@ -3267,7 +3305,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								className="o-portfolio-1"
 								transform="translate(72.852 15.238)">
 								<tspan x={-46.928} y={0}>
-									{'Volver'}
+									{t('Volver')}
 								</tspan>
 							</text>
 						</g>
@@ -3298,10 +3336,10 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										className="s-portfolio-1"
 										transform="translate(72.297 208.235)">
 										<tspan x={-41.827} y={0}>
-											{'Instrumental'}
+											{t('Instrumental')}
 										</tspan>
 										<tspan x={-45.531} y={9}>
-											{'y esterilización'}
+											{t('y esterilización')}
 										</tspan>
 									</text>
 								</g>
@@ -3330,10 +3368,10 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										className="s-portfolio-1"
 										transform="translate(71.47 211.235)">
 										<tspan x={-20.466} y={0}>
-											{'Log\xEDstica'}
+											{t('Logística')}
 										</tspan>
 										<tspan x={-27.261} y={10}>
-											{'hospitalaria'}
+											{t('hospitalaria')}
 										</tspan>
 									</text>
 								</g>
@@ -3359,7 +3397,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 											className="v-portfolio-1"
 											transform="translate(60 268.095)">
 											<tspan x={-48.055} y={0}>
-												{'Neurointervencionismo'}
+												{(t('Neurointervencionismo'))}
 											</tspan>
 										</text>
 									</g>
@@ -3428,7 +3466,11 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					</g>
 				</svg>
 			) : view === 9 ? (
-				<svg viewBox="106 0 414 960" preserveAspectRatio='none' width='100%' height='100vh'>
+				<svg
+					viewBox="106 0 414 960"
+					preserveAspectRatio="none"
+					width="100%"
+					height="100vh">
 					<defs>
 						<style>
 							{
@@ -3629,7 +3671,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 						className="m-portfolio-1"
 						transform="translate(320 165.842)">
 						<tspan x={-140.3} y={46}>
-							{'Portafolio '}
+							{t('Portafolio ')}
 						</tspan>
 					</text>
 					<g transform="translate(316.562 869.166)" onClick={onClose}>
@@ -3648,7 +3690,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								className="o-portfolio-1"
 								transform="translate(72.852 15.238)">
 								<tspan x={-46.928} y={0}>
-									{'Volver'}
+									{t('Volver')}
 								</tspan>
 							</text>
 						</g>
@@ -3679,7 +3721,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										className="s-portfolio-1"
 										transform="translate(72.297 208.235)">
 										<tspan x={-41.827} y={0}>
-											{'Neurointervencionismo'}
+											{t('Neurointervencionismo')}
 										</tspan>
 									</text>
 								</g>
@@ -3708,7 +3750,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										className="s-portfolio-1"
 										transform="translate(71.47 211.235)">
 										<tspan x={-20.466} y={0}>
-											{'Medicamentos'}
+											{t('Medicamentos')}
 										</tspan>
 									</text>
 								</g>
@@ -3734,10 +3776,10 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 											className="v-portfolio-1"
 											transform="translate(75 268.095)">
 											<tspan x={-20.466} y={0}>
-												{'Log\xEDstica'}
+												{t('Logística')}
 											</tspan>
 											<tspan x={-27.261} y={15}>
-												{'hospitalaria'}
+												{t('hospitalaria')}
 											</tspan>
 										</text>
 									</g>

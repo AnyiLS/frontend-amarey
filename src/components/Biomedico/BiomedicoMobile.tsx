@@ -1,8 +1,12 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const BiomedicoMobile: React.FC = (): JSX.Element => {
 	/** States */
 	const [step, setStep] = React.useState<number>(0)
+
+	const { t } = useTranslation()
+
 
 	return (
 		<React.Fragment>
@@ -85,30 +89,30 @@ const BiomedicoMobile: React.FC = (): JSX.Element => {
 								className="e-reward-2-mobile"
 								transform="translate(208 624)">
 								<tspan x={-136.549} y={13}>
-									{'Somos la compañía de servicio técnico '}
+									{t('Somos la compañía de servicio técnico')}
 								</tspan>
 								<tspan x={-152.299} y={29}>
 									{
-										'biomédico más grande del país y la primera '
+										t('biomédico más grande del país y la primera')
 									}
 								</tspan>
 								<tspan x={-154.175} y={45} xmlSpace="preserve">
 									{
-										'empresa a nivel nacional en certificarse con     '
+										t('empresa a nivel nacional en certificarse con')
 									}
 								</tspan>
 								<tspan x={-137.179} y={61}>
-									{'la '}
+									{t(' la ')}
 								</tspan>
 								<tspan className="f-reward-2-mobile" y={61}>
-									{'norma ISO 13485 de ICONTEC'}
+									{t(' norma ISO 13485 de ICONTEC')}
 								</tspan>
 								<tspan y={61} xmlSpace="preserve">
-									{' para el '}
+									{t('para el')}
 								</tspan>
 								<tspan x={-142.142} y={77}>
 									{
-										'servicio técnico de dispositivos médicos. '
+										t(' servicio técnico de dispositivos médicos.')
 									}
 								</tspan>
 							</text>
@@ -116,10 +120,10 @@ const BiomedicoMobile: React.FC = (): JSX.Element => {
 								className="g-reward-2-mobile"
 								transform="translate(46 518)">
 								<tspan x={41.08} y={32}>
-									{'mantenimiento '}
+									{t('mantenimiento ')}
 								</tspan>
 								<tspan x={82.568} y={66}>
-									{'biomédico '}
+									{t('biomédico ')}
 								</tspan>
 							</text>
 							<g
@@ -150,7 +154,7 @@ const BiomedicoMobile: React.FC = (): JSX.Element => {
 									className="j-reward-2-mobile"
 									transform="translate(147.5 793.584)">
 									<tspan x={0} y={0}>
-										{'Conoce Más'}
+										{t('Conoce Más')}
 									</tspan>
 								</text>
 							</g>
@@ -251,29 +255,29 @@ const BiomedicoMobile: React.FC = (): JSX.Element => {
 								className="e-reward-2-mobile"
 								transform="translate(118.581 531)">
 								<tspan x={0} y={13}>
-									{'Ofrecemos soluciones de mantenimiento '}
+									{t('Ofrecemos soluciones de mantenimiento')}
 								</tspan>
 								<tspan x={0} y={29}>
-									{'biomédico'}
+									{t(' biomédico ')}
 								</tspan>
 								<tspan
 									className="f-reward-2-mobile"
 									y={29}
 									xmlSpace="preserve">
-									{' para todos los actores del sector '}
+									{t('para todos los actores del sector')}
 								</tspan>
 								<tspan
 									className="f-reward-2-mobile"
 									x={0}
 									y={45}>
-									{'salud. Nuestro apoyo es ejecutado con '}
+									{t('salud. Nuestro apoyo es ejecutado con')}
 								</tspan>
 								<tspan
 									className="f-reward-2-mobile"
 									x={0}
 									y={61}>
 									{
-										'entrenamiento, experiencia e innovación en los '
+										t('entrenamiento, experiencia e innovación en los')
 									}
 								</tspan>
 								<tspan
@@ -281,49 +285,49 @@ const BiomedicoMobile: React.FC = (): JSX.Element => {
 									x={0}
 									y={77}
 									xmlSpace="preserve">
-									{'procesos humanos y técnicos.  '}
+									{t('procesos humanos y técnicos.')}
 								</tspan>
 								<tspan className="f-reward-2-mobile">
 									<tspan x={0} y={93} />
 									<tspan x={0} y={109}>
-										{'Nuestro modelo de '}
+										{t('Nuestro modelo de')}
 									</tspan>
 									<tspan
 										className="g-reward-2-mobile"
 										y={109}>
-										{'mantenimiento inhouse y '}
+										{t('mantenimiento inhouse y')}
 									</tspan>
 									<tspan
 										className="g-reward-2-mobile"
 										x={0}
 										y={125}>
-										{'mantenimiento posventa'}
+										{t('mantenimiento posventa')}
 									</tspan>
 									<tspan y={125} xmlSpace="preserve">
-										{' nos permiten construir '}
+										{t('nos permiten construir')}
 									</tspan>
 									<tspan x={0} y={141}>
 										{
-											'soluciones personalizadas para cada cliente, '
+											t('soluciones personalizadas para cada cliente,')
 										}
 									</tspan>
 									<tspan x={0} y={157}>
 										{
-											'asegurando los más altos estándares de calidad '
+											t('asegurando los más altos estándares de calidad')
 										}
 									</tspan>
 									<tspan x={0} y={173}>
 										{
-											'y un plan de mantenimiento eficiente para toda '
+											t('y un plan de mantenimiento eficiente para toda')
 										}
 									</tspan>
 									<tspan x={0} y={189}>
-										{'la '}
+										{t('  la ')}
 									</tspan>
 									<tspan
 										className="g-reward-2-mobile"
 										y={189}>
-										{'tecnología biomédica involucrada. '}
+										{t(' tecnología biomédica involucrada. ')}
 									</tspan>
 								</tspan>
 							</text>
@@ -356,7 +360,7 @@ const BiomedicoMobile: React.FC = (): JSX.Element => {
 								className="j-reward-2-mobile"
 								transform="translate(270.081 813.584)">
 								<tspan x={0} y={0}>
-									{'Más'}
+									{t('Más')}
 								</tspan>
 							</text>
 							<g
@@ -373,7 +377,7 @@ const BiomedicoMobile: React.FC = (): JSX.Element => {
 								className="l-reward-2-mobile"
 								transform="translate(289.581 63)">
 								<tspan x={-93.114} y={0}>
-									{'Mantenimiento biomédico '}
+									{t('Mantenimiento biomédico')}
 								</tspan>
 							</text>
 							<path
@@ -493,26 +497,26 @@ const BiomedicoMobile: React.FC = (): JSX.Element => {
 								transform="translate(45 88)">
 								<tspan x={5.298} y={13}>
 									{
-										'Nuestras manos expertas pueden entender y '
+										t('Nuestras manos expertas pueden entender y ')
 									}
 								</tspan>
 								<tspan x={11.5} y={29}>
 									{
-										'cuidar la tecnología para la tranquilidad de '
+										t('cuidar la tecnología para la tranquilidad de ')
 									}
 								</tspan>
 								<tspan x={13.943} y={45}>
 									{
-										'nuestros clientes y proveedores, todo para '
+										t('nuestros clientes y proveedores, todo para ')
 									}
 								</tspan>
 								<tspan x={2.547} y={61}>
 									{
-										'crear soluciones para el cuidado de la salud y '
+										t('crear soluciones para el cuidado de la salud y ')
 									}
 								</tspan>
 								<tspan x={113.798} y={77}>
-									{'los pacientes. '}
+									{t('los pacientes. ')}
 								</tspan>
 							</text>
 							<text
@@ -520,44 +524,44 @@ const BiomedicoMobile: React.FC = (): JSX.Element => {
 								transform="translate(29 200)">
 								<tspan x={0.354} y={13}>
 									{
-										'Atendemos una capacidad instalada cercana a los '
+										t('Atendemos una capacidad instalada cercana a los ')
 									}
 								</tspan>
 								<tspan
 									className="f-reward-2-mobile"
 									x={4.668}
 									y={31}>
-									{'12.000 equipos'}
+									{t('12.000 equipos ')}
 								</tspan>
 								<tspan
 									className="g-reward-2-mobile"
 									y={31}
 									xmlSpace="preserve">
-									{' de marcas representadas  '}
+									{t('de marcas representadas')}
 								</tspan>
 							</text>
 							<text
 								className="h-reward-2-mobile"
 								transform="translate(43 490.485)">
 								<tspan x={25.714} y={16}>
-									{'Contamos con '}
+									{t('Contamos con ')}
 								</tspan>
 								<tspan className="i-reward-2-mobile" y={16}>
-									{'130 profesionales '}
+									{t('130 profesionales ')}
 								</tspan>
 								<tspan className="j-reward-2-mobile">
 									<tspan x={30.419} y={34}>
 										{
-											'dedicados al cuidado de la tecnología '
+											t('dedicados al cuidado de la tecnología ')
 										}
 									</tspan>
 									<tspan x={3.917} y={52}>
 										{
-											'biomédica y comprometidos con la seguridad '
+											t('biomédica y comprometidos con la seguridad ')
 										}
 									</tspan>
 									<tspan x={106.656} y={70}>
-										{'de los pacientes '}
+										{t('de los pacientes ')}
 									</tspan>
 								</tspan>
 							</text>
@@ -575,7 +579,7 @@ const BiomedicoMobile: React.FC = (): JSX.Element => {
 								className="l-reward-2-mobile"
 								transform="translate(207 24)">
 								<tspan x={-93.114} y={0}>
-									{'Mantenimiento biomédico '}
+									{t('Mantenimiento biomédico')}
 								</tspan>
 							</text>
 							<g

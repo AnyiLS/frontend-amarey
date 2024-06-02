@@ -1633,17 +1633,17 @@ export const ServiciosMovil: React.FC = () => {
 								className="r-services2-hover-80 text"
 								transform="translate(-42.764 -17.422)">
 								<tspan x={0} y={13}>
-									{'Pedidos electrónicos '}
+									{t('Pedidos electrónicos ')}
 								</tspan>
 							</text>
 							<text
 								className="s-services2-hover-80 text"
 								transform="translate(-9.264 2.969)">
 								<tspan x={0} y={11}>
-									{'CRM Salesforce '}
+									{t('CRM Salesforce ')}
 								</tspan>
 								<tspan x={0} y={25}>
-									{'SAP S/4HANA '}
+									{t('SAP S/4HANA ')}
 								</tspan>
 							</text>
 							<circle
@@ -1678,19 +1678,19 @@ export const ServiciosMovil: React.FC = () => {
 							className="t-services2-hover-80 text"
 							transform="translate(85 39.131)">
 							<tspan x={-57.015} y={13}>
-								{'Seguimiento por '}
+								{t('Seguimiento por ')}
 							</tspan>
 							<tspan
 								className="q-services2-hover-80"
 								x={-70.497}
 								y={29}>
-								{'GPS para garantizar '}
+								{t('GPS para garantizar ')}
 							</tspan>
 							<tspan
 								className="q-services2-hover-80"
 								x={-35.861}
 								y={45}>
-								{'la entrega'}
+								{t('la entrega')}
 							</tspan>
 						</text>
 					</g>
@@ -1710,22 +1710,22 @@ export const ServiciosMovil: React.FC = () => {
 							className="e-services2-hover-80 text"
 							transform="translate(90 39.372)">
 							<tspan x={-66.759} y={13}>
-								{'Entregas urgencias '}
+								{t('Entregas urgencias ')}
 							</tspan>
 							<tspan x={-58.842} y={29}>
-								{'en '}
+								{t('en ')}
 							</tspan>
 							<tspan className="q-services2-hover-80" y={29}>
-								{'4 horas'}
+								{t('4 horas')}
 							</tspan>
 							<tspan y={29} xmlSpace="preserve">
-								{' en las '}
+								{t(' en las ')}
 							</tspan>
 							<tspan
 								className="q-services2-hover-80"
 								x={-72.485}
 								y={45}>
-								{'principales ciudades'}
+								{t('principales ciudades')}
 							</tspan>
 						</text>
 					</g>
@@ -1745,16 +1745,16 @@ export const ServiciosMovil: React.FC = () => {
 							className="e-services2-hover-80 text"
 							transform="translate(90 39.372)">
 							<tspan x={-48.111} y={13}>
-								{'Trazabilidad y '}
+								{t('Trazabilidad y ')}
 							</tspan>
 							<tspan x={-54.824} y={29}>
-								{'monitoreo de la '}
+								{t('monitoreo de la ')}
 							</tspan>
 							<tspan
 								className="q-services2-hover-80"
 								x={-51.037}
 								y={45}>
-								{'cadena de frío'}
+								{t('cadena de frío')}
 							</tspan>
 						</text>
 					</g>
@@ -1774,25 +1774,25 @@ export const ServiciosMovil: React.FC = () => {
 							className="e-services2-hover-80 text"
 							transform="translate(90 31.372)">
 							<tspan x={-66.038} y={13} xmlSpace="preserve">
-								{'Equipo logístico de      '}
+								{t('Equipo logístico de      ')}
 							</tspan>
 							<tspan
 								className="q-services2-hover-80"
 								x={-52.199}
 								y={29}>
-								{'91 personas en '}
+								{t('91 personas en ')}
 							</tspan>
 							<tspan
 								className="q-services2-hover-80"
 								x={-65.429}
 								y={45}>
-								{'Colombia, Panamá '}
+								{t('Colombia, Panamá ')}
 							</tspan>
 							<tspan
 								className="q-services2-hover-80"
 								x={-44.275}
 								y={61}>
-								{'y Costa Rica '}
+								{t('y Costa Rica ')}
 							</tspan>
 						</text>
 					</g>

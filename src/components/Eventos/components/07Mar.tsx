@@ -18,7 +18,7 @@ const Mar07: React.FC<ICalendar> = ({ month, next, prev, today, onChangeMonth, o
 		(item: any) => item.hasEvent === true
 	)
 	const currentTransform = daysMar[`${today}-${currentMonth}`]
-		? daysMar[`${today}-${currentMonth}`].transform
+		? daysMar[`${today}-${currentMonth}`]?.transform
 		: 'translate(0px, 0px)'
 
 		const {t} = useTranslation()

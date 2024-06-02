@@ -18,7 +18,7 @@ const Feb9: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onCh
 	const events = Object.values(daysFeb).filter(
 		(item: any) => item.hasEvent === true
 	)
-	const currentTransform = daysFeb[`${today}-${currentMonth}`].transform
+	const currentTransform = daysFeb[`${today}-${currentMonth}`]?.transform
 	const {t} = useTranslation()
 
 	return (
@@ -100,13 +100,6 @@ const Feb9: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onCh
 					<feComposite in="SourceGraphic" />
 				</filter>
 			</defs>
-			<circle
-				className="b-item-1813"
-				cx={22}
-				cy={22}
-				r={22}
-				style={{ transform: currentTransform }}
-			/>
 			{events.map((item: any, index: number) => (
 				<React.Fragment>
 					{currentTransform !== item.transform && (

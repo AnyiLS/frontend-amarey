@@ -1,6 +1,8 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const FooterMobile: React.FC = (): JSX.Element => {
+	const { t } = useTranslation()
 	return (
 		<React.Fragment>
 			<svg viewBox="0 0 415.541 533">
@@ -22,25 +24,25 @@ const FooterMobile: React.FC = (): JSX.Element => {
 				<path className="b-footer-mobile" d="M0,0H415.541V533H0Z" />
 				<text className="c-footer-mobile" transform="translate(41 134)">
 					<tspan x={74.978} y={11}>
-						{'Carrera 7 # 99-53, pisos 19 y 20 '}
+						{t('Carrera 7 # 99-53, pisos 19 y 20')}
 					</tspan>
 					<tspan x={167} y={24} />
 					<tspan x={35.528} y={37}>
-						{'Línea de atención al cliente 018000 180066 -'}
+						{t('Línea de atención al cliente 018000 180066 - ')}
 					</tspan>
 					<tspan x={124.028} y={50} xmlSpace="preserve">
 						{' (601) 7447300 '}
 					</tspan>
 					<tspan x={167} y={63} />
 					<tspan x={58.856} y={76}>
-						{'Reporte de eventos adversos o PQR: '}
+						{t('Reporte de eventos adversos o PQR: ')}
 					</tspan>
 					<tspan x={59.444} y={89}>
 						{'servicioalcliente@grupoamarey.com'}
 					</tspan>
 					<tspan x={167} y={102} />
 					<tspan x={40.91} y={115}>
-						{'Línea ética: linea.etica@grupoamarey.com'}
+						{t('Línea ética: linea.etica@grupoamarey.com')}
 					</tspan>
 				</text>
 				<a
@@ -166,7 +168,7 @@ const FooterMobile: React.FC = (): JSX.Element => {
 				<g transform="translate(79 293)">
 					<text className="c-footer-mobile">
 						<tspan className="e-footer-mobile" x={29.712} y={11}>
-							{'Tratamiento de datos personales'}
+							{t('Tratamiento de datos personales')}
 						</tspan>
 						<tspan y={11} />
 					</text>
@@ -175,7 +177,7 @@ const FooterMobile: React.FC = (): JSX.Element => {
 					<g transform="translate(79 92)">
 						<text className="f-footer-mobile mapa-tap">
 							<tspan x={111.786} y={11}>
-								{'Mapa'}
+								{t('Mapa')}
 							</tspan>
 						</text>
 					</g>
@@ -183,7 +185,7 @@ const FooterMobile: React.FC = (): JSX.Element => {
 				<g transform="translate(41 326)">
 					<text className="f-footer-mobile">
 						<tspan x={39.14} y={11}>
-							{'Política de protección de datos personales'}
+							{t('Política de protección de datos personales')}
 						</tspan>
 					</text>
 				</g>

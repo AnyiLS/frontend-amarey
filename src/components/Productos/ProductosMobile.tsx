@@ -1,6 +1,9 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const ProductosMobile: React.FC = (): JSX.Element => {
+	const { t } = useTranslation()
+
 	return (
 		<React.Fragment>
 			<svg viewBox="0 0 414.551 856.141">
@@ -413,95 +416,95 @@ const ProductosMobile: React.FC = (): JSX.Element => {
 					className="o-reward-2-mobile"
 					transform="translate(60 221.21)">
 					<tspan x={9.249} y={13}>
-						{'Medicamentos'}
+						{t('Medicamentos')}
 					</tspan>
 				</text>
 				<text
 					className="o-reward-2-mobile"
 					transform="translate(53 361.21)">
 					<tspan x={9.361} y={13}>
-						{'Equipos médicos'}
+						{t('Equipos médicos')}
 					</tspan>
 				</text>
 				<text
 					className="o-reward-2-mobile"
 					transform="translate(60 500.21)">
 					<tspan x={29.164} y={13}>
-						{'Logística '}
+						{t('Logística')}
 					</tspan>
 					<tspan x={18.594} y={29}>
-						{'hospitalaria'}
+						{t('hospitalaria')}
 					</tspan>
 				</text>
 				<text
 					className="o-reward-2-mobile"
 					transform="translate(60 640.21)">
 					<tspan x={19.392} y={13}>
-						{'Genómica y '}
+						{t('Genómica y')}
 					</tspan>
 					<tspan x={30.011} y={29}>
-						{'genética'}
+						{t('genética')}
 					</tspan>
 				</text>
 				<text
 					className="o-reward-2-mobile"
 					transform="translate(40 779.21)">
 					<tspan x={15.935} y={13}>
-						{'Cuidado avanzado'}
+						{t('Cuidado avanzado')}
 					</tspan>
 					<tspan x={44.397} y={29}>
-						{'de heridas'}
+						{t('de heridas')}
 					</tspan>
 				</text>
 				<text
 					className="o-reward-2-mobile"
 					transform="translate(226 221.21)">
 					<tspan x={9.355} y={13}>
-						{'Cirugía robótica'}
+						{t('Cirugía robótica')}
 					</tspan>
 				</text>
 				<text
 					className="o-reward-2-mobile"
 					transform="translate(232 361.21)">
 					<tspan x={24.831} y={13}>
-						{'Ortopedia'}
+						{t('Ortopedia')}
 					</tspan>
 				</text>
 				<text
 					className="o-reward-2-mobile"
 					transform="translate(212 500.21)">
 					<tspan x={38.825} y={13}>
-						{'Dispositivos'}
+						{t('Dispositivos')}
 					</tspan>
 					<tspan x={12.799} y={29}>
-						{'médico-quirúrgicos'}
+						{t('médico-quirúrgicos')}
 					</tspan>
 				</text>
 				<text
 					className="o-reward-2-mobile"
 					transform="translate(232 640.21)">
 					<tspan x={9.963} y={13}>
-						{'Instrumental y '}
+						{t('Instrumental y')}
 					</tspan>
 					<tspan x={13.974} y={29}>
-						{'esterilización'}
+						{t('esterilización')}
 					</tspan>
 				</text>
 				<text
 					className="o-reward-2-mobile"
 					transform="translate(212 779.21)">
 					<tspan x={1.611} y={13}>
-						{'Neurointervencionismo'}
+						{t('Neurointervencionismo')}
 					</tspan>
 				</text>
 				<text
 					className="p-reward-2-mobile"
 					transform="translate(104 35.21)">
 					<tspan x={3.096} y={32}>
-						{'Soluciones '}
+						{t('Soluciones ')}
 					</tspan>
 					<tspan x={27.576} y={66}>
-						{'en salud'}
+						{t('en salud')}
 					</tspan>
 				</text>
 			</svg>

@@ -17,6 +17,7 @@ import Component20231 from './components/20231'
 import Component20232 from './components/20232'
 import Component20233 from './components/20233'
 import Component20234 from './components/20234'
+import { useTranslation } from 'react-i18next'
 
 export interface TimeLine {
 	onNext?: () => void
@@ -28,6 +29,8 @@ const HistoriaMobile: React.FC = (): JSX.Element => {
 
 	const handleChangeStep = () => setSteps(steps + 1 > 16 ? 0 : steps + 1)
 	const handleLessStep = () => setSteps(steps - 1 < 0 ? 16 : steps - 1)
+
+	const { t } = useTranslation()
 
 	return (
 		<React.Fragment>
@@ -65,52 +68,52 @@ const HistoriaMobile: React.FC = (): JSX.Element => {
 						className="a-history-mobile"
 						transform="translate(36 674)">
 						<tspan x={0} y={20}>
-							{'“un compromiso inquebrantable '}
+							{t('“un compromiso inquebrantable ')}
 						</tspan>
 						<tspan x={0} y={44} xmlSpace="preserve">
-							{'con la salud y la vida”.  '}
+							{t('con la salud y la vida”.  ')}
 						</tspan>
 					</text>
 					<text
 						className="b-history-mobile"
 						transform="translate(36 487)">
 						<tspan x={0} y={13}>
-							{'Grupo Amarey es una compañía con más de 40 '}
+							{t('Grupo Amarey es una compañía con más de 40 ')}
 						</tspan>
 						<tspan x={0} y={29}>
-							{'años de trayectoria, comprometida con '}
+							{t('años de trayectoria, comprometida con ')}
 						</tspan>
 						<tspan x={0} y={45}>
-							{'acercar el conocimiento, la ciencia y la '}
+							{t('acercar el conocimiento, la ciencia y la ')}
 						</tspan>
 						<tspan x={0} y={61}>
-							{'tecnología al sector de la salud en Colombia, '}
+							{t('tecnología al sector de la salud en Colombia, ')}
 						</tspan>
 						<tspan x={0} y={77} xmlSpace="preserve">
-							{'Panamá y Costa Rica.  '}
+							{t('Panamá y Costa Rica.  ')}
 						</tspan>
 						<tspan x={0} y={93} />
 						<tspan x={0} y={109}>
-							{'Con 6 sedes en Colombia y operación '}
+							{t('Con 6 sedes en Colombia y operación ')}
 						</tspan>
 						<tspan x={0} y={125}>
-							{'internacional en Panamá y Costa Rica, el grupo '}
+							{t('internacional en Panamá y Costa Rica, el grupo ')}
 						</tspan>
 						<tspan x={0} y={141}>
-							{'empresarial cuenta con un equipo de '}
+							{t('empresarial cuenta con un equipo de ')}
 						</tspan>
 						<tspan x={0} y={157}>
-							{'colaboradores que trabajan bajo una única '}
+							{t('colaboradores que trabajan bajo una única ')}
 						</tspan>
 						<tspan x={0} y={173}>
-							{'premisa, '}
+							{t('premisa, ')}
 						</tspan>
 					</text>
 					<text
 						className="c-history-mobile"
 						transform="translate(36 424)">
 						<tspan x={0} y={32}>
-							{'NUESTRA HISTORIA '}
+							{t('NUESTRA HISTORIA ')}
 						</tspan>
 					</text>
 					<g

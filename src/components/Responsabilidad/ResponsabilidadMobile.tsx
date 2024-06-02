@@ -1,6 +1,9 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const ResponsabilidadMobile: React.FC = (): JSX.Element => {
+	const { t } = useTranslation()
+
 	return (
 		<svg viewBox="0 0 414 1534.99">
 			<defs>
@@ -230,70 +233,70 @@ const ResponsabilidadMobile: React.FC = (): JSX.Element => {
 						className="e-pentagrama"
 						transform="translate(423 352)">
 						<tspan x={0} y={13}>
-							{'La '}
+							{t('La ')}
 						</tspan>
 						<tspan className="f-pentagrama" y={13}>
-							{'Fundación OCMAES'}
+							{t('Fundación OCMAES')}
 						</tspan>
 						<tspan y={13} xmlSpace="preserve">
-							{' es una entidad sin ánimo '}
+							{t(' es una entidad sin ánimo ')}
 						</tspan>
 						<tspan x={0} y={29}>
-							{'de lucro con '}
+							{t('de lucro con ')}
 						</tspan>
 						<tspan className="f-pentagrama" y={29}>
-							{'18 años de trayectoria'}
+							{t('18 años de trayectoria ')}
 						</tspan>
-						<tspan y={29}>{', que hace '}</tspan>
+						<tspan y={29}>{t(', que hace ')}</tspan>
 						<tspan x={0} y={45}>
-							{'parte del '}
+							{t('parte del ')}
 						</tspan>
 						<tspan className="f-pentagrama" y={45}>
-							{'Grupo Amarey y que fue creada con el '}
+							{t('Grupo Amarey y que fue creada con el ')}
 						</tspan>
 						<tspan className="f-pentagrama" x={0} y={61}>
-							{'propósito de promover el desarrollo humano y '}
+							{t('propósito de promover el desarrollo humano y ')}
 						</tspan>
 						<tspan className="f-pentagrama" x={0} y={77}>
-							{'profesional de jóvenes colombianos.'}
+							{t('profesional de jóvenes colombianos.')}
 						</tspan>
 						<tspan x={0} y={93} />
 						<tspan x={0} y={109}>
-							{'Apoya a jóvenes con potencial académico y '}
+							{t('Apoya a jóvenes con potencial académico y ')}
 						</tspan>
 						<tspan x={0} y={125}>
-							{'dificultades económicas para acceder a '}
+							{t('dificultades económicas para acceder a ')}
 						</tspan>
 						<tspan x={0} y={141}>
-							{'educación superior de calidad, contribuyendo a '}
+							{t('educación superior de calidad, contribuyendo a ')}
 						</tspan>
 						<tspan x={0} y={157}>
-							{'su formación como líderes y profesionales '}
+							{t('su formación como líderes y profesionales ')}
 						</tspan>
 						<tspan x={0} y={173}>
-							{'competitivos comprometidos con el desarrollo '}
+							{t('competitivos comprometidos con el desarrollo ')}
 						</tspan>
 						<tspan x={0} y={189}>
-							{'social del país. Lo que hace la '}
+							{t('social del país. Lo que hace la ')}
 						</tspan>
 						<tspan className="f-pentagrama" y={189}>
-							{'Fundación '}
+							{t('Fundación ')}
 						</tspan>
 						<tspan className="f-pentagrama" x={0} y={205}>
-							{'OCMAES'}
+							{t('OCMAES ')}
 						</tspan>
 						<tspan y={205} xmlSpace="preserve">
-							{' es simple pero profundo:'}
+							{t(' es simple pero profundo: ')}
 						</tspan>
 					</text>
 					<text
 						className="g-pentagrama"
 						transform="translate(421 260)">
 						<tspan x={0} y={32}>
-							{'RESPONSABILIDAD '}
+							{t('RESPONSABILIDAD ')}
 						</tspan>
 						<tspan x={0} y={66}>
-							{'SOCIAL EMPRESARIAL'}
+							{t('SOCIAL EMPRESARIAL')}
 						</tspan>
 					</text>
 					<g
@@ -334,16 +337,16 @@ const ResponsabilidadMobile: React.FC = (): JSX.Element => {
 						className="e-pentagrama"
 						transform="translate(100.75 806.317)">
 						<tspan x={0} y={13} xmlSpace="preserve">
-							{'Promueve    '}
+							{t('Promueve    ')}
 						</tspan>
 						<tspan x={0} y={29}>
-							{'el desarrollo '}
+							{t('el desarrollo ')}
 						</tspan>
 						<tspan x={0} y={45}>
-							{'humano y '}
+							{t('humano y ')}
 						</tspan>
 						<tspan x={0} y={61}>
-							{'del país'}
+							{t('del país')}
 						</tspan>
 					</text>
 				</g>
@@ -361,19 +364,19 @@ const ResponsabilidadMobile: React.FC = (): JSX.Element => {
 						className="l-pentagrama"
 						transform="translate(92.25 961.646)">
 						<tspan x={0} y={13}>
-							{'Cree en la '}
+							{t('Cree en la ')}
 						</tspan>
 						<tspan x={0} y={29}>
-							{'transformación '}
+							{t('transformación ')}
 						</tspan>
 						<tspan x={0} y={45}>
-							{'de vidas a '}
+							{t('de vidas a ')}
 						</tspan>
 						<tspan x={0} y={61}>
-							{'través de la '}
+							{t('través de la ')}
 						</tspan>
 						<tspan x={0} y={77}>
-							{'educación'}
+							{t('educación')}
 						</tspan>
 					</text>
 					<g
@@ -409,34 +412,34 @@ const ResponsabilidadMobile: React.FC = (): JSX.Element => {
 						className="o-pentagrama"
 						transform="translate(91.195 1096.344)">
 						<tspan x={0} y={11}>
-							{'Por eso otorga '}
+							{t(' Por eso otorga ')}
 						</tspan>
 						<tspan x={0} y={23}>
-							{'becas '}
+							{t(' becas  ')}
 						</tspan>
 						<tspan x={0} y={35}>
-							{'universitarias a '}
+							{t(' universitarias a ')}
 						</tspan>
 						<tspan x={0} y={47}>
-							{'estudiantes con '}
+							{t(' estudiantes con ')}
 						</tspan>
 						<tspan x={0} y={59}>
-							{'un alto potencial '}
+							{t(' un alto potencial ')}
 						</tspan>
 						<tspan x={0} y={71}>
-							{'académico que '}
+							{t(' académico que ')}
 						</tspan>
 						<tspan x={0} y={83}>
-							{'se encuentran en '}
+							{t(' se encuentran en ')}
 						</tspan>
 						<tspan x={0} y={95}>
-							{'circunstancias '}
+							{t(' circunstancias ')}
 						</tspan>
 						<tspan x={0} y={107}>
-							{'económicas y '}
+							{t(' económicas y ')}
 						</tspan>
 						<tspan x={0} y={119}>
-							{'sociales difíciles'}
+							{t(' sociales difíciles')}
 						</tspan>
 					</text>
 				</g>
@@ -463,11 +466,11 @@ const ResponsabilidadMobile: React.FC = (): JSX.Element => {
 						className="q-pentagrama"
 						transform="translate(370 1323.203)">
 						<tspan x={-142.008} y={23}>
-							{'+ de 4.600 beneficiarios'}
+							{t('+ de 4.600 beneficiarios')}
 						</tspan>
 						<tspan className="r-pentagrama">
 							<tspan x={-137.004} y={43}>
-								{'a lo largo de sus 18 años de trayectoria'}
+								{t('a lo largo de sus 18 años de trayectoria')}
 							</tspan>
 						</tspan>
 					</text>
@@ -487,9 +490,9 @@ const ResponsabilidadMobile: React.FC = (): JSX.Element => {
 							</g>
 							<text
 								className="t-pentagrama"
-								transform="translate(35 13.588)">
+								transform="translate(30 13.585)">
 								<tspan x={0} y={0}>
-									{'Conoce más de La Fundación OCMAES '}
+									{t('Conoce más de La Fundación OCMAES ')}
 								</tspan>
 							</text>
 						</g>

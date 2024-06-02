@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const carouselItemsMobile = [
+export const carouselItemsMobile=(t:any) => ([ 
 	{
 		image: '/images/mobile/rewards/carousel-1.webp',
 		text: (onNext: () => void, onPrev: () => void) => (
@@ -134,10 +134,10 @@ export const carouselItemsMobile = [
 						className="c-time-line-4"
 						transform="translate(255.346 162.803)">
 						<tspan x={-75.864} y={11}>
-							{'Certificado Amarey Nova '}
+							{t('Certificado Amarey Nova ')}
 						</tspan>
 						<tspan x={-54.714} y={25}>
-							{'Medical ISO 90001'}
+							{t('Medical ISO 90001')}
 						</tspan>
 					</text>
 					<g className="d-time-line-4">
@@ -159,10 +159,10 @@ export const carouselItemsMobile = [
 							className="f-time-line-4"
 							transform="translate(438.097 149.303)">
 							<tspan x={-51.799} y={8}>
-								{'Certificado Ucipharma '}
+								{t('Certificado Ucipharma ')}
 							</tspan>
 							<tspan x={-21.928} y={19}>
-								{'ISO 90001'}
+								{t('ISO 90001')}
 							</tspan>
 						</text>
 					</g>
@@ -185,22 +185,22 @@ export const carouselItemsMobile = [
 							className="h-time-line-4"
 							transform="translate(55 125.803)">
 							<tspan x={-43.197} y={6}>
-								{'Certificación OEA (Operador '}
+								{t('Certificación OEA (Operador ')}
 							</tspan>
 							<tspan x={-43.302} y={14}>
-								{'Económico Autorizado) de la '}
+								{t('Económico Autorizado) de la ')}
 							</tspan>
 							<tspan x={-35.004} y={22}>
-								{'DIAN, obtenida en 2001, '}
+								{t('DIAN, obtenida en 2001, ')}
 							</tspan>
 							<tspan x={-47.439} y={30}>
-								{'demostrando la seguridad en la '}
+								{t('demostrando la seguridad en la ')}
 							</tspan>
 							<tspan x={-32.13} y={38}>
-								{'cadena de suministro '}
+								{t('cadena de suministro ')}
 							</tspan>
 							<tspan x={-44.649} y={46}>
-								{'internacional de la compañía.'}
+								{t('internacional de la compañía.')}
 							</tspan>
 						</text>
 					</g>
@@ -401,10 +401,10 @@ export const carouselItemsMobile = [
 						className="c-time-line-4"
 						transform="translate(255.346 162.803)">
 						<tspan x={-69.27} y={11}>
-							{'Certificado Ucipharma '}
+							{t('Certificado Ucipharma ')}
 						</tspan>
 						<tspan x={-29.286} y={25}>
-							{'ISO 90001'}
+							{t('ISO 90001')}
 						</tspan>
 					</text>
 					<g className="d-time-line-4">
@@ -426,13 +426,13 @@ export const carouselItemsMobile = [
 							className="f-time-line-4"
 							transform="translate(440.097 149.303)">
 							<tspan x={-58.076} y={7}>
-								{'Certificado Novatécnica Sistema '}
+								{t('Certificado Novatécnica Sistema ')}
 							</tspan>
 							<tspan x={-42.745} y={16}>
-								{'de gestión de calidad en '}
+								{t('de gestión de calidad en ')}
 							</tspan>
 							<tspan x={-54.289} y={25}>
-								{'dispositivos médicos ISO 13485'}
+								{t('dispositivos médicos ISO 13485')}
 							</tspan>
 						</text>
 					</g>
@@ -455,10 +455,10 @@ export const carouselItemsMobile = [
 							className="h-time-line-4"
 							transform="translate(70 149.303)">
 							<tspan x={-56.704} y={8}>
-								{'Certificado Amarey Nova '}
+								{t('Certificado Amarey Nova ')}
 							</tspan>
 							<tspan x={-41.022} y={19}>
-								{'Medical ISO 90001'}
+								{(t('Medical ISO 90001'))}
 							</tspan>
 						</text>
 					</g>
@@ -659,13 +659,13 @@ export const carouselItemsMobile = [
 						className="c-time-line-4"
 						transform="translate(255.346 155.803)">
 						<tspan x={-83.175} y={9}>
-							{'Certificado Novatécnica Sistema '}
+							{t('Certificado Novatécnica Sistema ')}
 						</tspan>
 						<tspan x={-60.89} y={21}>
-							{'de gestión de calidad en '}
+							{t('de gestión de calidad en ')}
 						</tspan>
 						<tspan x={-77.635} y={33}>
-							{'dispositivos médicos ISO 13485'}
+							{t('dispositivos médicos ISO 13485')}
 						</tspan>
 					</text>
 					<g className="d-time-line-4">
@@ -692,22 +692,22 @@ export const carouselItemsMobile = [
 							className="g-time-line-4"
 							transform="translate(436.097 125.803)">
 							<tspan x={-43.197} y={6}>
-								{'Certificación OEA (Operador '}
+								{t('Certificación OEA (Operador ')}
 							</tspan>
 							<tspan x={-43.302} y={14}>
-								{'Económico Autorizado) de la '}
+								{t('Económico Autorizado) de la ')}
 							</tspan>
 							<tspan x={-35.004} y={22}>
-								{'DIAN, obtenida en 2001, '}
+								{t('DIAN, obtenida en 2001, ')}
 							</tspan>
 							<tspan x={-47.439} y={30}>
-								{'demostrando la seguridad en la '}
+								{t('demostrando la seguridad en la ')}
 							</tspan>
 							<tspan x={-32.13} y={38}>
-								{'cadena de suministro '}
+								{t('cadena de suministro ')}
 							</tspan>
 							<tspan x={-44.649} y={46}>
-								{'internacional de la compañía.'}
+								{t('internacional de la compañía.')}
 							</tspan>
 						</text>
 					</g>
@@ -725,10 +725,10 @@ export const carouselItemsMobile = [
 							className="h-time-line-4"
 							transform="translate(66.512 149.303)">
 							<tspan x={-51.799} y={8}>
-								{'Certificado Ucipharma '}
+								{t('Certificado Ucipharma ')}
 							</tspan>
 							<tspan x={-21.928} y={19}>
-								{'ISO 90001'}
+								{t('ISO 90001')}
 							</tspan>
 						</text>
 					</g>
@@ -929,13 +929,13 @@ export const carouselItemsMobile = [
 						className="c-time-line-4"
 						transform="translate(53.87 147.303)">
 						<tspan x={-58.076} y={7}>
-							{'Certificado Novatécnica Sistema '}
+							{t('Certificado Novatécnica Sistema ')}
 						</tspan>
 						<tspan x={-42.745} y={16}>
-							{'de gestión de calidad en '}
+							{t('de gestión de calidad en ')}
 						</tspan>
 						<tspan x={-54.289} y={25}>
-							{'dispositivos médicos ISO 13485'}
+							{t('dispositivos médicos ISO 13485')}
 						</tspan>
 					</text>
 					<g className="d-time-line-4">
@@ -957,10 +957,10 @@ export const carouselItemsMobile = [
 							className="f-time-line-4"
 							transform="translate(448.097 149.303)">
 							<tspan x={-56.704} y={8}>
-								{'Certificado Amarey Nova '}
+								{t('Certificado Amarey Nova ')}
 							</tspan>
 							<tspan x={-41.022} y={19}>
-								{'Medical ISO 90001'}
+								{t('Medical ISO 90001')}
 							</tspan>
 						</text>
 					</g>
@@ -984,19 +984,19 @@ export const carouselItemsMobile = [
 						className="h-time-line-4"
 						transform="translate(177.679 125.803)">
 						<tspan x={5.326} y={9}>
-							{'Certificación OEA (Operador '}
+							{t('Certificación OEA (Operador ')}
 						</tspan>
 						<tspan x={5.151} y={21}>
-							{'Económico Autorizado) de la '}
+							{t('Económico Autorizado) de la ')}
 						</tspan>
 						<tspan x={18.981} y={33}>
-							{'DIAN, obtenida en 2001, '}
+							{t('DIAN, obtenida en 2001, ')}
 						</tspan>
 						<tspan x={4.196} y={45}>
-							{'demostrando la seguridad en '}
+							{t('demostrando la seguridad en ')}
 						</tspan>
 						<tspan x={17.831} y={57}>
-							{'la cadena de suministro '}
+							{t('la cadena de suministro ')}
 						</tspan>
 					</text>
 					<rect
@@ -1063,5 +1063,5 @@ export const carouselItemsMobile = [
 			</React.Fragment>
 		),
 	},
-]
+])
 // transform="translate(22 125.803)"
