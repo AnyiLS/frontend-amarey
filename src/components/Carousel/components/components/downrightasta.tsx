@@ -1,10 +1,15 @@
+import { useLanguage } from 'context/language'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
 const DownRightAsta: React.FC<{ onUnselected: () => void }> = ({
 	onUnselected,
 }): JSX.Element => {
+	/** Hooks */
 	const {t} = useTranslation()
+
+	/** Contexts */
+	const { selectedLanguage } = useLanguage();
 
 	return (
 		<React.Fragment>
@@ -98,7 +103,7 @@ const DownRightAsta: React.FC<{ onUnselected: () => void }> = ({
 					<text
 						className="e-tt-5"
 						transform="translate(439.064 170.05)">
-						<tspan x={2.932} y={28}>
+						<tspan x={selectedLanguage === 'es' ? 2.932 : 42.932} y={28}>
 							{t('Nuestros aliados ')}
 						</tspan>
 					</text>

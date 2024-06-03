@@ -1,16 +1,14 @@
 import { Carousel } from 'flowbite-react'
 import React from 'react'
 import './Servcios.css'
-import Mute from 'assets/images/mute.png'
-import Mute2 from 'assets/images/Button.png'
 import { useTranslation } from 'react-i18next'
+import { useLanguage } from 'context/language'
 
 export const ServiciosMovil: React.FC = () => {
 	const [open4Tag, setOpen4Tag] = React.useState<boolean>(false)
 	const [open2Tag, setOpen2Tag] = React.useState<boolean>(false)
 	const [changeTo2, setChangeTo2] = React.useState<boolean>(false)
 	const [doHover, setDoHover] = React.useState<boolean>(false)
-	const [mute, setMute] = React.useState(true)
 	const [openVideo, setOpenVideo] = React.useState(false)
 
 	const {t} = useTranslation()
@@ -20,6 +18,8 @@ export const ServiciosMovil: React.FC = () => {
 		const carousel: any = document.querySelector('.next-button')
 		carousel!.click()
 	}
+
+	const { selectedLanguage } = useLanguage();
 
 	React.useEffect(() => {
 		if (changeTo2)
@@ -94,16 +94,16 @@ export const ServiciosMovil: React.FC = () => {
 					<text
 						className="e-servicios-1-mobile"
 						transform="translate(210 409.681)">
-						<tspan x={-143.542} y={13}>
+						<tspan x={selectedLanguage === 'es' ? -143.542 : -163.542} y={13}>
 							{t('El servicio es uno de los pilares del Grupo ')}
 						</tspan>
-						<tspan x={-151.844} y={29}>
+						<tspan x={selectedLanguage === 'es' ? -151.844 : -175.844} y={29}>
 							{t('Amarey, una misión que se ha convertido en ')}
 						</tspan>
-						<tspan x={-149.541} y={45}>
+						<tspan x={selectedLanguage === 'es' ? -149.541 : -160.541} y={45}>
 							{t('la vocación de la compañía para cumplir el ')}
 						</tspan>
-						<tspan x={-147.826} y={61}>
+						<tspan x={selectedLanguage === 'es' ? -147.826 : -160.826} y={61}>
 							{t('compromiso de ser un actor determinante ')}
 						</tspan>
 						<tspan x={-122.507} y={77}>
@@ -113,17 +113,17 @@ export const ServiciosMovil: React.FC = () => {
 					<text
 						className="f-servicios-1-mobile"
 						transform="translate(210 509.681)">
-						<tspan x={-117.296} y={15}>
+						<tspan x={selectedLanguage === 'es' ? -117.296 : -100.296} y={15}>
 							{t('Grupo Amarey, la cadena que ')}
 						</tspan>
-						<tspan x={-46.16} y={33}>
+						<tspan x={selectedLanguage === 'es' ? -46.16 : -63.16} y={33}>
 							{t('salva vidas. ')}
 						</tspan>
 					</text>
 					<text
 						className="g-servicios-1-mobile"
 						transform="translate(210 329.076)">
-						<tspan x={-125.263} y={55}>
+						<tspan x={selectedLanguage === 'es' ? -125.263 : -115.263} y={55}>
 							{t('Servicio')}
 						</tspan>
 					</text>
@@ -361,10 +361,10 @@ export const ServiciosMovil: React.FC = () => {
 					<text
 						className="o-servicios-2-mobile"
 						transform="translate(210 272.186)">
-						<tspan x={-167.248} y={30}>
+						<tspan x={selectedLanguage === 'es' ? -167.248 : -123.248} y={30}>
 							{t('NUESTROS CLIENTES, ')}
 						</tspan>
-						<tspan x={-132.688} y={64} xmlSpace="preserve">
+						<tspan x={selectedLanguage === 'es' ? -132.688 : -142.688} y={64} xmlSpace="preserve">
 							{t('NUESTRA RAZÓN    ')}
 						</tspan>
 						<tspan x={-53.52} y={98}>
@@ -374,7 +374,7 @@ export const ServiciosMovil: React.FC = () => {
 					<text
 						className="p-servicios-2-mobile"
 						transform="translate(39 386.258)">
-						<tspan x={20.504} y={15}>
+						<tspan x={selectedLanguage === 'es' ? 20.504 : 78.504} y={15}>
 							{t('Resultados medición de')}
 						</tspan>
 						<tspan
@@ -385,7 +385,7 @@ export const ServiciosMovil: React.FC = () => {
 						</tspan>
 						<tspan
 							className="q-servicios-2-mobile"
-							x={93.768}
+							x={selectedLanguage === 'es' ? 93.768 : 77.768}
 							y={33}>
 							{t('lealtad (NPS) 2023:')}
 						</tspan>
@@ -452,7 +452,7 @@ export const ServiciosMovil: React.FC = () => {
 									<text
 										className="w-servicios-2-mobile"
 										transform="translate(55.651 33.683)">
-										<tspan x={7.05} y={22}>
+										<tspan x={selectedLanguage === 'es' ? 7.05 : 27.05} y={22}>
 											{t('SATISFACCIÓN ')}
 										</tspan>
 										<tspan className="x-servicios-2-mobile">
@@ -1567,7 +1567,7 @@ export const ServiciosMovil: React.FC = () => {
 						<tspan x={6.584} y={30}>
 							{t('SERVICIO LOGÍSTICO')}
 						</tspan>
-						<tspan x={18.312} y={64}>
+						<tspan x={selectedLanguage === 'es' ? 18.312 : 10.312} y={64}>
 							{t('DE CLASE MUNDIAL')}
 						</tspan>
 					</text>
@@ -1589,17 +1589,17 @@ export const ServiciosMovil: React.FC = () => {
 							<tspan x={-51.086} y={13}>
 								{t('Nuestra red en ')}
 							</tspan>
-							<tspan x={-67.109} y={29}>
+							<tspan x={selectedLanguage === 'es' ? -67.109 : -57.109} y={29}>
 								{t('distribución incluye ')}
 							</tspan>
 							<tspan
 								className="q-services2-hover-80"
-								x={-67.263}
+								x={selectedLanguage === 'es' ? -67.263 : -52.263}
 								y={45}>
 								{t('18 transportadoras')}
 							</tspan>
 							<tspan y={45} />
-							<tspan x={-60.823} y={61}>
+							<tspan x={selectedLanguage === 'es' ? -60.823 : -52.04} y={61}>
 								{t('que nos permiten ')}
 							</tspan>
 							<tspan x={-61.04} y={77}>
@@ -1610,7 +1610,7 @@ export const ServiciosMovil: React.FC = () => {
 							</tspan>
 							<tspan
 								className="q-services2-hover-80"
-								x={-48.517}
+								x={selectedLanguage === 'es' ? -48.517 : -27.517}
 								y={93}>
 								{t('parte del país')}
 							</tspan>
@@ -1677,18 +1677,18 @@ export const ServiciosMovil: React.FC = () => {
 						<text
 							className="t-services2-hover-80 text"
 							transform="translate(85 39.131)">
-							<tspan x={-57.015} y={13}>
+							<tspan x={selectedLanguage === 'es' ? -57.015 : -39.015} y={13}>
 								{t('Seguimiento por ')}
 							</tspan>
 							<tspan
 								className="q-services2-hover-80"
-								x={-70.497}
+								x={selectedLanguage === 'es' ? -70.497 : -41.497}
 								y={29}>
 								{t('GPS para garantizar ')}
 							</tspan>
 							<tspan
 								className="q-services2-hover-80"
-								x={-35.861}
+								x={selectedLanguage === 'es' ? -35.861 : -28.861}
 								y={45}>
 								{t('la entrega')}
 							</tspan>
@@ -1708,23 +1708,24 @@ export const ServiciosMovil: React.FC = () => {
 						</g>
 						<text
 							className="e-services2-hover-80 text"
-							transform="translate(90 39.372)">
-							<tspan x={-66.759} y={13}>
+							transform="translate(90 39.372)"
+							style={{ fontSize: 12 }}>
+							<tspan x={selectedLanguage === 'es' ? -66.759 : -49.759} y={13}>
 								{t('Entregas urgencias ')}
 							</tspan>
-							<tspan x={-58.842} y={29}>
+							<tspan x={selectedLanguage === 'es' ? -58.842 : -78.842} y={selectedLanguage === 'es' ? 29 : 26}>
 								{t('en ')}
 							</tspan>
 							<tspan className="q-services2-hover-80" y={29}>
 								{t('4 horas')}
 							</tspan>
-							<tspan y={29} xmlSpace="preserve">
+							<tspan y={selectedLanguage === 'es' ? 29 : 26} xmlSpace="preserve">
 								{t(' en las ')}
 							</tspan>
 							<tspan
 								className="q-services2-hover-80"
-								x={-72.485}
-								y={45}>
+								x={selectedLanguage === 'es' ? -72.485 : -75.485}
+								y={selectedLanguage === 'es' ? 45 : 40}>
 								{t('principales ciudades')}
 							</tspan>
 						</text>
@@ -1744,15 +1745,15 @@ export const ServiciosMovil: React.FC = () => {
 						<text
 							className="e-services2-hover-80 text"
 							transform="translate(90 39.372)">
-							<tspan x={-48.111} y={13}>
+							<tspan x={selectedLanguage === 'es' ? -48.111 : -38.111} y={13}>
 								{t('Trazabilidad y ')}
 							</tspan>
-							<tspan x={-54.824} y={29}>
+							<tspan x={selectedLanguage === 'es' ? -54.824 : -40.824} y={29}>
 								{t('monitoreo de la ')}
 							</tspan>
 							<tspan
 								className="q-services2-hover-80"
-								x={-51.037}
+								x={selectedLanguage === 'es' ? -51.037 : -55.037}
 								y={45}>
 								{t('cadena de frío')}
 							</tspan>
@@ -1773,24 +1774,24 @@ export const ServiciosMovil: React.FC = () => {
 						<text
 							className="e-services2-hover-80 text"
 							transform="translate(90 31.372)">
-							<tspan x={-66.038} y={13} xmlSpace="preserve">
+							<tspan x={selectedLanguage === 'es' ? -66.038 : -72.038} y={13} xmlSpace="preserve">
 								{t('Equipo logístico de      ')}
 							</tspan>
 							<tspan
 								className="q-services2-hover-80"
-								x={-52.199}
+								x={selectedLanguage === 'es' ? -52.199 : -60.199}
 								y={29}>
 								{t('91 personas en ')}
 							</tspan>
 							<tspan
 								className="q-services2-hover-80"
-								x={-65.429}
+								x={selectedLanguage === 'es' ? -65.429 : -70.429}
 								y={45}>
 								{t('Colombia, Panamá ')}
 							</tspan>
 							<tspan
 								className="q-services2-hover-80"
-								x={-44.275}
+								x={selectedLanguage === 'es' ? -44.275 : -55.275}
 								y={61}>
 								{t('y Costa Rica ')}
 							</tspan>

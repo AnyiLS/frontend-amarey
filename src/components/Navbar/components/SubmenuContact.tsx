@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SubmenuContact: React.FC<{ ref: any }> = ({ ref }): JSX.Element => {
+const SubmenuContact: React.FC<React.RefAttributes<SVGSVGElement>> = ({ ref }): JSX.Element => {
 	return (
 		<svg
 			viewBox="0 0 1920 354"

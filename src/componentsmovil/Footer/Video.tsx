@@ -1,8 +1,11 @@
+import { useLanguage } from 'context/language'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
 const FooterMobile: React.FC = (): JSX.Element => {
 	const { t } = useTranslation()
+	const { selectedLanguage } = useLanguage()
+
 	return (
 		<React.Fragment>
 			<svg viewBox="0 0 415.541 533">
@@ -167,7 +170,7 @@ const FooterMobile: React.FC = (): JSX.Element => {
 				</g>
 				<g transform="translate(79 293)">
 					<text className="c-footer-mobile">
-						<tspan className="e-footer-mobile" x={29.712} y={11}>
+						<tspan className="e-footer-mobile" x={selectedLanguage === 'es' ? 29.712 : 49.712} y={11}>
 							{t('Tratamiento de datos personales')}
 						</tspan>
 						<tspan y={11} />
@@ -184,7 +187,7 @@ const FooterMobile: React.FC = (): JSX.Element => {
 				</a>
 				<g transform="translate(41 326)">
 					<text className="f-footer-mobile">
-						<tspan x={39.14} y={11}>
+						<tspan x={selectedLanguage === 'es' ? 39.14 : 75.14} y={11}>
 							{t('Política de protección de datos personales')}
 						</tspan>
 					</text>

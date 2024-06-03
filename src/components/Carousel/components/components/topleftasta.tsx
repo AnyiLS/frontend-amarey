@@ -1,8 +1,14 @@
+import { useLanguage } from 'context/language';
 import React from 'react'
 import { useTranslation } from 'react-i18next';
 
 const TopLeftAsta: React.FC<any> = ({onOpenPopup}): JSX.Element => {
+	/** Hooks */
 	const {t} = useTranslation()
+	
+	/** Contexts */
+	const { selectedLanguage } = useLanguage();
+
 	return (
 		<React.Fragment>
 			<g transform='translate(300 170)'>
@@ -89,7 +95,7 @@ const TopLeftAsta: React.FC<any> = ({onOpenPopup}): JSX.Element => {
 						<text
 							className="f-tt-8"
 							transform="translate(27 96.454)">
-							<tspan x={42.041} y={28}>
+							<tspan x={selectedLanguage === 'es' ? 42.041 : 75.041} y={28}>
 								{t('Nuestro origen')}
 							</tspan>
 						</text>

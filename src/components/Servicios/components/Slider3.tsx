@@ -2,7 +2,6 @@ import React from 'react'
 import './Slide3.css'
 import BluePoint from './BluePoint'
 import RedPoint from './RedPoint'
-import useGeneral from 'hooks/general.hook'
 import { useTranslation } from 'react-i18next'
 
 interface ISlider {
@@ -11,8 +10,7 @@ interface ISlider {
 	handleChangeSlide: (position: number) => void
 }
 
-export const Slider3: React.FC<ISlider> = ({ height }) => {
-	const { width } = useGeneral()
+export const Slider3: React.FC<ISlider> = () => {
 	const [selectedImage, setSelectedImage] = React.useState<null | number>(
 		null
 	)
@@ -21,7 +19,7 @@ export const Slider3: React.FC<ISlider> = ({ height }) => {
 		<svg
 			viewBox="0 0 1920 1080"
 			preserveAspectRatio="none"
-			style={{ height: '100%'}}
+			className='h-full'
 			width="100%">
 			<defs>
 				<style>

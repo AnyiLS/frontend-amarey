@@ -1,6 +1,6 @@
 
 
-const SubmenuEtic: React.FC<{ref: any}> = ({ ref }) => {
+const SubmenuEtic: React.FC<React.RefAttributes<SVGSVGElement>> = ({ ref }) => {
 	return (
 		<svg
 			viewBox="0 0 1920 354"

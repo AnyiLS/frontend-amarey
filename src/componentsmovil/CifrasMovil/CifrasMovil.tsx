@@ -1,3 +1,4 @@
+import { useLanguage } from 'context/language';
 import React from 'react'
 import { useTranslation } from 'react-i18next';
 
@@ -5,7 +6,7 @@ export const CifrasMovil: React.FC = () => {
 	/** States */
 	const [openVideo, setOpenVideo] = React.useState<boolean>(false)
 	const [numberVideo, setNumberVideo] = React.useState<number>(0)
-	const [mute, setMute] = React.useState(false);
+	const [mute] = React.useState(false);
 
 	const {t} = useTranslation()
 
@@ -16,10 +17,13 @@ export const CifrasMovil: React.FC = () => {
 		{ url: 'https://grupoamarey.com/pdf/video/Cifras ortopedia vertical_1.mp4' },
 	]
 
+	/** Contexts */
+	const { selectedLanguage } = useLanguage();
+
 	return (
 		<div className="relative">
 			<svg
-				viewBox="12 0 414 895"
+				viewBox="14 0 412 895"
 				width="100%"
 				height="100vh"
 				preserveAspectRatio="none">
@@ -311,7 +315,7 @@ export const CifrasMovil: React.FC = () => {
 					<text
 						className="i-cifras-impacto"
 						transform="translate(220 398.119)">
-						<tspan x={-112.567} y={45}>
+						<tspan x={selectedLanguage === 'es' ? -112.567 : -86.567} y={45}>
 							{t('Cifras de')}
 						</tspan>
 						<tspan x={-97.897} y={92}>
@@ -344,7 +348,7 @@ export const CifrasMovil: React.FC = () => {
 								{'+3000'}
 							</tspan>
 							<tspan className="m-cifras-impacto">
-								<tspan x={-184.371} y={13}>
+								<tspan x={selectedLanguage === 'es' ? -184.371 : -210.371} y={13}>
 									{t('cirugías robóticas realizadas')}
 								</tspan>
 							</tspan>
@@ -473,7 +477,7 @@ export const CifrasMovil: React.FC = () => {
 								{'+17300'}
 							</tspan>
 							<tspan className="m-cifras-impacto">
-								<tspan x={-164.846} y={13}>
+								<tspan x={selectedLanguage === 'es' ? -164.846 : -136.846} y={13}>
 									{t('profesionales capacitados')}
 								</tspan>
 							</tspan>

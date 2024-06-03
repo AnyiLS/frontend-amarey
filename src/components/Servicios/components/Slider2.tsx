@@ -1,14 +1,14 @@
-import useGeneral from 'hooks/general.hook'
+import { useLanguage } from 'context/language'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+
 interface ISlider {
 	height: string
 	index: number
 	handleChangeSlide: (position: number) => void
 }
 
-export const Slider2: React.FC<ISlider> = ({ height, index }) => {
-	const { width } = useGeneral()
+export const Slider2: React.FC<ISlider> = ({ index }) => {
 	const [grandImage, setGrandImage] = React.useState<boolean>(false)
 	const [hoverCard, setHoverCard] = React.useState<boolean>(false)
 	const [hoverCard2, setHoverCard2] = React.useState<boolean>(false)
@@ -19,6 +19,10 @@ export const Slider2: React.FC<ISlider> = ({ height, index }) => {
 	}, [index])
 
 	const {t} = useTranslation()
+
+	/** Contexts */
+	const { selectedLanguage } = useLanguage();
+
 	return (
 		<svg viewBox="1590 10 1920 1080" preserveAspectRatio='none'  style={{ height: '100%'}} width='100%'>
 			<defs>
@@ -458,10 +462,10 @@ export const Slider2: React.FC<ISlider> = ({ height, index }) => {
 				</tspan>
 			</text>
 			<text className="v-pentagrama" transform="translate(2565 252.425)">
-				<tspan x={-365.855} y={66}>
+				<tspan x={selectedLanguage === 'es' ? -365.855 : -244.855} y={66}>
 					{t('NUESTROS CLIENTES,')}
 				</tspan>
-				<tspan x={-416.605} y={138}>
+				<tspan x={selectedLanguage === 'es' ? -416.605 : -301.605} y={138}>
 					{t('NUESTRA RAZÓN DE SER')}
 				</tspan>
 			</text>
@@ -520,7 +524,7 @@ export const Slider2: React.FC<ISlider> = ({ height, index }) => {
 						<text
 							className="aa-pentagrama"
 							transform="translate(54.107 88.799)">
-							<tspan x={117.875} y={47}>
+							<tspan x={selectedLanguage === 'es' ? 117.875 : 160} y={47}>
 								{t('SATISFACCIÓN ')}
 							</tspan>
 							<tspan className="ab-pentagrama" x={173.16} y={147}>

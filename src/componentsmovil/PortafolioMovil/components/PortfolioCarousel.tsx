@@ -1,3 +1,4 @@
+import { useLanguage } from 'context/language'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
@@ -5,6 +6,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 	/** States */
 	const [view, setView] = React.useState<number>(0)
 	const { t } = useTranslation()
+	const { selectedLanguage } = useLanguage();
 
 	return (
 		<React.Fragment>
@@ -266,7 +268,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										<tspan x={-22.923} y={0}>
 											{t('Logistica')}
 										</tspan>
-										<tspan x={-27.747} y={10}>
+										<tspan x={selectedLanguage === 'es' ? -27.747 : -22.747} y={10}>
 											{t('hospitalario')}
 										</tspan>
 									</text>
@@ -295,7 +297,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									<text
 										className="s-portfolio-1"
 										transform="translate(71.47 211.235)">
-										<tspan x={-28.985} y={0}>
+										<tspan x={selectedLanguage === 'es' ? -28.985 : -39.451} y={selectedLanguage === 'es' ? 0 : 20}>
 											{t('Equipos médicos')}
 										</tspan>
 									</text>
@@ -321,7 +323,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										<text
 											className="v-portfolio-1"
 											transform="translate(100.446 268.095)">
-											<tspan x={-60.417} y={0}>
+											<tspan x={selectedLanguage === 'es' ? -60.417 : -50.417} y={0}>
 												{t('Medicamentos')}
 											</tspan>
 										</text>
@@ -647,7 +649,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									<text
 										className="s-portfolio-1"
 										transform="translate(72.297 208.235)">
-										<tspan x={-33.269} y={0}>
+										<tspan x={selectedLanguage === 'es' ? -33.269 : -33.269} y={selectedLanguage === 'es' ? 0 : 20}>
 											{t('Medicamentos')}
 										</tspan>
 									</text>
@@ -676,10 +678,10 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									<text
 										className="s-portfolio-1"
 										transform="translate(71.47 211.235)">
-										<tspan x={-27.112} y={0}>
+										<tspan x={selectedLanguage === 'es' ? -27.112 : -39.162} y={0}>
 											{t('Dispositivos')}
 										</tspan>
-										<tspan x={-43.843} y={9}>
+										<tspan x={selectedLanguage === 'es' ? -43.843 : -11.329} y={9}>
 											{t('médico-quirúrgicos')}
 										</tspan>
 									</text>
@@ -705,7 +707,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										<text
 											className="v-portfolio-1"
 											transform="translate(86.446 268.095)">
-											<tspan x={-54.451} y={0}>
+											<tspan x={selectedLanguage === 'es' ? -54.451 : -62.451} y={0}>
 												{t('Equipos médicos')}
 											</tspan>
 										</text>
@@ -1030,7 +1032,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										<text
 											className="s-portfolio-1"
 											transform="translate(72.297 208.235)">
-											<tspan x={-37.696} y={0}>
+											<tspan x={-37.696} y={ selectedLanguage === 'es' ? 0 : 20}>
 												{t('Equipos médicos')}
 											</tspan>
 										</text>
@@ -1060,7 +1062,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									<text
 										className="s-portfolio-1"
 										transform="translate(71.47 211.235)">
-										<tspan x={-23.251} y={0}>
+										<tspan x={selectedLanguage === 'es' ? -23.251 : -23.055} y={selectedLanguage === 'es' ? 0 : 20}>
 											{t('Ortopedia')}
 										</tspan>
 									</text>
@@ -1086,10 +1088,10 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										<text
 											className="v-portfolio-1"
 											transform="translate(86.446 268.095)">
-											<tspan x={-39.162} y={0}>
+											<tspan x={selectedLanguage === 'es' ? -39.162 : -54.162} y={0}>
 												{t('Dispositivos')}
 											</tspan>
-											<tspan x={-63.329} y={14}>
+											<tspan x={selectedLanguage === 'es' ? -63.329 : -22.329} y={14}>
 												{t('médico-quirúrgicos')}
 											</tspan>
 										</text>
@@ -1413,10 +1415,10 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									<text
 										className="s-portfolio-1"
 										transform="translate(72.297 208.235)">
-										<tspan x={-24.1} y={0}>
+										<tspan x={selectedLanguage === 'es' ? -24.1 : -34.1} y={selectedLanguage === 'es' ? 0 : 15}>
 											{t('Dispositivos')}
 										</tspan>
-										<tspan x={-38.972} y={9}>
+										<tspan x={selectedLanguage === 'es' ? -38.972 : -18.972} y={selectedLanguage === 'es' ? 9 : 25}>
 											{t('médico-quirúrgicos')}
 										</tspan>
 									</text>
@@ -1445,7 +1447,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									<text
 										className="s-portfolio-1"
 										transform="translate(71.47 211.235)">
-										<tspan x={-38.218} y={0}>
+										<tspan x={selectedLanguage === 'es' ? -38.218 : -36.218} y={selectedLanguage === 'es' ? 0 : 20}>
 											{t('Cirugía robótica')}
 										</tspan>
 									</text>
@@ -1471,7 +1473,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										<text
 											className="v-portfolio-1"
 											transform="translate(100.446 268.095)">
-											<tspan x={-48.055} y={0}>
+											<tspan x={selectedLanguage === 'es' ? -48.055 : -53.055} y={0}>
 												{t('Ortopedia')}
 											</tspan>
 										</text>
@@ -1795,7 +1797,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									<text
 										className="s-portfolio-1"
 										transform="translate(72.297 208.235)">
-										<tspan x={-23.251} y={0}>
+										<tspan x={-23.251} y={selectedLanguage === 'es' ? 0 : 20}>
 											{t('Ortopedia')}
 										</tspan>
 									</text>
@@ -1827,7 +1829,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										<tspan x={-22.923} y={0}>
 											{t('Genómica')}
 										</tspan>
-										<tspan x={-23.747} y={10}>
+										<tspan x={selectedLanguage === 'es' ? -23.747 : -32.747} y={10}>
 											{t('y genética')}
 										</tspan>
 									</text>
@@ -2177,7 +2179,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									<text
 										className="s-portfolio-1"
 										transform="translate(60.297 208.235)">
-										<tspan x={-23.251} y={0}>
+										<tspan x={selectedLanguage === 'es' ? -23.251 : -23.251} y={selectedLanguage === 'es' ? 0 : 20}>
 											{t('Cirugía robótica')}
 										</tspan>
 									</text>
@@ -2206,10 +2208,10 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									<text
 										className="s-portfolio-1"
 										transform="translate(71.47 211.235)">
-										<tspan x={-22.923} y={0}>
+										<tspan x={selectedLanguage === 'es' ? -22.923 : -28.747} y={0}>
 											{t('Cuidado avanzado')}
 										</tspan>
-										<tspan x={-15.747} y={10}>
+										<tspan x={selectedLanguage === 'es' ? -15.747 : -28.747} y={10}>
 											{t('de heridas')}
 										</tspan>
 									</text>
@@ -2235,10 +2237,10 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										<text
 											className="v-portfolio-1"
 											transform="translate(75.446 268.095)">
-											<tspan x={-22.923} y={0}>
+											<tspan x={selectedLanguage === 'es' ? -22.923 : -20.923} y={0}>
 												{t('Genómica')}
 											</tspan>
-											<tspan x={-23.747} y={15}>
+											<tspan x={selectedLanguage === 'es' ? -23.747 : -32.747} y={15}>
 												{t('y genética')}
 											</tspan>
 										</text>
@@ -2623,7 +2625,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										<text
 											className="v-portfolio-1"
 											transform="translate(86.446 268.095)">
-											<tspan x={-60.417} y={0}>
+											<tspan x={selectedLanguage === 'es' ? -60.417 : -30.417} y={0}>
 												{t('Cuidado avanzado')}
 											</tspan>
 											<tspan x={-33.989} y={14}>
@@ -2950,7 +2952,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									<text
 										className="s-portfolio-1"
 										transform="translate(72.297 208.235)">
-										<tspan x={-41.827} y={0}>
+										<tspan x={selectedLanguage === 'es' ? -41.827 : -17.827} y={0}>
 											{t('Cuidado avanzado')}
 										</tspan>
 										<tspan x={-23.531} y={9}>
@@ -3370,8 +3372,8 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										<tspan x={-20.466} y={0}>
 											{t('Logística')}
 										</tspan>
-										<tspan x={-27.261} y={10}>
-											{t('hospitalaria')}
+										<tspan x={selectedLanguage === 'es' ? -27.261 : -20.261} y={10}>
+											{t('HOSPITALARIA')}
 										</tspan>
 									</text>
 								</g>
@@ -3775,11 +3777,11 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										<text
 											className="v-portfolio-1"
 											transform="translate(75 268.095)">
-											<tspan x={-20.466} y={0}>
+											<tspan x={selectedLanguage === 'es' ? -20.466 : -9.466} y={0}>
 												{t('Logística')}
 											</tspan>
-											<tspan x={-27.261} y={15}>
-												{t('hospitalaria')}
+											<tspan x={selectedLanguage === 'es' ? -27.261 : -10.261} y={15}>
+												{t('HOSPITALARIA')}
 											</tspan>
 										</text>
 									</g>

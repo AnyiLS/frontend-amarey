@@ -1,16 +1,17 @@
 import React from 'react'
 import { Carousel } from 'flowbite-react'
-import useGeneral from 'hooks/general.hook'
 import { useTranslation } from 'react-i18next'
+import { useLanguage } from 'context/language'
 
 export const CarouselMovil: React.FC = () => {
-	const { width } = useGeneral()
+	/** Contexts */
+	const { selectedLanguage } = useLanguage();
 	/** States */
 	const [height, setHeight] = React.useState<number>(0)
 	const [selectedImage, setSelectedImage] = React.useState<string>('')
 	const [step, setStep] = React.useState<number>(0)
 	const [showPopup, setShowPopup] = React.useState<boolean>(false)
-	const [mute, setMute] = React.useState(true)
+	const [mute] = React.useState(true)
 
 	const {t} = useTranslation()
 
@@ -28,7 +29,7 @@ export const CarouselMovil: React.FC = () => {
 			{selectedImage === '' ? (
 				<Carousel
 					style={{ height: `calc(100vh - ${height}px)` }}
-					slide={selectedImage === ''}
+					slide={false}
 					slideInterval={20000}>
 					<svg
 						viewBox={`2 0 414 906`}
@@ -38,18 +39,18 @@ export const CarouselMovil: React.FC = () => {
 						<defs>
 							<style>
 								{
-									'.a-bienvenida-1,.f-bienvenida-1{fill:#001f5f;}.b-bienvenida-1,.t-bienvenida-1{fill:#fff;}.c-bienvenida-1{clip-path:url(#a-bienvenida-1);}.d-bienvenida-1{fill:#e7002a;}.e-bienvenida-1{fill:url(#b-bienvenida-1);}.f-bienvenida-1{font-size:16px;font-family:Silka-Bold, Silka;}.f-bienvenida-1,.t-bienvenida-1{font-weight:700;}.g-bienvenida-1{font-size:22px;}.h-bienvenida-1{fill:#e80029;}.i-bienvenida-1{fill:#001f5b;}.j-bienvenida-1,.k-bienvenida-1,.l-bienvenida-1,.m-bienvenida-1,.n-bienvenida-1,.o-bienvenida-1,.p-bienvenida-1{stroke:#707070;stroke-miterlimit:10;stroke-width:0.54px;}.j-bienvenida-1{fill:url(#e-bienvenida-1);}.k-bienvenida-1{fill:url(#f-bienvenida-1);}.l-bienvenida-1{fill:url(#g-bienvenida-1);}.m-bienvenida-1{fill:url(#h-bienvenida-1);}.n-bienvenida-1{fill:url(#i-bienvenida-1);}.o-bienvenida-1{fill:url(#j-bienvenida-1);}.p-bienvenida-1{fill:url(#k-bienvenida-1);}.q-bienvenida-1{mix-blend-mode:multiply;isolation:isolate;}.r-bienvenida-1{fill:#d6d6d6;}.s-bienvenida-1{fill:#eeebeb;}.t-bienvenida-1{font-size:21px;font-family:Kiona-Bold, Kiona;}.u-bienvenida-1{filter:url(#c-bienvenida-1);}'
+									'.a-bienvenida-1-movil,.f-bienvenida-1-movil{fill:#001f5f;}.b-bienvenida-1-movil,.t-bienvenida-1-movil{fill:#fff;}.c-bienvenida-1-movil{clip-path:url(#a-bienvenida-1-movil);}.d-bienvenida-1-movil{fill:#e7002a;}.e-bienvenida-1-movil{fill:url(#b-bienvenida-1-movil);}.f-bienvenida-1-movil{font-size:16px;font-family:Silka-Bold, Silka;}.f-bienvenida-1-movil,.t-bienvenida-1-movil{font-weight:700;}.g-bienvenida-1-movil{font-size:22px;}.h-bienvenida-1-movil{fill:#e80029;}.i-bienvenida-1-movil{fill:#001f5b;}.j-bienvenida-1-movil,.k-bienvenida-1-movil,.l-bienvenida-1-movil,.m-bienvenida-1-movil,.n-bienvenida-1-movil,.o-bienvenida-1-movil,.p-bienvenida-1-movil{stroke:#707070;stroke-miterlimit:10;stroke-width:0.54px;}.j-bienvenida-1-movil{fill:url(#e-bienvenida-1-movil);}.k-bienvenida-1-movil{fill:url(#f-bienvenida-1-movil);}.l-bienvenida-1-movil{fill:url(#g-bienvenida-1-movil);}.m-bienvenida-1-movil{fill:url(#h-bienvenida-1-movil);}.n-bienvenida-1-movil{fill:url(#i-bienvenida-1-movil);}.o-bienvenida-1-movil{fill:url(#j-bienvenida-1-movil);}.p-bienvenida-1-movil{fill:url(#k-bienvenida-1-movil);}.q-bienvenida-1-movil{mix-blend-mode:multiply;isolation:isolate;}.r-bienvenida-1-movil{fill:#d6d6d6;}.s-bienvenida-1-movil{fill:#eeebeb;}.t-bienvenida-1-movil{font-size:21px;font-family:Kiona-Bold, Kiona;}.u-bienvenida-1-movil{filter:url(#c-bienvenida-1-movil);}'
 								}
 							</style>
-							<clipPath id="a-bienvenida-1">
+							<clipPath id="a-bienvenida-1-movil">
 								<rect
-									className="a-bienvenida-1"
+									className="a-bienvenida-1-movil"
 									width={163.429}
 									height={74.83}
 								/>
 							</clipPath>
 							<pattern
-								id="b-bienvenida-1"
+								id="b-bienvenida-1-movil"
 								width={1}
 								height={1}
 								viewBox="402.741 0 415.358 728.356">
@@ -61,7 +62,7 @@ export const CarouselMovil: React.FC = () => {
 								/>
 							</pattern>
 							<filter
-								id="c-bienvenida-1"
+								id="c-bienvenida-1-movil"
 								x={0}
 								y={637.652}
 								width={451.309}
@@ -74,7 +75,7 @@ export const CarouselMovil: React.FC = () => {
 								<feComposite in="SourceGraphic" />
 							</filter>
 							<linearGradient
-								id="e-bienvenida-1"
+								id="e-bienvenida-1-movil"
 								y1={0.5}
 								x2={1}
 								y2={0.5}
@@ -83,100 +84,100 @@ export const CarouselMovil: React.FC = () => {
 								<stop offset={0.85} stopColor="#b2722c" />
 							</linearGradient>
 							<linearGradient
-								id="f-bienvenida-1"
+								id="f-bienvenida-1-movil"
 								x1={0}
 								y1={0.5}
 								x2={1}
 								y2={0.5}
-								xlinkHref="#e-bienvenida-1"
+								xlinkHref="#e-bienvenida-1-movil"
 							/>
 							<linearGradient
-								id="g-bienvenida-1"
+								id="g-bienvenida-1-movil"
 								x1={-0.001}
 								y1={0.5}
 								x2={0.999}
 								y2={0.5}
-								xlinkHref="#e-bienvenida-1"
+								xlinkHref="#e-bienvenida-1-movil"
 							/>
 							<linearGradient
-								id="h-bienvenida-1"
+								id="h-bienvenida-1-movil"
 								x1={0}
 								y1={0.5}
 								x2={1}
 								y2={0.5}
-								xlinkHref="#e-bienvenida-1"
+								xlinkHref="#e-bienvenida-1-movil"
 							/>
 							<linearGradient
-								id="i-bienvenida-1"
+								id="i-bienvenida-1-movil"
 								x1={0}
 								y1={0.5}
 								x2={0.999}
 								y2={0.5}
-								xlinkHref="#e-bienvenida-1"
+								xlinkHref="#e-bienvenida-1-movil"
 							/>
 							<linearGradient
-								id="j-bienvenida-1"
+								id="j-bienvenida-1-movil"
 								x1={0}
 								y1={0.5}
 								x2={1}
 								y2={0.5}
-								xlinkHref="#e-bienvenida-1"
+								xlinkHref="#e-bienvenida-1-movil"
 							/>
 							<linearGradient
-								id="k-bienvenida-1"
+								id="k-bienvenida-1-movil"
 								x1={0}
 								y1={0.5}
 								x2={1}
 								y2={0.5}
-								xlinkHref="#e-bienvenida-1"
+								xlinkHref="#e-bienvenida-1-movil"
 							/>
 						</defs>
 						<g transform="translate(-3)">
 							<rect
-								className="b-bienvenida-1"
+								className="b-bienvenida-1-movil"
 								width={412}
 								height={840}
 								transform="translate(2)"
 							/>
 							<g
-								className="c-bienvenida-1"
+								className="c-bienvenida-1-movil"
 								transform="translate(2 0.395)">
 								<path
-									className="a-bienvenida-1"
+									className="a-bienvenida-1-movil"
 									d="M107.443,74.83H0V0H163.429V19.373c0,30.628-25.066,55.457-55.986,55.457"
 								/>
 							</g>
 							<path
-								className="a-bienvenida-1"
+								className="a-bienvenida-1-movil"
 								d="M220.545,54.823c-62.13,0-141.5,20.019-165.235,120.452L.033,387.579,0,825.18H417.572V54.823Z"
 								transform="translate(0 65.82)"
 							/>
 							<path
-								className="d-bienvenida-1"
+								className="d-bienvenida-1-movil"
 								d="M286.192,0c-33.942,0-66.76,18.756-94.9,54.235-28.03,35.338-49.65,85.038-62.52,143.723L1.164,767.866h1.61v3.709L131.084,198.52c12.787-58.313,34.238-107.656,62.032-142.7C220.8,20.931,252.98,2.487,286.192,2.487h131.38V0Z"
 								transform="translate(0 65.82)"
 							/>
 							<g transform="translate(2.214 162.644)">
 								<path
-									className="e-bienvenida-1"
+									className="e-bienvenida-1-movil"
 									d="M248.754,96.824H417.572V825.18H2.214L127.2,253.713c20.34-94.957,68.325-156.889,121.559-156.889"
 									transform="translate(-2.214 -96.824)"
 								/>
 								<g
-									className="u-bienvenida-1"
+									className="u-bienvenida-1-movil"
 									transform="matrix(1, 0, 0, 1, -21.21, -162.64)">
 									<path
-										className="b-bienvenida-1"
+										className="b-bienvenida-1-movil"
 										d="M0,232.348l40.469-182.3C45.342,31.734,53.526,0,98.83,0H415.309V232.348Z"
 										transform="translate(21 658.65)"
 									/>
 								</g>
 								<g transform="translate(54.531 553.394)">
 									<text
-										className="f-bienvenida-1"
+										className="f-bienvenida-1-movil"
 										transform="translate(150 75.962)">
 										<tspan
-											x={-125.416}
+											x={selectedLanguage === 'es' ? -125.416 : -95.416}
 											y={15}
 											xmlSpace="preserve">
 											{
@@ -184,8 +185,8 @@ export const CarouselMovil: React.FC = () => {
 											}
 										</tspan>
 										<tspan
-											className="g-bienvenida-1"
-											x={-115.071}
+											className="g-bienvenida-1-movil"
+											x={selectedLanguage === 'es' ? -115.071 : -75.071}
 											y={37}>
 											{t('con la salud y la vida')}
 										</tspan>
@@ -194,38 +195,38 @@ export const CarouselMovil: React.FC = () => {
 										<g transform="translate(72.285 358.239)">
 											<g transform="translate(0 0)">
 												<path
-													className="h-bienvenida-1"
+													className="h-bienvenida-1-movil"
 													d="M104.244,392.763l7.546,10.352a.281.281,0,0,1,.054.165l.013,8.082a.283.283,0,0,1-.281.282h-1.128a.28.28,0,0,1-.282-.28l0-2.866-4.077.006,0,2.866a.283.283,0,0,1-.281.282h-1.128a.28.28,0,0,1-.282-.28l-.012-7.426a.283.283,0,0,1,.281-.282h1.128a.28.28,0,0,1,.282.28l0,2.867,4.077-.006,0-3.066-6.854-9.4-5.859.009-6.824,9.424,0,3.066,4.077-.006,0-2.866a.283.283,0,0,1,.281-.282H96.1a.28.28,0,0,1,.282.28l.012,7.426a.283.283,0,0,1-.281.282H94.989a.28.28,0,0,1-.282-.28l0-2.866-4.077.006,0,2.866a.283.283,0,0,1-.281.282H89.22a.28.28,0,0,1-.282-.28l-.013-8.082a.281.281,0,0,1,.054-.165l7.513-10.377a.283.283,0,0,1,.227-.116l7.294-.012a.286.286,0,0,1,.229.116Zm-11.716-8.484-12.19-3.94a.275.275,0,0,0-.174,0l-7.684,2.51a.282.282,0,0,0-.181.355l.351,1.072a.282.282,0,0,0,.355.181l2.726-.891L77,387.442l-2.726.891a.282.282,0,0,0-.181.355l.351,1.072a.282.282,0,0,0,.355.181l7.058-2.306a.282.282,0,0,0,.181-.355l-.351-1.072a.282.282,0,0,0-.355-.181l-2.726.891-1.266-3.876,2.914-.952,11.07,3.578,1.819,5.569-6.824,9.424-2.914.952-1.266-3.876,2.725-.891a.282.282,0,0,0,.181-.355l-.351-1.072a.282.282,0,0,0-.355-.181l-7.058,2.306a.282.282,0,0,0-.181.355l.351,1.072a.282.282,0,0,0,.355.181l2.726-.891,1.266,3.876-2.725.891a.282.282,0,0,0-.181.355l.351,1.072a.282.282,0,0,0,.355.181l7.683-2.51a.286.286,0,0,0,.14-.1l7.513-10.375a.277.277,0,0,0,.039-.253L92.7,384.459a.282.282,0,0,0-.181-.181Zm15.055-1.853,12.179-3.977a.286.286,0,0,0,.141-.1l4.741-6.547a.282.282,0,0,0-.062-.394l-.913-.662a.282.282,0,0,0-.394.062l-1.682,2.323-3.3-2.391,1.682-2.322a.282.282,0,0,0-.062-.394L119,367.36a.282.282,0,0,0-.394.062l-4.355,6.014a.282.282,0,0,0,.062.394l.914.662a.282.282,0,0,0,.394-.062l1.682-2.322,3.3,2.391-1.8,2.484-11.06,3.612L103,377.16l-.019-11.635,1.8-2.483,3.3,2.391-1.682,2.322a.282.282,0,0,0,.062.394l.914.662a.282.282,0,0,0,.394-.062l4.355-6.015a.282.282,0,0,0-.062-.394l-.914-.662a.282.282,0,0,0-.394.062l-1.682,2.322-3.3-2.391,1.682-2.322a.282.282,0,0,0-.062-.394l-.914-.662a.282.282,0,0,0-.394.062l-4.741,6.547a.281.281,0,0,0-.054.165l.02,12.81a.281.281,0,0,0,.116.227l5.908,4.279a.277.277,0,0,0,.253.039Zm20.475,1.763.346-1.073a.282.282,0,0,0-.181-.355l-7.691-2.486a.275.275,0,0,0-.174,0l-12.179,3.977a.282.282,0,0,0-.181.181l-2.244,6.941a.284.284,0,0,0,.041.253l7.546,10.352a.286.286,0,0,0,.14.1l7.691,2.486a.282.282,0,0,0,.355-.181l.346-1.073a.282.282,0,0,0-.181-.355l-2.727-.882,1.253-3.88,2.729.882a.282.282,0,0,0,.355-.181l.346-1.073a.282.282,0,0,0-.181-.355l-7.066-2.284a.282.282,0,0,0-.355.181l-.346,1.073a.282.282,0,0,0,.181.355l2.727.882-1.254,3.88-2.919-.943-6.854-9.4,1.8-5.575,11.059-3.612,2.917.943-1.254,3.88-2.729-.882a.282.282,0,0,0-.355.181l-.346,1.073a.282.282,0,0,0,.181.355l7.066,2.284a.282.282,0,0,0,.355-.181l.346-1.073a.282.282,0,0,0-.181-.355l-2.729-.882,1.254-3.88,2.729.882a.282.282,0,0,0,.355-.181ZM93.393,382.4l5.889-4.3a.284.284,0,0,0,.116-.229l-.038-12.81a.273.273,0,0,0-.055-.165l-4.77-6.525a.281.281,0,0,0-.394-.061l-.911.666a.281.281,0,0,0-.061.394l1.692,2.315-3.292,2.406-1.692-2.315a.281.281,0,0,0-.394-.061l-.911.666a.281.281,0,0,0-.061.394l4.383,6a.281.281,0,0,0,.394.061l.911-.666a.281.281,0,0,0,.061-.394l-1.692-2.315,3.292-2.406,1.809,2.475.035,11.634-4.729,3.457L81.9,377.048l-1.809-2.475,3.292-2.407,1.692,2.315a.281.281,0,0,0,.394.061l.911-.666a.281.281,0,0,0,.061-.394l-4.383-6a.281.281,0,0,0-.394-.061l-.91.666a.281.281,0,0,0-.061.394l1.692,2.315-3.292,2.407L77.4,370.892a.281.281,0,0,0-.394-.061l-.91.666a.281.281,0,0,0-.061.394l4.77,6.525a.273.273,0,0,0,.142.1l12.2,3.922a.28.28,0,0,0,.252-.041Z"
 													transform="translate(-72.285 -358.239)"
 												/>
 												<g transform="translate(59.39 21.66)">
 													<path
-														className="i-bienvenida-1"
+														className="i-bienvenida-1-movil"
 														d="M670.363,550.17l3.363.012a.443.443,0,0,1,.44.443l0,1.369a5.754,5.754,0,0,1,5.019-2.244,5.93,5.93,0,0,1,5.662,3.013,7.011,7.011,0,0,1,6.17-2.971c3.027.012,5.459,1.2,6.67,3.26a11.038,11.038,0,0,1,1.128,5.364l-.039,10.694a.443.443,0,0,1-.443.44l-3.746-.013a.443.443,0,0,1-.44-.443l.036-10.138c.007-1.983-.267-3.063-.926-3.8a3.414,3.414,0,0,0-2.675-1.124,3.51,3.51,0,0,0-3.313,1.937,9.116,9.116,0,0,0-.607,4.034l-.033,9.059a.443.443,0,0,1-.443.44l-3.746-.013a.443.443,0,0,1-.44-.443l.036-10.138c.007-1.879-.268-3.029-.856-3.762a3.716,3.716,0,0,0-2.849-1.159,3.323,3.323,0,0,0-3.349,2.076,11.431,11.431,0,0,0-.466,3.9l-.033,9.059a.443.443,0,0,1-.443.44l-3.746-.013a.443.443,0,0,1-.44-.443l.067-18.4a.443.443,0,0,1,.443-.44Z"
 														transform="translate(-642.686 -543.67)"
 													/>
 													<path
-														className="i-bienvenida-1"
+														className="i-bienvenida-1-movil"
 														d="M908.842,570.318l-3.363-.012a.443.443,0,0,1-.44-.443l.007-2.064a7.664,7.664,0,0,1-6.414,2.935c-5.637-.02-9.693-4.245-9.673-10.058.022-5.881,4.143-10.146,9.851-10.126a7.164,7.164,0,0,1,6.288,3.05l.007-2.134a.443.443,0,0,1,.443-.44l3.363.012a.443.443,0,0,1,.44.443l-.067,18.4A.443.443,0,0,1,908.842,570.318ZM893.623,560.8a5.656,5.656,0,1,0,11.311-.064,5.583,5.583,0,0,0-5.72-5.937c-3.236-.012-5.576,2.52-5.59,6Z"
 														transform="translate(-830.058 -544.355)"
 													/>
 													<path
-														className="i-bienvenida-1"
+														className="i-bienvenida-1-movil"
 														d="M1055.75,551.552l3.363.012a.443.443,0,0,1,.44.443l-.006,1.438c1.224-1.8,2.2-2.323,4.185-2.316h.348l-.016,4.455c-2.784.059-4.147,1.551-4.157,4.544l-.038,10.277a.443.443,0,0,1-.443.44l-3.746-.013a.443.443,0,0,1-.44-.443l.067-18.4A.443.443,0,0,1,1055.75,551.552Z"
 														transform="translate(-972.254 -544.851)"
 													/>
 													<path
-														className="i-bienvenida-1"
+														className="i-bienvenida-1-movil"
 														d="M1128.221,563.558c.549,2.333,2.561,3.8,5.31,3.812a4.864,4.864,0,0,0,4.119-1.747.446.446,0,0,1,.332-.151l4.211.016a.44.44,0,0,1,.407.608,8.769,8.769,0,0,1-1.312,2.068,9.456,9.456,0,0,1-7.668,3.452,10.1,10.1,0,0,1-10.4-10.23,10.247,10.247,0,0,1,11.191-9.906c5.224.494,8.94,4.723,8.92,10.358a7.493,7.493,0,0,1-.181,1.774l-14.929-.054Zm10.559-4.032c-.582-2.472-2.457-3.837-5.31-3.847a5.1,5.1,0,0,0-5.374,3.808Z"
 														transform="translate(-1030.384 -545.112)"
 													/>
 													<path
-														className="i-bienvenida-1"
+														className="i-bienvenida-1-movil"
 														d="M1271.54,572.3l-6.758-16.887a.441.441,0,0,1,.411-.605l4.319.016a.443.443,0,0,1,.417.3l4.134,12.21,4.6-12.189a.44.44,0,0,1,.414-.285l4.345.016a.441.441,0,0,1,.4.618l-10.843,24.795a.444.444,0,0,1-.406.265l-4.011-.014a.44.44,0,0,1-.4-.62l3.375-7.616Z"
 														transform="translate(-1151.418 -547.998)"
 													/>
 													<path
-														className="i-bienvenida-1"
+														className="i-bienvenida-1-movil"
 														d="M496.656,507.793l-3.759-.013-4.777,11.344a.442.442,0,0,0,.406.613l4.041.014a.443.443,0,0,0,.417-.293l1.769-4.955,2.72,7.806-5.5-.02-2.134-.007a4.564,4.564,0,0,0-4.225,2.794l-3.272,7.772a.442.442,0,0,0,.406.613l4.3.016a.445.445,0,0,0,.407-.265l2.762-6.369,9.153.033,2.613,6.383a.441.441,0,0,0,.407.274l4.3.016a.442.442,0,0,0,.41-.611L496.659,507.8Z"
 														transform="translate(-482.309 -507.78)"
 													/>
@@ -233,27 +234,27 @@ export const CarouselMovil: React.FC = () => {
 											</g>
 											<g transform="translate(91.011 8.009)">
 												<path
-													className="i-bienvenida-1"
+													className="i-bienvenida-1-movil"
 													d="M712.39,427.355l-4.932-.017a6.673,6.673,0,0,1-3.439-.936,6.879,6.879,0,0,1-2.488-2.517,6.953,6.953,0,0,1,.025-6.925,6.946,6.946,0,0,1,2.506-2.509,6.746,6.746,0,0,1,6.181-.323,6.89,6.89,0,0,1,2.271,1.645l-.7.647a5.929,5.929,0,0,0-4.315-1.9,5.753,5.753,0,0,0-2.962.786,5.967,5.967,0,0,0-2.17,2.144,5.946,5.946,0,0,0-.022,5.949,6.011,6.011,0,0,0,2.154,2.18,5.7,5.7,0,0,0,2.956.818l3.946.014.017-4.89-4.49-.016,0-.944,5.477.02-.025,6.779Z"
 													transform="translate(-700.62 -413.53)"
 												/>
 												<path
-													className="i-bienvenida-1"
+													className="i-bienvenida-1-movil"
 													d="M817.749,428.579l-5.64-6.9,1.679.006a6.673,6.673,0,0,0,2.52-.39,3.336,3.336,0,0,0,1.241-1.014,2.4,2.4,0,0,0,.53-1.5,2.472,2.472,0,0,0-.436-1.4,3.255,3.255,0,0,0-1.256-1.085,4.077,4.077,0,0,0-1.887-.426l-3.82-.015-.046,12.7-.944,0,.049-13.64,4.764.017a5.25,5.25,0,0,1,1.8.311,4.434,4.434,0,0,1,1.466.876,3.876,3.876,0,0,1,.93,1.241,3.375,3.375,0,0,1-.38,3.492,3.99,3.99,0,0,1-1.641,1.305,4.294,4.294,0,0,1-1.27.362,10.832,10.832,0,0,1-1.312.068l4.91,6-1.259,0Z"
 													transform="translate(-793.892 -414.71)"
 												/>
 												<path
-													className="i-bienvenida-1"
+													className="i-bienvenida-1-movil"
 													d="M904.673,429.037a4.993,4.993,0,0,1-1.981-.417,5.165,5.165,0,0,1-1.685-1.17,4.809,4.809,0,0,1-1.117-1.683,5.4,5.4,0,0,1-.381-2.037l.03-8.5.944,0-.03,8.5a4.427,4.427,0,0,0,.319,1.68,4.141,4.141,0,0,0,.908,1.389,4.282,4.282,0,0,0,1.382.939,4.158,4.158,0,0,0,1.615.332,4.217,4.217,0,0,0,1.638-.319,4.291,4.291,0,0,0,1.389-.928,4.15,4.15,0,0,0,.918-1.382,4.419,4.419,0,0,0,.332-1.677l.03-8.5.944,0-.032,8.5a5.411,5.411,0,0,1-.4,2.034,4.83,4.83,0,0,1-1.128,1.674,5.233,5.233,0,0,1-1.683,1.159,5,5,0,0,1-2.016.4Z"
 													transform="translate(-870.701 -414.984)"
 												/>
 												<path
-													className="i-bienvenida-1"
+													className="i-bienvenida-1-movil"
 													d="M997.741,429.24l.029-13.64,4.868.017a4.763,4.763,0,0,1,2.212.533,4.27,4.27,0,0,1,1.611,1.412,3.4,3.4,0,0,1-.015,3.85,4.246,4.246,0,0,1-1.621,1.411,4.759,4.759,0,0,1-2.216.517l-3.9-.015-.022,5.918-.944,0Zm.969-6.9,3.9.014a3.9,3.9,0,0,0,1.742-.382,3.291,3.291,0,0,0,1.273-1.044,2.433,2.433,0,0,0,.478-1.435,2.458,2.458,0,0,0-.466-1.46,3.29,3.29,0,0,0-1.266-1.053,3.933,3.933,0,0,0-1.74-.4l-3.924-.014v5.771Z"
 													transform="translate(-954.704 -415.3)"
 												/>
 												<path
-													className="i-bienvenida-1"
+													className="i-bienvenida-1-movil"
 													d="M1084.918,428.974a6.734,6.734,0,0,1-3.459-.946,7,7,0,0,1,.043-12.067,6.888,6.888,0,0,1,6.925.025,7,7,0,0,1-.043,12.067A6.738,6.738,0,0,1,1084.918,428.974Zm.046-12.968a5.743,5.743,0,0,0-2.982.8,6.078,6.078,0,0,0-2.18,2.174,6.019,6.019,0,0,0-.022,6.023,6.055,6.055,0,0,0,2.164,2.19,5.9,5.9,0,0,0,5.959.022,5.994,5.994,0,0,0,2.17-2.174,6.085,6.085,0,0,0,.022-6.023,5.983,5.983,0,0,0-2.154-2.19,5.737,5.737,0,0,0-2.977-.818Z"
 													transform="translate(-1023.373 -414.821)"
 												/>
@@ -261,40 +262,40 @@ export const CarouselMovil: React.FC = () => {
 										</g>
 										<g transform="translate(266.643 386.84)">
 											<path
-												className="j-bienvenida-1"
+												className="j-bienvenida-1-movil"
 												d="M1436.354,633.38l-.02,5.459-6.542-.023.02-5.459-15.691-.056.019-5.313,16.817-25.517,5.508.02-.091,25.036,3.837.015-.022,5.853-3.837-.015Zm-6.47-19.9-9.1,13.986,9.05.033.051-14.018Z"
 												transform="translate(-1414.12 -595.696)"
 											/>
 											<g transform="translate(34.477 15.727)">
 												<path
-													className="k-bienvenida-1"
+													className="k-bienvenida-1-movil"
 													d="M1654.819,674.116l-.364-.888-1.221,0-.384.885-.7,0,1.443-3.426h.5l1.427,3.437-.7,0Zm-.979-2.539-.371,1.039.733,0-.364-1.041Z"
 													transform="translate(-1652.15 -669.753)"
 												/>
 												<path
-													className="l-bienvenida-1"
+													className="l-bienvenida-1-movil"
 													d="M1686.31,668.657l-1.425-2.5-.009,2.493-.636,0,.013-3.431.724,0,1.412,2.5.009-2.5.636,0-.013,3.431-.71,0Zm-.335-3.747c-.111,0-.436-.117-.524-.117-.116,0-.149.013-.326.115l-.249-.372a.6.6,0,0,1,.479-.216c.111,0,.371.117.5.117a.391.391,0,0,0,.311-.156l.249.377a.542.542,0,0,1-.437.253Z"
 													transform="translate(-1679.592 -664.28)"
 												/>
 												<path
-													className="m-bienvenida-1"
+													className="m-bienvenida-1-movil"
 													d="M1714.989,674.042a1.776,1.776,0,1,1,1.776-1.771A1.748,1.748,0,0,1,1714.989,674.042Zm.006-2.937a1.163,1.163,0,0,0-.009,2.326,1.116,1.116,0,0,0,1.137-1.151A1.138,1.138,0,0,0,1714.995,671.1Z"
 													transform="translate(-1704.349 -669.591)"
 												/>
 												<path
-													className="n-bienvenida-1"
+													className="n-bienvenida-1-movil"
 													d="M1747.114,674.152a1.083,1.083,0,0,1-1.124-1.044l.663,0a.417.417,0,0,0,.462.429.424.424,0,0,0,.466-.416.439.439,0,0,0-.156-.349,2,2,0,0,0-.594-.267.981.981,0,1,1,1.3-.928l-.659,0a.347.347,0,0,0-.361-.364.331.331,0,0,0-.354.346.36.36,0,0,0,.19.311,2.214,2.214,0,0,0,.38.155c.7.262.885.565.884,1.03a1.083,1.083,0,0,1-1.1,1.1Z"
 													transform="translate(-1732.398 -669.685)"
 												/>
 											</g>
 											<path
-												className="o-bienvenida-1"
+												className="o-bienvenida-1-movil"
 												d="M1601.168,555.7a17.748,17.748,0,1,0,17.748,17.748A17.748,17.748,0,0,0,1601.168,555.7Zm.129,27.521a9.645,9.645,0,1,1,9.645-9.645A9.645,9.645,0,0,1,1601.3,583.22Z"
 												transform="translate(-1558.898 -555.7)"
 											/>
 										</g>
 										<path
-											className="p-bienvenida-1"
+											className="p-bienvenida-1-movil"
 											d="M1786.544,562.367a8.706,8.706,0,0,1-.975-3.352c-.035-.868-.055-1.808-.069-2.675a7.087,7.087,0,0,0-2.276-5.7,10.228,10.228,0,0,0-2.076-1.318,53.186,53.186,0,0,1-4.579-2.869l.054-.117c1.634.718,3.269,1.433,4.9,2.164a7.494,7.494,0,0,1,5.128,5.817,14.257,14.257,0,0,1,.117,2.693c-.014,1.784-.017,3.569-.091,5.353h-.129Z"
 											transform="translate(-1457.428 -160.856)"
 										/>
@@ -302,13 +303,13 @@ export const CarouselMovil: React.FC = () => {
 								</g>
 							</g>
 							<path
-								className="b-bienvenida-1"
+								className="b-bienvenida-1-movil"
 								d="M0,0V16.967L14.7,8.483,7.68,4.431Z"
 								transform="translate(72.708 316.053) rotate(-76)"
 								onClick={() => setSelectedImage('d')}
 							/>
 							<text
-								className="t-bienvenida-1"
+								className="t-bienvenida-1-movil"
 								transform="translate(52.483 460.518) rotate(-76)" onClick={() => setSelectedImage('d')}>
 								<tspan x={0} y={0}>
 									{t('Conoce Más')}
@@ -438,13 +439,13 @@ export const CarouselMovil: React.FC = () => {
 								<text
 									className="h-carousel-welcome-2"
 									transform="translate(45.358 577.356)">
-									<tspan x={7.554} y={15}>
+									<tspan x={selectedLanguage === 'es' ? 7.554 : 52.554} y={15}>
 										{
 											t('Llevando la precisión quirúrgica más allá ')
 										}
 									</tspan>
-									<tspan x={39.402} y={33}>
-										{t('de los límites de nuestras manos')}
+									<tspan x={selectedLanguage === 'es' ? 39.402 : 49.402} y={33}>
+										{t('de los límites de nuestras manos')}
 									</tspan>
 								</text>
 								<text
@@ -571,23 +572,23 @@ export const CarouselMovil: React.FC = () => {
 								<text
 									className="f-carousel-welcome-3"
 									transform="translate(210 568.356)">
-									<tspan x={-72.71} y={21}>
+									<tspan x={ selectedLanguage === 'es' ? -72.71 : -55} y={21}>
 										{t('desarrollo de ')}
 									</tspan>
-									<tspan x={-108.163} y={45}>
+									<tspan x={selectedLanguage === 'es' ? -108.163 : -57} y={45}>
 										{t('tecnología en salud')}
 									</tspan>
 								</text>
 								<text
 									className="g-carousel-welcome-3"
 									transform="translate(92.51 514.356)">
-									<tspan x={6.364} y={15}>
+									<tspan x={selectedLanguage === 'es' ? 6.364 : 46.364} y={15}>
 										{t('Representamos las marcas ')}
 									</tspan>
-									<tspan x={12.412} y={33}>
+									<tspan x={selectedLanguage === 'es' ? 12.412 : 17.412} y={33}>
 										{t('de mayor prestigio a nivel ')}
 									</tspan>
-									<tspan x={8.924} y={51}>
+									<tspan x={selectedLanguage === 'es' ? 8.924 : 54.924} y={51}>
 										{t('mundial en investigación y')}
 									</tspan>
 								</text>
@@ -755,13 +756,13 @@ export const CarouselMovil: React.FC = () => {
 							<text
 								className="h-pentagrama"
 								transform="translate(210 116.557)">
-								<tspan x={-102.024} y={18}>
+								<tspan x={selectedLanguage === 'es' ? -102.024 : -77.024} y={18}>
 									{t('El origen de nuestra ')}
 								</tspan>
-								<tspan x={-129.438} y={37}>
+								<tspan x={selectedLanguage === 'es' ? -129.438 : -103.438} y={37}>
 									{t('historia es hoy la esencia ')}
 								</tspan>
-								<tspan x={-87.678} y={56}>
+								<tspan x={selectedLanguage === 'es' ? -87.678 : -46.678} y={56}>
 									{t('de nuestra marca')}
 								</tspan>
 							</text>
@@ -1023,14 +1024,14 @@ export const CarouselMovil: React.FC = () => {
 							<text
 								className="i-pentagrama"
 								transform="translate(210 116.557)">
-								<tspan x={-102.024} y={18}>
-									{'El origen de nuestra '}
+								<tspan x={selectedLanguage === 'es' ? -102.024 : -77.024} y={18}>
+									{t('El origen de nuestra ')}
 								</tspan>
-								<tspan x={-129.438} y={37}>
-									{'historia es hoy la esencia '}
+								<tspan x={selectedLanguage === 'es' ? -129.438 : -103.438} y={37}>
+									{t('historia es hoy la esencia ')}
 								</tspan>
-								<tspan x={-87.678} y={56}>
-									{'de nuestra marca'}
+								<tspan x={selectedLanguage === 'es' ? -87.678 : -46.678} y={56}>
+									{t('de nuestra marca')}
 								</tspan>
 							</text>
 							<g
@@ -1106,7 +1107,7 @@ export const CarouselMovil: React.FC = () => {
 										<text
 											className="m-pentagrama"
 											transform="translate(15.74 56.229)">
-											<tspan x={10.373} y={18}>
+											<tspan x={selectedLanguage === 'es' ? 10.373 : 35.373} y={18}>
 												{t('Nuestro origen')}
 											</tspan>
 										</text>
@@ -1430,14 +1431,14 @@ export const CarouselMovil: React.FC = () => {
 							<text
 								className="h-pentagrama"
 								transform="translate(210 116.557)">
-								<tspan x={-102.024} y={18}>
-									{'El origen de nuestra '}
+								<tspan x={selectedLanguage === 'es' ? -102.024 : -77.024} y={18}>
+									{t('El origen de nuestra ')}
 								</tspan>
-								<tspan x={-129.438} y={37}>
-									{'historia es hoy la esencia '}
+								<tspan x={selectedLanguage === 'es' ? -129.438 : -103.438} y={37}>
+									{t('historia es hoy la esencia ')}
 								</tspan>
-								<tspan x={-87.678} y={56}>
-									{'de nuestra marca'}
+								<tspan x={selectedLanguage === 'es' ? -87.678 : -46.678} y={56}>
+									{t('de nuestra marca')}
 								</tspan>
 							</text>
 							<g transform="translate(184.884 718.571)">
@@ -1512,7 +1513,7 @@ export const CarouselMovil: React.FC = () => {
 										<text
 											className="n-pentagrama"
 											transform="translate(18.74 57.229)">
-											<tspan x={2.171} y={18}>
+											<tspan x={selectedLanguage === 'es' ? 2.171 : 32.171} y={18}>
 												{t('Nuestra historia ')}
 											</tspan>
 										</text>
@@ -1762,14 +1763,14 @@ export const CarouselMovil: React.FC = () => {
 							<text
 								className="h-pentagrama"
 								transform="translate(210 116.557)">
-								<tspan x={-102.024} y={18}>
-									{'El origen de nuestra '}
+								<tspan x={selectedLanguage === 'es' ? -102.024 : -77.024} y={18}>
+									{t('El origen de nuestra ')}
 								</tspan>
-								<tspan x={-129.438} y={37}>
-									{'historia es hoy la esencia '}
+								<tspan x={selectedLanguage === 'es' ? -129.438 : -103.438} y={37}>
+									{t('historia es hoy la esencia ')}
 								</tspan>
-								<tspan x={-87.678} y={56}>
-									{'de nuestra marca'}
+								<tspan x={selectedLanguage === 'es' ? -87.678 : -46.678} y={56}>
+									{t('de nuestra marca')}
 								</tspan>
 							</text>
 							<g
@@ -1805,7 +1806,7 @@ export const CarouselMovil: React.FC = () => {
 									xlinkHref="/images/mobile/ComponentTMP_0-image.png"
 								/>
 							</g>
-							<g transform="translate(207.677 247.877)">
+							<g transform="translate(207.677 247.877)" onClick={() => setStep(2)}>
 								<rect
 									className="j-pentagrama"
 									width={148.114}
@@ -1855,7 +1856,7 @@ export const CarouselMovil: React.FC = () => {
 										<text
 											className="n-pentagrama"
 											transform="translate(12.74 56.229)">
-											<tspan x={0.117} y={18}>
+											<tspan x={selectedLanguage === 'es' ? 0.117 : 20.117} y={18}>
 												{t('Nuestros aliados ')}
 											</tspan>
 										</text>
@@ -2095,14 +2096,14 @@ export const CarouselMovil: React.FC = () => {
 							<text
 								className="h-pentagrama"
 								transform="translate(210 116.557)">
-								<tspan x={-102.024} y={18}>
-									{'El origen de nuestra '}
+								<tspan x={selectedLanguage === 'es' ? -102.024 : -77.024} y={18}>
+									{t('El origen de nuestra ')}
 								</tspan>
-								<tspan x={-129.438} y={37}>
-									{'historia es hoy la esencia '}
+								<tspan x={selectedLanguage === 'es' ? -129.438 : -103.438} y={37}>
+									{t('historia es hoy la esencia ')}
 								</tspan>
-								<tspan x={-87.678} y={56}>
-									{'de nuestra marca'}
+								<tspan x={selectedLanguage === 'es' ? -87.678 : -46.678} y={56}>
+									{t('de nuestra marca')}
 								</tspan>
 							</text>
 							<g
@@ -2199,7 +2200,7 @@ export const CarouselMovil: React.FC = () => {
 										<text
 											className="n-pentagrama"
 											transform="translate(23.74 56.229)">
-											<tspan x={35.3} y={18}>
+											<tspan x={selectedLanguage === 'es' ? 35.3 : 25} y={18}>
 												{t('Filosofía ')}
 											</tspan>
 										</text>
@@ -2427,14 +2428,14 @@ export const CarouselMovil: React.FC = () => {
 							<text
 								className="h-pentagrama"
 								transform="translate(210 116.557)">
-								<tspan x={-102.024} y={18}>
-									{'El origen de nuestra '}
+								<tspan x={selectedLanguage === 'es' ? -102.024 : -77.024} y={18}>
+									{t('El origen de nuestra ')}
 								</tspan>
-								<tspan x={-129.438} y={37}>
-									{'historia es hoy la esencia '}
+								<tspan x={selectedLanguage === 'es' ? -129.438 : -103.438} y={37}>
+									{t('historia es hoy la esencia ')}
 								</tspan>
-								<tspan x={-87.678} y={56}>
-									{'de nuestra marca'}
+								<tspan x={selectedLanguage === 'es' ? -87.678 : -46.678} y={56}>
+									{t('de nuestra marca')}
 								</tspan>
 							</text>
 							<g

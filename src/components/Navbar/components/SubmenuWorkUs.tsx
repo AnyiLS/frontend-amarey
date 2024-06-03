@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SubmenuWorkUs: React.FC<{ ref: any }> = ({ ref }) => {
+const SubmenuWorkUs: React.FC<React.RefAttributes<SVGSVGElement>> = ({ ref }) => {
 	return (
 		<svg
 			viewBox="0 0 1920 360"

@@ -1,5 +1,5 @@
 
-const SubmenuActualidad: React.FC<{ ref: any }> = ({ ref }) => {
+const SubmenuActualidad: React.FC<React.RefAttributes<SVGSVGElement>> = ({ ref }) => {
 	return (
 		<svg
 			viewBox="0 0 1920 360"

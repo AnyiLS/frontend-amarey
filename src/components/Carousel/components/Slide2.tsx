@@ -1,28 +1,27 @@
-import useGeneral from 'hooks/general.hook'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+/** Contexts */
+import { useLanguage } from 'context/language';
+/** Interfaces & Types */
+import type { ISlide } from 'utils/models/Slide';
+/** Styles */
+import './styles/slide2.css';
 
-interface ISlide {
-	height: string
-	onClick: (number: number) => void
-}
-
-const Slide2: React.FC<ISlide> = ({ height, onClick }): JSX.Element => {
-	const { width } = useGeneral()
+const Slide2: React.FC<ISlide> = ({ onClick }): JSX.Element => {
+	/** Hooks */
 	const {t} = useTranslation()
+
+	/** Contexts */
+	const { selectedLanguage } = useLanguage();
+
 	return (
 		<svg
 			width="100%"
-			// style={{ height: width > 1280 ? `calc(100vh - ${document.getElementById('navbar__container')?.clientHeight}px)` : '100%'}}
 			height="100%"
 			viewBox="0 92 1920 970"
-			preserveAspectRatio="none">
+			preserveAspectRatio="none"
+		>
 			<defs>
-				<style>
-					{
-						".a-slide-2,.h-slide-2{fill:#001f5f;}.b-slide-2,.f-slide-2{fill:none;}.c-slide-2,.m-slide-2{fill:#fff;}.d-slide-2{clip-path:url(#a-slide-2);}.e-slide-2{clip-path:url(#b-slide-2);}.f-slide-2{stroke:#e7002a;stroke-miterlimit:10;stroke-width:3px;}.g-slide-2{fill:url(#c-slide-2);}.h-slide-2{font-size:60px;font-family:Silka-Bold, Silka;}.h-slide-2,.m-slide-2{font-weight:700;}.i-slide-2{mix-blend-mode:multiply;isolation:isolate;}.j-slide-2{fill:#eeebeb;}.k-slide-2{fill:#d6d6d6;}.l-slide-2{fill:#e40032;}.l-slide-2:hover{fill: #001F5F}.m-slide-2{font-size:28px;font-family:'Kiona-Bold';}.n-slide-2{fill:#182856;font-size:32px;font-family:Silka-Regular, Silka;}.o-slide-2{filter:url(#f-slide-2);}.p-slide-2{filter:url(#d-slide-2);}"
-					}
-				</style>
 				<clipPath id="a-slide-2">
 					<rect
 						className="a-slide-2"
@@ -128,7 +127,7 @@ const Slide2: React.FC<ISlide> = ({ height, onClick }): JSX.Element => {
 				<text
 					className="h-slide-2"
 					transform="translate(809.445 772.835)">
-					<tspan x={-231.54} y={57}>
+					<tspan x={selectedLanguage === 'es' ? -231.54 : -180.54} y={57}>
 						{t('ROBOT DAVINCI')}
 					</tspan>
 				</text>
@@ -155,10 +154,10 @@ const Slide2: React.FC<ISlide> = ({ height, onClick }): JSX.Element => {
 				<text
 					className="n-slide-2"
 					transform="translate(804.066 855.303)">
-					<tspan x={-455.168} y={30}>
+					<tspan x={selectedLanguage === 'es' ? -455.168 : -350.168} y={30}>
 						{t('Llevando la precisión quirúrgica más allá de los límites de')}
 					</tspan>
-					<tspan x={-125.776} y={64}>
+					<tspan x={selectedLanguage === 'es' ? -125.776 : 0} y={64}>
 						{t('nuestras manos')}
 					</tspan>
 				</text>

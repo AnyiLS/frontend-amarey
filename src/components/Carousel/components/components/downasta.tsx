@@ -1,8 +1,11 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import { AstasProps } from 'utils/models/Slide'
 
-const DownAsta: React.FC<{onUnselected: () => void}> = ({ onUnselected }): JSX.Element => {
+const DownAsta: React.FC<AstasProps> = ({ onUnselected }): JSX.Element => {
+	/** Hooks */
 	const {t} = useTranslation()
+
 	return (
 		<React.Fragment>
 			<g transform='translate(695 620)' onClick={onUnselected}>

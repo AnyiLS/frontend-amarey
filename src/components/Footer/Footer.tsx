@@ -1,8 +1,10 @@
+import { useLanguage } from 'context/language'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
 const Footer: React.FC = (): JSX.Element => {
 	const {t} = useTranslation()
+	const { selectedLanguage } = useLanguage()
 	return (
 		<div>
 			<svg viewBox="0 0 1920 318.202" xmlns="http://www.w3.org/2000/svg">
@@ -44,19 +46,19 @@ const Footer: React.FC = (): JSX.Element => {
 						{t('Carrera 7 # 99-53, pisos 19 y 20')}
 					</tspan>
 					<tspan x={354.5} y={20} />
-					<tspan x={180.056} y={29}>
+					<tspan x={selectedLanguage === 'es' ? 180.056 : 210.056} y={29}>
 						{
 							t('L\xEDnea de atenci\xF3n al cliente 018000 180066 - (601) 7447300')
 						}
 					</tspan>
 					<tspan x={354.5} y={38} />
-					<tspan x={137.12} y={47}>
+					<tspan x={selectedLanguage === 'es' ? 137.12 : 157.12} y={47}>
 						{
 							t('Reporte de eventos adversos o PQR: servicioalcliente@grupoamarey.c-5om')
 						}
 					</tspan>
 					<tspan x={354.5} y={56} />
-					<tspan x={228.41} y={65}>
+					<tspan x={selectedLanguage === 'es' ? 228.41 : 248.41} y={65}>
 						{t('Línea ética: linea.etica@grupoamarey.c-5om')}
 					</tspan>
 				</text>
@@ -197,6 +199,7 @@ const Footer: React.FC = (): JSX.Element => {
 							width={610.636}
 							style={{ objectFit: "contain", width: 841,  objectPosition: "right bottom", height: 360, marginTop: "-19px"}}
 							src="/images/video/mapa.webp"
+							alt=''
 							/>
 						</foreignObject>
 					</g>
@@ -204,7 +207,7 @@ const Footer: React.FC = (): JSX.Element => {
 				<g transform="translate(851 185)">
 					<a href="https://www.google.com" target="_blank" rel='noreferrer'>
 						<text className="d-5">
-							<tspan className="h-5" x={9.712} y={11}>
+							<tspan className="h-5" x={selectedLanguage === 'es' ? 9.712 : 45.712} y={11}>
 								{t('Tratamiento de datos personales')}
 							</tspan>
 							<tspan className="i-5" y={11} />
@@ -214,7 +217,7 @@ const Footer: React.FC = (): JSX.Element => {
 				<g transform="translate(698 214)">
 					<a href="https://www.google.com" target="_blank" rel='noreferrer'>
 						<text className="j-5">
-							<tspan x={134.14} y={11}>
+							<tspan x={selectedLanguage === 'es' ? 134.14 : 186.14} y={11}>
 								{
 									t('Pol\xEDtica de protecci\xF3n de datos personales')
 								}
