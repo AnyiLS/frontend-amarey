@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const OrthopedicsMobile: React.FC = (): JSX.Element => {
 	/** States */
@@ -9,6 +10,8 @@ const OrthopedicsMobile: React.FC = (): JSX.Element => {
 	React.useEffect(() => {
 		if (document.getElementById('navbar__container')) setHeight(document.getElementById('navbar__container')?.clientHeight ?? 0)
 	}, [])
+
+	const {t} = useTranslation()
 
 	return (
 		<React.Fragment>
@@ -87,7 +90,7 @@ const OrthopedicsMobile: React.FC = (): JSX.Element => {
 							className="d-reward-2-mobile"
 							transform="translate(207 536)">
 							<tspan x={-66.168} y={0}>
-								{'Ortopedia'}
+								{t('Ortopedia')}
 							</tspan>
 						</text>
 						<text
@@ -95,42 +98,42 @@ const OrthopedicsMobile: React.FC = (): JSX.Element => {
 							transform="translate(36 560)">
 							<tspan x={0} y={13}>
 								{
-									'Somos líderes con tecnología que aporta a los '
+									t('Somos líderes con tecnología que aporta a los ')
 								}
 							</tspan>
 							<tspan x={0} y={31}>
 								{
-									'profesionales de la salud y sus pacientes las '
+									t('profesionales de la salud y sus pacientes las ')
 								}
 							</tspan>
 							<tspan x={0} y={49}>
 								{
-									'herramientas en cirugías que permiten alcanzar '
+									t('herramientas en cirugías que permiten alcanzar ')
 								}
 							</tspan>
 							<tspan x={0} y={67}>
 								{
-									'una calidad de vida más activa y satisfactoria '
+									t('una calidad de vida más activa y satisfactoria ')
 								}
 							</tspan>
 							<tspan x={0} y={85} xmlSpace="preserve">
-								{'mediante las líneas de:  '}
+								{t('mediante las líneas de:  ')}
 							</tspan>
 						</text>
 						<text
 							className="e-reward-2-mobile"
 							transform="translate(79 662)">
 							<tspan x={0} y={13}>
-								{'Trauma '}
+								{t('Trauma')}
 							</tspan>
 							<tspan x={0} y={31}>
-								{'Reemplazo articular '}
+								{t('Reemplazo articular')}
 							</tspan>
 							<tspan x={0} y={49}>
-								{'Artroscopia '}
+								{t('Artroscopia')}
 							</tspan>
 							<tspan x={0} y={67}>
-								{'Cráneo y maxilofacial '}
+								{t('Cráneo y maxilofacial')}
 							</tspan>
 						</text>
 						<g
@@ -147,7 +150,7 @@ const OrthopedicsMobile: React.FC = (): JSX.Element => {
 							className="g-reward-2-mobile"
 							transform="translate(207 26)">
 							<tspan x={-101.322} y={0}>
-								{'Soluciones en salud'}
+								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
 						<g transform="translate(366.585 13.292)" onClick={() => window.location.href = '/productos'}>
@@ -171,7 +174,7 @@ const OrthopedicsMobile: React.FC = (): JSX.Element => {
 								className="g-reward-2-mobile"
 								transform="translate(55.5 28.584)">
 								<tspan x={0} y={0}>
-									{'Conoce Más'}
+									{t('Conoce Más')}
 								</tspan>
 							</text>
 						</g>
@@ -299,43 +302,43 @@ const OrthopedicsMobile: React.FC = (): JSX.Element => {
 							className="f-reward-2-mobile"
 							transform="translate(215 530)">
 							<tspan x={-66.168} y={0}>
-								{'Ortopedia'}
+								{t('Ortopedia')}
 							</tspan>
 						</text>
 						<text
 							className="g-reward-2-mobile"
 							transform="translate(44 578)">
 							<tspan x={0} y={13}>
-								{'Nuestro modelo integral de servicio de '}
+								{t('Nuestro modelo integral de servicio de ')}
 							</tspan>
 							<tspan x={0} y={31}>
 								{
-									'ortopedia ofrece disponibilidad 24/7 los 365 '
+									t('ortopedia ofrece disponibilidad 24/7 los 365')
 								}
 							</tspan>
 							<tspan x={0} y={49}>
-								{'días del año, con un servicio que ofrece '}
+								{t('días del año, con un servicio que ofrece ')}
 							</tspan>
 							<tspan x={0} y={67}>
-								{'acompañamiento en el quirófano y servicio '}
+								{t('acompañamiento en el quirófano y servicio ')}
 							</tspan>
 							<tspan x={0} y={85}>
-								{'posventa. '}
+								{t('posventa. ')}
 							</tspan>
 							<tspan x={0} y={103} />
 							<tspan x={0} y={121}>
-								{'Contamos con una red logística de ortopedia '}
+								{t('Contamos con una red logística de ortopedia ')}
 							</tspan>
 							<tspan x={0} y={139}>
-								{'para atención de cirugías en ciudades '}
+								{t('para atención de cirugías en ciudades ')}
 							</tspan>
 							<tspan x={0} y={157} xmlSpace="preserve">
 								{
-									'principales e intermedias de Colombia y      '
+									t('principales e intermedias de Colombia y')
 								}
 							</tspan>
 							<tspan x={0} y={175}>
-								{'Costa Rica. '}
+								{t('Costa Rica. ')}
 							</tspan>
 						</text>
 						<g
@@ -384,7 +387,7 @@ const OrthopedicsMobile: React.FC = (): JSX.Element => {
 							className="o-reward-2-mobile"
 							transform="translate(215 26)">
 							<tspan x={-101.322} y={0}>
-								{'Soluciones en salud'}
+								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
 						<g transform="translate(374.584 13.292)" onClick={() => setView(0)}>

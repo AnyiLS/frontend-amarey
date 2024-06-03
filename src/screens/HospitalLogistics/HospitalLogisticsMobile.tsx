@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const HospitalLogisticsMobile: React.FC = (): JSX.Element => {
     /** States */
@@ -8,6 +9,8 @@ const HospitalLogisticsMobile: React.FC = (): JSX.Element => {
 	React.useEffect(() => {
 		if (document.getElementById('navbar__container')) setHeight(document.getElementById('navbar__container')?.clientHeight ?? 0)
 	}, [])
+
+	const {t} = useTranslation()
 
 	return (
 		<React.Fragment>
@@ -86,10 +89,10 @@ const HospitalLogisticsMobile: React.FC = (): JSX.Element => {
 							className="d-reward-2-mobile"
 							transform="translate(207 559)">
 							<tspan x={-61.968} y={0}>
-								{'LOGÍSTICA'}
+								{t('LOGÍSTICA ')}
 							</tspan>
 							<tspan x={-84.3} y={26}>
-								{'HOSPITALARIA'}
+								{t('HOSPITALARIA ')}
 							</tspan>
 						</text>
 						<text
@@ -97,26 +100,26 @@ const HospitalLogisticsMobile: React.FC = (): JSX.Element => {
 							transform="translate(36 619)">
 							<tspan x={0} y={13}>
 								{
-									'Nuestro portafolio de soluciones tecnológicas '
+									t('Nuestro portafolio de soluciones tecnológicas')
 								}
 							</tspan>
 							<tspan x={0} y={31}>
-								{'está enfocado en la automatización de '}
+								{t('está enfocado en la automatización de ')}
 							</tspan>
 							<tspan x={0} y={49}>
-								{'procesos intrahospitalarios para el '}
+								{t('procesos intrahospitalarios para el ')}
 							</tspan>
 							<tspan x={0} y={67}>
-								{'almacenamiento y la dispensación de '}
+								{t('almacenamiento y la dispensación de ')}
 							</tspan>
 							<tspan x={0} y={85}>
-								{'medicamentos y material médico-quirúrgico, '}
+								{t('medicamentos y material médico-quirúrgico, ')}
 							</tspan>
 							<tspan x={0} y={103}>
-								{'aumentando la seguridad del paciente y la '}
+								{t('aumentando la seguridad del paciente y la ')}
 							</tspan>
 							<tspan x={0} y={121}>
-								{'eficiencia en los procesos. '}
+								{t('eficiencia en los procesos.')}
 							</tspan>
 						</text>
 						<g
@@ -133,7 +136,7 @@ const HospitalLogisticsMobile: React.FC = (): JSX.Element => {
 							className="g-reward-2-mobile"
 							transform="translate(207 26)">
 							<tspan x={-101.322} y={0}>
-								{'Soluciones en salud'}
+								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
 						<g transform="translate(366.585 13.292)" onClick={() => window.location.href = '/productos'}>
@@ -159,7 +162,7 @@ const HospitalLogisticsMobile: React.FC = (): JSX.Element => {
 								className="g-reward-2-mobile"
 								transform="translate(55.5 28.584)">
 								<tspan x={0} y={0}>
-									{'Conoce Más'}
+									{t('Conoce Más')}
 								</tspan>
 							</text>
 						</g>
@@ -259,10 +262,10 @@ const HospitalLogisticsMobile: React.FC = (): JSX.Element => {
 							className="f-reward-2-mobile"
 							transform="translate(215 605)">
 							<tspan x={-61.968} y={0}>
-								{'LOGÍSTICA'}
+								{t('LOGÍSTICA ')}
 							</tspan>
 							<tspan x={-87.9} y={19}>
-								{'HOSPITALARIA '}
+								{t('HOSPITALARIA ')}
 							</tspan>
 						</text>
 						<text
@@ -270,26 +273,26 @@ const HospitalLogisticsMobile: React.FC = (): JSX.Element => {
 							transform="translate(44 656)">
 							<tspan x={0} y={13}>
 								{
-									'Alineamos estos procesos a los lineamientos de '
+									t('Alineamos estos procesos a los lineamientos de ')
 								}
 							</tspan>
 							<tspan x={0} y={31}>
-								{'la '}
+								{t('LA ')}
 							</tspan>
 							<tspan className="h-reward-2-mobile" y={31}>
-								{'Joint Commission International'}
+								{t('Joint Commission International,')}
 							</tspan>
-							<tspan y={31}>{', buscando las '}</tspan>
+							<tspan y={31}>{t('buscando las ')}</tspan>
 							<tspan x={0} y={49}>
 								{
-									'mejores prácticas para asegurar la trazabilidad '
+									t('mejores prácticas para asegurar la trazabilidad ')
 								}
 							</tspan>
 							<tspan x={0} y={67}>
-								{'de medicamentos y generando en tiempo real '}
+								{t('de medicamentos y generando en tiempo real ')}
 							</tspan>
 							<tspan x={0} y={85}>
-								{'los movimientos de inventario.'}
+								{t('los movimientos de inventario.')}
 							</tspan>
 							<tspan className="i-reward-2-mobile" y={85} />
 							<tspan className="i-reward-2-mobile">
@@ -342,7 +345,7 @@ const HospitalLogisticsMobile: React.FC = (): JSX.Element => {
 							className="q-reward-2-mobile"
 							transform="translate(215 26)">
 							<tspan x={-101.322} y={0}>
-								{'Soluciones en salud'}
+								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
 						<g transform="translate(374.584 13.292)" onClick={() => setView(0)}>

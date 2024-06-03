@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 	/** States */
@@ -9,6 +10,7 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 		if (document.getElementById('navbar__container')) setHeight(document.getElementById('navbar__container')?.clientHeight ?? 0)
 	}, [])
 
+	const {t} = useTranslation()
 
 	return (
 		<React.Fragment>
@@ -81,7 +83,7 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 						/>
 						<text className="c" transform="translate(288.5 1921.5)">
 							<tspan x={-137.304} y={0}>
-								{'Gen\xF3mica y gen\xE9tica'}
+								{t('Gen\xF3mica y gen\xE9tica')}
 							</tspan>
 						</text>
 						<text className="c" transform="translate(180.5 2211.5)">
@@ -96,24 +98,24 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 						</text>
 						<text className="d" transform="translate(116.5 2223.5)">
 							<tspan x={0} y={13}>
-								{'La gen\xF3mica analiza la forma en que se '}
+								{t('La gen\xF3mica analiza la forma en que se ')}
 							</tspan>
 							<tspan x={0} y={31}>
-								{'comporta un conjunto de genes. '}
+								{t('comporta un conjunto de genes. ')}
 							</tspan>
 						</text>
 						<text className="d" transform="translate(116.5 2405.5)">
 							<tspan x={0} y={13}>
 								{
-									'La gen\xE9tica es el estudio de rasgos y genes '
+									t('La gen\xE9tica es el estudio de rasgos y genes ')
 								}
 							</tspan>
 							<tspan x={0} y={31}>
-								{'heredados que pueden predisponer a una '}
+								{t('heredados que pueden predisponer a una ')}
 							</tspan>
 							<tspan x={0} y={49}>
 								{
-									'persona a una condici\xF3n de salud particular.'
+									t('persona a una condici\xF3n de salud particular.')
 								}
 							</tspan>
 						</text>
@@ -129,7 +131,7 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 						</g>
 						<text className="f" transform="translate(288.5 1735.5)">
 							<tspan x={-101.322} y={0}>
-								{'Soluciones en salud'}
+								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
 						<g transform="translate(448.085 1722.792)" onClick={() => window.location.href = '/productos'}>
@@ -153,7 +155,7 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 								className="f"
 								transform="translate(55.5 28.584)">
 								<tspan x={0} y={0}>
-									{'Conoce M\xE1s'}
+									{t('Conoce M\xE1s')}
 								</tspan>
 							</text>
 						</g>
@@ -171,7 +173,7 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 								className="f"
 								transform="translate(55.5 28.584)">
 								<tspan x={0} y={0}>
-									{'Conoce M\xE1s'}
+									{t('Conoce M\xE1s')}
 								</tspan>
 							</text>
 						</g>
@@ -402,7 +404,7 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 							className="k-reward-2-mobile"
 							transform="translate(207 26)">
 							<tspan x={-101.322} y={0}>
-								{'Soluciones en salud'}
+								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
 						<g transform="translate(366.584 13.292)" onClick={() => setView(0)}>
@@ -508,7 +510,7 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 							className="d-reward-2-mobile"
 							transform="translate(207 382)">
 							<tspan x={-63.072} y={0}>
-								{'Genómica'}
+								{t('Genómica  ')}
 							</tspan>
 						</text>
 						<text
@@ -621,7 +623,7 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 							className="m-reward-2-mobile"
 							transform="translate(207 26)">
 							<tspan x={-101.322} y={0}>
-								{'Soluciones en salud'}
+								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
 						<g transform="translate(366.584 13.292)" onClick={() => setView(0)}>
