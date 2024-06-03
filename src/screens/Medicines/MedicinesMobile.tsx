@@ -99,7 +99,7 @@ const MedicinesMobile: React.FC = (): JSX.Element => {
 							className="d-reward-2-mobile"
 							transform="translate(36 653)">
 							<tspan x={0} y={13}>
-								{t('Con medicamentos de la más alta tecnología  ')}
+								{t('Con medicamentos de la más alta tecnología')}
 							</tspan>
 							<tspan x={0} y={31}>
 								{

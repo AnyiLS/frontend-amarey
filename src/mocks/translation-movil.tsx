@@ -328,7 +328,8 @@ export const englishTextsMobile = {
         'Movimientos intuitivos. Rotación de 540°,':'Intuitive movements, 540° rotation, 180° ',
         'articulación de 180°.':'articulation',
         'Mayor precisión y seguridad.':'Greater precision and safety ',
-        'Atracción de nuevos pacientes y cirujanos. ': 'Attracting new patients and surgeons'
+        'Atracción de nuevos pacientes y cirujanos. ': 'Attracting new patients and surgeons',
+        'Con medicamentos de la más alta tecnología': 'We deliver medications of the highest quality and cutting-'
 }       
 
 
@@ -663,5 +664,5 @@ export const spanishTextsMobile = {
         'articulación de 180°.':'articulación de 180°.',
         'Mayor precisión y seguridad.':'Mayor precisión y seguridad.',
         'Atracción de nuevos pacientes y cirujanos. ':'Atracción de nuevos pacientes y cirujanos. ',
-
+        'Con medicamentos de la más alta tecnología': 'Con medicamentos de la más alta tecnología'
 }
