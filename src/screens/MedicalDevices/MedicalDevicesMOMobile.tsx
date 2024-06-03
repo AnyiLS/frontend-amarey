@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const MedicalDevicesMOMobile: React.FC = (): JSX.Element => {
 	/** States */
@@ -8,6 +9,9 @@ const MedicalDevicesMOMobile: React.FC = (): JSX.Element => {
 	React.useEffect(() => {
 		if (document.getElementById('navbar__container')) setHeight(document.getElementById('navbar__container')?.clientHeight ?? 0)
 	}, [])
+
+	const {t} = useTranslation()
+
 
 	return (
 		<React.Fragment>
@@ -96,7 +100,7 @@ const MedicalDevicesMOMobile: React.FC = (): JSX.Element => {
 							className="d-reward-2-mobile"
 							transform="translate(208.541 645)">
 							<tspan x={-109.536} y={0}>
-								{'EQUIPOS MÉDICOS'}
+								{t('EQUIPOS MÉDICOS')}
 							</tspan>
 						</text>
 						<text
@@ -104,16 +108,16 @@ const MedicalDevicesMOMobile: React.FC = (): JSX.Element => {
 							transform="translate(36.541 681)">
 							<tspan x={0} y={13}>
 								{
-									'Ofrecemos a los especialistas equipos de la más '
+									t('Ofrecemos a los especialistas equipos de la más ')
 								}
 							</tspan>
 							<tspan x={0} y={31}>
 								{
-									'alta tecnología para el servicio y asistencia de '
+									t('alta tecnología para el servicio y asistencia de ')
 								}
 							</tspan>
 							<tspan x={0} y={49}>
-								{'los pacientes.'}
+								{t('los pacientes.')}
 							</tspan>
 						</text>
 						<g
@@ -130,7 +134,7 @@ const MedicalDevicesMOMobile: React.FC = (): JSX.Element => {
 							className="g-reward-2-mobile"
 							transform="translate(208.541 26)">
 							<tspan x={-101.322} y={0}>
-								{'Soluciones en salud'}
+								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
 						<g transform="translate(368.125 13.292)" onClick={() => window.location.href = '/productos'}>
@@ -157,7 +161,7 @@ const MedicalDevicesMOMobile: React.FC = (): JSX.Element => {
 								className="g-reward-2-mobile"
 								transform="translate(55.5 28.584)">
 								<tspan x={0} y={0}>
-									{'Conoce Más'}
+									{t('Conoce Más')}
 								</tspan>
 							</text>
 						</g>
@@ -430,56 +434,56 @@ const MedicalDevicesMOMobile: React.FC = (): JSX.Element => {
 							className="e-reward-2-mobile"
 							transform="translate(208.541 147)">
 							<tspan x={-113.136} y={0}>
-								{'EQUIPOS MÉDICOS '}
+								{t('EQUIPOS MÉDICOS')}
 							</tspan>
 						</text>
 						<text
 							className="f-reward-2-mobile"
 							transform="translate(76.541 182)">
 							<tspan x={0} y={13}>
-								{'Monitores de signos vitales '}
+								{t('Monitores de signos vitales')}
 							</tspan>
 							<tspan x={0} y={31}>
-								{'Centrales de monitoreo '}
+								{t('Centrales de monitoreo')}
 							</tspan>
 							<tspan x={0} y={49}>
-								{'Electrocardiografía '}
+								{t('Electrocardiografía')}
 							</tspan>
 							<tspan x={0} y={67} xmlSpace="preserve">
-								{'Ventilación  '}
+								{t('Ventilación ')}
 							</tspan>
 							<tspan x={0} y={85}>
-								{'Equipos para neurología: '}
+								{t('Equipos para neurología:')}
 							</tspan>
 							<tspan x={0} y={103}>
-								{'electroencefalografía, polisomnografía y '}
+								{t('electroencefalografía, polisomnografía y')}
 							</tspan>
 							<tspan x={0} y={121}>
-								{'electromiografía. '}
+								{t('electromiografía.')}
 							</tspan>
 							<tspan x={0} y={139}>
-								{'Camas y camillas hospitalarias '}
+								{t('Camas y camillas hospitalarias')}
 							</tspan>
 							<tspan x={0} y={157}>
-								{'Mesas de cirugía '}
+								{t('Mesas de cirugía')}
 							</tspan>
 							<tspan x={0} y={175}>
-								{'Incubadora neonatal y lámparas de '}
+								{t('Incubadora neonatal y lámparas de')}
 							</tspan>
 							<tspan x={0} y={193}>
-								{'fototerapia '}
+								{t('fototerapia')}
 							</tspan>
 							<tspan x={0} y={211}>
-								{'Desfibrilador Externo Automático (DEA) '}
+								{t('Desfibrilador Externo Automático (DEA)')}
 							</tspan>
 							<tspan x={0} y={229}>
-								{'Lámparas para quirófano, procedimientos '}
+								{t('Lámparas para quirófano, procedimientos')}
 							</tspan>
 							<tspan x={0} y={247}>
-								{'y exploración '}
+								{t('y exploración')}
 							</tspan>
 							<tspan x={0} y={265}>
-								{'Unidades de suministro medicinales'}
+								{t('Unidades de suministro medicinales')}
 							</tspan>
 						</text>
 						<text
@@ -487,88 +491,88 @@ const MedicalDevicesMOMobile: React.FC = (): JSX.Element => {
 							transform="translate(37.541 468)">
 							<tspan x={0} y={13}>
 								{
-									'Con una variada gama de soluciones para áreas '
+									t('Con una variada gama de soluciones para áreas ')
 								}
 							</tspan>
 							<tspan x={0} y={31}>
 								{
-									'especializadas, UCIs, quirófanos, urgencias y '
+									t('especializadas, UCIs, quirófanos, urgencias y ')
 								}
 							</tspan>
 							<tspan x={0} y={49}>
-								{'hospitalización. '}
+								{t('hospitalización. ')}
 							</tspan>
 							<tspan x={0} y={67} />
 							<tspan x={0} y={85}>
 								{
-									'En cumplimiento de la Ley 1672 del 19 de julio de '
+									t('En cumplimiento de la Ley 1672 del 19 de julio de ')
 								}
 							</tspan>
 							<tspan x={0} y={103}>
 								{
-									'2013, Decreto 284 de 2018 y Resolución 851 del '
+									t('2013, Decreto 284 de 2018 y Resolución 851 del ')
 								}
 							</tspan>
 							<tspan x={0} y={121}>
 								{
-									'2022. Amarey Nova Medical S.A, Ucipharma S.A. '
+									t('2022. Amarey Nova Medical S.A, Ucipharma S.A. ')
 								}
 							</tspan>
 							<tspan x={0} y={139}>
 								{
-									'y Novatécnica S.A.S., ponen a su disposición '
+									t('y Novatécnica S.A.S., ponen a su disposición ')
 								}
 							</tspan>
 							<tspan x={0} y={157}>
 								{
-									'nuestro proceso de disposición y gestión de los '
+									t('nuestro proceso de disposición y gestión de los ')
 								}
 							</tspan>
 							<tspan x={0} y={175}>
 								{
-									'residuos de aparatos eléctricos y electrónicos '
+									t('residuos de aparatos eléctricos y electrónicos ')
 								}
 							</tspan>
 							<tspan x={0} y={193}>
-								{'(RAEE) relacionados específicamente con los '}
+								{t('(RAEE) relacionados específicamente con los ')}
 							</tspan>
 							<tspan x={0} y={211}>
 								{
-									'equipos biomédicos eléctricos o electrónicos '
+									t('equipos biomédicos eléctricos o electrónicos ')
 								}
 							</tspan>
 							<tspan x={0} y={229}>
-								{'(con excepción de todos los productos '}
+								{t('(con excepción de todos los productos ')}
 							</tspan>
 							<tspan x={0} y={247}>
-								{'implantados e infectados) que distribuye '}
+								{t('implantados e infectados) que distribuye ')}
 							</tspan>
 							<tspan x={0} y={265}>
 								{
-									'nuestras compañías. Para este fin, solicitamos '
+									t('nuestras compañías. Para este fin, solicitamos ')
 								}
 							</tspan>
 							<tspan x={0} y={283}>
-								{'comunicarse directamente con nuestro '}
+								{t('comunicarse directamente con nuestro ')}
 							</tspan>
 							<tspan x={0} y={301}>
-								{'representante de ventas asignado a su '}
+								{t('representante de ventas asignado a su ')}
 							</tspan>
 							<tspan x={0} y={319}>
-								{'institución con el objetivo de programar su '}
+								{t('institución con el objetivo de programar su ')}
 							</tspan>
 							<tspan x={0} y={337}>
 								{
-									'recolección. Para la disposición final de los RAEE '
+									t('recolección. Para la disposición final de los RAEE ')
 								}
 							</tspan>
 							<tspan x={0} y={355}>
 								{
-									'realizamos la gestión a través de una empresa '
+									t('realizamos la gestión a través de una empresa ')
 								}
 							</tspan>
 							<tspan x={0} y={373} xmlSpace="preserve">
-								{'autorizada por la Autoridad Ambiental.  '}
+								{t('autorizada por la Autoridad Ambiental.  ')}
 							</tspan>
 						</text>
 						<g
@@ -620,7 +624,7 @@ const MedicalDevicesMOMobile: React.FC = (): JSX.Element => {
 							className="k-reward-2-mobile"
 							transform="translate(208.541 26)">
 							<tspan x={-101.322} y={0}>
-								{'Soluciones en salud'}
+								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
 						<g

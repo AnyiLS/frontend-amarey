@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const MedicalDevicesMobile: React.FC = (): JSX.Element => {
 	/** States */
@@ -8,6 +9,8 @@ const MedicalDevicesMobile: React.FC = (): JSX.Element => {
 	React.useEffect(() => {
 		if (document.getElementById('navbar__container')) setHeight(document.getElementById('navbar__container')?.clientHeight ?? 0)
 	}, [])
+
+	const {t} = useTranslation()
 
 	return (
 		<React.Fragment>
@@ -96,31 +99,31 @@ const MedicalDevicesMobile: React.FC = (): JSX.Element => {
 							className="d-reward-2-mobile"
 							transform="translate(208.541 596)">
 							<tspan x={-81.972} y={0}>
-								{'Dispositivos'}
+								{t('Dispositivos')}
 							</tspan>
 							<tspan x={-133.464} y={26}>
-								{'médico-quirúrgicos'}
+								{t('médico-quirúrgicos')}
 							</tspan>
 						</text>
 						<text
 							className="e-reward-2-mobile"
 							transform="translate(36.541 654)">
 							<tspan x={0} y={13}>
-								{'Somos un aliado estratégico para los '}
+								{t('Somos un aliado estratégico para los ')}
 							</tspan>
 							<tspan x={0} y={31}>
-								{'profesionales que realizan procedimientos '}
+								{t('profesionales que realizan procedimientos ')}
 							</tspan>
 							<tspan x={0} y={49}>
 								{
-									'quirúrgicos con equipos y dispositivos médicos '
+									t('quirúrgicos con equipos y dispositivos médicos ')
 								}
 							</tspan>
 							<tspan x={0} y={67}>
-								{'que mejoran los resultados del paciente en '}
+								{t('que mejoran los resultados del paciente en ')}
 							</tspan>
 							<tspan x={0} y={85}>
-								{'una intervención.'}
+								{t('una intervención.')}
 							</tspan>
 						</text>
 						<g
@@ -137,7 +140,7 @@ const MedicalDevicesMobile: React.FC = (): JSX.Element => {
 							className="g-reward-2-mobile"
 							transform="translate(208.541 26)">
 							<tspan x={-101.322} y={0}>
-								{'Soluciones en salud'}
+								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
 						<g transform="translate(368.125 13.292)" onClick={() => window.location.href = '/productos'}>
@@ -161,7 +164,7 @@ const MedicalDevicesMobile: React.FC = (): JSX.Element => {
 								className="g-reward-2-mobile"
 								transform="translate(55.5 28.584)">
 								<tspan x={0} y={0}>
-									{'Conoce Más'}
+									{t('Conoce Más')}
 								</tspan>
 							</text>
 						</g>
@@ -433,103 +436,103 @@ const MedicalDevicesMobile: React.FC = (): JSX.Element => {
 							className="e-reward-2-mobile"
 							transform="translate(208.541 118)">
 							<tspan x={-81.972} y={0}>
-								{'Dispositivos'}
+								{t('Dispositivos')}
 							</tspan>
 							<tspan x={-133.464} y={26}>
-								{'médico-quirúrgicos'}
+								{t('médico-quirúrgicos')}
 							</tspan>
 						</text>
 						<text
 							className="f-reward-2-mobile"
 							transform="translate(76.541 229)">
 							<tspan x={0} y={13}>
-								{'Equipos y dispositivos médicos para '}
+								{t('Equipos y dispositivos médicos para')}
 							</tspan>
 							<tspan x={0} y={31}>
-								{'cirugía laparoscópica '}
+								{t('cirugía laparoscópica')}
 							</tspan>
 							<tspan x={0} y={49}>
-								{'Dispositivos para reparo de hernias '}
+								{t('Dispositivos para reparo de hernias')}
 							</tspan>
 							<tspan x={0} y={67}>
-								{'inguinales y ventrales '}
+								{t('inguinales y ventrales')}
 							</tspan>
 							<tspan x={0} y={85}>
-								{'Ropa quirúrgica y barreras de protección '}
+								{t('Ropa quirúrgica y barreras de protección')}
 							</tspan>
 							<tspan x={0} y={103}>
-								{'especializadas '}
+								{t('especializadas')}
 							</tspan>
 							<tspan x={0} y={121}>
-								{'Hemostáticos y sellantes para cirugía '}
+								{t('Hemostáticos y sellantes para cirugía')}
 							</tspan>
 							<tspan x={0} y={139}>
-								{'mínimamente invasiva'}
+								{t('mínimamente invasiva ')}
 							</tspan>
 						</text>
 						<text
 							className="f-reward-2-mobile"
 							transform="translate(76.541 436)">
 							<tspan x={0} y={13}>
-								{'Protección de la herida quirúrgica. '}
+								{t('Protección de la herida quirúrgica. ')}
 							</tspan>
 							<tspan x={0} y={31}>
-								{'Control del sangrado. '}
+								{t('Control del sangrado. ')}
 							</tspan>
 							<tspan x={0} y={49}>
-								{'Disminución de la infección en el sitio '}
+								{t('Disminución de la infección en el sitio ')}
 							</tspan>
 							<tspan x={0} y={67}>
-								{'operatorio. '}
+								{t('operatorio. ')}
 							</tspan>
 							<tspan x={0} y={85}>
-								{'Disminución de tiempos quirúrgicos. '}
+								{t('Disminución de tiempos quirúrgicos. ')}
 							</tspan>
 							<tspan x={0} y={103}>
-								{'Disminución de estancias hospitalarias '}
+								{t('Disminución de estancias hospitalarias ')}
 							</tspan>
 						</text>
 						<text
 							className="g-reward-2-mobile"
 							transform="translate(37.541 567)">
 							<tspan x={0} y={13}>
-								{'Todos productos de nuestro portafolio están '}
+								{t('Todos productos de nuestro portafolio están ')}
 							</tspan>
 							<tspan x={0} y={31}>
-								{'aprobados por la FDA y cuentan con altos '}
+								{t('aprobados por la FDA y cuentan con altos ')}
 							</tspan>
 							<tspan x={0} y={49}>
-								{'estándares de calidad. '}
+								{t('estándares de calidad. ')}
 							</tspan>
 							<tspan className="h-reward-2-mobile">
 								<tspan x={0} y={67} />
 								<tspan x={0} y={85}>
 									{
-										'Contamos con un centro de lavado con la última '
+										t('Contamos con un centro de lavado con la última ')
 									}
 								</tspan>
 								<tspan x={0} y={103}>
 									{
-										'tecnología y estándares, para permitirnos '
+										t('tecnología y estándares, para permitirnos ')
 									}
 								</tspan>
 								<tspan x={0} y={121}>
 									{
-										'ofrecer un producto con la mejor calidad y '
+										t('ofrecer un producto con la mejor calidad y ')
 									}
 								</tspan>
 								<tspan x={0} y={139}>
 									{
-										'garantizar las condiciones sanitarias de kits de '
+										t('garantizar las condiciones sanitarias de kits de ')
 									}
 								</tspan>
 								<tspan x={0} y={157}>
 									{
-										'cirugía utilizados. Adicionalmente, realizamos '
+										t('cirugía utilizados. Adicionalmente, realizamos ')
 									}
 								</tspan>
 								<tspan x={0} y={175}>
-									{'acompañamiento quirúrgico en cirugía. '}
+									{t('acompañamiento quirúrgico en cirugía. ')}
 								</tspan>
 							</tspan>
 						</text>
@@ -537,20 +540,20 @@ const MedicalDevicesMobile: React.FC = (): JSX.Element => {
 							className="i-reward-2-mobile"
 							transform="translate(56.541 183)">
 							<tspan x={21.296} y={15}>
-								{'Mejoramos los resultados en una '}
+								{t('Mejoramos los resultados en una ')}
 							</tspan>
 							<tspan x={82.68} y={33} xmlSpace="preserve">
-								{'intervención con:  '}
+								{t('intervención con:  ')}
 							</tspan>
 						</text>
 						<text
 							className="i-reward-2-mobile"
 							transform="translate(66.541 390)">
 							<tspan x={34.256} y={15}>
-								{'Apoyamos la seguridad del '}
+								{t('Apoyamos la seguridad del ')}
 							</tspan>
 							<tspan x={87.368} y={33}>
-								{'paciente con: '}
+								{t('paciente con:')}
 							</tspan>
 						</text>
 						<g
@@ -602,7 +605,7 @@ const MedicalDevicesMobile: React.FC = (): JSX.Element => {
 							className="n-reward-2-mobile"
 							transform="translate(208.541 26)">
 							<tspan x={-101.322} y={0}>
-								{'Soluciones en salud'}
+								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
 						<g transform="translate(368.125 13.292)" onClick={() => setView(0)}>
