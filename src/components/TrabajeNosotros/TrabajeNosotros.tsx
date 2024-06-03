@@ -355,16 +355,16 @@ const TrabajeNosotros = () => {
 						className="h-trabajo"
 						transform="translate(73 324.21)">
 						<tspan x={0} y={21}>
-							{'Juntos trabajamos por '}
+							{t('Juntos trabajamos por ')}
 						</tspan>
 						<tspan x={0} y={45}>
-							{'alcanzar nuestro prop\xF3sito de '}
+							{t('alcanzar nuestro prop\xF3sito de ')}
 						</tspan>
 						<tspan x={0} y={69}>
-							{'un compromiso inquebrantable '}
+							{t('un compromiso inquebrantable ')}
 						</tspan>
 						<tspan x={0} y={93}>
-							{'con la salud y la vida.'}
+							{t('con la salud y la vida.')}
 						</tspan>
 					</text>
 					<text

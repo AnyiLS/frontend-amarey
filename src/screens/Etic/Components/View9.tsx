@@ -259,7 +259,7 @@ const View9: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 16.386)">
 						<tspan x={-63.266} y={13}>
-							{'Lavado de activos'}
+							{t('Lavado de activos')}
 						</tspan>
 					</text>
 				</g>
@@ -298,7 +298,7 @@ const View9: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 16.386)">
 						<tspan x={-88.725} y={13}>
-							{'Actividades inapropiadas'}
+							{t('Actividades inapropiadas')}
 						</tspan>
 					</text>
 				</g>
@@ -334,10 +334,10 @@ const View9: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 8.386)">
 						<tspan x={-77.224} y={13}>
-							{'Prácticas comerciales '}
+						{t('Prácticas comerciales ')}
 						</tspan>
 						<tspan x={-45.213} y={29}>
-							{'inadecuadas'}
+							{t('inadecuadas')}
 						</tspan>
 					</text>
 				</g>
@@ -377,7 +377,7 @@ const View9: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 16.386)">
 						<tspan x={-73.409} y={13}>
-							{'Dádivas o prebendas'}
+						{t('Dádivas o prebendas')}
 						</tspan>
 					</text>
 				</g>
@@ -400,32 +400,32 @@ const View9: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="p-reward-2-mobile"
 						transform="translate(160 144.636)">
 						<tspan x={-61.845} y={20}>
-							{'Actividades '}
+							{t('Actividades ')}
 						</tspan>
 						<tspan x={-68.964} y={44}>
-							{'inapropiadas'}
+							{t('inapropiadas')}
 						</tspan>
 					</text>
 					<text
 						className="l-reward-2-mobile"
 						transform="translate(35 223.636)">
 						<tspan x={0} y={13}>
-							{'La relación entre los empleados del '}
+							{t('La relación entre los empleados del ')}
 						</tspan>
 						<tspan x={0} y={29}>
-							{'Grupo Amarey deberá estar siempre '}
+							{t('Grupo Amarey deberá estar siempre ')}
 						</tspan>
 						<tspan x={0} y={45}>
-							{'basada en el debido y mutuo respeto, '}
+							{t('basada en el debido y mutuo respeto, ')}
 						</tspan>
 						<tspan x={0} y={61}>
-							{'a fin de asegurar un ambiente '}
+							{t('a fin de asegurar un ambiente ')}
 						</tspan>
 						<tspan x={0} y={77}>
-							{'armonioso conducente al trabajo '}
+							{t('armonioso conducente al trabajo ')}
 						</tspan>
 						<tspan x={0} y={93}>
-							{'productivo.'}
+							{t('productivo.')}
 						</tspan>
 					</text>
 				</g>

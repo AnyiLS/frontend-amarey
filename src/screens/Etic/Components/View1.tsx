@@ -145,14 +145,14 @@ const View1: React.FC<IEtic> = ({onNext}): JSX.Element => {
 					className="h-reward-2-mobile"
 					transform="translate(36 381.49)">
 					<tspan x={33.592} y={32}>
-						{'Código de ética'}
+						{t('Código de ética')}
 					</tspan>
 				</text>
 				<text
 					className="i-reward-2-mobile"
 					transform="translate(36 761.49)">
 					<tspan x={75} y={32}>
-						{'Línea ética'}
+						{t('Línea ética')}
 					</tspan>
 				</text>
 				<g transform="translate(0 -3884)" onClick={() => onNext(1)}>
@@ -169,7 +169,7 @@ const View1: React.FC<IEtic> = ({onNext}): JSX.Element => {
 						className="k-reward-2-mobile"
 						transform="translate(147.5 4342.584)">
 						<tspan x={0} y={0}>
-							{'Conoce Más'}
+							{t('Conoce Más')}
 						</tspan>
 					</text>
 				</g>
@@ -187,7 +187,7 @@ const View1: React.FC<IEtic> = ({onNext}): JSX.Element => {
 						className="g-reward-2-mobile"
 						transform="translate(147.5 4342.584)">
 						<tspan x={0} y={0}>
-							{'Conoce Más'}
+							{t('Conoce Más')}
 						</tspan>
 					</text>
 				</g>

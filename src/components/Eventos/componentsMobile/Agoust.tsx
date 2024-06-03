@@ -199,7 +199,7 @@ const Agoust: React.FC<CalendarProps> = ({ onNext, onPrev, onNextMonth, onPrevMo
             </g>
             <text className="j-mobile" transform="translate(50.806 30.21)">
                 <tspan x={17.677} y={18}>
-                    {"Prográmese con Grupo Amarey"}
+                    {t("Prográmese con Grupo Amarey ")}
                 </tspan>
             </text>
             <g className="t-mobile" transform="matrix(1, 0, 0, 1, 0, 0)">
@@ -229,49 +229,49 @@ const Agoust: React.FC<CalendarProps> = ({ onNext, onPrev, onNextMonth, onPrevMo
                     <g transform="translate(-120 -557)">
                         <text className="m-mobile" transform="translate(140 557)">
                             <tspan x={-13.57} y={19}>
-                                {"Do"}
+                                {t("Do ")}
                             </tspan>
                         </text>
                     </g>
                     <g transform="translate(-71 -557)">
                         <text className="m-mobile" transform="translate(140 557)">
                             <tspan x={-11.2} y={19}>
-                                {"Lu"}
+                                {t("Lu ")}
                             </tspan>
                         </text>
                     </g>
                     <g transform="translate(-22 -557)">
                         <text className="m-mobile" transform="translate(140 557)">
                             <tspan x={-15.36} y={19}>
-                                {"Ma"}
+                                {t("Ma ")}
                             </tspan>
                         </text>
                     </g>
                     <g transform="translate(27 -557)">
                         <text className="m-mobile" transform="translate(140 557)">
                             <tspan x={-11.58} y={19}>
-                                {"Mi"}
+                                {t("Mi ")}
                             </tspan>
                         </text>
                     </g>
                     <g transform="translate(76 -557)">
                         <text className="m-mobile" transform="translate(140 557)">
                             <tspan x={-11.92} y={19}>
-                                {"Ju"}
+                                {t("Ju ")}
                             </tspan>
                         </text>
                     </g>
                     <g transform="translate(120 -557)">
                         <text className="m-mobile" transform="translate(140 557)">
                             <tspan x={-9.54} y={19}>
-                                {"Vi"}
+                                {t("Vi ")}
                             </tspan>
                         </text>
                     </g>
                     <g transform="translate(169 -557)">
                         <text className="m-mobile" transform="translate(140 557)">
                             <tspan x={-12.43} y={19}>
-                                {"Sa"}
+                                {t("Sa ")}
                             </tspan>
                         </text>
                     </g>
@@ -840,7 +840,7 @@ const Agoust: React.FC<CalendarProps> = ({ onNext, onPrev, onNextMonth, onPrevMo
                 </g>
                 <text className="p-mobile" transform="translate(4.524 25.192)">
                     <tspan x={0} y={0}>
-                        {"Agosto 2024"}
+                        {t("Agosto 2024")}
                     </tspan>
                 </text>
                 <line className="q-mobile" x2={342} transform="translate(4.524 40.192)" />

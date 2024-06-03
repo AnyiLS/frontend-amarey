@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const NeuroMobile: React.FC = (): JSX.Element => {
 	/** States */
@@ -8,6 +9,8 @@ const NeuroMobile: React.FC = (): JSX.Element => {
 	React.useEffect(() => {
 		if (document.getElementById('navbar__container')) setHeight(document.getElementById('navbar__container')?.clientHeight ?? 0)
 	}, [])
+
+	const {t} = useTranslation()
 
 	return (
 		<React.Fragment>
@@ -86,7 +89,7 @@ const NeuroMobile: React.FC = (): JSX.Element => {
 							className="d-reward-2-mobile"
 							transform="translate(207 651)">
 							<tspan x={-156.3} y={0}>
-								{'Neurointervencionismo'}
+								{t('Neurointervencionismo')}
 							</tspan>
 						</text>
 						<text
@@ -94,19 +97,19 @@ const NeuroMobile: React.FC = (): JSX.Element => {
 							transform="translate(36 675)">
 							<tspan x={0} y={13}>
 								{
-									'El ACV - Accidente Cerebro Vascular es algo que '
+									t('El ACV - Accidente Cerebro Vascular es algo que ')
 								}
 							</tspan>
 							<tspan x={0} y={31}>
 								{
-									'le puede ocurrir a 1 de cada 4 personas y menos '
+									t('le puede ocurrir a 1 de cada 4 personas y menos ')
 								}
 							</tspan>
 							<tspan x={0} y={49}>
-								{'del 5% de las personas que lo sufren son '}
+								{t('del 5% de las personas que lo sufren son ')}
 							</tspan>
 							<tspan x={0} y={67}>
-								{'atendidas a tiempo.'}
+								{t('atendidas a tiempo.')}
 							</tspan>
 						</text>
 						<g
@@ -124,7 +127,7 @@ const NeuroMobile: React.FC = (): JSX.Element => {
 							className="g-reward-2-mobile"
 							transform="translate(207 26)">
 							<tspan x={-101.322} y={0}>
-								{'Soluciones en salud'}
+								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
 						<g transform="translate(366.585 13.292)" onClick={() => window.location.href = '/productos'}>
@@ -150,7 +153,7 @@ const NeuroMobile: React.FC = (): JSX.Element => {
 								className="g-reward-2-mobile"
 								transform="translate(55.5 28.584)">
 								<tspan x={0} y={0}>
-									{'Conoce Más'}
+									{t('Conoce Más')}
 								</tspan>
 							</text>
 						</g>
@@ -250,7 +253,7 @@ const NeuroMobile: React.FC = (): JSX.Element => {
 							className="f-reward-2-mobile"
 							transform="translate(207 415)">
 							<tspan x={-156.3} y={0}>
-								{'Neurointervencionismo'}
+								{t(' Neurointervencionismo ')}
 							</tspan>
 						</text>
 						<text
@@ -258,64 +261,64 @@ const NeuroMobile: React.FC = (): JSX.Element => {
 							transform="translate(36 485)">
 							<tspan x={0} y={13}>
 								{
-									'La ciencia viene evolucionando en forma rápida '
+									t('La ciencia viene evolucionando en forma rápida ')
 								}
 							</tspan>
 							<tspan x={0} y={31}>
 								{
-									'para identificar y tratar esta patología conocida '
+									t('para identificar y tratar esta patología conocida ')
 								}
 							</tspan>
 							<tspan x={0} y={49}>
 								{
-									'como ictus, dividido entre isquémico (trombo) y '
+									t('como ictus, dividido entre isquémico (trombo) y ')
 								}
 							</tspan>
 							<tspan x={0} y={67}>
-								{'hemorrágico (aneurisma), donde el '}
+								{t('hemorrágico (aneurisma), donde el ')}
 							</tspan>
 							<tspan x={0} y={85}>
 								{
-									'neurointervencionismo como disciplina joven se '
+									t('neurointervencionismo como disciplina joven se ')
 								}
 							</tspan>
 							<tspan x={0} y={103}>
-								{'va consolidando como alternativa para '}
+								{t('va consolidando como alternativa para ')}
 							</tspan>
 							<tspan x={0} y={121}>
-								{'determinados casos. '}
+								{t('determinados casos. ')}
 							</tspan>
 							<tspan x={0} y={139} />
 							<tspan x={0} y={157}>
 								{
-									'Nuestro portafolio es reconocido por su calidad '
+									t('Nuestro portafolio es reconocido por su calidad ')
 								}
 							</tspan>
 							<tspan x={0} y={175}>
-								{'y renombre, con fortalezas en opciones de '}
+								{t('y renombre, con fortalezas en opciones de ')}
 							</tspan>
 							<tspan x={0} y={193}>
-								{'ACCESO, una gran variedad de Coils y una '}
+								{t('ACCESO, una gran variedad de Coils y una ')}
 							</tspan>
 							<tspan x={0} y={211}>
 								{
-									'tecnología única para trombectomía, incluyendo '
+									t('tecnología única para trombectomía, incluyendo ')
 								}
 							</tspan>
 							<tspan x={0} y={229}>
-								{'una estructura de logística inversa que nos '}
+								{t('una estructura de logística inversa que nos ')}
 							</tspan>
 							<tspan x={0} y={247}>
 								{
-									'permite asegurar un servicio de alta calidad '
+									t('permite asegurar un servicio de alta calidad ')
 								}
 							</tspan>
 							<tspan x={0} y={265}>
-								{'para los requerimientos de tiempo y '}
+								{t('para los requerimientos de tiempo y ')}
 							</tspan>
 							<tspan x={0} y={283}>
 								{
-									'disponibilidad en las ventanas terapéuticas. '
+									t('disponibilidad en las ventanas terapéuticas. ')
 								}
 							</tspan>
 						</text>
@@ -363,7 +366,7 @@ const NeuroMobile: React.FC = (): JSX.Element => {
 							className="o-reward-2-mobile"
 							transform="translate(207 26)">
 							<tspan x={-101.322} y={0}>
-								{'Soluciones en salud'}
+								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
 						<g transform="translate(366.584 13.292)">

@@ -259,7 +259,7 @@ const View6: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 16.386)">
 						<tspan x={-63.266} y={13}>
-							{'Lavado de activos'}
+							{t('Lavado de activos')}
 						</tspan>
 					</text>
 				</g>
@@ -298,7 +298,7 @@ const View6: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(34 16.386)">
 						<tspan x={-88.725} y={13}>
-							{'Actividades inapropiadas'}
+							{t('Actividades inapropiadas')}
 						</tspan>
 					</text>
 				</g>
@@ -334,10 +334,10 @@ const View6: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 8.386)">
 						<tspan x={-77.224} y={13}>
-							{'Prácticas comerciales '}
+						{t('Prácticas comerciales ')}
 						</tspan>
 						<tspan x={-45.213} y={29}>
-							{'inadecuadas'}
+							{t('inadecuadas')}
 						</tspan>
 					</text>
 				</g>
@@ -377,7 +377,7 @@ const View6: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 16.386)">
 						<tspan x={-73.409} y={13}>
-							{'Dádivas o prebendas'}
+						{t('Dádivas o prebendas')}
 						</tspan>
 					</text>
 				</g>
@@ -400,29 +400,29 @@ const View6: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="p-reward-2-mobile"
 						transform="translate(160 157.636)">
 						<tspan x={-94.532} y={20}>
-							{'Lavado de activos'}
+							{t('Lavado de activos')}
 						</tspan>
 					</text>
 					<text
 						className="l-reward-2-mobile"
 						transform="translate(41 215.636)">
 						<tspan x={0} y={13}>
-							{'Son operaciones que busca dar '}
+							{t('Son operaciones que busca dar ')}
 						</tspan>
 						<tspan x={0} y={29}>
-							{'apariencia de legalidad a recursos '}
+							{t('apariencia de legalidad a recursos ')}
 						</tspan>
 						<tspan x={0} y={45}>
-							{'provenientes de actividades ilícitas, '}
+							{t('provenientes de actividades ilícitas, ')}
 						</tspan>
 						<tspan x={0} y={61}>
-							{'a través de diversas transacciones '}
+							{t('a través de diversas transacciones ')}
 						</tspan>
 						<tspan x={0} y={77}>
-							{'ocultando así el origen y trayectoria '}
+							{t('ocultando así el origen y trayectoria ')}
 						</tspan>
 						<tspan x={0} y={93}>
-							{'de los recursos.'}
+							{t('de los recursos.')}
 						</tspan>
 					</text>
 				</g>

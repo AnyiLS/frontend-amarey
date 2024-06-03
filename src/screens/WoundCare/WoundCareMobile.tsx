@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const WoundCareMobile: React.FC = (): JSX.Element => {
 	/** States */
@@ -8,6 +9,8 @@ const WoundCareMobile: React.FC = (): JSX.Element => {
 	React.useEffect(() => {
 		if (document.getElementById('navbar__container')) setHeight(document.getElementById('navbar__container')?.clientHeight ?? 0)
 	}, [])
+
+	const {t} = useTranslation()
 
 
 	return (
@@ -87,36 +90,36 @@ const WoundCareMobile: React.FC = (): JSX.Element => {
 							className="d-reward-2-mobile"
 							transform="translate(207 598)">
 							<tspan x={-119.352} y={0}>
-								{'CUIDADO AVANZADO'}
+								{t('CUIDADO AVANZADO')}
 							</tspan>
 							<tspan x={-67.392} y={26}>
-								{'DE HERIDAS'}
+								{t('DE HERIDAS ')}
 							</tspan>
 						</text>
 						<text
 							className="e-reward-2-mobile"
 							transform="translate(36 645)">
 							<tspan x={0} y={13}>
-								{'Ofrecemos una línea de apósitos avanzados y '}
+								{t('Ofrecemos una línea de apósitos avanzados y ')}
 							</tspan>
 							<tspan x={0} y={31}>
 								{
-									'terapia de presión negativa para el tratamiento '
+									t('terapia de presión negativa para el tratamiento ')
 								}
 							</tspan>
 							<tspan x={0} y={49}>
-								{'integral de heridas agudas, crónicas y '}
+								{t('integral de heridas agudas, crónicas y ')}
 							</tspan>
 							<tspan x={0} y={67}>
-								{'complejas, como las ocasionadas por pie '}
+								{t('complejas, como las ocasionadas por pie ')}
 							</tspan>
 							<tspan x={0} y={85}>
 								{
-									'diabético, lesiones por presión y lesiones de '
+									t('diabético, lesiones por presión y lesiones de ')
 								}
 							</tspan>
 							<tspan x={0} y={103}>
-								{'origen vascular.'}
+								{t('origen vascular.')}
 							</tspan>
 						</text>
 						<g
@@ -133,7 +136,7 @@ const WoundCareMobile: React.FC = (): JSX.Element => {
 							className="g-reward-2-mobile"
 							transform="translate(207 26)">
 							<tspan x={-101.322} y={0}>
-								{'Soluciones en salud'}
+								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
 						<g transform="translate(366.585 13.292)" onClick={() => window.location.href = '/productos'}>
@@ -159,7 +162,7 @@ const WoundCareMobile: React.FC = (): JSX.Element => {
 								className="g-reward-2-mobile"
 								transform="translate(55.5 28.584)">
 								<tspan x={0} y={0}>
-									{'Conoce Más'}
+									{t('Conoce Más')}
 								</tspan>
 							</text>
 						</g>
@@ -258,26 +261,26 @@ const WoundCareMobile: React.FC = (): JSX.Element => {
 							className="f-reward-2-mobile"
 							transform="translate(215 477)">
 							<tspan x={-119.352} y={0}>
-								{'CUIDADO AVANZADO'}
+								{t('CUIDADO AVANZADO')}
 							</tspan>
 							<tspan x={-67.392} y={26}>
-								{'DE HERIDAS'}
+								{t('DE HERIDAS ')}
 							</tspan>
 						</text>
 						<text
 							className="g-reward-2-mobile"
 							transform="translate(44 695)">
 							<tspan x={0} y={13}>
-								{'Nuestro compromiso es asesorar a los '}
+								{t('Nuestro compromiso es asesorar a los ')}
 							</tspan>
 							<tspan x={0} y={31}>
 								{
-									'profesionales de la salud en el uso, manejo y '
+									t('profesionales de la salud en el uso, manejo y ')
 								}
 							</tspan>
 							<tspan x={0} y={49}>
 								{
-									'aprovechamiento correcto de dichas tecnologías. '
+									t('aprovechamiento correcto de dichas tecnologías. ')
 								}
 							</tspan>
 						</text>
@@ -285,19 +288,19 @@ const WoundCareMobile: React.FC = (): JSX.Element => {
 							className="g-reward-2-mobile"
 							transform="translate(89 587)">
 							<tspan x={0} y={13}>
-								{'Soluciones simples y efectivas '}
+								{t('Soluciones simples y efectivas ')}
 							</tspan>
 							<tspan x={0} y={31} xmlSpace="preserve">
-								{'Aceleración del proceso de cicatrización  '}
+								{t('Aceleración del proceso de cicatrización  ')}
 							</tspan>
 							<tspan x={0} y={49}>
-								{'Estimulación de la formación de '}
+								{t('Estimulación de la formación de')}
 							</tspan>
 							<tspan x={0} y={67} xmlSpace="preserve">
-								{'nuevo tejido  '}
+								{t('nuevo tejido')}
 							</tspan>
 							<tspan x={0} y={85}>
-								{'Prevención de infecciones '}
+								{t('Prevención de infecciones ')}
 							</tspan>
 						</text>
 						<text
@@ -305,11 +308,11 @@ const WoundCareMobile: React.FC = (): JSX.Element => {
 							transform="translate(44 529)">
 							<tspan x={0} y={13}>
 								{
-									'Ayudando al paciente a mejorar su calidad de '
+									t('Ayudando al paciente a mejorar su calidad de ')
 								}
 							</tspan>
 							<tspan x={0} y={31}>
-								{'vida, mediante:'}
+								{t('vida, mediante:')}
 							</tspan>
 						</text>
 						<g
@@ -358,7 +361,7 @@ const WoundCareMobile: React.FC = (): JSX.Element => {
 							className="o-reward-2-mobile"
 							transform="translate(215 26)">
 							<tspan x={-101.322} y={0}>
-								{'Soluciones en salud'}
+								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
 						<g transform="translate(374.584 13.292)" onClick={() => setView(0)}>

@@ -1,5 +1,6 @@
 import moment from 'moment';
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 interface CalendarProps {
     onNext: () => void
@@ -12,6 +13,9 @@ const November: React.FC<CalendarProps> = ({ onNext, onPrev, onNextMonth, onPrev
     /** Variables */
     const day = moment().format('DD');
     const month = moment().format('MM');
+
+    const {t} = useTranslation()
+
 
     React.useEffect(() => {
         if (month === '11') {
@@ -163,7 +167,7 @@ const November: React.FC<CalendarProps> = ({ onNext, onPrev, onNextMonth, onPrev
             </g>
             <text className="g-mobile" transform="translate(190.806 87.21)">
                 <tspan x={0} y={0}>
-                    {"Noviembre"}
+                    {t("Noviembre")}
                 </tspan>
             </text>
             <g transform="translate(228.262 782.336)">
@@ -196,7 +200,7 @@ const November: React.FC<CalendarProps> = ({ onNext, onPrev, onNextMonth, onPrev
             </g>
             <text className="j-mobile" transform="translate(50.806 30.21)">
                 <tspan x={17.677} y={18}>
-                    {"Prográmese con Grupo Amarey"}
+                    {t("Prográmese con Grupo Amarey ")}
                 </tspan>
             </text>
             <g className="t-mobile" transform="matrix(1, 0, 0, 1, 0, 0)">
@@ -226,49 +230,49 @@ const November: React.FC<CalendarProps> = ({ onNext, onPrev, onNextMonth, onPrev
                     <g transform="translate(-120 -557)">
                         <text className="m-mobile" transform="translate(140 557)">
                             <tspan x={-13.57} y={19}>
-                                {"Do"}
+                                {t("Do ")}
                             </tspan>
                         </text>
                     </g>
                     <g transform="translate(-71 -557)">
                         <text className="m-mobile" transform="translate(140 557)">
                             <tspan x={-11.2} y={19}>
-                                {"Lu"}
+                                {t("Lu ")}
                             </tspan>
                         </text>
                     </g>
                     <g transform="translate(-22 -557)">
                         <text className="m-mobile" transform="translate(140 557)">
                             <tspan x={-15.36} y={19}>
-                                {"Ma"}
+                                {t("Ma ")}
                             </tspan>
                         </text>
                     </g>
                     <g transform="translate(27 -557)">
                         <text className="m-mobile" transform="translate(140 557)">
                             <tspan x={-11.58} y={19}>
-                                {"Mi"}
+                                {t("Mi ")}
                             </tspan>
                         </text>
                     </g>
                     <g transform="translate(76 -557)">
                         <text className="m-mobile" transform="translate(140 557)">
                             <tspan x={-11.92} y={19}>
-                                {"Ju"}
+                                {t("Ju ")}
                             </tspan>
                         </text>
                     </g>
                     <g transform="translate(120 -557)">
                         <text className="m-mobile" transform="translate(140 557)">
                             <tspan x={-9.54} y={19}>
-                                {"Vi"}
+                                {t("Vi ")}
                             </tspan>
                         </text>
                     </g>
                     <g transform="translate(169 -557)">
                         <text className="m-mobile" transform="translate(140 557)">
                             <tspan x={-12.43} y={19}>
-                                {"Sa"}
+                                {t("Sa ")}
                             </tspan>
                         </text>
                     </g>
@@ -837,7 +841,7 @@ const November: React.FC<CalendarProps> = ({ onNext, onPrev, onNextMonth, onPrev
                 </g>
                 <text className="p-mobile" transform="translate(4.524 25.192)">
                     <tspan x={0} y={0}>
-                        {"Noviembre 2024"}
+                        {t("Noviembre 2024")}
                     </tspan>
                 </text>
                 <line className="q-mobile" x2={342} transform="translate(4.524 40.192)" />

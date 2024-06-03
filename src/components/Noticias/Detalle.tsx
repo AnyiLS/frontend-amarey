@@ -1,6 +1,8 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const Detalle = () => {
+	const {t} = useTranslation()
 	return (
 		<div>
 			<svg viewBox="5 93 1920 1295">
@@ -77,54 +79,54 @@ const Detalle = () => {
 					transform="translate(286 551)">
 					<tspan x={0} y={23}>
 						{
-							'El Grupo Amarey, una institución emblemática en el ámbito de la salud en Colombia, está de celebración al '
+							t('El Grupo Amarey, una institución emblemática en el ámbito de la salud en Colombia, está de celebración al ')
 						}
 					</tspan>
 					<tspan x={0} y={49}>
 						{
-							'cumplir 40 años de servicio dedicado a la comunidad médica del país. En este hito importante, nos complace '
+							t('cumplir 40 años de servicio dedicado a la comunidad médica del país. En este hito importante, nos complace ')
 						}
 					</tspan>
 					<tspan x={0} y={75}>
 						{
-							'anunciar la apertura de sus nuevas oficinas, ubicadas en uno de los lugares más exclusivos de Bogotá. '
+							t('anunciar la apertura de sus nuevas oficinas, ubicadas en uno de los lugares más exclusivos de Bogotá. ')
 						}
 					</tspan>
 					<tspan x={0} y={101} />
 					<tspan x={0} y={127}>
 						{
-							'Como resultado de sus continuos esfuerzos y excelentes resultados, el Grupo Amarey marca el inicio de una '
+							t('Como resultado de sus continuos esfuerzos y excelentes resultados, el Grupo Amarey marca el inicio de una ')
 						}
 					</tspan>
 					<tspan x={0} y={153}>
 						{
-							'nueva etapa en su desarrollo organizacional y su visión de expansión hacia el futuro. Por ello, la sección '
+							t('nueva etapa en su desarrollo organizacional y su visión de expansión hacia el futuro. Por ello, la sección ')
 						}
 					</tspan>
 					<tspan x={0} y={179}>
 						{
-							'administrativa de la compañía estrena una nueva sede, que abarca más de 2.000 metros cuadrados en una torre '
+							t('administrativa de la compañía estrena una nueva sede, que abarca más de 2.000 metros cuadrados en una torre ')
 						}
 					</tspan>
 					<tspan x={0} y={205}>
 						{
-							'empresarial ubicada en la calle 100 con carrera séptima en Bogotá. '
+							t('empresarial ubicada en la calle 100 con carrera séptima en Bogotá. ')
 						}
 					</tspan>
 					<tspan x={0} y={231} />
 					<tspan x={0} y={257}>
 						{
-							'Las nuevas instalaciones están diseñadas para proporcionar espacios modernos y funcionales, incluyendo '
+							t('Las nuevas instalaciones están diseñadas para proporcionar espacios modernos y funcionales, incluyendo ')
 						}
 					</tspan>
 					<tspan x={0} y={283}>
 						{
-							'oficinas, salas de reuniones, showroom, áreas sociales y espacios de coworking. Estas instalaciones refuerzan la '
+							t('oficinas, salas de reuniones, showroom, áreas sociales y espacios de coworking. Estas instalaciones refuerzan la ')
 						}
 					</tspan>
 					<tspan x={0} y={309}>
 						{
-							'nueva imagen del Grupo Amarey y su compromiso con la innovación y la excelencia. '
+							t('nueva imagen del Grupo Amarey y su compromiso con la innovación y la excelencia. ')
 						}
 					</tspan>
 				</text>
@@ -133,53 +135,53 @@ const Detalle = () => {
 					transform="translate(286 996)">
 					<tspan x={0} y={23}>
 						{
-							'Además de este traslado a sus nuevas oficinas administrativas, la compañía unificó sus bodegas para brindar un '
+							t('Además de este traslado a sus nuevas oficinas administrativas, la compañía unificó sus bodegas para brindar un ')
 						}
 					</tspan>
 					<tspan x={0} y={49}>
 						{
-							'servicio más eficiente y oportuno a sus clientes, con la apertura del Centro de Distribución Logística (CEDI), '
+							t('servicio más eficiente y oportuno a sus clientes, con la apertura del Centro de Distribución Logística (CEDI), ')
 						}
 					</tspan>
 					<tspan x={0} y={75}>
 						{
-							'ubicado estratégicamente en la carrera 68 con calle 17, en la zona industrial de Montevideo en Bogotá. '
+							t('ubicado estratégicamente en la carrera 68 con calle 17, en la zona industrial de Montevideo en Bogotá. ')
 						}
 					</tspan>
 					<tspan x={0} y={101} />
 					<tspan x={0} y={127}>
 						{
-							'El CEDI está dotado con la más alta tecnología y los más altos estándares operativos enfocados en optimizar los '
+							t('El CEDI está dotado con la más alta tecnología y los más altos estándares operativos enfocados en optimizar los ')
 						}
 					</tspan>
 					<tspan x={0} y={153}>
 						{
-							'procesos de valor tanto para los clientes como para los pacientes. Este centro permite cumplir de manera más '
+							t('procesos de valor tanto para los clientes como para los pacientes. Este centro permite cumplir de manera más ')
 						}
 					</tspan>
 					<tspan x={0} y={179}>
 						{
-							'efectiva las promesas de entrega y mejorar la eficiencia en toda la cadena operativa. '
+							t('efectiva las promesas de entrega y mejorar la eficiencia en toda la cadena operativa. ')
 						}
 					</tspan>
 					<tspan x={0} y={205} />
 					<tspan x={0} y={231}>
 						{
-							'Con el lanzamiento del CEDI, se reafirma una vez más el compromiso de liderar la logística en el sector, '
+							t('Con el lanzamiento del CEDI, se reafirma una vez más el compromiso de liderar la logística en el sector, ')
 						}
 					</tspan>
 					<tspan x={0} y={257}>
 						{
-							'manteniendo un servicio operativo las 24 horas del día, los 7 días de la semana, los 365 días del año. Esto '
+							t('manteniendo un servicio operativo las 24 horas del día, los 7 días de la semana, los 365 días del año. Esto ')
 						}
 					</tspan>
 					<tspan x={0} y={283}>
 						{
-							'permitirá seguir sirviendo a instituciones y pacientes de manera ininterrumpida, garantizando la prontitud y '
+							t('permitirá seguir sirviendo a instituciones y pacientes de manera ininterrumpida, garantizando la prontitud y ')
 						}
 					</tspan>
 					<tspan x={0} y={309}>
-						{'calidad en cada entrega. '}
+						{t(' calidad en cada entrega.')}
 					</tspan>
 				</text>
 				<text
@@ -187,16 +189,16 @@ const Detalle = () => {
 					transform="translate(703 395)">
 					<tspan x={0} y={23}>
 						{
-							'Gracias a su actual y exitoso crecimiento, unificó sus bodegas en un gran '
+							t('Gracias a su actual y exitoso crecimiento, unificó sus bodegas en un gran ')
 						}
 					</tspan>
 					<tspan x={0} y={49}>
 						{
-							'centro de distribución logística, CEDI y trasladó su sede administrativa a una '
+							t('centro de distribución logística, CEDI y trasladó su sede administrativa a una ')
 						}
 					</tspan>
 					<tspan x={0} y={75}>
-						{'exclusiva torre empresarial '}
+						{t('exclusiva torre empresarial ')}
 					</tspan>
 				</text>
 				<text
@@ -210,17 +212,17 @@ const Detalle = () => {
 					className="j-products-desktop"
 					transform="translate(706 283)">
 					<tspan x={0} y={38}>
-						{'GRUPO AMAREY EN SUS 40 AÑOS '}
+						{t('GRUPO AMAREY EN SUS 40 AÑOS ')}
 					</tspan>
 					<tspan x={0} y={84}>
-						{'ESTRENA SEDES'}
+						{t('ESTRENA SEDES')}
 					</tspan>
 				</text>
 				<text
 					className="k-products-desktop"
 					transform="translate(286 912)">
 					<tspan x={0} y={42}>
-						{'LIDERES EN DISTRIBUCIÓN '}
+						{t('LIDERES EN DISTRIBUCIÓN')}
 					</tspan>
 				</text>
 			</svg>

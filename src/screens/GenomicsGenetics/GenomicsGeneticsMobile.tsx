@@ -265,7 +265,7 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 							className="e-reward-2-mobile"
 							transform="translate(207 316)">
 							<tspan x={-58.044} y={0}>
-								{'Genética'}
+								{t('Genética')}
 							</tspan>
 						</text>
 						<text
@@ -273,72 +273,72 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 							transform="translate(36 381)">
 							<tspan x={0} y={13}>
 								{
-									'Esto significa que si usted tiene un historial '
+									t('Esto significa que si usted tiene un historial ')
 								}
 							</tspan>
 							<tspan x={0} y={31}>
-								{'familiar marcado de cáncer de mama, es '}
+								{t('familiar marcado de cáncer de mama, es ')}
 							</tspan>
 							<tspan x={0} y={49}>
-								{'probable que haya heredado un gen anormal '}
+								{t('probable que haya heredado un gen anormal ')}
 							</tspan>
 							<tspan x={0} y={67}>
 								{
-									'vinculado a un mayor riesgo de sufrir cáncer '
+									t('vinculado a un mayor riesgo de sufrir cáncer ')
 								}
 							</tspan>
 							<tspan x={0} y={85}>
-								{'de mama (como las mutaciones de los genes '}
+								{t('de mama (como las mutaciones de los genes ')}
 							</tspan>
 							<tspan x={0} y={103}>
-								{'BRCA 1 o 2). '}
+								{t('BRCA 1 o 2).')}
 							</tspan>
 							<tspan x={0} y={121} />
 							<tspan x={0} y={139}>
-								{'¿Por qué realizar pruebas genómicas'}
+								{t('¿Por qué realizar pruebas genómicas')}
 							</tspan>
 							<tspan x={0} y={157} xmlSpace="preserve">
-								{' y genéticas? '}
+								{t('y genéticas?')}
 							</tspan>
 						</text>
 						<text
 							className="f-reward-2-mobile"
 							transform="translate(75 556)">
 							<tspan x={0} y={13}>
-								{'Son las pruebas base de medicina de '}
+								{t('Son las pruebas base de medicina de')}
 							</tspan>
 							<tspan x={0} y={31}>
-								{'precisión o medicina personalizada, ya que '}
+								{t('precisión o medicina personalizada, ya que')}
 							</tspan>
 							<tspan x={0} y={49}>
-								{'cada individuo es diferente. '}
+								{t('cada individuo es diferente.')}
 							</tspan>
 							<tspan x={0} y={67}>
-								{'Guían al profesional en la elección del '}
+								{t('Guían al profesional en la elección del')}
 							</tspan>
 							<tspan x={0} y={85}>
-								{'tratamiento más adecuado para el '}
+								{t('tratamiento más adecuado para el')}
 							</tspan>
 							<tspan x={0} y={103}>
-								{'paciente. '}
+								{t('paciente.')}
 							</tspan>
 							<tspan x={0} y={121}>
-								{'Permite calcular el riesgo de recurrencia. '}
+								{t('Permite calcular el riesgo de recurrencia.')}
 							</tspan>
 							<tspan x={0} y={139}>
-								{'Muestra un beneficio real para el paciente '}
+								{t('Muestra un beneficio real para el paciente')}
 							</tspan>
 							<tspan x={0} y={157}>
-								{'y su familia. '}
+								{t('y su familia.')}
 							</tspan>
 							<tspan x={0} y={175}>
-								{'Se pueden analizar más de 3.800 '}
+								{t('Se pueden analizar más de 3.800')}
 							</tspan>
 							<tspan x={0} y={193}>
-								{'enfermedades. '}
+								{t('enfermedades.')}
 							</tspan>
 							<tspan x={0} y={211}>
-								{'Determinan calidad de vida del paciente.'}
+								{t('Determinan calidad de vida del paciente. ')}
 							</tspan>
 						</text>
 						<g
@@ -517,63 +517,63 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 							className="e-reward-2-mobile"
 							transform="translate(36 459)">
 							<tspan x={0} y={13}>
-								{'Las pruebas genómicas (también conocidas '}
+								{t('Las pruebas genómicas (también conocidas ')}
 							</tspan>
 							<tspan x={0} y={31}>
-								{'como pruebas multigénicas) analizan una '}
+								{t('como pruebas multigénicas) analizan una ')}
 							</tspan>
 							<tspan x={0} y={49}>
 								{
-									'muestra del tumor del cáncer para analizar el '
+									t('muestra del tumor del cáncer para analizar el ')
 								}
 							</tspan>
 							<tspan x={0} y={67}>
 								{
-									'nivel de actividad de determinados genes, el '
+									t('nivel de actividad de determinados genes, el ')
 								}
 							</tspan>
 							<tspan x={0} y={85}>
-								{'cual afecta el comportamiento del cáncer, '}
+								{t('cual afecta el comportamiento del cáncer, ')}
 							</tspan>
 							<tspan x={0} y={103}>
-								{'incluyendo su probabilidad de crecimiento y '}
+								{t('incluyendo su probabilidad de crecimiento y ')}
 							</tspan>
 							<tspan x={0} y={121}>
-								{'propagación. Una de estas pruebas genómicas '}
+								{t('propagación. Una de estas pruebas genómicas ')}
 							</tspan>
 							<tspan x={0} y={139}>
-								{'en particular proporciona, además, una '}
+								{t('en particular proporciona, además, una ')}
 							</tspan>
 							<tspan x={0} y={157}>
 								{
-									'estimación del beneficio de la quimioterapia. Se '
+									t('estimación del beneficio de la quimioterapia. Se ')
 								}
 							</tspan>
 							<tspan x={0} y={175}>
-								{'usan para ayudar en la toma de decisiones '}
+								{t('usan para ayudar en la toma de decisiones ')}
 							</tspan>
 							<tspan x={0} y={193}>
-								{'sobre tratamiento después de la cirugía. '}
+								{t('sobre tratamiento después de la cirugía. ')}
 							</tspan>
 							<tspan x={0} y={211} />
 							<tspan x={0} y={229}>
 								{
-									'En el caso del cáncer de mama puede ayudar a '
+									t('En el caso del cáncer de mama puede ayudar a')
 								}
 							</tspan>
 							<tspan x={0} y={247}>
-								{'determinar la agresividad de un tumor o la '}
+								{t('determinar la agresividad de un tumor o la')}
 							</tspan>
 							<tspan x={0} y={265}>
-								{'probabilidad que un determinado tratamiento '}
+								{t('probabilidad que un determinado tratamiento')}
 							</tspan>
 							<tspan x={0} y={283}>
 								{
-									'mejore el resultado, permitiendo escoger el plan '
+									t('mejore el resultado, permitiendo escoger el plan')
 								}
 							</tspan>
 							<tspan x={0} y={301}>
-								{'de cuidado adecuado para el paciente.'}
+								{t('de cuidado adecuado para el paciente.')}
 							</tspan>
 						</text>
 						<g

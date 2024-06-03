@@ -1,10 +1,11 @@
-export const notiicasMocks = (t: any) => [
+export const notiicasMocks = (t: any) => ([
+	
 	{
 		image: '/images/noticias-a.png',
 		text: () => (
 			<text className="p-products-desktop" transform="translate(465 627)">
 				<tspan x={14.16} y={38}>
-					{'GRUPO AMAREY EN SUS 40 AÑOS ESTRENA SEDES '}
+					{t('GRUPO AMAREY EN SUS 40 AÑOS ESTRENA SEDES')}
 				</tspan>
 			</text>
 		),
@@ -36,7 +37,7 @@ export const notiicasMocks = (t: any) => [
 		),
 	},   
     
-]
+])
 
 export const notiicasMocksMobile = (t: any) => [
 	{
@@ -46,10 +47,10 @@ export const notiicasMocksMobile = (t: any) => [
 					className="l-products-desktop"
 					transform="translate(39.5 522.111)">
 					<tspan x={41.761} y={21}>
-						{'GRUPO AMAREY EN SUS'}
+						{t('GRUPO AMAREY EN SUS')}
 					</tspan>
 					<tspan x={34.809} y={45}>
-						{'40 AÑOS ESTRENA SEDES '}
+						{t('40 AÑOS ESTRENA SEDES ')}
 					</tspan>
 				</text>
 		),

@@ -259,7 +259,7 @@ const View7: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 16.386)">
 						<tspan x={-63.266} y={13}>
-							{'Lavado de activos'}
+							{t('Lavado de activos')}
 						</tspan>
 					</text>
 				</g>
@@ -298,7 +298,7 @@ const View7: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 16.386)">
 						<tspan x={-88.725} y={13}>
-							{'Actividades inapropiadas'}
+							{t('Actividades inapropiadas')}
 						</tspan>
 					</text>
 				</g>
@@ -316,7 +316,7 @@ const View7: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 16.386)">
 						<tspan x={-59.668} y={13}>
-							{'Confidencialidad'}
+							{t('Confidencialidad ')}
 						</tspan>
 					</text>
 				</g>
@@ -334,10 +334,10 @@ const View7: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 8.386)">
 						<tspan x={-77.224} y={13}>
-							{'Prácticas comerciales '}
+						{t('Prácticas comerciales ')}
 						</tspan>
 						<tspan x={-45.213} y={29}>
-							{'inadecuadas'}
+							{t('inadecuadas')}
 						</tspan>
 					</text>
 				</g>
@@ -377,7 +377,7 @@ const View7: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 16.386)">
 						<tspan x={-73.409} y={13}>
-							{'Dádivas o prebendas'}
+						{t('Dádivas o prebendas')}
 						</tspan>
 					</text>
 				</g>
@@ -400,41 +400,41 @@ const View7: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="p-reward-2-mobile"
 						transform="translate(160 120.636)">
 						<tspan x={-125.79} y={20}>
-							{'Incumplimiento de leyes '}
+							{t('Incumplimiento de leyes ')}
 						</tspan>
 						<tspan x={-76.786} y={44}>
-							{'y regulaciones'}
+							{t('y regulaciones')}
 						</tspan>
 					</text>
 					<text
 						className="l-reward-2-mobile"
 						transform="translate(35 197.636)">
 						<tspan x={0} y={13}>
-							{'Negocios de la compañía que no se '}
+							{t('Negocios de la compañía que no se ')}
 						</tspan>
 						<tspan x={0} y={29}>
-							{'realicen dentro del marco legal y/o que '}
+							{t('realicen dentro del marco legal y/o que ')}
 						</tspan>
 						<tspan x={0} y={45}>
-							{'sus colaboradores no obren dentro de '}
+							{t('sus colaboradores no obren dentro de ')}
 						</tspan>
 						<tspan x={0} y={61}>
-							{'este. Incumplimiento a lo dispuesto en '}
+							{t('este. Incumplimiento a lo dispuesto en ')}
 						</tspan>
 						<tspan x={0} y={77}>
-							{'el código de ética, reglamento interno '}
+							{t('el código de ética, reglamento interno ')}
 						</tspan>
 						<tspan x={0} y={93}>
-							{'de trabajo, políticas de contratación y '}
+							{t('de trabajo, políticas de contratación y ')}
 						</tspan>
 						<tspan x={0} y={109}>
-							{'pago a terceros, reglamentos, políticas '}
+							{t('pago a terceros, reglamentos, políticas ')}
 						</tspan>
 						<tspan x={0} y={125}>
-							{'y/o procedimientos específicos '}
+							{t('y/o procedimientos específicos ')}
 						</tspan>
 						<tspan x={0} y={141}>
-							{'establecidos por el Grupo Amarey.'}
+							{t('establecidos por el Grupo Amarey.')}
 						</tspan>
 					</text>
 				</g>

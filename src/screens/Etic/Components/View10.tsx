@@ -259,7 +259,7 @@ const View10: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 16.386)">
 						<tspan x={-63.266} y={13}>
-							{'Lavado de activos'}
+							{t('Lavado de activos')}
 						</tspan>
 					</text>
 				</g>
@@ -298,7 +298,7 @@ const View10: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 16.386)">
 						<tspan x={-88.725} y={13}>
-							{'Actividades inapropiadas'}
+							{t('Actividades inapropiadas')}
 						</tspan>
 					</text>
 				</g>
@@ -334,10 +334,10 @@ const View10: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 8.386)">
 						<tspan x={-77.224} y={13}>
-							{'Prácticas comerciales '}
+						{t('Prácticas comerciales ')}
 						</tspan>
 						<tspan x={-45.213} y={29}>
-							{'inadecuadas'}
+							{t('inadecuadas')}
 						</tspan>
 					</text>
 				</g>
@@ -377,7 +377,7 @@ const View10: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 16.386)">
 						<tspan x={-73.409} y={13}>
-							{'Dádivas o prebendas'}
+						{t('Dádivas o prebendas')}
 						</tspan>
 					</text>
 				</g>
@@ -400,35 +400,35 @@ const View10: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="p-reward-2-mobile"
 						transform="translate(160 149.636)">
 						<tspan x={-117.358} y={20}>
-							{'Prácticas comerciales '}
+							{t('Prácticas comerciales ')}
 						</tspan>
 						<tspan x={-67.315} y={44}>
-							{'inadecuadas'}
+							{t('inadecuadas')}
 						</tspan>
 					</text>
 					<text
 						className="l-reward-2-mobile"
 						transform="translate(35 227.636)">
 						<tspan x={0} y={13}>
-							{'En la relación con los clientes de '}
+							{t('En la relación con los clientes de ')}
 						</tspan>
 						<tspan x={0} y={29}>
-							{'Grupo Amarey, los empleados de la '}
+							{t('Grupo Amarey, los empleados de la ')}
 						</tspan>
 						<tspan x={0} y={45}>
-							{'organización siempre deberán actuar '}
+							{t('organización siempre deberán actuar ')}
 						</tspan>
 						<tspan x={0} y={61}>
-							{'con objetividad, imparcialidad, '}
+							{t('con objetividad, imparcialidad, ')}
 						</tspan>
 						<tspan x={0} y={77}>
-							{'equidad, excelencia y de acuerdo con '}
+							{t('equidad, excelencia y de acuerdo con ')}
 						</tspan>
 						<tspan x={0} y={93}>
-							{'los objetivos de imagen, crecimiento '}
+							{t('los objetivos de imagen, crecimiento ')}
 						</tspan>
 						<tspan x={0} y={109}>
-							{'y rentabilidad de la empresa.'}
+							{t('y rentabilidad de la empresa.')}
 						</tspan>
 					</text>
 				</g>
