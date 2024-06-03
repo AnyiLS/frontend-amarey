@@ -11,19 +11,20 @@ import useNavbar from "./useNavbar";
 import "./Navbar.css";
 
 const Navbar: React.FC = () => {
-	/** References */
-	const subItemRef: React.MutableRefObject<SVGSVGElement | null> = React.useRef<SVGSVGElement | null>(null);
+  /** References */
+  const subItemRef: React.MutableRefObject<SVGSVGElement | null> =
+    React.useRef<SVGSVGElement | null>(null);
 
   /** Contexts */
-  const { selectedLanguage } = useLanguage();
+  const { selectedLanguage, handleChangeSelectedLanguage } = useLanguage();
 
-	/** States */
+  /** States */
   const [hover, setHover] = React.useState<string>("");
   const [hover1, setHover1] = React.useState<string>("");
   const [showSearchable, setShowSearchable] = React.useState<boolean>(false);
 
   /** Hooks */
-	const { results, handleSearchPage } = useNavbar();
+  const { results, handleSearchPage } = useNavbar();
   const { t } = useTranslation();
   const {
     SubmenuActualidad,
@@ -76,6 +77,7 @@ const Navbar: React.FC = () => {
             <rect className="a" width={204.2} height={57.138} />
           </clipPath>
         </defs>
+
         <g>
           <g className="k" transform="matrix(1, 0, 0, 1, -9, -6)">
             <path
@@ -83,6 +85,16 @@ const Navbar: React.FC = () => {
               d="M0,0H1920V104.012H0Z"
               transform="translate(9 6)"
             />
+          </g>
+
+          <g transform="translate(1600 31)" style={{ zIndex: 1 }} onClick={handleChangeSelectedLanguage}>
+            <foreignObject x={0} y={0} width={51} height={51}>
+              <img
+                src={selectedLanguage === 'en' ? "/images/logo-english.png" : '/images/logo-spanish.png'}
+                alt=""
+                className="h-full w-full"
+              />
+            </foreignObject>
           </g>
 
           <g
