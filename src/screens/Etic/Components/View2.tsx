@@ -1,12 +1,16 @@
-   import React from 'react'
+import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 export interface IEtic {
 	onNext: (number: number) => void
 }
 
 const View2: React.FC<IEtic> = ({ onNext }): JSX.Element => {
+	const {t} = useTranslation()
+
+
 	return (
-		<svg viewBox="165 39 414 949.512">
+		<svg viewBox="165 39 414 909.512">
 			<defs>
 				<style>
 					{
@@ -131,50 +135,50 @@ const View2: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 					className="h-reward-2-mobile"
 					transform="translate(204.394 422)">
 					<tspan x={0} y={13}>
-						{'En el Grupo Amarey estamos comprometidos en '}
+						{t('En el Grupo Amarey estamos comprometidos en ')}
 					</tspan>
 					<tspan x={0} y={29}>
-						{'mantener relaciones honestas, constructivas e '}
+						{t('mantener relaciones honestas, constructivas e ')}
 					</tspan>
 					<tspan x={0} y={45}>
-						{'idóneas con nuestros grupos de interés. Guiados '}
+						{t('idóneas con nuestros grupos de interés. Guiados ')}
 					</tspan>
 					<tspan x={0} y={61}>
-						{'por nuestros valores corporativos hemos creado '}
+						{t('por nuestros valores corporativos hemos creado ')}
 					</tspan>
 					<tspan x={0} y={77}>
-						{'el presente Código de ética, a través del cual '}
+						{t('el presente Código de ética, a través del cual ')}
 					</tspan>
 					<tspan x={0} y={93}>
-						{'establecemos las reglas de conducta ética que '}
+						{t('establecemos las reglas de conducta ética que ')}
 					</tspan>
 					<tspan x={0} y={109}>
-						{'deben ser seguidas y observadas en su '}
+						{t('deben ser seguidas y observadas en su ')}
 					</tspan>
 					<tspan x={0} y={125}>
-						{'comportamiento diario por todas las personas '}
+						{t('comportamiento diario por todas las personas ')}
 					</tspan>
 					<tspan x={0} y={141}>
-						{'vinculadas a la empresa, tanto los miembros de '}
+						{t('vinculadas a la empresa, tanto los miembros de ')}
 					</tspan>
 					<tspan x={0} y={157}>
-						{'la junta directiva, directores, empleados de '}
+						{t('la junta directiva, directores, empleados de ')}
 					</tspan>
 					<tspan x={0} y={173}>
-						{'todos los niveles, proveedores, asesores y '}
+						{t('todos los niveles, proveedores, asesores y ')}
 					</tspan>
 					<tspan x={0} y={189}>
-						{'contratistas, así como para los empleados '}
+						{t('contratistas, así como para los empleados ')}
 					</tspan>
 					<tspan x={0} y={205}>
-						{'indirectos.'}
+						{t('indirectos. ')}
 					</tspan>
 				</text>
 				<text
 					className="i-reward-2-mobile"
 					transform="translate(202.394 359)">
 					<tspan x={33.592} y={32}>
-						{'Código de ética'}
+						{t('Código de ética')}
 					</tspan>
 				</text>
 				<a href="https://grupoamarey.com/pdf/codigo-etica.pdf" target='_blank' rel='noreferrer'>
@@ -192,7 +196,7 @@ const View2: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 							className="k-reward-2-mobile"
 							transform="translate(110 4342.584)">
 							<tspan x={0} y={0}>
-								{'Ver Código de ética'}
+								{t('Ver Código de ética')}
 							</tspan>
 						</text>
 					</g>
@@ -212,10 +216,10 @@ const View2: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 							className="k-reward-2-mobile"
 							transform="translate(207 4332.584)">
 							<tspan x={-70.38} y={0}>
-								{'Ver Manual de'}
+								{t('Ver Manual de')}
 							</tspan>
 							<tspan x={-57.816} y={20}>
-								{'Compliance'}
+								{t('Compliance')}
 							</tspan>
 						</text>
 					</g>
@@ -234,7 +238,7 @@ const View2: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 					className="k-reward-2-mobile"
 					transform="translate(373.394 65)">
 					<tspan x={-95.733} y={0}>
-						{'ÉTICA Y COMPLIANCE'}
+						{t('ÉTICA Y COMPLIANCE ')}
 					</tspan>
 				</text>
 				<path

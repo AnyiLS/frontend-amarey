@@ -1,12 +1,14 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 export interface IEtic {
 	onNext: (number: number) => void
 }
 
 const View3: React.FC<IEtic> = ({ onNext }): JSX.Element => {
+	const {t} = useTranslation()
 	return (
-		<svg viewBox="167 40 414 949.512">
+		<svg viewBox="167 40 414 907.512">
 			<defs>
 				<style>
 					{
@@ -114,52 +116,52 @@ const View3: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 					className="h-reward-2-mobile"
 					transform="translate(203.394 433)">
 					<tspan x={0} y={13}>
-						{'La línea ética es un canal diseñado para que '}
+						{t('La línea ética es un canal diseñado para que ')}
 					</tspan>
 					<tspan x={0} y={29}>
-						{'empleados, proveedores, aliados estratégicos y '}
+						{t('empleados, proveedores, aliados estratégicos y ')}
 					</tspan>
 					<tspan x={0} y={45}>
-						{'clientes puedan reportar de forma anónima y '}
+						{t('clientes puedan reportar de forma anónima y ')}
 					</tspan>
 					<tspan x={0} y={61}>
-						{'confidencial presuntas violaciones a nuestro '}
+						{t('confidencial presuntas violaciones a nuestro ')}
 					</tspan>
 					<tspan x={0} y={77}>
-						{'Código de ética, así como posibles actos '}
+						{t('Código de ética, así como posibles actos ')}
 					</tspan>
 					<tspan x={0} y={93}>
-						{'incorrectos, fraudes, corrupción, acoso y otros '}
+						{t('incorrectos, fraudes, corrupción, acoso y otros ')}
 					</tspan>
 					<tspan x={0} y={109}>
-						{'aspectos que afecten la imagen y buen nombre '}
+						{t('aspectos que afecten la imagen y buen nombre ')}
 					</tspan>
 					<tspan x={0} y={125}>
-						{'de la compañía.'}
+						{t('de la compañía.')}
 					</tspan>
 					<tspan x={0} y={141} />
 					<tspan x={0} y={157}>
-						{'Las denuncias pueden realizarse a través del '}
+						{t('Las denuncias pueden realizarse a través del ')}
 					</tspan>
 					<tspan x={0} y={173}>
-						{'correo electrónico los 7 días de la semana, las '}
+						{t('correo electrónico los 7 días de la semana, las ')}
 					</tspan>
 					<tspan x={0} y={189}>
-						{'24 horas del día.'}
+						{t('24 horas del día.')}
 					</tspan>
 					<tspan x={0} y={205} />
 					<tspan className="i-reward-2-mobile">
 						<tspan x={0} y={221}>
-							{'¿Cómo puedo comunicarme con la línea ética?'}
+							{t('¿Cómo puedo comunicarme con la línea ética? ')}
 						</tspan>
 					</tspan>
 					<tspan x={0} y={237} />
 					<tspan x={0} y={253}>
-						{'A través del correo electrónico: '}
+						{t('A través del correo electrónico: ')}
 					</tspan>
 					<tspan x={0} y={269}>
 						{
-							'linea.etica@grupoamarey.com'
+							t('linea.etica@grupoamarey.com')
 						}
 					</tspan>
 				</text>
@@ -167,7 +169,7 @@ const View3: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 					className="j-reward-2-mobile"
 					transform="translate(202.394 367)">
 					<tspan x={75} y={32}>
-						{'Línea ética'}
+						{t('Línea ética')}
 					</tspan>
 				</text>
 				<g transform="translate(166.394 -3565.115)" onClick={() => onNext(3)}>
@@ -184,10 +186,10 @@ const View3: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(207 4332.584)">
 						<tspan x={-110.925} y={0}>
-							{'¿Cuándo debo utilizar'}
+							{t('¿Cuándo debo utilizar')}
 						</tspan>
 						<tspan x={-72.801} y={20}>
-							{'la línea ética?'}
+							{t('la línea ética?')}
 						</tspan>
 					</text>
 				</g>
@@ -205,7 +207,7 @@ const View3: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 					className="l-reward-2-mobile"
 					transform="translate(373.394 65)">
 					<tspan x={-95.733} y={0}>
-						{'ÉTICA Y COMPLIANCE'}
+						{t('ÉTICA Y COMPLIANCE ')}
 					</tspan>
 				</text>
 				<path

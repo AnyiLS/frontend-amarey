@@ -8,7 +8,7 @@ export interface IEtic {
 const View4: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 	const {t} = useTranslation()
 	return (
-		<svg viewBox="0 40 414 855">
+		<svg viewBox="0 40 414 853">
 			<defs>
 				<style>
 					{
@@ -193,7 +193,7 @@ const View4: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="h-reward-2-mobile"
 						transform="translate(206.475 65)">
 						<tspan x={-95.733} y={0}>
-							{'ÉTICA Y COMPLIANCE'}
+							{t('ÉTICA Y COMPLIANCE ')}
 						</tspan>
 					</text>
 					<path
@@ -207,20 +207,20 @@ const View4: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 					className="i-reward-2-mobile"
 					transform="translate(180 261)">
 					<tspan x={-145.008} y={15}>
-						{'¿Cuándo debo utilizar la línea ética?'}
+						{t('¿Cuándo debo utilizar la línea ética?')}
 					</tspan>
 				</text>
 				<text
 					className="j-reward-2-mobile"
 					transform="translate(37 291)">
 					<tspan x={0} y={13}>
-						{'Cuando identifique situaciones no éticas que '}
+						{t('Cuando identifique situaciones no éticas que ')}
 					</tspan>
 					<tspan x={0} y={29}>
-						{'puedan afectar los intereses del Grupo '}
+						{t('puedan afectar los intereses del Grupo ')}
 					</tspan>
 					<tspan x={0} y={45}>
-						{'Amarey como:'}
+						{t('Amarey como: ')}
 					</tspan>
 				</text>
 				<g transform="translate(80 366)" onClick={() => onNext(4)}>
@@ -255,7 +255,7 @@ const View4: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 16.386)">
 						<tspan x={-63.266} y={13}>
-							{'Lavado de activos'}
+							{t('Lavado de activos')}
 						</tspan>
 					</text>
 				</g>
@@ -273,10 +273,10 @@ const View4: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 8.386)">
 						<tspan x={-63.973} y={13}>
-							{'Incumplimiento de '}
+							{t('Incumplimiento de ')}
 						</tspan>
 						<tspan x={-69.846} y={29}>
-							{'leyes y regulaciones'}
+							{t('leyes y regulaciones')}
 						</tspan>
 					</text>
 				</g>
@@ -294,7 +294,7 @@ const View4: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 16.386)">
 						<tspan x={-88.725} y={13}>
-							{'Actividades inapropiadas'}
+							{t('Actividades inapropiadas')}
 						</tspan>
 					</text>
 				</g>
@@ -312,7 +312,7 @@ const View4: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 16.386)">
 						<tspan x={-59.668} y={13}>
-							{'Confidencialidad'}
+							{t('Confidencialidad')}
 						</tspan>
 					</text>
 				</g>
@@ -330,10 +330,10 @@ const View4: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 8.386)">
 						<tspan x={-77.224} y={13}>
-							{'Prácticas comerciales '}
+							{t('Prácticas comerciales ')}
 						</tspan>
 						<tspan x={-45.213} y={29}>
-							{'inadecuadas'}
+							{t('inadecuadas')}
 						</tspan>
 					</text>
 				</g>
@@ -351,7 +351,7 @@ const View4: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 16.386)">
 						<tspan x={-73.409} y={13}>
-							{'Dádivas o prebendas'}
+							{t(t('Dádivas o prebendas'))}
 						</tspan>
 					</text>
 				</g>

@@ -308,7 +308,7 @@ const NoticiasMovil = () => {
 							className="n-products-desktop"
 							transform="translate(147.5 793.584)">
 							<tspan x={0} y={0}>
-								{'Conoce Más'}
+								{t('Conoce Más')}
 							</tspan>
 						</text>
 					</a>
@@ -336,19 +336,19 @@ const NoticiasMovil = () => {
 						className="p-products-desktop"
 						transform="translate(102.75 926.545)">
 						<tspan x={0} y={13}>
-							{'Grupo '}
+							{t('Grupo ')}
 						</tspan>
 						<tspan x={0} y={29}>
-							{'amarey en '}
+							{t('amarey en ')}
 						</tspan>
 						<tspan x={0} y={45}>
-							{'sus 40 años '}
+							{t('sus 40 años ')}
 						</tspan>
 						<tspan x={0} y={61}>
-							{'estrena '}
+							{t('estrena ')}
 						</tspan>
 						<tspan x={0} y={77}>
-							{'sedes '}
+							{t('sedes ')}
 						</tspan>
 					</text>
 					<text
@@ -451,7 +451,7 @@ const NoticiasMovil = () => {
 					className="u-products-desktop"
 					transform="translate(210.5 841.111)">
 					<tspan x={-73.26} y={18}>
-						{'Otras noticias '}
+						{t('Otras noticias ')}
 					</tspan>
 				</text>
 			</svg>

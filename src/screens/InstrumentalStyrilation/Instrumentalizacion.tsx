@@ -99,20 +99,20 @@ const InstrumentalStyrilationMobile: React.FC = (): JSX.Element => {
 							className="e-reward-2-mobile"
 							transform="translate(35 681)">
 							<tspan x={0} y={13}>
-								{'Con un completo portafolio de instrumentos '}
+								{t('Con un completo portafolio de instrumentos ')}
 							</tspan>
 							<tspan x={0} y={31}>
 								{
-									'para las diferentes especialidades quirúrgicas, y '
+									t('para las diferentes especialidades quirúrgicas, y ')
 								}
 							</tspan>
 							<tspan x={0} y={49}>
 								{
-									'la interacción entre los productos y los procesos '
+									t('la interacción entre los productos y los procesos ')
 								}
 							</tspan>
 							<tspan x={0} y={67}>
-								{'de lavado y esterilización.'}
+								{t('de lavado y esterilización.')}
 							</tspan>
 						</text>
 						<g
@@ -129,7 +129,7 @@ const InstrumentalStyrilationMobile: React.FC = (): JSX.Element => {
 							className="g-reward-2-mobile"
 							transform="translate(207 26)">
 							<tspan x={-101.322} y={0}>
-								{'Soluciones en salud'}
+								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
 						<g transform="translate(366.585 13.292)" onClick={() => window.location.href = '/productos'}>
@@ -155,7 +155,7 @@ const InstrumentalStyrilationMobile: React.FC = (): JSX.Element => {
 								transform="translate(55.5 28.584)"
 								onClick={() => setView(1)}>
 								<tspan x={0} y={0}>
-									{'Conoce Más'}
+									{t('Conoce Más')}
 								</tspan>
 							</text>
 						</g>
@@ -257,46 +257,46 @@ const InstrumentalStyrilationMobile: React.FC = (): JSX.Element => {
 							transform="translate(36 509)">
 							<tspan x={0} y={13}>
 								{
-									'nuestro equipo profesional está presto a brindar '
+									t('nuestro equipo profesional está presto a brindar ')
 								}
 							</tspan>
 							<tspan x={0} y={31}>
-								{'información, asesoría, acompañamiento, '}
+								{t('información, asesoría, acompañamiento, ')}
 							</tspan>
 							<tspan x={0} y={49}>
-								{'sugerencias y soluciones a sus planes y '}
+								{t('sugerencias y soluciones a sus planes y ')}
 							</tspan>
 							<tspan x={0} y={67}>
-								{'proyectos con:'}
+								{t('proyectos con:')}
 							</tspan>
 						</text>
 						<text
 							className="f-reward-2-mobile"
 							transform="translate(36 714)">
 							<tspan x={0} y={13}>
-								{'Siempre enfocados en optimizar y preservar '}
+								{t('Siempre enfocados en optimizar y preservar ')}
 							</tspan>
 							<tspan x={0} y={31}>
-								{'su inversión. '}
+								{t('su inversión. ')}
 							</tspan>
 						</text>
 						<text
 							className="f-reward-2-mobile"
 							transform="translate(75 595)">
 							<tspan x={0} y={13}>
-								{'Instrumental quirúrgico y su '}
+								{t('Instrumental quirúrgico y su ')}
 							</tspan>
 							<tspan x={0} y={31}>
-								{'mantenimiento '}
+								{t('mantenimiento ')}
 							</tspan>
 							<tspan x={0} y={49}>
-								{'Contenedores ecológicos '}
+								{t('Contenedores ecológicos ')}
 							</tspan>
 							<tspan x={0} y={67}>
-								{'Equipos para lavado y termodesinfección '}
+								{t('Equipos para lavado y termodesinfección ')}
 							</tspan>
 							<tspan x={0} y={85}>
-								{'Equipos para esterilización '}
+								{t('Equipos para esterilización ')}
 							</tspan>
 						</text>
 						<g
@@ -327,7 +327,7 @@ const InstrumentalStyrilationMobile: React.FC = (): JSX.Element => {
 							className="k-reward-2-mobile"
 							transform="translate(207 26)">
 							<tspan x={-101.322} y={0}>
-								{'Soluciones en salud'}
+								{t('Soluciones en salud')}
 							</tspan>
 						</text>
 						<g transform="translate(366.584 13.292)"  onClick={() => setView(0)}>

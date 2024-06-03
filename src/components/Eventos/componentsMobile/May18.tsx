@@ -1,5 +1,6 @@
 import moment from 'moment'
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 interface CalendarProps {
     onNext: () => void
@@ -19,6 +20,9 @@ const May18: React.FC<CalendarProps> = ({
     /** Variables */
     const day = moment().format('DD')
     const month = moment().format('MM')
+
+    const {t} = useTranslation()
+
 
     React.useEffect(() => {
         if (month === '05') {
@@ -258,7 +262,7 @@ const May18: React.FC<CalendarProps> = ({
                 className="h-pentagrama"
                 transform="translate(144.806 87.21)">
                 <tspan x={0} y={0}>
-                    {'18 de mayo de 2024'}
+                    {t('18 de mayo de 2024')}
                 </tspan>
             </text>
             <g transform="translate(228.262 782.336)">
@@ -297,7 +301,7 @@ const May18: React.FC<CalendarProps> = ({
                 className="j-pentagrama"
                 transform="translate(60 23.21)">
                 <tspan x={11.368} y={32}>
-                    {'Prográmese con Grupo Amarey '}
+                    {t('Prográmese con Grupo Amarey ')}
                 </tspan>
             </text>
             <g transform="translate(-850.194 -164.136)">
@@ -388,7 +392,7 @@ const May18: React.FC<CalendarProps> = ({
                             className="p-pentagrama"
                             transform="translate(155 557)">
                             <tspan x={-13.57} y={19}>
-                                {'Do'}
+                                {t('Do ')}
                             </tspan>
                         </text>
                     </g>
@@ -397,7 +401,7 @@ const May18: React.FC<CalendarProps> = ({
                             className="p-pentagrama"
                             transform="translate(155 557)">
                             <tspan x={-11.2} y={19}>
-                                {'Lu'}
+                                {t('Lu ')}
                             </tspan>
                         </text>
                     </g>
@@ -406,7 +410,7 @@ const May18: React.FC<CalendarProps> = ({
                             className="p-pentagrama"
                             transform="translate(155 557)">
                             <tspan x={-15.36} y={19}>
-                                {'Ma'}
+                                {t('Ma ')}
                             </tspan>
                         </text>
                     </g>
@@ -415,7 +419,7 @@ const May18: React.FC<CalendarProps> = ({
                             className="p-pentagrama"
                             transform="translate(155 557)">
                             <tspan x={-11.58} y={19}>
-                                {'Mi'}
+                                {t('Mi ')}
                             </tspan>
                         </text>
                     </g>
@@ -424,7 +428,7 @@ const May18: React.FC<CalendarProps> = ({
                             className="p-pentagrama"
                             transform="translate(155 557)">
                             <tspan x={-11.92} y={19}>
-                                {'Ju'}
+                                {t('Ju ')}
                             </tspan>
                         </text>
                     </g>
@@ -433,7 +437,7 @@ const May18: React.FC<CalendarProps> = ({
                             className="p-pentagrama"
                             transform="translate(155 557)">
                             <tspan x={-9.54} y={19}>
-                                {'Vi'}
+                                {t('Vi ')}
                             </tspan>
                         </text>
                     </g>
@@ -442,7 +446,7 @@ const May18: React.FC<CalendarProps> = ({
                             className="p-pentagrama"
                             transform="translate(155 557)">
                             <tspan x={-12.43} y={19}>
-                                {'Sa'}
+                                {t('Sa ')}
                             </tspan>
                         </text>
                     </g>
@@ -1069,7 +1073,7 @@ const May18: React.FC<CalendarProps> = ({
                     className="s-pentagrama"
                     transform="translate(4.524 25.192)">
                     <tspan x={0} y={0}>
-                        {'Mayo 2024'}
+                        {t('Mayo 2024')}
                     </tspan>
                 </text>
                 <line

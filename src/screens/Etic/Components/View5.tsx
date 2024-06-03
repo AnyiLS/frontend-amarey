@@ -282,7 +282,7 @@ const View5: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="m-reward-2-mobile"
 						transform="translate(120 16.386)">
 						<tspan x={-63.266} y={13}>
-							{'Lavado de activos'}
+							{t('Lavado de activos')}
 						</tspan>
 					</text>
 				</g>
@@ -321,7 +321,7 @@ const View5: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="m-reward-2-mobile"
 						transform="translate(34 16.386)">
 						<tspan x={-88.725} y={13}>
-							{'Actividades inapropiadas'}
+							{t('Actividades inapropiadas')}
 						</tspan>
 					</text>
 				</g>
@@ -357,10 +357,10 @@ const View5: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="m-reward-2-mobile"
 						transform="translate(120 8.386)">
 						<tspan x={-77.224} y={13}>
-							{'Prácticas comerciales '}
+						{t('Prácticas comerciales ')}
 						</tspan>
 						<tspan x={-45.213} y={29}>
-							{'inadecuadas'}
+							{t('inadecuadas')}
 						</tspan>
 					</text>
 				</g>
@@ -378,7 +378,7 @@ const View5: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="m-reward-2-mobile"
 						transform="translate(120 16.386)">
 						<tspan x={-73.409} y={13}>
-							{'Dádivas o prebendas'}
+							{t('Dádivas o prebendas')}
 						</tspan>
 					</text>
 				</g>
@@ -408,31 +408,31 @@ const View5: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="m-reward-2-mobile"
 						transform="translate(35 192.636)">
 						<tspan x={0} y={13}>
-							{'La situación en virtud de la cual una '}
+							{t('La situación en virtud de la cual una ')}
 						</tspan>
 						<tspan x={0} y={29}>
-							{'persona, por su actividad o cargo, o '}
+							{t('persona, por su actividad o cargo, o ')}
 						</tspan>
 						<tspan x={0} y={45}>
-							{'por la información que posee, se '}
+							{t('por la información que posee, se ')}
 						</tspan>
 						<tspan x={0} y={61}>
-							{'enfrenta a distintas alternativas de '}
+							{t('enfrenta a distintas alternativas de ')}
 						</tspan>
 						<tspan x={0} y={77}>
-							{'conducta en relación con intereses '}
+							{t('conducta en relación con intereses ')}
 						</tspan>
 						<tspan x={0} y={93}>
-							{'incompatibles, siendo incorrecto '}
+							{t('incompatibles, siendo incorrecto ')}
 						</tspan>
 						<tspan x={0} y={109}>
-							{'privilegiar alguno de ellos, pues se '}
+							{t('privilegiar alguno de ellos, pues se ')}
 						</tspan>
 						<tspan x={0} y={125}>
-							{'vulneraría o debilitaría injustamente '}
+							{t('vulneraría o debilitaría injustamente ')}
 						</tspan>
 						<tspan x={0} y={141}>
-							{'la posición del otro.'}
+							{t('la posición del otro.')}
 						</tspan>
 					</text>
 				</g>

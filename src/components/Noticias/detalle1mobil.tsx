@@ -1,9 +1,11 @@
 import useGeneral from 'hooks/general.hook'
 import React from 'react'
 import Detalle from './Detalle'
+import { useTranslation } from 'react-i18next'
 
 const Detalle1mobil = () => {
   const {width} = useGeneral()
+  const { t } = useTranslation()
 
 	return (
 		<div>
@@ -77,92 +79,92 @@ const Detalle1mobil = () => {
 					className="h-products-desktop"
 					transform="translate(41.5 349)">
 					<tspan x={0} y={21}>
-						{'GRUPO AMAREY EN SUS 40 '}
+						{t('GRUPO AMAREY EN SUS 40 ')}
 					</tspan>
 					<tspan x={0} y={45}>
-						{'AÑOS ESTRENA SEDES'}
+						{t('AÑOS ESTRENA SEDES')}
 					</tspan>
 				</text>
 				<text
 					className="i-products-desktop"
 					transform="translate(41.5 910)">
 					<tspan x={0} y={18}>
-						{'LIDERES EN DISTRIBUCIÓN '}
+						{t('LIDERES EN DISTRIBUCIÓN')}
 					</tspan>
 				</text>
 				<text
 					className="j-products-desktop"
 					transform="translate(41.5 494)">
 					<tspan x={0} y={13}>
-						{'El Grupo Amarey, una institución emblemática en '}
+						{t('El Grupo Amarey, una institución emblemática en ')}
 					</tspan>
 					<tspan x={0} y={29}>
-						{'el ámbito de la salud en Colombia, está de '}
+						{t('el ámbito de la salud en Colombia, está de ')}
 					</tspan>
 					<tspan x={0} y={45}>
-						{'celebración al cumplir 40 años de servicio '}
+						{t('celebración al cumplir 40 años de servicio ')}
 					</tspan>
 					<tspan x={0} y={61}>
-						{'dedicado a la comunidad médica del país. En '}
+						{t('dedicado a la comunidad médica del país. En ')}
 					</tspan>
 					<tspan x={0} y={77}>
-						{'este hito importante, nos complace anunciar la '}
+						{t('este hito importante, nos complace anunciar la ')}
 					</tspan>
 					<tspan x={0} y={93}>
-						{'apertura de sus nuevas oficinas, ubicadas en '}
+						{t('apertura de sus nuevas oficinas, ubicadas en ')}
 					</tspan>
 					<tspan x={0} y={109}>
-						{'uno de los lugares más exclusivos de Bogotá. '}
+						{t('uno de los lugares más exclusivos de Bogotá. ')}
 					</tspan>
 					<tspan x={0} y={125} />
 					<tspan x={0} y={141}>
-						{'Como resultado de sus continuos esfuerzos y '}
+						{t('Como resultado de sus continuos esfuerzos y ')}
 					</tspan>
 					<tspan x={0} y={157}>
-						{'excelentes resultados, el Grupo Amarey marca el '}
+						{t('excelentes resultados, el Grupo Amarey marca el ')}
 					</tspan>
 					<tspan x={0} y={173}>
-						{'inicio de una nueva etapa en su desarrollo '}
+						{t('inicio de una nueva etapa en su desarrollo ')}
 					</tspan>
 					<tspan x={0} y={189}>
-						{'organizacional y su visión de expansión hacia el '}
+						{t('organizacional y su visión de expansión hacia el ')}
 					</tspan>
 					<tspan x={0} y={205}>
-						{'futuro. Por ello, la sección administrativa de la '}
+						{t('futuro. Por ello, la sección administrativa de la ')}
 					</tspan>
 					<tspan x={0} y={221}>
-						{'compañía estrena una nueva sede, que abarca '}
+						{t('compañía estrena una nueva sede, que abarca ')}
 					</tspan>
 					<tspan x={0} y={237}>
-						{'más de 2.000 metros cuadrados en una torre '}
+						{t('más de 2.000 metros cuadrados en una torre ')}
 					</tspan>
 					<tspan x={0} y={253}>
-						{'empresarial ubicada en la calle 100 con carrera '}
+						{t('empresarial ubicada en la calle 100 con carrera ')}
 					</tspan>
 					<tspan x={0} y={269}>
-						{'séptima en Bogotá. '}
+						{t('séptima en Bogotá. ')}
 					</tspan>
 					<tspan x={0} y={285} />
 					<tspan x={0} y={301}>
-						{'Las nuevas instalaciones están diseñadas para '}
+						{t('Las nuevas instalaciones están diseñadas para ')}
 					</tspan>
 					<tspan x={0} y={317}>
-						{'proporcionar espacios modernos y funcionales, '}
+						{t('proporcionar espacios modernos y funcionales, ')}
 					</tspan>
 					<tspan x={0} y={333}>
-						{'incluyendo oficinas, salas de reuniones, '}
+						{t('incluyendo oficinas, salas de reuniones, ')}
 					</tspan>
 					<tspan x={0} y={349}>
-						{'showroom, áreas sociales y espacios de '}
+						{t('showroom, áreas sociales y espacios de ')}
 					</tspan>
 					<tspan x={0} y={365}>
-						{'coworking. Estas instalaciones refuerzan la '}
+						{t('coworking. Estas instalaciones refuerzan la ')}
 					</tspan>
 					<tspan x={0} y={381}>
-						{'nueva imagen del Grupo Amarey y su '}
+						{t('nueva imagen del Grupo Amarey y su ')}
 					</tspan>
 					<tspan x={0} y={397}>
-						{'compromiso con la innovación y la excelencia. '}
+						{t('compromiso con la innovación y la excelencia. ')}
 					</tspan>
 				</text>
 				<text
@@ -172,85 +174,85 @@ const Detalle1mobil = () => {
 						{'Además de este traslado a sus nuevas oficinas '}
 					</tspan>
 					<tspan x={0} y={29}>
-						{'administrativas, la compañía unificó sus '}
+						{t('administrativas, la compañía unificó sus ')}
 					</tspan>
 					<tspan x={0} y={45}>
-						{'bodegas para brindar un servicio más eficiente y '}
+						{t('bodegas para brindar un servicio más eficiente y ')}
 					</tspan>
 					<tspan x={0} y={61}>
-						{'oportuno a sus clientes, con la apertura del '}
+						{t('oportuno a sus clientes, con la apertura del ')}
 					</tspan>
 					<tspan x={0} y={77}>
-						{'Centro de Distribución Logística (CEDI), ubicado '}
+						{t('Centro de Distribución Logística (CEDI), ubicado ')}
 					</tspan>
 					<tspan x={0} y={93}>
-						{'estratégicamente en la carrera 68 con calle 17, '}
+						{t('estratégicamente en la carrera 68 con calle 17, ')}
 					</tspan>
 					<tspan x={0} y={109}>
-						{'en la zona industrial de Montevideo en Bogotá. '}
+						{t('en la zona industrial de Montevideo en Bogotá. ')}
 					</tspan>
 					<tspan x={0} y={125} />
 					<tspan x={0} y={141}>
-						{'El CEDI está dotado con la más alta tecnología y '}
+						{t('El CEDI está dotado con la más alta tecnología y ')}
 					</tspan>
 					<tspan x={0} y={157}>
-						{'los más altos estándares operativos enfocados '}
+						{t('los más altos estándares operativos enfocados ')}
 					</tspan>
 					<tspan x={0} y={173}>
-						{'en optimizar los procesos de valor tanto para los '}
+						{t('en optimizar los procesos de valor tanto para los ')}
 					</tspan>
 					<tspan x={0} y={189}>
-						{'clientes como para los pacientes. Este centro '}
+						{t('clientes como para los pacientes. Este centro ')}
 					</tspan>
 					<tspan x={0} y={205}>
-						{'permite cumplir de manera más efectiva las '}
+						{t('permite cumplir de manera más efectiva las ')}
 					</tspan>
 					<tspan x={0} y={221}>
-						{'promesas de entrega y mejorar la eficiencia en '}
+						{t('promesas de entrega y mejorar la eficiencia en ')}
 					</tspan>
 					<tspan x={0} y={237}>
-						{'toda la cadena operativa. '}
+						{t('toda la cadena operativa. ')}
 					</tspan>
 					<tspan x={0} y={253} />
 					<tspan x={0} y={269}>
-						{'Con el lanzamiento del CEDI, se reafirma una vez '}
+						{t('Con el lanzamiento del CEDI, se reafirma una vez ')}
 					</tspan>
 					<tspan x={0} y={285}>
-						{'más el compromiso de liderar la logística en el '}
+						{t('más el compromiso de liderar la logística en el ')}
 					</tspan>
 					<tspan x={0} y={301}>
-						{'sector, manteniendo un servicio operativo las 24 '}
+						{t('sector, manteniendo un servicio operativo las 24 ')}
 					</tspan>
 					<tspan x={0} y={317}>
-						{'horas del día, los 7 días de la semana, los 365 '}
+						{t('horas del día, los 7 días de la semana, los 365 ')}
 					</tspan>
 					<tspan x={0} y={333}>
-						{'días del año. Esto permitirá seguir sirviendo a '}
+						{t('días del año. Esto permitirá seguir sirviendo a ')}
 					</tspan>
 					<tspan x={0} y={349}>
-						{'instituciones y pacientes de manera '}
+						{t('instituciones y pacientes de manera ')}
 					</tspan>
 					<tspan x={0} y={365}>
-						{'ininterrumpida, garantizando la prontitud y '}
+						{t('ininterrumpida, garantizando la prontitud y ')}
 					</tspan>
 					<tspan x={0} y={381}>
-						{'calidad en cada entrega. '}
+						{t('calidad en cada entrega. ')}
 					</tspan>
 				</text>
 				<text
 					className="k-products-desktop"
 					transform="translate(41.5 406)">
 					<tspan x={0} y={13}>
-						{'Gracias a su actual y exitoso crecimiento, '}
+						{t('Gracias a su actual y exitoso crecimiento, ')}
 					</tspan>
 					<tspan x={0} y={29}>
-						{'unificó sus bodegas en un gran centro de '}
+						{t('unificó sus bodegas en un gran centro de ')}
 					</tspan>
 					<tspan x={0} y={45}>
-						{'distribución logística, CEDI y trasladó su sede '}
+						{t('distribución logística, CEDI y trasladó su sede ')}
 					</tspan>
 					<tspan x={0} y={61}>
-						{'administrativa a una exclusiva torre empresarial '}
+						{t('administrativa a una exclusiva torre empresarial ')}
 					</tspan>
 				</text>
 				<text

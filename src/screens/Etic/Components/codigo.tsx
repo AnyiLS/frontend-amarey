@@ -268,7 +268,7 @@ const Codigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 						className="m-codigo"
 						transform="translate(694.214 10.893)">
 						<tspan x={43.834} y={42}>
-							{t('ÉTICA Y COMPLIANCE')}
+							{t('ÉTICA Y COMPLIANCE ')}
 						</tspan>
 					</text>
 					<g transform="translate(0)" onClick={onClose}>

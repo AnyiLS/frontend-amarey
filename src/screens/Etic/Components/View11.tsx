@@ -259,7 +259,7 @@ const View11: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 16.386)">
 						<tspan x={-63.266} y={13}>
-							{'Lavado de activos'}
+							{t('Lavado de activos')}
 						</tspan>
 					</text>
 				</g>
@@ -298,7 +298,7 @@ const View11: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 16.386)">
 						<tspan x={-88.725} y={13}>
-							{'Actividades inapropiadas'}
+							{t('Actividades inapropiadas')}
 						</tspan>
 					</text>
 				</g>
@@ -334,10 +334,10 @@ const View11: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 8.386)">
 						<tspan x={-77.224} y={13}>
-							{'Prácticas comerciales '}
+						{t('Prácticas comerciales ')}
 						</tspan>
 						<tspan x={-45.213} y={29}>
-							{'inadecuadas'}
+							{t('inadecuadas')}
 						</tspan>
 					</text>
 				</g>
@@ -377,7 +377,7 @@ const View11: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="l-reward-2-mobile"
 						transform="translate(120 16.386)">
 						<tspan x={-73.409} y={13}>
-							{'Dádivas o prebendas'}
+						{t('Dádivas o prebendas')}
 						</tspan>
 					</text>
 				</g>
@@ -410,50 +410,50 @@ const View11: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 						className="p-reward-2-mobile"
 						transform="translate(160 111.636)">
 						<tspan x={-109.662} y={20}>
-							{'Dádivas o prebendas'}
+						{t('Dádivas o prebendas')}
 						</tspan>
 					</text>
 					<text
 						className="l-reward-2-mobile"
 						transform="translate(35 169.636)">
 						<tspan x={0} y={13}>
-							{'Son todas aquellas ventajas, artículos '}
+							{t('Son todas aquellas ventajas, artículos ')}
 						</tspan>
 						<tspan x={0} y={29}>
-							{'o incentivos en dinero o especie que '}
+							{t('o incentivos en dinero o especie que ')}
 						</tspan>
 						<tspan x={0} y={45}>
-							{'se entregan a terceros (cualquier '}
+							{t('se entregan a terceros (cualquier ')}
 						</tspan>
 						<tspan x={0} y={61}>
-							{'relacionado con compra, distribución, '}
+							{t('relacionado con compra, distribución, ')}
 						</tspan>
 						<tspan x={0} y={77}>
-							{'comercialización, prescripción y '}
+							{t('comercialización, prescripción y ')}
 						</tspan>
 						<tspan x={0} y={93}>
-							{'dispensación de fármacos, '}
+							{t('dispensación de fármacos, ')}
 						</tspan>
 						<tspan x={0} y={109}>
-							{'dispositivos médicos o insumos de '}
+							{t('dispositivos médicos o insumos de ')}
 						</tspan>
 						<tspan x={0} y={125}>
-							{'salud), con el propósito de obtener '}
+							{t('salud), con el propósito de obtener ')}
 						</tspan>
 						<tspan x={0} y={141}>
-							{'beneficios comerciales que no se '}
+							{t('beneficios comerciales que no se ')}
 						</tspan>
 						<tspan x={0} y={157}>
-							{'ajustan a los principios de la '}
+							{t('ajustan a los principios de la ')}
 						</tspan>
 						<tspan x={0} y={173}>
-							{'promoción ética, de la competencia '}
+							{t('promoción ética, de la competencia ')}
 						</tspan>
 						<tspan x={0} y={189}>
-							{'leal y del respeto por los principios, la '}
+							{t('leal y del respeto por los principios, la ')}
 						</tspan>
 						<tspan x={0} y={205}>
-							{'moral y el buen actuar.'}
+							{t('moral y el buen actuar.')}
 						</tspan>
 					</text>
 				</g>

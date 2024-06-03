@@ -17,10 +17,13 @@ import May24 from './componentsMobile/May24'
 import May25 from './componentsMobile/May25'
 import May30 from './componentsMobile/May30'
 import May31 from './componentsMobile/May31'
+import { useTranslation } from 'react-i18next'
 
 const EventosMobile: React.FC = (): JSX.Element => {
 	/** State */
 	const [view, setView] = React.useState<string>('02-02')
+
+	const {t} = useTranslation()
 
 	return (
 		<React.Fragment>
@@ -268,7 +271,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 						className="k-pentagrama"
 						transform="translate(136.806 87.21)">
 						<tspan x={0} y={0}>
-							{'02 de febrero de 2024'}
+							{t('02 de febrero de 2024')}
 						</tspan>
 					</text>
 					<g transform="translate(47.281 494.018)">
@@ -280,7 +283,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-13.57} y={19}>
-										{'Do'}
+										{t('Do ')}
 									</tspan>
 								</text>
 							</g>
@@ -289,7 +292,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.2} y={19}>
-										{'Lu'}
+										{t('Lu ')}
 									</tspan>
 								</text>
 							</g>
@@ -298,7 +301,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-15.36} y={19}>
-										{'Ma'}
+										{t('Ma ')}
 									</tspan>
 								</text>
 							</g>
@@ -307,7 +310,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.58} y={19}>
-										{'Mi'}
+										{t('Mi ')}
 									</tspan>
 								</text>
 							</g>
@@ -316,7 +319,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.92} y={19}>
-										{'Ju'}
+										{t('Ju ')}
 									</tspan>
 								</text>
 							</g>
@@ -325,7 +328,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-9.54} y={19}>
-										{'Vi'}
+										{t('Vi ')}
 									</tspan>
 								</text>
 							</g>
@@ -334,7 +337,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-12.43} y={19}>
-										{'Sa'}
+										{t('Sa ')}
 									</tspan>
 								</text>
 							</g>
@@ -672,7 +675,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="p-pentagrama"
 							transform="translate(4.524 25.192)">
 							<tspan x={0} y={0}>
-								{'Febrero 2024'}
+								{t('Febrero 2024')}
 							</tspan>
 						</text>
 						<line
@@ -705,7 +708,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="r-pentagrama"
 							transform="translate(27.543 15.875)">
 							<tspan x={0} y={0}>
-								{'Fecha evento'}
+								{t('Fecha evento')}
 							</tspan>
 						</text>
 					</g>
@@ -721,7 +724,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="r-pentagrama"
 							transform="translate(27.524 15.875)">
 							<tspan x={0} y={0}>
-								{'Fecha de hoy'}
+								{t('Fecha de hoy')}
 							</tspan>
 						</text>
 					</g>
@@ -729,7 +732,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 						className="s-pentagrama"
 						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'Prográmese con Grupo Amarey '}
+							{t('Prográmese con Grupo Amarey ')}
 						</tspan>
 					</text>
 				</svg>
@@ -977,7 +980,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 						className="k-pentagrama"
 						transform="translate(136.806 87.21)">
 						<tspan x={0} y={0}>
-							{'03 de febrero de 2024'}
+							{t('03 de febrero de 2024')}
 						</tspan>
 					</text>
 					<g transform="translate(47.281 494.018)">
@@ -989,7 +992,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-13.57} y={19}>
-										{'Do'}
+										{t('Do')}
 									</tspan>
 								</text>
 							</g>
@@ -998,7 +1001,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.2} y={19}>
-										{'Lu'}
+										{t('Lu ')}
 									</tspan>
 								</text>
 							</g>
@@ -1007,7 +1010,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-15.36} y={19}>
-										{'Ma'}
+										{t('Ma ')}
 									</tspan>
 								</text>
 							</g>
@@ -1016,7 +1019,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.58} y={19}>
-										{'Mi'}
+										{t('Mi ')}
 									</tspan>
 								</text>
 							</g>
@@ -1025,7 +1028,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.92} y={19}>
-										{'Ju'}
+										{t('Ju ')}
 									</tspan>
 								</text>
 							</g>
@@ -1034,7 +1037,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-9.54} y={19}>
-										{'Vi'}
+										{t('Vi ')}
 									</tspan>
 								</text>
 							</g>
@@ -1043,7 +1046,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-12.43} y={19}>
-										{'Sa'}
+										{t('Sa ')}
 									</tspan>
 								</text>
 							</g>
@@ -1381,7 +1384,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="p-pentagrama"
 							transform="translate(4.524 25.192)">
 							<tspan x={0} y={0}>
-								{'Febrero 2024'}
+								{t('Febrero 2024')}
 							</tspan>
 						</text>
 						<line
@@ -1414,7 +1417,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="r-pentagrama"
 							transform="translate(27.543 15.875)">
 							<tspan x={0} y={0}>
-								{'Fecha evento'}
+								{t('Fecha evento')}
 							</tspan>
 						</text>
 					</g>
@@ -1430,7 +1433,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="r-pentagrama"
 							transform="translate(27.524 15.875)">
 							<tspan x={0} y={0}>
-								{'Fecha de hoy'}
+								{t('Fecha de hoy')}
 							</tspan>
 						</text>
 					</g>
@@ -1438,7 +1441,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 						className="s-pentagrama"
 						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'Prográmese con Grupo Amarey '}
+							{t('Prográmese con Grupo Amarey ')}
 						</tspan>
 					</text>
 				</svg>
@@ -1683,7 +1686,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 						className="k-pentagrama"
 						transform="translate(136.806 87.21)">
 						<tspan x={0} y={0}>
-							{'09 de febrero de 2024'}
+							{t('09 de febrero de 2024')}
 						</tspan>
 					</text>
 					<g transform="translate(47.281 494.018)">
@@ -1695,7 +1698,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-13.57} y={19}>
-										{'Do'}
+										{t('Do')}
 									</tspan>
 								</text>
 							</g>
@@ -1704,7 +1707,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.2} y={19}>
-										{'Lu'}
+										{t('Lu ')}
 									</tspan>
 								</text>
 							</g>
@@ -1713,7 +1716,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-15.36} y={19}>
-										{'Ma'}
+										{t('Ma ')}
 									</tspan>
 								</text>
 							</g>
@@ -1722,7 +1725,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.58} y={19}>
-										{'Mi'}
+										{t('Mi ')}
 									</tspan>
 								</text>
 							</g>
@@ -1731,7 +1734,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.92} y={19}>
-										{'Ju'}
+										{t('Ju ')}
 									</tspan>
 								</text>
 							</g>
@@ -1740,7 +1743,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-9.54} y={19}>
-										{'Vi'}
+										{t('Vi ')}
 									</tspan>
 								</text>
 							</g>
@@ -1749,7 +1752,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-12.43} y={19}>
-										{'Sa'}
+										{t('Sa ')}
 									</tspan>
 								</text>
 							</g>
@@ -2087,7 +2090,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="p-pentagrama"
 							transform="translate(4.524 25.192)">
 							<tspan x={0} y={0}>
-								{'Febrero 2024'}
+								{t('Febrero 2024')}
 							</tspan>
 						</text>
 						<line
@@ -2120,7 +2123,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="r-pentagrama"
 							transform="translate(27.543 15.875)">
 							<tspan x={0} y={0}>
-								{'Fecha evento'}
+								{t('Fecha evento')}
 							</tspan>
 						</text>
 					</g>
@@ -2136,7 +2139,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="r-pentagrama"
 							transform="translate(27.524 15.875)">
 							<tspan x={0} y={0}>
-								{'Fecha de hoy'}
+								{t('Fecha de hoy')}
 							</tspan>
 						</text>
 					</g>
@@ -2144,7 +2147,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 						className="s-pentagrama"
 						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'Prográmese con Grupo Amarey '}
+							{t('Prográmese con Grupo Amarey ')}
 						</tspan>
 					</text>
 				</svg>
@@ -2389,7 +2392,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 						className="k-pentagrama"
 						transform="translate(136.806 87.21)">
 						<tspan x={0} y={0}>
-							{'10 de febrero de 2024'}
+							{t('10 de febrero de 2024')}
 						</tspan>
 					</text>
 					<g transform="translate(47.281 494.018)">
@@ -2401,7 +2404,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-13.57} y={19}>
-										{'Do'}
+										{t('Do')}
 									</tspan>
 								</text>
 							</g>
@@ -2410,7 +2413,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.2} y={19}>
-										{'Lu'}
+										{t('Lu ')}
 									</tspan>
 								</text>
 							</g>
@@ -2419,7 +2422,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-15.36} y={19}>
-										{'Ma'}
+										{t('Ma ')}
 									</tspan>
 								</text>
 							</g>
@@ -2428,7 +2431,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.58} y={19}>
-										{'Mi'}
+										{t('Mi ')}
 									</tspan>
 								</text>
 							</g>
@@ -2437,7 +2440,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.92} y={19}>
-										{'Ju'}
+										{t('Ju ')}
 									</tspan>
 								</text>
 							</g>
@@ -2446,7 +2449,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-9.54} y={19}>
-										{'Vi'}
+										{t('Vi ')}
 									</tspan>
 								</text>
 							</g>
@@ -2455,7 +2458,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-12.43} y={19}>
-										{'Sa'}
+										{t('Sa ')}
 									</tspan>
 								</text>
 							</g>
@@ -2793,7 +2796,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="p-pentagrama"
 							transform="translate(4.524 25.192)">
 							<tspan x={0} y={0}>
-								{'Febrero 2024'}
+								{t('Febrero 2024')}
 							</tspan>
 						</text>
 						<line
@@ -2826,7 +2829,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="r-pentagrama"
 							transform="translate(27.543 15.875)">
 							<tspan x={0} y={0}>
-								{'Fecha evento'}
+								{t('Fecha evento')}
 							</tspan>
 						</text>
 					</g>
@@ -2842,7 +2845,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="r-pentagrama"
 							transform="translate(27.524 15.875)">
 							<tspan x={0} y={0}>
-								{'Fecha de hoy'}
+								{t('Fecha de hoy')}
 							</tspan>
 						</text>
 					</g>
@@ -2850,7 +2853,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 						className="s-pentagrama"
 						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'Prográmese con Grupo Amarey '}
+							{t('Prográmese con Grupo Amarey ')}
 						</tspan>
 					</text>
 				</svg>
@@ -3098,7 +3101,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 						className="k-pentagrama"
 						transform="translate(136.806 87.21)">
 						<tspan x={0} y={0}>
-							{'29 de febrero de 2024'}
+							{t('29 de febrero de 2024')}
 						</tspan>
 					</text>
 					<g transform="translate(47.281 494.018)">
@@ -3110,7 +3113,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-13.57} y={19}>
-										{'Do'}
+										{t('Do')}
 									</tspan>
 								</text>
 							</g>
@@ -3119,7 +3122,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.2} y={19}>
-										{'Lu'}
+										{t('Lu ')}
 									</tspan>
 								</text>
 							</g>
@@ -3128,7 +3131,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-15.36} y={19}>
-										{'Ma'}
+										{t('Ma ')}
 									</tspan>
 								</text>
 							</g>
@@ -3137,7 +3140,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.58} y={19}>
-										{'Mi'}
+										{t('Mi ')}
 									</tspan>
 								</text>
 							</g>
@@ -3146,7 +3149,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.92} y={19}>
-										{'Ju'}
+										{t('Ju ')}
 									</tspan>
 								</text>
 							</g>
@@ -3155,7 +3158,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-9.54} y={19}>
-										{'Vi'}
+										{t('Vi ')}
 									</tspan>
 								</text>
 							</g>
@@ -3164,7 +3167,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="m-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-12.43} y={19}>
-										{'Sa'}
+										{t('Sa ')}
 									</tspan>
 								</text>
 							</g>
@@ -3502,7 +3505,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="p-pentagrama"
 							transform="translate(4.524 25.192)">
 							<tspan x={0} y={0}>
-								{'Febrero 2024'}
+								{t('Febrero 2024')}
 							</tspan>
 						</text>
 						<line
@@ -3535,7 +3538,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="r-pentagrama"
 							transform="translate(27.543 15.875)">
 							<tspan x={0} y={0}>
-								{'Fecha evento'}
+								{t('Fecha evento')}
 							</tspan>
 						</text>
 					</g>
@@ -3551,7 +3554,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="r-pentagrama"
 							transform="translate(27.524 15.875)">
 							<tspan x={0} y={0}>
-								{'Fecha de hoy'}
+								{t('Fecha de hoy')}
 							</tspan>
 						</text>
 					</g>
@@ -3559,7 +3562,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 						className="s-pentagrama"
 						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'Prográmese con Grupo Amarey '}
+							{t('Prográmese con Grupo Amarey ')}
 						</tspan>
 					</text>
 				</svg>
@@ -3758,7 +3761,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 						className="h-pentagrama"
 						transform="translate(136.806 87.21)">
 						<tspan x={0} y={0}>
-							{'06 de marzo de 2024'}
+							{t('06 de marzo de 2024')}
 						</tspan>
 					</text>
 					<g transform="translate(228.262 782.336)">
@@ -3773,7 +3776,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="i-pentagrama"
 							transform="translate(27.543 15.875)">
 							<tspan x={0} y={0}>
-								{'Fecha evento'}
+								{t('Fecha evento')}
 							</tspan>
 						</text>
 					</g>
@@ -3789,7 +3792,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="i-pentagrama"
 							transform="translate(27.524 15.875)">
 							<tspan x={0} y={0}>
-								{'Fecha de hoy'}
+								{t('Fecha de hoy')}
 							</tspan>
 						</text>
 					</g>
@@ -3797,7 +3800,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 						className="j-pentagrama"
 						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'Prográmese con Grupo Amarey '}
+							{t('Prográmese con Grupo Amarey ')}
 						</tspan>
 					</text>
 					<g transform="translate(-850.194 -164.136)">
@@ -3873,7 +3876,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="p-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-13.57} y={19}>
-										{'Do'}
+										{t('Do')}
 									</tspan>
 								</text>
 							</g>
@@ -3882,7 +3885,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="p-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.2} y={19}>
-										{'Lu'}
+										{t('Lu ')}
 									</tspan>
 								</text>
 							</g>
@@ -3891,7 +3894,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="p-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-15.36} y={19}>
-										{'Ma'}
+										{t('Ma ')}
 									</tspan>
 								</text>
 							</g>
@@ -3900,7 +3903,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="p-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.58} y={19}>
-										{'Mi'}
+										{t('Mi ')}
 									</tspan>
 								</text>
 							</g>
@@ -3909,7 +3912,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="p-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.92} y={19}>
-										{'Ju'}
+										{t('Ju ')}
 									</tspan>
 								</text>
 							</g>
@@ -3918,7 +3921,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="p-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-9.54} y={19}>
-										{'Vi'}
+										{t('Vi ')}
 									</tspan>
 								</text>
 							</g>
@@ -3927,7 +3930,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="p-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-12.43} y={19}>
-										{'Sa'}
+										{t('Sa ')}
 									</tspan>
 								</text>
 							</g>
@@ -4328,7 +4331,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="s-pentagrama"
 							transform="translate(4.524 25.192)">
 							<tspan x={0} y={0}>
-								{'Marzo 2024'}
+								{t('Marzo 2024')}
 							</tspan>
 						</text>
 						<line
@@ -4559,7 +4562,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 						className="h-pentagrama"
 						transform="translate(134.806 87.21)">
 						<tspan x={0} y={0}>
-							{'07 de marzo de 2024'}
+							{t('07 de marzo de 2024')}
 						</tspan>
 					</text>
 					<g transform="translate(228.262 782.336)">
@@ -4574,7 +4577,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="i-pentagrama"
 							transform="translate(27.543 15.875)">
 							<tspan x={0} y={0}>
-								{'Fecha evento'}
+								{t('Fecha evento')}
 							</tspan>
 						</text>
 					</g>
@@ -4590,7 +4593,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="i-pentagrama"
 							transform="translate(27.524 15.875)">
 							<tspan x={0} y={0}>
-								{'Fecha de hoy'}
+								{t('Fecha de hoy')}
 							</tspan>
 						</text>
 					</g>
@@ -4598,7 +4601,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 						className="j-pentagrama"
 						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'Prográmese con Grupo Amarey '}
+							{t('Prográmese con Grupo Amarey ')}
 						</tspan>
 					</text>
 					<g transform="translate(47.281 494.018)">
@@ -4610,7 +4613,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="l-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-13.57} y={19}>
-										{'Do'}
+										{t('Do')}
 									</tspan>
 								</text>
 							</g>
@@ -4619,7 +4622,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="l-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.2} y={19}>
-										{'Lu'}
+										{t('Lu ')}
 									</tspan>
 								</text>
 							</g>
@@ -4628,7 +4631,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="l-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-15.36} y={19}>
-										{'Ma'}
+										{t('Ma ')}
 									</tspan>
 								</text>
 							</g>
@@ -4637,7 +4640,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="l-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.58} y={19}>
-										{'Mi'}
+										{t('Mi ')}
 									</tspan>
 								</text>
 							</g>
@@ -4646,7 +4649,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="l-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.92} y={19}>
-										{'Ju'}
+										{t('Ju ')}
 									</tspan>
 								</text>
 							</g>
@@ -4655,7 +4658,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="l-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-9.54} y={19}>
-										{'Vi'}
+										{t('Vi ')}
 									</tspan>
 								</text>
 							</g>
@@ -4664,7 +4667,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="l-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-12.43} y={19}>
-										{'Sa'}
+										{t('Sa ')}
 									</tspan>
 								</text>
 							</g>
@@ -5055,7 +5058,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="o-pentagrama"
 							transform="translate(4.524 25.192)">
 							<tspan x={0} y={0}>
-								{'Marzo 2024'}
+								{t('Marzo 2024')}
 							</tspan>
 						</text>
 						<line
@@ -5321,7 +5324,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 						className="h-pentagrama"
 						transform="translate(155.806 87.21)">
 						<tspan x={0} y={0}>
-							{'08 de marzo de 2024'}
+							{t('08 de marzo de 2024')}
 						</tspan>
 					</text>
 					<g transform="translate(228.262 782.336)">
@@ -5336,7 +5339,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="i-pentagrama"
 							transform="translate(27.543 15.875)">
 							<tspan x={0} y={0}>
-								{'Fecha evento'}
+								{t('Fecha evento')}
 							</tspan>
 						</text>
 					</g>
@@ -5352,7 +5355,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="i-pentagrama"
 							transform="translate(27.524 15.875)">
 							<tspan x={0} y={0}>
-								{'Fecha de hoy'}
+								{t('Fecha de hoy')}
 							</tspan>
 						</text>
 					</g>
@@ -5360,7 +5363,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 						className="j-pentagrama"
 						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'Prográmese con Grupo Amarey '}
+							{t('Prográmese con Grupo Amarey ')}
 						</tspan>
 					</text>
 					<g transform="translate(-850.194 -191.966)">
@@ -5474,7 +5477,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="q-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-13.57} y={19}>
-										{'Do'}
+										{t('Do')}
 									</tspan>
 								</text>
 							</g>
@@ -5483,7 +5486,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="q-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.2} y={19}>
-										{'Lu'}
+										{t('Lu ')}
 									</tspan>
 								</text>
 							</g>
@@ -5492,7 +5495,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="q-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-15.36} y={19}>
-										{'Ma'}
+										{t('Ma ')}
 									</tspan>
 								</text>
 							</g>
@@ -5501,7 +5504,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="q-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.58} y={19}>
-										{'Mi'}
+										{t('Mi ')}
 									</tspan>
 								</text>
 							</g>
@@ -5510,7 +5513,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="q-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.92} y={19}>
-										{'Ju'}
+										{t('Ju ')}
 									</tspan>
 								</text>
 							</g>
@@ -5519,7 +5522,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="q-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-9.54} y={19}>
-										{'Vi'}
+										{t('Vi ')}
 									</tspan>
 								</text>
 							</g>
@@ -5528,7 +5531,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="q-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-12.43} y={19}>
-										{'Sa'}
+										{t('Sa ')}
 									</tspan>
 								</text>
 							</g>
@@ -5929,7 +5932,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="t-pentagrama"
 							transform="translate(4.524 25.192)">
 							<tspan x={0} y={0}>
-								{'Marzo 2024'}
+								{t('Marzo 2024')}
 							</tspan>
 						</text>
 						<line
@@ -6159,7 +6162,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 						className="h-pentagrama"
 						transform="translate(134.806 87.21)">
 						<tspan x={0} y={0}>
-							{'09 de marzo de 2024'}
+							{t('09 de marzo de 2024')}
 						</tspan>
 					</text>
 					<g transform="translate(228.262 782.336)">
@@ -6174,7 +6177,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="i-pentagrama"
 							transform="translate(27.543 15.875)">
 							<tspan x={0} y={0}>
-								{'Fecha evento'}
+								{t('Fecha evento')}
 							</tspan>
 						</text>
 					</g>
@@ -6190,7 +6193,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="i-pentagrama"
 							transform="translate(27.524 15.875)">
 							<tspan x={0} y={0}>
-								{'Fecha de hoy'}
+								{t('Fecha de hoy')}
 							</tspan>
 						</text>
 					</g>
@@ -6198,7 +6201,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 						className="j-pentagrama"
 						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'Prográmese con Grupo Amarey '}
+							{t('Prográmese con Grupo Amarey ')}
 						</tspan>
 					</text>
 					<g transform="translate(47.281 494.018)">
@@ -6210,7 +6213,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="l-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-13.57} y={19}>
-										{'Do'}
+										{t('Do')}
 									</tspan>
 								</text>
 							</g>
@@ -6219,7 +6222,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="l-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.2} y={19}>
-										{'Lu'}
+										{t('Lu ')}
 									</tspan>
 								</text>
 							</g>
@@ -6228,7 +6231,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="l-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-15.36} y={19}>
-										{'Ma'}
+										{t('Ma ')}
 									</tspan>
 								</text>
 							</g>
@@ -6237,7 +6240,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="l-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.58} y={19}>
-										{'Mi'}
+										{t('Mi ')}
 									</tspan>
 								</text>
 							</g>
@@ -6246,7 +6249,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="l-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.92} y={19}>
-										{'Ju'}
+										{t('Ju ')}
 									</tspan>
 								</text>
 							</g>
@@ -6255,7 +6258,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="l-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-9.54} y={19}>
-										{'Vi'}
+										{t('Vi ')}
 									</tspan>
 								</text>
 							</g>
@@ -6264,7 +6267,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="l-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-12.43} y={19}>
-										{'Sa'}
+										{t('Sa ')}
 									</tspan>
 								</text>
 							</g>
@@ -6665,7 +6668,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="o-pentagrama"
 							transform="translate(4.524 25.192)">
 							<tspan x={0} y={0}>
-								{'Marzo 2024'}
+								{t('Marzo 2024')}
 							</tspan>
 						</text>
 						<line
@@ -6931,7 +6934,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 						className="h-pentagrama"
 						transform="translate(134.806 87.21)">
 						<tspan x={0} y={0}>
-							{'15 de marzo de 2024'}
+							{t('15 de marzo de 2024')}
 						</tspan>
 					</text>
 					<g transform="translate(228.262 782.336)">
@@ -6946,7 +6949,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="i-pentagrama"
 							transform="translate(27.543 15.875)">
 							<tspan x={0} y={0}>
-								{'Fecha evento'}
+								{t('Fecha evento')}
 							</tspan>
 						</text>
 					</g>
@@ -6962,7 +6965,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="i-pentagrama"
 							transform="translate(27.524 15.875)">
 							<tspan x={0} y={0}>
-								{'Fecha de hoy'}
+								{t('Fecha de hoy')}
 							</tspan>
 						</text>
 					</g>
@@ -6970,7 +6973,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 						className="j-pentagrama"
 						transform="translate(60 23.21)">
 						<tspan x={11.368} y={32}>
-							{'Prográmese con Grupo Amarey '}
+							{t('Prográmese con Grupo Amarey ')}
 						</tspan>
 					</text>
 					<g transform="translate(47.281 494.018)">
@@ -6982,7 +6985,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="l-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-13.57} y={19}>
-										{'Do'}
+										{t('Do')}
 									</tspan>
 								</text>
 							</g>
@@ -6991,7 +6994,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="l-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.2} y={19}>
-										{'Lu'}
+										{t('Lu ')}
 									</tspan>
 								</text>
 							</g>
@@ -7000,7 +7003,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="l-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-15.36} y={19}>
-										{'Ma'}
+										{t('Ma ')}
 									</tspan>
 								</text>
 							</g>
@@ -7009,7 +7012,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="l-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.58} y={19}>
-										{'Mi'}
+										{t('Mi ')}
 									</tspan>
 								</text>
 							</g>
@@ -7018,7 +7021,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="l-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-11.92} y={19}>
-										{'Ju'}
+										{t('Ju ')}
 									</tspan>
 								</text>
 							</g>
@@ -7027,7 +7030,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="l-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-9.54} y={19}>
-										{'Vi'}
+										{t('Vi ')}
 									</tspan>
 								</text>
 							</g>
@@ -7036,7 +7039,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 									className="l-pentagrama"
 									transform="translate(155 557)">
 									<tspan x={-12.43} y={19}>
-										{'Sa'}
+										{t('Sa ')}
 									</tspan>
 								</text>
 							</g>
@@ -7437,7 +7440,7 @@ const EventosMobile: React.FC = (): JSX.Element => {
 							className="o-pentagrama"
 							transform="translate(4.524 25.192)">
 							<tspan x={0} y={0}>
-								{'Marzo 2024'}
+								{t('Marzo 2024')}
 							</tspan>
 						</text>
 						<line

@@ -327,16 +327,16 @@ const Noticias = () => {
 				className="j-products-desktop"
 				transform="translate(254 1095.31)">
 				<tspan x={0} y={23}>
-					{'Grupo '}
+					{t('Grupo ')}
 				</tspan>
 				<tspan x={0} y={51}>
-					{'amarey en '}
+					{t('amarey en ')}
 				</tspan>
 				<tspan x={0} y={79}>
-					{'sus 40 años '}
+					{t('sus 40 años ')}
 				</tspan>
 				<tspan x={0} y={107}>
-					{'estrena sedes '}
+					{t('estrena sedes ')}
 				</tspan>
 			</text>
 			<text
@@ -429,7 +429,7 @@ const Noticias = () => {
 					className="t-products-desktop"
 					transform="translate(44.73 43.654)">
 					<tspan x={0} y={0}>
-						{'Conoce Más'}
+						{t('Conoce Más')}
 					</tspan>
 				</text>
 				</a>

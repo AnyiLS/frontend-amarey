@@ -241,7 +241,7 @@ const View8: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 					</g>
 					<text className="l-reward-2-mobile" transform="translate(120 16.386)">
 						<tspan x={-63.266} y={13}>
-							{'Lavado de activos'}
+							{t('Lavado de activos')}
 						</tspan>
 					</text>
 				</g>
@@ -272,7 +272,7 @@ const View8: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 					</g>
 					<text className="l-reward-2-mobile" transform="translate(120 16.386)">
 						<tspan x={-88.725} y={13}>
-							{'Actividades inapropiadas'}
+							{t('Actividades inapropiadas')}
 						</tspan>
 					</text>
 				</g>
@@ -286,7 +286,7 @@ const View8: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 					</g>
 					<text className="l-reward-2-mobile" transform="translate(120 16.386)">
 						<tspan x={-59.668} y={13}>
-							{'Confidencialidad'}
+							{t('Confidencialidad ')}
 						</tspan>
 					</text>
 				</g>
@@ -300,10 +300,10 @@ const View8: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 					</g>
 					<text className="l-reward-2-mobile" transform="translate(120 8.386)">
 						<tspan x={-77.224} y={13}>
-							{'Prácticas comerciales '}
+						{t('Prácticas comerciales ')}
 						</tspan>
 						<tspan x={-45.213} y={29}>
-							{'inadecuadas'}
+							{t('inadecuadas')}
 						</tspan>
 					</text>
 				</g>
@@ -317,7 +317,7 @@ const View8: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 					</g>
 					<text className="l-reward-2-mobile" transform="translate(120 16.386)">
 						<tspan x={-73.409} y={13}>
-							{'Dádivas o prebendas'}
+						{t('Dádivas o prebendas')}
 						</tspan>
 					</text>
 				</g>
@@ -356,39 +356,39 @@ const View8: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 					</g>
 					<text className="p-reward-2-mobile" transform="translate(160 111.636)">
 						<tspan x={-90.079} y={20}>
-							{'Confidencialidad'}
+							{t('Confidencialidad ')}
 						</tspan>
 					</text>
 					<text className="l-reward-2-mobile" transform="translate(35 169.636)">
 						<tspan x={0} y={13}>
-							{'Los empleados utilizarán la '}
+							{t('Los empleados utilizarán la ')}
 						</tspan>
 						<tspan x={0} y={29}>
-							{'información no pública que sea de su '}
+							{t('información no pública que sea de su ')}
 						</tspan>
 						<tspan x={0} y={45}>
-							{'conocimiento, para realizar las '}
+							{t('conocimiento, para realizar las ')}
 						</tspan>
 						<tspan x={0} y={61}>
-							{'actividades que desempeñen, de '}
+							{t('actividades que desempeñen, de ')}
 						</tspan>
 						<tspan x={0} y={77}>
-							{'manera confidencial y reservada, y '}
+							{t('manera confidencial y reservada, y ')}
 						</tspan>
 						<tspan x={0} y={93}>
-							{'se abstendrán en todo momento de '}
+							{t('se abstendrán en todo momento de ')}
 						</tspan>
 						<tspan x={0} y={109}>
-							{'obtener o recibir beneficios '}
+							{t('obtener o recibir beneficios ')}
 						</tspan>
 						<tspan x={0} y={125}>
-							{'personales o provocar perjuicios a la '}
+							{t('personales o provocar perjuicios a la ')}
 						</tspan>
 						<tspan x={0} y={141}>
-							{'empresa por su divulgación o '}
+							{t('empresa por su divulgación o ')}
 						</tspan>
 						<tspan x={0} y={157}>
-							{'utilización indebida.'}
+							{t('utilización indebida.')}
 						</tspan>
 					</text>
 				</g>
