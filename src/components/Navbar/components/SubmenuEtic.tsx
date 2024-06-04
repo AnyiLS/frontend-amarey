@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next"
 
 
 const SubmenuEtic: React.FC<{ref: any}> = ({ ref }) => {
+	const {t} = useTranslation()
+
 	return (
 		<svg
 			viewBox="0 0 1920 354"
@@ -93,10 +96,10 @@ const SubmenuEtic: React.FC<{ref: any}> = ({ ref }) => {
 						className="h-submenu-o"
 						transform="translate(146 360)">
 						<tspan x={0} y={0}>
-							{'\xC9TICA Y'}
+							{t('ETICA Y')}
 						</tspan>
 						<tspan x={0} y={37}>
-							{'COMPLIANCE'}
+							{t('COMPLIANCE')}
 						</tspan>
 					</text>
 				</a>
@@ -104,13 +107,13 @@ const SubmenuEtic: React.FC<{ref: any}> = ({ ref }) => {
 			<a href="/codigo-linea-etica">
 				<text className="i-submenu-o" transform="translate(692 57)">
 					<tspan x={0} y={38}>
-						{'Descubra '}
+						{t('Descubra ')}
 					</tspan>
 					<tspan className="j-submenu-o" y={38}>
-						{'nuestro compromiso inquebrantable '}
+						{t('nuestro compromiso inquebrantable ')}
 					</tspan>
 					<tspan x={0} y={80}>
-						{'con la \xE9tica y el cumplimiento normativo.'}
+						{t('con la \xE9tica y el cumplimiento normativo.')}
 					</tspan>
 				</text>
 			</a>

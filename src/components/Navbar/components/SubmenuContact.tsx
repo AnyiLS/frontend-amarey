@@ -1,6 +1,9 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const SubmenuContact: React.FC<{ ref: any }> = ({ ref }): JSX.Element => {
+	const {t} = useTranslation()
+
 	return (
 		<svg
 			viewBox="0 0 1920 354"
@@ -95,7 +98,7 @@ const SubmenuContact: React.FC<{ ref: any }> = ({ ref }): JSX.Element => {
 
 				<text className="h-submenu-t" transform="translate(292 395)">
 					<tspan x={-152.166} y={0}>
-						{'CONT\xC1CTENOS'}
+						{t('CONTACTENOS')}
 					</tspan>
 				</text>
 			</g>
@@ -103,16 +106,16 @@ const SubmenuContact: React.FC<{ ref: any }> = ({ ref }): JSX.Element => {
 				<text className="i-submenu-t" transform="translate(692 133)">
 					<tspan x={0} y={23}>
 						{
-							'Cont\xE1ctenos y descubra c\xF3mo podemos ayudarle.\u200B'
+							t('Cont\xE1ctenos y descubra c\xF3mo podemos ayudarle.\u200B')
 						}
 					</tspan>
 				</text>
 				<text className="h-submenu-t" transform="translate(692 35)">
 					<tspan x={0} y={42}>
-						{'\xBFTiene alguna pregunta o necesita '}
+						{t('\xBFTiene alguna pregunta o necesita ')}
 					</tspan>
 					<tspan x={0} y={84}>
-						{'informaci\xF3n adicional?'}
+						{t('informaci\xF3n adicional?')}
 					</tspan>
 				</text>
 			</a>

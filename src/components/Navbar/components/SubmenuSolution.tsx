@@ -1,6 +1,9 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const SubmenuSolution: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
+	const {t} = useTranslation()
+
 	return (
 		<svg
 			viewBox="0 0 1920 360"
@@ -161,10 +164,10 @@ const SubmenuSolution: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 				</g>
 				<text className="h-solution" transform="translate(150 358)">
 					<tspan x={0} y={0}>
-						{'soluciones'}
+						{t('soluciones')}
 					</tspan>
 					<tspan x={0} y={37}>
-						{'EN SALUD'}
+						{t('EN SALUD')}
 					</tspan>
 				</text>
 				<path
@@ -181,7 +184,7 @@ const SubmenuSolution: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 				</a>
 				<text className="k-solution" transform="translate(592 268)">
 					<tspan x={16.86} y={24}>
-						{'Nuestros ALIADOS'}
+						{t('Nuestros ALIADOS')}
 					</tspan>
 				</text>
 				<a href="/biomedico">
@@ -197,7 +200,7 @@ const SubmenuSolution: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 				/>
 				<text className="k-solution" transform="translate(985 268)">
 					<tspan x={9.136} y={24}>
-						{'Mantenimiento Biom\xE9dico'}
+						{t('Mantenimiento Biom\xE9dico')}
 					</tspan>
 				</text>
 				</a>
@@ -215,7 +218,7 @@ const SubmenuSolution: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 				</a>
 				<text className="k-solution" transform="translate(1409 268)">
 					<tspan x={42.904} y={24}>
-						{'soluciones EN SALUD'}
+						{t('soluciones EN SALUD')}
 					</tspan>
 				</text>
 			</g>

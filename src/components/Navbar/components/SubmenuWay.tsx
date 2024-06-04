@@ -1,6 +1,9 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const SubmenuWay: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
+
+	const {t} = useTranslation()
 	return (
 		<svg
 			viewBox="-2 0 1920 360"
@@ -169,7 +172,7 @@ const SubmenuWay: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 						className="h-way-submenu"
 						transform="translate(562 268)">
 						<tspan x={22.896} y={24}>
-							{'Nuestra Historia'}
+							{t('Nuestra Historia')}
 						</tspan>
 					</text>
 					</a>
@@ -191,7 +194,7 @@ const SubmenuWay: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 						className="h-way-submenu"
 						transform="translate(886 268)">
 						<tspan x={72.516} y={24}>
-							{'Filosof\xEDa'}
+							{t('Filosof\xEDa')}
 						</tspan>
 					</text>
 					<a href="/reconocimientos">
@@ -209,7 +212,7 @@ const SubmenuWay: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 						className="h-way-submenu"
 						transform="translate(1210 268)">
 						<tspan x={19.848} y={24}>
-							{'rECONOCIMIENTOS'}
+							{t('RECONOCIMIENTOS')}
 						</tspan>
 					</text>
 					</a>
@@ -228,7 +231,7 @@ const SubmenuWay: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 						className="h-way-submenu"
 						transform="translate(1533 268)">
 						<tspan x={111.696} y={24}>
-							{'rse'}
+							{t('rse')}
 						</tspan>
 					</text>
 					</a>
@@ -254,7 +257,7 @@ const SubmenuWay: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 						className="n-way-submenu"
 						transform="translate(281 396)">
 						<tspan x={-141.162} y={0}>
-							{'tRAYECTORIA'}
+							{t('tRAYECTORIA')}
 						</tspan>
 					</text>
 				</g>

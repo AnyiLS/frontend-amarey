@@ -1,5 +1,8 @@
+import { useTranslation } from "react-i18next"
 
 const SubmenuActualidad: React.FC<{ ref: any }> = ({ ref }) => {
+	const {t} = useTranslation()
+
 	return (
 		<svg
 			viewBox="0 0 1920 360"
@@ -145,9 +148,9 @@ const SubmenuActualidad: React.FC<{ ref: any }> = ({ ref }) => {
 						transform="translate(9 -120.41)"
 					/>
 				</g>
-				<text className="h-submenu-p" transform="translate(281 396)">
+				<text className="h-submenu-p" transform="translate(251 396)">
 					<tspan x={-128.268} y={0}>
-						{'aCTUALIDAD'}
+						{t('aCTUALIDAD')}
 					</tspan>
 				</text>
 				<path
@@ -164,7 +167,7 @@ const SubmenuActualidad: React.FC<{ ref: any }> = ({ ref }) => {
 				/>
 				<text className="k-submenu-p" transform="translate(712 265)">
 					<tspan x={78.168} y={24}>
-						{'nOTICIAS'}
+						{t('nOTICIAS')}
 					</tspan>
 				</text>
 				</a>
@@ -182,7 +185,7 @@ const SubmenuActualidad: React.FC<{ ref: any }> = ({ ref }) => {
 			</a>
 				<text className="k-submenu-p" transform="translate(1316 265)">
 					<tspan x={79.776} y={24}>
-						{'eVENTOS'}
+						{t('eVENTOS')}
 					</tspan>
 				</text>
 			</g>

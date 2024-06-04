@@ -1,6 +1,10 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const SubmenuWorkUs: React.FC<{ ref: any }> = ({ ref }) => {
+	const {t} = useTranslation()
+
+
 	return (
 		<svg
 			viewBox="0 0 1920 360"
@@ -131,10 +135,10 @@ const SubmenuWorkUs: React.FC<{ ref: any }> = ({ ref }) => {
 						className="h-submenu-w"
 						transform="translate(139 359)">
 						<tspan x={0} y={0}>
-							{'TRABAJE CON'}
+							{t('TRABAJE CON')}
 						</tspan>
 						<tspan x={0} y={37}>
-							{'NOSOTROS'}
+							{t('NOSOTROS')}
 						</tspan>
 					</text>
 
@@ -146,13 +150,13 @@ const SubmenuWorkUs: React.FC<{ ref: any }> = ({ ref }) => {
 				<text className="i-submenu-w" transform="translate(692 116)">
 					<tspan x={0} y={23}>
 						{
-							'Sea parte de nuestro talentoso y comprometido equipo.'
+							t('Sea parte de nuestro talentoso y comprometido equipo.')
 						}
 					</tspan>
 				</text>
 				<text className="h-submenu-w" transform="translate(692 60)">
 					<tspan x={0} y={42}>
-						{'Encuentre oportunidades de carrera. \u200B'}
+						{t('Encuentre oportunidades de carrera. \u200B')}
 					</tspan>
 				</text>
 				</a>
