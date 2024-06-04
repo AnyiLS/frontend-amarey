@@ -371,119 +371,119 @@ const TrabajeNosotros = () => {
 						className="i-trabajo"
 						transform="translate(69 453.21)">
 						<tspan x={0} y={18}>
-							{'\xBFPor qu\xE9 unirte a nosotros?'}
+							{t('\xBFPor qu\xE9 unirte a nosotros?')}
 						</tspan>
 					</text>
 					<text
 						className="i-trabajo"
 						transform="translate(73 832.21)">
 						<tspan x={0} y={18}>
-							{'\xBFC\xF3mo unirse?'}
+							{t('\xBFC\xF3mo unirse?')}
 						</tspan>
 					</text>
 					<text
 						className="j-trabajo"
 						transform="translate(73 495.21)">
 						<tspan x={0} y={13}>
-							{'Cada d\xEDa nos esforzamos por el bienestar de '}
+							{t('Cada d\xEDa nos esforzamos por el bienestar de ')}
 						</tspan>
 						<tspan x={0} y={29}>
-							{'nuestros colaboradores. Somos una empresa de '}
+							{t('nuestros colaboradores. Somos una empresa de ')}
 						</tspan>
 						<tspan className="k-trabajo" x={0} y={45}>
-							{'capital colombiano'}
+							{t('capital colombiano ')}
 						</tspan>
-						<tspan y={45}>{', comprometida con la salud '}</tspan>
+						<tspan y={45}>{t(', comprometida con la salud ')}</tspan>
 						<tspan x={0} y={61}>
-							{'y dedicada a ampliar las oportunidades de vida.'}
+							{t('y dedicada a ampliar las oportunidades de vida.')}
 						</tspan>
 					</text>
 					<text
 						className="j-trabajo"
 						transform="translate(73 570.21)">
 						<tspan x={0} y={13}>
-							{'En Grupo Amarey, sabemos que el talento '}
+							{t('En Grupo Amarey, sabemos que el talento ')}
 						</tspan>
 						<tspan x={0} y={29}>
-							{'excepcional es la clave para hacer '}
+							{t('excepcional es la clave para hacer ')}
 						</tspan>
 						<tspan className="l-trabajo" y={29}>
-							{'cosas '}
+							{t('cosas ')}
 						</tspan>
 						<tspan className="l-trabajo" x={0} y={45}>
 							{
-								'incre\xEDbles y alcanzar resultados extraordinarios. '
+								t('incre\xEDbles y alcanzar resultados extraordinarios. ')
 							}
 						</tspan>
 						<tspan x={0} y={61}>
-							{'Generamos '}
+							{t('Generamos')}
 						</tspan>
 						<tspan className="l-trabajo" y={61}>
-							{'entornos de trabajo inclusivos, '}
+							{t('entornos de trabajo inclusivos, ')}
 						</tspan>
 						<tspan className="l-trabajo" x={0} y={77}>
-							{'colaborativos, retadores y estimulantes'}
+							{t('colaborativos, retadores y estimulantes')}
 						</tspan>
 						<tspan y={77} xmlSpace="preserve">
-							{' donde '}
+							{t(' donde ')}
 						</tspan>
 						<tspan x={0} y={93}>
-							{'cada colaborador puede aportar, crecer y '}
+							{t('cada colaborador puede aportar, crecer y ')}
 						</tspan>
 						<tspan x={0} y={109}>
-							{'contribuir de manera significativa al'}
+							{t('contribuir de manera significativa al')}
 						</tspan>
 						<tspan
 							className="l-trabajo"
 							y={109}
 							xmlSpace="preserve">
-							{' logro de '}
+							{t(' logro de ')}
 						</tspan>
 						<tspan className="l-trabajo" x={0} y={125}>
-							{'nuestros objetivos.'}
+							{t('nuestros objetivos.')}
 						</tspan>
 					</text>
 					<text
 						className="j-trabajo"
 						transform="translate(73 708.21)">
 						<tspan x={0} y={13}>
-							{'Estamos en b\xFAsqueda de personas '}
+							{t('Estamos en b\xFAsqueda de personas')}
 						</tspan>
 						<tspan className="l-trabajo" y={13}>
-							{'apasionadas '}
+							{t('apasionadas ')}
 						</tspan>
 						<tspan className="l-trabajo" x={0} y={29}>
-							{'y comprometidas,'}
+							{t('y comprometidas,')}
 						</tspan>
 						<tspan y={29} xmlSpace="preserve">
-							{' que '}
+							{t('que ')}
 						</tspan>
 						<tspan className="l-trabajo" y={29}>
-							{'compartan y reflejen '}
+							{t('compartan y reflejen')}
 						</tspan>
 						<tspan className="l-trabajo" x={0} y={45}>
-							{'nuestros valores,'}
+							{t('nuestros valores, ')}
 						</tspan>
 						<tspan y={45} xmlSpace="preserve">
-							{' alineados con '}
+							{t(' alineados con')}
 						</tspan>
 						<tspan className="l-trabajo" y={45}>
-							{'la '}
+							{t(' la')}
 						</tspan>
 						<tspan className="m-trabajo" y={45}>
-							{'filosof\xEDa SER '}
+							{t('Filosofia ser')}
 						</tspan>
 						<tspan className="l-trabajo" x={0} y={61}>
-							{'(Servicio, Educaci\xF3n y Relacionamiento)'}
+							{t('(Servicio, Educaci\xF3n y Relacionamiento)')}
 						</tspan>
 						<tspan y={61} xmlSpace="preserve">
-							{' y est\xE9n '}
+							{t(' y est\xE9n ')}
 						</tspan>
 						<tspan x={0} y={77}>
-							{'dispuestos a asumir retos diarios y llevar la '}
+							{t('dispuestos a asumir retos diarios y llevar la ')}
 						</tspan>
 						<tspan x={0} y={93}>
-							{'Organizaci\xF3n a otros niveles. '}
+							{t('Organizaci\xF3n a otros niveles. ')}
 						</tspan>
 					</text>
 					<text
@@ -491,31 +491,31 @@ const TrabajeNosotros = () => {
 						transform="translate(73 864.21)">
 						<tspan x={0} y={13}>
 							{
-								'Si est\xE1s interesado en formar parte del Grupo '
+								t('Si est\xE1s interesado en formar parte del Grupo ')
 							}
 						</tspan>
 						<tspan x={0} y={29}>
-							{'Amarey, te invitamos a enviar tu hoja de vida a '}
+							{t('Amarey, te invitamos a enviar tu hoja de vida a ')}
 						</tspan>
 						<tspan className="n-trabajo" x={0} y={45}>
-							{'atracciondetalento@grupoamarey.com'}
+							{t('atracciondetalento@grupoamarey.com ')}
 						</tspan>
-						<tspan y={45}>{', '}</tspan>
+						<tspan y={45}>{t(',')}</tspan>
 						<tspan x={0} y={61}>
-							{'indicando la ciudad donde vives.'}
+							{t('indicando la ciudad donde vives.')}
 						</tspan>
 					</text>
 					<text
 						className="o-trabajo"
 						transform="translate(245 958.21)">
 						<tspan x={-153.018} y={18}>
-							{'\xA1Esperamos conocerte pronto!'}
+							{t('¡Esperamos conocerte pronto!')}
 						</tspan>
 					</text>
 					<g transform="translate(314 740.21)">
 						<text className="p-trabajo">
 							<tspan x={0} y={13}>
-								{'filosof\xEDa SER '}
+								{t('Filosofia ser')}
 							</tspan>
 						</text>
 					</g>
