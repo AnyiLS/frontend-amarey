@@ -53,6 +53,12 @@ const Component = () => {
 						{width >= 768 ? <Navbar /> : <NavbarMovil />}
 						<RouterProvider router={router} />
 						{width >= 768 ? <Footer /> : <FooterMobile />}
+						{window.location.pathname !== "/contactenos" && width > 767 && (
+                  <React.Fragment>
+                    <FixedContact />
+                    <FixedSocialNetworks />
+                  </React.Fragment>
+                )}
 					</div>
 				) : (
 					<Video onCloseVideo={setShowVideoPopup} />

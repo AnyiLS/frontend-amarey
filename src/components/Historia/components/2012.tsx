@@ -233,10 +233,10 @@ const LifeLine2012: React.FC<ILifeLine2000> = ({
           />
         </g>
         <text className="item-107-k" transform={selectedLanguage === 'es' ? "translate(567.856 345.866)" : "translate(537.856 335.866)"} style={{ fontSize: selectedLanguage === 'en' ? 32 : 40 }}>
-          <tspan x={0} y={38}>
+          <tspan x={selectedLanguage === 'es' ? 0 : -10} y={38}>
             {selectedLanguage === "es" ? t("Comienza la distribución de la línea de equipos médicos").split(" ").slice(0, 5).join(" ") : t("Comienza la distribución de la línea de equipos médicos").split(" ").slice(0, 3).join(" ")}
           </tspan>
-            <tspan x={35} y={58}>
+            <tspan x={selectedLanguage === 'es' ? 35 : -10} y={selectedLanguage === 'es' ? 58 : 70}>
               {t("Comienza la distribución de la línea de equipos médicos").split(" ").slice(5,9).join(" ")}
             </tspan>
         </text>

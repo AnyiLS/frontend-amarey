@@ -1571,6 +1571,7 @@ const englishTexts = {
         '\xBFTiene alguna pregunta o necesita ': 'Do you have any questions or need ',
         'informaci\xF3n adicional?':'additional information?',
         'Cont\xE1ctenos y descubra c\xF3mo podemos ayudarle.\u200B':'Contact us and find out how we can help you.',
+        'Comienza la distribución de la línea de equipos médicos': 'Distribution of the medical equipment line begins',
         ...englishTextsMobile
     }
 }
