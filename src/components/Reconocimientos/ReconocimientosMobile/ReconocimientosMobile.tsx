@@ -1,6 +1,7 @@
 import React from 'react'
 import { carouselItemsMobile } from '../mocks/Mobile'
 import { useTranslation } from 'react-i18next'
+import { useLanguage } from 'context/language'
 
 const ReconocimientosMobile: React.FC = (): JSX.Element => {
 	const [carouselSlider, setCarouselSlider] = React.useState<number>(0)
@@ -12,7 +13,7 @@ const ReconocimientosMobile: React.FC = (): JSX.Element => {
 		setCarouselSlider(carouselSlider + 1 > 3 ? 0 : carouselSlider + 1)
 
 	const { t } = useTranslation()
-
+	const { selectedLanguage } = useLanguage();
 
 	return (
 		<React.Fragment>
@@ -227,12 +228,12 @@ const ReconocimientosMobile: React.FC = (): JSX.Element => {
 					<text
 						className="h-reconocimientos-mobile-3"
 						transform="translate(83.483 36)">
-						<tspan x={19.464} y={32}>
+						<tspan x={selectedLanguage === 'es' ? 19.464 : 55.464} y={32}>
 							{t('RECONOCIMIENTOS')}
 						</tspan>
 					</text>
 					<g transform="translate(47.483 -39)">
-						{carouselItemsMobile(t)[carouselSlider].text(
+						{carouselItemsMobile(t, selectedLanguage)[carouselSlider].text(
 							handleAddCarouselSlider,
 							handleLessCarouselSlider
 						)}
@@ -248,7 +249,7 @@ const ReconocimientosMobile: React.FC = (): JSX.Element => {
 						<text
 							className="r-reconocimientos-mobile-3"
 							transform="translate(-25 1080.632)">
-							<tspan x={47.533} y={21}>
+							<tspan x={selectedLanguage === 'es' ? 47.533 : 47.533} y={21}>
 								{t('Premios y reconocimientos')}
 							</tspan>
 						</text>

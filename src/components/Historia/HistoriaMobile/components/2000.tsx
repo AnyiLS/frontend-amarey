@@ -1,9 +1,7 @@
 import React from 'react'
 import { TimeLine } from '../HistoriaMobile'
-import { useTranslation } from 'react-i18next'
 
-const Component2000: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => {
-	const { t } = useTranslation()
+const Component2000: React.FC<TimeLine> = ({ onNext, onPrev, t, selectedLanguage }): JSX.Element => {
 	return (
 		<React.Fragment>
 			<svg viewBox="85 0 414 485.06" preserveAspectRatio="none">
@@ -56,7 +54,7 @@ const Component2000: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => {
 						width={118.337}
 						height={67.804}
 						filterUnits="userSpaceOnUse">
-						<feOffset dy={3}  />
+						<feOffset dy={3} />
 						<feGaussianBlur stdDeviation={3} result="e" />
 						<feFlood floodOpacity={0.502} />
 						<feComposite operator="in" in2="e" />
@@ -69,7 +67,7 @@ const Component2000: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => {
 						width={105.471}
 						height={56.416}
 						filterUnits="userSpaceOnUse">
-						<feOffset dy={3}  />
+						<feOffset dy={3} />
 						<feGaussianBlur stdDeviation={3} result="g" />
 						<feFlood floodOpacity={0.502} />
 						<feComposite operator="in" in2="g" />
@@ -101,7 +99,7 @@ const Component2000: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => {
 						width={175.761}
 						height={96.308}
 						filterUnits="userSpaceOnUse">
-						<feOffset dy={3}  />
+						<feOffset dy={3} />
 						<feGaussianBlur stdDeviation={3} result="k" />
 						<feFlood floodOpacity={0.502} />
 						<feComposite operator="in" in2="k" />
@@ -114,7 +112,7 @@ const Component2000: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => {
 						width={155.53}
 						height={78.401}
 						filterUnits="userSpaceOnUse">
-						<feOffset dy={-3}  />
+						<feOffset dy={-3} />
 						<feGaussianBlur stdDeviation={3} result="m" />
 						<feFlood floodOpacity={0.2} />
 						<feComposite operator="in" in2="m" />
@@ -127,7 +125,7 @@ const Component2000: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => {
 						width={110.94}
 						height={44.836}
 						filterUnits="userSpaceOnUse">
-						<feOffset dy={3}  />
+						<feOffset dy={3} />
 						<feGaussianBlur stdDeviation={3} result="o" />
 						<feFlood floodOpacity={0.4} />
 						<feComposite operator="in" in2="o" />
@@ -140,7 +138,7 @@ const Component2000: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => {
 						width={360}
 						height={40}
 						filterUnits="userSpaceOnUse">
-						<feOffset dy={3}  />
+						<feOffset dy={3} />
 						<feGaussianBlur stdDeviation={3} result="q" />
 						<feFlood floodOpacity={0.4} />
 						<feComposite operator="in" in2="q" />
@@ -153,7 +151,7 @@ const Component2000: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => {
 						width={110.94}
 						height={44.836}
 						filterUnits="userSpaceOnUse">
-						<feOffset dy={3}  />
+						<feOffset dy={3} />
 						<feGaussianBlur stdDeviation={3} result="s" />
 						<feFlood floodOpacity={0.4} />
 						<feComposite operator="in" in2="s" />
@@ -236,7 +234,7 @@ const Component2000: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => {
 						</g>
 						<text
 							className="k-time-line"
-							transform="translate(306.09 200.093)">
+							transform={selectedLanguage === 'es' ? "translate(306.09 200.093)" : "translate(306.09 195.093)"}>
 							<tspan x={0} y={11}>
 								{t('Inicia la distribución de ')}
 							</tspan>
@@ -244,8 +242,15 @@ const Component2000: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => {
 								{t('dispositivos e insumos  ')}
 							</tspan>
 							<tspan x={0} y={39}>
-								{t('médico-quirúrgicos.')}
+								{selectedLanguage === 'es' ? t('médico-quirúrgicos.') : t('médico-quirúrgicos.').split(' ').slice(0,3).join(' ')}
 							</tspan>
+							{
+								selectedLanguage === 'en' && (
+									<tspan x={0} y={53}>
+										{t('médico-quirúrgicos.').split(' ').slice(3, 4).join('')}
+									</tspan>
+								)
+							}
 						</text>
 						<g transform="translate(112.09 167.525)">
 							<g

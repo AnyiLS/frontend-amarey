@@ -1,10 +1,7 @@
 import React from 'react'
 import { TimeLine } from '../HistoriaMobile'
-import { useTranslation } from 'react-i18next'
 
-const Component20142: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => {
-  const { t } = useTranslation()
-
+const Component20142: React.FC<TimeLine> = ({ onNext, onPrev, t, selectedLanguage }): JSX.Element => {
 	return (
 		<React.Fragment>
 			<svg viewBox="85 0 414 485.06" preserveAspectRatio="none">
@@ -223,7 +220,7 @@ const Component20142: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => 
             transform="translate(0)"
           />
         </g>
-        <text className="k-time-line" transform="translate(298.09 197.093)">
+        <text className="k-time-line" transform={selectedLanguage === 'es' ? "translate(298.09 197.093)" : "translate(303.09 192.093)"}>
           <tspan x={0} y={11}>
             {t("Inicia la distribución de ")}
           </tspan>

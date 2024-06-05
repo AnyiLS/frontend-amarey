@@ -1,8 +1,6 @@
-import { useTranslation } from "react-i18next"
 import { ILifeLine2000 } from "./2000"
 
-const LifeLine20111: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeStepForce }) => {
-  const {t} = useTranslation()
+const LifeLine20111: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeStepForce, t, selectedLanguage }) => {
 	return (
 		<svg viewBox="0 0 1920 874.839">
 			<defs>
@@ -211,7 +209,7 @@ const LifeLine20111: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeS
           transform="translate(-0.001)"
         />
       </g>
-      <text className="item-105-k" transform="translate(531.983 309.365)">
+      <text className="item-105-k" transform={selectedLanguage === 'es' ? "translate(531.983 309.365)" : "translate(561.983 309.365)"}>
         <tspan x={0} y={23}>
           {t("Se crea la línea de apoyo en ")}
         </tspan>

@@ -2,12 +2,14 @@ import useGeneral from 'hooks/general.hook'
 import React from 'react'
 import ResponsabilidadMobile from './ResponsabilidadMobile'
 import { useTranslation } from 'react-i18next'
+import { useLanguage } from 'context/language'
 
 const Responsabilidad: React.FC = (): JSX.Element => {
 	/** States */
 	const { width } = useGeneral()
 
 	const {t} = useTranslation()
+	const { selectedLanguage } = useLanguage()
 	return (
 		<React.Fragment>
 			{
@@ -336,7 +338,7 @@ const Responsabilidad: React.FC = (): JSX.Element => {
 				</g>
 
 				<text className="f-respo" transform="translate(728 1302)">
-					<tspan x={-443.275} y={66}>
+					<tspan x={selectedLanguage === 'es' ? -443.275 : -393.275} y={66}>
 						{t('+ DE 4.600 BENEFICIARIOS')}
 					</tspan>
 					<tspan className="g-respo">
@@ -363,7 +365,8 @@ const Responsabilidad: React.FC = (): JSX.Element => {
 						</g>
 						<text
 							className="i-respo"
-							transform="translate(38.43 45.51)">
+							transform={selectedLanguage === 'es' ? "translate(38.43 45.51)" : "translate(53.43 45.51)"}
+							style={{ fontSize: selectedLanguage === 'es' ? 28 : 26 }}>
 							<tspan x={0} y={0}>
 								{t('Conoce más de La Fundación OCMAES')}
 							</tspan>

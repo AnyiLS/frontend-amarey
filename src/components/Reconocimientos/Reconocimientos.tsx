@@ -3,18 +3,23 @@ import { mocksRewards } from './mocks/Rewards.mocks'
 import useGeneral from 'hooks/general.hook'
 import ReconocimientosMobile from './ReconocimientosMobile/ReconocimientosMobile'
 import { useTranslation } from 'react-i18next'
+import { useLanguage } from 'context/language'
 
 const Reconocimientos: React.FC = (): JSX.Element => {
+	/** Hooks */
+	const {t} = useTranslation()
 	const { width } = useGeneral()
 
+	/** Contexts */
+	const { selectedLanguage } = useLanguage()
+
+	/** States */
 	const [slide, setSlide] = React.useState<number>(0)
 	const [showVideo, setShowVideo] = React.useState<boolean>(false)
 
 	const handleLessSlide = () => setSlide(slide - 1 < 0 ? 3 : slide - 1)
 
 	const handleAddSlide = () => setSlide(slide + 1 > 3 ? 0 : slide + 1)
-
-	const {t} = useTranslation()
 
 	return (
 		<React.Fragment>
@@ -355,7 +360,7 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 						<g transform="translate(300.989 96)">
 							<g transform="translate(0 106.497)">
 								<g transform="translate(0 -100.875)">
-									{mocksRewards(t).map((item, index) => (
+									{mocksRewards(t, selectedLanguage).map((item, index) => (
 										<React.Fragment>
 											{index === slide &&
 												item.component(
@@ -377,7 +382,7 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 						</g>
 						<text
 							className="q-pentagrama"
-							transform="translate(774.989 281)">
+							transform={selectedLanguage === 'es' ? "translate(774.989 281)" : "translate(844.989 281)"}>
 							<tspan x={154.515} y={70}>
 								{t('RECONOCIMIENTOS')}
 							</tspan>

@@ -435,7 +435,7 @@ const Filosofia: React.FC = () => {
 								transform="translate(944.668 306)">
 								<tspan x={0} y={23}>
 									{
-										t('Somos un grupo empresarial orgullosamente colombiano ')
+										t('Somos un grupo empresarial orgullosamente colombiano ') 
 									}
 								</tspan>
 								<tspan x={0} y={49}>

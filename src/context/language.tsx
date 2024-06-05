@@ -48,17 +48,6 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }):
     handleChangeSelectedLanguage
   }), [selectedLanguage, handleChangeSelectedLanguage])
 
-  React.useEffect(() => {
-    i18n.use(initReactI18next).init({
-      resources: customTexts,
-      lng: selectedLanguage,
-      fallbackLng: selectedLanguage,
-      interpolation: {
-        escapeValue: false,
-      },
-    });
-  }, [selectedLanguage])
-
   return (
     <LanguageContext.Provider value={values}>
       {children}

@@ -1,5 +1,4 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
 /** Mocks */
 import { SiteMapMock } from "mocks/navbar.mocks";
 /** Contexts */
@@ -9,6 +8,7 @@ import useNavbarComponents from "./components";
 import useNavbar from "./useNavbar";
 /** Styles */
 import "./Navbar.css";
+import { useTranslation } from "react-i18next";
 
 const Navbar: React.FC = () => {
   /** References */
@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
 
   /** Hooks */
   const { results, handleSearchPage } = useNavbar();
-  const { t } = useTranslation();
+  const {t} = useTranslation()
   const {
     SubmenuActualidad,
     SubmenuContact,

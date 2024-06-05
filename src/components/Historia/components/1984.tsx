@@ -1,13 +1,13 @@
+import { TFunction } from 'i18next'
 import React from 'react'
-import { useTranslation } from 'react-i18next'
 
 interface ILifeLine1984 {
     onClick: () => void
 	handleChangeStepForce: (index: number) => void
+	t: TFunction<"translation", undefined>
 }
 
-const LifeLine1984: React.FC<ILifeLine1984> = ({ onClick, handleChangeStepForce }): JSX.Element => {
-	const {t} = useTranslation()
+const LifeLine1984: React.FC<ILifeLine1984> = ({ onClick, handleChangeStepForce, t }): JSX.Element => {
 	return (
 		<svg viewBox="0 0 1920 834.49">
 			<defs>

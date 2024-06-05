@@ -18,10 +18,14 @@ import Component20232 from './components/20232'
 import Component20233 from './components/20233'
 import Component20234 from './components/20234'
 import { useTranslation } from 'react-i18next'
+import { useLanguage } from 'context/language'
+import { TFunction } from 'i18next'
 
 export interface TimeLine {
 	onNext?: () => void
 	onPrev?: () => void
+	t: TFunction<"translation", undefined>
+	selectedLanguage: 'es' | 'en'
 }
 
 const HistoriaMobile: React.FC = (): JSX.Element => {
@@ -31,6 +35,7 @@ const HistoriaMobile: React.FC = (): JSX.Element => {
 	const handleLessStep = () => setSteps(steps - 1 < 0 ? 16 : steps - 1)
 
 	const { t } = useTranslation()
+	const { selectedLanguage } = useLanguage()
 
 	return (
 		<React.Fragment>
@@ -132,187 +137,121 @@ const HistoriaMobile: React.FC = (): JSX.Element => {
 				</g>
 			</svg>
 			{steps === 0 ? (
-				<Component1984 onNext={handleChangeStep} />
+				<Component1984 onNext={handleChangeStep} t={t}
+					selectedLanguage={selectedLanguage} />
 			) : steps === 1 ? (
 				<Component1999
 					onNext={handleChangeStep}
 					onPrev={handleLessStep}
+					t={t}
+					selectedLanguage={selectedLanguage}
 				/>
 			) : steps === 2 ? (
 				<Component2000
 					onNext={handleChangeStep}
 					onPrev={handleLessStep}
+					t={t}
+					selectedLanguage={selectedLanguage}
 				/>
 			) : steps === 3 ? (
 				<Component2007
 					onNext={handleChangeStep}
 					onPrev={handleLessStep}
+					t={t}
+					selectedLanguage={selectedLanguage}
 				/>
 			) : steps === 4 ? (
 				<Component2009
 					onNext={handleChangeStep}
 					onPrev={handleLessStep}
+					t={t}
+					selectedLanguage={selectedLanguage}
 				/>
 			) : steps === 5 ? (
 				<Component20111
 					onNext={handleChangeStep}
 					onPrev={handleLessStep}
+					t={t}
+					selectedLanguage={selectedLanguage}
 				/>
 			) : steps === 6 ? (
 				<Component20112
 					onNext={handleChangeStep}
 					onPrev={handleLessStep}
+					t={t}
+					selectedLanguage={selectedLanguage}
 				/>
 			) : steps === 7 ? (
 				<Component20121
 					onNext={handleChangeStep}
 					onPrev={handleLessStep}
+					t={t}
+					selectedLanguage={selectedLanguage}
 				/>
 			) : steps === 8 ? (
 				<Component20122
 					onNext={handleChangeStep}
 					onPrev={handleLessStep}
+					t={t}
+					selectedLanguage={selectedLanguage}
 				/>
 			) : steps === 9 ? (
 				<Component20141
 					onNext={handleChangeStep}
 					onPrev={handleLessStep}
+					t={t}
+					selectedLanguage={selectedLanguage}
 				/>
 			) : steps === 10 ? (
 				<Component20142
 					onNext={handleChangeStep}
 					onPrev={handleLessStep}
+					t={t}
+					selectedLanguage={selectedLanguage}
 				/>
 			) : steps === 11 ? (
 				<Component2016
 					onNext={handleChangeStep}
 					onPrev={handleLessStep}
+					t={t}
+					selectedLanguage={selectedLanguage}
 				/>
 			) : steps === 12 ? (
 				<Component2017
 					onNext={handleChangeStep}
 					onPrev={handleLessStep}
+					t={t}
+					selectedLanguage={selectedLanguage}
 				/>
 			) : steps === 13 ? (
 				<Component20231
 					onNext={handleChangeStep}
 					onPrev={handleLessStep}
+					t={t}
+					selectedLanguage={selectedLanguage}
 				/>
 			) : steps === 14 ? (
 				<Component20232
 					onNext={handleChangeStep}
 					onPrev={handleLessStep}
+					t={t}
+					selectedLanguage={selectedLanguage}
 				/>
 			) : steps === 15 ? (
 				<Component20233
 					onNext={handleChangeStep}
 					onPrev={handleLessStep}
+					t={t}
+					selectedLanguage={selectedLanguage}
 				/>
 			) : steps === 16 ? (
 				<Component20234
 					onNext={handleChangeStep}
 					onPrev={handleLessStep}
+					t={t}
+					selectedLanguage={selectedLanguage}
 				/>
 			) : null}
-			{/* {steps === 0 ? (
-				<Component1984 onNext={handleChangeStep} />
-			) : steps === 1 ? (
-				<LifeLine1999
-					onClick={handleChangeStep}
-					onLess={handleLessStep}
-					handleChangeStepForce={handleChangeStepForce}
-				/>
-			) : steps === 2 ? (
-				<LifeLine2000
-					onClick={handleChangeStep}
-					onLess={handleLessStep}
-					handleChangeStepForce={handleChangeStepForce}
-				/>
-			) : steps === 3 ? (
-				<LifeLine2007
-					onClick={handleChangeStep}
-					onLess={handleLessStep}
-					handleChangeStepForce={handleChangeStepForce}
-				/>
-			) : steps === 4 ? (
-				<LifeLine2009
-					onClick={handleChangeStep}
-					onLess={handleLessStep}
-					handleChangeStepForce={handleChangeStepForce}
-				/>
-			) : steps === 5 ? (
-				<LifeLine20111
-					onClick={handleChangeStep}
-					onLess={handleLessStep}
-					handleChangeStepForce={handleChangeStepForce}
-				/>
-			) : steps === 6 ? (
-				<LifeLine20112
-					onClick={handleChangeStep}
-					onLess={handleLessStep}
-					handleChangeStepForce={handleChangeStepForce}
-				/>
-			) : steps === 7 ? (
-				<LifeLine2012
-					onClick={handleChangeStep}
-					onLess={handleLessStep}
-					handleChangeStepForce={handleChangeStepForce}
-				/>
-			) : steps === 8 ? (
-				<LifeLine20122
-					onClick={handleChangeStep}
-					onLess={handleLessStep}
-					handleChangeStepForce={handleChangeStepForce}
-				/>
-			) : steps === 9 ? (
-				<LifeLine20141
-					onClick={handleChangeStep}
-					onLess={handleLessStep}
-					handleChangeStepForce={handleChangeStepForce}
-				/>
-			) : steps === 10 ? (
-				<LifeLine20142
-					onClick={handleChangeStep}
-					onLess={handleLessStep}
-					handleChangeStepForce={handleChangeStepForce}
-				/>
-			) : steps === 11 ? (
-				<LifeLine2016
-					onClick={handleChangeStep}
-					onLess={handleLessStep}
-					handleChangeStepForce={handleChangeStepForce}
-				/>
-			) : steps === 12 ? (
-				<LifeLine2017
-					onClick={handleChangeStep}
-					onLess={handleLessStep}
-					handleChangeStepForce={handleChangeStepForce}
-				/>
-			) : steps === 13 ? (
-				<LifeLine20231
-					onClick={handleChangeStep}
-					onLess={handleLessStep}
-					handleChangeStepForce={handleChangeStepForce}
-				/>
-			) : steps === 14 ? (
-				<LifeLine20232
-					onClick={handleChangeStep}
-					onLess={handleLessStep}
-					handleChangeStepForce={handleChangeStepForce}
-				/>
-			) : steps === 15 ? (
-				<LifeLine20233
-					onClick={handleChangeStep}
-					onLess={handleLessStep}
-					handleChangeStepForce={handleChangeStepForce}
-				/>
-			) : steps === 16 ? (
-				<LifeLine20234
-					onClick={handleChangeStep}
-					onLess={handleLessStep}
-					handleChangeStepForce={handleChangeStepForce}
-				/>
-			) : null} */}
 		</React.Fragment>
 	)
 }
