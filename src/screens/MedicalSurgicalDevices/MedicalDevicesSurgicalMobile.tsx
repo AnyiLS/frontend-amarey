@@ -28,12 +28,12 @@ const MedicalDevicesMobile: React.FC = (): JSX.Element => {
 							id="a-reward-2-mobile"
 							width={1}
 							height={1}
-							viewBox="599.794 0 415 855">
+							viewBox="0 0 415 855">
 							<image
 								preserveAspectRatio="xMidYMid slice"
-								width={1520.625}
+								width={414}
 								height={855}
-								xlinkHref="/images/mobile/products/neuro/medic-clinic.webp"
+								xlinkHref="/images/biome-product.png"
 							/>
 						</pattern>
 						<linearGradient

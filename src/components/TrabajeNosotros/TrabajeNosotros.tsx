@@ -25,12 +25,12 @@ const TrabajeNosotros = () => {
               id="b-trabajo"
               width={1}
               height={1}
-              viewBox="0 113.412 604.043 578.568"
+              viewBox="41 0 1044.043 912"
             >
               <image
-                preserveAspectRatio="xMidYMid slice"
-                width={662.462}
-                height={883.282}
+                preserveAspectRatio="none"
+                width={1183.462}
+                height={950}
                 xlinkHref="/images/trabajecnosotros.webp"
               />
             </pattern>
