@@ -220,12 +220,12 @@ const OrthopedicsMobile: React.FC = (): JSX.Element => {
 							id="a-reward-2-mobile"
 							width={1}
 							height={1}
-							viewBox="592.591 55.859 648.229 1340.299">
+							viewBox="0 55.859 648.229 1340.299">
 							<image
 								preserveAspectRatio="xMidYMid slice"
-								width={1521.778}
+								width={1100.778}
 								height={856}
-								xlinkHref="/images/mobile/products/neuro/orthopedic.webp"
+								xlinkHref="/images/portfolio.webp"
 							/>
 						</pattern>
 						<linearGradient
