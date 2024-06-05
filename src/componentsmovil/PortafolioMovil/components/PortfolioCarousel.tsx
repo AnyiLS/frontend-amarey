@@ -349,7 +349,9 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g transform="translate(171 438.931)">
+						<g transform="translate(171 438.931)" onClick={() => {
+										setView(9)
+									}}>
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -357,9 +359,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									className="w-portfolio-1"
 									d="M0,0H41.727a52.21,52.21,0,0,1,48.6,33.144l4.678,11.925H54.994A54.95,54.95,0,0,1,3.567,9.477Z"
 									transform="translate(171 722.93)"
-									onClick={() => {
-										setView(9)
-									}}
+									
 								/>
 							</g>
 							<path
@@ -733,7 +733,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g transform="translate(171 438.931)">
+						<g transform="translate(171 438.931)" onClick={() => setView(0)}>
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -741,7 +741,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									className="w-portfolio-1"
 									d="M0,0H41.727a52.21,52.21,0,0,1,48.6,33.144l4.678,11.925H54.994A54.95,54.95,0,0,1,3.567,9.477Z"
 									transform="translate(171 722.93)"
-									onClick={() => setView(0)}
+									
 								/>
 							</g>
 							<path
@@ -1117,7 +1117,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g transform="translate(171 438.931)">
+						<g transform="translate(171 438.931)" onClick={() => setView(1)}>
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -1125,7 +1125,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									className="w-portfolio-1"
 									d="M0,0H41.727a52.21,52.21,0,0,1,48.6,33.144l4.678,11.925H54.994A54.95,54.95,0,0,1,3.567,9.477Z"
 									transform="translate(171 722.93)"
-									onClick={() => setView(1)}
+									
 								/>
 							</g>
 							<path
@@ -1499,7 +1499,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g transform="translate(171 438.931)">
+						<g transform="translate(171 438.931)" onClick={() => setView(2)}>
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -1507,7 +1507,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									className="w-portfolio-1"
 									d="M0,0H41.727a52.21,52.21,0,0,1,48.6,33.144l4.678,11.925H54.994A54.95,54.95,0,0,1,3.567,9.477Z"
 									transform="translate(171 722.93)"
-									onClick={() => setView(2)}
+									
 								/>
 							</g>
 							<path
@@ -1881,7 +1881,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g transform="translate(171 438.931)">
+						<g transform="translate(171 438.931)" onClick={() => setView(3)}>
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -1889,7 +1889,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									className="w-portfolio-1"
 									d="M0,0H41.727a52.21,52.21,0,0,1,48.6,33.144l4.678,11.925H54.994A54.95,54.95,0,0,1,3.567,9.477Z"
 									transform="translate(171 722.93)"
-									onClick={() => setView(3)}
+									
 								/>
 							</g>
 							<path
@@ -2266,7 +2266,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g transform="translate(171 438.931)">
+						<g transform="translate(171 438.931)" onClick={() => setView(4)}> 
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -2274,7 +2274,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									className="w-portfolio-1"
 									d="M0,0H41.727a52.21,52.21,0,0,1,48.6,33.144l4.678,11.925H54.994A54.95,54.95,0,0,1,3.567,9.477Z"
 									transform="translate(171 722.93)"
-									onClick={() => setView(4)}
+									
 								/>
 							</g>
 							<path
@@ -2654,7 +2654,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g transform="translate(171 438.931)">
+						<g transform="translate(171 438.931)" onClick={() => setView(5)}>
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -2662,7 +2662,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									className="w-portfolio-1"
 									d="M0,0H41.727a52.21,52.21,0,0,1,48.6,33.144l4.678,11.925H54.994A54.95,54.95,0,0,1,3.567,9.477Z"
 									transform="translate(171 722.93)"
-									onClick={() => setView(5)}
+									
 								/>
 							</g>
 							<path
@@ -3039,7 +3039,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g transform="translate(171 438.931)">
+						<g transform="translate(171 438.931)" onClick={() => setView(6)}>
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -3047,7 +3047,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									className="w-portfolio-1"
 									d="M0,0H41.727a52.21,52.21,0,0,1,48.6,33.144l4.678,11.925H54.994A54.95,54.95,0,0,1,3.567,9.477Z"
 									transform="translate(171 722.93)"
-									onClick={() => setView(6)}
+									
 								/>
 							</g>
 							<path
@@ -3424,7 +3424,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g transform="translate(171 438.931)">
+						<g transform="translate(171 438.931)" onClick={() => setView(7)}>
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -3432,7 +3432,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									className="w-portfolio-1"
 									d="M0,0H41.727a52.21,52.21,0,0,1,48.6,33.144l4.678,11.925H54.994A54.95,54.95,0,0,1,3.567,9.477Z"
 									transform="translate(171 722.93)"
-									onClick={() => setView(7)}
+									
 								/>
 							</g>
 							<path
@@ -3806,7 +3806,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g transform="translate(171 438.931)">
+						<g transform="translate(171 438.931)" onClick={() => setView(8)}>
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -3814,7 +3814,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									className="w-portfolio-1"
 									d="M0,0H41.727a52.21,52.21,0,0,1,48.6,33.144l4.678,11.925H54.994A54.95,54.95,0,0,1,3.567,9.477Z"
 									transform="translate(171 722.93)"
-									onClick={() => setView(9)}
+									
 								/>
 							</g>
 							<path
