@@ -6,6 +6,7 @@ import CenterCard from './components/CenterCard'
 import Elipses from './components/Elipses'
 import './Carousel.css'
 import { useTranslation } from 'react-i18next'
+import { useLanguage } from 'context/language'
 
 const Portafolio: React.FC = () => {
 	const [height, setHeight] = React.useState<string>('100vh')
@@ -13,6 +14,8 @@ const Portafolio: React.FC = () => {
 	const [page, setPage] = React.useState<number>(0)
 	const [items, setItems] = React.useState<CarouselPortfolio[]>([])
 	const [over, setOver] = React.useState(false)
+
+	const {selectedLanguage} = useLanguage()
 
 	React.useEffect(() => {
 		window.addEventListener('resize', () =>
@@ -47,18 +50,18 @@ const Portafolio: React.FC = () => {
 
 	const filterdata = () => {
 		const subsetSize = 3
-		let startIndex = (page % carouselPortfolio.length) - subsetSize
+		let startIndex = (page % carouselPortfolio(t, selectedLanguage).length) - subsetSize
 		if (startIndex < 0) {
-			const length = carouselPortfolio.length
+			const length = carouselPortfolio(t, selectedLanguage).length
 			startIndex = length + startIndex
 		}
 		const endIndex = startIndex + subsetSize
-		const subset = carouselPortfolio.slice(startIndex, endIndex)
+		const subset = carouselPortfolio(t, selectedLanguage).slice(startIndex, endIndex)
 
 		if (subset.length < subsetSize) {
-			const remainingItems = carouselPortfolio
+			const remainingItems = carouselPortfolio(t, selectedLanguage)
 				.slice(0, startIndex)
-				.concat(carouselPortfolio.slice(0, subsetSize - subset.length))
+				.concat(carouselPortfolio(t, selectedLanguage).slice(0, subsetSize - subset.length))
 			return subset.concat(remainingItems)
 		}
 
@@ -307,9 +310,9 @@ const Portafolio: React.FC = () => {
 								width={322}
 								height={342}
 								xlinkHref={
-									carouselPortfolio.length > 0
-										? carouselPortfolio[
-												page - 1 < 0 ? 9 : page - 1
+									carouselPortfolio(t, selectedLanguage).length > 0
+										? carouselPortfolio(t, selectedLanguage)[
+												page - 1 < 0 ? 10 : page - 1
 										  ].images
 										: ''
 								}
@@ -374,9 +377,9 @@ const Portafolio: React.FC = () => {
 								width={322}
 								height={342}
 								xlinkHref={
-									carouselPortfolio.length > 0
-										? carouselPortfolio[
-												page + 1 > 9 ? 0 : page + 1
+									carouselPortfolio(t, selectedLanguage).length > 0
+										? carouselPortfolio(t, selectedLanguage)[
+												page + 1 > 10 ? 0 : page + 1
 										  ].images
 										: ''
 								}
@@ -404,8 +407,8 @@ const Portafolio: React.FC = () => {
 							height={1}
 							patternTransform="translate(0 1026.314) rotate(-180)"
 							viewBox={
-								carouselPortfolio[page].viewbox
-									? carouselPortfolio[page].viewbox
+								carouselPortfolio(t, selectedLanguage)[page].viewbox
+									? carouselPortfolio(t, selectedLanguage)[page].viewbox
 									: '101.554 6.532 241.811 269.735'
 							}>
 							<image
@@ -413,8 +416,8 @@ const Portafolio: React.FC = () => {
 								width={272.685}
 								height={286.423}
 								xlinkHref={
-									carouselPortfolio.length > 0
-										? carouselPortfolio[page].images
+									carouselPortfolio(t, selectedLanguage).length > 0
+										? carouselPortfolio(t, selectedLanguage)[page].images
 										: ''
 								}
 							/>
@@ -547,13 +550,13 @@ const Portafolio: React.FC = () => {
 							transform="translate(122.488 0)">
 							<g transform="translate(111.438 55.847)">
 								<LeftCard
-									{...carouselPortfolio[
-										page - 1 < 0 ? 9 : page - 1
+									{...carouselPortfolio(t, selectedLanguage)[
+										page - 1 < 0 ? 10 : page - 1
 									]}
 								/>
-								<a href={carouselPortfolio[page].to}>
+								<a href={carouselPortfolio(t, selectedLanguage)[page].to}>
 									<CenterCard
-										{...carouselPortfolio[page]}
+										{...carouselPortfolio(t, selectedLanguage)[page]}
 										selected={over}
 										onOver={() => setOver(true)}
 										onLeave={() => setOver(false)}
@@ -585,20 +588,20 @@ const Portafolio: React.FC = () => {
 									<text
 										className="w-portfolio-3"
 										transform={`translate(${
-											carouselPortfolio[
-												page + 1 > 9 ? 0 : page + 1
+											carouselPortfolio(t, selectedLanguage)[
+												page + 1 > 10 ? 0 : page + 1
 											].x_selected
 										} 379.825)`}>
 										<tspan
 											x={
-												carouselPortfolio[
-													page + 1 > 9 ? 0 : page + 1
+												carouselPortfolio(t, selectedLanguage)[
+													page + 1 > 10 ? 0 : page + 1
 												].x
 											}
 											y={0}>
 											{
-												carouselPortfolio[
-													page + 1 > 9 ? 0 : page + 1
+												carouselPortfolio(t, selectedLanguage)[
+													page + 1 > 10 ? 0 : page + 1
 												].title
 											}
 										</tspan>
@@ -609,7 +612,7 @@ const Portafolio: React.FC = () => {
 						<g
 							transform="translate(0 274.895)"
 							onClick={() =>
-								setPage(page - 1 < 0 ? 9 : page - 1)
+								setPage(page - 1 < 0 ? 10 : page - 1)
 							}>
 							<g
 								className="ad-portfolio-3"
@@ -629,7 +632,7 @@ const Portafolio: React.FC = () => {
 						<g
 							transform="translate(1198.047 274.895)"
 							onClick={() =>
-								setPage(page + 1 > 9 ? 0 : page + 1)
+								setPage(page + 1 > 10 ? 0 : page + 1)
 							}>
 							<g
 								className="ac-portfolio-3 cursor-pointer"

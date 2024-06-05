@@ -34,7 +34,7 @@ export const useLanguage = (): LanguageContextProps => {
  */
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }): JSX.Element => {
   /** States */
-  const [selectedLanguage, setSelectedLanguage] = React.useState<Languages>("en");
+  const [selectedLanguage, setSelectedLanguage] = React.useState<Languages>("es");
 
   /**
    * @function

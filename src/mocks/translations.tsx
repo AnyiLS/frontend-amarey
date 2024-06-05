@@ -791,6 +791,7 @@ const spanishTexts = {
 //english
 const englishTexts = {
     translation: {
+        'Equipos Médicos': 'Medical equipments',
         "Conoce Más": "LEARN MORE",
         "Un compromiso inquebrantable": "an unwavering commitment",
         'con la salud y la vida': 'to health and life',
@@ -1365,6 +1366,8 @@ const englishTexts = {
         '\xE9tica':'Ethics',
         'L\xEDnea ': 'The Ethics',
         'ética ': 'Line',
+        'Mantenimiento': 'maintenance',
+        'biomedico_2': 'biomedical',
         'C\xF3digo de \xE9tica': 'Code of Ethics',
         'En el Grupo Amarey estamos comprometidos en mantener relaciones honestas, ':'At the Amarey Group, we are committed to maintaining honest, constructive, ',
         'constructivas e id\xF3neas con nuestros grupos de inter\xE9s. Guiados por nuestros ': 'and appropriate relationships with all our stakeholders. Guided by our set of ',
