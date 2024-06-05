@@ -228,10 +228,7 @@ const Component20142: React.FC<TimeLine> = ({ onNext, onPrev, t, selectedLanguag
             {t("productos para logística ")}
           </tspan>
           <tspan x={0} y={39}>
-            {t("hospitalaria del proveedor ")}
-          </tspan>
-          <tspan x={0} y={53}>
-            {t("GRIFOLS.")}
+            {t("hospitalaria. ")}
           </tspan>
         </text>
         <g transform="translate(112.09 167.525)">

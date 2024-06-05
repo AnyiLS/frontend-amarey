@@ -393,8 +393,8 @@ export const Slider4: React.FC<ISlider> = ({ index, onOpenVideo }) => {
               />
             </g>
             <text className="p-item-1820" transform="translate(188.057 43.435)">
-              <tspan x={-122.384} y={23}>
-                {t("Entregas urgencias en")}
+              <tspan x={-162.384} y={23}>
+                {t("Entregas de urgencias en")}
               </tspan>
               {selectedLanguage === "en" && (
                 <tspan className="n-item-1820" x={19.548} y={23}>

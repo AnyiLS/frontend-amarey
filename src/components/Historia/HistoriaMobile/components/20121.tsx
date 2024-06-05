@@ -82,7 +82,7 @@ const Component20121: React.FC<TimeLine> = ({ onNext, onPrev, t }): JSX.Element 
         <image
           width={1018}
           height={702}
-          xlinkHref="/images/mobile/history/20121-2.webp"
+          xlinkHref="/images/ambiente.webp"
         />
       </pattern>
       <filter
@@ -222,7 +222,7 @@ const Component20121: React.FC<TimeLine> = ({ onNext, onPrev, t }): JSX.Element 
         </g>
         <text className="k-time-line" transform="translate(207.09 211.093)">
           <tspan x={-74.36} y={21}>
-            {"Nihon Kohden"}
+            {"Comienza la distribución de la línea de equipos médicos"}
           </tspan>
         </text>
         <g transform="translate(311.798 167.525)">

@@ -10,8 +10,8 @@ interface ISlider {
 
 export const Slider2: React.FC<ISlider> = ({ index }) => {
 	const [grandImage, setGrandImage] = React.useState<boolean>(false)
-	const [hoverCard, setHoverCard] = React.useState<boolean>(false)
-	const [hoverCard2, setHoverCard2] = React.useState<boolean>(false)
+	const [hoverCard, setHoverCard] = React.useState<boolean>(true)
+	const [hoverCard2, setHoverCard2] = React.useState<boolean>(true)
 
 	React.useEffect(() => {
 		if (index === 1) setTimeout(() => setGrandImage(true), 2000)
@@ -472,7 +472,7 @@ export const Slider2: React.FC<ISlider> = ({ index }) => {
 			<g
 				transform="translate(1832 554.229)"
 				onMouseOver={() => setHoverCard(true)}
-				onMouseLeave={() => setHoverCard(false)}>
+				onMouseLeave={() => setHoverCard(true)}>
 				<path
 					className="d-pentagrama"
 					d="M684.641,315.6H17.574C6.991,315.6-1.191,304.109.143,291.12L38.658,19C39.772,8.14,47.24,0,56.089,0H644.931c8.822,0,16.276,8.094,17.422,18.916l39.71,272.12c1.378,13.016-6.812,24.562-17.422,24.562"
@@ -503,7 +503,7 @@ export const Slider2: React.FC<ISlider> = ({ index }) => {
 			<g
 				transform="translate(2575 554.229)"
 				onMouseOver={() => setHoverCard2(true)}
-				onMouseLeave={() => setHoverCard2(false)}>
+				onMouseLeave={() => setHoverCard2(true)}>
 				<path
 					className="d-pentagrama"
 					d="M684.641,315.6H17.574C6.991,315.6-1.191,304.109.143,291.12L38.658,19C39.772,8.14,47.24,0,56.089,0H644.931c8.822,0,16.276,8.094,17.422,18.916l39.71,272.12c1.378,13.016-6.812,24.562-17.422,24.562"

@@ -42,7 +42,7 @@ const LifeLine20112: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeS
 					<image
 						width={1018}
 						height={702}
-						xlinkHref="/images/history/2012-1-2.webp"
+						xlinkHref="/images/ambiente.webp"
 					/>
 				</pattern>
 				<filter

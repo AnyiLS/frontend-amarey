@@ -5,10 +5,10 @@ import { useTranslation } from 'react-i18next'
 import { useLanguage } from 'context/language'
 
 export const ServiciosMovil: React.FC = () => {
-	const [open4Tag, setOpen4Tag] = React.useState<boolean>(false)
-	const [open2Tag, setOpen2Tag] = React.useState<boolean>(false)
+	const [open4Tag, setOpen4Tag] = React.useState<boolean>(true)
+	const [open2Tag, setOpen2Tag] = React.useState<boolean>(true)
 	const [changeTo2, setChangeTo2] = React.useState<boolean>(false)
-	const [doHover, setDoHover] = React.useState<boolean>(false)
+	const [doHover, setDoHover] = React.useState<boolean>(true)
 	const [openVideo, setOpenVideo] = React.useState(false)
 
 	const {t} = useTranslation()
@@ -401,7 +401,7 @@ export const ServiciosMovil: React.FC = () => {
 					<g transform="translate(-181.942 -3193.069)">
 						<g
 							transform="translate(246.844 3656.257)"
-							onClick={() => setOpen2Tag(!open2Tag)}>
+							onClick={() => setOpen2Tag(true)}>
 							<path
 								className="e-servicios-2-mobile"
 								d="M282.934,130.424H7.263c-4.374,0-7.755-4.748-7.2-10.116L15.976,7.852C16.436,3.364,19.522,0,23.179,0H266.524c3.646,0,6.726,3.345,7.2,7.817l16.411,112.456c.569,5.379-2.815,10.15-7.2,10.15"
@@ -431,7 +431,7 @@ export const ServiciosMovil: React.FC = () => {
 						</g>
 						<g
 							transform="translate(246.844 3828.8)"
-							onClick={() => setOpen4Tag(!open4Tag)}>
+							onClick={() => setOpen4Tag(true)}>
 							<path
 								className="e-servicios-2-mobile"
 								d="M282.935,130.424H7.263c-4.374,0-7.755-4.748-7.2-10.116L15.976,7.852C16.436,3.364,19.523,0,23.179,0H266.524c3.646,0,6.726,3.345,7.2,7.817l16.411,112.456c.569,5.379-2.815,10.15-7.2,10.15"
@@ -1710,8 +1710,8 @@ export const ServiciosMovil: React.FC = () => {
 							className="e-services2-hover-80 text"
 							transform="translate(90 39.372)"
 							style={{ fontSize: 12 }}>
-							<tspan x={selectedLanguage === 'es' ? -66.759 : -49.759} y={13}>
-								{t('Entregas urgencias ')}
+							<tspan x={selectedLanguage === 'es' ? -66.759 : -64.759} y={13}>
+								{t('Entregas de urgencias ')}
 							</tspan>
 							<tspan x={selectedLanguage === 'es' ? -58.842 : -78.842} y={selectedLanguage === 'es' ? 29 : 26}>
 								{t('en ')}

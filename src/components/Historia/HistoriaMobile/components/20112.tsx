@@ -40,7 +40,7 @@ const Component20112: React.FC<TimeLine> = ({ onNext, onPrev, t, selectedLanguag
         height="100%"
         viewBox="0 0 1018 702"
       >
-        <image width={1018} height={702} xlinkHref="/images/mobile/history/20112-1.webp" />
+        <image width={1018} height={702} xlinkHref="/images/ambiente.webp" />
       </pattern>
       <filter
         id="d-time-line"

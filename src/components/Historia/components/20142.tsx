@@ -233,11 +233,11 @@ const LifeLine20142: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeS
 						{t('productos para logística ')}
 					</tspan>
 					<tspan x={0} y={52}>
-						{t('hospitalaria del proveedor ')}
+						{t('hospitalaria. ')}
 					</tspan>
-					<tspan x={0} y={78}>
+					{/* <tspan x={0} y={78}>
 						{t('GRIFOLS.')}
-					</tspan>
+					</tspan> */}
 				</text>
 				<g transform="translate(0 -329.714)" onClick={onClick}>
 					<g

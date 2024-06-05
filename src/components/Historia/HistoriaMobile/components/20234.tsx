@@ -46,7 +46,7 @@ const Component20234: React.FC<TimeLine> = ({ onNext, onPrev, t, selectedLanguag
         <image
           width={1370}
           height={1201}
-          xlinkHref="/images/mobile/history/20234-1.webp"
+          xlinkHref="/images/CEDI.webp"
         />
       </pattern>
       <filter

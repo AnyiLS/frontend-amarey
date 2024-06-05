@@ -52,6 +52,7 @@ const Component = () => {
 					<div id="main">
 						{width >= 768 ? <Navbar /> : <NavbarMovil />}
 						<RouterProvider router={router} />
+						{width >= 768 ? <Footer /> : <FooterMobile />}
 					</div>
 				) : (
 					<Video onCloseVideo={setShowVideoPopup} />

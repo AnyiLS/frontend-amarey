@@ -38,7 +38,7 @@ const Component20233: React.FC<TimeLine> = ({ onNext, onPrev, t, selectedLanguag
           preserveAspectRatio="xMidYMid slice"
           width={100.337}
           height={66.891}
-          xlinkHref="/images/mobile/history/20234-1.webp"
+          xlinkHref="/images/CEDI.webp"
         />
       </pattern>
       <filter
