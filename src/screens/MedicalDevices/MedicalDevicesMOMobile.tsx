@@ -16,7 +16,7 @@ const MedicalDevicesMOMobile: React.FC = (): JSX.Element => {
 	return (
 		<React.Fragment>
 			{view === 0 ? (
-				<svg viewBox="0 0 414 855" width='100%' style={{ height: "100%" }} preserveAspectRatio='none'>
+				<svg viewBox="2 0 414 800" width='100%' style={{ height: "100%" }} preserveAspectRatio='none'>
 					<defs>
 						<style>
 							{
@@ -27,7 +27,7 @@ const MedicalDevicesMOMobile: React.FC = (): JSX.Element => {
 							id="a-reward-2-mobile"
 							width={1}
 							height={1}
-							viewBox="422.499 8.454 406.793 838.092">
+							viewBox="422.499 70.454 406.793 838.092">
 							<image
 								preserveAspectRatio="xMidYMid slice"
 								width={1522.969}
@@ -146,7 +146,7 @@ const MedicalDevicesMOMobile: React.FC = (): JSX.Element => {
 							/>
 						</g>
 						<g
-							transform="translate(93.539 771.493)"
+							transform="translate(93.539 736.493)"
 							onClick={() => setView(1)}>
 							<g
 								className="n-reward-2-mobile"
