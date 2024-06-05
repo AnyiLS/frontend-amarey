@@ -71,13 +71,13 @@ const Portafolio: React.FC = () => {
 
 	console.log(items)
 
-	const {t} = useTranslation()
+	const { t } = useTranslation()
 	return (
 		<div>
 			{!openState ? (
 				<svg
 					width="100%"
-					height='100%'
+					height="100%"
 					viewBox="0 0 1920 1080"
 					preserveAspectRatio="none">
 					<defs>
@@ -174,19 +174,19 @@ const Portafolio: React.FC = () => {
 								{t('Somos un grupo empresarial con una clara')}
 							</tspan>
 							<tspan x={0} y={51}>
-								{
-									t('inspiraci\xF3n profesional y humana; ofrecemos')
-								}
+								{t(
+									'inspiraci\xF3n profesional y humana; ofrecemos'
+								)}
 							</tspan>
 							<tspan x={0} y={79}>
-								{
-									t('un portafolio de soluciones en salud de la m\xE1s')
-								}
+								{t(
+									'un portafolio de soluciones en salud de la m\xE1s'
+								)}
 							</tspan>
 							<tspan x={0} y={107}>
-								{
-									t('alta calidad para el cuidado de los pacientes.')
-								}
+								{t(
+									'alta calidad para el cuidado de los pacientes.'
+								)}
 							</tspan>
 						</text>
 					</g>
@@ -301,7 +301,7 @@ const Portafolio: React.FC = () => {
 							width={1}
 							height={1}
 							patternTransform="translate(0 572.845) rotate(-180)"
-							viewBox='0 0 306 342'>
+							viewBox="0 0 306 342">
 							<image
 								preserveAspectRatio="xMidYMid slice"
 								width={322}
@@ -368,7 +368,7 @@ const Portafolio: React.FC = () => {
 							width={1}
 							height={1}
 							patternTransform="translate(0 860.314) rotate(-180)"
-							viewBox='0 0 306 342'>
+							viewBox="0 0 306 342">
 							<image
 								preserveAspectRatio="xMidYMid slice"
 								width={322}
@@ -546,7 +546,11 @@ const Portafolio: React.FC = () => {
 							className="t-portfolio-3"
 							transform="translate(122.488 0)">
 							<g transform="translate(111.438 55.847)">
-								<LeftCard {...carouselPortfolio[page - 1 < 0 ? 9 : page - 1]} />
+								<LeftCard
+									{...carouselPortfolio[
+										page - 1 < 0 ? 9 : page - 1
+									]}
+								/>
 								<a href={carouselPortfolio[page].to}>
 									<CenterCard
 										{...carouselPortfolio[page]}
@@ -580,9 +584,23 @@ const Portafolio: React.FC = () => {
 									</g>
 									<text
 										className="w-portfolio-3"
-										transform={`translate(${carouselPortfolio[page + 1 > 9 ? 0 : page + 1].x_selected} 379.825)`}>
-										<tspan x={carouselPortfolio[page + 1 > 9 ? 0 : page + 1].x} y={0}>
-											{carouselPortfolio[page + 1 > 9 ? 0 : page + 1].title}
+										transform={`translate(${
+											carouselPortfolio[
+												page + 1 > 9 ? 0 : page + 1
+											].x_selected
+										} 379.825)`}>
+										<tspan
+											x={
+												carouselPortfolio[
+													page + 1 > 9 ? 0 : page + 1
+												].x
+											}
+											y={0}>
+											{
+												carouselPortfolio[
+													page + 1 > 9 ? 0 : page + 1
+												].title
+											}
 										</tspan>
 									</text>
 								</g>

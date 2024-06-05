@@ -390,17 +390,19 @@ export const Slider1: React.FC<ISlider> = ({ height, handleChangeSlide }) => {
 				<g transform="translate(1299 734.666)" onClick={() => handleChangeSlide(1)}>
 					<g
 						className="s-pentagrama80"
-						transform="matrix(1, 0, 0, 1, -1299, -734.67)">
+						transform="matrix(1, 0, 0, 1, -1299, -734.67)" onClick={() => handleChangeSlide(1)}>
 						<path
 							className="d-pentagrama80"
 							d="M385,0H78.968C47.139,0,18.557,23.591,6.933,59.456L0,80.849H303.493c33.911,0,64.274-25.435,76.22-63.849Z"
 							transform="translate(1299 734.67)"
+							onClick={() => handleChangeSlide(1)}
 						/>
 					</g>
 					<text
 						className="q-pentagrama80"
-						transform="translate(71 51.424)">
-						<tspan x={0} y={0}>
+						transform="translate(71 51.424)"
+						onClick={() => handleChangeSlide(1)}>
+						<tspan x={0} y={0} onClick={() => handleChangeSlide(1)}>
 							{t('Conoce Más')}
 						</tspan>
 					</text>
@@ -408,6 +410,7 @@ export const Slider1: React.FC<ISlider> = ({ height, handleChangeSlide }) => {
 						className="e-pentagrama80"
 						d="M45.263,0V24.412L66.419,12.2,56.314,6.375Z"
 						transform="translate(235.737 28.219)"
+						onClick={() => handleChangeSlide(1)}
 					/>
 				</g>
 			</svg>
