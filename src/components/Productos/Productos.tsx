@@ -164,7 +164,7 @@ const Productos: React.FC = (): JSX.Element => {
 									preserveAspectRatio="xMidYMid slice"
 									width={298.563}
 									height={199.093}
-									xlinkHref="/images/product04.webp"
+									xlinkHref="/images/IMG_6337 GRIFOLS.webp"
 								/>
 							</pattern>
 							<filter
