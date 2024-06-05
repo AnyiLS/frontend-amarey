@@ -1,7 +1,9 @@
 import React from 'react'
 import { TimeLine } from '../HistoriaMobile'
+import { useLanguage } from 'context/language'
 
 const Component20121: React.FC<TimeLine> = ({ onNext, onPrev, t }): JSX.Element => {
+  const { selectedLanguage } = useLanguage()
 	return (
 		<React.Fragment>
 			<svg viewBox="85 0 414 485.06" preserveAspectRatio="none">
@@ -220,9 +222,18 @@ const Component20121: React.FC<TimeLine> = ({ onNext, onPrev, t }): JSX.Element 
             transform="translate(0)"
           />
         </g>
-        <text className="k-time-line" transform="translate(207.09 211.093)">
-          <tspan x={-74.36} y={21}>
-            {"Comienza la distribución de la línea de equipos médicos"}
+        <text className="k-time-line" transform={selectedLanguage === 'es' ? "translate(207.09 211.093)" : "translate(207.09 205.093)"} style={{ fontSize: selectedLanguage === 'es' ? 16 : 14 }}>
+          <tspan x={-74.36} y={0}>
+            {t("Comienza la distribución de la línea de equipos médicos").split(' ').slice(0,2).join(' ')}
+          </tspan>
+          <tspan x={-74.36} y={16}>
+            {t("Comienza la distribución de la línea de equipos médicos").split(' ').slice(2,4).join(' ')}
+          </tspan>
+          <tspan x={-74.36} y={32}>
+            {t("Comienza la distribución de la línea de equipos médicos").split(' ').slice(4,8).join(' ')}
+          </tspan>
+          <tspan x={-74.36} y={48}>
+            {t("Comienza la distribución de la línea de equipos médicos").split(' ').slice(8,10).join(' ')}
           </tspan>
         </text>
         <g transform="translate(311.798 167.525)">

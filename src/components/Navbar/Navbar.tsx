@@ -465,6 +465,7 @@ const Navbar: React.FC = () => {
               top: "94%",
               maxWidth: 495,
               height: 400,
+              zIndex: 1
             }}
           >
             <g transform="translate(-628.194 -836)">

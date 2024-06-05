@@ -26,18 +26,18 @@ const FooterMobile: React.FC = (): JSX.Element => {
 				</defs>
 				<path className="b-footer-mobile" d="M0,0H415.541V533H0Z" />
 				<text className="c-footer-mobile" transform="translate(41 134)">
-					<tspan x={74.978} y={11}>
+					<tspan x={selectedLanguage === 'es' ? 74.978 : 50} y={11}>
 						{t('Carrera 7 # 99-53, pisos 19 y 20')}
 					</tspan>
 					<tspan x={167} y={24} />
-					<tspan x={35.528} y={37}>
+					<tspan x={selectedLanguage === 'es' ? 35.528 : 50.528} y={37}>
 						{t('Línea de atención al cliente 018000 180066 - ')}
 					</tspan>
 					<tspan x={124.028} y={50} xmlSpace="preserve">
 						{' (601) 7447300 '}
 					</tspan>
 					<tspan x={167} y={63} />
-					<tspan x={58.856} y={76}>
+					<tspan x={selectedLanguage === 'es' ? 58.856 : 70.856} y={76}>
 						{t('Reporte de eventos adversos o PQR: ')}
 					</tspan>
 					<tspan x={59.444} y={89}>
@@ -170,7 +170,7 @@ const FooterMobile: React.FC = (): JSX.Element => {
 				</g>
 				<g transform="translate(79 293)">
 					<text className="c-footer-mobile">
-						<tspan className="e-footer-mobile" x={selectedLanguage === 'es' ? 29.712 : 49.712} y={11}>
+						<tspan className="e-footer-mobile" x={selectedLanguage === 'es' ? 29.712 : 39.712} y={11}>
 							{t('Tratamiento de datos personales')}
 						</tspan>
 						<tspan y={11} />
@@ -187,7 +187,7 @@ const FooterMobile: React.FC = (): JSX.Element => {
 				</a>
 				<g transform="translate(41 326)">
 					<text className="f-footer-mobile">
-						<tspan x={selectedLanguage === 'es' ? 39.14 : 75.14} y={11}>
+						<tspan x={selectedLanguage === 'es' ? 39.14 : 68.14} y={11}>
 							{t('Política de protección de datos personales')}
 						</tspan>
 					</text>
