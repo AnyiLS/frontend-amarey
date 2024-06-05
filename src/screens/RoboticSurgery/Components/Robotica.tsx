@@ -1,3 +1,4 @@
+import { useLanguage } from 'context/language';
 import React from 'react'
 import { useTranslation } from 'react-i18next';
 
@@ -6,6 +7,7 @@ const Robotica: React.FC<{ height: string; onClose: () => void }> = ({
 	onClose,
 }) => {
 	const {t} = useTranslation()
+	const {selectedLanguage} = useLanguage()
 	return (
 		<div>
 			<svg
@@ -120,7 +122,7 @@ const Robotica: React.FC<{ height: string; onClose: () => void }> = ({
 				</text>
 				<text
 					className="h-robotica"
-					transform="translate(763.577 706.204)">
+					transform={selectedLanguage === 'es' ? "translate(763.577 706.204)" : "translate(703.577 706.204)"}>
 					<tspan x={0} y={23}>
 						{t('Movimientos intuitivos. Rotaci\xF3n de ')}
 					</tspan>
@@ -196,7 +198,7 @@ const Robotica: React.FC<{ height: string; onClose: () => void }> = ({
 						transform="translate(0 146)"
 					/>
 				</g>
-				<g transform="translate(745.577 714.704)">
+				<g transform={selectedLanguage === 'es' ? "translate(745.577 714.704)" : "translate(685.577 714.704)"}>
 					<circle
 						className="i-robotica"
 						cx={3}

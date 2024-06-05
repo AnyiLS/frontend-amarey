@@ -249,7 +249,7 @@ const Navbar: React.FC = () => {
                 fill: hover1 === "actualidad" ? "#fff" : "#001F5F",
               }}
             >
-              <tspan x={selectedLanguage === "es" ? -57.555 : -45.555} y={0}>
+              <tspan x={selectedLanguage === "es" ? -57.555 : -40.555} y={0}>
                 {selectedLanguage === "es"
                   ? t("Actualidad\u200B")
                   : t("Actualidad\u200B").split(" ").slice(0, 2).join(" ")}

@@ -4,6 +4,7 @@ import Mantenimiento from './components/Mantenimiento'
 import useGeneral from 'hooks/general.hook'
 import BiomedicoMobile from './BiomedicoMobile'
 import { useTranslation } from 'react-i18next'
+import { useLanguage } from 'context/language'
 
 const Biomedico: React.FC = (): JSX.Element => {
 	/** States */
@@ -13,6 +14,7 @@ const Biomedico: React.FC = (): JSX.Element => {
 	const { width } = useGeneral()
 
 	const {t} = useTranslation()
+	const { selectedLanguage } = useLanguage()
 	return (
 		<React.Fragment>
 			{width > 1024 ? (
@@ -119,7 +121,7 @@ const Biomedico: React.FC = (): JSX.Element => {
 										t('empresa a nivel nacional en certificarse con ')
 									}
 								</tspan>
-								<tspan x={0} y={101}>
+								<tspan x={0} y={101} className={`${selectedLanguage === 'en' ? 'f-bio' : ''}`}>
 									{t('la')}
 								</tspan>
 								<tspan className="f-bio" y={101}>

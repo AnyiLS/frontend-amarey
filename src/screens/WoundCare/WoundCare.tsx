@@ -3,6 +3,7 @@ import useGeneral from 'hooks/general.hook'
 import SelectImage from './components/SelectImage'
 import WoundCareMobile from './WoundCareMobile'
 import { useTranslation } from 'react-i18next'
+import { useLanguage } from 'context/language'
 
 const WoundCare: React.FC = (): JSX.Element => {
 	/** Hooks */
@@ -10,6 +11,7 @@ const WoundCare: React.FC = (): JSX.Element => {
 	const [showModal, setShowModal] = React.useState(false)
 
 	const {t} = useTranslation()
+	const {selectedLanguage} = useLanguage()
 	return (
 		<React.Fragment>
 			{width > 1024 ? (
@@ -103,7 +105,7 @@ const WoundCare: React.FC = (): JSX.Element => {
 								</g>
 								<text
 									className="c-products-heridas-desktop"
-									transform="translate(140 870)">
+									transform={selectedLanguage === 'es' ? "translate(140 870)" : "translate(140 920)"}>
 									<tspan x={0} y={0}>
 										{t('CUIDADO AVANZADO DE')}
 									</tspan>

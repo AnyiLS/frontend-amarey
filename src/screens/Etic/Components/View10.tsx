@@ -1,3 +1,4 @@
+import { useLanguage } from 'context/language'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
@@ -7,6 +8,7 @@ export interface IEtic {
 
 const View10: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 	const {t} = useTranslation()
+	const { selectedLanguage } = useLanguage();
 	return (
 		<svg viewBox="0 40 414 855">
 			<defs>
@@ -333,10 +335,10 @@ const View10: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 					<text
 						className="l-reward-2-mobile"
 						transform="translate(120 8.386)">
-						<tspan x={-77.224} y={13}>
+						<tspan x={selectedLanguage === 'es' ? -77.224 : -47.224} y={13}>
 						{t('Prácticas comerciales ')}
 						</tspan>
-						<tspan x={-45.213} y={29}>
+						<tspan x={selectedLanguage === 'es' ? -45.213 : -75.213	} y={29}>
 							{t('inadecuadas')}
 						</tspan>
 					</text>
@@ -376,7 +378,7 @@ const View10: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 					<text
 						className="l-reward-2-mobile"
 						transform="translate(120 16.386)">
-						<tspan x={-73.409} y={13}>
+						<tspan x={selectedLanguage === 'es' ? -73.409 : -43.409} y={13}>
 						{t('Dádivas o prebendas')}
 						</tspan>
 					</text>
@@ -399,10 +401,10 @@ const View10: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 					<text
 						className="p-reward-2-mobile"
 						transform="translate(160 149.636)">
-						<tspan x={-117.358} y={20}>
+						<tspan x={selectedLanguage === 'es' ? -117.358 : -65.358} y={20}>
 							{t('Prácticas comerciales ')}
 						</tspan>
-						<tspan x={-67.315} y={44}>
+						<tspan x={selectedLanguage === 'es' ? -67.315 : -103.315} y={44}>
 							{t('inadecuadas')}
 						</tspan>
 					</text>

@@ -50,6 +50,8 @@ const CarouselHeader: React.FC = () => {
 					className="w-full h-full"
 					id="video-1"
 					controls
+					autoPlay={false}
+
 				/>
 				<span
 					className="absolute top-[5%] right-[5%] text-white text-[30px] text-center font-bold bg-[#00000050] w-[50px] h-[50px] rounded-[100%]"

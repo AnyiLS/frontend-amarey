@@ -1,3 +1,4 @@
+import { useLanguage as language } from 'context/language'
 import React from 'react'
 
 import { useTranslation } from 'react-i18next'
@@ -50,41 +51,44 @@ export const dataEtic: DataEtic = {
 			</React.Fragment>
 		)
 	},
-	dos: (): JSX.Element => (
-		<React.Fragment>
-			<defs>
-				<style>
-					{
-						'.a-text-1,.b-text-1{fill:#fff;}.a-text-1{font-size:40px;font-family:Silka-Bold, Silka;font-weight:700;}.b-text-1{font-size:24px;font-family:Silka-Regular, Silka;}'
-					}
-				</style>
-			</defs>
-			<g style={{ transform: 'translate(560px, 340px)' }}>
-				<text className="a-text-1">
-					<tspan x={14.98} y={38}>
-					<TranslatedText textKey='Incumplimiento de leyes y regulaciones' />
-					</tspan>
-				</text>
-				<text className="b-text-1" transform="translate(0 94.988)">
-					<tspan x={0} y={23}>
-					<TranslatedText textKey='Negocios de la compañía que no se realicen dentro del marco legal ' />
-					</tspan>
-					<tspan x={0} y={51}>
-					<TranslatedText textKey='y/o que sus colaboradores no obren dentro de este. Incumplimiento ' />
-					</tspan>
-					<tspan x={0} y={79}>
-					<TranslatedText textKey='a lo dispuesto en el código de ética, reglamento interno de trabajo, ' />
-					</tspan>
-					<tspan x={0} y={107}>
-					<TranslatedText textKey='políticas de contratación y pago a terceros, reglamentos, políticas ' />
-					</tspan>
-					<tspan x={0} y={135}>
-					<TranslatedText textKey='y/o procedimientos específicos establecidos por el Grupo Amarey.' />
-					</tspan>
-				</text>
-			</g>
-		</React.Fragment>
-	),
+	dos: (): JSX.Element => {
+		const { selectedLanguage } = language();
+		return (
+			<React.Fragment>
+				<defs>
+					<style>
+						{
+							'.a-text-1,.b-text-1{fill:#fff;}.a-text-1{font-size:40px;font-family:Silka-Bold, Silka;font-weight:700;}.b-text-1{font-size:24px;font-family:Silka-Regular, Silka;}'
+						}
+					</style>
+				</defs>
+				<g style={{ transform: 'translate(560px, 340px)' }}>
+					<text className="a-text-1">
+						<tspan x={selectedLanguage === 'es' ? 14.98 : -30.98} y={38}>
+						<TranslatedText textKey='Incumplimiento de leyes y regulaciones' />
+						</tspan>
+					</text>
+					<text className="b-text-1" transform={selectedLanguage === 'es' ? "translate(0 94.988)" : "translate(-60 94.988)"}>
+						<tspan x={0} y={23}>
+						<TranslatedText textKey='Negocios de la compañía que no se realicen dentro del marco legal ' />
+						</tspan>
+						<tspan x={0} y={51}>
+						<TranslatedText textKey='y/o que sus colaboradores no obren dentro de este. Incumplimiento ' />
+						</tspan>
+						<tspan x={0} y={79}>
+						<TranslatedText textKey='a lo dispuesto en el código de ética, reglamento interno de trabajo, ' />
+						</tspan>
+						<tspan x={0} y={107}>
+						<TranslatedText textKey='políticas de contratación y pago a terceros, reglamentos, políticas ' />
+						</tspan>
+						<tspan x={0} y={135}>
+						<TranslatedText textKey='y/o procedimientos específicos establecidos por el Grupo Amarey.' />
+						</tspan>
+					</text>
+				</g>
+			</React.Fragment>
+		)
+	},
 	tres: (): JSX.Element => (
 		<React.Fragment>
 			<defs>
