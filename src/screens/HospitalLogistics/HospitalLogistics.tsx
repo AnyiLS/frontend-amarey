@@ -3,6 +3,7 @@ import useGeneral from 'hooks/general.hook'
 import HospitalLogic from './Components/HospitalLogic'
 import HospitalLogisticsMobile from './HospitalLogisticsMobile'
 import { useTranslation } from 'react-i18next'
+import { useLanguage } from 'context/language'
 
 const HospitalLogistics: React.FC = (): JSX.Element => {
 	/** Hooks */
@@ -11,6 +12,7 @@ const HospitalLogistics: React.FC = (): JSX.Element => {
 	const [openShow, setOpenShow] = React.useState(false)
 
 	const {t} = useTranslation()
+	const {selectedLanguage} = useLanguage()
 
 	return (
 		<React.Fragment>
@@ -118,7 +120,7 @@ const HospitalLogistics: React.FC = (): JSX.Element => {
 								</text>
 								<text
 									className="d-products-hl-desktop"
-									transform="translate(968 700)">
+									transform={selectedLanguage === 'es' ? "translate(968 700)" : "translate(968 730)"}>
 									<tspan x={0} y={23}>
 										{
 											t('Nuestro portafolio de soluciones tecnol\xF3gicas est\xE1 enfocado en la ')

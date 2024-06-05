@@ -1,6 +1,7 @@
 import React from 'react'
 import Popups from './popups'
 import { useTranslation } from 'react-i18next'
+import { useLanguage } from 'context/language'
 
 const Cuadropop: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 	/** States */
@@ -8,6 +9,7 @@ const Cuadropop: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 	const [selected, setSelected] = React.useState<string>('')
 
 	const {t} = useTranslation()
+	const { selectedLanguage } = useLanguage()
 	return (
 		<div className='relative'>
 			<svg viewBox="0 0 1938 975.988">
@@ -143,16 +145,19 @@ const Cuadropop: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 						<path
 							className="b-pop cursor-pointer"
 							d="M45.263,0V19.012L61.725,9.505l-7.863-4.54Z"
-							transform="translate(201.725 115.762) rotate(180)"
+							transform={selectedLanguage === 'es' ? "translate(201.725 115.762) rotate(180)" : "translate(201.725 45.762) rotate(180)"}
+							onClick={onClose}
 						/>
 						<text
 							className="c-pop cursor-pointer"
-							transform="translate(232.852 114.756)">
+							transform={selectedLanguage === 'es' ? "translate(232.852 114.756)" : "translate(232.852 44.756)"}
+							onClick={onClose}>
 							<tspan x={-71.52} y={0}>
 								{t('Volver')}
 							</tspan>
 						</text>
 					</g>
+					
 					<path
 						className="b-pop"
 						d="M2653.2-1.14V974.375l-1920,1.613c115.262,0,219.175-123.746,263.217-313.474L1150.1.473Z"
@@ -249,10 +254,10 @@ const Cuadropop: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 						<text
 							className="h-pop cursor-pointer"
 							transform="translate(58.5 20.25)">
-							<tspan x={0} y={23}>
+							<tspan x={selectedLanguage === 'es' ? 0 : 10} y={23}>
 								{t('Incumplimiento de leyes ')}
 							</tspan>
-							<tspan x={50} y={51}>
+							<tspan x={selectedLanguage === 'es' ? 50 : 12} y={51}>
 								{t('y regulaciones')}
 							</tspan>
 						</text>
@@ -306,26 +311,26 @@ const Cuadropop: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 						<text
 							className="h-pop cursor-pointer"
 							transform="translate(40.5 20.25)">
-							<tspan x={30} y={23}>
+							<tspan x={selectedLanguage === 'es' ? 30 : 70} y={23}>
 								{t('Pr\xE1cticas comerciales ')}
 							</tspan>
-							<tspan x={80} y={51}>
+							<tspan x={selectedLanguage === 'es' ? 80 : 20} y={51}>
 								{t('inadecuadas')}
 							</tspan>
 						</text>
 					</g>
-					<g transform="translate(0 1.14)">
+					{/* <g transform="translate(0 1.14)">
 						<g
 							className="k-pop"
-							transform="matrix(1, 0, 0, 1, -9, -6)">
-							<rect
+							transform="matrix(1, 0, 0, 1, -9, -6)"> */}
+							{/* <rect
 								className="i-pop"
 								width={1920}
 								height={74}
 								transform="translate(9 6)"
-							/>
-						</g>
-					</g>
+							/> */}
+						{/* </g> */}
+					{/* </g> */}
 					<text
 						className="j-pop"
 						transform="translate(693.578 11.706)">

@@ -3,6 +3,7 @@ import useGeneral from 'hooks/general.hook'
 import Robotica from './Components/Robotica'
 import RoboticSurgeryMobile from './RoboticSurgeryMobile'
 import { useTranslation } from 'react-i18next'
+import { useLanguage } from 'context/language'
 
 const RoboticSurgery: React.FC = (): JSX.Element => {
 	/** Hooks */
@@ -10,6 +11,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 	const [showModal, setShowModal] = React.useState(false)
 	const [openShow, setOpenShow] = React.useState(false)
 	const {t} = useTranslation()
+	const { selectedLanguage } = useLanguage()
 
 	return (
 		<React.Fragment>
@@ -111,7 +113,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 								</text>
 								<text
 									className="d-robotic-surgery"
-									transform="translate(968 421)">
+									transform={selectedLanguage === 'es' ? "translate(968 421)" : "translate(968 455)"}>
 									<tspan x={0} y={23}>
 										{
 											t('Una extensi\xF3n natural de los ojos, a trav\xE9s de una visi\xF3n en 3D y ')

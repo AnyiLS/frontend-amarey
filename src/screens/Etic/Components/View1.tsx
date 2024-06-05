@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import { useLanguage } from "context/language";
 
 export interface IEtic {
     onNext: (number: number) => void
@@ -7,6 +8,7 @@ export interface IEtic {
 
 const View1: React.FC<IEtic> = ({onNext}): JSX.Element => {
 	const {t} = useTranslation()
+	const { selectedLanguage } = useLanguage();
 	return (
 		<svg viewBox="0 37 414 855">
 			<defs>
@@ -150,7 +152,7 @@ const View1: React.FC<IEtic> = ({onNext}): JSX.Element => {
 				</text>
 				<text
 					className="i-reward-2-mobile"
-					transform="translate(36 761.49)">
+					transform={selectedLanguage === 'es' ? "translate(36 761.49)" : "translate(0 761.49)"}>
 					<tspan x={75} y={32}>
 						{t('Línea ética')}
 					</tspan>

@@ -1,3 +1,4 @@
+import { useLanguage } from 'context/language'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
@@ -7,6 +8,7 @@ const Codigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 	const [hover2, setHover2] = React.useState<boolean>(false)
 
 	const {t} = useTranslation()
+	const { selectedLanguage } = useLanguage();
 
 	return (
 		<div>
@@ -168,7 +170,7 @@ const Codigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 									style={{
 										fill: !hover ? '#fff' : '#e40032',
 									}}
-									transform="translate(158 30.925)">
+									transform={selectedLanguage === 'es' ? "translate(158 30.925)" : "translate(138 30.925)"}>
 									<tspan x={-72.612} y={0}>
 										{t('Ver C\xF3digo')}
 									</tspan>
@@ -203,7 +205,7 @@ const Codigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 										fill: !hover2 ? '#fff' : '#e40032',
 									}}
 									transform="translate(158 29.425)">
-									<tspan x={-93.84} y={0}>
+									<tspan x={selectedLanguage === 'es' ? -93.84 : -58.84} y={0}>
 										{t('Ver Manual de')}
 									</tspan>
 									<tspan x={-77.088} y={20}>
@@ -271,7 +273,7 @@ const Codigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							{t('ÉTICA Y COMPLIANCE ')}
 						</tspan>
 					</text>
-					<g transform="translate(0)" onClick={onClose}>
+					<g transform={selectedLanguage === 'es' ? 'translate(0)' : 'translate(0 -75)'} onClick={onClose}>
 						<path
 							className="g-codigo cursor-pointer"
 							d="M45.263,0V19.012L61.725,9.505l-7.863-4.54Z"

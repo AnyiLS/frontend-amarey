@@ -1,3 +1,4 @@
+import { useLanguage } from 'context/language'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
@@ -11,6 +12,7 @@ const HospitalLogisticsMobile: React.FC = (): JSX.Element => {
 	}, [])
 
 	const {t} = useTranslation()
+	const {selectedLanguage} = useLanguage()
 
 	return (
 		<React.Fragment>
@@ -91,7 +93,7 @@ const HospitalLogisticsMobile: React.FC = (): JSX.Element => {
 							<tspan x={-61.968} y={0}>
 								{t('LOGÍSTICA ')}
 							</tspan>
-							<tspan x={-84.3} y={26}>
+							<tspan x={selectedLanguage === 'es' ? -84.3 : -69.3} y={26}>
 								{t('HOSPITALARIA ')}
 							</tspan>
 						</text>

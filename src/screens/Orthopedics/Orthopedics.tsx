@@ -220,7 +220,7 @@ const Orthopedics: React.FC = (): JSX.Element => {
 											{t('Artroscopia ')}
 										</tspan>
 										<tspan x={0} y={107}>
-											{'Cráneo y maxilofacial '}
+											{t('Cráneo y maxilofacial ')}
 										</tspan>
 									</text>
 								</g>
