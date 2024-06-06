@@ -12,7 +12,7 @@ const LifeLine2012: React.FC<ILifeLine2000> = ({
       <defs>
         <style>
           {
-            ".item-107-a,.item-107-m{fill:#fff;}.item-107-b{fill:#e7002a;}.item-107-c,.item-107-i,.item-107-o,.item-107-q{fill:#001f5f;}.item-107-d{opacity:0.5;fill:url(#item-107-a);}.item-107-e{opacity:0.75;fill:url(#item-107-b);}.item-107-f{fill:none;stroke:#fff;stroke-width:3px;}.item-107-f,.item-107-g{opacity:0.6;}.item-107-h{fill:url(#item-107-c);}.item-107-i{font-size:32px;}.item-107-i,.item-107-m,.item-107-o{font-family:Silka-Bold, Silka;font-weight:700;}.item-107-j{clip-path:url(#item-107-h);}.item-107-k{fill:#182856;font-size:40px;font-family:Silka-Bold, Silka}.item-107-l{fill:#e40032;}.item-107-m{font-size:40px;}.item-107-n{fill:url(#107);}.item-107-o{font-size:60px;}.item-107-p{opacity:0.7;}.item-107-q{font-size:18px;font-family:Silka-SemiBold, Silka;font-weight:600;}.item-107-r{filter:url(#item-107-r);}.item-107-s{filter:url(#item-107-p);}.item-107-t{filter:url(#item-107-n);}.item-107-u{filter:url(#item-107-l);}.item-107-v{filter:url(#item-107-i);}.item-107-w{filter:url(#item-107-f);}.item-107-x{filter:url(#item-107-d);}"
+            ".item-107-a,.item-107-m{fill:#fff;}.item-107-b{fill:#e7002a;}.item-107-c,.item-107-i,.item-107-o,.item-107-q{fill:#001f5f;}.item-107-d{opacity:0.5;fill:url(#item-107-a);}.item-107-e{opacity:0.75;fill:url(#item-107-b);}.item-107-f{fill:none;stroke:#fff;stroke-width:3px;}.item-107-f,.item-107-g{opacity:0.6;}.item-107-h{fill:url(#item-107-c);}.item-107-i{font-size:32px;}.item-107-i,.item-107-m,.item-107-o{font-family:Silka-Bold, Silka;font-weight:700;}.item-107-j{clip-path:url(#item-107-h);}.item-107-k{fill:#182856;font-size:40px;font-family:Silka-Regular, Silka}.item-107-l{fill:#e40032;}.item-107-m{font-size:40px;}.item-107-n{fill:url(#107);}.item-107-o{font-size:60px;}.item-107-p{opacity:0.7;}.item-107-q{font-size:18px;font-family:Silka-SemiBold, Silka;font-weight:600;}.item-107-r{filter:url(#item-107-r);}.item-107-s{filter:url(#item-107-p);}.item-107-t{filter:url(#item-107-n);}.item-107-u{filter:url(#item-107-l);}.item-107-v{filter:url(#item-107-i);}.item-107-w{filter:url(#item-107-f);}.item-107-x{filter:url(#item-107-d);}"
           }
         </style>
         <linearGradient
@@ -232,7 +232,7 @@ const LifeLine2012: React.FC<ILifeLine2000> = ({
             transform="translate(-0.001)"
           />
         </g>
-        <text className="item-107-k" transform={selectedLanguage === 'es' ? "translate(567.856 345.866)" : "translate(537.856 335.866)"} style={{ fontSize: selectedLanguage === 'en' ? 32 : 20 }}>
+        <text className="item-107-k" transform={selectedLanguage === 'es' ? "translate(567.856 345.866)" : "translate(537.856 335.866)"} style={{ fontSize: selectedLanguage === 'en' ? 32 : 23 }}>
           <tspan x={selectedLanguage === 'es' ? 0 : -10} y={38}>
             {selectedLanguage === "es" ? t("Comienza la distribución de la línea de equipos médicos").split(" ").slice(0, 5).join(" ") : t("Comienza la distribución de la línea de equipos médicos").split(" ").slice(0, 3).join(" ")}
           </tspan>

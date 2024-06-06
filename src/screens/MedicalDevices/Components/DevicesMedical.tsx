@@ -1,16 +1,17 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next'
 
 const DevicesMedical: React.FC<{ height: string; onClose: () => void }> = ({
 	height,
 	onClose,
 }) => {
-	const {t} = useTranslation()
+	const { t } = useTranslation()
+
 	return (
 		<div>
 			<svg
 				width="100%"
-				height={"100%"}
+				height={'100%'}
 				viewBox="1 15 1920 1010"
 				preserveAspectRatio="none">
 				<defs>
@@ -27,7 +28,7 @@ const DevicesMedical: React.FC<{ height: string; onClose: () => void }> = ({
 						<image
 							preserveAspectRatio="xMidYMid slice"
 							width={1920}
-          height={1077.895}
+							height={1077.895}
 							xlinkHref="/images/equiposM.webp"
 						/>
 					</pattern>
@@ -75,47 +76,51 @@ const DevicesMedical: React.FC<{ height: string; onClose: () => void }> = ({
 					d="M1689.406,0H274.517C122.905,0,0,114.245,0,255.172V587.454H1929V222.709C1929,99.71,1821.731,0,1689.406,0"
 					transform="translate(2.864 436.546)"
 				/>
-				<text className="g-medical" transform="translate(264.864 729)">
+				<text
+					className="g-medical"
+					transform="translate(264.864 729)"
+					id="lines"
+					style={{ textAlign: 'justify' }}>
 					<tspan x={0} y={23}>
-						{
-							t('Con una variada gama de soluciones para \xE1reas especializadas, UCIs, quir\xF3fanos, urgencias y hospitalizaci\xF3n. ')
-						}
+						{t(
+							'Con una variada gama de soluciones para \xE1reas especializadas, UCIs, quir\xF3fanos, urgencias y hospitalizaci\xF3n. '
+						)}
 					</tspan>
 					<tspan x={0} y={51} />
 					<tspan x={0} y={79}>
-						{
-							t('En cumplimiento de la Ley 1672 del 19 de julio de 2013, Decreto 284 de 2018 y Resoluci\xF3n 851 del 2022. Amarey Nova ')
-						}
+						{t(
+							'En cumplimiento de la Ley 1672 del 19 de julio de 2013, Decreto 284 de 2018 y Resoluci\xF3n 851 del 2022. Amarey Nova '
+						)}
 					</tspan>
 					<tspan x={0} y={107}>
-						{
-							t('Medical S.a-medical, Ucipharma S.a-medical. y Novat\xE9cnica S.a-medical.S., ponen a su disposici\xF3n nuestro proceso ')
-						}
+						{t(
+							'Medical S.a-medical, Ucipharma S.a-medical. y Novat\xE9cnica S.a-medical.S., ponen a su disposici\xF3n nuestro proceso '
+						)}
 					</tspan>
 					<tspan x={0} y={135}>
-						{
-							t('de disposici\xF3n y gesti\xF3n de los residuos de aparatos el\xE9ctricos y electr\xF3nicos (RAEE) relacionados espec\xEDficamente con los equipos ')
-						}
+						{t(
+							'de disposici\xF3n y gesti\xF3n de los residuos de aparatos el\xE9ctricos y electr\xF3nicos (RAEE) relacionados espec\xEDficamente con los equipos '
+						)}
 					</tspan>
 					<tspan x={0} y={163}>
-						{
-							t('biom\xE9dicos el\xE9ctricos o electr\xF3nicos (con excepci\xF3n de todos los productos implantados e infectados) que ')
-						}
+						{t(
+							'biom\xE9dicos el\xE9ctricos o electr\xF3nicos (con excepci\xF3n de todos los productos implantados e infectados) que '
+						)}
 					</tspan>
 					<tspan x={0} y={191}>
-						{
-							t('distribuye nuestras compa\xF1\xEDas. Para este fin, solicitamos comunicarse directamente con nuestro representante de ')
-						}
+						{t(
+							'distribuye nuestras compa\xF1\xEDas. Para este fin, solicitamos comunicarse directamente con nuestro representante de '
+						)}
 					</tspan>
 					<tspan x={0} y={219}>
-						{
-							t('ventas asignado a su instituci\xF3n con el objetivo de programar su recolecci\xF3n. Para la disposici\xF3n final de los RAEE ')
-						}
+						{t(
+							'ventas asignado a su instituci\xF3n con el objetivo de programar su recolecci\xF3n. Para la disposici\xF3n final de los RAEE '
+						)}
 					</tspan>
 					<tspan x={0} y={247} xmlSpace="preserve">
-						{
-							t('realizamos la gesti\xF3n a trav\xE9s de una empresa autorizada por la Autoridad Ambiental.  ')
-						}
+						{t(
+							'realizamos la gesti\xF3n a trav\xE9s de una empresa autorizada por la Autoridad Ambiental.  '
+						)}
 					</tspan>
 				</text>
 				<text className="g-medical" transform="translate(441.864 476)">

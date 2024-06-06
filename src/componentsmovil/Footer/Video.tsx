@@ -169,12 +169,14 @@ const FooterMobile: React.FC = (): JSX.Element => {
 					</g>
 				</g>
 				<g transform="translate(79 293)">
+					<a href="https://grupoamarey.com/pdf/GRC-F-G-004-V5_FORMATO%20AUTORIZACIO%CC%81N%20DE%20TRATAMIENTO%20DE%20DATOS%20PERSONALES_.pdf" target="_blank" rel='noreferrer'>
 					<text className="c-footer-mobile">
 						<tspan className="e-footer-mobile" x={selectedLanguage === 'es' ? 29.712 : 39.712} y={11}>
 							{t('Tratamiento de datos personales')}
 						</tspan>
 						<tspan y={11} />
 					</text>
+					</a>
 				</g>
 				<a href="/contactenos">
 					<g transform="translate(79 92)">
@@ -186,11 +188,13 @@ const FooterMobile: React.FC = (): JSX.Element => {
 					</g>
 				</a>
 				<g transform="translate(41 326)">
+					<a href="https://grupoamarey.com/pdf/GRC-PL-A-001-V5. POLÍTICA DE TRATAMIENTO DE DATOS PERSONALES AMAREY 1.pdf" target="_blank" rel='noreferrer'>
 					<text className="f-footer-mobile">
 						<tspan x={selectedLanguage === 'es' ? 39.14 : 68.14} y={11}>
 							{t('Política de protección de datos personales')}
 						</tspan>
 					</text>
+					</a>
 				</g>
 			</svg>
 		</React.Fragment>

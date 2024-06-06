@@ -67,7 +67,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={258}
 								height={172.034}
-								xlinkHref="/images/biomedico.webp"
+								xlinkHref="/images/biomedico-movil.jpg"
 							/>
 						</pattern>
 						<filter
@@ -3550,7 +3550,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={170}
 								height={172.034}
-								xlinkHref="/images/biomedico.webp"
+								xlinkHref="/images/biomedico-movil.jpg"
 							/>
 						</pattern>
 						<filter
@@ -3961,7 +3961,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								preserveAspectRatio="none"
 								width={170}
 								height={205.664}
-								xlinkHref="/images/biomedico.webp"
+								xlinkHref="/images/biomedico-movil.jpg"
 							/>
 						</pattern>
 						<filter

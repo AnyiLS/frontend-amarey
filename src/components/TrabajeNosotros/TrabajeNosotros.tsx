@@ -235,7 +235,7 @@ const TrabajeNosotros = () => {
               </tspan>
             </text>
             {selectedLanguage === "es" && (
-              <g transform="translate(524 849)">
+              <g transform="translate(703 849)">
                 <text className="o-trabajo">
                   <tspan x={0} y={23}>
                     {"filosof\xEDa SER "}

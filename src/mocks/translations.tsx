@@ -3,6 +3,7 @@ import {englishTextsMobile,spanishTextsMobile} from './translation-movil'
 //spanish
 const spanishTexts = {
     translation: {
+        'biomedico_2': 'Biomedico',
         "Conoce Más":  "Conoce Más",
         "Un compromiso inquebrantable": "Un compromiso inquebrantable",
         'con la salud y la vida': 'con la salud y la vida',
@@ -47,7 +48,7 @@ const spanishTexts = {
         'transportadoras que': 'transportadoras que',
         'nos permiten llegar a': 'nos permiten llegar a',
         'cualquier parte del país': 'cualquier parte del país',
-        'Entregas de urgencias en': 'Entregas de urgencias en',
+        'Entregas de urgencias en': 'Entrega de urgencias en',
         'máximo 4 horas': 'máximo 4 horas',
         ' en las ': ' en las ',
         'principales ciudades': 'principales ciudades',
@@ -409,12 +410,12 @@ const spanishTexts = {
         'L\xE1mparas para quir\xF3fano, ': 'L\xE1mparas para quir\xF3fano, ',
         'procedimientos y exploraci\xF3n ': 'procedimientos y exploraci\xF3n ',
         'Unidades de suministro medicinales ': 'Unidades de suministro medicinales ',
-        'Con una variada gama de soluciones para \xE1reas especializadas, UCIs, quir\xF3fanos, urgencias y hospitalizaci\xF3n. ':'Con una variada gama de soluciones para \xE1reas especializadas, UCIs, quir\xF3fanos, urgencias y hospitalizaci\xF3n. ',
+        'Con una variada gama de soluciones para \xE1reas especializadas, UCIs, quir\xF3fanos, urgencias y hospitalizaci\xF3n. ':'Con  una  variada  gama  de  soluciones  para \xE1reas especializadas, UCIs, quir\xF3fanos, urgencias y hospitalizaci\xF3n. ',
         'En cumplimiento de la Ley 1672 del 19 de julio de 2013, Decreto 284 de 2018 y Resoluci\xF3n 851 del 2022. Amarey Nova ': 'En cumplimiento de la Ley 1672 del 19 de julio de 2013, Decreto 284 de 2018 y Resoluci\xF3n 851 del 2022. Amarey Nova ',
         'Medical S.a-medical, Ucipharma S.a-medical. y Novat\xE9cnica S.a-medical.S., ponen a su disposici\xF3n nuestro proceso ': 'Medical S.a-medical, Ucipharma S.a-medical. y Novat\xE9cnica S.a-medical.S., ponen a su disposici\xF3n nuestro proceso ',
-        'de disposici\xF3n y gesti\xF3n de los residuos de aparatos el\xE9ctricos y electr\xF3nicos (RAEE) relacionados espec\xEDficamente con los equipos ': 'de disposici\xF3n y gesti\xF3n de los residuos de aparatos el\xE9ctricos y electr\xF3nicos (RAEE) relacionados espec\xEDficamente con los equipos ',
-        'biom\xE9dicos el\xE9ctricos o electr\xF3nicos (con excepci\xF3n de todos los productos implantados e infectados) que ':'biom\xE9dicos el\xE9ctricos o electr\xF3nicos (con excepci\xF3n de todos los productos implantados e infectados) que ',
-        'distribuye nuestras compa\xF1\xEDas. Para este fin, solicitamos comunicarse directamente con nuestro representante de ': 'distribuye nuestras compa\xF1\xEDas. Para este fin, solicitamos comunicarse directamente con nuestro representante de ',
+        'de disposici\xF3n y gesti\xF3n de los residuos de aparatos el\xE9ctricos y electr\xF3nicos (RAEE) relacionados espec\xEDficamente con los equipos ': 'de disposici\xF3n y gesti\xF3n de los residuos de aparatos el\xE9ctricos y electr\xF3nicos (RAEE) relacionados espec\xEDficamente',
+        'biom\xE9dicos el\xE9ctricos o electr\xF3nicos (con excepci\xF3n de todos los productos implantados e infectados) que ':'con los equipos biom\xE9dicos el\xE9ctricos o electr\xF3nicos (con excepci\xF3n de todos los productos implantados e infectados)',
+        'distribuye nuestras compa\xF1\xEDas. Para este fin, solicitamos comunicarse directamente con nuestro representante de ': 'que distribuye nuestras compa\xF1\xEDas. Para este fin, solicitamos comunicarse directamente con nuestro representante de ',
         'ventas asignado a su instituci\xF3n con el objetivo de programar su recolecci\xF3n. Para la disposici\xF3n final de los RAEE ': 'ventas asignado a su instituci\xF3n con el objetivo de programar su recolecci\xF3n. Para la disposici\xF3n final de los RAEE ',
         'realizamos la gesti\xF3n a trav\xE9s de una empresa autorizada por la Autoridad Ambiental.  ': 'realizamos la gesti\xF3n a trav\xE9s de una empresa autorizada por la Autoridad Ambiental.  ',
         'ORTOPEDIA': 'ORTOPEDIA',

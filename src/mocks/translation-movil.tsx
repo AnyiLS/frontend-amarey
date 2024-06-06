@@ -805,7 +805,7 @@ export const spanishTextsMobile = {
         'llegar a ':'llegar a ',
         'cualquier ':'cualquier ',
         'parte del país':'parte del país',
-        'Entregas de urgencias ': 'Entregas de urgencias ',
+        'Entregas de urgencias ': 'Entrega de urgencias ',
         'en ': 'en ',
         '4 horas': '4 horas',
         'Pedidos electrónicos ': 'Pedidos electrónicos ',

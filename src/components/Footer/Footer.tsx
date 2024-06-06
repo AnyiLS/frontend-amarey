@@ -54,12 +54,12 @@ const Footer: React.FC = (): JSX.Element => {
 					<tspan x={354.5} y={38} />
 					<tspan x={selectedLanguage === 'es' ? 137.12 : 157.12} y={47}>
 						{
-							t('Reporte de eventos adversos o PQR: servicioalcliente@grupoamarey.c-5om')
+							t('Reporte de eventos adversos o PQR: servicioalcliente@grupoamarey.com')
 						}
 					</tspan>
 					<tspan x={354.5} y={56} />
 					<tspan x={selectedLanguage === 'es' ? 228.41 : 248.41} y={65}>
-						{t('Línea ética: linea.etica@grupoamarey.c-5om')}
+						{t('Línea ética: linea.etica@grupoamarey.com')}
 					</tspan>
 				</text>
 				<a href="https://facebook.com/GrupoAmarey/" target='_blank' rel='noreferrer'>
@@ -215,7 +215,7 @@ const Footer: React.FC = (): JSX.Element => {
 					</a>
 				</g>
 				<g transform="translate(698 214)">
-					<a href="https://grupoamarey.com/pdf/GRC-F-G-004-V5_FORMATO%20AUTORIZACIO%CC%81N%20DE%20TRATAMIENTO%20DE%20DATOS%20PERSONALES_.pdf" target="_blank" rel='noreferrer'>
+					<a href="https://grupoamarey.com/pdf/GRC-PL-A-001-V5. POLÍTICA DE TRATAMIENTO DE DATOS PERSONALES AMAREY 1.pdf" target="_blank" rel='noreferrer'>
 						<text className="j-5">
 							<tspan x={selectedLanguage === 'es' ? 134.14 : 186.14} y={11}>
 								{

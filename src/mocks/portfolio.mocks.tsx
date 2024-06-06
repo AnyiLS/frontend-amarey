@@ -118,7 +118,7 @@ export const carouselPortfolio = (t: any, selectedLanguage: 'es' | 'en'): Carous
         width: '600'
     },
     {
-        images: '/images/biomedico.webp', 
+        images: '/images/biomedico-movil.jpg', 
         title: t('Mantenimiento'),
         title_2: t('biomedico_2'),
         x_2: 96.715,
