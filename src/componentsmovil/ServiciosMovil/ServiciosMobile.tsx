@@ -1382,7 +1382,6 @@ export const ServiciosMovil: React.FC = () => {
 						src="https://grupoamarey.com/pdf/video/tinywow_CEDICONOFC (1).mp4"
 						width="100%"
 						height="100%"
-						autoPlay
 						controls
 						id="video-cifras"
 						style={{

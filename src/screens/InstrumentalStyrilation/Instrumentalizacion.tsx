@@ -129,7 +129,7 @@ const InstrumentalStyrilationMobile: React.FC = (): JSX.Element => {
 							className="g-reward-2-mobile"
 							transform="translate(207 26)">
 							<tspan x={-101.322} y={0}>
-								{t(' Soluciones en salud')}
+								{t('SOLUCIONES EN SALUD')}
 							</tspan>
 						</text>
 						<g transform="translate(366.585 13.292)" onClick={() => window.location.href = '/productos'}>
@@ -327,7 +327,7 @@ const InstrumentalStyrilationMobile: React.FC = (): JSX.Element => {
 							className="k-reward-2-mobile"
 							transform="translate(207 26)">
 							<tspan x={-101.322} y={0}>
-								{t('Soluciones en salud')}
+								{t('SOLUCIONES EN SALUD')}
 							</tspan>
 						</text>
 						<g transform="translate(366.584 13.292)"  onClick={() => setView(0)}>

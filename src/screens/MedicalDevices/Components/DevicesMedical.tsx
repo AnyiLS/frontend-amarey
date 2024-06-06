@@ -62,7 +62,7 @@ const DevicesMedical: React.FC<{ height: string; onClose: () => void }> = ({
 				/>
 				<text className="d-medical" transform="translate(1782.864 115)">
 					<tspan x={-266.8} y={0}>
-						{'SOLUCIONES EN SALUD'}
+						{t('SOLUCIONES EN SALUD')}
 					</tspan>
 				</text>
 				<text className="e-medical" transform="translate(962.864 399)">

@@ -132,7 +132,7 @@ const ProductosMobile: React.FC = (): JSX.Element => {
 						<image
 							width={1966}
 							height={1311}
-							xlinkHref="/images/mobile/products/neuro/image-5.webp"
+							xlinkHref="/images/t-logistic.webp"
 						/>
 					</pattern>
 					<filter

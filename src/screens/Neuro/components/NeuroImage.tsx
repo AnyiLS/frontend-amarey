@@ -65,7 +65,7 @@ const NeuroImage: React.FC<{ height: string; onClose: () => void }> = ({
 				/>
 				<text className="d-neuro" transform="translate(1780 91.762)">
 					<tspan x={-228.8} y={0}>
-						{'SOLUCIONES EN SALUD'}
+						{t('SOLUCIONES EN SALUD')}
 					</tspan>
 				</text>
 				<g transform="translate(1244 750.372)">

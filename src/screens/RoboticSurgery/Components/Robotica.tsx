@@ -63,7 +63,7 @@ const Robotica: React.FC<{ height: string; onClose: () => void }> = ({
 				/>
 				<text className="d-robotica" transform="translate(1782.577 66)">
 					<tspan x={-269.8} y={0}>
-						{'SOLUCIONES EN SALUD'}
+						{t('SOLUCIONES EN SALUD')}
 					</tspan>
 				</text>
 				<path
@@ -75,7 +75,7 @@ const Robotica: React.FC<{ height: string; onClose: () => void }> = ({
 					className="f-robotica"
 					transform="translate(962.577 590.204)">
 					<tspan x={-263.616} y={0}>
-						{'Beneficios de la cirug\xEDa rob\xF3tica:'}
+						{t('Beneficios de la cirug\xEDa rob\xF3tica:')}
 					</tspan>
 				</text>
 				<text className="g-robotica" transform="translate(414.577 642)">
@@ -313,7 +313,7 @@ const Robotica: React.FC<{ height: string; onClose: () => void }> = ({
 							className="d-robotica"
 							transform="translate(92.852 23)">
 							<tspan x={-71.52} y={0}>
-								{'Volver'}
+								{t('Volver')}
 							</tspan>
 						</text>
 					</a>

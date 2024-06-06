@@ -214,7 +214,7 @@ const SelectImage: React.FC<{ height: string; onClose: () => void }> = ({
 							className="n-cuidado"
 							transform="translate(92.852 23)">
 							<tspan x={-71.52} y={0}>
-								{'Volver'}
+								{t('Volver')}
 							</tspan>
 						</text>
 					</a>

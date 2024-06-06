@@ -647,8 +647,6 @@ export const CifrasMovil: React.FC = () => {
 					<video
 						src={video[numberVideo].url}
 						className="object-cover h-[82%] w-full"
-						autoPlay
-						muted={mute}
 						id="video-cifras"
 						controls></video>
 					{/* <img

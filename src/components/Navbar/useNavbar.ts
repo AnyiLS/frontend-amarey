@@ -28,21 +28,65 @@ const useNavbar = () => {
         return () => {
             window.removeEventListener('scroll', handleGetScroll)
         }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [previousScrollPosition])
 
-    React.useEffect(( ) => {
-        const mainTag: HTMLDivElement = document.getElementById('main') as HTMLDivElement;
-        const navbarContainer: HTMLElement = document.getElementById('navbar__container') as HTMLElement;
+    React.useEffect(() => {
+        const width: number = window.innerWidth
 
-        if (isScroll) {
-            navbarContainer.classList.add('navbar__container');
-            navbarContainer.classList.remove('navbar__estatic');
-            mainTag.style.marginTop = `${navbarContainer.clientHeight.toString()}px`;
-        } else {
-            navbarContainer.classList.add("navbar__estatic");
-            navbarContainer.classList.remove("navbar__container");
-            mainTag.style.marginTop = `0px`;
+        if (width > 1024) {
+            const mainTag: HTMLDivElement = document.getElementById('main') as HTMLDivElement;
+            const navbarContainer: HTMLElement = document.getElementById('navbar__container') as HTMLElement;
+
+            if (isScroll) {
+                navbarContainer.classList.add('navbar__container');
+                navbarContainer.classList.remove('navbar__estatic');
+                mainTag.style.marginTop = `${navbarContainer.clientHeight.toString()}px`;
+            } else {
+                navbarContainer.classList.add("navbar__estatic");
+                navbarContainer.classList.remove("navbar__container");
+                mainTag.style.marginTop = `0px`;
+            }
+        }
+
+        window.addEventListener('resize', () => {
+            const width: number = window.innerWidth
+
+            if (width > 1024) {
+                const mainTag: HTMLDivElement = document.getElementById('main') as HTMLDivElement;
+                const navbarContainer: HTMLElement = document.getElementById('navbar__container') as HTMLElement;
+
+                if (isScroll) {
+                    navbarContainer.classList.add('navbar__container');
+                    navbarContainer.classList.remove('navbar__estatic');
+                    mainTag.style.marginTop = `${navbarContainer.clientHeight.toString()}px`;
+                } else {
+                    navbarContainer.classList.add("navbar__estatic");
+                    navbarContainer.classList.remove("navbar__container");
+                    mainTag.style.marginTop = `0px`;
+                }
+            }
+        })
+
+        return () => {
+            window.removeEventListener('resize', () => {
+                const width: number = window.innerWidth
+
+                if (width > 1024) {
+                    const mainTag: HTMLDivElement = document.getElementById('main') as HTMLDivElement;
+                    const navbarContainer: HTMLElement = document.getElementById('navbar__container') as HTMLElement;
+
+                    if (isScroll) {
+                        navbarContainer.classList.add('navbar__container');
+                        navbarContainer.classList.remove('navbar__estatic');
+                        mainTag.style.marginTop = `${navbarContainer.clientHeight.toString()}px`;
+                    } else {
+                        navbarContainer.classList.add("navbar__estatic");
+                        navbarContainer.classList.remove("navbar__container");
+                        mainTag.style.marginTop = `0px`;
+                    }
+                }
+            })
         }
     }, [isScroll])
 

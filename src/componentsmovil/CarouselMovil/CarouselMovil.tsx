@@ -1077,7 +1077,6 @@ export const CarouselMovil: React.FC = () => {
 
 										if (video) {
 											video.currentTime = 0
-											video.play()
 										}
 									}}>
 									<g transform="translate(30.813 1489.888)">
@@ -2582,7 +2581,6 @@ export const CarouselMovil: React.FC = () => {
 				style={{ display: showPopup ? 'flex' : 'none' }}>
 				<video
 					src="https://grupoamarey.com/pdf/video/Origen pentamero_1.mp4"
-					muted={mute}
 					controls
 					className="w-full h-full"
 					id="video-1"

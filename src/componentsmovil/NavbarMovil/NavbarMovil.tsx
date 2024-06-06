@@ -551,7 +551,7 @@ export const NavbarMovil: React.FC = () => {
 											? 'translate(0 161)'
 											: 'translate(0 0)'
 									}>
-									<g transform="translate(3 568.613)">
+									{/* <g transform="translate(3 568.613)">
 										<g
 											className="u-navbar-mobile"
 											transform="matrix(1, 0, 0, 1, -9, -574.61)">
@@ -579,7 +579,7 @@ export const NavbarMovil: React.FC = () => {
 												{'Ucitech'}
 											</tspan>
 										</text>
-									</g>
+									</g> */}
 									<g transform="translate(3 461.534)">
 										<g
 											onClick={() =>

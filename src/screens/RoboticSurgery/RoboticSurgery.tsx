@@ -108,7 +108,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 									className="c-robotic-surgery"
 									transform="translate(403 833)">
 									<tspan x={-263.34} y={0}>
-										{'CIRUG\xCDA ROB\xD3TICA '}
+										{t('CIRUG\xCDA ROB\xD3TICA ')}
 									</tspan>
 								</text>
 								<text
