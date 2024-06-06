@@ -79,6 +79,7 @@ export const NavbarMovil: React.FC = () => {
 	React.useEffect(() => {
 		if (!openMenu) setStep(0)
 	}, [openMenu])
+	const [image, setImage] = React.useState<string>('/images/spanish-movil.png')
 
 	/** Hooks */
 	const { results, handleSearchPage } = useNavbar()
@@ -326,22 +327,152 @@ export const NavbarMovil: React.FC = () => {
 										/>
 									</g>
 									<g
-										transform="translate(280 5)"
+										transform="translate(280 10)"
 										onClick={handleChangeSelectedLanguage}>
 										<foreignObject
 											x={0}
 											y={0}
 											width={38}
 											height={38}>
-											<img
-												src={
-													selectedLanguage === 'en'
-														? '/images/english-mobile.png'
-														: '/images/spanish-movil.png'
-												}
-												alt=""
-												className="h-[25px] w-[25px]"
-											/>
+											{selectedLanguage === 'es' ? (
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											id="Componente_38_3"
+											data-name="Componente 38 – 3"
+											width="25"
+											height="25"
+											viewBox="0 0 25 25"
+										>
+											<g id="Grupo_5836" data-name="Grupo 5836">
+												<path
+													id="Trazado_68877"
+													data-name="Trazado 68877"
+													d="M1409.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
+													transform="translate(-1390.173 -38.176)"
+													fill="#001f5f"
+												/>
+												<path
+													id="Trazado_68878"
+													data-name="Trazado 68878"
+													d="M1479.116,60.531H1464.3a8.906,8.906,0,0,1,14.813,0"
+													transform="translate(-1461.956 -55.722)"
+													fill="#fd0002"
+												/>
+												<path
+													id="Trazado_68879"
+													data-name="Trazado 68879"
+													d="M1479.116,571.931a8.906,8.906,0,0,1-14.812,0Z"
+													transform="translate(-1461.956 -557.234)"
+													fill="#fd0002"
+												/>
+												<path
+													id="Trazado_68880"
+													data-name="Trazado 68880"
+													d="M1426.371,208.875a8.862,8.862,0,0,1-1.5,4.944h-14.812a8.909,8.909,0,0,1,0-9.888h14.812a8.862,8.862,0,0,1,1.5,4.944"
+													transform="translate(-1407.714 -199.122)"
+													fill="#ff0"
+												/>
+											</g>
+										</svg>
+									) : (
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											xmlnsXlink="http://www.w3.org/1999/xlink"
+											id="Componente_38_3"
+											data-name="Componente 38 – 3"
+											width="25"
+											height="25"
+											viewBox="0 0 25 25"
+										>
+											<defs>
+												<clipPath id="clip-path">
+													<path
+														id="Trazado_68887"
+														data-name="Trazado 68887"
+														d="M321.584,78.464a8.877,8.877,0,1,0,8.877-8.877,8.877,8.877,0,0,0-8.877,8.877"
+														transform="translate(-321.584 -69.587)"
+														fill="none"
+													/>
+												</clipPath>
+											</defs>
+											<g id="Grupo_5837" data-name="Grupo 5837">
+												<path
+													id="Trazado_68882"
+													data-name="Trazado 68882"
+													d="M309.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
+													transform="translate(-290.173 -38.176)"
+													fill="#001f5f"
+												/>
+												<g
+													id="Grupo_5836"
+													data-name="Grupo 5836"
+													transform="translate(0.876 0.876)"
+													clipPath="url(#clip-path)"
+												>
+													<path
+														id="Trazado_68883"
+														data-name="Trazado 68883"
+														d="M35.689,21.13,4.668,0H0V1.552L29.482,21.635h6.207Z"
+														transform="translate(-8.967 -1.94)"
+														fill="#feffff"
+													/>
+													<path
+														id="Trazado_68884"
+														data-name="Trazado 68884"
+														d="M35.689,0H31.034L0,21.14v.495H6.221L35.689,1.562Z"
+														transform="translate(-8.967 -1.94)"
+														fill="#feffff"
+													/>
+													<rect
+														id="Rectángulo_1963"
+														data-name="Rectángulo 1963"
+														width="5.222"
+														height="21.635"
+														transform="translate(6.242 -1.94)"
+														fill="#feffff"
+													/>
+													<rect
+														id="Rectángulo_1964"
+														data-name="Rectángulo 1964"
+														width="35.491"
+														height="5.104"
+														transform="translate(-8.835 6.538)"
+														fill="#feffff"
+													/>
+													<rect
+														id="Rectángulo_1965"
+														data-name="Rectángulo 1965"
+														width="35.491"
+														height="3.899"
+														transform="translate(-8.835 7.074)"
+														fill="#fd0002"
+													/>
+													<rect
+														id="Rectángulo_1966"
+														data-name="Rectángulo 1966"
+														width="3.365"
+														height="21.635"
+														transform="translate(7.201 -1.94)"
+														fill="#fd0002"
+													/>
+													<path
+														id="Trazado_68885"
+														data-name="Trazado 68885"
+														d="M35.409,21.635,67.17,0H64.832L33.071,21.635Z"
+														transform="translate(-41.116 -1.94)"
+														fill="#fd0002"
+													/>
+													<path
+														id="Trazado_68886"
+														data-name="Trazado 68886"
+														d="M58.533,21.635,26.772,0H24.433L56.195,21.635Z"
+														transform="translate(-32.72 -1.94)"
+														fill="#fd0002"
+													/>
+												</g>
+											</g>
+										</svg>
+									)}
 										</foreignObject>
 									</g>
 									<g transform="translate(37 4.493)">
@@ -452,8 +583,8 @@ export const NavbarMovil: React.FC = () => {
 														className="h-[40px] w-full flex items-center border-b-solid border-b-[1px] border-[#e6e6e6] px-[10px]"
 														key={index}
 														onClick={() =>
-															(window.location.href =
-																item.url)
+														(window.location.href =
+															item.url)
 														}>
 														<span>
 															{item.label}
@@ -583,8 +714,8 @@ export const NavbarMovil: React.FC = () => {
 									<g transform="translate(3 461.534)">
 										<g
 											onClick={() =>
-												(window.location.href =
-													'/contactenos')
+											(window.location.href =
+												'/contactenos')
 											}>
 											<g
 												className="t-navbar-mobile"
@@ -642,8 +773,8 @@ export const NavbarMovil: React.FC = () => {
 									<g
 										transform="translate(3 483.058)"
 										onClick={() =>
-											(window.location.href =
-												'/trabaje-nosotros')
+										(window.location.href =
+											'/trabaje-nosotros')
 										}>
 										<g
 											className="s-navbar-mobile"
@@ -676,8 +807,8 @@ export const NavbarMovil: React.FC = () => {
 									<g
 										transform="translate(3 440.796)"
 										onClick={() =>
-											(window.location.href =
-												'/codigo-linea-etica')
+										(window.location.href =
+											'/codigo-linea-etica')
 										}>
 										<g
 											className="r-navbar-mobile"
@@ -1113,21 +1244,151 @@ export const NavbarMovil: React.FC = () => {
 											transform="translate(11 6)"
 										/>
 									</g>
-									<g transform="translate(280 5)" onClick={handleChangeSelectedLanguage}>
+									<g transform="translate(280 10)" onClick={handleChangeSelectedLanguage}>
 										<foreignObject
 											x={0}
 											y={0}
 											width={38}
 											height={38}>
-											<img
-												src={
-													selectedLanguage === 'en'
-														? '/images/english-mobile.png'
-														: '/images/spanish-movil.png'
-												}
-												alt=""
-												className="h-[25px] w-[25px]"
-											/>
+											{selectedLanguage === 'es' ? (
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											id="Componente_38_3"
+											data-name="Componente 38 – 3"
+											width="25"
+											height="25"
+											viewBox="0 0 25 25"
+										>
+											<g id="Grupo_5836" data-name="Grupo 5836">
+												<path
+													id="Trazado_68877"
+													data-name="Trazado 68877"
+													d="M1409.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
+													transform="translate(-1390.173 -38.176)"
+													fill="#001f5f"
+												/>
+												<path
+													id="Trazado_68878"
+													data-name="Trazado 68878"
+													d="M1479.116,60.531H1464.3a8.906,8.906,0,0,1,14.813,0"
+													transform="translate(-1461.956 -55.722)"
+													fill="#fd0002"
+												/>
+												<path
+													id="Trazado_68879"
+													data-name="Trazado 68879"
+													d="M1479.116,571.931a8.906,8.906,0,0,1-14.812,0Z"
+													transform="translate(-1461.956 -557.234)"
+													fill="#fd0002"
+												/>
+												<path
+													id="Trazado_68880"
+													data-name="Trazado 68880"
+													d="M1426.371,208.875a8.862,8.862,0,0,1-1.5,4.944h-14.812a8.909,8.909,0,0,1,0-9.888h14.812a8.862,8.862,0,0,1,1.5,4.944"
+													transform="translate(-1407.714 -199.122)"
+													fill="#ff0"
+												/>
+											</g>
+										</svg>
+									) : (
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											xmlnsXlink="http://www.w3.org/1999/xlink"
+											id="Componente_38_3"
+											data-name="Componente 38 – 3"
+											width="25"
+											height="25"
+											viewBox="0 0 25 25"
+										>
+											<defs>
+												<clipPath id="clip-path">
+													<path
+														id="Trazado_68887"
+														data-name="Trazado 68887"
+														d="M321.584,78.464a8.877,8.877,0,1,0,8.877-8.877,8.877,8.877,0,0,0-8.877,8.877"
+														transform="translate(-321.584 -69.587)"
+														fill="none"
+													/>
+												</clipPath>
+											</defs>
+											<g id="Grupo_5837" data-name="Grupo 5837">
+												<path
+													id="Trazado_68882"
+													data-name="Trazado 68882"
+													d="M309.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
+													transform="translate(-290.173 -38.176)"
+													fill="#001f5f"
+												/>
+												<g
+													id="Grupo_5836"
+													data-name="Grupo 5836"
+													transform="translate(0.876 0.876)"
+													clipPath="url(#clip-path)"
+												>
+													<path
+														id="Trazado_68883"
+														data-name="Trazado 68883"
+														d="M35.689,21.13,4.668,0H0V1.552L29.482,21.635h6.207Z"
+														transform="translate(-8.967 -1.94)"
+														fill="#feffff"
+													/>
+													<path
+														id="Trazado_68884"
+														data-name="Trazado 68884"
+														d="M35.689,0H31.034L0,21.14v.495H6.221L35.689,1.562Z"
+														transform="translate(-8.967 -1.94)"
+														fill="#feffff"
+													/>
+													<rect
+														id="Rectángulo_1963"
+														data-name="Rectángulo 1963"
+														width="5.222"
+														height="21.635"
+														transform="translate(6.242 -1.94)"
+														fill="#feffff"
+													/>
+													<rect
+														id="Rectángulo_1964"
+														data-name="Rectángulo 1964"
+														width="35.491"
+														height="5.104"
+														transform="translate(-8.835 6.538)"
+														fill="#feffff"
+													/>
+													<rect
+														id="Rectángulo_1965"
+														data-name="Rectángulo 1965"
+														width="35.491"
+														height="3.899"
+														transform="translate(-8.835 7.074)"
+														fill="#fd0002"
+													/>
+													<rect
+														id="Rectángulo_1966"
+														data-name="Rectángulo 1966"
+														width="3.365"
+														height="21.635"
+														transform="translate(7.201 -1.94)"
+														fill="#fd0002"
+													/>
+													<path
+														id="Trazado_68885"
+														data-name="Trazado 68885"
+														d="M35.409,21.635,67.17,0H64.832L33.071,21.635Z"
+														transform="translate(-41.116 -1.94)"
+														fill="#fd0002"
+													/>
+													<path
+														id="Trazado_68886"
+														data-name="Trazado 68886"
+														d="M58.533,21.635,26.772,0H24.433L56.195,21.635Z"
+														transform="translate(-32.72 -1.94)"
+														fill="#fd0002"
+													/>
+												</g>
+											</g>
+										</svg>
+									)}
 										</foreignObject>
 									</g>
 									<g transform="translate(37 4.493)">
@@ -1238,8 +1499,8 @@ export const NavbarMovil: React.FC = () => {
 														className="h-[40px] w-full flex items-center border-b-solid border-b-[1px] border-[#e6e6e6] px-[10px]"
 														key={index}
 														onClick={() =>
-															(window.location.href =
-																item.url)
+														(window.location.href =
+															item.url)
 														}>
 														<span>
 															{item.label}
@@ -1354,8 +1615,8 @@ export const NavbarMovil: React.FC = () => {
 										height={37}
 										transform="translate(2 399)"
 										onClick={() =>
-											(window.location.href =
-												'/filosofia')
+										(window.location.href =
+											'/filosofia')
 										}
 									/>
 									<rect
@@ -1364,8 +1625,8 @@ export const NavbarMovil: React.FC = () => {
 										height={37}
 										transform="translate(2 435)"
 										onClick={() =>
-											(window.location.href =
-												'/reconocimientos')
+										(window.location.href =
+											'/reconocimientos')
 										}
 									/>
 									<rect
@@ -1374,8 +1635,8 @@ export const NavbarMovil: React.FC = () => {
 										height={43}
 										transform="translate(2 469)"
 										onClick={() =>
-											(window.location.href =
-												'/responsabilidad')
+										(window.location.href =
+											'/responsabilidad')
 										}
 									/>
 									<text
@@ -1392,8 +1653,8 @@ export const NavbarMovil: React.FC = () => {
 										className="c-navbar-mobile"
 										transform="translate(77 421)"
 										onClick={() =>
-											(window.location.href =
-												'/filosofia')
+										(window.location.href =
+											'/filosofia')
 										}>
 										<tspan x={0} y={0}>
 											{t('Filosofía')}
@@ -1403,8 +1664,8 @@ export const NavbarMovil: React.FC = () => {
 										className="c-navbar-mobile"
 										transform="translate(77 457)"
 										onClick={() =>
-											(window.location.href =
-												'/reconocimientos')
+										(window.location.href =
+											'/reconocimientos')
 										}>
 										<tspan x={0} y={0}>
 											{t('Reconocimientos')}
@@ -1414,8 +1675,8 @@ export const NavbarMovil: React.FC = () => {
 										className="c-navbar-mobile"
 										transform="translate(77 492)"
 										onClick={() =>
-											(window.location.href =
-												'/responsabilidad')
+										(window.location.href =
+											'/responsabilidad')
 										}>
 										<tspan x={0} y={0}>
 											{t('RSE')}
@@ -1458,8 +1719,8 @@ export const NavbarMovil: React.FC = () => {
 												className="m-navbar-mobile"
 												transform="translate(9 687)"
 												onClick={() =>
-													(window.location.href =
-														'/contactenos')
+												(window.location.href =
+													'/contactenos')
 												}>
 												<rect
 													className="o-navbar-mobile"
@@ -1539,8 +1800,8 @@ export const NavbarMovil: React.FC = () => {
 									<g
 										transform="translate(2 596.796)"
 										onClick={() =>
-											(window.location.href =
-												'/codigo-linea-etica')
+										(window.location.href =
+											'/codigo-linea-etica')
 										}>
 										<g
 											className="t-navbar-mobile"
@@ -1966,21 +2227,151 @@ export const NavbarMovil: React.FC = () => {
 											transform="translate(11 6)"
 										/>
 									</g>
-									<g transform="translate(280 5)" onClick={handleChangeSelectedLanguage}>
+									<g transform="translate(280 10)" onClick={handleChangeSelectedLanguage}>
 										<foreignObject
 											x={0}
 											y={0}
 											width={38}
 											height={38}>
-											<img
-												src={
-													selectedLanguage === 'en'
-														? '/images/english-mobile.png'
-														: '/images/spanish-movil.png'
-												}
-												alt=""
-												className="h-[25px] w-[25px]"
-											/>
+											{selectedLanguage === 'es' ? (
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											id="Componente_38_3"
+											data-name="Componente 38 – 3"
+											width="25"
+											height="25"
+											viewBox="0 0 25 25"
+										>
+											<g id="Grupo_5836" data-name="Grupo 5836">
+												<path
+													id="Trazado_68877"
+													data-name="Trazado 68877"
+													d="M1409.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
+													transform="translate(-1390.173 -38.176)"
+													fill="#001f5f"
+												/>
+												<path
+													id="Trazado_68878"
+													data-name="Trazado 68878"
+													d="M1479.116,60.531H1464.3a8.906,8.906,0,0,1,14.813,0"
+													transform="translate(-1461.956 -55.722)"
+													fill="#fd0002"
+												/>
+												<path
+													id="Trazado_68879"
+													data-name="Trazado 68879"
+													d="M1479.116,571.931a8.906,8.906,0,0,1-14.812,0Z"
+													transform="translate(-1461.956 -557.234)"
+													fill="#fd0002"
+												/>
+												<path
+													id="Trazado_68880"
+													data-name="Trazado 68880"
+													d="M1426.371,208.875a8.862,8.862,0,0,1-1.5,4.944h-14.812a8.909,8.909,0,0,1,0-9.888h14.812a8.862,8.862,0,0,1,1.5,4.944"
+													transform="translate(-1407.714 -199.122)"
+													fill="#ff0"
+												/>
+											</g>
+										</svg>
+									) : (
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											xmlnsXlink="http://www.w3.org/1999/xlink"
+											id="Componente_38_3"
+											data-name="Componente 38 – 3"
+											width="25"
+											height="25"
+											viewBox="0 0 25 25"
+										>
+											<defs>
+												<clipPath id="clip-path">
+													<path
+														id="Trazado_68887"
+														data-name="Trazado 68887"
+														d="M321.584,78.464a8.877,8.877,0,1,0,8.877-8.877,8.877,8.877,0,0,0-8.877,8.877"
+														transform="translate(-321.584 -69.587)"
+														fill="none"
+													/>
+												</clipPath>
+											</defs>
+											<g id="Grupo_5837" data-name="Grupo 5837">
+												<path
+													id="Trazado_68882"
+													data-name="Trazado 68882"
+													d="M309.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
+													transform="translate(-290.173 -38.176)"
+													fill="#001f5f"
+												/>
+												<g
+													id="Grupo_5836"
+													data-name="Grupo 5836"
+													transform="translate(0.876 0.876)"
+													clipPath="url(#clip-path)"
+												>
+													<path
+														id="Trazado_68883"
+														data-name="Trazado 68883"
+														d="M35.689,21.13,4.668,0H0V1.552L29.482,21.635h6.207Z"
+														transform="translate(-8.967 -1.94)"
+														fill="#feffff"
+													/>
+													<path
+														id="Trazado_68884"
+														data-name="Trazado 68884"
+														d="M35.689,0H31.034L0,21.14v.495H6.221L35.689,1.562Z"
+														transform="translate(-8.967 -1.94)"
+														fill="#feffff"
+													/>
+													<rect
+														id="Rectángulo_1963"
+														data-name="Rectángulo 1963"
+														width="5.222"
+														height="21.635"
+														transform="translate(6.242 -1.94)"
+														fill="#feffff"
+													/>
+													<rect
+														id="Rectángulo_1964"
+														data-name="Rectángulo 1964"
+														width="35.491"
+														height="5.104"
+														transform="translate(-8.835 6.538)"
+														fill="#feffff"
+													/>
+													<rect
+														id="Rectángulo_1965"
+														data-name="Rectángulo 1965"
+														width="35.491"
+														height="3.899"
+														transform="translate(-8.835 7.074)"
+														fill="#fd0002"
+													/>
+													<rect
+														id="Rectángulo_1966"
+														data-name="Rectángulo 1966"
+														width="3.365"
+														height="21.635"
+														transform="translate(7.201 -1.94)"
+														fill="#fd0002"
+													/>
+													<path
+														id="Trazado_68885"
+														data-name="Trazado 68885"
+														d="M35.409,21.635,67.17,0H64.832L33.071,21.635Z"
+														transform="translate(-41.116 -1.94)"
+														fill="#fd0002"
+													/>
+													<path
+														id="Trazado_68886"
+														data-name="Trazado 68886"
+														d="M58.533,21.635,26.772,0H24.433L56.195,21.635Z"
+														transform="translate(-32.72 -1.94)"
+														fill="#fd0002"
+													/>
+												</g>
+											</g>
+										</svg>
+									)}
 										</foreignObject>
 									</g>
 									<g transform="translate(37 4.493)">
@@ -2091,8 +2482,8 @@ export const NavbarMovil: React.FC = () => {
 														className="h-[40px] w-full flex items-center border-b-solid border-b-[1px] border-[#e6e6e6] px-[10px]"
 														key={index}
 														onClick={() =>
-															(window.location.href =
-																item.url)
+														(window.location.href =
+															item.url)
 														}>
 														<span>
 															{item.label}
@@ -2190,8 +2581,8 @@ export const NavbarMovil: React.FC = () => {
 										height={48}
 										transform="translate(0 397)"
 										onClick={() =>
-											(window.location.href =
-												'/nuestros-aliados')
+										(window.location.href =
+											'/nuestros-aliados')
 										}
 									/>
 									<rect
@@ -2200,8 +2591,8 @@ export const NavbarMovil: React.FC = () => {
 										height={38}
 										transform="translate(0 443)"
 										onClick={() =>
-											(window.location.href =
-												'/biomedico')
+										(window.location.href =
+											'/biomedico')
 										}
 									/>
 									<rect
@@ -2210,16 +2601,16 @@ export const NavbarMovil: React.FC = () => {
 										height={49}
 										transform="translate(0 481)"
 										onClick={() =>
-											(window.location.href =
-												'/productos')
+										(window.location.href =
+											'/productos')
 										}
 									/>
 									<text
 										className="c-navbar-mobile"
 										transform="translate(75 430)"
 										onClick={() =>
-											(window.location.href =
-												'/nuestros-aliados')
+										(window.location.href =
+											'/nuestros-aliados')
 										}>
 										<tspan x={0} y={0}>
 											{t('Nuestros aliados')}
@@ -2229,8 +2620,8 @@ export const NavbarMovil: React.FC = () => {
 										className="c-navbar-mobile"
 										transform="translate(75 466)"
 										onClick={() =>
-											(window.location.href =
-												'/biomedico')
+										(window.location.href =
+											'/biomedico')
 										}>
 										<tspan x={0} y={0}>
 											{t('Mantenimiento Biomédico')}
@@ -2240,8 +2631,8 @@ export const NavbarMovil: React.FC = () => {
 										className="c-navbar-mobile"
 										transform="translate(75 502)"
 										onClick={() =>
-											(window.location.href =
-												'/productos')
+										(window.location.href =
+											'/productos')
 										}>
 										<tspan x={0} y={0}>
 											{t('Soluciones en salud​')}
@@ -2289,8 +2680,8 @@ export const NavbarMovil: React.FC = () => {
 									<g transform="translate(0 586.534)">
 										<g
 											onClick={() =>
-												(window.location.href =
-													'/contactenos')
+											(window.location.href =
+												'/contactenos')
 											}>
 											<g
 												className="u-navbar-mobile"
@@ -2377,8 +2768,8 @@ export const NavbarMovil: React.FC = () => {
 									<g
 										transform="translate(0 565.796)"
 										onClick={() =>
-											(window.location.href =
-												'/codigo-linea-etica')
+										(window.location.href =
+											'/codigo-linea-etica')
 										}>
 										<g
 											className="s-navbar-mobile"
@@ -2805,24 +3196,154 @@ export const NavbarMovil: React.FC = () => {
 											transform="translate(11 6)"
 										/>
 									</g>
-									<g transform="translate(280 5)" onClick={handleChangeSelectedLanguage}>
+									<g transform="translate(280 10)" onClick={handleChangeSelectedLanguage}>
 										<foreignObject
 											x={0}
 											y={0}
 											width={38}
 											height={38}>
-											<img
-												src={
-													selectedLanguage === 'en'
-														? '/images/english-mobile.png'
-														: '/images/spanish-movil.png'
-												}
-												alt=""
-												className="h-[25px] w-[25px]"
-											/>
+										{selectedLanguage === 'es' ? (
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											id="Componente_38_3"
+											data-name="Componente 38 – 3"
+											width="25"
+											height="25"
+											viewBox="0 0 25 25"
+										>
+											<g id="Grupo_5836" data-name="Grupo 5836">
+												<path
+													id="Trazado_68877"
+													data-name="Trazado 68877"
+													d="M1409.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
+													transform="translate(-1390.173 -38.176)"
+													fill="#001f5f"
+												/>
+												<path
+													id="Trazado_68878"
+													data-name="Trazado 68878"
+													d="M1479.116,60.531H1464.3a8.906,8.906,0,0,1,14.813,0"
+													transform="translate(-1461.956 -55.722)"
+													fill="#fd0002"
+												/>
+												<path
+													id="Trazado_68879"
+													data-name="Trazado 68879"
+													d="M1479.116,571.931a8.906,8.906,0,0,1-14.812,0Z"
+													transform="translate(-1461.956 -557.234)"
+													fill="#fd0002"
+												/>
+												<path
+													id="Trazado_68880"
+													data-name="Trazado 68880"
+													d="M1426.371,208.875a8.862,8.862,0,0,1-1.5,4.944h-14.812a8.909,8.909,0,0,1,0-9.888h14.812a8.862,8.862,0,0,1,1.5,4.944"
+													transform="translate(-1407.714 -199.122)"
+													fill="#ff0"
+												/>
+											</g>
+										</svg>
+									) : (
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											xmlnsXlink="http://www.w3.org/1999/xlink"
+											id="Componente_38_3"
+											data-name="Componente 38 – 3"
+											width="25"
+											height="25"
+											viewBox="0 0 25 25"
+										>
+											<defs>
+												<clipPath id="clip-path">
+													<path
+														id="Trazado_68887"
+														data-name="Trazado 68887"
+														d="M321.584,78.464a8.877,8.877,0,1,0,8.877-8.877,8.877,8.877,0,0,0-8.877,8.877"
+														transform="translate(-321.584 -69.587)"
+														fill="none"
+													/>
+												</clipPath>
+											</defs>
+											<g id="Grupo_5837" data-name="Grupo 5837">
+												<path
+													id="Trazado_68882"
+													data-name="Trazado 68882"
+													d="M309.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
+													transform="translate(-290.173 -38.176)"
+													fill="#001f5f"
+												/>
+												<g
+													id="Grupo_5836"
+													data-name="Grupo 5836"
+													transform="translate(0.876 0.876)"
+													clipPath="url(#clip-path)"
+												>
+													<path
+														id="Trazado_68883"
+														data-name="Trazado 68883"
+														d="M35.689,21.13,4.668,0H0V1.552L29.482,21.635h6.207Z"
+														transform="translate(-8.967 -1.94)"
+														fill="#feffff"
+													/>
+													<path
+														id="Trazado_68884"
+														data-name="Trazado 68884"
+														d="M35.689,0H31.034L0,21.14v.495H6.221L35.689,1.562Z"
+														transform="translate(-8.967 -1.94)"
+														fill="#feffff"
+													/>
+													<rect
+														id="Rectángulo_1963"
+														data-name="Rectángulo 1963"
+														width="5.222"
+														height="21.635"
+														transform="translate(6.242 -1.94)"
+														fill="#feffff"
+													/>
+													<rect
+														id="Rectángulo_1964"
+														data-name="Rectángulo 1964"
+														width="35.491"
+														height="5.104"
+														transform="translate(-8.835 6.538)"
+														fill="#feffff"
+													/>
+													<rect
+														id="Rectángulo_1965"
+														data-name="Rectángulo 1965"
+														width="35.491"
+														height="3.899"
+														transform="translate(-8.835 7.074)"
+														fill="#fd0002"
+													/>
+													<rect
+														id="Rectángulo_1966"
+														data-name="Rectángulo 1966"
+														width="3.365"
+														height="21.635"
+														transform="translate(7.201 -1.94)"
+														fill="#fd0002"
+													/>
+													<path
+														id="Trazado_68885"
+														data-name="Trazado 68885"
+														d="M35.409,21.635,67.17,0H64.832L33.071,21.635Z"
+														transform="translate(-41.116 -1.94)"
+														fill="#fd0002"
+													/>
+													<path
+														id="Trazado_68886"
+														data-name="Trazado 68886"
+														d="M58.533,21.635,26.772,0H24.433L56.195,21.635Z"
+														transform="translate(-32.72 -1.94)"
+														fill="#fd0002"
+													/>
+												</g>
+											</g>
+										</svg>
+									)}
 										</foreignObject>
 									</g>
-									 
+
 									<g transform="translate(37 4.493)">
 										<g className="f-navbar-mobile">
 											<path
@@ -2931,8 +3452,8 @@ export const NavbarMovil: React.FC = () => {
 														className="h-[40px] w-full flex items-center border-b-solid border-b-[1px] border-[#e6e6e6] px-[10px]"
 														key={index}
 														onClick={() =>
-															(window.location.href =
-																item.url)
+														(window.location.href =
+															item.url)
 														}>
 														<span>
 															{item.label}
@@ -3021,8 +3542,8 @@ export const NavbarMovil: React.FC = () => {
 									<g
 										transform="translate(2 547.534)"
 										onClick={() =>
-											(window.location.href =
-												'/contactenos')
+										(window.location.href =
+											'/contactenos')
 										}>
 										<g
 											className="u-navbar-mobile"
@@ -3108,8 +3629,8 @@ export const NavbarMovil: React.FC = () => {
 									<g
 										transform="translate(2 526.796)"
 										onClick={() =>
-											(window.location.href =
-												'codigo-linea-etica')
+										(window.location.href =
+											'codigo-linea-etica')
 										}>
 										<g
 											className="s-navbar-mobile"
@@ -4044,22 +4565,152 @@ export const NavbarMovil: React.FC = () => {
 							</g> */}
 							<g
 								className="f-navbar-mobile"
-								transform="matrix(1, 0, 0, 1, 280, 8)"
+								transform="matrix(1, 0, 0, 1, 280, 10)"
 								onClick={handleChangeSelectedLanguage}>
 								<foreignObject
 									x={0}
 									y={0}
 									width={38}
 									height={38}>
-									<img
-										src={
-											selectedLanguage === 'en'
-												? '/images/english-mobile.png'
-												: '/images/spanish-movil.png'
-										}
-										alt=""
-										className="h-[25px] w-[25px]"
-									/>
+									{selectedLanguage === 'es' ? (
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											id="Componente_38_3"
+											data-name="Componente 38 – 3"
+											width="25"
+											height="25"
+											viewBox="0 0 25 25"
+										>
+											<g id="Grupo_5836" data-name="Grupo 5836">
+												<path
+													id="Trazado_68877"
+													data-name="Trazado 68877"
+													d="M1409.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
+													transform="translate(-1390.173 -38.176)"
+													fill="#001f5f"
+												/>
+												<path
+													id="Trazado_68878"
+													data-name="Trazado 68878"
+													d="M1479.116,60.531H1464.3a8.906,8.906,0,0,1,14.813,0"
+													transform="translate(-1461.956 -55.722)"
+													fill="#fd0002"
+												/>
+												<path
+													id="Trazado_68879"
+													data-name="Trazado 68879"
+													d="M1479.116,571.931a8.906,8.906,0,0,1-14.812,0Z"
+													transform="translate(-1461.956 -557.234)"
+													fill="#fd0002"
+												/>
+												<path
+													id="Trazado_68880"
+													data-name="Trazado 68880"
+													d="M1426.371,208.875a8.862,8.862,0,0,1-1.5,4.944h-14.812a8.909,8.909,0,0,1,0-9.888h14.812a8.862,8.862,0,0,1,1.5,4.944"
+													transform="translate(-1407.714 -199.122)"
+													fill="#ff0"
+												/>
+											</g>
+										</svg>
+									) : (
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											xmlnsXlink="http://www.w3.org/1999/xlink"
+											id="Componente_38_3"
+											data-name="Componente 38 – 3"
+											width="25"
+											height="25"
+											viewBox="0 0 25 25"
+										>
+											<defs>
+												<clipPath id="clip-path">
+													<path
+														id="Trazado_68887"
+														data-name="Trazado 68887"
+														d="M321.584,78.464a8.877,8.877,0,1,0,8.877-8.877,8.877,8.877,0,0,0-8.877,8.877"
+														transform="translate(-321.584 -69.587)"
+														fill="none"
+													/>
+												</clipPath>
+											</defs>
+											<g id="Grupo_5837" data-name="Grupo 5837">
+												<path
+													id="Trazado_68882"
+													data-name="Trazado 68882"
+													d="M309.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
+													transform="translate(-290.173 -38.176)"
+													fill="#001f5f"
+												/>
+												<g
+													id="Grupo_5836"
+													data-name="Grupo 5836"
+													transform="translate(0.876 0.876)"
+													clipPath="url(#clip-path)"
+												>
+													<path
+														id="Trazado_68883"
+														data-name="Trazado 68883"
+														d="M35.689,21.13,4.668,0H0V1.552L29.482,21.635h6.207Z"
+														transform="translate(-8.967 -1.94)"
+														fill="#feffff"
+													/>
+													<path
+														id="Trazado_68884"
+														data-name="Trazado 68884"
+														d="M35.689,0H31.034L0,21.14v.495H6.221L35.689,1.562Z"
+														transform="translate(-8.967 -1.94)"
+														fill="#feffff"
+													/>
+													<rect
+														id="Rectángulo_1963"
+														data-name="Rectángulo 1963"
+														width="5.222"
+														height="21.635"
+														transform="translate(6.242 -1.94)"
+														fill="#feffff"
+													/>
+													<rect
+														id="Rectángulo_1964"
+														data-name="Rectángulo 1964"
+														width="35.491"
+														height="5.104"
+														transform="translate(-8.835 6.538)"
+														fill="#feffff"
+													/>
+													<rect
+														id="Rectángulo_1965"
+														data-name="Rectángulo 1965"
+														width="35.491"
+														height="3.899"
+														transform="translate(-8.835 7.074)"
+														fill="#fd0002"
+													/>
+													<rect
+														id="Rectángulo_1966"
+														data-name="Rectángulo 1966"
+														width="3.365"
+														height="21.635"
+														transform="translate(7.201 -1.94)"
+														fill="#fd0002"
+													/>
+													<path
+														id="Trazado_68885"
+														data-name="Trazado 68885"
+														d="M35.409,21.635,67.17,0H64.832L33.071,21.635Z"
+														transform="translate(-41.116 -1.94)"
+														fill="#fd0002"
+													/>
+													<path
+														id="Trazado_68886"
+														data-name="Trazado 68886"
+														d="M58.533,21.635,26.772,0H24.433L56.195,21.635Z"
+														transform="translate(-32.72 -1.94)"
+														fill="#fd0002"
+													/>
+												</g>
+											</g>
+										</svg>
+									)}
 								</foreignObject>
 							</g>
 
