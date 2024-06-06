@@ -38,7 +38,7 @@ const Component20231: React.FC<TimeLine> = ({ onNext, onPrev, t, selectedLanguag
           preserveAspectRatio="xMidYMid slice"
           width={105.082}
           height={49.804}
-          xlinkHref="/images/mobile/history/20231-1.webp"
+          xlinkHref="/images/history/textoyp.jpg"
         />
       </pattern>
       <filter
@@ -79,7 +79,7 @@ const Component20231: React.FC<TimeLine> = ({ onNext, onPrev, t, selectedLanguag
         height="100%"
         viewBox="0 0 768 364"
       >
-        <image width={768} height={364} xlinkHref="/images/mobile/history/20231-2.webp" />
+        <image width={768} height={364} xlinkHref="/images/history/cors.png" />
       </pattern>
       <filter
         id="j-time-line"

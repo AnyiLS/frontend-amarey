@@ -47,7 +47,7 @@ const LifeLine2012: React.FC<ILifeLine2000> = ({
             preserveAspectRatio="xMidYMid slice"
             width={302.286}
             height={310.901}
-            xlinkHref="/images/history/2012-1-1.webp"
+            xlinkHref="/images/history/Mapa-Colombia.png"
           />
         </pattern>
         <filter
@@ -232,7 +232,7 @@ const LifeLine2012: React.FC<ILifeLine2000> = ({
             transform="translate(-0.001)"
           />
         </g>
-        <text className="item-107-k" transform={selectedLanguage === 'es' ? "translate(567.856 345.866)" : "translate(537.856 335.866)"} style={{ fontSize: selectedLanguage === 'en' ? 32 : 40 }}>
+        <text className="item-107-k" transform={selectedLanguage === 'es' ? "translate(567.856 345.866)" : "translate(537.856 335.866)"} style={{ fontSize: selectedLanguage === 'en' ? 32 : 20 }}>
           <tspan x={selectedLanguage === 'es' ? 0 : -10} y={38}>
             {selectedLanguage === "es" ? t("Comienza la distribución de la línea de equipos médicos").split(" ").slice(0, 5).join(" ") : t("Comienza la distribución de la línea de equipos médicos").split(" ").slice(0, 3).join(" ")}
           </tspan>
