@@ -7,6 +7,8 @@ const DevicesMedical: React.FC<{ height: string; onClose: () => void }> = ({
 }) => {
 	const { t } = useTranslation()
 
+	const [showMore, setShowMore] = React.useState<boolean>(false)
+
 	return (
 		<div>
 			<svg
@@ -86,42 +88,54 @@ const DevicesMedical: React.FC<{ height: string; onClose: () => void }> = ({
 							'Con una variada gama de soluciones para \xE1reas especializadas, UCIs, quir\xF3fanos, urgencias y hospitalizaci\xF3n. '
 						)}
 					</tspan>
-					<tspan x={0} y={51} />
-					<tspan x={0} y={79}>
-						{t(
-							'En cumplimiento de la Ley 1672 del 19 de julio de 2013, Decreto 284 de 2018 y Resoluci\xF3n 851 del 2022. Amarey Nova '
-						)}
-					</tspan>
-					<tspan x={0} y={107}>
-						{t(
-							'Medical S.a-medical, Ucipharma S.a-medical. y Novat\xE9cnica S.a-medical.S., ponen a su disposici\xF3n nuestro proceso '
-						)}
-					</tspan>
-					<tspan x={0} y={135}>
-						{t(
-							'de disposici\xF3n y gesti\xF3n de los residuos de aparatos el\xE9ctricos y electr\xF3nicos (RAEE) relacionados espec\xEDficamente con los equipos '
-						)}
-					</tspan>
-					<tspan x={0} y={163}>
-						{t(
-							'biom\xE9dicos el\xE9ctricos o electr\xF3nicos (con excepci\xF3n de todos los productos implantados e infectados) que '
-						)}
-					</tspan>
-					<tspan x={0} y={191}>
-						{t(
-							'distribuye nuestras compa\xF1\xEDas. Para este fin, solicitamos comunicarse directamente con nuestro representante de '
-						)}
-					</tspan>
-					<tspan x={0} y={219}>
-						{t(
-							'ventas asignado a su instituci\xF3n con el objetivo de programar su recolecci\xF3n. Para la disposici\xF3n final de los RAEE '
-						)}
-					</tspan>
-					<tspan x={0} y={247} xmlSpace="preserve">
-						{t(
-							'realizamos la gesti\xF3n a trav\xE9s de una empresa autorizada por la Autoridad Ambiental.  '
-						)}
-					</tspan>
+					{
+						showMore ? (
+							<React.Fragment>
+								<tspan x={0} y={51} onClick={() => setShowMore(false)}/>
+								<tspan x={0} y={79} onClick={() => setShowMore(false)}>
+									{t(
+										'En cumplimiento de la Ley 1672 del 19 de julio de 2013, Decreto 284 de 2018 y Resoluci\xF3n 851 del 2022. Amarey Nova '
+									)}
+								</tspan>
+								<tspan x={0} y={107} onClick={() => setShowMore(false)}>
+									{t(
+										'Medical S.a-medical, Ucipharma S.a-medical. y Novat\xE9cnica S.a-medical.S., ponen a su disposici\xF3n nuestro proceso '
+									)}
+								</tspan>
+								<tspan x={0} y={135} onClick={() => setShowMore(false)}>
+									{t(
+										'de disposici\xF3n y gesti\xF3n de los residuos de aparatos el\xE9ctricos y electr\xF3nicos (RAEE) relacionados espec\xEDficamente con los equipos '
+									)}
+								</tspan>
+								<tspan x={0} y={163} onClick={() => setShowMore(false)}>
+									{t(
+										'biom\xE9dicos el\xE9ctricos o electr\xF3nicos (con excepci\xF3n de todos los productos implantados e infectados) que '
+									)}
+								</tspan>
+								<tspan x={0} y={191} onClick={() => setShowMore(false)}>
+									{t(
+										'distribuye nuestras compa\xF1\xEDas. Para este fin, solicitamos comunicarse directamente con nuestro representante de '
+									)}
+								</tspan>
+								<tspan x={0} y={219} onClick={() => setShowMore(false)}>
+									{t(
+										'ventas asignado a su instituci\xF3n con el objetivo de programar su recolecci\xF3n. Para la disposici\xF3n final de los RAEE '
+									)}
+								</tspan>
+								<tspan x={0} y={247} xmlSpace="preserve" onClick={() => setShowMore(false)}>
+									{t(
+										'realizamos la gesti\xF3n a trav\xE9s de una empresa autorizada por la Autoridad Ambiental.  '
+									)}
+								</tspan>
+							</React.Fragment>
+						) : (
+							<tspan x={0} y={80} onClick={() => setShowMore(true)} fontFamily='Silka-Bold'>
+								{t(
+									'Ver Mas ⇣'
+								)}
+							</tspan>
+						)
+					}
 				</text>
 				<text className="g-medical" transform="translate(441.864 476)">
 					<tspan x={0} y={23}>

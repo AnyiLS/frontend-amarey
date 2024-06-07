@@ -120,7 +120,7 @@ export const carouselPortfolio = (t: any, selectedLanguage: 'es' | 'en'): Carous
     {
         images: '/images/biomedico-movil.jpg', 
         title: t('Mantenimiento'),
-        title_2: t('biomedico_2'),
+        title_2: t('biomédico_2'),
         x_2: 96.715,
         x_selected: 0,
         x: selectedLanguage === 'es' ? 70 : 85,

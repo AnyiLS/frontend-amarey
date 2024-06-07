@@ -228,7 +228,7 @@ const Component2009: React.FC<TimeLine> = ({ onNext, onPrev, t }): JSX.Element =
             {t("productos con las líneas de ")}
           </tspan>
           <tspan x={0} y={39}>
-            {t("implantes ortopédicos de ")}
+            {t("implantes ortopédicos, de ")}
           </tspan>
           <tspan x={0} y={53}>
             {t("Stryker, equipos médicos, ")}

@@ -1,12 +1,9 @@
-import React from 'react';
-
-/** Components */
-const SubmenuWay = React.lazy(() => import('./SubmenuWay'));
-const SubmenuSolution = React.lazy(() => import('./SubmenuSolution'));
-const SubmenuContact = React.lazy(() => import('./SubmenuContact'));
-const SubmenuEtic = React.lazy(() => import('./SubmenuEtic'));
-const SubmenuWorkUs = React.lazy(() => import('./SubmenuWorkUs'));
-const SubmenuActualidad = React.lazy(() => import('./SubmenuActualidad'));
+import SubmenuWay from './SubmenuWay'
+import SubmenuSolution from './SubmenuSolution'
+import SubmenuContact from './SubmenuContact'
+import SubmenuEtic from './SubmenuEtic'
+import SubmenuWorkUs from './SubmenuWorkUs'
+import SubmenuActualidad from './SubmenuActualidad'
 
 const useNavbarComponents = () => ({
   SubmenuActualidad,

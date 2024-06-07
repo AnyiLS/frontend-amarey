@@ -56,11 +56,11 @@ const DownAsta: React.FC<AstasProps> = ({ onUnselected }): JSX.Element => {
 					id="f-subitem-3"
 					width={1}
 					height={1}
-					patternTransform="translate(658.295 438.863) rotate(-180)"
-					viewBox="73.122 23.467 163.91 126.406">
+					patternTransform="translate(570.295 438.863) rotate(-180)"
+					viewBox="0 0 283.91 216.406">
 					<image
-						preserveAspectRatio="xMidYMid slice"
-						width={329.148}
+						preserveAspectRatio="none"
+						width={310.148}
 						height={219.432}
 						xlinkHref="/images/navbar/tt-2.webp"
 					/>

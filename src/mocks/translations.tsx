@@ -3,7 +3,7 @@ import {englishTextsMobile,spanishTextsMobile} from './translation-movil'
 //spanish
 const spanishTexts = {
     translation: {
-        'biomedico_2': 'Biomedico',
+        'biomédico_2': 'Biomédico',
         "Conoce Más":  "Conoce Más",
         "Un compromiso inquebrantable": "Un compromiso inquebrantable",
         'con la salud y la vida': 'con la salud y la vida',
@@ -1368,7 +1368,7 @@ const englishTexts = {
         'L\xEDnea ': 'The Ethics',
         'ética ': 'Line',
         'Mantenimiento': 'maintenance',
-        'biomedico_2': 'biomedical',
+        'biomédico_2': 'biomedical',
         'C\xF3digo de \xE9tica': 'Code of Ethics',
         'En el Grupo Amarey estamos comprometidos en mantener relaciones honestas, ':'At the Amarey Group, we are committed to maintaining honest, constructive, ',
         'constructivas e id\xF3neas con nuestros grupos de inter\xE9s. Guiados por nuestros ': 'and appropriate relationships with all our stakeholders. Guided by our set of ',

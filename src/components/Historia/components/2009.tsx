@@ -233,7 +233,7 @@ const LifeLine2009: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeSt
 						{t('productos con las líneas de ')}
 					</tspan>
 					<tspan x={0} y={75}>
-						{t('implantes ortopédicos ')}
+						{t('implantes ortopédicos,')}
 					</tspan>
 					<tspan x={0} y={101}>
 						{t('equipos médicos, pruebas ')}

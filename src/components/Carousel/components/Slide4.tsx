@@ -174,7 +174,7 @@ const Slide4: React.FC<SlideFourProps> = ({ image, onReturn, onOpenPopup }): JSX
 						id="r-slide-5"
 						width={1}
 						height={1}
-						viewBox="0 132.158 775.246 348.89">
+						viewBox={image === '/images/carouselHeader/ComponentTMP_0-image4.webp' ? '223 0 450.303 514.533' : "0 132.158 775.246 348.89"}>
 						<image
 							preserveAspectRatio="xMidYMid slice"
 							width={775.246}
@@ -222,8 +222,8 @@ const Slide4: React.FC<SlideFourProps> = ({ image, onReturn, onOpenPopup }): JSX
 						height={1}
 						viewBox={`${
 							image ===
-							'/images/carouselHeader/ComponentTMP_0-image4.png'
-								? '100 -100 662.303 514.533'
+							'/images/carouselHeader/ComponentTMP_0-image4.webp'
+								? '223 0 450.303 514.533'
 								: '223 0 662.303 514.533'
 						}`}>
 						<image

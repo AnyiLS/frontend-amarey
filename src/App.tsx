@@ -12,15 +12,12 @@ import FixedSocialNetworks from 'components/fixed-components/FixedSocialNetworks
 import Navbar from 'components/Navbar/Navbar'
 import Footer from 'components/Footer/Footer'
 import { LanguageProvider, useLanguage } from 'context/language'
-import {
-	I18nextProvider,
-	initReactI18next,
-	useTranslation,
-} from 'react-i18next'
+import { I18nextProvider, initReactI18next } from 'react-i18next'
 
 import i18n from 'i18next'
 /** Mocks */
 import { customTexts } from 'mocks/translations'
+import { Loading } from 'components/Loading'
 
 const Component = () => {
 	/** Contexts  */
@@ -36,7 +33,7 @@ const Component = () => {
 
 	const setShowVideoPopup = () => {
 		localStorage.setItem('showVideo', 'false')
-    window.location.reload()
+		window.location.reload()
 	}
 
 	i18n.use(initReactI18next).init({
@@ -50,15 +47,18 @@ const Component = () => {
 			<Flowbite theme={{ theme: customTheme }}>
 				{showVideoPopup === 'false' ? (
 					<div id="main">
-						{width >= 768 ? <Navbar /> : <NavbarMovil />}
-						<RouterProvider router={router} />
-						{width >= 768 ? <Footer /> : <FooterMobile />}
-						{window.location.pathname !== "/contactenos" && width > 767 && (
-                  <React.Fragment>
-                    <FixedContact />
-                    <FixedSocialNetworks />
-                  </React.Fragment>
-                )}
+						<React.Suspense fallback={<Loading />}>
+							{width >= 768 ? <Navbar /> : <NavbarMovil />}
+							<RouterProvider router={router} />
+							{width >= 768 ? <Footer /> : <FooterMobile />}
+							{window.location.pathname !== '/contactenos' &&
+								width > 767 && (
+									<React.Fragment>
+										<FixedContact />
+										<FixedSocialNetworks />
+									</React.Fragment>
+								)}
+						</React.Suspense>
 					</div>
 				) : (
 					<Video onCloseVideo={setShowVideoPopup} />
@@ -69,39 +69,20 @@ const Component = () => {
 }
 
 const App: React.FC = (): JSX.Element => {
-  React.useEffect(() => {
-    const video = localStorage.getItem('showVideo')
+	React.useEffect(() => {
+		const video = localStorage.getItem('showVideo')
 
-    if(!video) localStorage.setItem('showVideo', 'true')
-  }, [])
+		if (!video) localStorage.setItem('showVideo', 'true')
+	}, [])
+
+	const { width } = useGeneral()
 
 	return (
-		<React.Suspense fallback={null}>
-			<LanguageProvider>
+		<LanguageProvider>
+			<React.Fragment>
 				<Component />
-				{/* <I18nextProvider i18n={i18next}>
-          
-            {showVideoPopup && window.location.pathname === "/" ? (
-              <Video onCloseVideo={() => setShowVideoPopup(false)} />
-            ) : (
-              <React.Fragment>
-                {width >= 768 ? <Navbar t={t}/> : <NavbarMovil />}
-                
-                  
-                  {width >= 768 ? <Footer /> : <FooterMobile />}
-                </div>
-                {window.location.pathname !== "/contactenos" && width > 767 && (
-                  <React.Fragment>
-                    <FixedContact />
-                    <FixedSocialNetworks />
-                  </React.Fragment>
-                )}
-              </React.Fragment>
-            )}
-          </Flowbite>
-        </I18nextProvider> */}
-			</LanguageProvider>
-		</React.Suspense>
+			</React.Fragment>
+		</LanguageProvider>
 	)
 }
 

@@ -52,15 +52,19 @@ const Footer: React.FC = (): JSX.Element => {
 						}
 					</tspan>
 					<tspan x={354.5} y={38} />
+					<a href="mailto:servicioalcliente@grupoamarey.com">
 					<tspan x={selectedLanguage === 'es' ? 137.12 : 157.12} y={47}>
 						{
 							t('Reporte de eventos adversos o PQR: servicioalcliente@grupoamarey.com')
 						}
 					</tspan>
+					</a>
 					<tspan x={354.5} y={56} />
+					<a href="mailto:linea.etica@grupoamarey.com">
 					<tspan x={selectedLanguage === 'es' ? 228.41 : 248.41} y={65}>
 						{t('Línea ética: linea.etica@grupoamarey.com')}
 					</tspan>
+					</a>
 				</text>
 				<a href="https://facebook.com/GrupoAmarey/" target='_blank' rel='noreferrer'>
 				<path

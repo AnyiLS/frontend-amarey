@@ -40,13 +40,17 @@ const FooterMobile: React.FC = (): JSX.Element => {
 					<tspan x={selectedLanguage === 'es' ? 58.856 : 70.856} y={76}>
 						{t('Reporte de eventos adversos o PQR: ')}
 					</tspan>
+					<a href="mailto:servicioalcliente@grupoamarey.com">
 					<tspan x={59.444} y={89}>
 						{'servicioalcliente@grupoamarey.com'}
 					</tspan>
+					</a>
 					<tspan x={167} y={102} />
+					<a href="mailto:linea.etica@grupoamarey.com">
 					<tspan x={40.91} y={115}>
 						{t('Línea ética: linea.etica@grupoamarey.com')}
 					</tspan>
+					</a>
 				</text>
 				<a
 					href="https://facebook.com/GrupoAmarey/	"
