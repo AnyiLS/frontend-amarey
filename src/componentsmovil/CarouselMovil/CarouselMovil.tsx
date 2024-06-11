@@ -28,9 +28,12 @@ export const CarouselMovil: React.FC = () => {
 		<React.Fragment>
 			{selectedImage === '' ? (
 				<Carousel
-					style={{ height: `calc(100vh - ${height}px)` }}
+					style={{ height: `calc(100vh - ${height}px)`, overflow: 'hidden' }}
 					slide={false}
-					slideInterval={20000}>
+					slideInterval={20000}
+					onTouchMove={(e: any) => e.preventDefault()}
+					onTouchEnd={(e: any) => e.preventDefault()}
+					onTouchStart={(e: any) => e.preventDefault()}>
 					<svg
 						viewBox={`2 0 414 906`}
 						width="100%"
