@@ -30,10 +30,7 @@ export const CarouselMovil: React.FC = () => {
 				<Carousel
 					style={{ height: `calc(100vh - ${height}px)`, overflow: 'hidden' }}
 					slide={false}
-					slideInterval={20000}
-					onTouchMove={(e: any) => e.preventDefault()}
-					onTouchEnd={(e: any) => e.preventDefault()}
-					onTouchStart={(e: any) => e.preventDefault()}>
+					slideInterval={20000}>
 					<svg
 						viewBox={`2 0 414 906`}
 						width="100%"
