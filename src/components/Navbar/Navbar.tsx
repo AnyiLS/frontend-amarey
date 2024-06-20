@@ -1,77 +1,45 @@
 import React from 'react'
-import './Navbar.css'
-import SubmenuWay from './components/SubmenuWay'
-import SubmenuSolution from './components/SubmenuSolution'
-import SubmenuContact from './components/SubmenuContact'
-import SubmenuEtic from './components/SubmenuEtic'
-import SubmenuWorkUs from './components/SubmenuWorkUs'
-import SubmenuActualidad from './components/SubmenuActualidad'
-import useNavbar from './useNavbar'
+/** Mocks */
 import { SiteMapMock } from 'mocks/navbar.mocks'
+/** Contexts */
+import { useLanguage } from 'context/language'
+/** Hooks */
+import useNavbarComponents from './components'
+import useNavbar from './useNavbar'
+/** Styles */
+import './Navbar.css'
 import { useTranslation } from 'react-i18next'
 
 const Navbar: React.FC = () => {
+	/** References */
+	const subItemRef: React.MutableRefObject<SVGSVGElement | null> =
+		React.useRef<SVGSVGElement | null>(null)
+
+	/** Contexts */
+	const { selectedLanguage, handleChangeSelectedLanguage } = useLanguage()
+
+	/** States */
 	const [hover, setHover] = React.useState<string>('')
-	const [showSearchable, setShowSearchable] = React.useState<boolean>(false)
 	const [hover1, setHover1] = React.useState<string>('')
-	const [isScroll, setIsScroll] = React.useState<boolean>(false)
-
-	const subItemRef = React.useRef(null)
-	const [previousScrollPosition, setPreviousScrollPosition] =
-		React.useState(0)
-
-		const {t} = useTranslation()
-
-	React.useEffect(() => {
-		const handleScroll = () => {
-			const currentScrollPosition = window.pageYOffset
-
-			if (currentScrollPosition < previousScrollPosition) {
-				setIsScroll(true)
-			} else {
-				setIsScroll(false)
-			}
-
-			setPreviousScrollPosition(currentScrollPosition)
-		}
-
-		window.addEventListener('scroll', handleScroll)
-
-		return () => {
-			window.removeEventListener('scroll', handleScroll)
-		}
-	}, [previousScrollPosition])
-
-	React.useEffect(() => {
-		if (isScroll) {
-			document
-				.getElementById('navbar__container')
-				?.classList.add('navbar__container')
-			document.querySelectorAll('main')[0].style.marginTop = `${
-				document.getElementById('navbar__container')?.clientHeight
-			}px`
-			document
-				.getElementById('navbar__container')
-				?.classList.remove('navbar__estatic')
-		} else {
-			document
-				.getElementById('navbar__container')
-				?.classList.add('navbar__estatic')
-			document.querySelectorAll('main')[0].style.marginTop = '0px'
-			document
-				.getElementById('navbar__container')
-				?.classList.remove('navbar__container')
-		}
-	}, [isScroll])
+	const [showSearchable, setShowSearchable] = React.useState<boolean>(false)
 
 	/** Hooks */
 	const { results, handleSearchPage } = useNavbar()
+	const { t } = useTranslation()
+	const {
+		SubmenuActualidad,
+		SubmenuContact,
+		SubmenuEtic,
+		SubmenuSolution,
+		SubmenuWay,
+		SubmenuWorkUs,
+	} = useNavbarComponents()
 
 	return (
 		<div className="navbar__estatic" id="navbar__container">
 			<svg
 				viewBox="0 0 1920 105"
-				width="100%"
+				width={window.screen.width}
 				height="100%"
 				className="shadow-[rgba(0,0,0,0.25)_0px_0.0625em_0.0625em,rgba(0,0,0,0.25)_0px_0.125em_0.5em,rgba(255,255,255,0.1)_0px_0px_0px_1px_inset]"
 				preserveAspectRatio="none">
@@ -106,6 +74,7 @@ const Navbar: React.FC = () => {
 						<rect className="a" width={204.2} height={57.138} />
 					</clipPath>
 				</defs>
+
 				<g>
 					<g className="k" transform="matrix(1, 0, 0, 1, -9, -6)">
 						<path
@@ -114,26 +83,24 @@ const Navbar: React.FC = () => {
 							transform="translate(9 6)"
 						/>
 					</g>
-					{/* <g transform="translate(1622 30)">
-						<g
-							className="j cursor-pointer"
-							transform="matrix(1, 0, 0, 1, -1631, -36)">
-							<rect
-								className="c cursor-pointer"
-								width={156}
-								height={51}
-								rx={25.5}
-								transform="translate(1631 36)"
+
+					<g
+						transform="translate(1600 31)"
+						style={{ zIndex: 1 }}
+						onClick={handleChangeSelectedLanguage}>
+						<foreignObject x={0} y={0} width={51} height={51}>
+							<img
+								src={
+									selectedLanguage === 'en'
+										? '/images/logo-english.png'
+										: '/images/logo-spanish.png'
+								}
+								alt=""
+								className="h-full w-full"
 							/>
-						</g>
-						<text
-							className="d cursor-pointer"
-							transform="translate(78 31)">
-							<tspan x={-33.552} y={0}>
-								{'UCITECH'}
-							</tspan>
-						</text>
-					</g> */}
+						</foreignObject>
+					</g>
+
 					<g
 						transform="translate(1495.944 36.252)"
 						className="cursor-pointer"
@@ -142,7 +109,7 @@ const Navbar: React.FC = () => {
 							<img
 								src="/images/lupa.svg"
 								alt=""
-								style={{ width: '100%', height: '100%' }}
+								className="h-full w-full"
 							/>
 						</foreignObject>
 					</g>
@@ -168,7 +135,11 @@ const Navbar: React.FC = () => {
 						/>
 						<text
 							className="contactenos-b cursor-pointer"
-							transform="translate(69 29)"
+							transform={
+								selectedLanguage === 'es'
+									? 'translate(69 29)'
+									: 'translate(69 22)'
+							}
 							style={{
 								fill:
 									hover1 !== 'contactenos'
@@ -176,8 +147,21 @@ const Navbar: React.FC = () => {
 										: '#fff',
 							}}>
 							<tspan x={-58.905} y={0}>
-								{t('Cont\xE1ctenos')}
+								{selectedLanguage === 'es'
+									? t('Cont\xE1ctenos')
+									: t('Cont\xE1ctenos')
+											.split(' ')
+											.slice(0, 3)
+											.join(' ')}
 							</tspan>
+							{selectedLanguage === 'en' && (
+								<tspan x={-34.905} y={20}>
+									{t('Cont\xE1ctenos')
+										.split(' ')
+										.slice(3, 5)
+										.join(' ')}
+								</tspan>
+							)}
 						</text>
 						{hover1 === 'contactenos' && (
 							<line
@@ -185,7 +169,7 @@ const Navbar: React.FC = () => {
 								x2={120}
 								y1={1}
 								y2={1}
-								transform="translate(8.5 36.5)"
+								transform="translate(8.5 47)"
 							/>
 						)}
 					</g>
@@ -212,10 +196,22 @@ const Navbar: React.FC = () => {
 							style={{
 								fill: hover1 === 'trabaje' ? '#fff' : '#001F5F',
 							}}>
-							<tspan x={-33.246} y={0}>
+							<tspan
+								x={
+									selectedLanguage === 'es'
+										? -33.246
+										: -21.246
+								}
+								y={0}>
 								{t('Trabaje')}
 							</tspan>
-							<tspan x={-58.725} y={20}>
+							<tspan
+								x={
+									selectedLanguage === 'es'
+										? -58.725
+										: -30.725
+								}
+								y={20}>
 								{t('con nosotros')}
 							</tspan>
 						</text>
@@ -251,10 +247,22 @@ const Navbar: React.FC = () => {
 							style={{
 								fill: hover1 !== 'etica' ? '#001F5F' : '#fff',
 							}}>
-							<tspan x={-30.114} y={0}>
+							<tspan
+								x={
+									selectedLanguage === 'es'
+										? -30.114
+										: -45.114
+								}
+								y={0}>
 								{t('\xC9tica y')}
 							</tspan>
-							<tspan x={-51.912} y={20}>
+							<tspan
+								x={
+									selectedLanguage === 'es'
+										? -51.912
+										: -51.912
+								}
+								y={20}>
 								{t('compliance\u200B')}
 							</tspan>
 						</text>
@@ -285,16 +293,39 @@ const Navbar: React.FC = () => {
 						/>
 						<text
 							className="actu-b cursor-pointer"
-							transform="translate(68 29)"
+							transform={
+								selectedLanguage === 'es'
+									? 'translate(68 29)'
+									: 'translate(68 22)'
+							}
 							style={{
 								fill:
 									hover1 === 'actualidad'
 										? '#fff'
 										: '#001F5F',
 							}}>
-							<tspan x={-57.555} y={0}>
-								{t('Actualidad\u200B')}
+							<tspan
+								x={
+									selectedLanguage === 'es'
+										? -57.555
+										: -40.555
+								}
+								y={0}>
+								{selectedLanguage === 'es'
+									? t('Actualidad\u200B')
+									: t('Actualidad\u200B')
+											.split(' ')
+											.slice(0, 2)
+											.join(' ')}
 							</tspan>
+							{selectedLanguage === 'en' && (
+								<tspan x={-38.555} y={20}>
+									{t('Actualidad\u200B')
+										.split(' ')
+										.slice(2, 3)
+										.join(' ')}
+								</tspan>
+							)}
 						</text>
 						{hover1 === 'actualidad' && (
 							<line
@@ -302,7 +333,7 @@ const Navbar: React.FC = () => {
 								x2={97}
 								y1={1}
 								y2={1}
-								transform="translate(10.5 36.5)"
+								transform="translate(10.5 47)"
 							/>
 						)}
 					</g>
@@ -330,7 +361,9 @@ const Navbar: React.FC = () => {
 								fill:
 									hover1 === 'solucion' ? '#fff' : '#001F5F',
 							}}>
-							<tspan x={-47.772} y={0}>
+							<tspan
+								x={selectedLanguage === 'es' ? -47.772 : -27}
+								y={0}>
 								{t('Soluciones')}
 							</tspan>
 							<tspan x={-37.935} y={20}>
@@ -374,7 +407,13 @@ const Navbar: React.FC = () => {
 										? '#fff'
 										: '#001F5F',
 							}}>
-							<tspan x={-50.697} y={0}>
+							<tspan
+								x={
+									selectedLanguage === 'es'
+										? -50.697
+										: -42.697
+								}
+								y={0}>
 								{t('Trayectoria')}
 							</tspan>
 						</text>
@@ -446,11 +485,14 @@ const Navbar: React.FC = () => {
 							<g
 								className="h cursor-pointer"
 								transform="translate(0 0)">
-								<path
-									className="c cursor-pointer"
-									d="M34.052,36.752l8.073,10.989a.306.306,0,0,1,.057.177l.046,8.6a.3.3,0,0,1-.3.3l-1.2.006a.3.3,0,0,1-.3-.3l-.016-3.051-4.34.022.016,3.052a.3.3,0,0,1-.3.3l-1.2.006a.3.3,0,0,1-.3-.3l-.041-7.9a.3.3,0,0,1,.3-.3l1.2-.007a.3.3,0,0,1,.3.3l.016,3.051,4.34-.022-.017-3.264-7.33-9.98-6.236.032L19.592,48.524l.016,3.263,4.341-.023-.016-3.051a.3.3,0,0,1,.3-.3l1.2-.007a.3.3,0,0,1,.3.3l.041,7.9a.3.3,0,0,1-.3.3l-1.2.006a.3.3,0,0,1-.3-.3l-.016-3.052-4.34.023.016,3.052a.3.3,0,0,1-.3.3l-1.2.006a.3.3,0,0,1-.3-.3l-.045-8.6a.3.3,0,0,1,.056-.177L25.8,36.795a.3.3,0,0,1,.242-.125l7.765-.04a.3.3,0,0,1,.243.123m-12.5-8.985L8.559,23.623a.291.291,0,0,0-.185,0l-8.168,2.7a.3.3,0,0,0-.19.38l.376,1.14a.3.3,0,0,0,.38.19l2.9-.957L5.031,31.2l-2.9.957a.3.3,0,0,0-.19.38l.376,1.14a.3.3,0,0,0,.38.19l7.5-2.481a.3.3,0,0,0,.19-.38l-.376-1.14a.3.3,0,0,0-.38-.19l-2.9.959L5.379,26.511l3.1-1.025,11.8,3.765.964,2.915.994,3.005L15.006,45.228l-3.1,1.024-1.362-4.121,2.9-.957a.3.3,0,0,0,.19-.38l-.377-1.14a.3.3,0,0,0-.378-.19l-7.5,2.481a.3.3,0,0,0-.19.38l.376,1.14a.3.3,0,0,0,.38.19l2.9-.959L10.2,46.817l-2.9.959a.3.3,0,0,0-.191.38l.377,1.14a.3.3,0,0,0,.38.19l8.167-2.7a.3.3,0,0,0,.15-.11L24.14,35.6a.3.3,0,0,0,.041-.269L21.743,27.96a.3.3,0,0,0-.194-.193m16.018-2.03,12.946-4.281a.3.3,0,0,0,.149-.11l5.021-6.986a.3.3,0,0,0-.069-.419l-.975-.7a.3.3,0,0,0-.419.069L52.44,15.788l-3.525-2.533L50.7,10.777a.3.3,0,0,0-.068-.419l-.975-.7a.3.3,0,0,0-.419.069l-4.613,6.418a.3.3,0,0,0,.068.42l.976.7a.3.3,0,0,0,.419-.069l1.781-2.478,3.525,2.533-1.9,2.65L37.728,23.789l-5.065-3.639L32.6,7.766l1.9-2.65,3.525,2.533-1.781,2.478a.3.3,0,0,0,.069.419l.975.7a.3.3,0,0,0,.419-.069l4.613-6.419a.3.3,0,0,0-.069-.419l-.975-.7a.3.3,0,0,0-.419.069L39.079,6.186,35.555,3.654l1.781-2.479a.3.3,0,0,0-.069-.419l-.975-.7a.3.3,0,0,0-.419.069L30.853,7.111a.3.3,0,0,0-.056.177l.071,13.636a.3.3,0,0,0,.125.242L37.3,25.7a.3.3,0,0,0,.269.041m21.8,1.8.365-1.144a.3.3,0,0,0-.195-.377L51.342,23.4a.3.3,0,0,0-.186,0L38.21,27.682a.3.3,0,0,0-.191.194l-2.361,7.4a.3.3,0,0,0,.044.268l8.072,10.99a.306.306,0,0,0,.151.108l8.195,2.617a.3.3,0,0,0,.377-.195l.365-1.143a.3.3,0,0,0-.194-.377l-2.908-.929,1.32-4.135,2.908.928a.3.3,0,0,0,.377-.194l.365-1.144a.3.3,0,0,0-.195-.377L47,39.285a.3.3,0,0,0-.376.195l-.366,1.144a.3.3,0,0,0,.195.376l2.907.929-1.319,4.135-3.11-.992L37.6,35.091l1.9-5.941,11.757-3.888,3.108.993L53.048,30.39l-2.908-.929a.3.3,0,0,0-.377.195L49.4,30.8a.3.3,0,0,0,.195.376l7.529,2.4a.3.3,0,0,0,.377-.194l.366-1.144a.3.3,0,0,0-.195-.377l-2.908-.928,1.32-4.135,2.908.929a.3.3,0,0,0,.377-.195m-36.9-1.773,6.251-4.6a.3.3,0,0,0,.123-.244L28.747,7.279a.3.3,0,0,0-.058-.175L23.586.177a.3.3,0,0,0-.42-.064L22.2.825a.3.3,0,0,0-.063.42L23.947,3.7,20.452,6.275,18.642,3.818a.3.3,0,0,0-.42-.063l-.967.712a.3.3,0,0,0-.063.42l4.687,6.364a.3.3,0,0,0,.42.063l.967-.712a.3.3,0,0,0,.064-.42L21.52,7.725l3.495-2.574L26.95,7.779l.081,12.383-5.021,3.7-11.8-3.748L8.273,17.484l3.495-2.574,1.809,2.457a.3.3,0,0,0,.42.063l.967-.712a.3.3,0,0,0,.064-.42L10.339,9.935a.3.3,0,0,0-.42-.064l-.967.712A.3.3,0,0,0,8.89,11L10.7,13.46,7.205,16.034l-1.81-2.457a.3.3,0,0,0-.42-.064l-.967.712a.3.3,0,0,0-.063.42l5.1,6.927a.294.294,0,0,0,.15.108l13,4.129a.3.3,0,0,0,.269-.045"
-									transform="translate(0 0)"
-								/>
+								<foreignObject width={60} height={60}>
+									<img src="/amarey-logo.png" />
+								</foreignObject>
+								{/* <path
+                  className="c cursor-pointer"
+                  d="M34.052,36.752l8.073,10.989a.306.306,0,0,1,.057.177l.046,8.6a.3.3,0,0,1-.3.3l-1.2.006a.3.3,0,0,1-.3-.3l-.016-3.051-4.34.022.016,3.052a.3.3,0,0,1-.3.3l-1.2.006a.3.3,0,0,1-.3-.3l-.041-7.9a.3.3,0,0,1,.3-.3l1.2-.007a.3.3,0,0,1,.3.3l.016,3.051,4.34-.022-.017-3.264-7.33-9.98-6.236.032L19.592,48.524l.016,3.263,4.341-.023-.016-3.051a.3.3,0,0,1,.3-.3l1.2-.007a.3.3,0,0,1,.3.3l.041,7.9a.3.3,0,0,1-.3.3l-1.2.006a.3.3,0,0,1-.3-.3l-.016-3.052-4.34.023.016,3.052a.3.3,0,0,1-.3.3l-1.2.006a.3.3,0,0,1-.3-.3l-.045-8.6a.3.3,0,0,1,.056-.177L25.8,36.795a.3.3,0,0,1,.242-.125l7.765-.04a.3.3,0,0,1,.243.123m-12.5-8.985L8.559,23.623a.291.291,0,0,0-.185,0l-8.168,2.7a.3.3,0,0,0-.19.38l.376,1.14a.3.3,0,0,0,.38.19l2.9-.957L5.031,31.2l-2.9.957a.3.3,0,0,0-.19.38l.376,1.14a.3.3,0,0,0,.38.19l7.5-2.481a.3.3,0,0,0,.19-.38l-.376-1.14a.3.3,0,0,0-.38-.19l-2.9.959L5.379,26.511l3.1-1.025,11.8,3.765.964,2.915.994,3.005L15.006,45.228l-3.1,1.024-1.362-4.121,2.9-.957a.3.3,0,0,0,.19-.38l-.377-1.14a.3.3,0,0,0-.378-.19l-7.5,2.481a.3.3,0,0,0-.19.38l.376,1.14a.3.3,0,0,0,.38.19l2.9-.959L10.2,46.817l-2.9.959a.3.3,0,0,0-.191.38l.377,1.14a.3.3,0,0,0,.38.19l8.167-2.7a.3.3,0,0,0,.15-.11L24.14,35.6a.3.3,0,0,0,.041-.269L21.743,27.96a.3.3,0,0,0-.194-.193m16.018-2.03,12.946-4.281a.3.3,0,0,0,.149-.11l5.021-6.986a.3.3,0,0,0-.069-.419l-.975-.7a.3.3,0,0,0-.419.069L52.44,15.788l-3.525-2.533L50.7,10.777a.3.3,0,0,0-.068-.419l-.975-.7a.3.3,0,0,0-.419.069l-4.613,6.418a.3.3,0,0,0,.068.42l.976.7a.3.3,0,0,0,.419-.069l1.781-2.478,3.525,2.533-1.9,2.65L37.728,23.789l-5.065-3.639L32.6,7.766l1.9-2.65,3.525,2.533-1.781,2.478a.3.3,0,0,0,.069.419l.975.7a.3.3,0,0,0,.419-.069l4.613-6.419a.3.3,0,0,0-.069-.419l-.975-.7a.3.3,0,0,0-.419.069L39.079,6.186,35.555,3.654l1.781-2.479a.3.3,0,0,0-.069-.419l-.975-.7a.3.3,0,0,0-.419.069L30.853,7.111a.3.3,0,0,0-.056.177l.071,13.636a.3.3,0,0,0,.125.242L37.3,25.7a.3.3,0,0,0,.269.041m21.8,1.8.365-1.144a.3.3,0,0,0-.195-.377L51.342,23.4a.3.3,0,0,0-.186,0L38.21,27.682a.3.3,0,0,0-.191.194l-2.361,7.4a.3.3,0,0,0,.044.268l8.072,10.99a.306.306,0,0,0,.151.108l8.195,2.617a.3.3,0,0,0,.377-.195l.365-1.143a.3.3,0,0,0-.194-.377l-2.908-.929,1.32-4.135,2.908.928a.3.3,0,0,0,.377-.194l.365-1.144a.3.3,0,0,0-.195-.377L47,39.285a.3.3,0,0,0-.376.195l-.366,1.144a.3.3,0,0,0,.195.376l2.907.929-1.319,4.135-3.11-.992L37.6,35.091l1.9-5.941,11.757-3.888,3.108.993L53.048,30.39l-2.908-.929a.3.3,0,0,0-.377.195L49.4,30.8a.3.3,0,0,0,.195.376l7.529,2.4a.3.3,0,0,0,.377-.194l.366-1.144a.3.3,0,0,0-.195-.377l-2.908-.928,1.32-4.135,2.908.929a.3.3,0,0,0,.377-.195m-36.9-1.773,6.251-4.6a.3.3,0,0,0,.123-.244L28.747,7.279a.3.3,0,0,0-.058-.175L23.586.177a.3.3,0,0,0-.42-.064L22.2.825a.3.3,0,0,0-.063.42L23.947,3.7,20.452,6.275,18.642,3.818a.3.3,0,0,0-.42-.063l-.967.712a.3.3,0,0,0-.063.42l4.687,6.364a.3.3,0,0,0,.42.063l.967-.712a.3.3,0,0,0,.064-.42L21.52,7.725l3.495-2.574L26.95,7.779l.081,12.383-5.021,3.7-11.8-3.748L8.273,17.484l3.495-2.574,1.809,2.457a.3.3,0,0,0,.42.063l.967-.712a.3.3,0,0,0,.064-.42L10.339,9.935a.3.3,0,0,0-.42-.064l-.967.712A.3.3,0,0,0,8.89,11L10.7,13.46,7.205,16.034l-1.81-2.457a.3.3,0,0,0-.42-.064l-.967.712a.3.3,0,0,0-.063.42l5.1,6.927a.294.294,0,0,0,.15.108l13,4.129a.3.3,0,0,0,.269-.045"
+                  transform="translate(0 0)"
+                /> */}
 								<path
 									className="i cursor-pointer"
 									d="M96.183,21.467H91.11a6.87,6.87,0,0,1-3.54-.949A7.06,7.06,0,0,1,85,17.938a7.154,7.154,0,0,1,0-7.123,7.159,7.159,0,0,1,2.568-2.59,6.946,6.946,0,0,1,6.357-.355,7.082,7.082,0,0,1,2.341,1.683l-.712.668A6.113,6.113,0,0,0,91.11,8.279a5.924,5.924,0,0,0-3.043.821,6.128,6.128,0,0,0-2.223,2.212,6.12,6.12,0,0,0,0,6.119,6.179,6.179,0,0,0,2.223,2.234,5.857,5.857,0,0,0,3.043.831h4.058V15.467H90.55V14.5h5.633Z"
@@ -520,7 +562,8 @@ const Navbar: React.FC = () => {
 							right: '19.7%',
 							top: '94%',
 							maxWidth: 495,
-							height: 400
+							height: 400,
+							zIndex: 1,
 						}}>
 						<g transform="translate(-628.194 -836)">
 							<foreignObject

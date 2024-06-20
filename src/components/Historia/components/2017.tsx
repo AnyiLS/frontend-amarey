@@ -1,8 +1,6 @@
-import { useTranslation } from 'react-i18next'
 import { ILifeLine2000 } from './2000'
 
-const LifeLine2017: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeStepForce }) => {
-	const {t} = useTranslation()
+const LifeLine2017: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeStepForce, t, selectedLanguage }) => {
 	return (
 		<svg viewBox="0 0 1920 874.839">
 			<defs>
@@ -44,7 +42,7 @@ const LifeLine2017: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeSt
 					<image
 						width={768}
 						height={364}
-						xlinkHref="/images/history/2017-2.webp"
+						xlinkHref="/images/history/cors.png"
 					/>
 				</pattern>
 				<filter
@@ -102,7 +100,7 @@ const LifeLine2017: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeSt
 						preserveAspectRatio="xMidYMid slice"
 						width={475.286}
 						height={317.259}
-						xlinkHref="/images/history/2017-1.webp"
+						xlinkHref="/images/history/liquido.jpg"
 					/>
 				</pattern>
 				<filter
@@ -227,7 +225,7 @@ const LifeLine2017: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeSt
 				</g>
 				<text
 					className="item-107-k"
-					transform="translate(1021 281.286)">
+					transform={selectedLanguage === 'es' ? "translate(1021 281.286)" : "translate(1021 301.286)"}>
 					<tspan x={0} y={23}>
 						{t('A lo largo de su existencia el ')}
 					</tspan>

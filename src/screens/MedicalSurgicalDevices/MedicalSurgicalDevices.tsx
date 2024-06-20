@@ -10,7 +10,7 @@ const MedicalSurgicalDevices: React.FC = (): JSX.Element => {
 	const [ShowModal, setShowModal] = React.useState(false)
 	const [openShow, setOpenShow] = React.useState(false)
 
-	const {t} = useTranslation()
+	const { t } = useTranslation()
 	return (
 		<React.Fragment>
 			{width > 1024 ? (
@@ -21,10 +21,11 @@ const MedicalSurgicalDevices: React.FC = (): JSX.Element => {
 							onClose={() => setShowModal(false)}></Medical>
 					) : (
 						<svg
-						viewBox="0 0 1920 1080"
-						width="100%"
-						height="100%"
-						preserveAspectRatio="none">
+							viewBox="0 0 1920 900
+						"
+							width="100%"
+							height="100%"
+							preserveAspectRatio="none">
 							<defs>
 								<style>
 									{
@@ -38,8 +39,8 @@ const MedicalSurgicalDevices: React.FC = (): JSX.Element => {
 									height="100%"
 									viewBox="238.241 500.763 1426.301 724.293">
 									<image
-										  width={1920}
-										  height={1279.875}
+										width={1920}
+										height={1279.875}
 										xlinkHref="/images/products/background-medical.webp"
 									/>
 								</pattern>
@@ -105,35 +106,37 @@ const MedicalSurgicalDevices: React.FC = (): JSX.Element => {
 										height={1080}
 									/>
 								</g>
-								<text
-									className="c-medical-survery"
-									transform="translate(140 776)">
-									<tspan x={0} y={0}>
-										{t('Dispositivos')}
-									</tspan>
-									<tspan x={0} y={57}>
-										{t('médico-quirúrgicos')}
-									</tspan>
-								</text>
-								<text
-									className="d-medical-survery"
-									transform="translate(968 757)">
-									<tspan x={0} y={23}>
-										{
-											t('Somos un aliado estrat\xE9gico para los profesionales que realizan ')
-										}
-									</tspan>
-									<tspan x={0} y={51}>
-										{
-											t('procedimientos quir\xFArgicos con equipos y dispositivos m\xE9dicos que ')
-										}
-									</tspan>
-									<tspan x={0} y={79}>
-										{
-											'mejoran los resultados del paciente en una intervenci\xF3n.'
-										}
-									</tspan>
-								</text>
+								<g transform='translate(0 -150)'>
+									<text
+										className="c-medical-survery"
+										transform="translate(140 776)">
+										<tspan x={0} y={0}>
+											{t('Dispositivos')}
+										</tspan>
+										<tspan x={0} y={57}>
+											{t('médico-quirúrgicos')}
+										</tspan>
+									</text>
+									<text
+										className="d-medical-survery"
+										transform="translate(968 757)">
+										<tspan x={0} y={23}>
+											{t(
+												'Somos un aliado estrat\xE9gico para los profesionales que realizan '
+											)}
+										</tspan>
+										<tspan x={0} y={51}>
+											{t(
+												'procedimientos quir\xFArgicos con equipos y dispositivos m\xE9dicos que '
+											)}
+										</tspan>
+										<tspan x={0} y={79}>
+											{
+												'mejoran los resultados del paciente en una intervenci\xF3n.'
+											}
+										</tspan>
+									</text>
+								</g>
 								<g
 									className="m-medical-survery"
 									transform="matrix(1, 0, 0, 1, -9, -6)">
@@ -181,7 +184,10 @@ const MedicalSurgicalDevices: React.FC = (): JSX.Element => {
 											<feComposite in="SourceGraphic" />
 										</filter>
 									</defs>
-									<g transform="translate(-3778.748 -5832)"  onMouseLeave={() => setOpenShow(false)} onMouseOver={() => setOpenShow(true)}>
+									<g
+										transform="translate(-3778.748 -6032)"
+										onMouseLeave={() => setOpenShow(false)}
+										onMouseOver={() => setOpenShow(true)}>
 										<g
 											className="c-boton-pequena cursor-pointer"
 											transform="matrix(1, 0, 0, 1, 3778.75, 5819)">
@@ -194,7 +200,11 @@ const MedicalSurgicalDevices: React.FC = (): JSX.Element => {
 										<text
 											className="b-boton-pequena cursor-pointer"
 											transform="translate(3835.929 5863.388)"
-											style={{ fill: openShow ? "#001f5f" : '#ffffff' }}>
+											style={{
+												fill: openShow
+													? '#001f5f'
+													: '#ffffff',
+											}}>
 											<tspan x={0} y={0}>
 												{t('Conoce M\xE1s')}
 											</tspan>

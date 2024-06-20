@@ -1,8 +1,6 @@
-import { useTranslation } from 'react-i18next'
 import { ILifeLine2000 } from './2000'
 
-const LifeLine2009: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeStepForce }) => {
-	const {t} = useTranslation()
+const LifeLine2009: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeStepForce, t, selectedLanguage }) => {
 	return (
 		<svg viewBox="0 0 1920 874.839">
 			<defs>
@@ -44,7 +42,7 @@ const LifeLine2009: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeSt
 						preserveAspectRatio="xMidYMid slice"
 						width={302.286}
 						height={201.524}
-						xlinkHref="/images/history/2011-1-2.webp"
+						xlinkHref="/images/IMG_6337 GRIFOLS.webp"
 					/>
 				</pattern>
 				<filter
@@ -102,7 +100,7 @@ const LifeLine2009: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeSt
 						preserveAspectRatio="xMidYMid slice"
 						width={475.286}
 						height={272.019}
-						xlinkHref="/images/history/2007-1.webp"
+						xlinkHref="/images/ortopedi.webp"
 					/>
 				</pattern>
 				<filter
@@ -227,7 +225,7 @@ const LifeLine2009: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeSt
 				</g>
 				<text
 					className="item-104-k"
-					transform="translate(1016 302.286)">
+					transform={selectedLanguage === 'es' ? "translate(1016 302.286)" : "translate(1036 315.286)"}>
 					<tspan x={0} y={23}>
 						{t('Se amplía el portafolio de ')}
 					</tspan>
@@ -235,7 +233,7 @@ const LifeLine2009: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeSt
 						{t('productos con las líneas de ')}
 					</tspan>
 					<tspan x={0} y={75}>
-						{t('implantes ortopédicos de Stryker, ')}
+						{t('implantes ortopédicos,')}
 					</tspan>
 					<tspan x={0} y={101}>
 						{t('equipos médicos, pruebas ')}

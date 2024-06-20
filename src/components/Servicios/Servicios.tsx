@@ -8,6 +8,7 @@ import {
 import React from 'react'
 import Mute from 'assets/images/mute.png'
 import Mute2 from 'assets/images/Button.png'
+import { useLanguage } from 'context/language'
 
 const Servicios: React.FC = () => {
 	const { width } = useGeneral()
@@ -46,6 +47,9 @@ const Servicios: React.FC = () => {
 		console.log(carousel)
 		carousel!.click()
 	}
+
+	/** Contexts */
+	const { selectedLanguage } = useLanguage()
 
 	return (
 		<div style={{ height: '100%' }}>

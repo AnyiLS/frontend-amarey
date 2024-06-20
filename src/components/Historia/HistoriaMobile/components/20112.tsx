@@ -1,10 +1,7 @@
 import React from 'react'
 import { TimeLine } from '../HistoriaMobile'
-import { useTranslation } from 'react-i18next'
 
-const Component20112: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => {
-  const { t } = useTranslation()
-
+const Component20112: React.FC<TimeLine> = ({ onNext, onPrev, t, selectedLanguage }): JSX.Element => {
 	return (
 		<React.Fragment>
 			<svg viewBox="85 0 414 485.06" preserveAspectRatio="none">
@@ -43,7 +40,7 @@ const Component20112: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => 
         height="100%"
         viewBox="0 0 1018 702"
       >
-        <image width={1018} height={702} xlinkHref="/images/mobile/history/20112-1.webp" />
+        <image width={1018} height={702} xlinkHref="/images/ambiente.webp" />
       </pattern>
       <filter
         id="d-time-line"
@@ -224,7 +221,7 @@ const Component20112: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => 
             transform="translate(0)"
           />
         </g>
-        <text className="k-time-line" transform="translate(298.09 189.093)">
+        <text className="k-time-line" transform={selectedLanguage === 'es' ? "translate(298.09 189.093)" : "translate(298.09 185.093)"}>
           <tspan x={0} y={11}>
             {t("Grupo Amarey obtiene la ")}
           </tspan>

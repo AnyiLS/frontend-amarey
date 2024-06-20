@@ -9,7 +9,7 @@ const Mantenimiento: React.FC<IMantenimiento> = ({ onClick }): JSX.Element => {
 			<svg
 				width="100%"
 				height={'100%'}
-				viewBox="0 0 1920 1080"
+				viewBox="0 100 1920 980"
 				preserveAspectRatio="none"
 				onClick={onClick}>
 				<defs>

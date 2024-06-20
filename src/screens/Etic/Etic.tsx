@@ -4,6 +4,7 @@ import Codigo from './Components/codigo'
 import Lineacodigo from './Components/Lineacodigo'
 import EticMobile from './EticMobile'
 import { useTranslation } from 'react-i18next'
+import { useLanguage } from 'context/language'
 
 const RoboticSurgery: React.FC = (): JSX.Element => {
 	/** Hooks */
@@ -11,6 +12,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 
 	const [view, setView] = React.useState(0)
 	const {t} = useTranslation()
+	const { selectedLanguage } = useLanguage()
 
 
 	return (
@@ -146,7 +148,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 									<text
 										className="c-etic"
 										transform="translate(572.846 732.688)">
-										<tspan x={179.02} y={55}>
+										<tspan x={selectedLanguage === 'es' ? 179.02 : 70.02} y={55}>
 											{t('L\xEDnea ')}
 										</tspan>
 										<tspan

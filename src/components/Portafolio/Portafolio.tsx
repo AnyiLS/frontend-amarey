@@ -6,59 +6,42 @@ import CenterCard from './components/CenterCard'
 import Elipses from './components/Elipses'
 import './Carousel.css'
 import { useTranslation } from 'react-i18next'
+import { useLanguage } from 'context/language'
+import useLayout from 'hooks/ancho.hook'
 
 const Portafolio: React.FC = () => {
-	const [height, setHeight] = React.useState<string>('100vh')
+	// const [height, setHeight] = React.useState<string>('100vh')
 	const [openState, setOpenState] = React.useState<boolean>(false)
 	const [page, setPage] = React.useState<number>(0)
 	const [items, setItems] = React.useState<CarouselPortfolio[]>([])
 	const [over, setOver] = React.useState(false)
 
-	React.useEffect(() => {
-		window.addEventListener('resize', () =>
-			setHeight(
-				window.innerHeight > 800
-					? '110vh'
-					: window.innerHeight < 700
-					? '100%'
-					: '100vh'
-			)
-		)
-
-		setHeight(
-			window.innerHeight > 800
-				? '110vh'
-				: window.innerHeight < 700
-				? '100%'
-				: '100vh'
-		)
-
-		return () =>
-			window.removeEventListener('resize', () =>
-				setHeight(
-					window.innerHeight > 800
-						? '110vh'
-						: window.innerHeight < 700
-						? '100%'
-						: '100vh'
-				)
-			)
-	}, [])
+	const { selectedLanguage } = useLanguage()
+	const { isSmallScreen } = useLayout()
 
 	const filterdata = () => {
 		const subsetSize = 3
-		let startIndex = (page % carouselPortfolio.length) - subsetSize
+		let startIndex =
+			(page % carouselPortfolio(t, selectedLanguage).length) - subsetSize
 		if (startIndex < 0) {
-			const length = carouselPortfolio.length
+			const length = carouselPortfolio(t, selectedLanguage).length
 			startIndex = length + startIndex
 		}
 		const endIndex = startIndex + subsetSize
-		const subset = carouselPortfolio.slice(startIndex, endIndex)
+		const subset = carouselPortfolio(t, selectedLanguage).slice(
+			startIndex,
+			endIndex
+		)
 
 		if (subset.length < subsetSize) {
-			const remainingItems = carouselPortfolio
+			const remainingItems = carouselPortfolio(t, selectedLanguage)
 				.slice(0, startIndex)
-				.concat(carouselPortfolio.slice(0, subsetSize - subset.length))
+				.concat(
+					carouselPortfolio(t, selectedLanguage).slice(
+						0,
+						subsetSize - subset.length
+					)
+				)
 			return subset.concat(remainingItems)
 		}
 
@@ -69,17 +52,30 @@ const Portafolio: React.FC = () => {
 		setItems(filterdata())
 	}, [page])
 
-	console.log(items)
+	const { t } = useTranslation()
 
-	const {t} = useTranslation()
+	/** States */
+	const [width, setWidth] = React.useState<number>(window.innerWidth)
+	const [height, setHeight] = React.useState<number>(window.innerHeight)
+
+	React.useEffect(() => {
+		window.addEventListener('resize', () => {
+			setHeight(window.innerHeight)
+			setWidth(window.innerWidth)
+		})
+
+		return () => {
+			window.removeEventListener('resize', () => {
+				setHeight(window.innerHeight)
+				setWidth(window.innerWidth)
+			})
+		}
+	}, [])
+
 	return (
 		<div>
 			{!openState ? (
-				<svg
-					width="100%"
-					height='100%'
-					viewBox="0 0 1920 1080"
-					preserveAspectRatio="none">
+				<svg viewBox={`0 0 1920 975`} height='auto' width={window.screen.width} preserveAspectRatio='none'>
 					<defs>
 						<style>
 							{
@@ -107,7 +103,7 @@ const Portafolio: React.FC = () => {
 							id="d-4"
 							width={1}
 							height={1}
-							viewBox="359.445 174.865 908.599 837.429">
+							viewBox={`359.445 ${isSmallScreen ? '0' : '174.865'} 908.599 837.429`}>
 							<image
 								preserveAspectRatio="xMidYMid slice"
 								width={1544.558}
@@ -132,7 +128,7 @@ const Portafolio: React.FC = () => {
 					<g>
 						<path className="a-4" d="M0,0H1920V1079.473H0Z" />
 						<g className="d-4">
-							<g transform="translate(1965.221 424.48) rotate(180)">
+							<g transform={isSmallScreen ? 'translate(1965.221 314.48) rotate(180)' : "translate(1965.221 424.48) rotate(180)"}>
 								<g className="e-4">
 									<path
 										className="f-4"
@@ -141,7 +137,7 @@ const Portafolio: React.FC = () => {
 								</g>
 							</g>
 							<g transform="translate(1920 1079.473) rotate(180)">
-								<g className="g-4" transform="translate(0 0)">
+								<g className="g-4" transform={isSmallScreen ? "translate(0 150)" : 'translate(0 0)'}>
 									<path
 										className="c-4"
 										d="M455.945,307.365H0V0H699L609.4,208.6c-25.677,59.78-86.254,98.769-153.456,98.769"
@@ -152,7 +148,7 @@ const Portafolio: React.FC = () => {
 						</g>
 						<g
 							className="k-4"
-							transform="matrix(1, 0, 0, 1, -9, -4.13)">
+							transform={isSmallScreen ? 'matrix(1, 0, 0, 1, -9, -250.13)' : "matrix(1, 0, 0, 1, -9, -4.13)"}>
 							<path
 								className="h-4"
 								d="M727.295,1027.662H0V0H1115L972.078,697.434C931.12,897.3,834.491,1027.662,727.295,1027.662"
@@ -160,6 +156,7 @@ const Portafolio: React.FC = () => {
 								onClick={() => setOpenState(true)}
 							/>
 						</g>
+						<g transform={isSmallScreen ? 'translate(0 -150)' : 'translate(0 0)'}>
 						<text
 							className="i-4"
 							transform="translate(1115 500.068)">
@@ -174,24 +171,25 @@ const Portafolio: React.FC = () => {
 								{t('Somos un grupo empresarial con una clara')}
 							</tspan>
 							<tspan x={0} y={51}>
-								{
-									t('inspiraci\xF3n profesional y humana; ofrecemos')
-								}
+								{t(
+									'inspiraci\xF3n profesional y humana; ofrecemos'
+								)}
 							</tspan>
 							<tspan x={0} y={79}>
-								{
-									t('un portafolio de soluciones en salud de la m\xE1s')
-								}
+								{t(
+									'un portafolio de soluciones en salud de la m\xE1s'
+								)}
 							</tspan>
 							<tspan x={0} y={107}>
-								{
-									t('alta calidad para el cuidado de los pacientes.')
-								}
+								{t(
+									'alta calidad para el cuidado de los pacientes.'
+								)}
 							</tspan>
 						</text>
+						</g>
 					</g>
 					<g
-						transform="translate(1164 779)"
+						transform={isSmallScreen ? 'translate(1164 609)' : "translate(1164 779)"}
 						onClick={() => setOpenState(true)}>
 						<defs>
 							<style>
@@ -301,16 +299,18 @@ const Portafolio: React.FC = () => {
 							width={1}
 							height={1}
 							patternTransform="translate(0 572.845) rotate(-180)"
-							viewBox='0 0 306 342'>
+							viewBox="0 0 306 342">
 							<image
 								preserveAspectRatio="xMidYMid slice"
 								width={322}
 								height={342}
 								xlinkHref={
-									carouselPortfolio.length > 0
-										? carouselPortfolio[
-												page - 1 < 0 ? 9 : page - 1
-										  ].images
+									carouselPortfolio(t, selectedLanguage)
+										.length > 0
+										? carouselPortfolio(
+												t,
+												selectedLanguage
+										  )[page - 1 < 0 ? 10 : page - 1].images
 										: ''
 								}
 							/>
@@ -368,16 +368,18 @@ const Portafolio: React.FC = () => {
 							width={1}
 							height={1}
 							patternTransform="translate(0 860.314) rotate(-180)"
-							viewBox='0 0 306 342'>
+							viewBox="0 0 306 342">
 							<image
 								preserveAspectRatio="xMidYMid slice"
 								width={322}
 								height={342}
 								xlinkHref={
-									carouselPortfolio.length > 0
-										? carouselPortfolio[
-												page + 1 > 9 ? 0 : page + 1
-										  ].images
+									carouselPortfolio(t, selectedLanguage)
+										.length > 0
+										? carouselPortfolio(
+												t,
+												selectedLanguage
+										  )[page + 1 > 10 ? 0 : page + 1].images
 										: ''
 								}
 							/>
@@ -404,8 +406,11 @@ const Portafolio: React.FC = () => {
 							height={1}
 							patternTransform="translate(0 1026.314) rotate(-180)"
 							viewBox={
-								carouselPortfolio[page].viewbox
-									? carouselPortfolio[page].viewbox
+								carouselPortfolio(t, selectedLanguage)[page]
+									.viewbox
+									? carouselPortfolio(t, selectedLanguage)[
+											page
+									  ].viewbox
 									: '101.554 6.532 241.811 269.735'
 							}>
 							<image
@@ -413,8 +418,12 @@ const Portafolio: React.FC = () => {
 								width={272.685}
 								height={286.423}
 								xlinkHref={
-									carouselPortfolio.length > 0
-										? carouselPortfolio[page].images
+									carouselPortfolio(t, selectedLanguage)
+										.length > 0
+										? carouselPortfolio(
+												t,
+												selectedLanguage
+										  )[page].images
 										: ''
 								}
 							/>
@@ -546,10 +555,22 @@ const Portafolio: React.FC = () => {
 							className="t-portfolio-3"
 							transform="translate(122.488 0)">
 							<g transform="translate(111.438 55.847)">
-								<LeftCard {...carouselPortfolio[page - 1 < 0 ? 9 : page - 1]} />
-								<a href={carouselPortfolio[page].to}>
+								<LeftCard
+									{...carouselPortfolio(t, selectedLanguage)[
+										page - 1 < 0 ? 10 : page - 1
+									]}
+								/>
+								<a
+									href={
+										carouselPortfolio(t, selectedLanguage)[
+											page
+										].to
+									}>
 									<CenterCard
-										{...carouselPortfolio[page]}
+										{...carouselPortfolio(
+											t,
+											selectedLanguage
+										)[page]}
 										selected={over}
 										onOver={() => setOver(true)}
 										onLeave={() => setOver(false)}
@@ -570,7 +591,7 @@ const Portafolio: React.FC = () => {
 												transform="translate(1150.94 352.85)"
 											/>
 										</g>
-										<g filter="url(#Unión_1)">
+										<g>
 											<path
 												className="x-portfolio-3"
 												d="M0,0V149.62H0q0,.055,0,.11V258.48a27.943,27.943,0,0,0,27.943,27.943H228.829a27.943,27.943,0,0,0,27.943-27.943V149.73l-.05-.11h.05L223.858,48.078C214.426,18.979,192.173,0,167.487,0Z"
@@ -580,9 +601,29 @@ const Portafolio: React.FC = () => {
 									</g>
 									<text
 										className="w-portfolio-3"
-										transform={`translate(${carouselPortfolio[page + 1 > 9 ? 0 : page + 1].x_selected} 379.825)`}>
-										<tspan x={carouselPortfolio[page + 1 > 9 ? 0 : page + 1].x} y={0}>
-											{carouselPortfolio[page + 1 > 9 ? 0 : page + 1].title}
+										transform={`translate(${
+											carouselPortfolio(
+												t,
+												selectedLanguage
+											)[page + 1 > 10 ? 0 : page + 1]
+												.x_selected
+										} 379.825)`}>
+										<tspan
+											x={
+												carouselPortfolio(
+													t,
+													selectedLanguage
+												)[page + 1 > 10 ? 0 : page + 1]
+													.x
+											}
+											y={0}>
+											{
+												carouselPortfolio(
+													t,
+													selectedLanguage
+												)[page + 1 > 10 ? 0 : page + 1]
+													.title
+											}
 										</tspan>
 									</text>
 								</g>
@@ -591,7 +632,7 @@ const Portafolio: React.FC = () => {
 						<g
 							transform="translate(0 274.895)"
 							onClick={() =>
-								setPage(page - 1 < 0 ? 9 : page - 1)
+								setPage(page - 1 < 0 ? 10 : page - 1)
 							}>
 							<g
 								className="ad-portfolio-3"
@@ -611,7 +652,7 @@ const Portafolio: React.FC = () => {
 						<g
 							transform="translate(1198.047 274.895)"
 							onClick={() =>
-								setPage(page + 1 > 9 ? 0 : page + 1)
+								setPage(page + 1 > 10 ? 0 : page + 1)
 							}>
 							<g
 								className="ac-portfolio-3 cursor-pointer"
@@ -632,7 +673,9 @@ const Portafolio: React.FC = () => {
 					<text
 						className="ab-portfolio-3"
 						transform="translate(699 116)">
-						<tspan x={42.715} y={66}>
+						<tspan
+							x={selectedLanguage === 'es' ? 42.715 : 122.715}
+							y={66}>
 							{t('PORTAFOLIO')}
 						</tspan>
 					</text>

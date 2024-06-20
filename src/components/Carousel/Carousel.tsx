@@ -1,60 +1,46 @@
 import React from 'react'
 import { Carousel } from 'flowbite-react'
-import {
-	CarouselHeaderItems,
-	carouselHeaderItems,
-} from 'mocks/carouselHeader.mocks'
+/** Mocks */
+import {CarouselHeaderItems, carouselHeaderItems} from 'mocks/carouselHeader.mocks'
+/** Components */
 import Slide4 from './components/Slide4'
-import Mute from 'assets/images/mute.png'
-import Mute2 from 'assets/images/Button.png'
-import useGeneral from 'hooks/general.hook'
+/** Hooks */
+import useCarouselHome from 'utils/hooks/carousel'
+import useLayout from 'hooks/ancho.hook'
+import { useLanguage } from 'context/language'
 
 const CarouselHeader: React.FC = () => {
-	const { width } = useGeneral();
-	const [height, setHeight] = React.useState<number>(0)
-	const [selected, setSelected] = React.useState<number | null>(null)
-	const [slide, setSlide] = React.useState<boolean>(true)
-	const [showPopup, setShowPopup] = React.useState<boolean>(false)
-	const [mute, setMute] = React.useState(false)
-
-  React.useEffect(() => {
-    setHeight(document.getElementById('navbar__container')?.clientHeight ?? 0)
-  }, [])
-
+	const { selectedLanguage } = useLanguage()
+	/** Hooks */
+	const {
+		showPopup,
+		selected,
+		height,
+		slide,
+		handleCloseVideo,
+		handleOnReturn,
+		handleOpenPopup,
+		handleOnSelected
+	} = useCarouselHome();
+	
+	const { isSmallScreen } = useLayout()
 
 	return (
-		<div style={{ height: '100%' }}>
-			<Carousel slide={slide} slideInterval={20000}>
+		<div className='h-full'>
+			<Carousel slide={false} slideInterval={20000} className={`${isSmallScreen ? 'h-[625px]' : ''}`}>
 				{carouselHeaderItems.map(
 					(item: CarouselHeaderItems, index: number) => (
 						<React.Fragment key={index}>
 							{selected === index ? (
 								<Slide4
-									height={`${height}`}
+									height={height.toString()}
 									image={item.image}
-									onReturn={() => {
-										setSelected(null)
-										setSlide(true)
-									}}
-									onOpenPopup={() => {
-										setShowPopup(true)
-										const video: HTMLVideoElement =
-											document.getElementById(
-												'video-1'
-											) as HTMLVideoElement
-		
-										if (video) {
-											video.currentTime = 0
-											video.play()
-										}
-									}}
+									onReturn={handleOnReturn}
+									onOpenPopup={handleOpenPopup}
 								/>
 							) : (
 								<React.Fragment>
-									{item.slide(`${height}`, (number: number) => {
-										setSelected(number)
-										setSlide(false)
-									})}
+									{item.slide(height.toString(),handleOnSelected)}
 								</React.Fragment>
 							)}
 						</React.Fragment>
@@ -62,29 +48,20 @@ const CarouselHeader: React.FC = () => {
 				)}
 			</Carousel>
 			<div
-				className="fixed h-screen w-screen top-0 left-0 z-[100]"
-				style={{ display: showPopup ? 'flex' : 'none' }}>
+				className={`fixed h-screen w-screen top-0 left-0 z-[100]${showPopup ? ' flex' : ' hidden'}`}
+			>
 				<video
-					src="https://grupoamarey.com/pdf/video/Origen pentamero_1.mp4"
-					muted={mute}
+					src={selectedLanguage === 'es' && showPopup ? "https://grupoamarey.com/pdf/video/Origen pentamero_1.mp4" : selectedLanguage === 'en' && showPopup ? "https://grupoamarey.com/videos/videos_inlges/Pentamero_ingles.mp4" : ''}
 					className="w-full h-full"
 					id="video-1"
-					controls></video>
-				{/* <img
-					src={mute ? Mute : Mute2}
-					className="absolute w-[3%] left-[1%] top-[83%] mute-bottom"
-					alt="Mute"
-					onClick={() => setMute(!mute)}
-				/> */}
+					controls
+					autoPlay={true}
 
+				/>
 				<span
 					className="absolute top-[5%] right-[5%] text-white text-[30px] text-center font-bold bg-[#00000050] w-[50px] h-[50px] rounded-[100%]"
-					onClick={() => {
-						setShowPopup(false)
-						const video: HTMLVideoElement = document.getElementById('video-1') as HTMLVideoElement
-
-							if (video) video.pause()
-					}}>
+					onClick={handleCloseVideo}
+				>
 					X
 				</span>
 			</div>

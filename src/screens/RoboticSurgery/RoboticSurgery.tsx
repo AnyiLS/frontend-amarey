@@ -3,6 +3,8 @@ import useGeneral from 'hooks/general.hook'
 import Robotica from './Components/Robotica'
 import RoboticSurgeryMobile from './RoboticSurgeryMobile'
 import { useTranslation } from 'react-i18next'
+import { useLanguage } from 'context/language'
+import useLayout from 'hooks/ancho.hook'
 
 const RoboticSurgery: React.FC = (): JSX.Element => {
 	/** Hooks */
@@ -10,6 +12,10 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 	const [showModal, setShowModal] = React.useState(false)
 	const [openShow, setOpenShow] = React.useState(false)
 	const {t} = useTranslation()
+	const { selectedLanguage } = useLanguage()
+
+	const { isSmallScreen } = useLayout()
+
 
 	return (
 		<React.Fragment>
@@ -21,7 +27,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 							onClose={() => setShowModal(false)}></Robotica>
 					) : (
 						<svg
-						viewBox="0 0 1920 1080"
+						viewBox={`0 0 1920 ${isSmallScreen ? '900' : '1080'}`}
 						width="100%"
 						height="100%"
 						preserveAspectRatio="none">
@@ -102,16 +108,17 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 										height={1080}
 									/>
 								</g>
+								<g transform={isSmallScreen ? 'translate(0 -150)' : 'translate(0 0)'}>
 								<text
 									className="c-robotic-surgery"
 									transform="translate(403 833)">
 									<tspan x={-263.34} y={0}>
-										{'CIRUG\xCDA ROB\xD3TICA '}
+										{t('CIRUG\xCDA ROB\xD3TICA ')}
 									</tspan>
 								</text>
 								<text
 									className="d-robotic-surgery"
-									transform="translate(968 421)">
+									transform={selectedLanguage === 'es' ? "translate(968 421)" : "translate(968 455)"}>
 									<tspan x={0} y={23}>
 										{
 											t('Una extensi\xF3n natural de los ojos, a trav\xE9s de una visi\xF3n en 3D y ')
@@ -176,6 +183,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 										{t('patolog\xEDas.')}
 									</tspan>
 								</text>
+								</g>
 								<g
 									className="m-robotic-surgery"
 									transform="matrix(1, 0, 0, 1, -9, -6)">
@@ -225,7 +233,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 											<feComposite in="SourceGraphic" />
 										</filter>
 									</defs>
-									<g transform="translate(-3778.748 -5819)" onMouseLeave={() => setOpenShow(false)} onMouseOver={() => setOpenShow(true)}>
+									<g transform={isSmallScreen ? 'translate(-3778.748 -6019)' : "translate(-3778.748 -5819)"} onMouseLeave={() => setOpenShow(false)} onMouseOver={() => setOpenShow(true)}>
 										<g
 											className="c-proboctica cursor-pointer"
 											transform="matrix(1, 0, 0, 1, 3778.75, 5819)">

@@ -3,6 +3,7 @@ import useGeneral from 'hooks/general.hook'
 import Medicinesone from './Components/Medicinesone'
 import MedicinesMobile from './MedicinesMobile'
 import { useTranslation } from 'react-i18next'
+import useLayout from 'hooks/ancho.hook'
 
 const Medicines: React.FC = (): JSX.Element => {
 	/** Hooks */
@@ -10,7 +11,9 @@ const Medicines: React.FC = (): JSX.Element => {
 	const [ShowModal, setShowModal] = React.useState(false)
 	const [openShow, setOpenShow] = React.useState(false)
 
-	const {t} = useTranslation()
+	const { t } = useTranslation()
+	const { isSmallScreen } = useLayout()
+
 	return (
 		<React.Fragment>
 			{width > 1024 ? (
@@ -21,9 +24,9 @@ const Medicines: React.FC = (): JSX.Element => {
 							onClose={() => setShowModal(false)}></Medicinesone>
 					) : (
 						<svg
-							viewBox="0 0 1920 1080"
+							viewBox={isSmallScreen ? '0 0 1920 900' : "0 0 1920 1080"}
 							width="100%"
-							height={"100%"}
+							height={'100%'}
 							preserveAspectRatio="none">
 							<defs>
 								<style>
@@ -102,32 +105,34 @@ const Medicines: React.FC = (): JSX.Element => {
 										height={1080}
 									/>
 								</g>
-								<text
-									className="c-medicines"
-									transform="translate(363 842)">
-									<tspan x={-223.273} y={0}>
-										{t('MEDICAMENTOS ')}
-									</tspan>
-								</text>
-								<text
-									className="d-medicines"
-									transform="translate(968 756)">
-									<tspan x={0} y={23}>
-										{
-											t('Con medicamentos de la más alta tecnología para el cuidado de la ')
-										}
-									</tspan>
-									<tspan x={0} y={51}>
-										{
-											t('salud de los pacientes, ya sea adultos, ni\xF1os o neonatos, ')
-										}
-									</tspan>
-									<tspan x={0} y={79}>
-										{
-											t('ofrecemos mayor eficacia y tolerabilidad al paciente en productos.')
-										}
-									</tspan>
-								</text>
+								<g transform={isSmallScreen ? 'translate(0 -150)' : 'translate(0 0)'}>
+									<text
+										className="c-medicines"
+										transform="translate(363 842)">
+										<tspan x={-223.273} y={0}>
+											{t('MEDICAMENTOS ')}
+										</tspan>
+									</text>
+									<text
+										className="d-medicines"
+										transform="translate(968 756)">
+										<tspan x={0} y={23}>
+											{t(
+												'Con medicamentos de la más alta tecnología para el cuidado de la '
+											)}
+										</tspan>
+										<tspan x={0} y={51}>
+											{t(
+												'salud de los pacientes, ya sea adultos, ni\xF1os o neonatos, '
+											)}
+										</tspan>
+										<tspan x={0} y={79}>
+											{t(
+												'ofrecemos mayor eficacia y tolerabilidad al paciente en productos.'
+											)}
+										</tspan>
+									</text>
+								</g>
 								<g
 									className="m-medicines"
 									transform="matrix(1, 0, 0, 1, -9, -6)">
@@ -176,7 +181,7 @@ const Medicines: React.FC = (): JSX.Element => {
 										</filter>
 									</defs>
 									<g
-										transform="translate(-3778.748 -5819)"
+										transform={isSmallScreen ? 'translate(-3778.748 -6038)' : "translate(-3778.748 -5819)"}
 										onMouseLeave={() => setOpenShow(false)}
 										onMouseOver={() => setOpenShow(true)}>
 										<g

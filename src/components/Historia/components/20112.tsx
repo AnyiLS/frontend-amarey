@@ -1,8 +1,6 @@
-import { useTranslation } from 'react-i18next'
 import { ILifeLine2000 } from './2000'
 
-const LifeLine20112: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeStepForce }) => {
-	const {t} = useTranslation()
+const LifeLine20112: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeStepForce, t, selectedLanguage }) => {
 	return (
 		<svg viewBox="0 0 1920 874.839">
 			<defs>
@@ -44,7 +42,7 @@ const LifeLine20112: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeS
 					<image
 						width={1018}
 						height={702}
-						xlinkHref="/images/history/2012-1-2.webp"
+						xlinkHref="/images/ambiente.webp"
 					/>
 				</pattern>
 				<filter
@@ -223,7 +221,7 @@ const LifeLine20112: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeS
 				</g>
 				<text
 					className="item-106-k"
-					transform="translate(1030 332.286)">
+					transform={selectedLanguage === 'es' ? "translate(1030 332.286)" : "translate(1030 347.286)"}>
 					<tspan x={0} y={0}>
 						{t('Grupo Amarey obtiene la ')}
 					</tspan>

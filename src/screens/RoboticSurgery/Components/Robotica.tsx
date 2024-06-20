@@ -1,3 +1,4 @@
+import { useLanguage } from 'context/language';
 import React from 'react'
 import { useTranslation } from 'react-i18next';
 
@@ -6,6 +7,7 @@ const Robotica: React.FC<{ height: string; onClose: () => void }> = ({
 	onClose,
 }) => {
 	const {t} = useTranslation()
+	const {selectedLanguage} = useLanguage()
 	return (
 		<div>
 			<svg
@@ -61,7 +63,7 @@ const Robotica: React.FC<{ height: string; onClose: () => void }> = ({
 				/>
 				<text className="d-robotica" transform="translate(1782.577 66)">
 					<tspan x={-269.8} y={0}>
-						{'SOLUCIONES EN SALUD'}
+						{t('SOLUCIONES EN SALUD')}
 					</tspan>
 				</text>
 				<path
@@ -73,7 +75,7 @@ const Robotica: React.FC<{ height: string; onClose: () => void }> = ({
 					className="f-robotica"
 					transform="translate(962.577 590.204)">
 					<tspan x={-263.616} y={0}>
-						{'Beneficios de la cirug\xEDa rob\xF3tica:'}
+						{t('Beneficios de la cirug\xEDa rob\xF3tica:')}
 					</tspan>
 				</text>
 				<text className="g-robotica" transform="translate(414.577 642)">
@@ -120,7 +122,7 @@ const Robotica: React.FC<{ height: string; onClose: () => void }> = ({
 				</text>
 				<text
 					className="h-robotica"
-					transform="translate(763.577 706.204)">
+					transform={selectedLanguage === 'es' ? "translate(763.577 706.204)" : "translate(703.577 706.204)"}>
 					<tspan x={0} y={23}>
 						{t('Movimientos intuitivos. Rotaci\xF3n de ')}
 					</tspan>
@@ -196,7 +198,7 @@ const Robotica: React.FC<{ height: string; onClose: () => void }> = ({
 						transform="translate(0 146)"
 					/>
 				</g>
-				<g transform="translate(745.577 714.704)">
+				<g transform={selectedLanguage === 'es' ? "translate(745.577 714.704)" : "translate(685.577 714.704)"}>
 					<circle
 						className="i-robotica"
 						cx={3}
@@ -311,7 +313,7 @@ const Robotica: React.FC<{ height: string; onClose: () => void }> = ({
 							className="d-robotica"
 							transform="translate(92.852 23)">
 							<tspan x={-71.52} y={0}>
-								{'Volver'}
+								{t('Volver')}
 							</tspan>
 						</text>
 					</a>

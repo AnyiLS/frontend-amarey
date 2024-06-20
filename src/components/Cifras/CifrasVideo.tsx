@@ -1,6 +1,7 @@
 import React from 'react'
 import Mute from 'assets/images/Grupo 5828.png'
 import Mute2 from 'assets/images/Button.png'
+import { useLanguage } from 'context/language'
 
 interface IcifrasVideo {
 	height: string
@@ -30,6 +31,9 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 			setMute(true)
 		}
 	}
+
+	/** Contexts */
+	const { selectedLanguage } = useLanguage();
 
 	React.useEffect(() => {
 		if (open) document.body.style.overflow = 'hidden'
@@ -119,9 +123,9 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 									id="video-cifras"
 									width="1929"
 									height="1080"
-									src="https://grupoamarey.com/pdf/video/cidras1.mp4" 
+									src={selectedLanguage === 'es' && open ? "https://grupoamarey.com/pdf/video/cidras1.mp4" : selectedLanguage === 'en' && open ? "https://grupoamarey.com/videos/videos_inlges/Trainning.mp4" : ''} 
 									loop
-									autoPlay
+									autoPlay  
 								/>
 							)}
 							{selected === 2 && (
@@ -129,7 +133,7 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 									id="video-cifras"
 									width="1929"
 									height="1080"
-									src="https://grupoamarey.com/pdf/video/cifras-robotica.mp4" 
+									src={selectedLanguage === 'es' && open ? "https://grupoamarey.com/pdf/video/cifras-robotica.mp4" : selectedLanguage === 'en' && open ? "https://grupoamarey.com/videos/videos_inlges/Robotics.mp4" : ''}
 									loop
 									autoPlay
 								/>
@@ -139,7 +143,7 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 									id="video-cifras"
 									width="1929"
 									height="1080"
-									src="https://grupoamarey.com/pdf/video/cifras-Maxiloo.mp4"
+									src={selectedLanguage === 'es' && open ? "https://grupoamarey.com/pdf/video/cifras-Maxiloo.mp4" : selectedLanguage === 'en' && open ? "https://grupoamarey.com/videos/videos_inlges/Logistics.mp4" : ''}
 									loop
 									autoPlay
 								/>
@@ -149,7 +153,7 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 									id="video-cifras"
 									width="1929"
 									height="1080"
-									src="https://grupoamarey.com/pdf/video/cifras-logistica.mp4"
+									src={selectedLanguage === 'es' && open ? "https://grupoamarey.com/pdf/video/cifras-logistica.mp4" : selectedLanguage === 'en' && open ? "https://grupoamarey.com/videos/videos_inlges/Orthopedics.mp4" : ''}
 									loop
 									autoPlay
 								/>

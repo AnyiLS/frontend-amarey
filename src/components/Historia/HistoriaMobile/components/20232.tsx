@@ -1,10 +1,7 @@
 import React from 'react'
 import { TimeLine } from '../HistoriaMobile'
-import { useTranslation } from 'react-i18next'
 
-const Component20232: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => {
-  const { t } = useTranslation()
-
+const Component20232: React.FC<TimeLine> = ({ onNext, onPrev, t, selectedLanguage }): JSX.Element => {
 	return (
 		<React.Fragment>
 			<svg viewBox="85 0 414 485.06" preserveAspectRatio="none">
@@ -85,7 +82,7 @@ const Component20232: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => 
           preserveAspectRatio="xMidYMid slice"
           width={165.221}
           height={78.308}
-          xlinkHref="/images/mobile/history/20232-2.webp"
+          xlinkHref="/images/history/textoyp.jpg"
         />
       </pattern>
       <filter
@@ -223,7 +220,7 @@ const Component20232: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => 
             transform="translate(0)"
           />
         </g>
-        <text className="k-time-line" transform="translate(295.09 189.093)">
+        <text className="k-time-line" transform={selectedLanguage === 'es' ? "translate(295.09 189.093)" : "translate(305.09 186.093)"}>
           <tspan x={0} y={11}>
             {t("Se crea la línea de ")}
           </tspan>

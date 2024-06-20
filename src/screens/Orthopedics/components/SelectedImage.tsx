@@ -23,12 +23,12 @@ const SelectedImage: React.FC<{ height: string; onClose: () => void }> = ({
 						id="a-selected"
 						width={1}
 						height={1}
-						viewBox="-163.111 48 1769.152 898.684">
+						viewBox="-601 0 1480 1079">
 						<image
 							preserveAspectRatio="xMidYMid slice"
-							width={1920.39}
+							width={1440.39}
 							height={1079.657}
-							xlinkHref="/images/user-products.webp"
+							xlinkHref="/images/portfolio.webp"
 						/>
 					</pattern>
 					<linearGradient

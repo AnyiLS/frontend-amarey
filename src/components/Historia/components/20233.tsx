@@ -1,8 +1,6 @@
-import { useTranslation } from 'react-i18next'
 import { ILifeLine2000 } from './2000'
 
-const LifeLine20233: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeStepForce }) => {
-	const {t} = useTranslation()
+const LifeLine20233: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeStepForce, t }) => {
 	return (
 		<svg viewBox="0 0 1920 874.839">
 			<defs>
@@ -44,7 +42,7 @@ const LifeLine20233: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeS
 						preserveAspectRatio="xMidYMid slice"
 						width={302.286}
 						height={201.524}
-						xlinkHref="/images/history/2023-3-2.webp"
+						xlinkHref="/images/CEDI.webp"
 					/>
 				</pattern>
 				<filter

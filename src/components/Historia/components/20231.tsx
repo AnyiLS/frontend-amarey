@@ -1,8 +1,6 @@
-import { useTranslation } from 'react-i18next'
 import { ILifeLine2000 } from './2000'
 
-const LifeLine20231: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeStepForce }) => {
-	const {t} = useTranslation()
+const LifeLine20231: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeStepForce, t, selectedLanguage }) => {
 	return (
 		<svg viewBox="0 0 1920 874.839">
 			<defs>
@@ -44,7 +42,7 @@ const LifeLine20231: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeS
 						preserveAspectRatio="xMidYMid slice"
 						width={316.58}
 						height={150.046}
-						xlinkHref="/images/history/2023-1-2.webp"
+						xlinkHref="/images/history/textoyp.jpg"
 					/>
 				</pattern>
 				<filter
@@ -102,7 +100,7 @@ const LifeLine20231: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeS
 						preserveAspectRatio="xMidYMid slice"
 						width={497.761}
 						height={235.918}
-						xlinkHref="/images/history/2023-1-1.webp"
+						xlinkHref="/images/history/cors.png"
 					/>
 				</pattern>
 				<filter
@@ -229,7 +227,7 @@ const LifeLine20231: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeS
 				</g>
 				<text
 					className="item-107-k"
-					transform="translate(544.356 295.365)">
+					transform={selectedLanguage === 'es' ? "translate(544.356 295.365)" : "translate(534.356 315.365)"}>
 					<tspan x={0} y={23}>
 						{t('El portafolio del Grupo Amarey ')}
 					</tspan>

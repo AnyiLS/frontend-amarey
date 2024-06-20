@@ -1,8 +1,10 @@
+import { useLanguage } from 'context/language'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
 const ProductosMobile: React.FC = (): JSX.Element => {
 	const { t } = useTranslation()
+	const { selectedLanguage } = useLanguage()
 
 	return (
 		<React.Fragment>
@@ -130,7 +132,7 @@ const ProductosMobile: React.FC = (): JSX.Element => {
 						<image
 							width={1966}
 							height={1311}
-							xlinkHref="/images/mobile/products/neuro/image-5.webp"
+							xlinkHref="/images/t-logistic.webp"
 						/>
 					</pattern>
 					<filter
@@ -414,14 +416,14 @@ const ProductosMobile: React.FC = (): JSX.Element => {
 				</a>
 				<text
 					className="o-reward-2-mobile"
-					transform="translate(60 221.21)">
+					transform={selectedLanguage === 'es' ? "translate(60 221.21)" : "translate(70 221.21)"}>
 					<tspan x={9.249} y={13}>
 						{t('Medicamentos')}
 					</tspan>
 				</text>
 				<text
 					className="o-reward-2-mobile"
-					transform="translate(53 361.21)">
+					transform={selectedLanguage === 'es' ? "translate(53 361.21)" : "translate(43 361.21)"}>
 					<tspan x={9.361} y={13}>
 						{t('Equipos médicos')}
 					</tspan>
@@ -432,14 +434,14 @@ const ProductosMobile: React.FC = (): JSX.Element => {
 					<tspan x={29.164} y={13}>
 						{t('Logística')}
 					</tspan>
-					<tspan x={18.594} y={29}>
+					<tspan x={selectedLanguage === 'es' ? 18.594 : 28.594} y={29}>
 						{t('hospitalaria')}
 					</tspan>
 				</text>
 				<text
 					className="o-reward-2-mobile"
 					transform="translate(60 640.21)">
-					<tspan x={19.392} y={13}>
+					<tspan x={selectedLanguage === 'es' ? 19.392 : 9.392} y={13}>
 						{t('Genómica y')}
 					</tspan>
 					<tspan x={30.011} y={29}>
@@ -449,23 +451,23 @@ const ProductosMobile: React.FC = (): JSX.Element => {
 				<text
 					className="o-reward-2-mobile"
 					transform="translate(40 779.21)">
-					<tspan x={15.935} y={13}>
+					<tspan x={selectedLanguage === 'es' ? 15.935 : 45.935} y={13}>
 						{t('Cuidado avanzado')}
 					</tspan>
-					<tspan x={44.397} y={29}>
+					<tspan x={selectedLanguage === 'es' ? 44.397 : 39.397} y={29}>
 						{t('de heridas')}
 					</tspan>
 				</text>
 				<text
 					className="o-reward-2-mobile"
-					transform="translate(226 221.21)">
+					transform={selectedLanguage === 'es' ? "translate(226 221.21)" : "translate(231 221.21)"}>
 					<tspan x={9.355} y={13}>
 						{t('Cirugía robótica')}
 					</tspan>
 				</text>
 				<text
 					className="o-reward-2-mobile"
-					transform="translate(232 361.21)">
+					transform={selectedLanguage === 'es' ? "translate(232 361.21)" : "translate(222 361.21)"}>
 					<tspan x={24.831} y={13}>
 						{t('Ortopedia')}
 					</tspan>
@@ -473,26 +475,26 @@ const ProductosMobile: React.FC = (): JSX.Element => {
 				<text
 					className="o-reward-2-mobile"
 					transform="translate(212 500.21)">
-					<tspan x={38.825} y={13}>
+					<tspan x={selectedLanguage === 'es' ? 38.825 : 20.825} y={13}>
 						{t('Dispositivos')}
 					</tspan>
-					<tspan x={12.799} y={29}>
+					<tspan x={selectedLanguage === 'es' ? 12.799 : 50.799} y={29}>
 						{t('médico-quirúrgicos')}
 					</tspan>
 				</text>
 				<text
 					className="o-reward-2-mobile"
 					transform="translate(232 640.21)">
-					<tspan x={9.963} y={13}>
+					<tspan x={selectedLanguage === 'es' ? 9.963 : 3.963} y={13}>
 						{t('Instrumental y')}
 					</tspan>
-					<tspan x={13.974} y={29}>
+					<tspan x={selectedLanguage === 'es' ? 13.974 : 18.974} y={29}>
 						{t('esterilización')}
 					</tspan>
 				</text>
 				<text
 					className="o-reward-2-mobile"
-					transform="translate(212 779.21)">
+					transform={selectedLanguage === 'es' ? "translate(212 779.21)" : "translate(219 779.21)"}>
 					<tspan x={1.611} y={13}>
 						{t('Neurointervencionismo')}
 					</tspan>

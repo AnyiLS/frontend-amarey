@@ -1,9 +1,7 @@
 import React from 'react'
 import { TimeLine } from '../HistoriaMobile'
-import { useTranslation } from 'react-i18next'
 
-const Component2007: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => {
-	const { t } = useTranslation()
+const Component2007: React.FC<TimeLine> = ({ onNext, onPrev, t, selectedLanguage }): JSX.Element => {
 	return (
 		<React.Fragment>
 			<svg viewBox="85 0 414 485.06" preserveAspectRatio="none">
@@ -46,7 +44,7 @@ const Component2007: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => {
 							preserveAspectRatio="xMidYMid slice"
 							width={100.337}
 							height={57.426}
-							xlinkHref="/images/mobile/history/2007-1.webp"
+							xlinkHref="/images/ortopedi.webp"
 						/>
 					</pattern>
 					<filter

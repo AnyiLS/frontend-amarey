@@ -1,13 +1,16 @@
+import { useLanguage } from "context/language"
 import { useTranslation } from "react-i18next"
 
 const SubmenuActualidad: React.FC<{ ref: any }> = ({ ref }) => {
 	const {t} = useTranslation()
 
+	const { selectedLanguage } = useLanguage()
 	return (
 		<svg
 			viewBox="0 0 1920 360"
 			className="absolute z-1"
 			style={{ zIndex: 1 }}
+			width={window.screen.width}
 			ref={ref}>
 			<defs>
 				<style>
@@ -148,7 +151,7 @@ const SubmenuActualidad: React.FC<{ ref: any }> = ({ ref }) => {
 						transform="translate(9 -120.41)"
 					/>
 				</g>
-				<text className="h-submenu-p" transform="translate(251 396)">
+				<text className="h-submenu-p" transform={selectedLanguage === 'es' ? "translate(251 396)" : "translate(221 396)"}>
 					<tspan x={-128.268} y={0}>
 						{t('aCTUALIDAD')}
 					</tspan>

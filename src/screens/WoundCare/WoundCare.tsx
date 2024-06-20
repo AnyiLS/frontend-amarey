@@ -3,13 +3,15 @@ import useGeneral from 'hooks/general.hook'
 import SelectImage from './components/SelectImage'
 import WoundCareMobile from './WoundCareMobile'
 import { useTranslation } from 'react-i18next'
+import { useLanguage } from 'context/language'
 
 const WoundCare: React.FC = (): JSX.Element => {
 	/** Hooks */
 	const { width, height } = useGeneral()
 	const [showModal, setShowModal] = React.useState(false)
 
-	const {t} = useTranslation()
+	const { t } = useTranslation()
+	const { selectedLanguage } = useLanguage()
 	return (
 		<React.Fragment>
 			{width > 1024 ? (
@@ -20,7 +22,7 @@ const WoundCare: React.FC = (): JSX.Element => {
 							onClose={() => setShowModal(false)}></SelectImage>
 					) : (
 						<svg
-							viewBox="0 0 1920 1080"
+							viewBox="0 0 1920 900"
 							width="100%"
 							height="100%"
 							preserveAspectRatio="none">
@@ -101,40 +103,46 @@ const WoundCare: React.FC = (): JSX.Element => {
 										height={1080}
 									/>
 								</g>
-								<text
-									className="c-products-heridas-desktop"
-									transform="translate(140 870)">
-									<tspan x={0} y={0}>
-										{t('CUIDADO AVANZADO DE')}
-									</tspan>
-									<tspan x={0} y={57}>
-										{t('HERIDAS')}
-									</tspan>
-								</text>
-								<text
-									className="d-products-heridas-desktop"
-									transform="translate(968 820)">
-									<tspan x={0} y={23}>
-										{
-											t('Ofrecemos una l\xEDnea de ap\xF3sitos avanzados y terapia de presi\xF3n ')
-										}
-									</tspan>
-									<tspan x={0} y={51}>
-										{
-											t('negativa para el tratamiento integral de heridas agudas, cr\xF3nicas y ')
-										}
-									</tspan>
-									<tspan x={0} y={79}>
-										{
-											t('complejas, como las ocasionadas por pie diab\xE9tico, lesiones por ')
-										}
-									</tspan>
-									<tspan x={0} y={107}>
-										{
-											t('presi\xF3n y lesiones de origen vascular.')
-										}
-									</tspan>
-								</text>
+								<g transform="translate(0 -200)">
+									<text
+										className="c-products-heridas-desktop"
+										transform={
+											selectedLanguage === 'es'
+												? 'translate(140 870)'
+												: 'translate(140 920)'
+										}>
+										<tspan x={0} y={0}>
+											{t('CUIDADO AVANZADO DE')}
+										</tspan>
+										<tspan x={0} y={57}>
+											{t('HERIDAS')}
+										</tspan>
+									</text>
+									<text
+										className="d-products-heridas-desktop"
+										transform="translate(968 820)">
+										<tspan x={0} y={23}>
+											{t(
+												'Ofrecemos una l\xEDnea de ap\xF3sitos avanzados y terapia de presi\xF3n '
+											)}
+										</tspan>
+										<tspan x={0} y={51}>
+											{t(
+												'negativa para el tratamiento integral de heridas agudas, cr\xF3nicas y '
+											)}
+										</tspan>
+										<tspan x={0} y={79}>
+											{t(
+												'complejas, como las ocasionadas por pie diab\xE9tico, lesiones por '
+											)}
+										</tspan>
+										<tspan x={0} y={107}>
+											{t(
+												'presi\xF3n y lesiones de origen vascular.'
+											)}
+										</tspan>
+									</text>
+								</g>
 								<g
 									className="m-products-heridas-desktop"
 									transform="matrix(1, 0, 0, 1, -9, -6)">
@@ -155,7 +163,7 @@ const WoundCare: React.FC = (): JSX.Element => {
 								<g
 									onClick={() => setShowModal(true)}
 									className="g-products-heridas-desktop cursor-pointer"
-									transform="translate(987 1010.975) rotate(90)">
+									transform="translate(987 790.975) rotate(90)">
 									<circle
 										className="h-products-heridas-desktop cursor-pointer"
 										cx={27}

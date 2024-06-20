@@ -2,11 +2,10 @@ import React from "react";
 import { CifrasVideo } from "./CifrasVideo";
 /** Styles */
 import './Cifras.css'
-import useGeneral from "hooks/general.hook";
 import { useTranslation } from "react-i18next";
+import { useLanguage } from "context/language";
 
 const Cifras: React.FC = () => {
-  const { width } = useGeneral()
   const [height, setHeight] = React.useState<string>("100vh");
   const [openModal, setOpenModal] = React.useState<boolean>(false);
   const [selected, setSelected] = React.useState<number>(0);
@@ -32,6 +31,9 @@ const Cifras: React.FC = () => {
     return () => window.removeEventListener("resize", resizeImage);
   }, []);
   const {t} = useTranslation()
+
+  /** Contexts */
+  const { selectedLanguage } = useLanguage();
 
   return (
     <div className="relative">
@@ -229,7 +231,7 @@ const Cifras: React.FC = () => {
         </g>
       </g>
       <text className="h-2" transform="translate(284.131 700.51)">
-        <tspan x={0} y={100}>
+        <tspan x={selectedLanguage === 'es' ? 0 : 20} y={100}>
           {t("Cifras de")}
         </tspan>
         <tspan x={0} y={205}>
@@ -261,7 +263,7 @@ const Cifras: React.FC = () => {
             {"+3000"}
           </tspan>
           <tspan className="m-2">
-            <tspan x={-402.264} y={25}>
+            <tspan x={selectedLanguage === 'es' ? -402.264 : -458.264} y={25}>
               {t("cirugías robóticas realizadas")}
             </tspan>
           </tspan>
@@ -293,7 +295,7 @@ const Cifras: React.FC = () => {
             {"+17300"}
           </tspan>
           <tspan className="m-2">
-            <tspan x={-359.664} y={80}>
+            <tspan x={selectedLanguage === 'es' ? -359.664 : -299.664} y={80}>
               {t("profesionales capacitados")}
             </tspan>
           </tspan>
@@ -346,7 +348,7 @@ const Cifras: React.FC = () => {
         </g>
         <text className="l-2" transform="translate(292.511 -42.071)"  onClick={() => {setOpenModal(true); setSelected(3)}}>
           <tspan x={0} y={0}>
-            {"10 instituciones "}
+            {t("10 instituciones")}
           </tspan>
           <tspan className="m-2">
             <tspan x={0} y={25}>

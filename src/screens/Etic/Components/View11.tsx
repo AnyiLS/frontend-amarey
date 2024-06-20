@@ -1,3 +1,4 @@
+import { useLanguage } from 'context/language'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
@@ -7,6 +8,7 @@ export interface IEtic {
 
 const View11: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 	const {t} = useTranslation()
+	const { selectedLanguage } = useLanguage();
 	return (
 		<svg viewBox="0 40 414 855">
 			<defs>
@@ -408,7 +410,7 @@ const View11: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 					</g>
 					<text
 						className="p-reward-2-mobile"
-						transform="translate(160 111.636)">
+						transform={selectedLanguage === 'es' ? "translate(160 111.636)" : "translate(205 111.636)"}>
 						<tspan x={-109.662} y={20}>
 						{t('Dádivas o prebendas')}
 						</tspan>

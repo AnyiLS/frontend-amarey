@@ -9,6 +9,7 @@ const SubmenuEtic: React.FC<{ref: any}> = ({ ref }) => {
 			viewBox="0 0 1920 354"
 			className="absolute z-1"
 			style={{ zIndex: 1 }}
+			width={window.screen.width}
 			ref={ref}>
 			<defs>
 				<style>

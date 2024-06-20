@@ -1,8 +1,6 @@
-import { useTranslation } from 'react-i18next'
 import { ILifeLine2000 } from './2000'
 
-const LifeLine2016: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeStepForce }) => {
-	const {t} = useTranslation()
+const LifeLine2016: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeStepForce, t, selectedLanguage }) => {
 	return (
 		<svg viewBox="0 0 1920 874.839">
 			<defs>
@@ -44,7 +42,7 @@ const LifeLine2016: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeSt
 						preserveAspectRatio="xMidYMid slice"
 						width={302.286}
 						height={201.779}
-						xlinkHref="/images/history/2016-2.webp"
+						xlinkHref="/images/history/liquido.jpg"
 					/>
 				</pattern>
 				<filter
@@ -229,7 +227,7 @@ const LifeLine2016: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeSt
 				</g>
 				<text
 					className="item-107-k"
-					transform="translate(543.856 323.365)">
+					transform={selectedLanguage === 'es' ? "translate(543.856 323.365)" : "translate(553.856 323.365)"}>
 					<tspan x={0} y={23}>
 						{t('Los Premios Portafolio otorgan ')}
 					</tspan>

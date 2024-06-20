@@ -1,21 +1,30 @@
+import { useLanguage } from 'context/language'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
 const HospitalLogisticsMobile: React.FC = (): JSX.Element => {
-    /** States */
+	/** States */
 	const [view, setView] = React.useState<number>(0)
 	const [height, setHeight] = React.useState<number>(0)
 
 	React.useEffect(() => {
-		if (document.getElementById('navbar__container')) setHeight(document.getElementById('navbar__container')?.clientHeight ?? 0)
+		if (document.getElementById('navbar__container'))
+			setHeight(
+				document.getElementById('navbar__container')?.clientHeight ?? 0
+			)
 	}, [])
 
-	const {t} = useTranslation()
+	const { t } = useTranslation()
+	const { selectedLanguage } = useLanguage()
 
 	return (
 		<React.Fragment>
 			{view === 0 ? (
-				<svg viewBox="0 0 414 855" width='100%' style={{ height: "100%" }} preserveAspectRatio='none'>
+				<svg
+					viewBox="0 0 414 700"
+					width="100%"
+					style={{ height: '100%' }}
+					preserveAspectRatio="none">
 					<defs>
 						<style>
 							{
@@ -85,43 +94,7 @@ const HospitalLogisticsMobile: React.FC = (): JSX.Element => {
 							width={414}
 							height={856}
 						/>
-						<text
-							className="d-reward-2-mobile"
-							transform="translate(207 559)">
-							<tspan x={-61.968} y={0}>
-								{t('LOGÍSTICA ')}
-							</tspan>
-							<tspan x={-84.3} y={26}>
-								{t('HOSPITALARIA ')}
-							</tspan>
-						</text>
-						<text
-							className="e-reward-2-mobile"
-							transform="translate(36 619)">
-							<tspan x={0} y={13}>
-								{
-									t('Nuestro portafolio de soluciones tecnológicas')
-								}
-							</tspan>
-							<tspan x={0} y={31}>
-								{t('está enfocado en la automatización de ')}
-							</tspan>
-							<tspan x={0} y={49}>
-								{t('procesos intrahospitalarios para el ')}
-							</tspan>
-							<tspan x={0} y={67}>
-								{t('almacenamiento y la dispensación de ')}
-							</tspan>
-							<tspan x={0} y={85}>
-								{t('medicamentos y material médico-quirúrgico, ')}
-							</tspan>
-							<tspan x={0} y={103}>
-								{t('aumentando la seguridad del paciente y la ')}
-							</tspan>
-							<tspan x={0} y={121}>
-								{t('eficiencia en los procesos.')}
-							</tspan>
-						</text>
+
 						<g
 							className="j-reward-2-mobile"
 							transform="matrix(1, 0, 0, 1, -9, -6)">
@@ -139,37 +112,96 @@ const HospitalLogisticsMobile: React.FC = (): JSX.Element => {
 								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
-						<g transform="translate(366.585 13.292)" onClick={() => window.location.href = '/productos'}>
+						<g
+							transform="translate(366.585 13.292)"
+							onClick={() =>
+								(window.location.href = '/productos')
+							}>
 							<path
 								className="a-reward-2-mobile"
 								d="M8.8,10.967,5.708,7.874,2.615,10.967A1.531,1.531,0,1,1,.448,8.8L3.542,5.708.448,2.615A1.532,1.532,0,0,1,2.615.448L5.708,3.542,8.8.448a1.531,1.531,0,1,1,2.165,2.166L7.874,5.708,10.967,8.8A1.531,1.531,0,0,1,8.8,10.967Z"
 								transform="translate(0 0)"
 							/>
 						</g>
-						<g
-							transform="translate(91.999 771.493)"
-							onClick={() => setView(1)}>
-							<g
-								className="i-reward-2-mobile"
-								transform="matrix(1, 0, 0, 1, -101, -777.49)">
-								<path
-									className="h-reward-2-mobile"
-									d="M230,0H47.176C28.161,0,11.086,12.6,4.142,31.746L0,43.169H181.308c20.259,0,38.4-13.581,45.534-34.092Z"
-									transform="translate(101 777.49)"
-								/>
-							</g>
+						<g transform="translate(0 -200)">
 							<text
-								className="g-reward-2-mobile"
-								transform="translate(55.5 28.584)">
-								<tspan x={0} y={0}>
-									{t('Conoce Más')}
+								className="d-reward-2-mobile"
+								transform="translate(207 559)">
+								<tspan x={-61.968} y={0}>
+									{t('LOGÍSTICA ')}
+								</tspan>
+								<tspan
+									x={
+										selectedLanguage === 'es'
+											? -84.3
+											: -69.3
+									}
+									y={26}>
+									{t('HOSPITALARIA ')}
 								</tspan>
 							</text>
+							<text
+								className="e-reward-2-mobile"
+								transform="translate(36 619)">
+								<tspan x={0} y={13}>
+									{t(
+										'Nuestro portafolio de soluciones tecnológicas'
+									)}
+								</tspan>
+								<tspan x={0} y={31}>
+									{t(
+										'está enfocado en la automatización de '
+									)}
+								</tspan>
+								<tspan x={0} y={49}>
+									{t('procesos intrahospitalarios para el ')}
+								</tspan>
+								<tspan x={0} y={67}>
+									{t('almacenamiento y la dispensación de ')}
+								</tspan>
+								<tspan x={0} y={85}>
+									{t(
+										'medicamentos y material médico-quirúrgico, '
+									)}
+								</tspan>
+								<tspan x={0} y={103}>
+									{t(
+										'aumentando la seguridad del paciente y la '
+									)}
+								</tspan>
+								<tspan x={0} y={121}>
+									{t('eficiencia en los procesos.')}
+								</tspan>
+							</text>
+							<g
+								transform="translate(91.999 771.493)"
+								onClick={() => setView(1)}>
+								<g
+									className="i-reward-2-mobile"
+									transform="matrix(1, 0, 0, 1, -101, -777.49)">
+									<path
+										className="h-reward-2-mobile"
+										d="M230,0H47.176C28.161,0,11.086,12.6,4.142,31.746L0,43.169H181.308c20.259,0,38.4-13.581,45.534-34.092Z"
+										transform="translate(101 777.49)"
+									/>
+								</g>
+								<text
+									className="g-reward-2-mobile"
+									transform="translate(55.5 28.584)">
+									<tspan x={0} y={0}>
+										{t('Conoce Más')}
+									</tspan>
+								</text>
+							</g>
 						</g>
 					</g>
 				</svg>
 			) : (
-				<svg viewBox="10 0 414 855" width='100%' style={{ height: "100%" }} preserveAspectRatio='none'>
+				<svg
+					viewBox="10 0 414 855"
+					width="100%"
+					style={{ height: '100%' }}
+					preserveAspectRatio="none">
 					<defs>
 						<style>
 							{
@@ -272,9 +304,9 @@ const HospitalLogisticsMobile: React.FC = (): JSX.Element => {
 							className="g-reward-2-mobile"
 							transform="translate(44 656)">
 							<tspan x={0} y={13}>
-								{
-									t('Alineamos estos procesos a los lineamientos de ')
-								}
+								{t(
+									'Alineamos estos procesos a los lineamientos de '
+								)}
 							</tspan>
 							<tspan x={0} y={31}>
 								{t('LA ')}
@@ -284,12 +316,14 @@ const HospitalLogisticsMobile: React.FC = (): JSX.Element => {
 							</tspan>
 							<tspan y={31}>{t('buscando las ')}</tspan>
 							<tspan x={0} y={49}>
-								{
-									t('mejores prácticas para asegurar la trazabilidad ')
-								}
+								{t(
+									'mejores prácticas para asegurar la trazabilidad '
+								)}
 							</tspan>
 							<tspan x={0} y={67}>
-								{t('de medicamentos y generando en tiempo real ')}
+								{t(
+									'de medicamentos y generando en tiempo real '
+								)}
 							</tspan>
 							<tspan x={0} y={85}>
 								{t('los movimientos de inventario.')}
@@ -302,7 +336,7 @@ const HospitalLogisticsMobile: React.FC = (): JSX.Element => {
 						<g
 							className="j-reward-2-mobile"
 							transform="translate(192 836.024) rotate(-90)"
-                            onClick={() => setView(0)}>
+							onClick={() => setView(0)}>
 							<circle
 								className="k-reward-2-mobile"
 								cx={22}
@@ -348,7 +382,9 @@ const HospitalLogisticsMobile: React.FC = (): JSX.Element => {
 								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
-						<g transform="translate(374.584 13.292)" onClick={() => setView(0)}>
+						<g
+							transform="translate(374.584 13.292)"
+							onClick={() => setView(0)}>
 							<path
 								className="a-reward-2-mobile"
 								onClick={() => setView(0)}

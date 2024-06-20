@@ -1,35 +1,38 @@
 import React from 'react'
-import DownAsta from './components/downasta'
-import TopRightAsta from './components/toprightasta'
-import TopLeftAsta from './components/topleftasta'
-import DownLeftAsta from './components/downleftasta'
-import DownRightAsta from './components/downrightasta'
-import Tooltip from './Tooltip'
-import useGeneral from 'hooks/general.hook'
 import { useTranslation } from 'react-i18next'
+/** Components */
+import useAstasComponents from './components'
+/** Interfaces & Types */
+import type { SlideFourProps } from 'utils/models/Slide';
+import { useLanguage } from 'context/language';
 
-
-interface ISlide {
-	height: string
-	image: string
-	onReturn: () => void
-	onOpenPopup: () => void
-}
-
-const Slide4: React.FC<ISlide> = ({ height, image, onReturn, onOpenPopup }): JSX.Element => {
-	const { width } = useGeneral();
+const Slide4: React.FC<SlideFourProps> = ({ image, onReturn, onOpenPopup }): JSX.Element => {
 	/** States */
 	const [selected, setSelected] = React.useState<number>(0)
 
+	/** Hooks */
 	const {t} = useTranslation()
+	const {
+		DownAsta,
+		DownLeftAsta,
+		DownRightAsta,
+		TopLeftAsta,
+		TopRightAsta,
+		Tooltip
+	} = useAstasComponents()
+
+	/** Contexts */
+	const { selectedLanguage } = useLanguage();
+
 	return (
 		<React.Fragment>
 			<svg
 				width="100%"
-				// style={{ height: width > 1280 ? `calc(100vh - ${document.getElementById('navbar__container')?.clientHeight}px)` : '100%'}}
-				height='100%'
-				viewBox={`0 40 1920 975`}
-				preserveAspectRatio="none">
+				height='100vh'
+				viewBox={`0 40 1920 1045`}
+				style={{ height: 'auto' }}
+				preserveAspectRatio="none"
+			>
 				<defs>
 					<style
 						dangerouslySetInnerHTML={{
@@ -171,7 +174,7 @@ const Slide4: React.FC<ISlide> = ({ height, image, onReturn, onOpenPopup }): JSX
 						id="r-slide-5"
 						width={1}
 						height={1}
-						viewBox="0 132.158 775.246 348.89">
+						viewBox={image === '/images/carouselHeader/ComponentTMP_0-image4.webp' ? '223 0 450.303 514.533' : "0 132.158 775.246 348.89"}>
 						<image
 							preserveAspectRatio="xMidYMid slice"
 							width={775.246}
@@ -219,8 +222,8 @@ const Slide4: React.FC<ISlide> = ({ height, image, onReturn, onOpenPopup }): JSX
 						height={1}
 						viewBox={`${
 							image ===
-							'/images/carouselHeader/ComponentTMP_0-image4.png'
-								? '100 -100 662.303 514.533'
+							'/images/carouselHeader/ComponentTMP_0-image4.webp'
+								? '223 0 450.303 514.533'
 								: '223 0 662.303 514.533'
 						}`}>
 						<image
@@ -579,10 +582,10 @@ const Slide4: React.FC<ISlide> = ({ height, image, onReturn, onOpenPopup }): JSX
 					<text
 						className="iy-slide-6"
 						transform="translate(1000 67.639)">
-						<tspan x={-432.432} y={42}>
+						<tspan x={selectedLanguage === 'es' ? -432.432 : -300.432} y={42}>
 							{t('El origen de nuestra historia es hoy')}
 						</tspan>
-						<tspan x={-351.886} y={79}>
+						<tspan x={selectedLanguage === 'es' ? -351.886 : -225.886} y={79}>
 							{t('la esencia de nuestra marca')}
 						</tspan>
 					</text>
@@ -610,7 +613,7 @@ const Slide4: React.FC<ISlide> = ({ height, image, onReturn, onOpenPopup }): JSX
 						d="M45.263,0V46.781L85.8,23.389,66.44,12.217Z"
 						transform="rotate(180)"></path>
 				</g>
-				<g transform="translate(158 700)">
+				<g transform="translate(158 770)">
 					<Tooltip />
 				</g>
 			</svg>

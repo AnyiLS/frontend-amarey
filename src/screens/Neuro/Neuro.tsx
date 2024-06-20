@@ -11,7 +11,7 @@ const WoundCare: React.FC = (): JSX.Element => {
 	const [showModal, setShowModal] = React.useState(false)
 	const [openShow, setOpenShow] = React.useState(false)
 
-	const {t} = useTranslation()
+	const { t } = useTranslation()
 
 	return (
 		<React.Fragment>
@@ -23,10 +23,10 @@ const WoundCare: React.FC = (): JSX.Element => {
 							onClose={() => setShowModal(false)}></NeuroImage>
 					) : (
 						<svg
-						viewBox="0 0 1920 1080"
-						width="100%"
-						height='100%'
-						preserveAspectRatio="none">
+							viewBox="0 0 1920 900"
+							width="100%"
+							height="100%"
+							preserveAspectRatio="none">
 							<defs>
 								<style>
 									{
@@ -104,30 +104,32 @@ const WoundCare: React.FC = (): JSX.Element => {
 										height={1080}
 									/>
 								</g>
-								<text
-									className="c-products-neuro-desktop"
-									transform="translate(506 833)">
-									<tspan x={-366.438} y={0}>
-										{t('NEUROINTERVENCIONISMO ')}
-									</tspan>
-								</text>
-								<text
-									className="d-products-neuro-desktop"
-									transform="translate(968 754)">
-									<tspan x={0} y={23}>
-										{
-											t('El ACV - Accidente Cerebro Vascular es algo que le puede ocurrir a ')
-										}
-									</tspan>
-									<tspan x={0} y={51}>
-										{
-											t('1 de cada 4 personas y menos del 5% de las personas que lo sufren ')
-										}
-									</tspan>
-									<tspan x={0} y={79}>
-										{t('son atendidas a tiempo.')}
-									</tspan>
-								</text>
+								<g transform="translate(0 -150)">
+									<text
+										className="c-products-neuro-desktop"
+										transform="translate(506 833)">
+										<tspan x={-366.438} y={0}>
+											{t('NEUROINTERVENCIONISMO ')}
+										</tspan>
+									</text>
+									<text
+										className="d-products-neuro-desktop"
+										transform="translate(968 754)">
+										<tspan x={0} y={23}>
+											{t(
+												'El ACV - Accidente Cerebro Vascular es algo que le puede ocurrir a '
+											)}
+										</tspan>
+										<tspan x={0} y={51}>
+											{t(
+												'1 de cada 4 personas y menos del 5% de las personas que lo sufren '
+											)}
+										</tspan>
+										<tspan x={0} y={79}>
+											{t('son atendidas a tiempo.')}
+										</tspan>
+									</text>
+								</g>
 								<g
 									className="m-products-neuro-desktop"
 									transform="matrix(1, 0, 0, 1, -9, -6)">
@@ -175,7 +177,10 @@ const WoundCare: React.FC = (): JSX.Element => {
 											<feComposite in="SourceGraphic" />
 										</filter>
 									</defs>
-									<g transform="translate(-3778.748 -5819)"  onMouseLeave={() => setOpenShow(false)} onMouseOver={() => setOpenShow(true)}>
+									<g
+										transform="translate(-3778.748 -6019)"
+										onMouseLeave={() => setOpenShow(false)}
+										onMouseOver={() => setOpenShow(true)}>
 										<g
 											className="c-ortope cursor-pointer"
 											transform="matrix(1, 0, 0, 1, 3778.75, 5819)">
@@ -188,7 +193,11 @@ const WoundCare: React.FC = (): JSX.Element => {
 										<text
 											className="b-ortope cursor-pointer"
 											transform="translate(3835.929 5863.388)"
-											style={{ fill: openShow ? "#001f5f" : '#ffffff' }}>
+											style={{
+												fill: openShow
+													? '#001f5f'
+													: '#ffffff',
+											}}>
 											<tspan x={0} y={0}>
 												{t('Conoce M\xE1s')}
 											</tspan>

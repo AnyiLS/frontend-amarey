@@ -11,54 +11,78 @@ import FixedContact from 'components/fixed-components/FixedContact'
 import FixedSocialNetworks from 'components/fixed-components/FixedSocialNetworks'
 import Navbar from 'components/Navbar/Navbar'
 import Footer from 'components/Footer/Footer'
-import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
-import { customTexts } from 'mocks/translations'
+import { LanguageProvider, useLanguage } from 'context/language'
+import { I18nextProvider, initReactI18next } from 'react-i18next'
 
-const App: React.FC = (): JSX.Element => {
+import i18n from 'i18next'
+/** Mocks */
+import { customTexts } from 'mocks/translations'
+import { Loading } from 'components/Loading'
+
+const Component = () => {
+	/** Contexts  */
+	const { selectedLanguage } = useLanguage()
+
 	/** Hooks */
-	const { width } = useGeneral()
 	const { router } = useRouter()
+	const { width } = useGeneral()
 
 	/** States */
-	const [showVideoPopup, setShowVideoPopup] = React.useState<boolean>(true)
+	// const [showVideoPopup, setShowVideoPopup] = React.useState<boolean>(true);
+	const showVideoPopup = sessionStorage.getItem('showVideo')
 
-	i18n
-		.use(initReactI18next)
-		.init({
-			resources: customTexts,
-			lng: "en",
-			fallbackLng: "en",
-			interpolation: {
-				escapeValue: false
-			}
-		})
+	const setShowVideoPopup = () => {
+		sessionStorage.setItem('showVideo', 'false')
+		window.location.reload()
+	}
+
+	i18n.use(initReactI18next).init({
+		resources: { ...customTexts },
+		lng: selectedLanguage,
+		interpolation: { escapeValue: false },
+	})
 
 	return (
-		<React.Suspense fallback={null}>
+		<I18nextProvider i18n={i18n}>
 			<Flowbite theme={{ theme: customTheme }}>
-				{showVideoPopup && window.location.pathname === '/' ? (
-					<Video onCloseVideo={() => setShowVideoPopup(false)} />
-				) : (
-					<React.Fragment>
-						{width >= 768 ? <Navbar /> : <NavbarMovil />}
-						<main className="">
+				{showVideoPopup === 'false' ? (
+					<div id="main" style={{ width: window.screen.width }}>
+						<React.Suspense fallback={<Loading />}>
+							{width >= 768 ? <Navbar /> : <NavbarMovil />}
 							<RouterProvider router={router} />
 							{width >= 768 ? <Footer /> : <FooterMobile />}
-						</main>
-						{window.location.pathname !== '/contactenos' &&
-						
-							width > 767 && (
-								<React.Fragment>
-									<FixedContact />
-									<FixedSocialNetworks />
-								</React.Fragment>
-							)}
-					</React.Fragment>
+							{window.location.pathname !== '/contactenos' &&
+								width > 767 && (
+									<React.Fragment>
+										<FixedContact />
+										<FixedSocialNetworks />
+									</React.Fragment>
+								)}
+						</React.Suspense>
+					</div>
+				) : (
+					<Video onCloseVideo={setShowVideoPopup} />
 				)}
 			</Flowbite>
-		</React.Suspense>
+		</I18nextProvider>
+	)
+}
+
+const App: React.FC = (): JSX.Element => {
+	React.useEffect(() => {
+		const video = sessionStorage.getItem('showVideo')
+
+		if (!video) sessionStorage.setItem('showVideo', 'true')
+	}, [])
+
+	return (
+		<LanguageProvider>
+			<React.Fragment>
+				<Component />
+			</React.Fragment>
+		</LanguageProvider>
 	)
 }
 
 export default App
+

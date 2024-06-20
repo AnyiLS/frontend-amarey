@@ -1,24 +1,32 @@
+import { useLanguage } from 'context/language'
 import useGeneral from 'hooks/general.hook'
 import React from 'react'
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next'
 
 const MedicinesMobile: React.FC = (): JSX.Element => {
-	const { width } = useGeneral();
+	const { width } = useGeneral()
 	/** States */
 	const [view, setView] = React.useState<number>(0)
 	const [height, setHeight] = React.useState<number>(0)
 
-	const {t} = useTranslation()
-
+	const { t } = useTranslation()
+	const { selectedLanguage } = useLanguage()
 
 	React.useEffect(() => {
-		if (document.getElementById('navbar__container')) setHeight(document.getElementById('navbar__container')?.clientHeight ?? 0)
+		if (document.getElementById('navbar__container'))
+			setHeight(
+				document.getElementById('navbar__container')?.clientHeight ?? 0
+			)
 	}, [])
 
 	return (
 		<React.Fragment>
 			{view === 0 ? (
-				<svg viewBox="0 0 414 855" width='100%' style={{ height: '100%' }} preserveAspectRatio='none'>
+				<svg
+					viewBox="0 0 414 700"
+					width="100%"
+					style={{ height: '100%' }}
+					preserveAspectRatio="none">
 					<defs>
 						<style>
 							{
@@ -88,36 +96,7 @@ const MedicinesMobile: React.FC = (): JSX.Element => {
 							width={414}
 							height={856}
 						/>
-						<text
-							className="c-reward-2-mobile"
-							transform="translate(207 623)">
-							<tspan x={-97.428} y={0}>
-								{t('MEDICAMENTOS ')}
-							</tspan>
-						</text>
-						<text
-							className="d-reward-2-mobile"
-							transform="translate(36 653)">
-							<tspan x={0} y={13}>
-								{t('Con medicamentos de la más alta tecnología')}
-							</tspan>
-							<tspan x={0} y={31}>
-								{
-									t('para el cuidado de la salud de los pacientes, ya ')
-								}
-							</tspan>
-							<tspan x={0} y={49}>
-								{
-									t('sea adultos, niños o neonatos, ofrecemos mayor ')
-								}
-							</tspan>
-							<tspan x={0} y={67}>
-								{t('eficacia y tolerabilidad al paciente en ')}
-							</tspan>
-							<tspan x={0} y={85}>
-								{t('productos.')}
-							</tspan>
-						</text>
+
 						<g
 							className="j-reward-2-mobile"
 							transform="matrix(1, 0, 0, 1, -9, -6)">
@@ -135,31 +114,86 @@ const MedicinesMobile: React.FC = (): JSX.Element => {
 								{t('Soluciones en salud ')}
 							</tspan>
 						</text>
-						<g transform="translate(366.585 13.292)" onClick={() => window.location.href = '/productos'}>
+						<g
+							transform="translate(366.585 13.292)"
+							onClick={() =>
+								(window.location.href = '/productos')
+							}>
 							<path
 								className="g-reward-2-mobile"
 								d="M8.8,10.967,5.708,7.874,2.615,10.967A1.531,1.531,0,1,1,.448,8.8L3.542,5.708.448,2.615A1.532,1.532,0,0,1,2.615.448L5.708,3.542,8.8.448a1.531,1.531,0,1,1,2.165,2.166L7.874,5.708,10.967,8.8A1.531,1.531,0,0,1,8.8,10.967Z"
 								transform="translate(0 0)"
 							/>
 						</g>
-						<g transform="translate(91.999 771.493)" onClick={() => setView(1)}>
-							<g
-								className="i-reward-2-mobile"
-								transform="matrix(1, 0, 0, 1, -101, -777.49)">
-								<path
-									className="h-reward-2-mobile"
-									d="M230,0H47.176C28.161,0,11.086,12.6,4.142,31.746L0,43.169H181.308c20.259,0,38.4-13.581,45.534-34.092Z"
-									transform="translate(101 777.49)"
-								/>
-							</g>
+						<g transform='translate(0 -200)'>
 							<text
-								className="f-reward-2-mobile"
-								transform="translate(55.5 28.584)"
-								onClick={() => setView(1)}>
-								<tspan x={0} y={0}>
-									{t('Conoce Más')}
+								className="c-reward-2-mobile"
+								transform={
+									selectedLanguage === 'es'
+										? 'translate(207 623)'
+										: 'translate(207 580)'
+								}>
+								<tspan x={-97.428} y={0}>
+									{t('MEDICAMENTOS ')}
 								</tspan>
 							</text>
+							<text
+								className="d-reward-2-mobile"
+								transform={
+									selectedLanguage === 'es'
+										? 'translate(36 653)'
+										: 'translate(36 613)'
+								}>
+								<tspan x={0} y={13}>
+									{t(
+										'Con medicamentos de la más alta tecnología'
+									)}
+								</tspan>
+								<tspan x={0} y={31}>
+									{t(
+										'para el cuidado de la salud de los pacientes, ya '
+									)}
+								</tspan>
+								<tspan x={0} y={49}>
+									{t(
+										'sea adultos, niños o neonatos, ofrecemos mayor '
+									)}
+								</tspan>
+								<tspan x={0} y={67}>
+									{t(
+										'eficacia y tolerabilidad al paciente en '
+									)}
+								</tspan>
+								<tspan x={0} y={85}>
+									{t('productos.')}
+								</tspan>
+								{selectedLanguage === 'en' && (
+									<tspan x={0} y={103}>
+										{t('productos-2')}
+									</tspan>
+								)}
+							</text>
+							<g
+								transform="translate(91.999 771.493)"
+								onClick={() => setView(1)}>
+								<g
+									className="i-reward-2-mobile"
+									transform="matrix(1, 0, 0, 1, -101, -777.49)">
+									<path
+										className="h-reward-2-mobile"
+										d="M230,0H47.176C28.161,0,11.086,12.6,4.142,31.746L0,43.169H181.308c20.259,0,38.4-13.581,45.534-34.092Z"
+										transform="translate(101 777.49)"
+									/>
+								</g>
+								<text
+									className="f-reward-2-mobile"
+									transform="translate(55.5 28.584)"
+									onClick={() => setView(1)}>
+									<tspan x={0} y={0}>
+										{t('Conoce Más')}
+									</tspan>
+								</text>
+							</g>
 						</g>
 					</g>
 				</svg>
@@ -451,7 +485,7 @@ const MedicinesMobile: React.FC = (): JSX.Element => {
 							transform="translate(374.584 13.292)"
 							onClick={() => setView(0)}>
 							<path
-							onClick={() => setView(0)}
+								onClick={() => setView(0)}
 								className="a-reward-2-mobile"
 								d="M8.8,10.967,5.708,7.874,2.615,10.967A1.531,1.531,0,1,1,.448,8.8L3.542,5.708.448,2.615A1.532,1.532,0,0,1,2.615.448L5.708,3.542,8.8.448a1.531,1.531,0,1,1,2.165,2.166L7.874,5.708,10.967,8.8A1.531,1.531,0,0,1,8.8,10.967Z"
 								transform="translate(0 0)"

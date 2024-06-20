@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import { useLanguage } from "context/language";
 
 export interface IEtic {
 	onNext: (number: number) => void
@@ -7,6 +8,7 @@ export interface IEtic {
 
 const View4: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 	const {t} = useTranslation()
+	const { selectedLanguage } = useLanguage();
 	return (
 		<svg viewBox="0 40 414 853">
 			<defs>
@@ -272,7 +274,7 @@ const View4: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 					<text
 						className="l-reward-2-mobile"
 						transform="translate(120 8.386)">
-						<tspan x={-63.973} y={13}>
+						<tspan x={selectedLanguage === 'es' ? -63.973 : -69.973} y={13}>
 							{t('Incumplimiento de ')}
 						</tspan>
 						<tspan x={-69.846} y={29}>
@@ -329,10 +331,10 @@ const View4: React.FC<IEtic> = ({ onNext }): JSX.Element => {
 					<text
 						className="l-reward-2-mobile"
 						transform="translate(120 8.386)">
-						<tspan x={-77.224} y={13}>
+						<tspan x={selectedLanguage === 'es' ? -77.224 : -47.224} y={13}>
 							{t('Prácticas comerciales ')}
 						</tspan>
-						<tspan x={-45.213} y={29}>
+						<tspan x={selectedLanguage === 'es' ? -45.213 : -75.213} y={29}>
 							{t('inadecuadas')}
 						</tspan>
 					</text>

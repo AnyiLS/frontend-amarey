@@ -1,13 +1,15 @@
 import React from 'react'
 import { CarouselPortfolio } from 'mocks/portfolio.mocks'
 
-type TLeftCard = Pick<CarouselPortfolio, 'title' | 'x' | 'title_2' | 'x_2'>
+type TLeftCard = Pick<CarouselPortfolio, 'title' | 'x' | 'title_2' | 'x_2' | 'x_left' | 'x_left_2'>
 
 const LeftCard: React.FC<TLeftCard> = ({
 	title,
 	x,
 	title_2,
 	x_2,
+	x_left,
+	x_left_2
 }): JSX.Element => {
 	return (
 		<g className="u-portfolio-3">
@@ -33,12 +35,12 @@ const LeftCard: React.FC<TLeftCard> = ({
 			</g>
 			<text className="w-portfolio-3" transform="translate(0 379.825)">
 				<tspan
-					x={x}
+					x={x_left ?? x}
 					y={0}
 					dangerouslySetInnerHTML={{ __html: title }}
 				/>
 				<tspan
-					x={x_2}
+					x={x_left_2 ?? x_2}
 					y={30}
 					dangerouslySetInnerHTML={{ __html: title_2 ?? '' }}
 				/>

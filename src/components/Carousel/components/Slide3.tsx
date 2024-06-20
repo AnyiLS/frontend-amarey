@@ -1,28 +1,27 @@
-import useGeneral from 'hooks/general.hook'
+import { useLanguage } from 'context/language';
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+/** Interfaces & Types */
+import type { ISlide } from 'utils/models/Slide';
+/** Styles */
+import './styles/slide3.css';
+import useLayout from 'hooks/ancho.hook';
 
-interface ISlide {
-	height: string
-	onClick: (number: number) => void
-}
-
-const Slide3: React.FC<ISlide> = ({ height, onClick }): JSX.Element => {
-	const { width } = useGeneral()
+const Slide3: React.FC<ISlide> = ({ onClick }): JSX.Element => {
+	/** Hooks */
 	const {t} = useTranslation()
+	const { isSmallScreen } = useLayout()
+
+	/** Contexts */
+	const { selectedLanguage } = useLanguage();
+
 	return (
 		<svg
 			width="100%"
-			// style={{ height: width > 1366 ? `calc(100vh - ${document.getElementById('navbar__container')?.clientHeight}px)` : '100%'}}
-			height="100%"
-			viewBox="0 92 1920 975"
-			preserveAspectRatio="none">
+			height="auto"
+			viewBox={`0 ${isSmallScreen ? '95' : '92'} 1920 975`}
+			preserveAspectRatio='none'>
 			<defs>
-				<style>
-					{
-						".a-sliders-1,.j-sliders-1{fill:#001f5f;}.b-sliders-1,.f-sliders-1{fill:none;}.c-sliders-1,.i-sliders-1{fill:#fff;}.d-sliders-1{clip-path:url(#a-sliders-1);}.e-sliders-1{clip-path:url(#b-sliders-1);}.f-sliders-1{stroke:#e7002a;stroke-miterlimit:10;stroke-width:3px;}.g-sliders-1{fill:url(#c-sliders-1);}.h-sliders-1{fill:#e40032;}.h-sliders-1:hover{fill: #001F5F}.i-sliders-1{font-size:28px;font-family:'Kiona-Bold';}.i-sliders-1,.j-sliders-1{font-weight:700;}.j-sliders-1{font-size:54px;font-family:Silka-Bold, Silka;}.k-sliders-1{fill:#182856;font-size:42px;font-family:Silka-Regular, Silka;}.l-sliders-1{filter:url(#f-sliders-1);}.m-sliders-1{filter:url(#d-sliders-1);}"
-					}
-				</style>
 				<clipPath id="a-sliders-1">
 					<rect
 						className="a-sliders-1"
@@ -83,7 +82,7 @@ const Slide3: React.FC<ISlide> = ({ height, onClick }): JSX.Element => {
 					height={1084}
 					transform="translate(0 2.594)"
 				/>
-				<g className="d-sliders-1" transform="translate(0 -0.406)">
+				<g className="d-sliders-1" transform={isSmallScreen ? "translate(0 95.406)" : "translate(0 0.406)"}>
 					<path
 						className="a-sliders-1"
 						d="M267.257,175.872H0V0H406.518V45.533c0,71.985-62.349,130.339-139.261,130.339"
@@ -126,7 +125,7 @@ const Slide3: React.FC<ISlide> = ({ height, onClick }): JSX.Element => {
 					/>
 				</g>
 				<a href="/nuestros-aliados">
-					<g transform="translate(647.098 919.835)">
+					<g transform="translate(647.098 900.835)">
 						<g
 							className="l-sliders-1"
 							transform="matrix(1, 0, 0, 1, -976, -922)">
@@ -147,18 +146,18 @@ const Slide3: React.FC<ISlide> = ({ height, onClick }): JSX.Element => {
 				</a>
 				<text
 					className="j-sliders-1"
-					transform="translate(841.098 827.835)">
-					<tspan x={-450.927} y={51}>
+					transform="translate(841.098 805.835)">
+					<tspan x={selectedLanguage === 'es' ? -450.927 : -350.927} y={51}>
 						{t('desarrollo de tecnolog\xEDa en salud')}
 					</tspan>
 				</text>
 				<text
 					className="k-sliders-1"
-					transform="translate(839.098 739.835)">
-					<tspan x={-388.248} y={40}>
+					transform="translate(839.098 710.835)">
+					<tspan x={selectedLanguage === 'es' ? -388.248 : -338.248} y={40}>
 						{t('Representamos las marcas de mayor')}
 					</tspan>
-					<tspan x={-446.607} y={82}>
+					<tspan x={selectedLanguage === 'es' ? -446.607 : -386.607} y={82}>
 						{t('prestigio a nivel mundial en investigaci\xF3n y')}
 					</tspan>
 				</text>

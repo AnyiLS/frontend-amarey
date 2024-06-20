@@ -1,3 +1,4 @@
+import { useLanguage } from 'context/language';
 import React from 'react'
 import { useTranslation } from 'react-i18next';
 
@@ -5,21 +6,25 @@ export const CifrasMovil: React.FC = () => {
 	/** States */
 	const [openVideo, setOpenVideo] = React.useState<boolean>(false)
 	const [numberVideo, setNumberVideo] = React.useState<number>(0)
-	const [mute, setMute] = React.useState(false);
+	const [mute] = React.useState(false);
 
 	const {t} = useTranslation()
 
+	/** Contexts */
+	const { selectedLanguage } = useLanguage();
+
 	const video = [
-		{ url: 'https://grupoamarey.com/pdf/video/Cifras educacion vertical_1.mp4' },
-		{ url: 'https://grupoamarey.com/pdf/video/Cifras robotica vertical_1.mp4' },
-		{ url: 'https://grupoamarey.com/pdf/video/Cifras logistica vertical_1.mp4' },
-		{ url: 'https://grupoamarey.com/pdf/video/Cifras ortopedia vertical_1.mp4' },
+		{ url: openVideo && selectedLanguage === 'en' ? 'https://grupoamarey.com/videos/videos_inlges/Trainning_Vertical.mp4' :'https://grupoamarey.com/pdf/video/Cifras educacion vertical_1.mp4' },
+		{ url: openVideo && selectedLanguage === 'en' ? 'https://grupoamarey.com/videos/videos_inlges/Robotics_vertical.mp4' : 'https://grupoamarey.com/pdf/video/Cifras robotica vertical_1.mp4' },
+		{ url: openVideo && selectedLanguage === 'en' ? 'https://grupoamarey.com/videos/videos_inlges/Logistics_vertical.mp4' : 'https://grupoamarey.com/pdf/video/Cifras logistica vertical_1.mp4' },
+		{ url: openVideo && selectedLanguage === 'en' ? 'https://grupoamarey.com/videos/videos_inlges/Orthopedics_vertical.mp4' : 'https://grupoamarey.com/pdf/video/Cifras ortopedia vertical_1.mp4' },
 	]
+
 
 	return (
 		<div className="relative">
 			<svg
-				viewBox="12 0 414 895"
+				viewBox="14 0 412 895"
 				width="100%"
 				height="100vh"
 				preserveAspectRatio="none">
@@ -311,7 +316,7 @@ export const CifrasMovil: React.FC = () => {
 					<text
 						className="i-cifras-impacto"
 						transform="translate(220 398.119)">
-						<tspan x={-112.567} y={45}>
+						<tspan x={selectedLanguage === 'es' ? -112.567 : -86.567} y={45}>
 							{t('Cifras de')}
 						</tspan>
 						<tspan x={-97.897} y={92}>
@@ -344,7 +349,7 @@ export const CifrasMovil: React.FC = () => {
 								{'+3000'}
 							</tspan>
 							<tspan className="m-cifras-impacto">
-								<tspan x={-184.371} y={13}>
+								<tspan x={selectedLanguage === 'es' ? -184.371 : -210.371} y={13}>
 									{t('cirugías robóticas realizadas')}
 								</tspan>
 							</tspan>
@@ -403,7 +408,7 @@ export const CifrasMovil: React.FC = () => {
 							className="l-cifras-impacto"
 							transform="translate(137.711 -21.854)">
 							<tspan x={0} y={0}>
-								{'10 instituciones'}
+								{t('10 instituciones')}
 							</tspan>
 							<tspan className="m-cifras-impacto">
 								<tspan x={0} y={13}>
@@ -473,7 +478,7 @@ export const CifrasMovil: React.FC = () => {
 								{'+17300'}
 							</tspan>
 							<tspan className="m-cifras-impacto">
-								<tspan x={-164.846} y={13}>
+								<tspan x={selectedLanguage === 'es' ? -164.846 : -136.846} y={13}>
 									{t('profesionales capacitados')}
 								</tspan>
 							</tspan>
@@ -643,8 +648,6 @@ export const CifrasMovil: React.FC = () => {
 					<video
 						src={video[numberVideo].url}
 						className="object-cover h-[82%] w-full"
-						autoPlay
-						muted={mute}
 						id="video-cifras"
 						controls></video>
 					{/* <img

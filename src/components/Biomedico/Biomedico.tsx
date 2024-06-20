@@ -4,6 +4,7 @@ import Mantenimiento from './components/Mantenimiento'
 import useGeneral from 'hooks/general.hook'
 import BiomedicoMobile from './BiomedicoMobile'
 import { useTranslation } from 'react-i18next'
+import { useLanguage } from 'context/language'
 
 const Biomedico: React.FC = (): JSX.Element => {
 	/** States */
@@ -12,7 +13,8 @@ const Biomedico: React.FC = (): JSX.Element => {
 	/** Hooks */
 	const { width } = useGeneral()
 
-	const {t} = useTranslation()
+	const { t } = useTranslation()
+	const { selectedLanguage } = useLanguage()
 	return (
 		<React.Fragment>
 			{width > 1024 ? (
@@ -59,7 +61,7 @@ const Biomedico: React.FC = (): JSX.Element => {
 								</filter>
 							</defs>
 							<path
-							style={{ strokeWidth: 1, stroke:'#e7002a' }}
+								style={{ strokeWidth: 1, stroke: '#e7002a' }}
 								className="a-bio"
 								d="M600.14,90.971V89.849H698.2v.04h99.456c47.929,0,90.812-26.746,109.251-68.14l.035-.08L916.589,0h1.3L908.01,22.18c-.346.781-.7,1.554-1.07,2.324a113.754,113.754,0,0,1-42.974,47.723,125.077,125.077,0,0,1-66.313,18.786H633.935v-.041Z"
 								transform="translate(1354.326 1087.571) rotate(180)"
@@ -119,7 +121,7 @@ const Biomedico: React.FC = (): JSX.Element => {
 										t('empresa a nivel nacional en certificarse con ')
 									}
 								</tspan>
-								<tspan x={0} y={101}>
+								<tspan x={0} y={101} className={`${selectedLanguage === 'en' ? 'f-bio' : ''}`}>
 									{t('la')}
 								</tspan>
 								<tspan className="f-bio" y={101}>

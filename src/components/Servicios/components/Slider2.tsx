@@ -1,17 +1,17 @@
-import useGeneral from 'hooks/general.hook'
+import { useLanguage } from 'context/language'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+
 interface ISlider {
 	height: string
 	index: number
 	handleChangeSlide: (position: number) => void
 }
 
-export const Slider2: React.FC<ISlider> = ({ height, index }) => {
-	const { width } = useGeneral()
+export const Slider2: React.FC<ISlider> = ({ index }) => {
 	const [grandImage, setGrandImage] = React.useState<boolean>(false)
-	const [hoverCard, setHoverCard] = React.useState<boolean>(false)
-	const [hoverCard2, setHoverCard2] = React.useState<boolean>(false)
+	const [hoverCard, setHoverCard] = React.useState<boolean>(true)
+	const [hoverCard2, setHoverCard2] = React.useState<boolean>(true)
 
 	React.useEffect(() => {
 		if (index === 1) setTimeout(() => setGrandImage(true), 2000)
@@ -19,8 +19,12 @@ export const Slider2: React.FC<ISlider> = ({ height, index }) => {
 	}, [index])
 
 	const {t} = useTranslation()
+
+	/** Contexts */
+	const { selectedLanguage } = useLanguage();
+
 	return (
-		<svg viewBox="1590 10 1920 1080" preserveAspectRatio='none'  style={{ height: '100%'}} width='100%'>
+		<svg viewBox="1590 10 1920 1080" preserveAspectRatio='none'  style={{ height: '100%'}} width={window.screen.width}>
 			<defs>
 				<style>
 					{
@@ -458,17 +462,17 @@ export const Slider2: React.FC<ISlider> = ({ height, index }) => {
 				</tspan>
 			</text>
 			<text className="v-pentagrama" transform="translate(2565 252.425)">
-				<tspan x={-365.855} y={66}>
+				<tspan x={selectedLanguage === 'es' ? -365.855 : -244.855} y={66}>
 					{t('NUESTROS CLIENTES,')}
 				</tspan>
-				<tspan x={-416.605} y={138}>
+				<tspan x={selectedLanguage === 'es' ? -416.605 : -301.605} y={138}>
 					{t('NUESTRA RAZÓN DE SER')}
 				</tspan>
 			</text>
 			<g
 				transform="translate(1832 554.229)"
 				onMouseOver={() => setHoverCard(true)}
-				onMouseLeave={() => setHoverCard(false)}>
+				onMouseLeave={() => setHoverCard(true)}>
 				<path
 					className="d-pentagrama"
 					d="M684.641,315.6H17.574C6.991,315.6-1.191,304.109.143,291.12L38.658,19C39.772,8.14,47.24,0,56.089,0H644.931c8.822,0,16.276,8.094,17.422,18.916l39.71,272.12c1.378,13.016-6.812,24.562-17.422,24.562"
@@ -499,7 +503,7 @@ export const Slider2: React.FC<ISlider> = ({ height, index }) => {
 			<g
 				transform="translate(2575 554.229)"
 				onMouseOver={() => setHoverCard2(true)}
-				onMouseLeave={() => setHoverCard2(false)}>
+				onMouseLeave={() => setHoverCard2(true)}>
 				<path
 					className="d-pentagrama"
 					d="M684.641,315.6H17.574C6.991,315.6-1.191,304.109.143,291.12L38.658,19C39.772,8.14,47.24,0,56.089,0H644.931c8.822,0,16.276,8.094,17.422,18.916l39.71,272.12c1.378,13.016-6.812,24.562-17.422,24.562"
@@ -520,7 +524,7 @@ export const Slider2: React.FC<ISlider> = ({ height, index }) => {
 						<text
 							className="aa-pentagrama"
 							transform="translate(54.107 88.799)">
-							<tspan x={117.875} y={47}>
+							<tspan x={selectedLanguage === 'es' ? 117.875 : 160} y={47}>
 								{t('SATISFACCIÓN ')}
 							</tspan>
 							<tspan className="ab-pentagrama" x={173.16} y={147}>

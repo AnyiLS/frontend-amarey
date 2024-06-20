@@ -3,10 +3,17 @@ import { mocksRewards } from './mocks/Rewards.mocks'
 import useGeneral from 'hooks/general.hook'
 import ReconocimientosMobile from './ReconocimientosMobile/ReconocimientosMobile'
 import { useTranslation } from 'react-i18next'
+import { useLanguage } from 'context/language'
 
 const Reconocimientos: React.FC = (): JSX.Element => {
+	/** Hooks */
+	const {t} = useTranslation()
 	const { width } = useGeneral()
 
+	/** Contexts */
+	const { selectedLanguage } = useLanguage()
+
+	/** States */
 	const [slide, setSlide] = React.useState<number>(0)
 	const [showVideo, setShowVideo] = React.useState<boolean>(false)
 
@@ -14,7 +21,7 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 
 	const handleAddSlide = () => setSlide(slide + 1 > 3 ? 0 : slide + 1)
 
-	const {t} = useTranslation()
+	
 
 	return (
 		<React.Fragment>
@@ -355,7 +362,7 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 						<g transform="translate(300.989 96)">
 							<g transform="translate(0 106.497)">
 								<g transform="translate(0 -100.875)">
-									{mocksRewards(t).map((item, index) => (
+									{mocksRewards(t, selectedLanguage).map((item, index) => (
 										<React.Fragment>
 											{index === slide &&
 												item.component(
@@ -377,7 +384,7 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 						</g>
 						<text
 							className="q-pentagrama"
-							transform="translate(774.989 281)">
+							transform={selectedLanguage === 'es' ? "translate(774.989 281)" : "translate(844.989 281)"}>
 							<tspan x={154.515} y={70}>
 								{t('RECONOCIMIENTOS')}
 							</tspan>
@@ -402,11 +409,12 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 					</svg>
 					<div className="fixed top-[0] left-[0] h-screen w-full bg-[#e6e6e6] z-[1]" style={{ display: showVideo ? 'flex' : 'none' }}>
 						<video
-							src="https://grupoamarey.com/pdf/video/Reconocimientos_1.mp4"
+							src={selectedLanguage === 'es' && showVideo ? "https://grupoamarey.com/pdf/video/Reconocimientos_1.mp4" : selectedLanguage === 'en' && showVideo ? "https://grupoamarey.com/videos/videos_inlges/Reconocimientos_ingles.mp4" : ''}
 							width="100%"
 							height="100%"
 							controls
 							id='video-cifras'
+							autoPlay
 						/>
 						<span
 							className="absolute top-[5%] right-[5%] text-white text-[30px] text-center font-bold bg-[#00000050] w-[50px] h-[50px] rounded-[100%]"

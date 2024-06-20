@@ -1,6 +1,7 @@
 import React from 'react'
 import { carouselItemsMobile } from '../mocks/Mobile'
 import { useTranslation } from 'react-i18next'
+import { useLanguage } from 'context/language'
 
 const ReconocimientosMobile: React.FC = (): JSX.Element => {
 	const [carouselSlider, setCarouselSlider] = React.useState<number>(0)
@@ -12,7 +13,9 @@ const ReconocimientosMobile: React.FC = (): JSX.Element => {
 		setCarouselSlider(carouselSlider + 1 > 3 ? 0 : carouselSlider + 1)
 
 	const { t } = useTranslation()
+	const { selectedLanguage } = useLanguage();
 
+	const [initial, setInitial] = React.useState<number>(0)
 
 	return (
 		<React.Fragment>
@@ -227,12 +230,18 @@ const ReconocimientosMobile: React.FC = (): JSX.Element => {
 					<text
 						className="h-reconocimientos-mobile-3"
 						transform="translate(83.483 36)">
-						<tspan x={19.464} y={32}>
+						<tspan x={selectedLanguage === 'es' ? 19.464 : 55.464} y={32}>
 							{t('RECONOCIMIENTOS')}
 						</tspan>
 					</text>
-					<g transform="translate(47.483 -39)">
-						{carouselItemsMobile(t)[carouselSlider].text(
+					<g transform="translate(47.483 -39)" onTouchEnd={(e) => {
+						if (e.nativeEvent.changedTouches[0].clientX > initial) {
+							setCarouselSlider((prevState: number) => prevState === 0 ? 3 : prevState - 1)
+						} else if (e.nativeEvent.changedTouches[0].clientX < initial) {
+							setCarouselSlider((prevState: number) => prevState === 3 ? 0 : prevState + 1)
+						}
+					}} onTouchStart={(e) => setInitial(e.nativeEvent.changedTouches[0].clientX)}>
+						{carouselItemsMobile(t, selectedLanguage)[carouselSlider].text(
 							handleAddCarouselSlider,
 							handleLessCarouselSlider
 						)}
@@ -248,7 +257,7 @@ const ReconocimientosMobile: React.FC = (): JSX.Element => {
 						<text
 							className="r-reconocimientos-mobile-3"
 							transform="translate(-25 1080.632)">
-							<tspan x={47.533} y={21}>
+							<tspan x={selectedLanguage === 'es' ? 47.533 : 47.533} y={21}>
 								{t('Premios y reconocimientos')}
 							</tspan>
 						</text>
@@ -276,7 +285,7 @@ const ReconocimientosMobile: React.FC = (): JSX.Element => {
 				className="fixed top-[0] left-[0] h-screen w-full bg-[#e6e6e6] z-[1]"
 				style={{ display: showVideo ? 'flex' : 'none' }}>
 				<video
-					src="https://grupoamarey.com/pdf/video/Reconocimientos_1.mp4"
+					src={selectedLanguage === 'es' && showVideo ? "https://grupoamarey.com/pdf/video/Reconocimientos_1.mp4" : selectedLanguage === 'en' && showVideo ? "https://grupoamarey.com/videos/videos_inlges/Reconocimientos_ingles.mp4" : ''}
 					width="100%"
 					height="100%"
 					controls

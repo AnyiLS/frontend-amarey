@@ -2,6 +2,7 @@ import useGeneral from 'hooks/general.hook'
 import React from 'react'
 import ProductosMobile from './ProductosMobile'
 import { useTranslation } from 'react-i18next'
+import { useLanguage } from 'context/language'
 
 const Productos: React.FC = (): JSX.Element => {
 	const { width } = useGeneral()
@@ -9,6 +10,7 @@ const Productos: React.FC = (): JSX.Element => {
 	const [hover, setHover] = React.useState<number | null>(2)
 
 	const {t} = useTranslation()
+	const { selectedLanguage } = useLanguage()
 
 	return (
 		<React.Fragment>
@@ -162,7 +164,7 @@ const Productos: React.FC = (): JSX.Element => {
 									preserveAspectRatio="xMidYMid slice"
 									width={298.563}
 									height={199.093}
-									xlinkHref="/images/product04.webp"
+									xlinkHref="/images/IMG_6337 GRIFOLS.webp"
 								/>
 							</pattern>
 							<filter
@@ -375,10 +377,10 @@ const Productos: React.FC = (): JSX.Element => {
 								<text
 									className="g-products"
 									transform="translate(1282 932.405)">
-									<tspan x={-111.852} y={0}>
+									<tspan x={selectedLanguage === 'es' ? -111.852 : -61.852} y={0}>
 										{t('Cuidado avanzado')}
 									</tspan>
-									<tspan x={-62.784} y={26}>
+									<tspan x={selectedLanguage === 'es' ? -62.784 : -72.784} y={26}>
 										{t('de heridas')}
 									</tspan>
 								</text>
@@ -439,7 +441,7 @@ const Productos: React.FC = (): JSX.Element => {
 								</g>
 								<text
 									className="g-products"
-									transform="translate(516 931.487)">
+									transform={selectedLanguage === 'es' ? "translate(516 931.487)" : "translate(502 931.487)"}>
 									<tspan x={0} y={0}>
 										{t('Genómica y genética')}
 									</tspan>
@@ -471,10 +473,10 @@ const Productos: React.FC = (): JSX.Element => {
 								<text
 									className="g-products"
 									transform="translate(326.864 979.871)">
-									<tspan x={-71.928} y={0}>
+									<tspan x={selectedLanguage === 'es' ? -71.928 : -103.928} y={0}>
 										{t('Dispositivos')}
 									</tspan>
-									<tspan x={-116.52} y={28}>
+									<tspan x={selectedLanguage === 'es' ? -116.52 : -46.52} y={28}>
 										{t('médico-quirúrgicos')}
 									</tspan>
 								</text>
@@ -505,7 +507,7 @@ const Productos: React.FC = (): JSX.Element => {
 								</g>
 								<text
 									className="g-products"
-									transform="translate(1486 600)">
+									transform={selectedLanguage === 'es' ? "translate(1486 600)" : "translate(1510 600)"}>
 									<tspan x={0} y={0}>
 										{t('Logística hospitalaria')}
 									</tspan>
@@ -536,7 +538,7 @@ const Productos: React.FC = (): JSX.Element => {
 								</g>
 								<text
 									className="g-products"
-									transform="translate(1281 644)">
+									transform={selectedLanguage === 'es' ? "translate(1281 644)" : "translate(1266 644)"}>
 									<tspan x={-61.824} y={0}>
 										{t('Ortopedia')}
 									</tspan>
@@ -567,7 +569,7 @@ const Productos: React.FC = (): JSX.Element => {
 								</g>
 								<text
 									className="g-products"
-									transform="translate(860 600)">
+									transform={selectedLanguage === 'es' ? "translate(860 600)" : "translate(845 600)"}>
 									<tspan x={0} y={0}>
 										{t('Equipos médicos')}
 									</tspan>

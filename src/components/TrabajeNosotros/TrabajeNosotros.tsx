@@ -1,19 +1,28 @@
 import useGeneral from 'hooks/general.hook'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import { useLanguage } from 'context/language'
+import useLayout from 'hooks/ancho.hook'
 
 const TrabajeNosotros = () => {
+	const { width: fullWidth, height } = useLayout()
 	const { width } = useGeneral()
-	const {t} = useTranslation()
+	const { t } = useTranslation()
+	const { selectedLanguage } = useLanguage()
+
+	console.log()
 
 	return (
-		<div>
+		<div className="h-full w-full">
 			{width > 768 ? (
-				<svg viewBox="0 50 1925 1300" width="100%" height={'100%'}>
+				<svg
+					viewBox="0 50 1925 1300"
+					id="desktop-container"
+					height="auto">
 					<defs>
 						<style>
 							{
-								'.a-trabajo,.c-trabajo{fill:none;}.b-trabajo{clip-path:url(#a-trabajo);}.c-trabajo{stroke:#e40032;}.d-trabajo,.g-trabajo,.l-trabajo{fill:#001f5f;}.e-trabajo{fill:url(#b-trabajo);}.f-trabajo,.k-trabajo{fill:#e40032;}.f-trabajo,.g-trabajo{font-size:42px;font-family:Kiona-Bold, Kiona;}.f-trabajo,.g-trabajo,.i-trabajo,.l-trabajo{font-weight:700;}.h-trabajo,.o-trabajo{fill:#182856;font-size:24px;}.h-trabajo{font-family:Silka-Regular, Silka;}.i-trabajo,.l-trabajo{font-family:Silka-Bold, Silka;}.j-trabajo,.n-trabajo,.o-trabajo{font-family:Silka-SemiBold, Silka;font-weight:600;}.l-trabajo{font-size:40px;}.m-trabajo{fill:url(#c-trabajo);}.n-trabajo{fill:#fff;}'
+								'h-trabajo .k-trabajo{fill: #e40032 !important}.a-trabajo,.c-trabajo{fill:none;}.b-trabajo{clip-path:url(#a-trabajo);}.c-trabajo{stroke:#e40032;}.d-trabajo,.g-trabajo,.l-trabajo{fill:#001f5f;}.e-trabajo{fill:url(#b-trabajo);}.f-trabajo,.k-trabajo{fill:#e40032;}.f-trabajo,.g-trabajo{font-size:42px;font-family:Kiona-Bold, Kiona;}.f-trabajo,.g-trabajo,.i-trabajo,.l-trabajo{font-weight:700;}.h-trabajo,.o-trabajo{fill:#182856;font-size:24px;}.h-trabajo{font-family:Silka-Regular, Silka;}.i-trabajo,.l-trabajo{font-family:Silka-Bold, Silka;}.j-trabajo,.n-trabajo,.o-trabajo{font-family:Silka-SemiBold, Silka;font-weight:600;}.l-trabajo{font-size:40px;}.m-trabajo{fill:url(#c-trabajo);}.n-trabajo{fill:#fff;}'
 							}
 						</style>
 						<clipPath id="a-trabajo">
@@ -27,11 +36,11 @@ const TrabajeNosotros = () => {
 							id="b-trabajo"
 							width={1}
 							height={1}
-							viewBox="0 113.412 604.043 578.568">
+							viewBox="41 0 1044.043 912">
 							<image
-								preserveAspectRatio="xMidYMid slice"
-								width={662.462}
-								height={883.282}
+								preserveAspectRatio="none"
+								width={1424.462}
+								height={950}
 								xlinkHref="/images/trabajecnosotros.webp"
 							/>
 						</pattern>
@@ -94,117 +103,132 @@ const TrabajeNosotros = () => {
 							d="M662.461,0H31.215C11.463,0-3.32,15.792.646,32.659l82.1,580.121c2.975,12.654,15.751,21.74,30.57,21.74H662.461Z"
 							transform="translate(1247.538 0.003)"
 						/>
-						<text
-							className="f-trabajo"
-							transform="translate(281 488)">
-							<tspan x={0} y={42}>
-								{t('¿Por qué unirte a nosotros?')}
-							</tspan>
-						</text>
-						<text
-							className="f-trabajo"
-							transform="translate(559 997)">
-							<tspan x={0} y={42}>
-								{t('Como unirse?')}
-							</tspan>
-						</text>
-						<text
-							className="g-trabajo"
-							transform="translate(960 1216)">
-							<tspan x={-357.042} y={42}>
-								{t('\xA1Esperamos conocerte pronto!')}
-							</tspan>
-						</text>
-						<text
-							className="h-trabajo"
-							transform="translate(281 571)">
-							<tspan x={0} y={23}>
-								{
-									t('Cada d\xEDa nos esforzamos por el bienestar de nuestros colaboradores. Somos ')
-								}
-							</tspan>
-							<tspan x={0} y={49}>
-								{t('una empresa de ')}
-							</tspan>
-							<tspan className="i-trabajo" y={49}>
-								{t('capital colombiano')}
-							</tspan>
-							<tspan y={49}>
-								{t(', comprometida con la salud y dedicada a ')}
-							</tspan>
-							<tspan x={0} y={75}>
-								{t('ampliar las oportunidades de vida.')}
-							</tspan>
-						</text>
-						<text
-							className="h-trabajo"
-							transform="translate(281 677)">
-							<tspan x={0} y={23}>
-								{
-									t('En Grupo Amarey, sabemos que el talento excepcional es la clave para hacer ')
-								}
-							</tspan>
-							<tspan className="j-trabajo" y={23}>
-								{t('cosas incre\xEDbles y ')}
-							</tspan>
-							<tspan className="j-trabajo" x={0} y={49}>
-								{t('alcanzar resultados extraordinarios. ')}
-							</tspan>
-							<tspan y={49}>{t('Generamos ')}</tspan>
-							<tspan className="j-trabajo" y={49}>
-								{
-									t('entornos de trabajo inclusivos, colaborativos, ')
-								}
-							</tspan>
-							<tspan className="j-trabajo" x={0} y={75}>
-								{t('retadores y estimulantes')}
-							</tspan>
-							<tspan y={75} xmlSpace="preserve">
-								{
-									t(' donde cada colaborador puede aportar, crecer y contribuir de manera ')
-								}
-							</tspan>
-							<tspan x={0} y={101}>
-								{t('significativa al')}
-							</tspan>
-							<tspan
-								className="j-trabajo"
-								y={101}
-								xmlSpace="preserve">
-								{t(' logro de nuestros objetivos.')}
-							</tspan>
-						</text>
-						<text
-							className="h-trabajo"
-							transform="translate(559 1092)">
-							<tspan x={0} y={23}>
-								{
-									t('Si est\xE1s interesado en formar parte del Grupo Amarey, te invitamos a enviar tu hoja de ')
-								}
-							</tspan>
-							<tspan x={0} y={49}>
-								{t('vida a ')}
-							</tspan>
-							<tspan className="k-trabajo" y={49}>
-								{t('atracciondetalento@grupoamarey.com')}
-							</tspan>
-							<tspan y={49}>
-								{t(', indicando la ciudad donde vives.')}
-							</tspan>
-						</text>
-						<text
-							className="l-trabajo"
-							transform="translate(281 294)">
-							<tspan x={0} y={38}>
-								{t('Juntos trabajamos por alcanzar ')}
-							</tspan>
-							<tspan x={0} y={84}>
-								{t('nuestro prop\xF3sito de un compromiso ')}
-							</tspan>
-							<tspan x={0} y={130}>
-								{t('inquebrantable con la salud y la vida.')}
-							</tspan>
-						</text>
+						<g transform='translate(0 -20)'>
+							<text
+								className="f-trabajo"
+								transform="translate(281 488)">
+								<tspan x={0} y={42}>
+									{t('¿Por qué unirte a nosotros?')}
+								</tspan>
+							</text>
+							<text
+								className="f-trabajo"
+								transform="translate(559 997)">
+								<tspan x={0} y={42}>
+									{t('Como unirse?')}
+								</tspan>
+							</text>
+							<text
+								className="g-trabajo"
+								transform="translate(960 1216)">
+								<tspan x={-357.042} y={42}>
+									{t('\xA1Esperamos conocerte pronto!')}
+								</tspan>
+							</text>
+							<text
+								className="h-trabajo"
+								transform="translate(281 571)">
+								<tspan x={0} y={23}>
+									{t(
+										'Cada d\xEDa nos esforzamos por el bienestar de nuestros colaboradores. Somos '
+									)}
+								</tspan>
+								<tspan x={0} y={49}>
+									{t('una empresa de ')}
+								</tspan>
+								<tspan className="i-trabajo" y={49}>
+									{t('capital colombiano')}
+								</tspan>
+								<tspan y={49}>
+									{t(
+										', comprometida con la salud y dedicada a '
+									)}
+								</tspan>
+								<tspan x={0} y={75}>
+									{t('ampliar las oportunidades de vida.')}
+								</tspan>
+							</text>
+							<text
+								className="h-trabajo"
+								transform="translate(281 677)">
+								<tspan x={0} y={23}>
+									{t(
+										'En Grupo Amarey, sabemos que el talento excepcional es la clave para hacer '
+									)}
+								</tspan>
+								<tspan className="j-trabajo" y={23}>
+									{t('cosas incre\xEDbles y ')}
+								</tspan>
+								<tspan className="j-trabajo" x={0} y={49}>
+									{t('alcanzar resultados extraordinarios. ')}
+								</tspan>
+								<tspan y={49}>{t('Generamos ')}</tspan>
+								<tspan className="j-trabajo" y={49}>
+									{t(
+										'entornos de trabajo inclusivos, colaborativos, '
+									)}
+								</tspan>
+								<tspan className="j-trabajo" x={0} y={75}>
+									{t('retadores y estimulantes')}
+								</tspan>
+								<tspan y={75} xmlSpace="preserve">
+									{t(
+										' donde cada colaborador puede aportar, crecer y contribuir de manera '
+									)}
+								</tspan>
+								<tspan x={0} y={101}>
+									{t('significativa al')}
+								</tspan>
+								<tspan
+									className="j-trabajo"
+									y={101}
+									xmlSpace="preserve">
+									{t(' logro de nuestros objetivos.')}
+								</tspan>
+							</text>
+							<text
+								className="h-trabajo"
+								transform="translate(559 1092)">
+								<tspan x={0} y={23}>
+									{t(
+										'Si est\xE1s interesado en formar parte del Grupo Amarey, te invitamos a enviar tu hoja de '
+									)}
+								</tspan>
+								<tspan x={0} y={49}>
+									{t('vida a ')}
+								</tspan>
+								<a href="mailto:atracciondetalento@grupoamarey.com">
+									<tspan
+										className="k-trabajo"
+										y={49}
+										style={{ fill: '#e40032' }}>
+										{t(
+											'atracciondetalento@grupoamarey.com'
+										)}
+									</tspan>
+								</a>
+								<tspan y={49}>
+									{t(', indicando la ciudad donde vives.')}
+								</tspan>
+							</text>
+							<text
+								className="l-trabajo"
+								transform="translate(281 294)">
+								<tspan x={0} y={38}>
+									{t('Juntos trabajamos por alcanzar ')}
+								</tspan>
+								<tspan x={0} y={84}>
+									{t(
+										'nuestro prop\xF3sito de un compromiso '
+									)}
+								</tspan>
+								<tspan x={0} y={130}>
+									{t(
+										'inquebrantable con la salud y la vida.'
+									)}
+								</tspan>
+							</text>
+						</g>
 						<path
 							className="d-trabajo"
 							d="M0,478.714H476.242c14.9,0,26.055-11.917,23.063-24.642L437.364,16.4C435.119,6.854,425.481,0,414.3,0H0Z"
@@ -236,6 +260,7 @@ const TrabajeNosotros = () => {
 							<tspan y={49} xmlSpace="preserve">
 								{t(' alineados con ')}
 							</tspan>
+
 							<tspan className="j-trabajo" y={49}>
 								{t('la ')}
 							</tspan>
@@ -246,24 +271,28 @@ const TrabajeNosotros = () => {
 								className="j-trabajo"
 								y={49}
 								xmlSpace="preserve">
-								{t(' (Servicio, Educaci\xF3n y Relacionamiento)')}
+								{t(
+									' (Servicio, Educaci\xF3n y Relacionamiento)'
+								)}
 							</tspan>
 							<tspan y={49} xmlSpace="preserve">
 								{t(' y est\xE9n ')}
 							</tspan>
 							<tspan x={0} y={75}>
-								{
-									t('dispuestos a asumir retos diarios y llevar la Organizaci\xF3n a otros niveles. ')
-								}
+								{t(
+									'dispuestos a asumir retos diarios y llevar la Organizaci\xF3n a otros niveles. '
+								)}
 							</tspan>
 						</text>
-						<g transform="translate(694 849)">
-							<text className="o-trabajo">
-								<tspan x={0} y={23}>
-									{'filosof\xEDa SER '}
-								</tspan>
-							</text>
-						</g>
+						{selectedLanguage === 'es' && (
+							<g transform="translate(703 849)">
+								<text className="o-trabajo">
+									<tspan x={0} y={23}>
+										{'filosof\xEDa SER '}
+									</tspan>
+								</text>
+							</g>
+						)}
 					</g>
 				</svg>
 			) : (
@@ -385,7 +414,9 @@ const TrabajeNosotros = () => {
 						className="j-trabajo"
 						transform="translate(73 495.21)">
 						<tspan x={0} y={13}>
-							{t('Cada d\xEDa nos esforzamos por el bienestar de ')}
+							{t(
+								'Cada d\xEDa nos esforzamos por el bienestar de '
+							)}
 						</tspan>
 						<tspan x={0} y={29}>
 							{t('nuestros colaboradores. Somos una empresa de ')}
@@ -393,9 +424,13 @@ const TrabajeNosotros = () => {
 						<tspan className="k-trabajo" x={0} y={45}>
 							{t('capital colombiano ')}
 						</tspan>
-						<tspan y={45}>{t(', comprometida con la salud ')}</tspan>
+						<tspan y={45}>
+							{t(', comprometida con la salud ')}
+						</tspan>
 						<tspan x={0} y={61}>
-							{t('y dedicada a ampliar las oportunidades de vida.')}
+							{t(
+								'y dedicada a ampliar las oportunidades de vida.'
+							)}
 						</tspan>
 					</text>
 					<text
@@ -411,9 +446,9 @@ const TrabajeNosotros = () => {
 							{t('cosas ')}
 						</tspan>
 						<tspan className="l-trabajo" x={0} y={45}>
-							{
-								t('incre\xEDbles y alcanzar resultados extraordinarios. ')
-							}
+							{t(
+								'incre\xEDbles y alcanzar resultados extraordinarios. '
+							)}
 						</tspan>
 						<tspan x={0} y={61}>
 							{t('Generamos')}
@@ -480,7 +515,9 @@ const TrabajeNosotros = () => {
 							{t(' y est\xE9n ')}
 						</tspan>
 						<tspan x={0} y={77}>
-							{t('dispuestos a asumir retos diarios y llevar la ')}
+							{t(
+								'dispuestos a asumir retos diarios y llevar la '
+							)}
 						</tspan>
 						<tspan x={0} y={93}>
 							{t('Organizaci\xF3n a otros niveles. ')}
@@ -490,16 +527,20 @@ const TrabajeNosotros = () => {
 						className="j-trabajo"
 						transform="translate(73 864.21)">
 						<tspan x={0} y={13}>
-							{
-								t('Si est\xE1s interesado en formar parte del Grupo ')
-							}
+							{t(
+								'Si est\xE1s interesado en formar parte del Grupo '
+							)}
 						</tspan>
 						<tspan x={0} y={29}>
-							{t('Amarey, te invitamos a enviar tu hoja de vida a ')}
+							{t(
+								'Amarey, te invitamos a enviar tu hoja de vida a '
+							)}
 						</tspan>
-						<tspan className="n-trabajo" x={0} y={45}>
-							{t('atracciondetalento@grupoamarey.com ')}
-						</tspan>
+						<a href="mailto:atracciondetalento@grupoamarey.com">
+							<tspan className="n-trabajo" x={0} y={45}>
+								{t('atracciondetalento@grupoamarey.com ')}
+							</tspan>
+						</a>
 						<tspan y={45}>{t(',')}</tspan>
 						<tspan x={0} y={61}>
 							{t('indicando la ciudad donde vives.')}

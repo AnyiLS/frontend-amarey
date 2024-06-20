@@ -5,17 +5,23 @@ const InstrumentalStyrilationMobile: React.FC = (): JSX.Element => {
 	/** States */
 	const [view, setView] = React.useState<number>(0)
 	const [height, setHeight] = React.useState<number>(0)
-	const {t} = useTranslation()
+	const { t } = useTranslation()
 
 	React.useEffect(() => {
-		if (document.getElementById('navbar__container')) setHeight(document.getElementById('navbar__container')?.clientHeight ?? 0)
+		if (document.getElementById('navbar__container'))
+			setHeight(
+				document.getElementById('navbar__container')?.clientHeight ?? 0
+			)
 	}, [])
-
 
 	return (
 		<React.Fragment>
 			{view === 0 ? (
-				<svg viewBox="0 0 414 855" width='100%' style={{ height: "100%" }} preserveAspectRatio='none'>
+				<svg
+					viewBox="0 0 414 700"
+					width="100%"
+					style={{ height: '100%' }}
+					preserveAspectRatio="none">
 					<defs>
 						<style>
 							{
@@ -85,36 +91,40 @@ const InstrumentalStyrilationMobile: React.FC = (): JSX.Element => {
 							width={415}
 							height={855}
 						/>
-						<text
-							className="d-reward-2-mobile"
-							transform="translate(207 632)">
-							<tspan x={-100.932} y={0}>
-								{t('INSTRUMENTAL Y')}
-							</tspan>
-							<tspan x={-93.996} y={26}>
-								{t('ESTERILIZACIÓN')}
-							</tspan>
-						</text>
-						<text
-							className="e-reward-2-mobile"
-							transform="translate(35 681)">
-							<tspan x={0} y={13}>
-								{t('Con un completo portafolio de instrumentos ')}
-							</tspan>
-							<tspan x={0} y={31}>
-								{
-									t('para las diferentes especialidades quirúrgicas, y ')
-								}
-							</tspan>
-							<tspan x={0} y={49}>
-								{
-									t('la interacción entre los productos y los procesos ')
-								}
-							</tspan>
-							<tspan x={0} y={67}>
-								{t('de lavado y esterilización.')}
-							</tspan>
-						</text>
+						<g transform='translate(0 -200)'>
+							<text
+								className="d-reward-2-mobile"
+								transform="translate(207 632)">
+								<tspan x={-100.932} y={0}>
+									{t('INSTRUMENTAL Y')}
+								</tspan>
+								<tspan x={-93.996} y={26}>
+									{t('ESTERILIZACIÓN')}
+								</tspan>
+							</text>
+							<text
+								className="e-reward-2-mobile"
+								transform="translate(35 681)">
+								<tspan x={0} y={13}>
+									{t(
+										'Con un completo portafolio de instrumentos '
+									)}
+								</tspan>
+								<tspan x={0} y={31}>
+									{t(
+										'para las diferentes especialidades quirúrgicas, y '
+									)}
+								</tspan>
+								<tspan x={0} y={49}>
+									{t(
+										'la interacción entre los productos y los procesos '
+									)}
+								</tspan>
+								<tspan x={0} y={67}>
+									{t('de lavado y esterilización.')}
+								</tspan>
+							</text>
+						</g>
 						<g
 							className="j-reward-2-mobile"
 							transform="matrix(1, 0, 0, 1, -9, -6)">
@@ -129,18 +139,26 @@ const InstrumentalStyrilationMobile: React.FC = (): JSX.Element => {
 							className="g-reward-2-mobile"
 							transform="translate(207 26)">
 							<tspan x={-101.322} y={0}>
-								{t(' Soluciones en salud')}
+								{t('SOLUCIONES EN SALUD')}
 							</tspan>
 						</text>
-						<g transform="translate(366.585 13.292)" onClick={() => window.location.href = '/productos'}>
+						<g
+							transform="translate(366.585 13.292)"
+							onClick={() =>
+								(window.location.href = '/productos')
+							}>
 							<path
 								className="a-reward-2-mobile"
 								d="M8.8,10.967,5.708,7.874,2.615,10.967A1.531,1.531,0,1,1,.448,8.8L3.542,5.708.448,2.615A1.532,1.532,0,0,1,2.615.448L5.708,3.542,8.8.448a1.531,1.531,0,1,1,2.165,2.166L7.874,5.708,10.967,8.8A1.531,1.531,0,0,1,8.8,10.967Z"
 								transform="translate(0 0)"
-								onClick={() => window.location.href = '/productos'}
+								onClick={() =>
+									(window.location.href = '/productos')
+								}
 							/>
 						</g>
-						<g transform="translate(91.999 771.493)" onClick={() => setView(1)}>
+						<g
+							transform="translate(91.999 571.493)"
+							onClick={() => setView(1)}>
 							<g
 								className="i-reward-2-mobile"
 								transform="matrix(1, 0, 0, 1, -101, -777.49)">
@@ -162,7 +180,11 @@ const InstrumentalStyrilationMobile: React.FC = (): JSX.Element => {
 					</g>
 				</svg>
 			) : (
-				<svg viewBox="0 0 414 855"  width='100%' style={{ height: "100%" }} preserveAspectRatio='none'>
+				<svg
+					viewBox="0 0 414 855"
+					width="100%"
+					style={{ height: '100%' }}
+					preserveAspectRatio="none">
 					<defs>
 						<style>
 							{
@@ -256,9 +278,9 @@ const InstrumentalStyrilationMobile: React.FC = (): JSX.Element => {
 							className="f-reward-2-mobile"
 							transform="translate(36 509)">
 							<tspan x={0} y={13}>
-								{
-									t('nuestro equipo profesional está presto a brindar ')
-								}
+								{t(
+									'nuestro equipo profesional está presto a brindar '
+								)}
 							</tspan>
 							<tspan x={0} y={31}>
 								{t('información, asesoría, acompañamiento, ')}
@@ -274,7 +296,9 @@ const InstrumentalStyrilationMobile: React.FC = (): JSX.Element => {
 							className="f-reward-2-mobile"
 							transform="translate(36 714)">
 							<tspan x={0} y={13}>
-								{t('Siempre enfocados en optimizar y preservar ')}
+								{t(
+									'Siempre enfocados en optimizar y preservar '
+								)}
 							</tspan>
 							<tspan x={0} y={31}>
 								{t('su inversión. ')}
@@ -327,10 +351,12 @@ const InstrumentalStyrilationMobile: React.FC = (): JSX.Element => {
 							className="k-reward-2-mobile"
 							transform="translate(207 26)">
 							<tspan x={-101.322} y={0}>
-								{t('Soluciones en salud')}
+								{t('SOLUCIONES EN SALUD')}
 							</tspan>
 						</text>
-						<g transform="translate(366.584 13.292)"  onClick={() => setView(0)}>
+						<g
+							transform="translate(366.584 13.292)"
+							onClick={() => setView(0)}>
 							<path
 								className="a-reward-2-mobile"
 								d="M8.8,10.967,5.708,7.874,2.615,10.967A1.531,1.531,0,1,1,.448,8.8L3.542,5.708.448,2.615A1.532,1.532,0,0,1,2.615.448L5.708,3.542,8.8.448a1.531,1.531,0,1,1,2.165,2.166L7.874,5.708,10.967,8.8A1.531,1.531,0,0,1,8.8,10.967Z"

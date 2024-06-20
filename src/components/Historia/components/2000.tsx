@@ -1,14 +1,15 @@
+import { TFunction } from "i18next";
 import React from "react";
-import { useTranslation } from "react-i18next";
 
 export interface ILifeLine2000 {
 	onClick: () => void
 	onLess: () => void
   handleChangeStepForce: (index: number) => void
+  t: TFunction<"translation", undefined>
+  selectedLanguage: 'es' | 'en'
 }
 
-const LifeLine2000: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeStepForce }): JSX.Element => {
-  const {t} = useTranslation()
+const LifeLine2000: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeStepForce, t, selectedLanguage }): JSX.Element => {
     return (
         <svg viewBox="0 0 1920 874.839">
         <defs>
@@ -219,7 +220,7 @@ const LifeLine2000: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeSt
             transform="translate(0)"
           />
         </g>
-        <text className="item-102-k" transform="translate(1074 383.634)">
+        <text className="item-102-k" transform={selectedLanguage === 'es' ? "translate(1074 383.634)" : 'translate(1054 383.634)'}>
           <tspan x={0} y={23}>
             {t("Inicia la distribución de")}
           </tspan>

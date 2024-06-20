@@ -1,15 +1,22 @@
+import { useLanguage } from 'context/language'
+import useLayout from 'hooks/ancho.hook'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
 const Footer: React.FC = (): JSX.Element => {
-	const {t} = useTranslation()
+	/** Hooks */
+	const { t } = useTranslation()
+	const { selectedLanguage } = useLanguage()
+	const { width } = useLayout();
+
+
 	return (
 		<div>
-			<svg viewBox="0 0 1920 318.202" xmlns="http://www.w3.org/2000/svg">
+			<svg viewBox={`0 0 1920 318.202`} preserveAspectRatio='none' width={window.screen.width}>
 				<defs>
 					<style>
 						{
-							'g,rect,path{stroke: none;}.a-5,.b-5,.d-5,.j-5{fill:#fff;}.b-5{stroke:#707070;}.c-5{fill:#001f5f;}.d-5,.j-5{font-size:12px;font-family:Silka-Regular, Silka;}.e{clip-path:url(#a-5);}.f-5{clip-path:url(#b-5);}.g-5{fill: #000;}.h-5,.j-5{text-decoration:underline;}.i-5{font-size:10px;}'
+							'g,rect,path{stroke: none;}.a-5,.b-5,.d-5,.j-5{fill:#fff;}.b-5{stroke:#707070;}.c-5{fill:#001f5f;}.d-5,.j-5{font-size:16px;font-family:Silka-Regular, Silka;}.e{clip-path:url(#a-5);}.f-5{clip-path:url(#b-5);}.g-5{fill: #000;}.h-5,.j-5{text-decoration:underline;}.i-5{font-size:10px;}'
 						}
 					</style>
 					<clipPath id="a-5">
@@ -44,21 +51,25 @@ const Footer: React.FC = (): JSX.Element => {
 						{t('Carrera 7 # 99-53, pisos 19 y 20')}
 					</tspan>
 					<tspan x={354.5} y={20} />
-					<tspan x={180.056} y={29}>
+					<tspan x={selectedLanguage === 'es' ? 180.056 : 210.056} y={29}>
 						{
 							t('L\xEDnea de atenci\xF3n al cliente 018000 180066 - (601) 7447300')
 						}
 					</tspan>
 					<tspan x={354.5} y={38} />
-					<tspan x={137.12} y={47}>
+					<a href="mailto:servicioalcliente@grupoamarey.com">
+					<tspan x={selectedLanguage === 'es' ? 137.12 : 157.12} y={47}>
 						{
-							t('Reporte de eventos adversos o PQR: servicioalcliente@grupoamarey.c-5om')
+							t('Reporte de eventos adversos o PQR: servicioalcliente@grupoamarey.com')
 						}
 					</tspan>
+					</a>
 					<tspan x={354.5} y={56} />
-					<tspan x={228.41} y={65}>
-						{t('Línea ética: linea.etica@grupoamarey.c-5om')}
+					<a href="mailto:linea.etica@grupoamarey.com">
+					<tspan x={selectedLanguage === 'es' ? 228.41 : 248.41} y={65}>
+						{t('Línea ética: linea.etica@grupoamarey.com')}
 					</tspan>
+					</a>
 				</text>
 				<a href="https://facebook.com/GrupoAmarey/" target='_blank' rel='noreferrer'>
 				<path
@@ -197,14 +208,15 @@ const Footer: React.FC = (): JSX.Element => {
 							width={610.636}
 							style={{ objectFit: "contain", width: 841,  objectPosition: "right bottom", height: 360, marginTop: "-19px"}}
 							src="/images/video/mapa.webp"
+							alt=''
 							/>
 						</foreignObject>
 					</g>
 				</a>
 				<g transform="translate(851 185)">
-					<a href="https://www.google.com" target="_blank" rel='noreferrer'>
+					<a href="https://grupoamarey.com/pdf/GRC-F-G-004-V5_FORMATO%20AUTORIZACIO%CC%81N%20DE%20TRATAMIENTO%20DE%20DATOS%20PERSONALES_.pdf" target="_blank" rel='noreferrer'>
 						<text className="d-5">
-							<tspan className="h-5" x={9.712} y={11}>
+							<tspan className="h-5" x={selectedLanguage === 'es' ? 9.712 : 45.712} y={11}>
 								{t('Tratamiento de datos personales')}
 							</tspan>
 							<tspan className="i-5" y={11} />
@@ -212,9 +224,9 @@ const Footer: React.FC = (): JSX.Element => {
 					</a>
 				</g>
 				<g transform="translate(698 214)">
-					<a href="https://www.google.com" target="_blank" rel='noreferrer'>
+					<a href="https://grupoamarey.com/pdf/GRC-PL-A-001-V5. POLÍTICA DE TRATAMIENTO DE DATOS PERSONALES AMAREY 1.pdf" target="_blank" rel='noreferrer'>
 						<text className="j-5">
-							<tspan x={134.14} y={11}>
+							<tspan x={selectedLanguage === 'es' ? 134.14 : 186.14} y={11}>
 								{
 									t('Pol\xEDtica de protecci\xF3n de datos personales')
 								}

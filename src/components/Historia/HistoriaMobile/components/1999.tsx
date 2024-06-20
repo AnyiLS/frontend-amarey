@@ -1,9 +1,7 @@
 import React from 'react'
 import { TimeLine } from '../HistoriaMobile'
-import { useTranslation } from 'react-i18next'
 
-const Component1999: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => {
-	const { t } = useTranslation()
+const Component1999: React.FC<TimeLine> = ({ onNext, onPrev, t, selectedLanguage }): JSX.Element => {
 	return (
 		<React.Fragment>
 			<svg viewBox="85 0 414 485.06" preserveAspectRatio="none">
@@ -236,7 +234,7 @@ const Component1999: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => {
 						</g>
 						<text
 							className="k-time-line"
-							transform="translate(126.09 183.093)">
+							transform={selectedLanguage === 'es' ? "translate(126.09 183.093)" : "translate(126.09 178.093)"}>
 							<tspan x={0} y={11}>
 								{t('Se crea la línea respiratoria ')}
 							</tspan>

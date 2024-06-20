@@ -1,8 +1,6 @@
-import { useTranslation } from 'react-i18next'
 import { ILifeLine2000 } from './2000'
 
-const LifeLine20142: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeStepForce }) => {
-	const {t} = useTranslation()
+const LifeLine20142: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeStepForce, t, selectedLanguage }) => {
 	return (
 		<svg viewBox="0 0 1920 874.839">
 			<defs>
@@ -227,7 +225,7 @@ const LifeLine20142: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeS
 				</g>
 				<text
 					className="item-107-k"
-					transform="translate(1040 346.286)">
+					transform={selectedLanguage === 'es' ? "translate(1040 346.286)" : "translate(1040 366.286)"}>
 					<tspan x={0} y={0}>
 						{t('Inicia la distribución de ')}
 					</tspan>
@@ -235,11 +233,11 @@ const LifeLine20142: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeS
 						{t('productos para logística ')}
 					</tspan>
 					<tspan x={0} y={52}>
-						{t('hospitalaria del proveedor ')}
+						{t('hospitalaria. ')}
 					</tspan>
-					<tspan x={0} y={78}>
+					{/* <tspan x={0} y={78}>
 						{t('GRIFOLS.')}
-					</tspan>
+					</tspan> */}
 				</text>
 				<g transform="translate(0 -329.714)" onClick={onClick}>
 					<g

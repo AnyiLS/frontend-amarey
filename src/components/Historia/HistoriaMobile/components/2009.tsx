@@ -1,9 +1,7 @@
 import React from 'react'
 import { TimeLine } from '../HistoriaMobile'
-import { useTranslation } from 'react-i18next'
 
-const Component2009: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => {
-  const { t } = useTranslation()
+const Component2009: React.FC<TimeLine> = ({ onNext, onPrev, t }): JSX.Element => {
 	return (
 		<React.Fragment>
 			<svg viewBox="85 0 414 485.06" preserveAspectRatio="none">
@@ -45,7 +43,7 @@ const Component2009: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => {
         <image
           width={5616}
           height={3744}
-          xlinkHref="/images/mobile/history/2009-1.webp"
+          xlinkHref="/images/IMG_6337 GRIFOLS.webp"
         />
       </pattern>
       <filter
@@ -84,7 +82,7 @@ const Component2009: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => {
           preserveAspectRatio="xMidYMid slice"
           width={157.761}
           height={90.291}
-          xlinkHref="/images/mobile/history/2009-2.webp"
+          xlinkHref="/images/ortopedi.webp"
         />
       </pattern>
       <filter
@@ -230,7 +228,7 @@ const Component2009: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => {
             {t("productos con las líneas de ")}
           </tspan>
           <tspan x={0} y={39}>
-            {t("implantes ortopédicos de ")}
+            {t("implantes ortopédicos, de ")}
           </tspan>
           <tspan x={0} y={53}>
             {t("Stryker, equipos médicos, ")}

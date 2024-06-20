@@ -1,17 +1,16 @@
 import React from 'react'
 import { TimeLine } from '../HistoriaMobile'
-import { useTranslation } from 'react-i18next'
+import { useLanguage } from 'context/language'
 
-const Component20121: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => {
-  const { t } = useTranslation()
-
+const Component20121: React.FC<TimeLine> = ({ onNext, onPrev, t }): JSX.Element => {
+  const { selectedLanguage } = useLanguage()
 	return (
 		<React.Fragment>
 			<svg viewBox="85 0 414 485.06" preserveAspectRatio="none">
 			<defs>
       <style>
         {
-          ".a-time-line,.o-time-line{fill:#fff;}.b-time-line{fill:#e7002a;stroke:#e7002a;}.c-time-line,.i-time-line,.k-time-line,.m-time-line,.q-time-line,.r-time-line{fill:#001f5f;}.c-time-line{stroke:#001f5f;}.d-time-line{opacity:0.5;fill:url(#a-time-line);}.e-time-line{opacity:0.75;fill:url(#b-time-line);}.f-time-line{fill:none;stroke:#fff;stroke-width:3px;}.f-time-line,.g-time-line{opacity:0.6;}.h-time-line{fill:url(#c-time-line);}.i-time-line{font-size:10px;}.i-time-line,.k-time-line,.m-time-line,.o-time-line{font-family:Silka-Bold, Silka;font-weight:700;}.j-time-line{clip-path:url(#h-time-line);}.k-time-line{font-size:22px;}.l-time-line{fill:url(#i-time-line);}.m-time-line{font-size:19px;}.n-time-line{fill:#e40032;}.o-time-line{font-size:13px;}.p-time-line{opacity:0.7;}.r-time-line{font-size:4px;font-family:Silka-SemiBold, Silka;font-weight:600;}.s-time-line{filter:url(#r-time-line);}.t-time-line{filter:url(#p-time-line);}.u-time-line{filter:url(#n-time-line);}.v-time-line{filter:url(#l-time-line);}.w-time-line{filter:url(#j-time-line);}.x-time-line{filter:url(#f-time-line);}.y-time-line{filter:url(#d-time-line);}"
+          ".a-time-line,.o-time-line{fill:#fff;}.b-time-line{fill:#e7002a;stroke:#e7002a;}.c-time-line,.i-time-line,.k-time-line,.m-time-line,.q-time-line,.r-time-line{fill:#001f5f;}.c-time-line{stroke:#001f5f;}.d-time-line{opacity:0.5;fill:url(#a-time-line);}.e-time-line{opacity:0.75;fill:url(#b-time-line);}.f-time-line{fill:none;stroke:#fff;stroke-width:3px;}.f-time-line,.g-time-line{opacity:0.6;}.h-time-line{fill:url(#c-time-line);}.i-time-line{font-size:10px;}.i-time-line,.k-time-line,.m-time-line,.o-time-line{font-family:Silka-Regular, Silka;font-weight:700;}.j-time-line{clip-path:url(#h-time-line);}.k-time-line{font-size:22px;}.l-time-line{fill:url(#i-time-line);}.m-time-line{font-size:19px;}.n-time-line{fill:#e40032;}.o-time-line{font-size:13px;}.p-time-line{opacity:0.7;}.r-time-line{font-size:4px;font-family:Silka-SemiBold, Silka;font-weight:600;}.s-time-line{filter:url(#r-time-line);}.t-time-line{filter:url(#p-time-line);}.u-time-line{filter:url(#n-time-line);}.v-time-line{filter:url(#l-time-line);}.w-time-line{filter:url(#j-time-line);}.x-time-line{filter:url(#f-time-line);}.y-time-line{filter:url(#d-time-line);}"
         }
       </style>
       <linearGradient
@@ -41,7 +40,7 @@ const Component20121: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => 
           preserveAspectRatio="xMidYMid slice"
           width={100.337}
           height={103.197}
-          xlinkHref="/images/mobile/history/20121-1.webp"
+          xlinkHref="/images/history/Mapa-Colombia.png"
         />
       </pattern>
       <filter
@@ -85,7 +84,7 @@ const Component20121: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => 
         <image
           width={1018}
           height={702}
-          xlinkHref="/images/mobile/history/20121-2.webp"
+          xlinkHref="/images/ambiente.webp"
         />
       </pattern>
       <filter
@@ -223,9 +222,18 @@ const Component20121: React.FC<TimeLine> = ({ onNext, onPrev }): JSX.Element => 
             transform="translate(0)"
           />
         </g>
-        <text className="k-time-line" transform="translate(207.09 211.093)">
-          <tspan x={-74.36} y={21}>
-            {"Nihon Kohden"}
+        <text className="k-time-line" transform={selectedLanguage === 'es' ? "translate(207.09 206.093)" : "translate(207.09 205.093)"} style={{ fontSize: selectedLanguage === 'es' ? 16 : 14 }}>
+          <tspan x={-74.36} y={0}>
+            {t("Comienza la distribución de la línea de equipos médicos").split(' ').slice(0,2).join(' ')}
+          </tspan>
+          <tspan x={-74.36} y={16}>
+            {t("Comienza la distribución de la línea de equipos médicos").split(' ').slice(2,4).join(' ')}
+          </tspan>
+          <tspan x={-74.36} y={32}>
+            {t("Comienza la distribución de la línea de equipos médicos").split(' ').slice(4,8).join(' ')}
+          </tspan>
+          <tspan x={-74.36} y={48}>
+            {t("Comienza la distribución de la línea de equipos médicos").split(' ').slice(8,10).join(' ')}
           </tspan>
         </text>
         <g transform="translate(311.798 167.525)">

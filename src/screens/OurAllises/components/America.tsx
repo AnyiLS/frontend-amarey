@@ -650,7 +650,7 @@ const America: React.FC<IAmerica> = ({ height, onClose }): JSX.Element => {
 							<image
 								preserveAspectRatio="xMidYMid slice"
 								width={487.792}
-								height={86}
+								height={121}
 								xlinkHref="/images/our-allises/ComponentTMP_0-image8.png"
 							/>
 						</pattern>
