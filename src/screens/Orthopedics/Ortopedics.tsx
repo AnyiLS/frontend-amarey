@@ -8,15 +8,22 @@ const OrthopedicsMobile: React.FC = (): JSX.Element => {
 	const [height, setHeight] = React.useState<number>(0)
 
 	React.useEffect(() => {
-		if (document.getElementById('navbar__container')) setHeight(document.getElementById('navbar__container')?.clientHeight ?? 0)
+		if (document.getElementById('navbar__container'))
+			setHeight(
+				document.getElementById('navbar__container')?.clientHeight ?? 0
+			)
 	}, [])
 
-	const {t} = useTranslation()
+	const { t } = useTranslation()
 
 	return (
 		<React.Fragment>
 			{view === 0 ? (
-				<svg viewBox="0 0 414 855" width='100%' style={{ height: "100%" }} preserveAspectRatio='none'>
+				<svg
+					viewBox="0 0 414 700"
+					width="100%"
+					style={{ height: '100%' }}
+					preserveAspectRatio="none">
 					<defs>
 						<style>
 							{
@@ -86,56 +93,7 @@ const OrthopedicsMobile: React.FC = (): JSX.Element => {
 							width={414}
 							height={856}
 						/>
-						<text
-							className="d-reward-2-mobile"
-							transform="translate(207 536)">
-							<tspan x={-66.168} y={0}>
-								{t('Ortopedia')}
-							</tspan>
-						</text>
-						<text
-							className="e-reward-2-mobile"
-							transform="translate(36 560)">
-							<tspan x={0} y={13}>
-								{
-									t('Somos líderes con tecnología que aporta a los ')
-								}
-							</tspan>
-							<tspan x={0} y={31}>
-								{
-									t('profesionales de la salud y sus pacientes las ')
-								}
-							</tspan>
-							<tspan x={0} y={49}>
-								{
-									t('herramientas en cirugías que permiten alcanzar ')
-								}
-							</tspan>
-							<tspan x={0} y={67}>
-								{
-									t('una calidad de vida más activa y satisfactoria ')
-								}
-							</tspan>
-							<tspan x={0} y={85} xmlSpace="preserve">
-								{t('mediante las líneas de:  ')}
-							</tspan>
-						</text>
-						<text
-							className="e-reward-2-mobile"
-							transform="translate(79 662)">
-							<tspan x={0} y={13}>
-								{t('Trauma')}
-							</tspan>
-							<tspan x={0} y={31}>
-								{t('Reemplazo articular')}
-							</tspan>
-							<tspan x={0} y={49}>
-								{t('Artroscopia')}
-							</tspan>
-							<tspan x={0} y={67}>
-								{t('Cráneo y maxilofacial')}
-							</tspan>
-						</text>
+
 						<g
 							className="k-reward-2-mobile"
 							transform="matrix(1, 0, 0, 1, -9, -6)">
@@ -153,63 +111,125 @@ const OrthopedicsMobile: React.FC = (): JSX.Element => {
 								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
-						<g transform="translate(366.585 13.292)" onClick={() => window.location.href = '/productos'}>
+						<g
+							transform="translate(366.585 13.292)"
+							onClick={() =>
+								(window.location.href = '/productos')
+							}>
 							<path
 								className="a-reward-2-mobile"
 								d="M8.8,10.967,5.708,7.874,2.615,10.967A1.531,1.531,0,1,1,.448,8.8L3.542,5.708.448,2.615A1.532,1.532,0,0,1,2.615.448L5.708,3.542,8.8.448a1.531,1.531,0,1,1,2.165,2.166L7.874,5.708,10.967,8.8A1.531,1.531,0,0,1,8.8,10.967Z"
 								transform="translate(0 0)"
 							/>
 						</g>
-						<g transform="translate(91.999 771.493)" onClick={() => setView(1)}>
-							<g
-								className="j-reward-2-mobile"
-								transform="matrix(1, 0, 0, 1, -101, -777.49)">
-								<path
-									className="h-reward-2-mobile"
-									d="M230,0H47.176C28.161,0,11.086,12.6,4.142,31.746L0,43.169H181.308c20.259,0,38.4-13.581,45.534-34.092Z"
-									transform="translate(101 777.49)"
-								/>
-							</g>
+						<g transform='translate(0 -200)'>
 							<text
-								className="g-reward-2-mobile"
-								transform="translate(55.5 28.584)">
-								<tspan x={0} y={0}>
-									{t('Conoce Más')}
+								className="d-reward-2-mobile"
+								transform="translate(207 536)">
+								<tspan x={-66.168} y={0}>
+									{t('Ortopedia')}
 								</tspan>
 							</text>
+							<text
+								className="e-reward-2-mobile"
+								transform="translate(36 560)">
+								<tspan x={0} y={13}>
+									{t(
+										'Somos líderes con tecnología que aporta a los '
+									)}
+								</tspan>
+								<tspan x={0} y={31}>
+									{t(
+										'profesionales de la salud y sus pacientes las '
+									)}
+								</tspan>
+								<tspan x={0} y={49}>
+									{t(
+										'herramientas en cirugías que permiten alcanzar '
+									)}
+								</tspan>
+								<tspan x={0} y={67}>
+									{t(
+										'una calidad de vida más activa y satisfactoria '
+									)}
+								</tspan>
+								<tspan x={0} y={85} xmlSpace="preserve">
+									{t('mediante las líneas de:  ')}
+								</tspan>
+							</text>
+							<text
+								className="e-reward-2-mobile"
+								transform="translate(79 662)">
+								<tspan x={0} y={13}>
+									{t('Trauma')}
+								</tspan>
+								<tspan x={0} y={31}>
+									{t('Reemplazo articular')}
+								</tspan>
+								<tspan x={0} y={49}>
+									{t('Artroscopia')}
+								</tspan>
+								<tspan x={0} y={67}>
+									{t('Cráneo y maxilofacial')}
+								</tspan>
+							</text>
+							<g
+								transform="translate(91.999 771.493)"
+								onClick={() => setView(1)}>
+								<g
+									className="j-reward-2-mobile"
+									transform="matrix(1, 0, 0, 1, -101, -777.49)">
+									<path
+										className="h-reward-2-mobile"
+										d="M230,0H47.176C28.161,0,11.086,12.6,4.142,31.746L0,43.169H181.308c20.259,0,38.4-13.581,45.534-34.092Z"
+										transform="translate(101 777.49)"
+									/>
+								</g>
+								<text
+									className="g-reward-2-mobile"
+									transform="translate(55.5 28.584)">
+									<tspan x={0} y={0}>
+										{t('Conoce Más')}
+									</tspan>
+								</text>
+							</g>
+							<circle
+								className="i-reward-2-mobile"
+								cx={4}
+								cy={4}
+								r={4}
+								transform="translate(67 666)"
+							/>
+							<circle
+								className="i-reward-2-mobile"
+								cx={4}
+								cy={4}
+								r={4}
+								transform="translate(67 684)"
+							/>
+							<circle
+								className="i-reward-2-mobile"
+								cx={4}
+								cy={4}
+								r={4}
+								transform="translate(67 702)"
+							/>
+							<circle
+								className="i-reward-2-mobile"
+								cx={4}
+								cy={4}
+								r={4}
+								transform="translate(67 720)"
+							/>
 						</g>
-						<circle
-							className="i-reward-2-mobile"
-							cx={4}
-							cy={4}
-							r={4}
-							transform="translate(67 666)"
-						/>
-						<circle
-							className="i-reward-2-mobile"
-							cx={4}
-							cy={4}
-							r={4}
-							transform="translate(67 684)"
-						/>
-						<circle
-							className="i-reward-2-mobile"
-							cx={4}
-							cy={4}
-							r={4}
-							transform="translate(67 702)"
-						/>
-						<circle
-							className="i-reward-2-mobile"
-							cx={4}
-							cy={4}
-							r={4}
-							transform="translate(67 720)"
-						/>
 					</g>
 				</svg>
 			) : (
-				<svg viewBox="7 0 414 855"  width='100%' style={{ height: "100%" }} preserveAspectRatio='none'>
+				<svg
+					viewBox="7 0 414 855"
+					width="100%"
+					style={{ height: '100%' }}
+					preserveAspectRatio="none">
 					<defs>
 						<style>
 							{
@@ -312,30 +332,32 @@ const OrthopedicsMobile: React.FC = (): JSX.Element => {
 								{t('Nuestro modelo integral de servicio de ')}
 							</tspan>
 							<tspan x={0} y={31}>
-								{
-									t('ortopedia ofrece disponibilidad 24/7 los 365')
-								}
+								{t(
+									'ortopedia ofrece disponibilidad 24/7 los 365'
+								)}
 							</tspan>
 							<tspan x={0} y={49}>
 								{t('días del año, con un servicio que ofrece ')}
 							</tspan>
 							<tspan x={0} y={67}>
-								{t('acompañamiento en el quirófano y servicio ')}
+								{t(
+									'acompañamiento en el quirófano y servicio '
+								)}
 							</tspan>
 							<tspan x={0} y={85}>
 								{t('posventa. ')}
 							</tspan>
 							<tspan x={0} y={103} />
 							<tspan x={0} y={121}>
-								{t('Contamos con una red logística de ortopedia ')}
+								{t(
+									'Contamos con una red logística de ortopedia '
+								)}
 							</tspan>
 							<tspan x={0} y={139}>
 								{t('para atención de cirugías en ciudades ')}
 							</tspan>
 							<tspan x={0} y={157} xmlSpace="preserve">
-								{
-									t('principales e intermedias de Colombia y')
-								}
+								{t('principales e intermedias de Colombia y')}
 							</tspan>
 							<tspan x={0} y={175}>
 								{t('Costa Rica. ')}
@@ -344,7 +366,7 @@ const OrthopedicsMobile: React.FC = (): JSX.Element => {
 						<g
 							className="h-reward-2-mobile"
 							transform="translate(192 836.024) rotate(-90)"
-                            onClick={() => setView(0)}>
+							onClick={() => setView(0)}>
 							<circle
 								className="i-reward-2-mobile"
 								cx={22}
@@ -390,7 +412,9 @@ const OrthopedicsMobile: React.FC = (): JSX.Element => {
 								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
-						<g transform="translate(374.584 13.292)" onClick={() => setView(0)}>
+						<g
+							transform="translate(374.584 13.292)"
+							onClick={() => setView(0)}>
 							<path
 								className="a-reward-2-mobile"
 								d="M8.8,10.967,5.708,7.874,2.615,10.967A1.531,1.531,0,1,1,.448,8.8L3.542,5.708.448,2.615A1.532,1.532,0,0,1,2.615.448L5.708,3.542,8.8.448a1.531,1.531,0,1,1,2.165,2.166L7.874,5.708,10.967,8.8A1.531,1.531,0,0,1,8.8,10.967Z"

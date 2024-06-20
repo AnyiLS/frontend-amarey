@@ -27,7 +27,6 @@ const useCarouselHome = () => {
     ) as HTMLVideoElement;
     if (video) {
       video.currentTime = 0;
-      video.play();
     }
   };
 

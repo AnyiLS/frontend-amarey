@@ -7,16 +7,22 @@ const WoundCareMobile: React.FC = (): JSX.Element => {
 	const [height, setHeight] = React.useState<number>(0)
 
 	React.useEffect(() => {
-		if (document.getElementById('navbar__container')) setHeight(document.getElementById('navbar__container')?.clientHeight ?? 0)
+		if (document.getElementById('navbar__container'))
+			setHeight(
+				document.getElementById('navbar__container')?.clientHeight ?? 0
+			)
 	}, [])
 
-	const {t} = useTranslation()
-
+	const { t } = useTranslation()
 
 	return (
 		<React.Fragment>
 			{view === 0 ? (
-				<svg viewBox="0 0 414 853" width='100%' style={{ height: "100%" }} preserveAspectRatio='none'>
+				<svg
+					viewBox="0 0 414 700"
+					width="100%"
+					style={{ height: '100%' }}
+					preserveAspectRatio="none">
 					<defs>
 						<style>
 							{
@@ -86,42 +92,50 @@ const WoundCareMobile: React.FC = (): JSX.Element => {
 							width={414}
 							height={856}
 						/>
-						<text
-							className="d-reward-2-mobile"
-							transform="translate(207 598)">
-							<tspan x={-119.352} y={0}>
-								{t('CUIDADO AVANZADO')}
-							</tspan>
-							<tspan x={-67.392} y={26}>
-								{t('DE HERIDAS ')}
-							</tspan>
-						</text>
-						<text
-							className="e-reward-2-mobile"
-							transform="translate(36 645)">
-							<tspan x={0} y={13}>
-								{t('Ofrecemos una línea de apósitos avanzados y ')}
-							</tspan>
-							<tspan x={0} y={31}>
-								{
-									t('terapia de presión negativa para el tratamiento ')
-								}
-							</tspan>
-							<tspan x={0} y={49}>
-								{t('integral de heridas agudas, crónicas y ')}
-							</tspan>
-							<tspan x={0} y={67}>
-								{t('complejas, como las ocasionadas por pie ')}
-							</tspan>
-							<tspan x={0} y={85}>
-								{
-									t('diabético, lesiones por presión y lesiones de ')
-								}
-							</tspan>
-							<tspan x={0} y={103}>
-								{t('origen vascular.')}
-							</tspan>
-						</text>
+						<g transform='translate(0 -200)'>
+							<text
+								className="d-reward-2-mobile"
+								transform="translate(207 598)">
+								<tspan x={-119.352} y={0}>
+									{t('CUIDADO AVANZADO')}
+								</tspan>
+								<tspan x={-67.392} y={26}>
+									{t('DE HERIDAS ')}
+								</tspan>
+							</text>
+							<text
+								className="e-reward-2-mobile"
+								transform="translate(36 645)">
+								<tspan x={0} y={13}>
+									{t(
+										'Ofrecemos una línea de apósitos avanzados y '
+									)}
+								</tspan>
+								<tspan x={0} y={31}>
+									{t(
+										'terapia de presión negativa para el tratamiento '
+									)}
+								</tspan>
+								<tspan x={0} y={49}>
+									{t(
+										'integral de heridas agudas, crónicas y '
+									)}
+								</tspan>
+								<tspan x={0} y={67}>
+									{t(
+										'complejas, como las ocasionadas por pie '
+									)}
+								</tspan>
+								<tspan x={0} y={85}>
+									{t(
+										'diabético, lesiones por presión y lesiones de '
+									)}
+								</tspan>
+								<tspan x={0} y={103}>
+									{t('origen vascular.')}
+								</tspan>
+							</text>
+						</g>
 						<g
 							className="j-reward-2-mobile"
 							transform="matrix(1, 0, 0, 1, -9, -6)">
@@ -139,7 +153,11 @@ const WoundCareMobile: React.FC = (): JSX.Element => {
 								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
-						<g transform="translate(366.585 13.292)" onClick={() => window.location.href = '/productos'}>
+						<g
+							transform="translate(366.585 13.292)"
+							onClick={() =>
+								(window.location.href = '/productos')
+							}>
 							<path
 								className="a-reward-2-mobile"
 								d="M8.8,10.967,5.708,7.874,2.615,10.967A1.531,1.531,0,1,1,.448,8.8L3.542,5.708.448,2.615A1.532,1.532,0,0,1,2.615.448L5.708,3.542,8.8.448a1.531,1.531,0,1,1,2.165,2.166L7.874,5.708,10.967,8.8A1.531,1.531,0,0,1,8.8,10.967Z"
@@ -147,7 +165,7 @@ const WoundCareMobile: React.FC = (): JSX.Element => {
 							/>
 						</g>
 						<g
-							transform="translate(91.999 771.493)"
+							transform="translate(91.999 571.493)"
 							onClick={() => setView(1)}>
 							<g
 								className="i-reward-2-mobile"
@@ -169,7 +187,11 @@ const WoundCareMobile: React.FC = (): JSX.Element => {
 					</g>
 				</svg>
 			) : (
-				<svg viewBox="7 0 414 857"  width='100%' style={{ height: "100%" }} preserveAspectRatio='none'>
+				<svg
+					viewBox="7 0 414 857"
+					width="100%"
+					style={{ height: '100%' }}
+					preserveAspectRatio="none">
 					<defs>
 						<style>
 							{
@@ -274,14 +296,14 @@ const WoundCareMobile: React.FC = (): JSX.Element => {
 								{t('Nuestro compromiso es asesorar a los ')}
 							</tspan>
 							<tspan x={0} y={31}>
-								{
-									t('profesionales de la salud en el uso, manejo y ')
-								}
+								{t(
+									'profesionales de la salud en el uso, manejo y '
+								)}
 							</tspan>
 							<tspan x={0} y={49}>
-								{
-									t('aprovechamiento correcto de dichas tecnologías. ')
-								}
+								{t(
+									'aprovechamiento correcto de dichas tecnologías. '
+								)}
 							</tspan>
 						</text>
 						<text
@@ -291,7 +313,9 @@ const WoundCareMobile: React.FC = (): JSX.Element => {
 								{t('Soluciones simples y efectivas ')}
 							</tspan>
 							<tspan x={0} y={31} xmlSpace="preserve">
-								{t('Aceleración del proceso de cicatrización  ')}
+								{t(
+									'Aceleración del proceso de cicatrización  '
+								)}
 							</tspan>
 							<tspan x={0} y={49}>
 								{t('Estimulación de la formación de')}
@@ -307,9 +331,9 @@ const WoundCareMobile: React.FC = (): JSX.Element => {
 							className="g-reward-2-mobile"
 							transform="translate(44 529)">
 							<tspan x={0} y={13}>
-								{
-									t('Ayudando al paciente a mejorar su calidad de ')
-								}
+								{t(
+									'Ayudando al paciente a mejorar su calidad de '
+								)}
 							</tspan>
 							<tspan x={0} y={31}>
 								{t('vida, mediante:')}
@@ -318,7 +342,7 @@ const WoundCareMobile: React.FC = (): JSX.Element => {
 						<g
 							className="h-reward-2-mobile"
 							transform="translate(192 836.024) rotate(-90)"
-                            onClick={() => setView(0)}>
+							onClick={() => setView(0)}>
 							<circle
 								className="i-reward-2-mobile"
 								cx={22}
@@ -364,7 +388,9 @@ const WoundCareMobile: React.FC = (): JSX.Element => {
 								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
-						<g transform="translate(374.584 13.292)" onClick={() => setView(0)}>
+						<g
+							transform="translate(374.584 13.292)"
+							onClick={() => setView(0)}>
 							<path
 								className="a-reward-2-mobile"
 								d="M8.8,10.967,5.708,7.874,2.615,10.967A1.531,1.531,0,1,1,.448,8.8L3.542,5.708.448,2.615A1.532,1.532,0,0,1,2.615.448L5.708,3.542,8.8.448a1.531,1.531,0,1,1,2.165,2.166L7.874,5.708,10.967,8.8A1.531,1.531,0,0,1,8.8,10.967Z"

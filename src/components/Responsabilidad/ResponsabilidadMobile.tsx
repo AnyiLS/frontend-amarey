@@ -290,15 +290,15 @@ const ResponsabilidadMobile: React.FC = (): JSX.Element => {
             <tspan x={0} y={189}>
               {t("social del país. Lo que hace la ")}
             </tspan>
-            <tspan x={0} y={205}>
+            <tspan x={selectedLanguage === 'es' ? 210 : 0} y={selectedLanguage === 'es' ? 189 : 205}>
               {t("avanzando de la nacion")}
             </tspan>
-            <tspan className="f-pentagrama" y={205}>
+            <tspan className="f-pentagrama" x={selectedLanguage === 'es' ? 0 : 145} y={205}>
               {t("Fundación ")}
             </tspan>
             {selectedLanguage === "es" && (
               <React.Fragment>
-                <tspan className="f-pentagrama" x={0} y={205}>
+                <tspan className="f-pentagrama" x={125} y={205}>
                   {t("OCMAES ")}
                 </tspan>
                 <tspan y={205} xmlSpace="preserve">

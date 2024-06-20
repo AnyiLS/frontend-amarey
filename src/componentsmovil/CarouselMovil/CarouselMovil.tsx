@@ -2580,7 +2580,7 @@ export const CarouselMovil: React.FC = () => {
 				className="fixed h-screen w-screen top-0 left-0 z-[100] bg-[#e6e6e6]"
 				style={{ display: showPopup ? 'flex' : 'none' }}>
 				<video
-					src="https://grupoamarey.com/pdf/video/Origen pentamero_1.mp4"
+					src={selectedLanguage === 'es' && showPopup ? "https://grupoamarey.com/pdf/video/Origen pentamero_1.mp4" : selectedLanguage === 'en' && showPopup ? "https://grupoamarey.com/videos/videos_inlges/Pentamero_ingles.mp4" : ''}
 					controls
 					className="w-full h-full"
 					id="video-1"

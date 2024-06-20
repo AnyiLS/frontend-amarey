@@ -11,7 +11,7 @@ const InstrumentalStyrilation: React.FC = (): JSX.Element => {
 	const [showModal, setShowModal] = React.useState(false)
 	const [openShow, setOpenShow] = React.useState(false)
 
-	const {t} = useTranslation()
+	const { t } = useTranslation()
 	return (
 		<React.Fragment>
 			{width > 1024 ? (
@@ -24,7 +24,7 @@ const InstrumentalStyrilation: React.FC = (): JSX.Element => {
 						<svg
 							width="100%"
 							height="100%"
-							viewBox="0 0 1920 1080"
+							viewBox="0 0 1920 900"
 							preserveAspectRatio="none">
 							<defs>
 								<style>
@@ -106,35 +106,37 @@ const InstrumentalStyrilation: React.FC = (): JSX.Element => {
 										height={1080}
 									/>
 								</g>
-								<text
-									className="e-products-instrumental-desktop"
-									transform="translate(140 847)">
-									<tspan x={0} y={0}>
-										{t('INSTRUMENTAL Y')}
-									</tspan>
-									<tspan x={0} y={57}>
-										{t('ESTERILIZACIÓN')}
-									</tspan>
-								</text>
-								<text
-									className="f-products-instrumental-desktop"
-									transform="translate(968 827)">
-									<tspan x={0} y={23}>
-										{
-											t('Con un completo portafolio de instrumentos para las diferentes ')
-										}
-									</tspan>
-									<tspan x={0} y={51}>
-										{
-											t('especialidades quir\xFArgicas, y la interacci\xF3n entre los productos y ')
-										}
-									</tspan>
-									<tspan x={0} y={79}>
-										{
-											t('los procesos de lavado y esterilizaci\xF3n.')
-										}
-									</tspan>
-								</text>
+								<g transform='translate(0 -200)'>
+									<text
+										className="e-products-instrumental-desktop"
+										transform="translate(140 847)">
+										<tspan x={0} y={0}>
+											{t('INSTRUMENTAL Y')}
+										</tspan>
+										<tspan x={0} y={57}>
+											{t('ESTERILIZACIÓN')}
+										</tspan>
+									</text>
+									<text
+										className="f-products-instrumental-desktop"
+										transform="translate(968 827)">
+										<tspan x={0} y={23}>
+											{t(
+												'Con un completo portafolio de instrumentos para las diferentes '
+											)}
+										</tspan>
+										<tspan x={0} y={51}>
+											{t(
+												'especialidades quir\xFArgicas, y la interacci\xF3n entre los productos y '
+											)}
+										</tspan>
+										<tspan x={0} y={79}>
+											{t(
+												'los procesos de lavado y esterilizaci\xF3n.'
+											)}
+										</tspan>
+									</text>
+								</g>
 								<g
 									className="m-products-instrumental-desktop"
 									transform="matrix(1, 0, 0, 1, -9, -6)">
@@ -182,7 +184,10 @@ const InstrumentalStyrilation: React.FC = (): JSX.Element => {
 											<feComposite in="SourceGraphic" />
 										</filter>
 									</defs>
-									<g transform="translate(-3778.748 -5819)" onMouseLeave={() => setOpenShow(false)} onMouseOver={() => setOpenShow(true)}>
+									<g
+										transform="translate(-3778.748 -6069)"
+										onMouseLeave={() => setOpenShow(false)}
+										onMouseOver={() => setOpenShow(true)}>
 										<g
 											className="c-boton-pequena cursor-pointer"
 											transform="matrix(1, 0, 0, 1, 3778.75, 5819)">
@@ -195,7 +200,11 @@ const InstrumentalStyrilation: React.FC = (): JSX.Element => {
 										<text
 											className="b-boton-pequena cursor-pointer"
 											transform="translate(3835.929 5863.388)"
-											style={{ fill: openShow ? "#001f5f" : '#ffffff' }}>
+											style={{
+												fill: openShow
+													? '#001f5f'
+													: '#ffffff',
+											}}>
 											<tspan x={0} y={0}>
 												{t('Conoce M\xE1s')}
 											</tspan>

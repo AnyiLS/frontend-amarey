@@ -42,3 +42,7 @@
       margin-top: 0 !important;
     }
   }
+
+  body {
+    overflow-x: hidden !important;
+  }

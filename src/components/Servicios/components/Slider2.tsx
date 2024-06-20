@@ -24,7 +24,7 @@ export const Slider2: React.FC<ISlider> = ({ index }) => {
 	const { selectedLanguage } = useLanguage();
 
 	return (
-		<svg viewBox="1590 10 1920 1080" preserveAspectRatio='none'  style={{ height: '100%'}} width='100%'>
+		<svg viewBox="1590 10 1920 1080" preserveAspectRatio='none'  style={{ height: '100%'}} width={window.screen.width}>
 			<defs>
 				<style>
 					{

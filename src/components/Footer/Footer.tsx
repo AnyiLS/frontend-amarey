@@ -1,13 +1,18 @@
 import { useLanguage } from 'context/language'
+import useLayout from 'hooks/ancho.hook'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
 const Footer: React.FC = (): JSX.Element => {
-	const {t} = useTranslation()
+	/** Hooks */
+	const { t } = useTranslation()
 	const { selectedLanguage } = useLanguage()
+	const { width } = useLayout();
+
+
 	return (
 		<div>
-			<svg viewBox="0 0 1920 318.202" xmlns="http://www.w3.org/2000/svg">
+			<svg viewBox={`0 0 1920 318.202`} preserveAspectRatio='none' width={window.screen.width}>
 				<defs>
 					<style>
 						{

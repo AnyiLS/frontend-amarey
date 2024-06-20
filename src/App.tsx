@@ -29,10 +29,10 @@ const Component = () => {
 
 	/** States */
 	// const [showVideoPopup, setShowVideoPopup] = React.useState<boolean>(true);
-	const showVideoPopup = localStorage.getItem('showVideo')
+	const showVideoPopup = sessionStorage.getItem('showVideo')
 
 	const setShowVideoPopup = () => {
-		localStorage.setItem('showVideo', 'false')
+		sessionStorage.setItem('showVideo', 'false')
 		window.location.reload()
 	}
 
@@ -46,7 +46,7 @@ const Component = () => {
 		<I18nextProvider i18n={i18n}>
 			<Flowbite theme={{ theme: customTheme }}>
 				{showVideoPopup === 'false' ? (
-					<div id="main">
+					<div id="main" style={{ width: window.screen.width }}>
 						<React.Suspense fallback={<Loading />}>
 							{width >= 768 ? <Navbar /> : <NavbarMovil />}
 							<RouterProvider router={router} />
@@ -70,12 +70,10 @@ const Component = () => {
 
 const App: React.FC = (): JSX.Element => {
 	React.useEffect(() => {
-		const video = localStorage.getItem('showVideo')
+		const video = sessionStorage.getItem('showVideo')
 
-		if (!video) localStorage.setItem('showVideo', 'true')
+		if (!video) sessionStorage.setItem('showVideo', 'true')
 	}, [])
-
-	const { width } = useGeneral()
 
 	return (
 		<LanguageProvider>
@@ -87,3 +85,4 @@ const App: React.FC = (): JSX.Element => {
 }
 
 export default App
+

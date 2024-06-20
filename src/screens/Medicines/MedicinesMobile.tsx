@@ -23,7 +23,7 @@ const MedicinesMobile: React.FC = (): JSX.Element => {
 		<React.Fragment>
 			{view === 0 ? (
 				<svg
-					viewBox="0 0 414 855"
+					viewBox="0 0 414 700"
 					width="100%"
 					style={{ height: '100%' }}
 					preserveAspectRatio="none">
@@ -96,43 +96,7 @@ const MedicinesMobile: React.FC = (): JSX.Element => {
 							width={414}
 							height={856}
 						/>
-						<text
-							className="c-reward-2-mobile"
-							transform={selectedLanguage === 'es' ? "translate(207 623)" : "translate(207 580)"}>
-							<tspan x={-97.428} y={0}>
-								{t('MEDICAMENTOS ')}
-							</tspan>
-						</text>
-						<text
-							className="d-reward-2-mobile"
-							transform={selectedLanguage === 'es' ? "translate(36 653)" : "translate(36 613)"}>
-							<tspan x={0} y={13}>
-								{t(
-									'Con medicamentos de la más alta tecnología'
-								)}
-							</tspan>
-							<tspan x={0} y={31}>
-								{t(
-									'para el cuidado de la salud de los pacientes, ya '
-								)}
-							</tspan>
-							<tspan x={0} y={49}>
-								{t(
-									'sea adultos, niños o neonatos, ofrecemos mayor '
-								)}
-							</tspan>
-							<tspan x={0} y={67}>
-								{t('eficacia y tolerabilidad al paciente en ')}
-							</tspan>
-							<tspan x={0} y={85}>
-								{t('productos.')}
-							</tspan>
-							{selectedLanguage === 'en' && (
-								<tspan x={0} y={103}>
-									{t('productos-2')}
-								</tspan>
-							)}
-						</text>
+
 						<g
 							className="j-reward-2-mobile"
 							transform="matrix(1, 0, 0, 1, -9, -6)">
@@ -161,26 +125,75 @@ const MedicinesMobile: React.FC = (): JSX.Element => {
 								transform="translate(0 0)"
 							/>
 						</g>
-						<g
-							transform="translate(91.999 771.493)"
-							onClick={() => setView(1)}>
-							<g
-								className="i-reward-2-mobile"
-								transform="matrix(1, 0, 0, 1, -101, -777.49)">
-								<path
-									className="h-reward-2-mobile"
-									d="M230,0H47.176C28.161,0,11.086,12.6,4.142,31.746L0,43.169H181.308c20.259,0,38.4-13.581,45.534-34.092Z"
-									transform="translate(101 777.49)"
-								/>
-							</g>
+						<g transform='translate(0 -200)'>
 							<text
-								className="f-reward-2-mobile"
-								transform="translate(55.5 28.584)"
-								onClick={() => setView(1)}>
-								<tspan x={0} y={0}>
-									{t('Conoce Más')}
+								className="c-reward-2-mobile"
+								transform={
+									selectedLanguage === 'es'
+										? 'translate(207 623)'
+										: 'translate(207 580)'
+								}>
+								<tspan x={-97.428} y={0}>
+									{t('MEDICAMENTOS ')}
 								</tspan>
 							</text>
+							<text
+								className="d-reward-2-mobile"
+								transform={
+									selectedLanguage === 'es'
+										? 'translate(36 653)'
+										: 'translate(36 613)'
+								}>
+								<tspan x={0} y={13}>
+									{t(
+										'Con medicamentos de la más alta tecnología'
+									)}
+								</tspan>
+								<tspan x={0} y={31}>
+									{t(
+										'para el cuidado de la salud de los pacientes, ya '
+									)}
+								</tspan>
+								<tspan x={0} y={49}>
+									{t(
+										'sea adultos, niños o neonatos, ofrecemos mayor '
+									)}
+								</tspan>
+								<tspan x={0} y={67}>
+									{t(
+										'eficacia y tolerabilidad al paciente en '
+									)}
+								</tspan>
+								<tspan x={0} y={85}>
+									{t('productos.')}
+								</tspan>
+								{selectedLanguage === 'en' && (
+									<tspan x={0} y={103}>
+										{t('productos-2')}
+									</tspan>
+								)}
+							</text>
+							<g
+								transform="translate(91.999 771.493)"
+								onClick={() => setView(1)}>
+								<g
+									className="i-reward-2-mobile"
+									transform="matrix(1, 0, 0, 1, -101, -777.49)">
+									<path
+										className="h-reward-2-mobile"
+										d="M230,0H47.176C28.161,0,11.086,12.6,4.142,31.746L0,43.169H181.308c20.259,0,38.4-13.581,45.534-34.092Z"
+										transform="translate(101 777.49)"
+									/>
+								</g>
+								<text
+									className="f-reward-2-mobile"
+									transform="translate(55.5 28.584)"
+									onClick={() => setView(1)}>
+									<tspan x={0} y={0}>
+										{t('Conoce Más')}
+									</tspan>
+								</text>
+							</g>
 						</g>
 					</g>
 				</svg>

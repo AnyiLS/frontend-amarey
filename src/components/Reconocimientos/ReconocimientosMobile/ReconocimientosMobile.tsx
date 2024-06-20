@@ -15,6 +15,8 @@ const ReconocimientosMobile: React.FC = (): JSX.Element => {
 	const { t } = useTranslation()
 	const { selectedLanguage } = useLanguage();
 
+	const [initial, setInitial] = React.useState<number>(0)
+
 	return (
 		<React.Fragment>
 			<svg viewBox="56 0 414 815" preserveAspectRatio="none">
@@ -232,7 +234,13 @@ const ReconocimientosMobile: React.FC = (): JSX.Element => {
 							{t('RECONOCIMIENTOS')}
 						</tspan>
 					</text>
-					<g transform="translate(47.483 -39)">
+					<g transform="translate(47.483 -39)" onTouchEnd={(e) => {
+						if (e.nativeEvent.changedTouches[0].clientX > initial) {
+							setCarouselSlider((prevState: number) => prevState === 0 ? 3 : prevState - 1)
+						} else if (e.nativeEvent.changedTouches[0].clientX < initial) {
+							setCarouselSlider((prevState: number) => prevState === 3 ? 0 : prevState + 1)
+						}
+					}} onTouchStart={(e) => setInitial(e.nativeEvent.changedTouches[0].clientX)}>
 						{carouselItemsMobile(t, selectedLanguage)[carouselSlider].text(
 							handleAddCarouselSlider,
 							handleLessCarouselSlider
@@ -277,7 +285,7 @@ const ReconocimientosMobile: React.FC = (): JSX.Element => {
 				className="fixed top-[0] left-[0] h-screen w-full bg-[#e6e6e6] z-[1]"
 				style={{ display: showVideo ? 'flex' : 'none' }}>
 				<video
-					src="https://grupoamarey.com/pdf/video/Reconocimientos_1.mp4"
+					src={selectedLanguage === 'es' && showVideo ? "https://grupoamarey.com/pdf/video/Reconocimientos_1.mp4" : selectedLanguage === 'en' && showVideo ? "https://grupoamarey.com/videos/videos_inlges/Reconocimientos_ingles.mp4" : ''}
 					width="100%"
 					height="100%"
 					controls

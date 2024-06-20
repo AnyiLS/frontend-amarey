@@ -14,17 +14,17 @@ const GenomicsGenetics: React.FC = (): JSX.Element => {
 	const [openShow, setOpenShow] = React.useState(false)
 	const [openShow1, setOpenShow1] = React.useState(false)
 
-	const {t} = useTranslation()
+	const { t } = useTranslation()
 	return (
 		<React.Fragment>
 			{width > 1024 ? (
 				<React.Fragment>
 					{selected === 0 ? (
 						<svg
-						viewBox="0 0 1920 1080"
-						width="100%"
-						height="100%"
-						preserveAspectRatio="none">
+							viewBox="0 0 1920 900"
+							width="100%"
+							height="100%"
+							preserveAspectRatio="none">
 							<defs>
 								<style>
 									{
@@ -110,42 +110,44 @@ const GenomicsGenetics: React.FC = (): JSX.Element => {
 										height={1080}
 									/>
 								</g>
-								<text
-									className="c-products-gg-desktop"
-									transform="translate(646 510)">
-									<tspan x={0} y={0}>
-										{t('Gen\xF3mica Y Gen\xE9ticA')}
-									</tspan>
-								</text>
-								<text
-									className="d-products-gg-desktop"
-									transform="translate(1026 738)">
-									<tspan x={0} y={23}>
-										{
-											t('La gen\xE9tica es el estudio de rasgos y genes heredados que ')
-										}
-									</tspan>
-									<tspan x={0} y={51}>
-										{
-											t('pueden predisponer a una persona a una condici\xF3n de salud ')
-										}
-									</tspan>
-									<tspan x={0} y={79}>
-										{t('particular.')}
-									</tspan>
-								</text>
-								<text
-									className="d-products-gg-desktop"
-									transform="translate(140 738)">
-									<tspan x={0} y={23}>
-										{
-											t('La gen\xF3mica analiza la forma en que se comporta un conjunto ')
-										}
-									</tspan>
-									<tspan x={0} y={51}>
-										{t('de genes. ')}
-									</tspan>
-								</text>
+								<g transform='translate(0 -200)'>
+									<text
+										className="c-products-gg-desktop"
+										transform="translate(646 510)">
+										<tspan x={0} y={0}>
+											{t('Gen\xF3mica Y Gen\xE9ticA')}
+										</tspan>
+									</text>
+									<text
+										className="d-products-gg-desktop"
+										transform="translate(1026 738)">
+										<tspan x={0} y={23}>
+											{t(
+												'La gen\xE9tica es el estudio de rasgos y genes heredados que '
+											)}
+										</tspan>
+										<tspan x={0} y={51}>
+											{t(
+												'pueden predisponer a una persona a una condici\xF3n de salud '
+											)}
+										</tspan>
+										<tspan x={0} y={79}>
+											{t('particular.')}
+										</tspan>
+									</text>
+									<text
+										className="d-products-gg-desktop"
+										transform="translate(140 738)">
+										<tspan x={0} y={23}>
+											{t(
+												'La gen\xF3mica analiza la forma en que se comporta un conjunto '
+											)}
+										</tspan>
+										<tspan x={0} y={51}>
+											{t('de genes. ')}
+										</tspan>
+									</text>
+								</g>
 								<g
 									className="m-products-gg-desktop"
 									transform="matrix(1, 0, 0, 1, -9, -6)">
@@ -193,7 +195,10 @@ const GenomicsGenetics: React.FC = (): JSX.Element => {
 											<feComposite in="SourceGraphic" />
 										</filter>
 									</defs>
-									<g transform="translate(-3778.748 -5819)"  onMouseLeave={() => setOpenShow(false)} onMouseOver={() => setOpenShow(true)}> 
+									<g
+										transform="translate(-3778.748 -5919)"
+										onMouseLeave={() => setOpenShow(false)}
+										onMouseOver={() => setOpenShow(true)}>
 										<g
 											className="c-boton-pequena cursor-pointer"
 											transform="matrix(1, 0, 0, 1, 3778.75, 5819)">
@@ -206,7 +211,11 @@ const GenomicsGenetics: React.FC = (): JSX.Element => {
 										<text
 											className="b-boton-pequena cursor-pointer"
 											transform="translate(3835.929 5863.388)"
-											style={{ fill: openShow ? "#001f5f" : '#ffffff' }}>
+											style={{
+												fill: openShow
+													? '#001f5f'
+													: '#ffffff',
+											}}>
 											<tspan x={0} y={0}>
 												{t('Conoce M\xE1s')}
 											</tspan>
@@ -243,7 +252,10 @@ const GenomicsGenetics: React.FC = (): JSX.Element => {
 											<feComposite in="SourceGraphic" />
 										</filter>
 									</defs>
-									<g transform="translate(-3778.748 -5819)"  onMouseLeave={() => setOpenShow1(false)} onMouseOver={() => setOpenShow1(true)}>
+									<g
+										transform="translate(-3778.748 -5919)"
+										onMouseLeave={() => setOpenShow1(false)}
+										onMouseOver={() => setOpenShow1(true)}>
 										<g
 											className="c-boton-pequena cursor-pointer"
 											transform="matrix(1, 0, 0, 1, 3778.75, 5819)">
@@ -256,7 +268,11 @@ const GenomicsGenetics: React.FC = (): JSX.Element => {
 										<text
 											className="b-boton-pequena cursor-pointer"
 											transform="translate(3835.929 5863.388)"
-											style={{ fill: openShow1 ? "#001f5f" : '#ffffff' }}>
+											style={{
+												fill: openShow1
+													? '#001f5f'
+													: '#ffffff',
+											}}>
 											<tspan x={0} y={0}>
 												{t('Conoce M\xE1s')}
 											</tspan>
@@ -294,14 +310,14 @@ const GenomicsGenetics: React.FC = (): JSX.Element => {
 							</g>
 						</svg>
 					) : selected === 1 ? (
-						<Genetica onChangeClick={() => setSelected(0)}/>
+						<Genetica onChangeClick={() => setSelected(0)} />
 					) : (
-						<Gemonica onChangeClick={() => setSelected(0)}/>
+						<Gemonica onChangeClick={() => setSelected(0)} />
 					)}
 				</React.Fragment>
 			) : (
 				<React.Fragment>
-					<GenomicsGeneticsMobile/>
+					<GenomicsGeneticsMobile />
 				</React.Fragment>
 			)}
 		</React.Fragment>

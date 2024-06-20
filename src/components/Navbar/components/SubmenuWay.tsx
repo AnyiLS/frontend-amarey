@@ -9,6 +9,7 @@ const SubmenuWay: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 			viewBox="-2 0 1920 360"
 			className="absolute z-1"
 			style={{ zIndex: 1 }}
+			width={window.screen.width}
 			ref={ref}
 		>
 			<defs>

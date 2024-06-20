@@ -5,21 +5,25 @@ import type { ISlide } from 'utils/models/Slide';
 /** Styles */
 import './styles/slide1.css';
 import { useLanguage } from "context/language";
+import useLayout from "hooks/ancho.hook";
 
 
 const Slide1: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 	/** Hooks */
   const { t } = useTranslation();
+  const { isSmallScreen } = useLayout()
 	
 	/** Contexts */
 	const { selectedLanguage } = useLanguage();
 
+  const aditionals = isSmallScreen ? {id: 'slide'} : {preserveAspectRatio: 'none'}
+
   return (
     <svg
-      viewBox="0 0 1920 970"
+      viewBox={`0 ${isSmallScreen ? '95' : '0'} 1920 ${isSmallScreen ? '975' : '970'}`}
       width="100%"
-      className="h-full"
-      preserveAspectRatio="none"
+      className="h-auto"
+      {...aditionals}
     >
       <defs>
         <filter
@@ -102,7 +106,7 @@ const Slide1: React.FC<ISlide> = ({ onClick }): JSX.Element => {
           id="m-bienvenida-1"
           width={1}
           height={1}
-          viewBox="25.027 78.091 1562.724 953.539"
+          viewBox={`25.027 ${isSmallScreen ? '0' : '78.091'} 1562.724 953.539`}
         >
           <image
             preserveAspectRatio="xMidYMid slice"
@@ -191,7 +195,7 @@ const Slide1: React.FC<ISlide> = ({ onClick }): JSX.Element => {
           height={968.423}
           transform="translate(0 2.683)"
         />
-        <g className="d-bienvenida-1" transform="translate(0 0)">
+        <g className="d-bienvenida-1" transform={isSmallScreen ? 'translate(0 95)' : 'translate(0 0)'}>
           <path
             className="a-bienvenida-1"
             d="M267.257,157.266H0V0H406.518V40.716c0,64.369-62.349,116.55-139.261,116.55"

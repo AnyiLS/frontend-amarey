@@ -5,10 +5,12 @@ import { useTranslation } from 'react-i18next'
 import type { ISlide } from 'utils/models/Slide';
 /** Styles */
 import './styles/slide3.css';
+import useLayout from 'hooks/ancho.hook';
 
 const Slide3: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 	/** Hooks */
 	const {t} = useTranslation()
+	const { isSmallScreen } = useLayout()
 
 	/** Contexts */
 	const { selectedLanguage } = useLanguage();
@@ -16,9 +18,9 @@ const Slide3: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 	return (
 		<svg
 			width="100%"
-			height="100%"
-			viewBox="0 92 1920 975"
-			preserveAspectRatio="none">
+			height="auto"
+			viewBox={`0 ${isSmallScreen ? '95' : '92'} 1920 975`}
+			preserveAspectRatio='none'>
 			<defs>
 				<clipPath id="a-sliders-1">
 					<rect
@@ -80,7 +82,7 @@ const Slide3: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 					height={1084}
 					transform="translate(0 2.594)"
 				/>
-				<g className="d-sliders-1" transform="translate(0 -0.406)">
+				<g className="d-sliders-1" transform={isSmallScreen ? "translate(0 95.406)" : "translate(0 0.406)"}>
 					<path
 						className="a-sliders-1"
 						d="M267.257,175.872H0V0H406.518V45.533c0,71.985-62.349,130.339-139.261,130.339"
@@ -123,7 +125,7 @@ const Slide3: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 					/>
 				</g>
 				<a href="/nuestros-aliados">
-					<g transform="translate(647.098 919.835)">
+					<g transform="translate(647.098 900.835)">
 						<g
 							className="l-sliders-1"
 							transform="matrix(1, 0, 0, 1, -976, -922)">
@@ -144,14 +146,14 @@ const Slide3: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 				</a>
 				<text
 					className="j-sliders-1"
-					transform="translate(841.098 827.835)">
+					transform="translate(841.098 805.835)">
 					<tspan x={selectedLanguage === 'es' ? -450.927 : -350.927} y={51}>
 						{t('desarrollo de tecnolog\xEDa en salud')}
 					</tspan>
 				</text>
 				<text
 					className="k-sliders-1"
-					transform="translate(839.098 739.835)">
+					transform="translate(839.098 710.835)">
 					<tspan x={selectedLanguage === 'es' ? -388.248 : -338.248} y={40}>
 						{t('Representamos las marcas de mayor')}
 					</tspan>

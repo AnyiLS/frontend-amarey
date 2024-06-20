@@ -6,10 +6,12 @@ import { useLanguage } from 'context/language';
 import type { ISlide } from 'utils/models/Slide';
 /** Styles */
 import './styles/slide2.css';
+import useLayout from 'hooks/ancho.hook';
 
 const Slide2: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 	/** Hooks */
 	const {t} = useTranslation()
+	const { isSmallScreen } = useLayout()
 
 	/** Contexts */
 	const { selectedLanguage } = useLanguage();
@@ -18,7 +20,7 @@ const Slide2: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 		<svg
 			width="100%"
 			height="100%"
-			viewBox="0 92 1920 970"
+			viewBox={`0 ${isSmallScreen ? '95' : '92'} 1920 970`}
 			preserveAspectRatio="none"
 		>
 			<defs>
@@ -40,7 +42,7 @@ const Slide2: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 					id="c-slide-2"
 					width={1}
 					height={1}
-					viewBox="17.166 127.188 1401.53 957.242">
+					viewBox={`17.166 ${isSmallScreen ? '0' : '127.188'} 1401.53 957.242`}>
 					<image
 						preserveAspectRatio="xMidYMid slice"
 						width={1626.644}
@@ -82,7 +84,7 @@ const Slide2: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 					height={1084}
 					transform="translate(0 2.594)"
 				/>
-				<g className="d-slide-2" transform="translate(0 -0.406)">
+				<g className="d-slide-2" transform={isSmallScreen ? 'translate(0 50.406)' : 'translate(0 -0.406)'}>
 					<path
 						className="a-slide-2"
 						d="M267.257,175.872H0V0H406.518V45.533c0,71.985-62.349,130.339-139.261,130.339"
@@ -126,13 +128,13 @@ const Slide2: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 				</g>
 				<text
 					className="h-slide-2"
-					transform="translate(809.445 772.835)">
+					transform="translate(809.445 715.835)">
 					<tspan x={selectedLanguage === 'es' ? -231.54 : -180.54} y={57}>
 						{t('ROBOT DAVINCI')}
 					</tspan>
 				</text>
 				<a href="/productos/cirugia-robotica">
-					<g transform="translate(650.445 947.835)">
+					<g transform="translate(650.445 910.835)">
 						<g
 							className="o-slide-2"
 							transform="matrix(1, 0, 0, 1, -976, -950)">
@@ -153,7 +155,7 @@ const Slide2: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 				</a>
 				<text
 					className="n-slide-2"
-					transform="translate(804.066 855.303)">
+					transform="translate(804.066 804.303)">
 					<tspan x={selectedLanguage === 'es' ? -455.168 : -350.168} y={30}>
 						{t('Llevando la precisión quirúrgica más allá de los límites de')}
 					</tspan>

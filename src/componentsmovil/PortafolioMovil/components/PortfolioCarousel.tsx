@@ -5,8 +5,9 @@ import { useTranslation } from 'react-i18next'
 const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 	/** States */
 	const [view, setView] = React.useState<number>(0)
+	const [initial, setInitial] = React.useState<number>(0)
 	const { t } = useTranslation()
-	const { selectedLanguage } = useLanguage();
+	const { selectedLanguage } = useLanguage()
 
 	return (
 		<React.Fragment>
@@ -15,7 +16,23 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					viewBox="106 0 414 960"
 					preserveAspectRatio="none"
 					width="100%"
-					height="100vh">
+					height="100vh"
+					onTouchEnd={(e) => {
+						if (e.nativeEvent.changedTouches[0].clientX > initial) {
+							setView((prevState: number) =>
+								prevState === 0 ? 10 : prevState - 1
+							)
+						} else if (
+							e.nativeEvent.changedTouches[0].clientX < initial
+						) {
+							setView((prevState: number) =>
+								prevState === 10 ? 0 : prevState + 1
+							)
+						}
+					}}
+					onTouchStart={(e) =>
+						setInitial(e.nativeEvent.changedTouches[0].clientX)
+					}>
 					<defs>
 						<style>
 							{
@@ -265,11 +282,23 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									<text
 										className="s-portfolio-1"
 										transform="translate(72.297 208.235)">
-										<tspan x={-42.923} y={0}>
+										<tspan
+											x={
+												selectedLanguage === 'es'
+													? -42.923
+													: -18.923
+											}
+											y={0}>
 											{t('Mantenimiento')}
 										</tspan>
-										<tspan x={selectedLanguage === 'es' ? -27.747 : -22.747} y={10}>
-											{t('biomédico')}
+										<tspan
+											x={
+												selectedLanguage === 'es'
+													? -27.747
+													: -22.747
+											}
+											y={10}>
+											{t('biomédico_2')}
 										</tspan>
 									</text>
 								</g>
@@ -297,7 +326,17 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									<text
 										className="s-portfolio-1"
 										transform="translate(71.47 211.235)">
-										<tspan x={selectedLanguage === 'es' ? -28.985 : -39.451} y={selectedLanguage === 'es' ? 0 : 20}>
+										<tspan
+											x={
+												selectedLanguage === 'es'
+													? -28.985
+													: -39.451
+											}
+											y={
+												selectedLanguage === 'es'
+													? 0
+													: 20
+											}>
 											{t('Equipos médicos')}
 										</tspan>
 									</text>
@@ -323,7 +362,13 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										<text
 											className="v-portfolio-1"
 											transform="translate(100.446 268.095)">
-											<tspan x={selectedLanguage === 'es' ? -60.417 : -50.417} y={0}>
+											<tspan
+												x={
+													selectedLanguage === 'es'
+														? -60.417
+														: -50.417
+												}
+												y={0}>
 												{t('Medicamentos')}
 											</tspan>
 										</text>
@@ -349,9 +394,11 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g transform="translate(171 438.931)" onClick={() => {
-							setView(10)
-						}}>
+						<g
+							transform="translate(171 438.931)"
+							onClick={() => {
+								setView(10)
+							}}>
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -359,7 +406,6 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									className="w-portfolio-1"
 									d="M0,0H41.727a52.21,52.21,0,0,1,48.6,33.144l4.678,11.925H54.994A54.95,54.95,0,0,1,3.567,9.477Z"
 									transform="translate(171 722.93)"
-
 								/>
 							</g>
 							<path
@@ -399,7 +445,23 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					viewBox="106 0 414 960"
 					preserveAspectRatio="none"
 					width="100%"
-					height="100vh">
+					height="100vh"
+					onTouchEnd={(e) => {
+						if (e.nativeEvent.changedTouches[0].clientX > initial) {
+							setView((prevState: number) =>
+								prevState === 0 ? 10 : prevState - 1
+							)
+						} else if (
+							e.nativeEvent.changedTouches[0].clientX < initial
+						) {
+							setView((prevState: number) =>
+								prevState === 10 ? 0 : prevState + 1
+							)
+						}
+					}}
+					onTouchStart={(e) =>
+						setInitial(e.nativeEvent.changedTouches[0].clientX)
+					}>
 					<defs>
 						<style>
 							{
@@ -649,7 +711,17 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									<text
 										className="s-portfolio-1"
 										transform="translate(72.297 208.235)">
-										<tspan x={selectedLanguage === 'es' ? -33.269 : -33.269} y={selectedLanguage === 'es' ? 0 : 20}>
+										<tspan
+											x={
+												selectedLanguage === 'es'
+													? -33.269
+													: -33.269
+											}
+											y={
+												selectedLanguage === 'es'
+													? 0
+													: 20
+											}>
 											{t('Medicamentos')}
 										</tspan>
 									</text>
@@ -678,10 +750,22 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									<text
 										className="s-portfolio-1"
 										transform="translate(71.47 211.235)">
-										<tspan x={selectedLanguage === 'es' ? -27.112 : -39.162} y={0}>
+										<tspan
+											x={
+												selectedLanguage === 'es'
+													? -27.112
+													: -39.162
+											}
+											y={0}>
 											{t('Dispositivos')}
 										</tspan>
-										<tspan x={selectedLanguage === 'es' ? -43.843 : -11.329} y={9}>
+										<tspan
+											x={
+												selectedLanguage === 'es'
+													? -43.843
+													: -11.329
+											}
+											y={9}>
 											{t('médico-quirúrgicos')}
 										</tspan>
 									</text>
@@ -707,7 +791,13 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										<text
 											className="v-portfolio-1"
 											transform="translate(86.446 268.095)">
-											<tspan x={selectedLanguage === 'es' ? -54.451 : -62.451} y={0}>
+											<tspan
+												x={
+													selectedLanguage === 'es'
+														? -54.451
+														: -62.451
+												}
+												y={0}>
 												{t('Equipos médicos')}
 											</tspan>
 										</text>
@@ -733,7 +823,9 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g transform="translate(171 438.931)" onClick={() => setView(0)}>
+						<g
+							transform="translate(171 438.931)"
+							onClick={() => setView(0)}>
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -741,7 +833,6 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									className="w-portfolio-1"
 									d="M0,0H41.727a52.21,52.21,0,0,1,48.6,33.144l4.678,11.925H54.994A54.95,54.95,0,0,1,3.567,9.477Z"
 									transform="translate(171 722.93)"
-
 								/>
 							</g>
 							<path
@@ -781,7 +872,23 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					viewBox="106 0 414 960"
 					preserveAspectRatio="none"
 					width="100%"
-					height="100vh">
+					height="100vh"
+					onTouchEnd={(e) => {
+						if (e.nativeEvent.changedTouches[0].clientX > initial) {
+							setView((prevState: number) =>
+								prevState === 0 ? 10 : prevState - 1
+							)
+						} else if (
+							e.nativeEvent.changedTouches[0].clientX < initial
+						) {
+							setView((prevState: number) =>
+								prevState === 10 ? 0 : prevState + 1
+							)
+						}
+					}}
+					onTouchStart={(e) =>
+						setInitial(e.nativeEvent.changedTouches[0].clientX)
+					}>
 					<defs>
 						<style>
 							{
@@ -1032,7 +1139,13 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										<text
 											className="s-portfolio-1"
 											transform="translate(72.297 208.235)">
-											<tspan x={-37.696} y={selectedLanguage === 'es' ? 0 : 20}>
+											<tspan
+												x={-37.696}
+												y={
+													selectedLanguage === 'es'
+														? 0
+														: 20
+												}>
 												{t('Equipos médicos')}
 											</tspan>
 										</text>
@@ -1062,7 +1175,17 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									<text
 										className="s-portfolio-1"
 										transform="translate(71.47 211.235)">
-										<tspan x={selectedLanguage === 'es' ? -23.251 : -23.055} y={selectedLanguage === 'es' ? 0 : 20}>
+										<tspan
+											x={
+												selectedLanguage === 'es'
+													? -23.251
+													: -23.055
+											}
+											y={
+												selectedLanguage === 'es'
+													? 0
+													: 20
+											}>
 											{t('Ortopedia')}
 										</tspan>
 									</text>
@@ -1088,10 +1211,22 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										<text
 											className="v-portfolio-1"
 											transform="translate(86.446 268.095)">
-											<tspan x={selectedLanguage === 'es' ? -39.162 : -54.162} y={0}>
+											<tspan
+												x={
+													selectedLanguage === 'es'
+														? -39.162
+														: -54.162
+												}
+												y={0}>
 												{t('Dispositivos')}
 											</tspan>
-											<tspan x={selectedLanguage === 'es' ? -63.329 : -22.329} y={14}>
+											<tspan
+												x={
+													selectedLanguage === 'es'
+														? -63.329
+														: -22.329
+												}
+												y={14}>
 												{t('médico-quirúrgicos')}
 											</tspan>
 										</text>
@@ -1117,7 +1252,9 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g transform="translate(171 438.931)" onClick={() => setView(1)}>
+						<g
+							transform="translate(171 438.931)"
+							onClick={() => setView(1)}>
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -1125,7 +1262,6 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									className="w-portfolio-1"
 									d="M0,0H41.727a52.21,52.21,0,0,1,48.6,33.144l4.678,11.925H54.994A54.95,54.95,0,0,1,3.567,9.477Z"
 									transform="translate(171 722.93)"
-
 								/>
 							</g>
 							<path
@@ -1165,7 +1301,23 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					viewBox="106 0 414 960"
 					preserveAspectRatio="none"
 					width="100%"
-					height="100vh">
+					height="100vh"
+					onTouchEnd={(e) => {
+						if (e.nativeEvent.changedTouches[0].clientX > initial) {
+							setView((prevState: number) =>
+								prevState === 0 ? 10 : prevState - 1
+							)
+						} else if (
+							e.nativeEvent.changedTouches[0].clientX < initial
+						) {
+							setView((prevState: number) =>
+								prevState === 10 ? 0 : prevState + 1
+							)
+						}
+					}}
+					onTouchStart={(e) =>
+						setInitial(e.nativeEvent.changedTouches[0].clientX)
+					}>
 					<defs>
 						<style>
 							{
@@ -1415,10 +1567,30 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									<text
 										className="s-portfolio-1"
 										transform="translate(72.297 208.235)">
-										<tspan x={selectedLanguage === 'es' ? -24.1 : -34.1} y={selectedLanguage === 'es' ? 0 : 15}>
+										<tspan
+											x={
+												selectedLanguage === 'es'
+													? -24.1
+													: -34.1
+											}
+											y={
+												selectedLanguage === 'es'
+													? 0
+													: 15
+											}>
 											{t('Dispositivos')}
 										</tspan>
-										<tspan x={selectedLanguage === 'es' ? -38.972 : -18.972} y={selectedLanguage === 'es' ? 9 : 25}>
+										<tspan
+											x={
+												selectedLanguage === 'es'
+													? -38.972
+													: -18.972
+											}
+											y={
+												selectedLanguage === 'es'
+													? 9
+													: 25
+											}>
 											{t('médico-quirúrgicos')}
 										</tspan>
 									</text>
@@ -1447,7 +1619,17 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									<text
 										className="s-portfolio-1"
 										transform="translate(71.47 211.235)">
-										<tspan x={selectedLanguage === 'es' ? -38.218 : -36.218} y={selectedLanguage === 'es' ? 0 : 20}>
+										<tspan
+											x={
+												selectedLanguage === 'es'
+													? -38.218
+													: -36.218
+											}
+											y={
+												selectedLanguage === 'es'
+													? 0
+													: 20
+											}>
 											{t('Cirugía robótica')}
 										</tspan>
 									</text>
@@ -1473,7 +1655,13 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										<text
 											className="v-portfolio-1"
 											transform="translate(100.446 268.095)">
-											<tspan x={selectedLanguage === 'es' ? -48.055 : -53.055} y={0}>
+											<tspan
+												x={
+													selectedLanguage === 'es'
+														? -48.055
+														: -53.055
+												}
+												y={0}>
 												{t('Ortopedia')}
 											</tspan>
 										</text>
@@ -1499,7 +1687,9 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g transform="translate(171 438.931)" onClick={() => setView(2)}>
+						<g
+							transform="translate(171 438.931)"
+							onClick={() => setView(2)}>
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -1507,7 +1697,6 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									className="w-portfolio-1"
 									d="M0,0H41.727a52.21,52.21,0,0,1,48.6,33.144l4.678,11.925H54.994A54.95,54.95,0,0,1,3.567,9.477Z"
 									transform="translate(171 722.93)"
-
 								/>
 							</g>
 							<path
@@ -1547,7 +1736,23 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					viewBox="106 0 414 960"
 					preserveAspectRatio="none"
 					width="100%"
-					height="100vh">
+					height="100vh"
+					onTouchEnd={(e) => {
+						if (e.nativeEvent.changedTouches[0].clientX > initial) {
+							setView((prevState: number) =>
+								prevState === 0 ? 10 : prevState - 1
+							)
+						} else if (
+							e.nativeEvent.changedTouches[0].clientX < initial
+						) {
+							setView((prevState: number) =>
+								prevState === 10 ? 0 : prevState + 1
+							)
+						}
+					}}
+					onTouchStart={(e) =>
+						setInitial(e.nativeEvent.changedTouches[0].clientX)
+					}>
 					<defs>
 						<style>
 							{
@@ -1797,7 +2002,13 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									<text
 										className="s-portfolio-1"
 										transform="translate(72.297 208.235)">
-										<tspan x={-23.251} y={selectedLanguage === 'es' ? 0 : 20}>
+										<tspan
+											x={-23.251}
+											y={
+												selectedLanguage === 'es'
+													? 0
+													: 20
+											}>
 											{t('Ortopedia')}
 										</tspan>
 									</text>
@@ -1829,7 +2040,13 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										<tspan x={-22.923} y={0}>
 											{t('Genómica')}
 										</tspan>
-										<tspan x={selectedLanguage === 'es' ? -23.747 : -32.747} y={10}>
+										<tspan
+											x={
+												selectedLanguage === 'es'
+													? -23.747
+													: -32.747
+											}
+											y={10}>
 											{t('y genética')}
 										</tspan>
 									</text>
@@ -1881,7 +2098,9 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g transform="translate(171 438.931)" onClick={() => setView(3)}>
+						<g
+							transform="translate(171 438.931)"
+							onClick={() => setView(3)}>
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -1889,7 +2108,6 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									className="w-portfolio-1"
 									d="M0,0H41.727a52.21,52.21,0,0,1,48.6,33.144l4.678,11.925H54.994A54.95,54.95,0,0,1,3.567,9.477Z"
 									transform="translate(171 722.93)"
-
 								/>
 							</g>
 							<path
@@ -1929,7 +2147,23 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					viewBox="106 0 414 960"
 					preserveAspectRatio="none"
 					width="100%"
-					height="100vh">
+					height="100vh"
+					onTouchEnd={(e) => {
+						if (e.nativeEvent.changedTouches[0].clientX > initial) {
+							setView((prevState: number) =>
+								prevState === 0 ? 10 : prevState - 1
+							)
+						} else if (
+							e.nativeEvent.changedTouches[0].clientX < initial
+						) {
+							setView((prevState: number) =>
+								prevState === 10 ? 0 : prevState + 1
+							)
+						}
+					}}
+					onTouchStart={(e) =>
+						setInitial(e.nativeEvent.changedTouches[0].clientX)
+					}>
 					<defs>
 						<style>
 							{
@@ -2179,7 +2413,17 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									<text
 										className="s-portfolio-1"
 										transform="translate(60.297 208.235)">
-										<tspan x={selectedLanguage === 'es' ? -23.251 : -23.251} y={selectedLanguage === 'es' ? 0 : 20}>
+										<tspan
+											x={
+												selectedLanguage === 'es'
+													? -23.251
+													: -23.251
+											}
+											y={
+												selectedLanguage === 'es'
+													? 0
+													: 20
+											}>
 											{t('Cirugía robótica')}
 										</tspan>
 									</text>
@@ -2208,10 +2452,22 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									<text
 										className="s-portfolio-1"
 										transform="translate(71.47 211.235)">
-										<tspan x={selectedLanguage === 'es' ? -22.923 : -28.747} y={0}>
+										<tspan
+											x={
+												selectedLanguage === 'es'
+													? -22.923
+													: -28.747
+											}
+											y={0}>
 											{t('Cuidado avanzado')}
 										</tspan>
-										<tspan x={selectedLanguage === 'es' ? -15.747 : -28.747} y={10}>
+										<tspan
+											x={
+												selectedLanguage === 'es'
+													? -15.747
+													: -28.747
+											}
+											y={10}>
 											{t('de heridas')}
 										</tspan>
 									</text>
@@ -2237,10 +2493,22 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										<text
 											className="v-portfolio-1"
 											transform="translate(75.446 268.095)">
-											<tspan x={selectedLanguage === 'es' ? -22.923 : -20.923} y={0}>
+											<tspan
+												x={
+													selectedLanguage === 'es'
+														? -22.923
+														: -20.923
+												}
+												y={0}>
 												{t('Genómica')}
 											</tspan>
-											<tspan x={selectedLanguage === 'es' ? -23.747 : -32.747} y={15}>
+											<tspan
+												x={
+													selectedLanguage === 'es'
+														? -23.747
+														: -32.747
+												}
+												y={15}>
 												{t('y genética')}
 											</tspan>
 										</text>
@@ -2266,7 +2534,9 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g transform="translate(171 438.931)" onClick={() => setView(4)}>
+						<g
+							transform="translate(171 438.931)"
+							onClick={() => setView(4)}>
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -2274,7 +2544,6 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									className="w-portfolio-1"
 									d="M0,0H41.727a52.21,52.21,0,0,1,48.6,33.144l4.678,11.925H54.994A54.95,54.95,0,0,1,3.567,9.477Z"
 									transform="translate(171 722.93)"
-
 								/>
 							</g>
 							<path
@@ -2314,7 +2583,23 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					viewBox="106 0 414 960"
 					preserveAspectRatio="none"
 					width="100%"
-					height="100vh">
+					height="100vh"
+					onTouchEnd={(e) => {
+						if (e.nativeEvent.changedTouches[0].clientX > initial) {
+							setView((prevState: number) =>
+								prevState === 0 ? 10 : prevState - 1
+							)
+						} else if (
+							e.nativeEvent.changedTouches[0].clientX < initial
+						) {
+							setView((prevState: number) =>
+								prevState === 10 ? 0 : prevState + 1
+							)
+						}
+					}}
+					onTouchStart={(e) =>
+						setInitial(e.nativeEvent.changedTouches[0].clientX)
+					}>
 					<defs>
 						<style>
 							{
@@ -2625,7 +2910,13 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										<text
 											className="v-portfolio-1"
 											transform="translate(86.446 268.095)">
-											<tspan x={selectedLanguage === 'es' ? -60.417 : -30.417} y={0}>
+											<tspan
+												x={
+													selectedLanguage === 'es'
+														? -60.417
+														: -30.417
+												}
+												y={0}>
 												{t('Cuidado avanzado')}
 											</tspan>
 											<tspan x={-33.989} y={14}>
@@ -2654,7 +2945,9 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g transform="translate(171 438.931)" onClick={() => setView(5)}>
+						<g
+							transform="translate(171 438.931)"
+							onClick={() => setView(5)}>
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -2662,7 +2955,6 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									className="w-portfolio-1"
 									d="M0,0H41.727a52.21,52.21,0,0,1,48.6,33.144l4.678,11.925H54.994A54.95,54.95,0,0,1,3.567,9.477Z"
 									transform="translate(171 722.93)"
-
 								/>
 							</g>
 							<path
@@ -2702,7 +2994,23 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					viewBox="106 0 414 960"
 					preserveAspectRatio="none"
 					width="100%"
-					height="100vh">
+					height="100vh"
+					onTouchEnd={(e) => {
+						if (e.nativeEvent.changedTouches[0].clientX > initial) {
+							setView((prevState: number) =>
+								prevState === 0 ? 10 : prevState - 1
+							)
+						} else if (
+							e.nativeEvent.changedTouches[0].clientX < initial
+						) {
+							setView((prevState: number) =>
+								prevState === 10 ? 0 : prevState + 1
+							)
+						}
+					}}
+					onTouchStart={(e) =>
+						setInitial(e.nativeEvent.changedTouches[0].clientX)
+					}>
 					<defs>
 						<style>
 							{
@@ -2952,7 +3260,13 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									<text
 										className="s-portfolio-1"
 										transform="translate(72.297 208.235)">
-										<tspan x={selectedLanguage === 'es' ? -41.827 : -17.827} y={0}>
+										<tspan
+											x={
+												selectedLanguage === 'es'
+													? -41.827
+													: -17.827
+											}
+											y={0}>
 											{t('Cuidado avanzado')}
 										</tspan>
 										<tspan x={-23.531} y={9}>
@@ -3039,7 +3353,9 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g transform="translate(171 438.931)" onClick={() => setView(6)}>
+						<g
+							transform="translate(171 438.931)"
+							onClick={() => setView(6)}>
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -3047,7 +3363,6 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									className="w-portfolio-1"
 									d="M0,0H41.727a52.21,52.21,0,0,1,48.6,33.144l4.678,11.925H54.994A54.95,54.95,0,0,1,3.567,9.477Z"
 									transform="translate(171 722.93)"
-
 								/>
 							</g>
 							<path
@@ -3087,7 +3402,23 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					viewBox="106 0 414 960"
 					preserveAspectRatio="none"
 					width="100%"
-					height="100vh">
+					height="100vh"
+					onTouchEnd={(e) => {
+						if (e.nativeEvent.changedTouches[0].clientX > initial) {
+							setView((prevState: number) =>
+								prevState === 0 ? 10 : prevState - 1
+							)
+						} else if (
+							e.nativeEvent.changedTouches[0].clientX < initial
+						) {
+							setView((prevState: number) =>
+								prevState === 10 ? 0 : prevState + 1
+							)
+						}
+					}}
+					onTouchStart={(e) =>
+						setInitial(e.nativeEvent.changedTouches[0].clientX)
+					}>
 					<defs>
 						<style>
 							{
@@ -3372,7 +3703,13 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										<tspan x={-20.466} y={0}>
 											{t('Logística')}
 										</tspan>
-										<tspan x={selectedLanguage === 'es' ? -27.261 : -20.261} y={10}>
+										<tspan
+											x={
+												selectedLanguage === 'es'
+													? -27.261
+													: -20.261
+											}
+											y={10}>
 											{t('HOSPITALARIA')}
 										</tspan>
 									</text>
@@ -3399,7 +3736,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 											className="v-portfolio-1"
 											transform="translate(60 268.095)">
 											<tspan x={-48.055} y={0}>
-												{(t('Neurointervencionismo'))}
+												{t('Neurointervencionismo')}
 											</tspan>
 										</text>
 									</g>
@@ -3424,7 +3761,9 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g transform="translate(171 438.931)" onClick={() => setView(7)}>
+						<g
+							transform="translate(171 438.931)"
+							onClick={() => setView(7)}>
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -3432,7 +3771,6 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									className="w-portfolio-1"
 									d="M0,0H41.727a52.21,52.21,0,0,1,48.6,33.144l4.678,11.925H54.994A54.95,54.95,0,0,1,3.567,9.477Z"
 									transform="translate(171 722.93)"
-
 								/>
 							</g>
 							<path
@@ -3472,7 +3810,23 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					viewBox="106 0 414 960"
 					preserveAspectRatio="none"
 					width="100%"
-					height="100vh">
+					height="100vh"
+					onTouchEnd={(e) => {
+						if (e.nativeEvent.changedTouches[0].clientX > initial) {
+							setView((prevState: number) =>
+								prevState === 0 ? 10 : prevState - 1
+							)
+						} else if (
+							e.nativeEvent.changedTouches[0].clientX < initial
+						) {
+							setView((prevState: number) =>
+								prevState === 10 ? 0 : prevState + 1
+							)
+						}
+					}}
+					onTouchStart={(e) =>
+						setInitial(e.nativeEvent.changedTouches[0].clientX)
+					}>
 					<defs>
 						<style>
 							{
@@ -3780,10 +4134,22 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										<text
 											className="v-portfolio-1"
 											transform="translate(75 268.095)">
-											<tspan x={selectedLanguage === 'es' ? -16.466 : -9.466} y={0}>
+											<tspan
+												x={
+													selectedLanguage === 'es'
+														? -16.466
+														: -9.466
+												}
+												y={0}>
 												{t('Logística')}
 											</tspan>
-											<tspan x={selectedLanguage === 'es' ? -27.261 : -10.261} y={15}>
+											<tspan
+												x={
+													selectedLanguage === 'es'
+														? -27.261
+														: -10.261
+												}
+												y={15}>
 												{t('hospitalaria')}
 											</tspan>
 										</text>
@@ -3809,7 +4175,9 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g transform="translate(171 438.931)" onClick={() => setView(8)}>
+						<g
+							transform="translate(171 438.931)"
+							onClick={() => setView(8)}>
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -3817,7 +4185,6 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									className="w-portfolio-1"
 									d="M0,0H41.727a52.21,52.21,0,0,1,48.6,33.144l4.678,11.925H54.994A54.95,54.95,0,0,1,3.567,9.477Z"
 									transform="translate(171 722.93)"
-
 								/>
 							</g>
 							<path
@@ -3857,7 +4224,23 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 					viewBox="106 0 414 960"
 					preserveAspectRatio="none"
 					width="100%"
-					height="100vh">
+					height="100vh"
+					onTouchEnd={(e) => {
+						if (e.nativeEvent.changedTouches[0].clientX > initial) {
+							setView((prevState: number) =>
+								prevState === 0 ? 10 : prevState - 1
+							)
+						} else if (
+							e.nativeEvent.changedTouches[0].clientX < initial
+						) {
+							setView((prevState: number) =>
+								prevState === 10 ? 0 : prevState + 1
+							)
+						}
+					}}
+					onTouchStart={(e) =>
+						setInitial(e.nativeEvent.changedTouches[0].clientX)
+					}>
 					<defs>
 						<style>
 							{
@@ -4110,7 +4493,7 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										<tspan x={-41.827} y={0}>
 											{t('Logística')}
 										</tspan>
-										<tspan x={-41.827} y={25}>
+										<tspan x={-41.827} y={15}>
 											{t('hospitalaria')}
 										</tspan>
 									</text>
@@ -4165,11 +4548,23 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 										<text
 											className="v-portfolio-1"
 											transform="translate(75 268.095)">
-											<tspan x={selectedLanguage === 'es' ? -36.466 : -9.466} y={0}>
+											<tspan
+												x={
+													selectedLanguage === 'es'
+														? -36.466
+														: -25.466
+												}
+												y={0}>
 												{t('Mantenimiento')}
 											</tspan>
-											<tspan x={selectedLanguage === 'es' ? -18.261 : -10.261} y={15}>
-												{t('biomédico')}
+											<tspan
+												x={
+													selectedLanguage === 'es'
+														? -18.261
+														: -33.261
+												}
+												y={15}>
+												{t('biomédico_2')}
 											</tspan>
 										</text>
 									</g>
@@ -4194,7 +4589,9 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 								transform="translate(62.591 31.008)"
 							/>
 						</g>
-						<g transform="translate(171 438.931)" onClick={() => setView(9)}>
+						<g
+							transform="translate(171 438.931)"
+							onClick={() => setView(9)}>
 							<g
 								className="y-portfolio-1"
 								transform="matrix(1, 0, 0, 1, -171, -722.93)">
@@ -4202,7 +4599,6 @@ const PortfolioCarousel: React.FC<any> = ({ onClose }): JSX.Element => {
 									className="w-portfolio-1"
 									d="M0,0H41.727a52.21,52.21,0,0,1,48.6,33.144l4.678,11.925H54.994A54.95,54.95,0,0,1,3.567,9.477Z"
 									transform="translate(171 722.93)"
-
 								/>
 							</g>
 							<path

@@ -6,17 +6,23 @@ const RoboticSurgeryMobile: React.FC = (): JSX.Element => {
 	const [view, setView] = React.useState<number>(0)
 	const [height, setHeight] = React.useState<number>(0)
 
-	const {t} = useTranslation()
-
+	const { t } = useTranslation()
 
 	React.useEffect(() => {
-		if (document.getElementById('navbar__container')) setHeight(document.getElementById('navbar__container')?.clientHeight ?? 0)
+		if (document.getElementById('navbar__container'))
+			setHeight(
+				document.getElementById('navbar__container')?.clientHeight ?? 0
+			)
 	}, [])
 
 	return (
 		<React.Fragment>
 			{view === 0 ? (
-				<svg viewBox="0 0 414 855" width='100%' style={{ height: '100%' }} preserveAspectRatio='none'>
+				<svg
+					viewBox="0 0 414 700"
+					width="100%"
+					style={{ height: '100%' }}
+					preserveAspectRatio="none">
 					<defs>
 						<style>
 							{
@@ -86,88 +92,7 @@ const RoboticSurgeryMobile: React.FC = (): JSX.Element => {
 							width={415}
 							height={855}
 						/>
-						<text
-							className="d-reward-2-mobile"
-							transform="translate(207 360)">
-							<tspan x={-111.312} y={0}>
-								{t('CIRUGÍA ROBÓTICA')}
-							</tspan>
-						</text>
-						<text
-							className="e-reward-2-mobile"
-							transform="translate(35 396)">
-							<tspan x={0} y={13}>
-								{
-									t('Una extensión natural de los ojos, a través de ')
-								}
-							</tspan>
-							<tspan x={0} y={31}>
-								{
-									t('una visión en 3D y magnificación hasta 10 veces. ')
-								}
-							</tspan>
-							<tspan x={0} y={49}>
-								{t('Movimientos intuitivos con mayor rango de ')}
-							</tspan>
-							<tspan x={0} y={67}>
-								{
-									t('movimiento que exceden las capacidades de la ')
-								}
-							</tspan>
-							<tspan x={0} y={85}>
-								{t('mano humana. ')}
-							</tspan>
-							<tspan x={0} y={103} />
-							<tspan x={0} y={121}>
-								{
-									t('Somos el comercializador del sistema quirúrgico ')
-								}
-							</tspan>
-							<tspan x={0} y={139}>
-								{
-									t('da Vinci, con una experiencia de más de 3.000 ')
-								}
-							</tspan>
-							<tspan x={0} y={157}>
-								{t('cirugías en nuestro país, una sofisticada ')}
-							</tspan>
-							<tspan x={0} y={175}>
-								{
-									t('plataforma robótica que permite potenciar las ')
-								}
-							</tspan>
-							<tspan x={0} y={193}>
-								{
-									t('capacidades del cirujano y ofrecer una opción ')
-								}
-							</tspan>
-							<tspan x={0} y={211}>
-								{t('mínimamente invasiva en procedimientos de ')}
-							</tspan>
-							<tspan x={0} y={229} xmlSpace="preserve">
-								{t('cirugía compleja.  ')}
-							</tspan>
-							<tspan x={0} y={247} />
-							<tspan x={0} y={265}>
-								{
-									t('El sistema da Vinci da tratamiento a cuatro de ')
-								}
-							</tspan>
-							<tspan x={0} y={283}>
-								{t('los cinco tipos de cáncer más frecuente en ')}
-							</tspan>
-							<tspan x={0} y={301}>
-								{t('Colombia: cáncer de próstata, cáncer de ')}
-							</tspan>
-							<tspan x={0} y={319}>
-								{
-									t('estómago, cáncer de pulmón, cáncer colorrectal ')
-								}
-							</tspan>
-							<tspan x={0} y={337}>
-								{t('y muchas más patologías.')}
-							</tspan>
-						</text>
+
 						<g
 							className="j-reward-2-mobile"
 							transform="matrix(1, 0, 0, 1, -9, -6)">
@@ -185,32 +110,130 @@ const RoboticSurgeryMobile: React.FC = (): JSX.Element => {
 								{t('Soluciones en salud ')}
 							</tspan>
 						</text>
-						<g transform="translate(366.585 13.292)" onClick={() => window.location.href = '/productos'}>
+						<g
+							transform="translate(366.585 13.292)"
+							onClick={() =>
+								(window.location.href = '/productos')
+							}>
 							<path
 								className="a-reward-2-mobile"
 								d="M8.8,10.967,5.708,7.874,2.615,10.967A1.531,1.531,0,1,1,.448,8.8L3.542,5.708.448,2.615A1.532,1.532,0,0,1,2.615.448L5.708,3.542,8.8.448a1.531,1.531,0,1,1,2.165,2.166L7.874,5.708,10.967,8.8A1.531,1.531,0,0,1,8.8,10.967Z"
 								transform="translate(0 0)"
 							/>
 						</g>
-						<g
-							transform="translate(91.999 771.493)"
-							onClick={() => setView(1)}>
-							<g
-								className="i-reward-2-mobile"
-								transform="matrix(1, 0, 0, 1, -101, -777.49)">
-								<path
-									className="h-reward-2-mobile"
-									d="M230,0H47.176C28.161,0,11.086,12.6,4.142,31.746L0,43.169H181.308c20.259,0,38.4-13.581,45.534-34.092Z"
-									transform="translate(101 777.49)"
-								/>
-							</g>
+						<g transform="translate(0 -200)">
 							<text
-								className="g-reward-2-mobile"
-								transform="translate(55.5 28.584)">
-								<tspan x={0} y={0}>
-									{t('Conoce Más')}
+								className="d-reward-2-mobile"
+								transform="translate(207 360)">
+								<tspan x={-111.312} y={0}>
+									{t('CIRUGÍA ROBÓTICA')}
 								</tspan>
 							</text>
+							<text
+								className="e-reward-2-mobile"
+								transform="translate(35 396)">
+								<tspan x={0} y={13}>
+									{t(
+										'Una extensión natural de los ojos, a través de '
+									)}
+								</tspan>
+								<tspan x={0} y={31}>
+									{t(
+										'una visión en 3D y magnificación hasta 10 veces. '
+									)}
+								</tspan>
+								<tspan x={0} y={49}>
+									{t(
+										'Movimientos intuitivos con mayor rango de '
+									)}
+								</tspan>
+								<tspan x={0} y={67}>
+									{t(
+										'movimiento que exceden las capacidades de la '
+									)}
+								</tspan>
+								<tspan x={0} y={85}>
+									{t('mano humana. ')}
+								</tspan>
+								<tspan x={0} y={103} />
+								<tspan x={0} y={121}>
+									{t(
+										'Somos el comercializador del sistema quirúrgico '
+									)}
+								</tspan>
+								<tspan x={0} y={139}>
+									{t(
+										'da Vinci, con una experiencia de más de 3.000 '
+									)}
+								</tspan>
+								<tspan x={0} y={157}>
+									{t(
+										'cirugías en nuestro país, una sofisticada '
+									)}
+								</tspan>
+								<tspan x={0} y={175}>
+									{t(
+										'plataforma robótica que permite potenciar las '
+									)}
+								</tspan>
+								<tspan x={0} y={193}>
+									{t(
+										'capacidades del cirujano y ofrecer una opción '
+									)}
+								</tspan>
+								<tspan x={0} y={211}>
+									{t(
+										'mínimamente invasiva en procedimientos de '
+									)}
+								</tspan>
+								<tspan x={0} y={229} xmlSpace="preserve">
+									{t('cirugía compleja.  ')}
+								</tspan>
+								<tspan x={0} y={247} />
+								<tspan x={0} y={265}>
+									{t(
+										'El sistema da Vinci da tratamiento a cuatro de '
+									)}
+								</tspan>
+								<tspan x={0} y={283}>
+									{t(
+										'los cinco tipos de cáncer más frecuente en '
+									)}
+								</tspan>
+								<tspan x={0} y={301}>
+									{t(
+										'Colombia: cáncer de próstata, cáncer de '
+									)}
+								</tspan>
+								<tspan x={0} y={319}>
+									{t(
+										'estómago, cáncer de pulmón, cáncer colorrectal '
+									)}
+								</tspan>
+								<tspan x={0} y={337}>
+									{t('y muchas más patologías.')}
+								</tspan>
+							</text>
+							<g
+								transform="translate(91.999 771.493)"
+								onClick={() => setView(1)}>
+								<g
+									className="i-reward-2-mobile"
+									transform="matrix(1, 0, 0, 1, -101, -777.49)">
+									<path
+										className="h-reward-2-mobile"
+										d="M230,0H47.176C28.161,0,11.086,12.6,4.142,31.746L0,43.169H181.308c20.259,0,38.4-13.581,45.534-34.092Z"
+										transform="translate(101 777.49)"
+									/>
+								</g>
+								<text
+									className="g-reward-2-mobile"
+									transform="translate(55.5 28.584)">
+									<tspan x={0} y={0}>
+										{t('Conoce Más')}
+									</tspan>
+								</text>
+							</g>
 						</g>
 					</g>
 				</svg>
@@ -356,7 +379,9 @@ const RoboticSurgeryMobile: React.FC = (): JSX.Element => {
 								{t('Tecnología de vanguardia. ')}
 							</tspan>
 							<tspan x={0} y={67}>
-								{t('Atracción de nuevos pacientes y cirujanos. ')}
+								{t(
+									'Atracción de nuevos pacientes y cirujanos. '
+								)}
 							</tspan>
 							<tspan x={0} y={85}>
 								{t('Mejores resultados clínicos. ')}

@@ -11,8 +11,8 @@ const HospitalLogistics: React.FC = (): JSX.Element => {
 	const [showModal, setShowModal] = React.useState(false)
 	const [openShow, setOpenShow] = React.useState(false)
 
-	const {t} = useTranslation()
-	const {selectedLanguage} = useLanguage()
+	const { t } = useTranslation()
+	const { selectedLanguage } = useLanguage()
 
 	return (
 		<React.Fragment>
@@ -24,10 +24,10 @@ const HospitalLogistics: React.FC = (): JSX.Element => {
 							onClose={() => setShowModal(false)}></HospitalLogic>
 					) : (
 						<svg
-						viewBox="0 0 1920 1080"
-						width="100%"
-						height="100%"
-						preserveAspectRatio="none">
+							viewBox="0 0 1920 900"
+							width="100%"
+							height="100%"
+							preserveAspectRatio="none">
 							<defs>
 								<style>
 									{
@@ -108,43 +108,49 @@ const HospitalLogistics: React.FC = (): JSX.Element => {
 										height={1080}
 									/>
 								</g>
-								<text
-									className="c-products-hl-desktop"
-									transform="translate(140 776)">
-									<tspan x={0} y={0}>
-										{t('LOG\xCDSTICA')}
-									</tspan>
-									<tspan x={0} y={57}>
-										{t('HOSPITALARIA')}
-									</tspan>
-								</text>
-								<text
-									className="d-products-hl-desktop"
-									transform={selectedLanguage === 'es' ? "translate(968 700)" : "translate(968 730)"}>
-									<tspan x={0} y={23}>
-										{
-											t('Nuestro portafolio de soluciones tecnol\xF3gicas est\xE1 enfocado en la ')
-										}
-									</tspan>
-									<tspan x={0} y={51}>
-										{
-											t('automatizaci\xF3n de procesos intrahospitalarios para el ')
-										}
-									</tspan>
-									<tspan x={0} y={79}>
-										{
-											t('almacenamiento y la dispensaci\xF3n de medicamentos y material ')
-										}
-									</tspan>
-									<tspan x={0} y={107}>
-										{
-											t('m\xE9dico-quir\xFArgico, aumentando la seguridad del paciente y la ')
-										}
-									</tspan>
-									<tspan x={0} y={135}>
-										{t('eficiencia en los procesos. ')}
-									</tspan>
-								</text>
+								<g transform='translate(0 -200)'>
+									<text
+										className="c-products-hl-desktop"
+										transform="translate(140 776)">
+										<tspan x={0} y={0}>
+											{t('LOG\xCDSTICA')}
+										</tspan>
+										<tspan x={0} y={57}>
+											{t('HOSPITALARIA')}
+										</tspan>
+									</text>
+									<text
+										className="d-products-hl-desktop"
+										transform={
+											selectedLanguage === 'es'
+												? 'translate(968 700)'
+												: 'translate(968 730)'
+										}>
+										<tspan x={0} y={23}>
+											{t(
+												'Nuestro portafolio de soluciones tecnol\xF3gicas est\xE1 enfocado en la '
+											)}
+										</tspan>
+										<tspan x={0} y={51}>
+											{t(
+												'automatizaci\xF3n de procesos intrahospitalarios para el '
+											)}
+										</tspan>
+										<tspan x={0} y={79}>
+											{t(
+												'almacenamiento y la dispensaci\xF3n de medicamentos y material '
+											)}
+										</tspan>
+										<tspan x={0} y={107}>
+											{t(
+												'm\xE9dico-quir\xFArgico, aumentando la seguridad del paciente y la '
+											)}
+										</tspan>
+										<tspan x={0} y={135}>
+											{t('eficiencia en los procesos. ')}
+										</tspan>
+									</text>
+								</g>
 								<g
 									className="m-products-hl-desktop"
 									transform="matrix(1, 0, 0, 1, -9, -6)">
@@ -192,7 +198,10 @@ const HospitalLogistics: React.FC = (): JSX.Element => {
 											<feComposite in="SourceGraphic" />
 										</filter>
 									</defs>
-									<g transform="translate(-3778.748 -5819)"  onMouseLeave={() => setOpenShow(false)} onMouseOver={() => setOpenShow(true)}>
+									<g
+										transform="translate(-3778.748 -6019)"
+										onMouseLeave={() => setOpenShow(false)}
+										onMouseOver={() => setOpenShow(true)}>
 										<g
 											className="c-boton-pequena cursor-pointer"
 											transform="matrix(1, 0, 0, 1, 3778.75, 5819)">
@@ -205,7 +214,11 @@ const HospitalLogistics: React.FC = (): JSX.Element => {
 										<text
 											className="b-boton-pequena cursor-pointer"
 											transform="translate(3835.929 5863.388)"
-											style={{ fill: openShow ? "#001f5f" : '#ffffff' }}>
+											style={{
+												fill: openShow
+													? '#001f5f'
+													: '#ffffff',
+											}}>
 											<tspan x={0} y={0}>
 												{t('Conoce M\xE1s')}
 											</tspan>

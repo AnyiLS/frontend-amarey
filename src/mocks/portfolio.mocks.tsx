@@ -121,14 +121,14 @@ export const carouselPortfolio = (t: any, selectedLanguage: 'es' | 'en'): Carous
         images: '/images/biomedico-movil.jpg', 
         title: t('Mantenimiento'),
         title_2: t('biomédico_2'),
-        x_2: 96.715,
+        x_2: 72.715,
         x_selected: 0,
         x: selectedLanguage === 'es' ? 70 : 85,
         to: '/biomedico',
         viewbox: '0.554 6.532 241.811 269.735',
         viewbox_2: '40 0 306 342',
         width: '600',
-        x_left: 55,
-        x_left_2: 80.715
+        x_left: 85,
+        x_left_2: 75.715
     }
 ])

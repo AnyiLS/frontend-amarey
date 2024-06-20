@@ -10,15 +10,16 @@ export const CifrasMovil: React.FC = () => {
 
 	const {t} = useTranslation()
 
-	const video = [
-		{ url: 'https://grupoamarey.com/pdf/video/Cifras educacion vertical_1.mp4' },
-		{ url: 'https://grupoamarey.com/pdf/video/Cifras robotica vertical_1.mp4' },
-		{ url: 'https://grupoamarey.com/pdf/video/Cifras logistica vertical_1.mp4' },
-		{ url: 'https://grupoamarey.com/pdf/video/Cifras ortopedia vertical_1.mp4' },
-	]
-
 	/** Contexts */
 	const { selectedLanguage } = useLanguage();
+
+	const video = [
+		{ url: openVideo && selectedLanguage === 'en' ? 'https://grupoamarey.com/videos/videos_inlges/Trainning_Vertical.mp4' :'https://grupoamarey.com/pdf/video/Cifras educacion vertical_1.mp4' },
+		{ url: openVideo && selectedLanguage === 'en' ? 'https://grupoamarey.com/videos/videos_inlges/Robotics_vertical.mp4' : 'https://grupoamarey.com/pdf/video/Cifras robotica vertical_1.mp4' },
+		{ url: openVideo && selectedLanguage === 'en' ? 'https://grupoamarey.com/videos/videos_inlges/Logistics_vertical.mp4' : 'https://grupoamarey.com/pdf/video/Cifras logistica vertical_1.mp4' },
+		{ url: openVideo && selectedLanguage === 'en' ? 'https://grupoamarey.com/videos/videos_inlges/Orthopedics_vertical.mp4' : 'https://grupoamarey.com/pdf/video/Cifras ortopedia vertical_1.mp4' },
+	]
+
 
 	return (
 		<div className="relative">
@@ -407,7 +408,7 @@ export const CifrasMovil: React.FC = () => {
 							className="l-cifras-impacto"
 							transform="translate(137.711 -21.854)">
 							<tspan x={0} y={0}>
-								{'10 instituciones'}
+								{t('10 instituciones')}
 							</tspan>
 							<tspan className="m-cifras-impacto">
 								<tspan x={0} y={13}>

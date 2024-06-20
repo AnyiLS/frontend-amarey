@@ -348,7 +348,7 @@ const Cifras: React.FC = () => {
         </g>
         <text className="l-2" transform="translate(292.511 -42.071)"  onClick={() => {setOpenModal(true); setSelected(3)}}>
           <tspan x={0} y={0}>
-            {"10 instituciones "}
+            {t("10 instituciones")}
           </tspan>
           <tspan className="m-2">
             <tspan x={0} y={25}>

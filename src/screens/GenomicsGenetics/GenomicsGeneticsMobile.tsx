@@ -7,15 +7,22 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 	const [height, setHeight] = React.useState<number>(0)
 
 	React.useEffect(() => {
-		if (document.getElementById('navbar__container')) setHeight(document.getElementById('navbar__container')?.clientHeight ?? 0)
+		if (document.getElementById('navbar__container'))
+			setHeight(
+				document.getElementById('navbar__container')?.clientHeight ?? 0
+			)
 	}, [])
 
-	const {t} = useTranslation()
+	const { t } = useTranslation()
 
 	return (
 		<React.Fragment>
 			{view === 0 ? (
-				<svg viewBox="85 1710 414 855" width='100%' style={{ height: "100%" }} preserveAspectRatio='none'>
+				<svg
+					viewBox="85 1710 414 700"
+					width="100%"
+					style={{ height: '100%' }}
+					preserveAspectRatio="none">
 					<defs>
 						<style>
 							{
@@ -86,39 +93,53 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 								{t('Gen\xF3mica y gen\xE9tica')}
 							</tspan>
 						</text>
-						<text className="c" transform="translate(180.5 2211.5)">
-							<tspan x={-63.072} y={0}>
-								{'Gen\xF3mica'}
-							</tspan>
-						</text>
-						<text className="c" transform="translate(175.5 2393.5)">
-							<tspan x={-58.044} y={0}>
-								{'Gen\xE9ticA'}
-							</tspan>
-						</text>
-						<text className="d" transform="translate(116.5 2223.5)">
-							<tspan x={0} y={13}>
-								{t('La gen\xF3mica analiza la forma en que se ')}
-							</tspan>
-							<tspan x={0} y={31}>
-								{t('comporta un conjunto de genes. ')}
-							</tspan>
-						</text>
-						<text className="d" transform="translate(116.5 2405.5)">
-							<tspan x={0} y={13}>
-								{
-									t('La gen\xE9tica es el estudio de rasgos y genes ')
-								}
-							</tspan>
-							<tspan x={0} y={31}>
-								{t('heredados que pueden predisponer a una ')}
-							</tspan>
-							<tspan x={0} y={49}>
-								{
-									t('persona a una condici\xF3n de salud particular.')
-								}
-							</tspan>
-						</text>
+						<g transform="translate(0 -200)">
+							<text
+								className="c"
+								transform="translate(180.5 2211.5)">
+								<tspan x={-63.072} y={0}>
+									{'Gen\xF3mica'}
+								</tspan>
+							</text>
+							<text
+								className="c"
+								transform="translate(175.5 2393.5)">
+								<tspan x={-58.044} y={0}>
+									{'Gen\xE9ticA'}
+								</tspan>
+							</text>
+							<text
+								className="d"
+								transform="translate(116.5 2223.5)">
+								<tspan x={0} y={13}>
+									{t(
+										'La gen\xF3mica analiza la forma en que se '
+									)}
+								</tspan>
+								<tspan x={0} y={31}>
+									{t('comporta un conjunto de genes. ')}
+								</tspan>
+							</text>
+							<text
+								className="d"
+								transform="translate(116.5 2405.5)">
+								<tspan x={0} y={13}>
+									{t(
+										'La gen\xE9tica es el estudio de rasgos y genes '
+									)}
+								</tspan>
+								<tspan x={0} y={31}>
+									{t(
+										'heredados que pueden predisponer a una '
+									)}
+								</tspan>
+								<tspan x={0} y={49}>
+									{t(
+										'persona a una condici\xF3n de salud particular.'
+									)}
+								</tspan>
+							</text>
+						</g>
 						<g
 							className="k"
 							transform="matrix(1, 0, 0, 1, -2.84, -0.97)">
@@ -134,54 +155,68 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
-						<g transform="translate(448.085 1722.792)" onClick={() => window.location.href = '/productos'}>
+						<g
+							transform="translate(448.085 1722.792)"
+							onClick={() =>
+								(window.location.href = '/productos')
+							}>
 							<path
 								className="a"
 								d="M8.8,10.967,5.708,7.874,2.615,10.967A1.531,1.531,0,1,1,.448,8.8L3.542,5.708.448,2.615A1.532,1.532,0,0,1,2.615.448L5.708,3.542,8.8.448a1.531,1.531,0,1,1,2.165,2.166L7.874,5.708,10.967,8.8A1.531,1.531,0,0,1,8.8,10.967Z"
 								transform="translate(0 0)"
 							/>
 						</g>
-						<g transform="translate(173.499 2480.993)"  onClick={() => setView(1)}>
+						<g transform="translate(0 -200)">
 							<g
-								className="j"
-								transform="matrix(1, 0, 0, 1, -176.34, -2481.96)">
-								<path
-									className="g"
-									d="M230,0H47.176C28.161,0,11.086,12.6,4.142,31.746L0,43.169H181.308c20.259,0,38.4-13.581,45.534-34.092Z"
-									transform="translate(176.34 2481.96)"
-								/>
+								transform="translate(173.499 2480.993)"
+								onClick={() => setView(1)}>
+								<g
+									className="j"
+									transform="matrix(1, 0, 0, 1, -176.34, -2481.96)">
+									<path
+										className="g"
+										d="M230,0H47.176C28.161,0,11.086,12.6,4.142,31.746L0,43.169H181.308c20.259,0,38.4-13.581,45.534-34.092Z"
+										transform="translate(176.34 2481.96)"
+									/>
+								</g>
+								<text
+									className="f"
+									transform="translate(55.5 28.584)">
+									<tspan x={0} y={0}>
+										{t('Conoce M\xE1s')}
+									</tspan>
+								</text>
 							</g>
-							<text
-								className="f"
-								transform="translate(55.5 28.584)">
-								<tspan x={0} y={0}>
-									{t('Conoce M\xE1s')}
-								</tspan>
-							</text>
-						</g>
-						<g transform="translate(173.499 2283.993)" onClick={() => setView(2)}>
 							<g
-								className="i"
-								transform="matrix(1, 0, 0, 1, -176.34, -2284.96)">
-								<path
-									className="g"
-									d="M230,0H47.176C28.161,0,11.086,12.6,4.142,31.746L0,43.169H181.308c20.259,0,38.4-13.581,45.534-34.092Z"
-									transform="translate(176.34 2284.96)"
-								/>
+								transform="translate(173.499 2283.993)"
+								onClick={() => setView(2)}>
+								<g
+									className="i"
+									transform="matrix(1, 0, 0, 1, -176.34, -2284.96)">
+									<path
+										className="g"
+										d="M230,0H47.176C28.161,0,11.086,12.6,4.142,31.746L0,43.169H181.308c20.259,0,38.4-13.581,45.534-34.092Z"
+										transform="translate(176.34 2284.96)"
+									/>
+								</g>
+								<text
+									className="f"
+									transform="translate(55.5 28.584)">
+									<tspan x={0} y={0}>
+										{t('Conoce M\xE1s')}
+									</tspan>
+								</text>
 							</g>
-							<text
-								className="f"
-								transform="translate(55.5 28.584)">
-								<tspan x={0} y={0}>
-									{t('Conoce M\xE1s')}
-								</tspan>
-							</text>
 						</g>
 						<line className="h" x2={521} y2={1530} />
 					</g>
 				</svg>
 			) : view === 1 ? (
-				<svg viewBox="0 0 414 855" width='100%' style={{ height: "100%" }} preserveAspectRatio='none'>
+				<svg
+					viewBox="0 0 414 855"
+					width="100%"
+					style={{ height: '100%' }}
+					preserveAspectRatio="none">
 					<defs>
 						<style>
 							{
@@ -272,23 +307,27 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 							className="f-reward-2-mobile"
 							transform="translate(36 381)">
 							<tspan x={0} y={13}>
-								{
-									t('Esto significa que si usted tiene un historial ')
-								}
+								{t(
+									'Esto significa que si usted tiene un historial '
+								)}
 							</tspan>
 							<tspan x={0} y={31}>
 								{t('familiar marcado de cáncer de mama, es ')}
 							</tspan>
 							<tspan x={0} y={49}>
-								{t('probable que haya heredado un gen anormal ')}
+								{t(
+									'probable que haya heredado un gen anormal '
+								)}
 							</tspan>
 							<tspan x={0} y={67}>
-								{
-									t('vinculado a un mayor riesgo de sufrir cáncer ')
-								}
+								{t(
+									'vinculado a un mayor riesgo de sufrir cáncer '
+								)}
 							</tspan>
 							<tspan x={0} y={85}>
-								{t('de mama (como las mutaciones de los genes ')}
+								{t(
+									'de mama (como las mutaciones de los genes '
+								)}
 							</tspan>
 							<tspan x={0} y={103}>
 								{t('BRCA 1 o 2).')}
@@ -308,7 +347,9 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 								{t('Son las pruebas base de medicina de')}
 							</tspan>
 							<tspan x={0} y={31}>
-								{t('precisión o medicina personalizada, ya que')}
+								{t(
+									'precisión o medicina personalizada, ya que'
+								)}
 							</tspan>
 							<tspan x={0} y={49}>
 								{t('cada individuo es diferente.')}
@@ -323,10 +364,14 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 								{t('paciente.')}
 							</tspan>
 							<tspan x={0} y={121}>
-								{t('Permite calcular el riesgo de recurrencia.')}
+								{t(
+									'Permite calcular el riesgo de recurrencia.'
+								)}
 							</tspan>
 							<tspan x={0} y={139}>
-								{t('Muestra un beneficio real para el paciente')}
+								{t(
+									'Muestra un beneficio real para el paciente'
+								)}
 							</tspan>
 							<tspan x={0} y={157}>
 								{t('y su familia.')}
@@ -344,7 +389,7 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 						<g
 							className="g-reward-2-mobile"
 							transform="translate(185 824.024) rotate(-90)"
-                            onClick={() => setView(0)}>
+							onClick={() => setView(0)}>
 							<circle
 								className="h-reward-2-mobile"
 								cx={22}
@@ -407,7 +452,9 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
-						<g transform="translate(366.584 13.292)" onClick={() => setView(0)}>
+						<g
+							transform="translate(366.584 13.292)"
+							onClick={() => setView(0)}>
 							<path
 								className="a-reward-2-mobile"
 								d="M8.8,10.967,5.708,7.874,2.615,10.967A1.531,1.531,0,1,1,.448,8.8L3.542,5.708.448,2.615A1.532,1.532,0,0,1,2.615.448L5.708,3.542,8.8.448a1.531,1.531,0,1,1,2.165,2.166L7.874,5.708,10.967,8.8A1.531,1.531,0,0,1,8.8,10.967Z"
@@ -436,7 +483,11 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 					</g>
 				</svg>
 			) : (
-				<svg viewBox="0 0 414 855" width='100%' style={{ height: "100%" }} preserveAspectRatio='none'>
+				<svg
+					viewBox="0 0 414 855"
+					width="100%"
+					style={{ height: '100%' }}
+					preserveAspectRatio="none">
 					<defs>
 						<style>
 							{
@@ -523,54 +574,66 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 								{t('como pruebas multigénicas) analizan una ')}
 							</tspan>
 							<tspan x={0} y={49}>
-								{
-									t('muestra del tumor del cáncer para analizar el ')
-								}
+								{t(
+									'muestra del tumor del cáncer para analizar el '
+								)}
 							</tspan>
 							<tspan x={0} y={67}>
-								{
-									t('nivel de actividad de determinados genes, el ')
-								}
+								{t(
+									'nivel de actividad de determinados genes, el '
+								)}
 							</tspan>
 							<tspan x={0} y={85}>
-								{t('cual afecta el comportamiento del cáncer, ')}
+								{t(
+									'cual afecta el comportamiento del cáncer, '
+								)}
 							</tspan>
 							<tspan x={0} y={103}>
-								{t('incluyendo su probabilidad de crecimiento y ')}
+								{t(
+									'incluyendo su probabilidad de crecimiento y '
+								)}
 							</tspan>
 							<tspan x={0} y={121}>
-								{t('propagación. Una de estas pruebas genómicas ')}
+								{t(
+									'propagación. Una de estas pruebas genómicas '
+								)}
 							</tspan>
 							<tspan x={0} y={139}>
 								{t('en particular proporciona, además, una ')}
 							</tspan>
 							<tspan x={0} y={157}>
-								{
-									t('estimación del beneficio de la quimioterapia. Se ')
-								}
+								{t(
+									'estimación del beneficio de la quimioterapia. Se '
+								)}
 							</tspan>
 							<tspan x={0} y={175}>
-								{t('usan para ayudar en la toma de decisiones ')}
+								{t(
+									'usan para ayudar en la toma de decisiones '
+								)}
 							</tspan>
 							<tspan x={0} y={193}>
 								{t('sobre tratamiento después de la cirugía. ')}
 							</tspan>
 							<tspan x={0} y={211} />
 							<tspan x={0} y={229}>
-								{
-									t('En el caso del cáncer de mama puede ayudar a')
-								}
+								{t(
+									'En el caso del cáncer de mama puede ayudar a'
+								)}
 							</tspan>
 							<tspan x={0} y={247}>
-								{t('determinar la agresividad de un tumor o la')}
+								{t(
+									'determinar la agresividad de un tumor o la'
+								)}
 							</tspan>
 							<tspan x={0} y={265}>
-								{t('probabilidad que un determinado tratamiento')}
+								{t(
+									'probabilidad que un determinado tratamiento'
+								)}
 							</tspan>
 							<tspan x={0} y={283}>
-								{
-									t('mejore el resultado, permitiendo escoger el plan')
-								}
+								{t(
+									'mejore el resultado, permitiendo escoger el plan'
+								)}
 							</tspan>
 							<tspan x={0} y={301}>
 								{t('de cuidado adecuado para el paciente.')}
@@ -579,7 +642,7 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 						<g
 							className="f-reward-2-mobile"
 							transform="translate(185 824.024) rotate(-90)"
-                            onClick={() => setView(0)}>
+							onClick={() => setView(0)}>
 							<circle
 								className="g-reward-2-mobile"
 								cx={22}
@@ -626,7 +689,9 @@ const GenomicsGeneticsMobile: React.FC = (): JSX.Element => {
 								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
-						<g transform="translate(366.584 13.292)" onClick={() => setView(0)}>
+						<g
+							transform="translate(366.584 13.292)"
+							onClick={() => setView(0)}>
 							<path
 								className="a-reward-2-mobile"
 								d="M8.8,10.967,5.708,7.874,2.615,10.967A1.531,1.531,0,1,1,.448,8.8L3.542,5.708.448,2.615A1.532,1.532,0,0,1,2.615.448L5.708,3.542,8.8.448a1.531,1.531,0,1,1,2.165,2.166L7.874,5.708,10.967,8.8A1.531,1.531,0,0,1,8.8,10.967Z"

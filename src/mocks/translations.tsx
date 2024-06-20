@@ -792,14 +792,15 @@ const spanishTexts = {
 //english
 const englishTexts = {
     translation: {
-        'Equipos Médicos': 'Medical equipments',
+        'Portafolio ': 'Portfolio',
+        'Equipos Médicos': 'Medical equipment',
         "Conoce Más": "LEARN MORE",
         "Un compromiso inquebrantable": "an unwavering commitment",
         'con la salud y la vida': 'to health and life',
         'El origen de nuestra historia es hoy': 'Our origin story is now the',
         'la esencia de nuestra marca': 'essence of our brand',
         'Conoce más de': 'Learn more about',
-        'Grupo Amarey dando clic': 'Amarey by clicking',
+        'Grupo Amarey dando clic': 'Amarey Group by clicking',
         'en cada uno': 'on each one',
         'ROBOT DAVINCI': 'da Vinci Robot',
         'Llevando la precisión quirúrgica más allá de los límites de': 'Taking surgical precision beyond the limits of our',
@@ -1367,8 +1368,8 @@ const englishTexts = {
         '\xE9tica':'Ethics',
         'L\xEDnea ': 'The Ethics',
         'ética ': 'Line',
-        'Mantenimiento': 'maintenance',
-        'biomédico_2': 'biomedical',
+        'biomédico_2': 'maintenance',
+        'Mantenimiento': 'Biomedical',
         'C\xF3digo de \xE9tica': 'Code of Ethics',
         'En el Grupo Amarey estamos comprometidos en mantener relaciones honestas, ':'At the Amarey Group, we are committed to maintaining honest, constructive, ',
         'constructivas e id\xF3neas con nuestros grupos de inter\xE9s. Guiados por nuestros ': 'and appropriate relationships with all our stakeholders. Guided by our set of ',
@@ -1576,6 +1577,8 @@ const englishTexts = {
         'informaci\xF3n adicional?':'additional information?',
         'Cont\xE1ctenos y descubra c\xF3mo podemos ayudarle.\u200B':'Contact us and find out how we can help you.',
         'Comienza la distribución de la línea de equipos médicos': 'Distribution of the medical equipment line begins',
+        'Reporte de eventos adversos o PQR: servicioalcliente@grupoamarey.com': 'Report adverse events or Claims: servicioalcliente@grupoamarey.com',
+        '10 instituciones': '10 institutions',
         ...englishTextsMobile
     }
 }

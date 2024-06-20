@@ -21,6 +21,8 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 
 	const handleAddSlide = () => setSlide(slide + 1 > 3 ? 0 : slide + 1)
 
+	
+
 	return (
 		<React.Fragment>
 			{width > 767 ? (
@@ -407,13 +409,12 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 					</svg>
 					<div className="fixed top-[0] left-[0] h-screen w-full bg-[#e6e6e6] z-[1]" style={{ display: showVideo ? 'flex' : 'none' }}>
 						<video
-							src="https://grupoamarey.com/pdf/video/Reconocimientos_1.mp4"
+							src={selectedLanguage === 'es' && showVideo ? "https://grupoamarey.com/pdf/video/Reconocimientos_1.mp4" : selectedLanguage === 'en' && showVideo ? "https://grupoamarey.com/videos/videos_inlges/Reconocimientos_ingles.mp4" : ''}
 							width="100%"
 							height="100%"
 							controls
 							id='video-cifras'
 							autoPlay
-							muted
 						/>
 						<span
 							className="absolute top-[5%] right-[5%] text-white text-[30px] text-center font-bold bg-[#00000050] w-[50px] h-[50px] rounded-[100%]"

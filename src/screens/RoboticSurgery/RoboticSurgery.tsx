@@ -4,6 +4,7 @@ import Robotica from './Components/Robotica'
 import RoboticSurgeryMobile from './RoboticSurgeryMobile'
 import { useTranslation } from 'react-i18next'
 import { useLanguage } from 'context/language'
+import useLayout from 'hooks/ancho.hook'
 
 const RoboticSurgery: React.FC = (): JSX.Element => {
 	/** Hooks */
@@ -12,6 +13,9 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 	const [openShow, setOpenShow] = React.useState(false)
 	const {t} = useTranslation()
 	const { selectedLanguage } = useLanguage()
+
+	const { isSmallScreen } = useLayout()
+
 
 	return (
 		<React.Fragment>
@@ -23,7 +27,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 							onClose={() => setShowModal(false)}></Robotica>
 					) : (
 						<svg
-						viewBox="0 0 1920 1080"
+						viewBox={`0 0 1920 ${isSmallScreen ? '900' : '1080'}`}
 						width="100%"
 						height="100%"
 						preserveAspectRatio="none">
@@ -104,6 +108,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 										height={1080}
 									/>
 								</g>
+								<g transform={isSmallScreen ? 'translate(0 -150)' : 'translate(0 0)'}>
 								<text
 									className="c-robotic-surgery"
 									transform="translate(403 833)">
@@ -178,6 +183,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 										{t('patolog\xEDas.')}
 									</tspan>
 								</text>
+								</g>
 								<g
 									className="m-robotic-surgery"
 									transform="matrix(1, 0, 0, 1, -9, -6)">
@@ -227,7 +233,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 											<feComposite in="SourceGraphic" />
 										</filter>
 									</defs>
-									<g transform="translate(-3778.748 -5819)" onMouseLeave={() => setOpenShow(false)} onMouseOver={() => setOpenShow(true)}>
+									<g transform={isSmallScreen ? 'translate(-3778.748 -6019)' : "translate(-3778.748 -5819)"} onMouseLeave={() => setOpenShow(false)} onMouseOver={() => setOpenShow(true)}>
 										<g
 											className="c-proboctica cursor-pointer"
 											transform="matrix(1, 0, 0, 1, 3778.75, 5819)">

@@ -21,7 +21,7 @@ export const Slider3: React.FC<ISlider> = () => {
 			viewBox="0 0 1920 1080"
 			preserveAspectRatio="none"
 			className="h-full"
-			width="100%">
+			width={window.screen.width}>
 			<defs>
 				<style>
 					{

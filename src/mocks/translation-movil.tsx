@@ -16,7 +16,9 @@ export const englishTextsMobile = {
         'historia es hoy la esencia ':'is now theessence of',
         'de nuestra marca':'our brand',
         'Conoce más de ':'Learn more about',
-        'Amarey dando clic ':'Amarey by clicking',
+        'Grupo Amarey dando clic ':'Amarey Group by clicking',
+        'Grupo Amarey dando': 'Amarey Group by ',
+        'clic en cada uno ': 'clicking on each one',
         'en cada uno ':'on each one',
         'El servicio es uno de los pilares del Grupo ': 'The service is one of the pillars of the Amarey',
         'Amarey, una misión que se ha convertido en ': 'Group,a mission that has become the companys',
@@ -779,7 +781,7 @@ export const spanishTextsMobile = {
         'historia es hoy la esencia ':'historia es hoy la esencia ',
         'de nuestra marca':'de nuestra marca',
         'Conoce más de ':'Conoce más de ',
-        'Amarey dando clic ':'Amarey dando clic ',
+        'Grupo Amarey dando clic ':'Grupo Amarey dando clic ',
         'en cada uno ':'en cada uno ',
         'El servicio es uno de los pilares del Grupo ': 'El servicio es uno de los pilares del Grupo',
         'Amarey, una misión que se ha convertido en ': 'Amarey, una misión que se ha convertido en',
@@ -1003,7 +1005,7 @@ export const spanishTextsMobile = {
         'su formación como líderes y profesionales ':'su formación como líderes y profesionales ',
         'competitivos comprometidos con el desarrollo ':'competitivos comprometidos con el desarrollo ',
         'social del país. Lo que hace la ':'social del país. Lo que hace la ',
-        'Fundación ':'Fundación ',
+        'Fundación ':'nacion Fundación ',
         'OCMAES':'OCMAES',
         ' es simple pero profundo: ':'es simple pero profundo: ',
         ' Por eso otorga ': 'Por eso otorga ',
@@ -1513,6 +1515,7 @@ export const spanishTextsMobile = {
         'atracciondetalento@grupoamarey.com ':'atracciondetalento@grupoamarey.com ',
         ',':', ',
         'indicando la ciudad donde vives.':'indicando la ciudad donde vives.',
+        'avanzando de la nacion': 'avanzando de la',
 
 
 

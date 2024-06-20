@@ -25,13 +25,14 @@ const Orthopedics: React.FC = (): JSX.Element => {
 							width="100%"
 							height="100%"
 							preserveAspectRatio="none"
-							viewBox="0 0 1920 975">
+							viewBox="0 0 1920 800">
 							<defs>
 								<style>
 									{
 										'.a-products-desktop,.b-products-desktop{stroke:#707070;}.a-products-desktop{fill:url(#a-products-desktop);}.b-products-desktop{opacity:1;mix-blend-mode:multiply;isolation:isolate;fill:url(#b);}.c-products-desktop,.e-products-desktop,.f-products-desktop,.g-products-desktop,.i-products-desktop,.j-products-desktop{fill:#fff;}.c-products-desktop{font-size:55px;}.c-products-desktop,.e-products-desktop,.i-products-desktop{font-family:Kiona-Bold, Kiona;font-weight:700;}.d-products-desktop{fill:rgba(67,67,67,0.09);}.e-products-desktop{font-size:42px;}.g-products-desktop,.j-products-desktop{font-size:24px;}.g-products-desktop{font-family:Silka-SemiBold, Silka;font-weight:600;}.h-products-desktop{fill:rgba(255,255,255,0.5);}.i-products-desktop{font-size:28px;}.j-products-desktop{font-family:Silka-Regular, Silka;}.k-products-desktop{fill:#e40032;}.l-products-desktop{stroke:none;}.m-products-desktop{fill:none;}.n-products-desktop{filter:url(#e-products-desktop);}.o-products-desktop{filter:url(#c-products-desktop);}'
 									}
-								</style>1
+								</style>
+								1
 								<pattern
 									id="a-products-desktop"
 									width={1}
@@ -121,7 +122,7 @@ const Orthopedics: React.FC = (): JSX.Element => {
 								</g>
 								<text
 									className="c-products-desktop"
-									transform="translate(292 833)">
+									transform="translate(292 633)">
 									<tspan x={-151.635} y={0}>
 										{t('ORTOPEDIA')}
 									</tspan>
@@ -146,113 +147,121 @@ const Orthopedics: React.FC = (): JSX.Element => {
 										{t(' SOLUCIONES EN SALUD')}
 									</tspan>
 								</text>
-								
+
 								<a href="/productos">
-								<path
-									className="f-products-desktop"
-									d="M45.263,0V19.012L61.725,9.505l-7.863-4.54Z"
-									transform="translate(201.725 50.773) rotate(180)"
-								/>
-								<text
-									className="g-products-desktop"
-									transform="translate(232.852 49.768)">
-									<tspan x={-71.52} y={0}>
-										{t('Volver')}
-									</tspan>
-								</text>
-								</a>
-								
-								<g
-									className="n-products-desktop"
-									transform="matrix(1, 0, 0, 1, -9, -6)">
 									<path
-										className="h-products-desktop"
-										d="M281.362,0H57.711C34.449,0,13.561,15.983,5.067,40.281L0,54.775H221.8c24.783,0,46.972-17.232,55.7-43.257Z"
-										transform="translate(828.32 895)"
+										className="f-products-desktop"
+										d="M45.263,0V19.012L61.725,9.505l-7.863-4.54Z"
+										transform="translate(201.725 50.773) rotate(180)"
 									/>
-								</g>
-								<text
-									className="i-products-desktop cursor-pointer"
-									transform="translate(867.5 927.388)"
-									style={{ fill: openShow ? "#001f5f" : '#ffffff' }}
-									onMouseLeave={() => setOpenShow(false)} onMouseOver={() => setOpenShow(true)}
-									onClick={() => setShowModal(true)}
-									>
-									<tspan x={0} y={0}>
-										{t('Conoce Más')}
-									</tspan>
-								</text>
-								
-								<g transform="translate(968 543)">
-									<text className="j-products-desktop">
-										<tspan x={0} y={23}>
-											{
-												t('Somos líderes con tecnología que aporta a los profesionales de la ')
-											}
-										</tspan>
-										<tspan x={0} y={51}>
-											{
-												t('salud y sus pacientes las herramientas en cirugías que permiten ')
-											}
-										</tspan>
-										<tspan x={0} y={79}>
-											{
-												t('alcanzar una calidad de vida más activa y satisfactoria mediante ')
-											}
-										</tspan>
-										<tspan
-											x={0}
-											y={107}
-											xmlSpace="preserve">
-											{t('las líneas de:  ')}
-										</tspan>
-									</text>
 									<text
-										className="j-products-desktop"
-										transform="translate(65 133)">
-										<tspan x={0} y={23}>
-											{t('Trauma ')}
+										className="g-products-desktop"
+										transform="translate(232.852 49.768)">
+										<tspan x={-71.52} y={0}>
+											{t('Volver')}
 										</tspan>
-										<tspan x={0} y={51}>
-											{t('Reemplazo articular ')}
-										</tspan>
-										<tspan x={0} y={79}>
-											{t('Artroscopia ')}
-										</tspan>
-										<tspan x={0} y={107}>
-											{t('Cráneo y maxilofacial ')}
+									</text>
+								</a>
+
+								<g transform='translate(0 -200)'>
+									<g
+										className="n-products-desktop"
+										transform="matrix(1, 0, 0, 1, -9, -6)">
+										<path
+											className="h-products-desktop"
+											d="M281.362,0H57.711C34.449,0,13.561,15.983,5.067,40.281L0,54.775H221.8c24.783,0,46.972-17.232,55.7-43.257Z"
+											transform="translate(828.32 895)"
+										/>
+									</g>
+									<text
+										className="i-products-desktop cursor-pointer"
+										transform="translate(867.5 927.388)"
+										style={{
+											fill: openShow
+												? '#001f5f'
+												: '#ffffff',
+										}}
+										onMouseLeave={() => setOpenShow(false)}
+										onMouseOver={() => setOpenShow(true)}
+										onClick={() => setShowModal(true)}>
+										<tspan x={0} y={0}>
+											{t('Conoce Más')}
 										</tspan>
 									</text>
 								</g>
-								<g transform="translate(1033.569 686.978)">
-									<circle
-										className="k-products-desktop"
-										cx={3}
-										cy={3}
-										r={3}
-										transform="translate(-15.569 2.022)"
-									/>
-									<circle
-										className="k-products-desktop"
-										cx={3}
-										cy={3}
-										r={3}
-										transform="translate(-15.569 30.023)"
-									/>
-									<circle
-										className="k-products-desktop"
-										cx={3}
-										cy={3}
-										r={3}
-										transform="translate(-15.569 57.022)"
-									/>
-									<circle
-										className="k-products-desktop"
-										cx={3}
-										cy={3}
-										r={3}
-										transform="translate(-15.569 85.022)"
-									/>
+
+								<g transform="translate(0 -150)">
+									<g transform="translate(968 543)">
+										<text className="j-products-desktop">
+											<tspan x={0} y={23}>
+												{t(
+													'Somos líderes con tecnología que aporta a los profesionales de la '
+												)}
+											</tspan>
+											<tspan x={0} y={51}>
+												{t(
+													'salud y sus pacientes las herramientas en cirugías que permiten '
+												)}
+											</tspan>
+											<tspan x={0} y={79}>
+												{t(
+													'alcanzar una calidad de vida más activa y satisfactoria mediante '
+												)}
+											</tspan>
+											<tspan
+												x={0}
+												y={107}
+												xmlSpace="preserve">
+												{t('las líneas de:  ')}
+											</tspan>
+										</text>
+										<text
+											className="j-products-desktop"
+											transform="translate(65 133)">
+											<tspan x={0} y={23}>
+												{t('Trauma ')}
+											</tspan>
+											<tspan x={0} y={51}>
+												{t('Reemplazo articular ')}
+											</tspan>
+											<tspan x={0} y={79}>
+												{t('Artroscopia ')}
+											</tspan>
+											<tspan x={0} y={107}>
+												{t('Cráneo y maxilofacial ')}
+											</tspan>
+										</text>
+									</g>
+									<g transform="translate(1033.569 686.978)">
+										<circle
+											className="k-products-desktop"
+											cx={3}
+											cy={3}
+											r={3}
+											transform="translate(-15.569 2.022)"
+										/>
+										<circle
+											className="k-products-desktop"
+											cx={3}
+											cy={3}
+											r={3}
+											transform="translate(-15.569 30.023)"
+										/>
+										<circle
+											className="k-products-desktop"
+											cx={3}
+											cy={3}
+											r={3}
+											transform="translate(-15.569 57.022)"
+										/>
+										<circle
+											className="k-products-desktop"
+											cx={3}
+											cy={3}
+											r={3}
+											transform="translate(-15.569 85.022)"
+										/>
+									</g>
 								</g>
 							</g>
 						</svg>

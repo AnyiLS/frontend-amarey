@@ -1,3 +1,4 @@
+import useLayout from 'hooks/ancho.hook'
 import useGeneral from 'hooks/general.hook'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
@@ -11,9 +12,10 @@ interface ISlider {
 export const Slider1: React.FC<ISlider> = ({ height, handleChangeSlide }) => {
 	const { width } = useGeneral()
 	const {t} = useTranslation()
+	const { isSmallScreen } = useLayout()
 	return (
 		<div>
-			<svg viewBox="0 0 1920 1080" width='100%' style={{ height: '100%'}} preserveAspectRatio='none'>
+			<svg viewBox="0 0 1920 1080" width={window.screen.width} style={{ height: '100%'}} preserveAspectRatio='none'>
 				<defs>
 					<style>
 						{
@@ -350,6 +352,7 @@ export const Slider1: React.FC<ISlider> = ({ height, handleChangeSlide }) => {
 						transform="translate(-107 57.829) rotate(-51)"
 					/>
 				</g>
+				<g transform={isSmallScreen ? 'translate(0 -150)' : 'translate(0 0)'}>
 				<text
 					className="n-pentagrama80"
 					transform="translate(269 581.806)">
@@ -387,6 +390,45 @@ export const Slider1: React.FC<ISlider> = ({ height, handleChangeSlide }) => {
 						{t('Grupo Amarey, la cadena que salva vidas.')}
 					</tspan>
 				</text>
+
+				<text
+					className="n-pentagrama80"
+					transform="translate(269 581.806)">
+					<tspan x={0} y={0}>
+						{t('Servicio')}
+					</tspan>
+				</text>
+				<text
+					className="o-pentagrama80"
+					transform="translate(281 632.515)">
+					<tspan x={0} y={23}>
+						{
+							t('El servicio es uno de los pilares del Grupo Amarey, una misión')
+						}
+					</tspan>
+					<tspan x={0} y={51}>
+						{
+							t('que se ha convertido en la vocación de la compañía para')
+						}
+					</tspan>
+					<tspan x={0} y={79}>
+						{
+							t('cumplir el compromiso de ser un actor determinante en la')
+						}
+					</tspan>
+					<tspan x={0} y={107}>
+						{t('labor de cuidar y salvar vidas.')}
+					</tspan>
+				</text>
+				<text
+					className="p-pentagrama80"
+					transform="translate(281 745.515)">
+					<tspan x={0} y={30} />
+					<tspan x={0} y={62}>
+						{t('Grupo Amarey, la cadena que salva vidas.')}
+					</tspan>
+				</text>
+				</g>
 				<g transform="translate(1299 734.666)" onClick={() => handleChangeSlide(1)}>
 					<g
 						className="s-pentagrama80"

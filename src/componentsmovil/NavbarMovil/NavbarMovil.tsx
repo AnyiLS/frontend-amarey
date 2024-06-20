@@ -79,7 +79,9 @@ export const NavbarMovil: React.FC = () => {
 	React.useEffect(() => {
 		if (!openMenu) setStep(0)
 	}, [openMenu])
-	const [image, setImage] = React.useState<string>('/images/spanish-movil.png')
+	const [image, setImage] = React.useState<string>(
+		'/images/spanish-movil.png'
+	)
 
 	/** Hooks */
 	const { results, handleSearchPage } = useNavbar()
@@ -335,153 +337,156 @@ export const NavbarMovil: React.FC = () => {
 											width={38}
 											height={38}>
 											{selectedLanguage === 'es' ? (
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											id="Componente_38_3"
-											data-name="Componente 38 – 3"
-											width="25"
-											height="25"
-											viewBox="0 0 25 25"
-										>
-											<g id="Grupo_5836" data-name="Grupo 5836">
-												<path
-													id="Trazado_68877"
-													data-name="Trazado 68877"
-													d="M1409.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
-													transform="translate(-1390.173 -38.176)"
-													fill="#001f5f"
-												/>
-												<path
-													id="Trazado_68878"
-													data-name="Trazado 68878"
-													d="M1479.116,60.531H1464.3a8.906,8.906,0,0,1,14.813,0"
-													transform="translate(-1461.956 -55.722)"
-													fill="#fd0002"
-												/>
-												<path
-													id="Trazado_68879"
-													data-name="Trazado 68879"
-													d="M1479.116,571.931a8.906,8.906,0,0,1-14.812,0Z"
-													transform="translate(-1461.956 -557.234)"
-													fill="#fd0002"
-												/>
-												<path
-													id="Trazado_68880"
-													data-name="Trazado 68880"
-													d="M1426.371,208.875a8.862,8.862,0,0,1-1.5,4.944h-14.812a8.909,8.909,0,0,1,0-9.888h14.812a8.862,8.862,0,0,1,1.5,4.944"
-													transform="translate(-1407.714 -199.122)"
-													fill="#ff0"
-												/>
-											</g>
-										</svg>
-									) : (
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											xmlnsXlink="http://www.w3.org/1999/xlink"
-											id="Componente_38_3"
-											data-name="Componente 38 – 3"
-											width="25"
-											height="25"
-											viewBox="0 0 25 25"
-										>
-											<defs>
-												<clipPath id="clip-path">
-													<path
-														id="Trazado_68887"
-														data-name="Trazado 68887"
-														d="M321.584,78.464a8.877,8.877,0,1,0,8.877-8.877,8.877,8.877,0,0,0-8.877,8.877"
-														transform="translate(-321.584 -69.587)"
-														fill="none"
-													/>
-												</clipPath>
-											</defs>
-											<g id="Grupo_5837" data-name="Grupo 5837">
-												<path
-													id="Trazado_68882"
-													data-name="Trazado 68882"
-													d="M309.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
-													transform="translate(-290.173 -38.176)"
-													fill="#001f5f"
-												/>
-												<g
-													id="Grupo_5836"
-													data-name="Grupo 5836"
-													transform="translate(0.876 0.876)"
-													clipPath="url(#clip-path)"
-												>
-													<path
-														id="Trazado_68883"
-														data-name="Trazado 68883"
-														d="M35.689,21.13,4.668,0H0V1.552L29.482,21.635h6.207Z"
-														transform="translate(-8.967 -1.94)"
-														fill="#feffff"
-													/>
-													<path
-														id="Trazado_68884"
-														data-name="Trazado 68884"
-														d="M35.689,0H31.034L0,21.14v.495H6.221L35.689,1.562Z"
-														transform="translate(-8.967 -1.94)"
-														fill="#feffff"
-													/>
-													<rect
-														id="Rectángulo_1963"
-														data-name="Rectángulo 1963"
-														width="5.222"
-														height="21.635"
-														transform="translate(6.242 -1.94)"
-														fill="#feffff"
-													/>
-													<rect
-														id="Rectángulo_1964"
-														data-name="Rectángulo 1964"
-														width="35.491"
-														height="5.104"
-														transform="translate(-8.835 6.538)"
-														fill="#feffff"
-													/>
-													<rect
-														id="Rectángulo_1965"
-														data-name="Rectángulo 1965"
-														width="35.491"
-														height="3.899"
-														transform="translate(-8.835 7.074)"
-														fill="#fd0002"
-													/>
-													<rect
-														id="Rectángulo_1966"
-														data-name="Rectángulo 1966"
-														width="3.365"
-														height="21.635"
-														transform="translate(7.201 -1.94)"
-														fill="#fd0002"
-													/>
-													<path
-														id="Trazado_68885"
-														data-name="Trazado 68885"
-														d="M35.409,21.635,67.17,0H64.832L33.071,21.635Z"
-														transform="translate(-41.116 -1.94)"
-														fill="#fd0002"
-													/>
-													<path
-														id="Trazado_68886"
-														data-name="Trazado 68886"
-														d="M58.533,21.635,26.772,0H24.433L56.195,21.635Z"
-														transform="translate(-32.72 -1.94)"
-														fill="#fd0002"
-													/>
-												</g>
-											</g>
-										</svg>
-									)}
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													id="Componente_38_3"
+													data-name="Componente 38 – 3"
+													width="25"
+													height="25"
+													viewBox="0 0 25 25">
+													<g
+														id="Grupo_5836"
+														data-name="Grupo 5836">
+														<path
+															id="Trazado_68877"
+															data-name="Trazado 68877"
+															d="M1409.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
+															transform="translate(-1390.173 -38.176)"
+															fill="#001f5f"
+														/>
+														<path
+															id="Trazado_68878"
+															data-name="Trazado 68878"
+															d="M1479.116,60.531H1464.3a8.906,8.906,0,0,1,14.813,0"
+															transform="translate(-1461.956 -55.722)"
+															fill="#fd0002"
+														/>
+														<path
+															id="Trazado_68879"
+															data-name="Trazado 68879"
+															d="M1479.116,571.931a8.906,8.906,0,0,1-14.812,0Z"
+															transform="translate(-1461.956 -557.234)"
+															fill="#fd0002"
+														/>
+														<path
+															id="Trazado_68880"
+															data-name="Trazado 68880"
+															d="M1426.371,208.875a8.862,8.862,0,0,1-1.5,4.944h-14.812a8.909,8.909,0,0,1,0-9.888h14.812a8.862,8.862,0,0,1,1.5,4.944"
+															transform="translate(-1407.714 -199.122)"
+															fill="#ff0"
+														/>
+													</g>
+												</svg>
+											) : (
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													xmlnsXlink="http://www.w3.org/1999/xlink"
+													id="Componente_38_3"
+													data-name="Componente 38 – 3"
+													width="25"
+													height="25"
+													viewBox="0 0 25 25">
+													<defs>
+														<clipPath id="clip-path">
+															<path
+																id="Trazado_68887"
+																data-name="Trazado 68887"
+																d="M321.584,78.464a8.877,8.877,0,1,0,8.877-8.877,8.877,8.877,0,0,0-8.877,8.877"
+																transform="translate(-321.584 -69.587)"
+																fill="none"
+															/>
+														</clipPath>
+													</defs>
+													<g
+														id="Grupo_5837"
+														data-name="Grupo 5837">
+														<path
+															id="Trazado_68882"
+															data-name="Trazado 68882"
+															d="M309.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
+															transform="translate(-290.173 -38.176)"
+															fill="#001f5f"
+														/>
+														<g
+															id="Grupo_5836"
+															data-name="Grupo 5836"
+															transform="translate(0.876 0.876)"
+															clipPath="url(#clip-path)">
+															<path
+																id="Trazado_68883"
+																data-name="Trazado 68883"
+																d="M35.689,21.13,4.668,0H0V1.552L29.482,21.635h6.207Z"
+																transform="translate(-8.967 -1.94)"
+																fill="#feffff"
+															/>
+															<path
+																id="Trazado_68884"
+																data-name="Trazado 68884"
+																d="M35.689,0H31.034L0,21.14v.495H6.221L35.689,1.562Z"
+																transform="translate(-8.967 -1.94)"
+																fill="#feffff"
+															/>
+															<rect
+																id="Rectángulo_1963"
+																data-name="Rectángulo 1963"
+																width="5.222"
+																height="21.635"
+																transform="translate(6.242 -1.94)"
+																fill="#feffff"
+															/>
+															<rect
+																id="Rectángulo_1964"
+																data-name="Rectángulo 1964"
+																width="35.491"
+																height="5.104"
+																transform="translate(-8.835 6.538)"
+																fill="#feffff"
+															/>
+															<rect
+																id="Rectángulo_1965"
+																data-name="Rectángulo 1965"
+																width="35.491"
+																height="3.899"
+																transform="translate(-8.835 7.074)"
+																fill="#fd0002"
+															/>
+															<rect
+																id="Rectángulo_1966"
+																data-name="Rectángulo 1966"
+																width="3.365"
+																height="21.635"
+																transform="translate(7.201 -1.94)"
+																fill="#fd0002"
+															/>
+															<path
+																id="Trazado_68885"
+																data-name="Trazado 68885"
+																d="M35.409,21.635,67.17,0H64.832L33.071,21.635Z"
+																transform="translate(-41.116 -1.94)"
+																fill="#fd0002"
+															/>
+															<path
+																id="Trazado_68886"
+																data-name="Trazado 68886"
+																d="M58.533,21.635,26.772,0H24.433L56.195,21.635Z"
+																transform="translate(-32.72 -1.94)"
+																fill="#fd0002"
+															/>
+														</g>
+													</g>
+												</svg>
+											)}
 										</foreignObject>
 									</g>
 									<g transform="translate(37 4.493)">
 										<g className="d-navbar-mobile">
-											<path
-												className="e-navbar-mobile"
-												d="M18.058,19.489l4.281,5.827a.162.162,0,0,1,.03.094l.024,4.562a.16.16,0,0,1-.159.16l-.637,0a.159.159,0,0,1-.16-.158l-.009-1.618-2.3.012.009,1.619a.159.159,0,0,1-.159.16l-.637,0a.158.158,0,0,1-.159-.158L18.16,25.8a.159.159,0,0,1,.158-.16l.637,0a.16.16,0,0,1,.16.159l.009,1.618,2.3-.012-.009-1.731-3.887-5.292-3.307.017L10.39,25.731l.009,1.73,2.3-.012-.009-1.618a.159.159,0,0,1,.158-.16l.637,0a.159.159,0,0,1,.16.159l.022,4.191a.159.159,0,0,1-.158.16l-.637,0a.159.159,0,0,1-.16-.158L12.705,28.4l-2.3.012.009,1.619a.16.16,0,0,1-.159.16l-.637,0a.159.159,0,0,1-.16-.158l-.024-4.562a.159.159,0,0,1,.03-.094l4.22-5.872a.161.161,0,0,1,.128-.066l4.118-.021a.158.158,0,0,1,.129.065m-6.63-4.765-6.888-2.2a.154.154,0,0,0-.1,0L.11,13.959a.159.159,0,0,0-.1.2l.2.6a.159.159,0,0,0,.2.1l1.536-.508.723,2.185-1.537.508a.159.159,0,0,0-.1.2l.2.6a.16.16,0,0,0,.2.1l3.98-1.316a.159.159,0,0,0,.1-.2l-.2-.6a.16.16,0,0,0-.2-.1l-1.537.508-.722-2.185L4.5,13.515l6.256,2,.511,1.546.527,1.594L7.958,23.984l-1.644.543-.722-2.185,1.537-.508a.159.159,0,0,0,.1-.2l-.2-.6a.159.159,0,0,0-.2-.1l-3.98,1.316a.159.159,0,0,0-.1.2l.2.6a.159.159,0,0,0,.2.1l1.537-.508.723,2.185-1.537.508a.159.159,0,0,0-.1.2l.2.6a.159.159,0,0,0,.2.1L8.5,24.809a.159.159,0,0,0,.08-.058L12.8,18.879a.158.158,0,0,0,.022-.143L11.53,14.827a.159.159,0,0,0-.1-.1m8.494-1.076,6.865-2.27a.158.158,0,0,0,.079-.058l2.663-3.7a.159.159,0,0,0-.036-.222l-.517-.372a.159.159,0,0,0-.222.036l-.945,1.314L25.94,7.029l.944-1.314a.159.159,0,0,0-.036-.222l-.517-.372a.158.158,0,0,0-.222.036l-2.446,3.4a.159.159,0,0,0,.036.223l.517.372a.159.159,0,0,0,.222-.036L25.383,7.8l1.869,1.343-1.01,1.405-6.235,2.062-2.686-1.93-.034-6.567L18.3,2.713l1.869,1.343L19.222,5.37a.159.159,0,0,0,.036.222l.517.372A.159.159,0,0,0,20,5.927l2.446-3.4a.159.159,0,0,0-.036-.222L21.89,1.93a.159.159,0,0,0-.222.036L20.723,3.28,18.855,1.938,19.8.623A.159.159,0,0,0,19.763.4L19.246.03a.158.158,0,0,0-.222.036l-2.663,3.7a.162.162,0,0,0-.03.094l.038,7.231a.158.158,0,0,0,.066.128l3.344,2.4a.159.159,0,0,0,.143.022m11.56.953.193-.607a.159.159,0,0,0-.1-.2l-4.346-1.387a.16.16,0,0,0-.1,0l-6.865,2.27a.157.157,0,0,0-.1.1L18.909,18.7a.158.158,0,0,0,.023.142l4.281,5.828a.162.162,0,0,0,.08.057l4.346,1.388a.159.159,0,0,0,.2-.1l.193-.606a.158.158,0,0,0-.1-.2l-1.542-.493.7-2.193,1.542.492a.159.159,0,0,0,.2-.1l.193-.607a.159.159,0,0,0-.1-.2l-3.993-1.274a.158.158,0,0,0-.2.1l-.194.607a.158.158,0,0,0,.1.2l1.541.493-.7,2.193L23.829,23.9l-3.888-5.293,1.006-3.15L27.182,13.4l1.648.527-.7,2.193-1.542-.493a.16.16,0,0,0-.2.1l-.193.607a.159.159,0,0,0,.1.2l3.992,1.274a.159.159,0,0,0,.2-.1l.194-.607a.16.16,0,0,0-.1-.2l-1.542-.492.7-2.193,1.542.493a.16.16,0,0,0,.2-.1m-19.57-.94,3.315-2.442a.16.16,0,0,0,.065-.13L15.244,3.86a.157.157,0,0,0-.031-.093L12.508.093a.159.159,0,0,0-.223-.034l-.513.378a.159.159,0,0,0-.033.223l.96,1.3L10.846,3.328l-.96-1.3a.159.159,0,0,0-.223-.033l-.513.378a.159.159,0,0,0-.033.223L11.6,5.966A.159.159,0,0,0,11.825,6l.513-.378a.159.159,0,0,0,.034-.223l-.96-1.3,1.853-1.365,1.026,1.394.043,6.567-2.663,1.961L5.414,10.665,4.387,9.271,6.24,7.906l.959,1.3a.159.159,0,0,0,.223.033l.513-.378a.16.16,0,0,0,.034-.223L5.483,5.268a.159.159,0,0,0-.223-.034l-.513.378a.159.159,0,0,0-.033.223l.959,1.3L3.821,8.5l-.96-1.3a.159.159,0,0,0-.223-.034l-.513.378a.159.159,0,0,0-.033.223L4.8,11.439a.156.156,0,0,0,.08.057l6.892,2.19a.16.16,0,0,0,.143-.024"
-												transform="translate(0 0)"
-											/>
+											<a href="/">
+												<foreignObject
+													width={31}
+													height={30}>
+													<img src="/amarey-logo.png" />
+												</foreignObject>
+											</a>
 											<path
 												className="b-navbar-mobile"
 												d="M90.485,14.8H87.8a3.643,3.643,0,0,1-1.877-.5,3.744,3.744,0,0,1-1.362-1.368,3.794,3.794,0,0,1,0-3.777,3.8,3.8,0,0,1,1.362-1.374,3.684,3.684,0,0,1,3.371-.188,3.756,3.756,0,0,1,1.242.893l-.378.354A3.242,3.242,0,0,0,87.8,7.8a3.141,3.141,0,0,0-1.614.435A3.25,3.25,0,0,0,85,9.411a3.245,3.245,0,0,0,0,3.245,3.276,3.276,0,0,0,1.179,1.184,3.106,3.106,0,0,0,1.614.441h2.152V11.614H87.5V11.1h2.987Z"
@@ -583,8 +588,8 @@ export const NavbarMovil: React.FC = () => {
 														className="h-[40px] w-full flex items-center border-b-solid border-b-[1px] border-[#e6e6e6] px-[10px]"
 														key={index}
 														onClick={() =>
-														(window.location.href =
-															item.url)
+															(window.location.href =
+																item.url)
 														}>
 														<span>
 															{item.label}
@@ -714,8 +719,8 @@ export const NavbarMovil: React.FC = () => {
 									<g transform="translate(3 461.534)">
 										<g
 											onClick={() =>
-											(window.location.href =
-												'/contactenos')
+												(window.location.href =
+													'/contactenos')
 											}>
 											<g
 												className="t-navbar-mobile"
@@ -773,8 +778,8 @@ export const NavbarMovil: React.FC = () => {
 									<g
 										transform="translate(3 483.058)"
 										onClick={() =>
-										(window.location.href =
-											'/trabaje-nosotros')
+											(window.location.href =
+												'/trabaje-nosotros')
 										}>
 										<g
 											className="s-navbar-mobile"
@@ -807,8 +812,8 @@ export const NavbarMovil: React.FC = () => {
 									<g
 										transform="translate(3 440.796)"
 										onClick={() =>
-										(window.location.href =
-											'/codigo-linea-etica')
+											(window.location.href =
+												'/codigo-linea-etica')
 										}>
 										<g
 											className="r-navbar-mobile"
@@ -1244,160 +1249,170 @@ export const NavbarMovil: React.FC = () => {
 											transform="translate(11 6)"
 										/>
 									</g>
-									<g transform="translate(280 10)" onClick={handleChangeSelectedLanguage}>
+									<g
+										transform="translate(280 10)"
+										onClick={handleChangeSelectedLanguage}>
 										<foreignObject
 											x={0}
 											y={0}
 											width={38}
 											height={38}>
 											{selectedLanguage === 'es' ? (
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											id="Componente_38_3"
-											data-name="Componente 38 – 3"
-											width="25"
-											height="25"
-											viewBox="0 0 25 25"
-										>
-											<g id="Grupo_5836" data-name="Grupo 5836">
-												<path
-													id="Trazado_68877"
-													data-name="Trazado 68877"
-													d="M1409.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
-													transform="translate(-1390.173 -38.176)"
-													fill="#001f5f"
-												/>
-												<path
-													id="Trazado_68878"
-													data-name="Trazado 68878"
-													d="M1479.116,60.531H1464.3a8.906,8.906,0,0,1,14.813,0"
-													transform="translate(-1461.956 -55.722)"
-													fill="#fd0002"
-												/>
-												<path
-													id="Trazado_68879"
-													data-name="Trazado 68879"
-													d="M1479.116,571.931a8.906,8.906,0,0,1-14.812,0Z"
-													transform="translate(-1461.956 -557.234)"
-													fill="#fd0002"
-												/>
-												<path
-													id="Trazado_68880"
-													data-name="Trazado 68880"
-													d="M1426.371,208.875a8.862,8.862,0,0,1-1.5,4.944h-14.812a8.909,8.909,0,0,1,0-9.888h14.812a8.862,8.862,0,0,1,1.5,4.944"
-													transform="translate(-1407.714 -199.122)"
-													fill="#ff0"
-												/>
-											</g>
-										</svg>
-									) : (
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											xmlnsXlink="http://www.w3.org/1999/xlink"
-											id="Componente_38_3"
-											data-name="Componente 38 – 3"
-											width="25"
-											height="25"
-											viewBox="0 0 25 25"
-										>
-											<defs>
-												<clipPath id="clip-path">
-													<path
-														id="Trazado_68887"
-														data-name="Trazado 68887"
-														d="M321.584,78.464a8.877,8.877,0,1,0,8.877-8.877,8.877,8.877,0,0,0-8.877,8.877"
-														transform="translate(-321.584 -69.587)"
-														fill="none"
-													/>
-												</clipPath>
-											</defs>
-											<g id="Grupo_5837" data-name="Grupo 5837">
-												<path
-													id="Trazado_68882"
-													data-name="Trazado 68882"
-													d="M309.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
-													transform="translate(-290.173 -38.176)"
-													fill="#001f5f"
-												/>
-												<g
-													id="Grupo_5836"
-													data-name="Grupo 5836"
-													transform="translate(0.876 0.876)"
-													clipPath="url(#clip-path)"
-												>
-													<path
-														id="Trazado_68883"
-														data-name="Trazado 68883"
-														d="M35.689,21.13,4.668,0H0V1.552L29.482,21.635h6.207Z"
-														transform="translate(-8.967 -1.94)"
-														fill="#feffff"
-													/>
-													<path
-														id="Trazado_68884"
-														data-name="Trazado 68884"
-														d="M35.689,0H31.034L0,21.14v.495H6.221L35.689,1.562Z"
-														transform="translate(-8.967 -1.94)"
-														fill="#feffff"
-													/>
-													<rect
-														id="Rectángulo_1963"
-														data-name="Rectángulo 1963"
-														width="5.222"
-														height="21.635"
-														transform="translate(6.242 -1.94)"
-														fill="#feffff"
-													/>
-													<rect
-														id="Rectángulo_1964"
-														data-name="Rectángulo 1964"
-														width="35.491"
-														height="5.104"
-														transform="translate(-8.835 6.538)"
-														fill="#feffff"
-													/>
-													<rect
-														id="Rectángulo_1965"
-														data-name="Rectángulo 1965"
-														width="35.491"
-														height="3.899"
-														transform="translate(-8.835 7.074)"
-														fill="#fd0002"
-													/>
-													<rect
-														id="Rectángulo_1966"
-														data-name="Rectángulo 1966"
-														width="3.365"
-														height="21.635"
-														transform="translate(7.201 -1.94)"
-														fill="#fd0002"
-													/>
-													<path
-														id="Trazado_68885"
-														data-name="Trazado 68885"
-														d="M35.409,21.635,67.17,0H64.832L33.071,21.635Z"
-														transform="translate(-41.116 -1.94)"
-														fill="#fd0002"
-													/>
-													<path
-														id="Trazado_68886"
-														data-name="Trazado 68886"
-														d="M58.533,21.635,26.772,0H24.433L56.195,21.635Z"
-														transform="translate(-32.72 -1.94)"
-														fill="#fd0002"
-													/>
-												</g>
-											</g>
-										</svg>
-									)}
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													id="Componente_38_3"
+													data-name="Componente 38 – 3"
+													width="25"
+													height="25"
+													viewBox="0 0 25 25">
+													<g
+														id="Grupo_5836"
+														data-name="Grupo 5836">
+														<path
+															id="Trazado_68877"
+															data-name="Trazado 68877"
+															d="M1409.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
+															transform="translate(-1390.173 -38.176)"
+															fill="#001f5f"
+														/>
+														<path
+															id="Trazado_68878"
+															data-name="Trazado 68878"
+															d="M1479.116,60.531H1464.3a8.906,8.906,0,0,1,14.813,0"
+															transform="translate(-1461.956 -55.722)"
+															fill="#fd0002"
+														/>
+														<path
+															id="Trazado_68879"
+															data-name="Trazado 68879"
+															d="M1479.116,571.931a8.906,8.906,0,0,1-14.812,0Z"
+															transform="translate(-1461.956 -557.234)"
+															fill="#fd0002"
+														/>
+														<path
+															id="Trazado_68880"
+															data-name="Trazado 68880"
+															d="M1426.371,208.875a8.862,8.862,0,0,1-1.5,4.944h-14.812a8.909,8.909,0,0,1,0-9.888h14.812a8.862,8.862,0,0,1,1.5,4.944"
+															transform="translate(-1407.714 -199.122)"
+															fill="#ff0"
+														/>
+													</g>
+												</svg>
+											) : (
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													xmlnsXlink="http://www.w3.org/1999/xlink"
+													id="Componente_38_3"
+													data-name="Componente 38 – 3"
+													width="25"
+													height="25"
+													viewBox="0 0 25 25">
+													<defs>
+														<clipPath id="clip-path">
+															<path
+																id="Trazado_68887"
+																data-name="Trazado 68887"
+																d="M321.584,78.464a8.877,8.877,0,1,0,8.877-8.877,8.877,8.877,0,0,0-8.877,8.877"
+																transform="translate(-321.584 -69.587)"
+																fill="none"
+															/>
+														</clipPath>
+													</defs>
+													<g
+														id="Grupo_5837"
+														data-name="Grupo 5837">
+														<path
+															id="Trazado_68882"
+															data-name="Trazado 68882"
+															d="M309.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
+															transform="translate(-290.173 -38.176)"
+															fill="#001f5f"
+														/>
+														<g
+															id="Grupo_5836"
+															data-name="Grupo 5836"
+															transform="translate(0.876 0.876)"
+															clipPath="url(#clip-path)">
+															<path
+																id="Trazado_68883"
+																data-name="Trazado 68883"
+																d="M35.689,21.13,4.668,0H0V1.552L29.482,21.635h6.207Z"
+																transform="translate(-8.967 -1.94)"
+																fill="#feffff"
+															/>
+															<path
+																id="Trazado_68884"
+																data-name="Trazado 68884"
+																d="M35.689,0H31.034L0,21.14v.495H6.221L35.689,1.562Z"
+																transform="translate(-8.967 -1.94)"
+																fill="#feffff"
+															/>
+															<rect
+																id="Rectángulo_1963"
+																data-name="Rectángulo 1963"
+																width="5.222"
+																height="21.635"
+																transform="translate(6.242 -1.94)"
+																fill="#feffff"
+															/>
+															<rect
+																id="Rectángulo_1964"
+																data-name="Rectángulo 1964"
+																width="35.491"
+																height="5.104"
+																transform="translate(-8.835 6.538)"
+																fill="#feffff"
+															/>
+															<rect
+																id="Rectángulo_1965"
+																data-name="Rectángulo 1965"
+																width="35.491"
+																height="3.899"
+																transform="translate(-8.835 7.074)"
+																fill="#fd0002"
+															/>
+															<rect
+																id="Rectángulo_1966"
+																data-name="Rectángulo 1966"
+																width="3.365"
+																height="21.635"
+																transform="translate(7.201 -1.94)"
+																fill="#fd0002"
+															/>
+															<path
+																id="Trazado_68885"
+																data-name="Trazado 68885"
+																d="M35.409,21.635,67.17,0H64.832L33.071,21.635Z"
+																transform="translate(-41.116 -1.94)"
+																fill="#fd0002"
+															/>
+															<path
+																id="Trazado_68886"
+																data-name="Trazado 68886"
+																d="M58.533,21.635,26.772,0H24.433L56.195,21.635Z"
+																transform="translate(-32.72 -1.94)"
+																fill="#fd0002"
+															/>
+														</g>
+													</g>
+												</svg>
+											)}
 										</foreignObject>
 									</g>
 									<g transform="translate(37 4.493)">
 										<g className="f-navbar-mobile">
-											<path
+											<a href="/">
+												<foreignObject
+													width={31}
+													height={30}>
+													<img src="/amarey-logo.png" />
+												</foreignObject>
+											</a>
+											{/* <path
 												className="g-navbar-mobile"
 												d="M18.058,19.489l4.281,5.827a.162.162,0,0,1,.03.094l.024,4.562a.16.16,0,0,1-.159.16l-.637,0a.159.159,0,0,1-.16-.158l-.009-1.618-2.3.012.009,1.619a.159.159,0,0,1-.159.16l-.637,0a.158.158,0,0,1-.159-.158L18.16,25.8a.159.159,0,0,1,.158-.16l.637,0a.16.16,0,0,1,.16.159l.009,1.618,2.3-.012-.009-1.731-3.887-5.292-3.307.017L10.39,25.731l.009,1.73,2.3-.012-.009-1.618a.159.159,0,0,1,.158-.16l.637,0a.159.159,0,0,1,.16.159l.022,4.191a.159.159,0,0,1-.158.16l-.637,0a.159.159,0,0,1-.16-.158L12.705,28.4l-2.3.012.009,1.619a.16.16,0,0,1-.159.16l-.637,0a.159.159,0,0,1-.16-.158l-.024-4.562a.159.159,0,0,1,.03-.094l4.22-5.872a.161.161,0,0,1,.128-.066l4.118-.021a.158.158,0,0,1,.129.065m-6.63-4.765-6.888-2.2a.154.154,0,0,0-.1,0L.11,13.959a.159.159,0,0,0-.1.2l.2.6a.159.159,0,0,0,.2.1l1.536-.508.723,2.185-1.537.508a.159.159,0,0,0-.1.2l.2.6a.16.16,0,0,0,.2.1l3.98-1.316a.159.159,0,0,0,.1-.2l-.2-.6a.16.16,0,0,0-.2-.1l-1.537.508-.722-2.185L4.5,13.515l6.256,2,.511,1.546.527,1.594L7.958,23.984l-1.644.543-.722-2.185,1.537-.508a.159.159,0,0,0,.1-.2l-.2-.6a.159.159,0,0,0-.2-.1l-3.98,1.316a.159.159,0,0,0-.1.2l.2.6a.159.159,0,0,0,.2.1l1.537-.508.723,2.185-1.537.508a.159.159,0,0,0-.1.2l.2.6a.159.159,0,0,0,.2.1L8.5,24.809a.159.159,0,0,0,.08-.058L12.8,18.879a.158.158,0,0,0,.022-.143L11.53,14.827a.159.159,0,0,0-.1-.1m8.494-1.076,6.865-2.27a.158.158,0,0,0,.079-.058l2.663-3.7a.159.159,0,0,0-.036-.222l-.517-.372a.159.159,0,0,0-.222.036l-.945,1.314L25.94,7.029l.944-1.314a.159.159,0,0,0-.036-.222l-.517-.372a.158.158,0,0,0-.222.036l-2.446,3.4a.159.159,0,0,0,.036.223l.517.372a.159.159,0,0,0,.222-.036L25.383,7.8l1.869,1.343-1.01,1.405-6.235,2.062-2.686-1.93-.034-6.567L18.3,2.713l1.869,1.343L19.222,5.37a.159.159,0,0,0,.036.222l.517.372A.159.159,0,0,0,20,5.927l2.446-3.4a.159.159,0,0,0-.036-.222L21.89,1.93a.159.159,0,0,0-.222.036L20.723,3.28,18.855,1.938,19.8.623A.159.159,0,0,0,19.763.4L19.246.03a.158.158,0,0,0-.222.036l-2.663,3.7a.162.162,0,0,0-.03.094l.038,7.231a.158.158,0,0,0,.066.128l3.344,2.4a.159.159,0,0,0,.143.022m11.56.953.193-.607a.159.159,0,0,0-.1-.2l-4.346-1.387a.16.16,0,0,0-.1,0l-6.865,2.27a.157.157,0,0,0-.1.1L18.909,18.7a.158.158,0,0,0,.023.142l4.281,5.828a.162.162,0,0,0,.08.057l4.346,1.388a.159.159,0,0,0,.2-.1l.193-.606a.158.158,0,0,0-.1-.2l-1.542-.493.7-2.193,1.542.492a.159.159,0,0,0,.2-.1l.193-.607a.159.159,0,0,0-.1-.2l-3.993-1.274a.158.158,0,0,0-.2.1l-.194.607a.158.158,0,0,0,.1.2l1.541.493-.7,2.193L23.829,23.9l-3.888-5.293,1.006-3.15L27.182,13.4l1.648.527-.7,2.193-1.542-.493a.16.16,0,0,0-.2.1l-.193.607a.159.159,0,0,0,.1.2l3.992,1.274a.159.159,0,0,0,.2-.1l.194-.607a.16.16,0,0,0-.1-.2l-1.542-.492.7-2.193,1.542.493a.16.16,0,0,0,.2-.1m-19.57-.94,3.315-2.442a.16.16,0,0,0,.065-.13L15.244,3.86a.157.157,0,0,0-.031-.093L12.508.093a.159.159,0,0,0-.223-.034l-.513.378a.159.159,0,0,0-.033.223l.96,1.3L10.846,3.328l-.96-1.3a.159.159,0,0,0-.223-.033l-.513.378a.159.159,0,0,0-.033.223L11.6,5.966A.159.159,0,0,0,11.825,6l.513-.378a.159.159,0,0,0,.034-.223l-.96-1.3,1.853-1.365,1.026,1.394.043,6.567-2.663,1.961L5.414,10.665,4.387,9.271,6.24,7.906l.959,1.3a.159.159,0,0,0,.223.033l.513-.378a.16.16,0,0,0,.034-.223L5.483,5.268a.159.159,0,0,0-.223-.034l-.513.378a.159.159,0,0,0-.033.223l.959,1.3L3.821,8.5l-.96-1.3a.159.159,0,0,0-.223-.034l-.513.378a.159.159,0,0,0-.033.223L4.8,11.439a.156.156,0,0,0,.08.057l6.892,2.19a.16.16,0,0,0,.143-.024"
 												transform="translate(0 0)"
-											/>
+											/> */}
 											<path
 												className="b-navbar-mobile"
 												d="M90.485,14.8H87.8a3.643,3.643,0,0,1-1.877-.5,3.744,3.744,0,0,1-1.362-1.368,3.794,3.794,0,0,1,0-3.777,3.8,3.8,0,0,1,1.362-1.374,3.684,3.684,0,0,1,3.371-.188,3.756,3.756,0,0,1,1.242.893l-.378.354A3.242,3.242,0,0,0,87.8,7.8a3.141,3.141,0,0,0-1.614.435A3.25,3.25,0,0,0,85,9.411a3.245,3.245,0,0,0,0,3.245,3.276,3.276,0,0,0,1.179,1.184,3.106,3.106,0,0,0,1.614.441h2.152V11.614H87.5V11.1h2.987Z"
@@ -1499,8 +1514,8 @@ export const NavbarMovil: React.FC = () => {
 														className="h-[40px] w-full flex items-center border-b-solid border-b-[1px] border-[#e6e6e6] px-[10px]"
 														key={index}
 														onClick={() =>
-														(window.location.href =
-															item.url)
+															(window.location.href =
+																item.url)
 														}>
 														<span>
 															{item.label}
@@ -1615,8 +1630,8 @@ export const NavbarMovil: React.FC = () => {
 										height={37}
 										transform="translate(2 399)"
 										onClick={() =>
-										(window.location.href =
-											'/filosofia')
+											(window.location.href =
+												'/filosofia')
 										}
 									/>
 									<rect
@@ -1625,8 +1640,8 @@ export const NavbarMovil: React.FC = () => {
 										height={37}
 										transform="translate(2 435)"
 										onClick={() =>
-										(window.location.href =
-											'/reconocimientos')
+											(window.location.href =
+												'/reconocimientos')
 										}
 									/>
 									<rect
@@ -1635,8 +1650,8 @@ export const NavbarMovil: React.FC = () => {
 										height={43}
 										transform="translate(2 469)"
 										onClick={() =>
-										(window.location.href =
-											'/responsabilidad')
+											(window.location.href =
+												'/responsabilidad')
 										}
 									/>
 									<text
@@ -1653,8 +1668,8 @@ export const NavbarMovil: React.FC = () => {
 										className="c-navbar-mobile"
 										transform="translate(77 421)"
 										onClick={() =>
-										(window.location.href =
-											'/filosofia')
+											(window.location.href =
+												'/filosofia')
 										}>
 										<tspan x={0} y={0}>
 											{t('Filosofía')}
@@ -1664,8 +1679,8 @@ export const NavbarMovil: React.FC = () => {
 										className="c-navbar-mobile"
 										transform="translate(77 457)"
 										onClick={() =>
-										(window.location.href =
-											'/reconocimientos')
+											(window.location.href =
+												'/reconocimientos')
 										}>
 										<tspan x={0} y={0}>
 											{t('Reconocimientos')}
@@ -1675,8 +1690,8 @@ export const NavbarMovil: React.FC = () => {
 										className="c-navbar-mobile"
 										transform="translate(77 492)"
 										onClick={() =>
-										(window.location.href =
-											'/responsabilidad')
+											(window.location.href =
+												'/responsabilidad')
 										}>
 										<tspan x={0} y={0}>
 											{t('RSE')}
@@ -1719,8 +1734,8 @@ export const NavbarMovil: React.FC = () => {
 												className="m-navbar-mobile"
 												transform="translate(9 687)"
 												onClick={() =>
-												(window.location.href =
-													'/contactenos')
+													(window.location.href =
+														'/contactenos')
 												}>
 												<rect
 													className="o-navbar-mobile"
@@ -1800,8 +1815,8 @@ export const NavbarMovil: React.FC = () => {
 									<g
 										transform="translate(2 596.796)"
 										onClick={() =>
-										(window.location.href =
-											'/codigo-linea-etica')
+											(window.location.href =
+												'/codigo-linea-etica')
 										}>
 										<g
 											className="t-navbar-mobile"
@@ -2227,160 +2242,170 @@ export const NavbarMovil: React.FC = () => {
 											transform="translate(11 6)"
 										/>
 									</g>
-									<g transform="translate(280 10)" onClick={handleChangeSelectedLanguage}>
+									<g
+										transform="translate(280 10)"
+										onClick={handleChangeSelectedLanguage}>
 										<foreignObject
 											x={0}
 											y={0}
 											width={38}
 											height={38}>
 											{selectedLanguage === 'es' ? (
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											id="Componente_38_3"
-											data-name="Componente 38 – 3"
-											width="25"
-											height="25"
-											viewBox="0 0 25 25"
-										>
-											<g id="Grupo_5836" data-name="Grupo 5836">
-												<path
-													id="Trazado_68877"
-													data-name="Trazado 68877"
-													d="M1409.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
-													transform="translate(-1390.173 -38.176)"
-													fill="#001f5f"
-												/>
-												<path
-													id="Trazado_68878"
-													data-name="Trazado 68878"
-													d="M1479.116,60.531H1464.3a8.906,8.906,0,0,1,14.813,0"
-													transform="translate(-1461.956 -55.722)"
-													fill="#fd0002"
-												/>
-												<path
-													id="Trazado_68879"
-													data-name="Trazado 68879"
-													d="M1479.116,571.931a8.906,8.906,0,0,1-14.812,0Z"
-													transform="translate(-1461.956 -557.234)"
-													fill="#fd0002"
-												/>
-												<path
-													id="Trazado_68880"
-													data-name="Trazado 68880"
-													d="M1426.371,208.875a8.862,8.862,0,0,1-1.5,4.944h-14.812a8.909,8.909,0,0,1,0-9.888h14.812a8.862,8.862,0,0,1,1.5,4.944"
-													transform="translate(-1407.714 -199.122)"
-													fill="#ff0"
-												/>
-											</g>
-										</svg>
-									) : (
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											xmlnsXlink="http://www.w3.org/1999/xlink"
-											id="Componente_38_3"
-											data-name="Componente 38 – 3"
-											width="25"
-											height="25"
-											viewBox="0 0 25 25"
-										>
-											<defs>
-												<clipPath id="clip-path">
-													<path
-														id="Trazado_68887"
-														data-name="Trazado 68887"
-														d="M321.584,78.464a8.877,8.877,0,1,0,8.877-8.877,8.877,8.877,0,0,0-8.877,8.877"
-														transform="translate(-321.584 -69.587)"
-														fill="none"
-													/>
-												</clipPath>
-											</defs>
-											<g id="Grupo_5837" data-name="Grupo 5837">
-												<path
-													id="Trazado_68882"
-													data-name="Trazado 68882"
-													d="M309.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
-													transform="translate(-290.173 -38.176)"
-													fill="#001f5f"
-												/>
-												<g
-													id="Grupo_5836"
-													data-name="Grupo 5836"
-													transform="translate(0.876 0.876)"
-													clipPath="url(#clip-path)"
-												>
-													<path
-														id="Trazado_68883"
-														data-name="Trazado 68883"
-														d="M35.689,21.13,4.668,0H0V1.552L29.482,21.635h6.207Z"
-														transform="translate(-8.967 -1.94)"
-														fill="#feffff"
-													/>
-													<path
-														id="Trazado_68884"
-														data-name="Trazado 68884"
-														d="M35.689,0H31.034L0,21.14v.495H6.221L35.689,1.562Z"
-														transform="translate(-8.967 -1.94)"
-														fill="#feffff"
-													/>
-													<rect
-														id="Rectángulo_1963"
-														data-name="Rectángulo 1963"
-														width="5.222"
-														height="21.635"
-														transform="translate(6.242 -1.94)"
-														fill="#feffff"
-													/>
-													<rect
-														id="Rectángulo_1964"
-														data-name="Rectángulo 1964"
-														width="35.491"
-														height="5.104"
-														transform="translate(-8.835 6.538)"
-														fill="#feffff"
-													/>
-													<rect
-														id="Rectángulo_1965"
-														data-name="Rectángulo 1965"
-														width="35.491"
-														height="3.899"
-														transform="translate(-8.835 7.074)"
-														fill="#fd0002"
-													/>
-													<rect
-														id="Rectángulo_1966"
-														data-name="Rectángulo 1966"
-														width="3.365"
-														height="21.635"
-														transform="translate(7.201 -1.94)"
-														fill="#fd0002"
-													/>
-													<path
-														id="Trazado_68885"
-														data-name="Trazado 68885"
-														d="M35.409,21.635,67.17,0H64.832L33.071,21.635Z"
-														transform="translate(-41.116 -1.94)"
-														fill="#fd0002"
-													/>
-													<path
-														id="Trazado_68886"
-														data-name="Trazado 68886"
-														d="M58.533,21.635,26.772,0H24.433L56.195,21.635Z"
-														transform="translate(-32.72 -1.94)"
-														fill="#fd0002"
-													/>
-												</g>
-											</g>
-										</svg>
-									)}
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													id="Componente_38_3"
+													data-name="Componente 38 – 3"
+													width="25"
+													height="25"
+													viewBox="0 0 25 25">
+													<g
+														id="Grupo_5836"
+														data-name="Grupo 5836">
+														<path
+															id="Trazado_68877"
+															data-name="Trazado 68877"
+															d="M1409.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
+															transform="translate(-1390.173 -38.176)"
+															fill="#001f5f"
+														/>
+														<path
+															id="Trazado_68878"
+															data-name="Trazado 68878"
+															d="M1479.116,60.531H1464.3a8.906,8.906,0,0,1,14.813,0"
+															transform="translate(-1461.956 -55.722)"
+															fill="#fd0002"
+														/>
+														<path
+															id="Trazado_68879"
+															data-name="Trazado 68879"
+															d="M1479.116,571.931a8.906,8.906,0,0,1-14.812,0Z"
+															transform="translate(-1461.956 -557.234)"
+															fill="#fd0002"
+														/>
+														<path
+															id="Trazado_68880"
+															data-name="Trazado 68880"
+															d="M1426.371,208.875a8.862,8.862,0,0,1-1.5,4.944h-14.812a8.909,8.909,0,0,1,0-9.888h14.812a8.862,8.862,0,0,1,1.5,4.944"
+															transform="translate(-1407.714 -199.122)"
+															fill="#ff0"
+														/>
+													</g>
+												</svg>
+											) : (
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													xmlnsXlink="http://www.w3.org/1999/xlink"
+													id="Componente_38_3"
+													data-name="Componente 38 – 3"
+													width="25"
+													height="25"
+													viewBox="0 0 25 25">
+													<defs>
+														<clipPath id="clip-path">
+															<path
+																id="Trazado_68887"
+																data-name="Trazado 68887"
+																d="M321.584,78.464a8.877,8.877,0,1,0,8.877-8.877,8.877,8.877,0,0,0-8.877,8.877"
+																transform="translate(-321.584 -69.587)"
+																fill="none"
+															/>
+														</clipPath>
+													</defs>
+													<g
+														id="Grupo_5837"
+														data-name="Grupo 5837">
+														<path
+															id="Trazado_68882"
+															data-name="Trazado 68882"
+															d="M309.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
+															transform="translate(-290.173 -38.176)"
+															fill="#001f5f"
+														/>
+														<g
+															id="Grupo_5836"
+															data-name="Grupo 5836"
+															transform="translate(0.876 0.876)"
+															clipPath="url(#clip-path)">
+															<path
+																id="Trazado_68883"
+																data-name="Trazado 68883"
+																d="M35.689,21.13,4.668,0H0V1.552L29.482,21.635h6.207Z"
+																transform="translate(-8.967 -1.94)"
+																fill="#feffff"
+															/>
+															<path
+																id="Trazado_68884"
+																data-name="Trazado 68884"
+																d="M35.689,0H31.034L0,21.14v.495H6.221L35.689,1.562Z"
+																transform="translate(-8.967 -1.94)"
+																fill="#feffff"
+															/>
+															<rect
+																id="Rectángulo_1963"
+																data-name="Rectángulo 1963"
+																width="5.222"
+																height="21.635"
+																transform="translate(6.242 -1.94)"
+																fill="#feffff"
+															/>
+															<rect
+																id="Rectángulo_1964"
+																data-name="Rectángulo 1964"
+																width="35.491"
+																height="5.104"
+																transform="translate(-8.835 6.538)"
+																fill="#feffff"
+															/>
+															<rect
+																id="Rectángulo_1965"
+																data-name="Rectángulo 1965"
+																width="35.491"
+																height="3.899"
+																transform="translate(-8.835 7.074)"
+																fill="#fd0002"
+															/>
+															<rect
+																id="Rectángulo_1966"
+																data-name="Rectángulo 1966"
+																width="3.365"
+																height="21.635"
+																transform="translate(7.201 -1.94)"
+																fill="#fd0002"
+															/>
+															<path
+																id="Trazado_68885"
+																data-name="Trazado 68885"
+																d="M35.409,21.635,67.17,0H64.832L33.071,21.635Z"
+																transform="translate(-41.116 -1.94)"
+																fill="#fd0002"
+															/>
+															<path
+																id="Trazado_68886"
+																data-name="Trazado 68886"
+																d="M58.533,21.635,26.772,0H24.433L56.195,21.635Z"
+																transform="translate(-32.72 -1.94)"
+																fill="#fd0002"
+															/>
+														</g>
+													</g>
+												</svg>
+											)}
 										</foreignObject>
 									</g>
 									<g transform="translate(37 4.493)">
 										<g className="f-navbar-mobile">
-											<path
+											<a href="/">
+												<foreignObject
+													width={31}
+													height={30}>
+													<img src="/amarey-logo.png" />
+												</foreignObject>
+											</a>
+											{/* <path
 												className="g-navbar-mobile"
 												d="M18.058,19.489l4.281,5.827a.162.162,0,0,1,.03.094l.024,4.562a.16.16,0,0,1-.159.16l-.637,0a.159.159,0,0,1-.16-.158l-.009-1.618-2.3.012.009,1.619a.159.159,0,0,1-.159.16l-.637,0a.158.158,0,0,1-.159-.158L18.16,25.8a.159.159,0,0,1,.158-.16l.637,0a.16.16,0,0,1,.16.159l.009,1.618,2.3-.012-.009-1.731-3.887-5.292-3.307.017L10.39,25.731l.009,1.73,2.3-.012-.009-1.618a.159.159,0,0,1,.158-.16l.637,0a.159.159,0,0,1,.16.159l.022,4.191a.159.159,0,0,1-.158.16l-.637,0a.159.159,0,0,1-.16-.158L12.705,28.4l-2.3.012.009,1.619a.16.16,0,0,1-.159.16l-.637,0a.159.159,0,0,1-.16-.158l-.024-4.562a.159.159,0,0,1,.03-.094l4.22-5.872a.161.161,0,0,1,.128-.066l4.118-.021a.158.158,0,0,1,.129.065m-6.63-4.765-6.888-2.2a.154.154,0,0,0-.1,0L.11,13.959a.159.159,0,0,0-.1.2l.2.6a.159.159,0,0,0,.2.1l1.536-.508.723,2.185-1.537.508a.159.159,0,0,0-.1.2l.2.6a.16.16,0,0,0,.2.1l3.98-1.316a.159.159,0,0,0,.1-.2l-.2-.6a.16.16,0,0,0-.2-.1l-1.537.508-.722-2.185L4.5,13.515l6.256,2,.511,1.546.527,1.594L7.958,23.984l-1.644.543-.722-2.185,1.537-.508a.159.159,0,0,0,.1-.2l-.2-.6a.159.159,0,0,0-.2-.1l-3.98,1.316a.159.159,0,0,0-.1.2l.2.6a.159.159,0,0,0,.2.1l1.537-.508.723,2.185-1.537.508a.159.159,0,0,0-.1.2l.2.6a.159.159,0,0,0,.2.1L8.5,24.809a.159.159,0,0,0,.08-.058L12.8,18.879a.158.158,0,0,0,.022-.143L11.53,14.827a.159.159,0,0,0-.1-.1m8.494-1.076,6.865-2.27a.158.158,0,0,0,.079-.058l2.663-3.7a.159.159,0,0,0-.036-.222l-.517-.372a.159.159,0,0,0-.222.036l-.945,1.314L25.94,7.029l.944-1.314a.159.159,0,0,0-.036-.222l-.517-.372a.158.158,0,0,0-.222.036l-2.446,3.4a.159.159,0,0,0,.036.223l.517.372a.159.159,0,0,0,.222-.036L25.383,7.8l1.869,1.343-1.01,1.405-6.235,2.062-2.686-1.93-.034-6.567L18.3,2.713l1.869,1.343L19.222,5.37a.159.159,0,0,0,.036.222l.517.372A.159.159,0,0,0,20,5.927l2.446-3.4a.159.159,0,0,0-.036-.222L21.89,1.93a.159.159,0,0,0-.222.036L20.723,3.28,18.855,1.938,19.8.623A.159.159,0,0,0,19.763.4L19.246.03a.158.158,0,0,0-.222.036l-2.663,3.7a.162.162,0,0,0-.03.094l.038,7.231a.158.158,0,0,0,.066.128l3.344,2.4a.159.159,0,0,0,.143.022m11.56.953.193-.607a.159.159,0,0,0-.1-.2l-4.346-1.387a.16.16,0,0,0-.1,0l-6.865,2.27a.157.157,0,0,0-.1.1L18.909,18.7a.158.158,0,0,0,.023.142l4.281,5.828a.162.162,0,0,0,.08.057l4.346,1.388a.159.159,0,0,0,.2-.1l.193-.606a.158.158,0,0,0-.1-.2l-1.542-.493.7-2.193,1.542.492a.159.159,0,0,0,.2-.1l.193-.607a.159.159,0,0,0-.1-.2l-3.993-1.274a.158.158,0,0,0-.2.1l-.194.607a.158.158,0,0,0,.1.2l1.541.493-.7,2.193L23.829,23.9l-3.888-5.293,1.006-3.15L27.182,13.4l1.648.527-.7,2.193-1.542-.493a.16.16,0,0,0-.2.1l-.193.607a.159.159,0,0,0,.1.2l3.992,1.274a.159.159,0,0,0,.2-.1l.194-.607a.16.16,0,0,0-.1-.2l-1.542-.492.7-2.193,1.542.493a.16.16,0,0,0,.2-.1m-19.57-.94,3.315-2.442a.16.16,0,0,0,.065-.13L15.244,3.86a.157.157,0,0,0-.031-.093L12.508.093a.159.159,0,0,0-.223-.034l-.513.378a.159.159,0,0,0-.033.223l.96,1.3L10.846,3.328l-.96-1.3a.159.159,0,0,0-.223-.033l-.513.378a.159.159,0,0,0-.033.223L11.6,5.966A.159.159,0,0,0,11.825,6l.513-.378a.159.159,0,0,0,.034-.223l-.96-1.3,1.853-1.365,1.026,1.394.043,6.567-2.663,1.961L5.414,10.665,4.387,9.271,6.24,7.906l.959,1.3a.159.159,0,0,0,.223.033l.513-.378a.16.16,0,0,0,.034-.223L5.483,5.268a.159.159,0,0,0-.223-.034l-.513.378a.159.159,0,0,0-.033.223l.959,1.3L3.821,8.5l-.96-1.3a.159.159,0,0,0-.223-.034l-.513.378a.159.159,0,0,0-.033.223L4.8,11.439a.156.156,0,0,0,.08.057l6.892,2.19a.16.16,0,0,0,.143-.024"
 												transform="translate(0 0)"
-											/>
+											/> */}
 											<path
 												className="b-navbar-mobile"
 												d="M90.485,14.8H87.8a3.643,3.643,0,0,1-1.877-.5,3.744,3.744,0,0,1-1.362-1.368,3.794,3.794,0,0,1,0-3.777,3.8,3.8,0,0,1,1.362-1.374,3.684,3.684,0,0,1,3.371-.188,3.756,3.756,0,0,1,1.242.893l-.378.354A3.242,3.242,0,0,0,87.8,7.8a3.141,3.141,0,0,0-1.614.435A3.25,3.25,0,0,0,85,9.411a3.245,3.245,0,0,0,0,3.245,3.276,3.276,0,0,0,1.179,1.184,3.106,3.106,0,0,0,1.614.441h2.152V11.614H87.5V11.1h2.987Z"
@@ -2482,8 +2507,8 @@ export const NavbarMovil: React.FC = () => {
 														className="h-[40px] w-full flex items-center border-b-solid border-b-[1px] border-[#e6e6e6] px-[10px]"
 														key={index}
 														onClick={() =>
-														(window.location.href =
-															item.url)
+															(window.location.href =
+																item.url)
 														}>
 														<span>
 															{item.label}
@@ -2581,8 +2606,8 @@ export const NavbarMovil: React.FC = () => {
 										height={48}
 										transform="translate(0 397)"
 										onClick={() =>
-										(window.location.href =
-											'/nuestros-aliados')
+											(window.location.href =
+												'/nuestros-aliados')
 										}
 									/>
 									<rect
@@ -2591,8 +2616,8 @@ export const NavbarMovil: React.FC = () => {
 										height={38}
 										transform="translate(0 443)"
 										onClick={() =>
-										(window.location.href =
-											'/biomedico')
+											(window.location.href =
+												'/biomedico')
 										}
 									/>
 									<rect
@@ -2601,16 +2626,16 @@ export const NavbarMovil: React.FC = () => {
 										height={49}
 										transform="translate(0 481)"
 										onClick={() =>
-										(window.location.href =
-											'/productos')
+											(window.location.href =
+												'/productos')
 										}
 									/>
 									<text
 										className="c-navbar-mobile"
 										transform="translate(75 430)"
 										onClick={() =>
-										(window.location.href =
-											'/nuestros-aliados')
+											(window.location.href =
+												'/nuestros-aliados')
 										}>
 										<tspan x={0} y={0}>
 											{t('Nuestros aliados')}
@@ -2620,8 +2645,8 @@ export const NavbarMovil: React.FC = () => {
 										className="c-navbar-mobile"
 										transform="translate(75 466)"
 										onClick={() =>
-										(window.location.href =
-											'/biomedico')
+											(window.location.href =
+												'/biomedico')
 										}>
 										<tspan x={0} y={0}>
 											{t('Mantenimiento Biomédico')}
@@ -2631,8 +2656,8 @@ export const NavbarMovil: React.FC = () => {
 										className="c-navbar-mobile"
 										transform="translate(75 502)"
 										onClick={() =>
-										(window.location.href =
-											'/productos')
+											(window.location.href =
+												'/productos')
 										}>
 										<tspan x={0} y={0}>
 											{t('Soluciones en salud​')}
@@ -2680,8 +2705,8 @@ export const NavbarMovil: React.FC = () => {
 									<g transform="translate(0 586.534)">
 										<g
 											onClick={() =>
-											(window.location.href =
-												'/contactenos')
+												(window.location.href =
+													'/contactenos')
 											}>
 											<g
 												className="u-navbar-mobile"
@@ -2768,8 +2793,8 @@ export const NavbarMovil: React.FC = () => {
 									<g
 										transform="translate(0 565.796)"
 										onClick={() =>
-										(window.location.href =
-											'/codigo-linea-etica')
+											(window.location.href =
+												'/codigo-linea-etica')
 										}>
 										<g
 											className="s-navbar-mobile"
@@ -3196,161 +3221,171 @@ export const NavbarMovil: React.FC = () => {
 											transform="translate(11 6)"
 										/>
 									</g>
-									<g transform="translate(280 10)" onClick={handleChangeSelectedLanguage}>
+									<g
+										transform="translate(280 10)"
+										onClick={handleChangeSelectedLanguage}>
 										<foreignObject
 											x={0}
 											y={0}
 											width={38}
 											height={38}>
-										{selectedLanguage === 'es' ? (
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											id="Componente_38_3"
-											data-name="Componente 38 – 3"
-											width="25"
-											height="25"
-											viewBox="0 0 25 25"
-										>
-											<g id="Grupo_5836" data-name="Grupo 5836">
-												<path
-													id="Trazado_68877"
-													data-name="Trazado 68877"
-													d="M1409.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
-													transform="translate(-1390.173 -38.176)"
-													fill="#001f5f"
-												/>
-												<path
-													id="Trazado_68878"
-													data-name="Trazado 68878"
-													d="M1479.116,60.531H1464.3a8.906,8.906,0,0,1,14.813,0"
-													transform="translate(-1461.956 -55.722)"
-													fill="#fd0002"
-												/>
-												<path
-													id="Trazado_68879"
-													data-name="Trazado 68879"
-													d="M1479.116,571.931a8.906,8.906,0,0,1-14.812,0Z"
-													transform="translate(-1461.956 -557.234)"
-													fill="#fd0002"
-												/>
-												<path
-													id="Trazado_68880"
-													data-name="Trazado 68880"
-													d="M1426.371,208.875a8.862,8.862,0,0,1-1.5,4.944h-14.812a8.909,8.909,0,0,1,0-9.888h14.812a8.862,8.862,0,0,1,1.5,4.944"
-													transform="translate(-1407.714 -199.122)"
-													fill="#ff0"
-												/>
-											</g>
-										</svg>
-									) : (
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											xmlnsXlink="http://www.w3.org/1999/xlink"
-											id="Componente_38_3"
-											data-name="Componente 38 – 3"
-											width="25"
-											height="25"
-											viewBox="0 0 25 25"
-										>
-											<defs>
-												<clipPath id="clip-path">
-													<path
-														id="Trazado_68887"
-														data-name="Trazado 68887"
-														d="M321.584,78.464a8.877,8.877,0,1,0,8.877-8.877,8.877,8.877,0,0,0-8.877,8.877"
-														transform="translate(-321.584 -69.587)"
-														fill="none"
-													/>
-												</clipPath>
-											</defs>
-											<g id="Grupo_5837" data-name="Grupo 5837">
-												<path
-													id="Trazado_68882"
-													data-name="Trazado 68882"
-													d="M309.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
-													transform="translate(-290.173 -38.176)"
-													fill="#001f5f"
-												/>
-												<g
-													id="Grupo_5836"
-													data-name="Grupo 5836"
-													transform="translate(0.876 0.876)"
-													clipPath="url(#clip-path)"
-												>
-													<path
-														id="Trazado_68883"
-														data-name="Trazado 68883"
-														d="M35.689,21.13,4.668,0H0V1.552L29.482,21.635h6.207Z"
-														transform="translate(-8.967 -1.94)"
-														fill="#feffff"
-													/>
-													<path
-														id="Trazado_68884"
-														data-name="Trazado 68884"
-														d="M35.689,0H31.034L0,21.14v.495H6.221L35.689,1.562Z"
-														transform="translate(-8.967 -1.94)"
-														fill="#feffff"
-													/>
-													<rect
-														id="Rectángulo_1963"
-														data-name="Rectángulo 1963"
-														width="5.222"
-														height="21.635"
-														transform="translate(6.242 -1.94)"
-														fill="#feffff"
-													/>
-													<rect
-														id="Rectángulo_1964"
-														data-name="Rectángulo 1964"
-														width="35.491"
-														height="5.104"
-														transform="translate(-8.835 6.538)"
-														fill="#feffff"
-													/>
-													<rect
-														id="Rectángulo_1965"
-														data-name="Rectángulo 1965"
-														width="35.491"
-														height="3.899"
-														transform="translate(-8.835 7.074)"
-														fill="#fd0002"
-													/>
-													<rect
-														id="Rectángulo_1966"
-														data-name="Rectángulo 1966"
-														width="3.365"
-														height="21.635"
-														transform="translate(7.201 -1.94)"
-														fill="#fd0002"
-													/>
-													<path
-														id="Trazado_68885"
-														data-name="Trazado 68885"
-														d="M35.409,21.635,67.17,0H64.832L33.071,21.635Z"
-														transform="translate(-41.116 -1.94)"
-														fill="#fd0002"
-													/>
-													<path
-														id="Trazado_68886"
-														data-name="Trazado 68886"
-														d="M58.533,21.635,26.772,0H24.433L56.195,21.635Z"
-														transform="translate(-32.72 -1.94)"
-														fill="#fd0002"
-													/>
-												</g>
-											</g>
-										</svg>
-									)}
+											{selectedLanguage === 'es' ? (
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													id="Componente_38_3"
+													data-name="Componente 38 – 3"
+													width="25"
+													height="25"
+													viewBox="0 0 25 25">
+													<g
+														id="Grupo_5836"
+														data-name="Grupo 5836">
+														<path
+															id="Trazado_68877"
+															data-name="Trazado 68877"
+															d="M1409.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
+															transform="translate(-1390.173 -38.176)"
+															fill="#001f5f"
+														/>
+														<path
+															id="Trazado_68878"
+															data-name="Trazado 68878"
+															d="M1479.116,60.531H1464.3a8.906,8.906,0,0,1,14.813,0"
+															transform="translate(-1461.956 -55.722)"
+															fill="#fd0002"
+														/>
+														<path
+															id="Trazado_68879"
+															data-name="Trazado 68879"
+															d="M1479.116,571.931a8.906,8.906,0,0,1-14.812,0Z"
+															transform="translate(-1461.956 -557.234)"
+															fill="#fd0002"
+														/>
+														<path
+															id="Trazado_68880"
+															data-name="Trazado 68880"
+															d="M1426.371,208.875a8.862,8.862,0,0,1-1.5,4.944h-14.812a8.909,8.909,0,0,1,0-9.888h14.812a8.862,8.862,0,0,1,1.5,4.944"
+															transform="translate(-1407.714 -199.122)"
+															fill="#ff0"
+														/>
+													</g>
+												</svg>
+											) : (
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													xmlnsXlink="http://www.w3.org/1999/xlink"
+													id="Componente_38_3"
+													data-name="Componente 38 – 3"
+													width="25"
+													height="25"
+													viewBox="0 0 25 25">
+													<defs>
+														<clipPath id="clip-path">
+															<path
+																id="Trazado_68887"
+																data-name="Trazado 68887"
+																d="M321.584,78.464a8.877,8.877,0,1,0,8.877-8.877,8.877,8.877,0,0,0-8.877,8.877"
+																transform="translate(-321.584 -69.587)"
+																fill="none"
+															/>
+														</clipPath>
+													</defs>
+													<g
+														id="Grupo_5837"
+														data-name="Grupo 5837">
+														<path
+															id="Trazado_68882"
+															data-name="Trazado 68882"
+															d="M309.679,47.929a9.753,9.753,0,1,1-9.753-9.753,9.753,9.753,0,0,1,9.753,9.753"
+															transform="translate(-290.173 -38.176)"
+															fill="#001f5f"
+														/>
+														<g
+															id="Grupo_5836"
+															data-name="Grupo 5836"
+															transform="translate(0.876 0.876)"
+															clipPath="url(#clip-path)">
+															<path
+																id="Trazado_68883"
+																data-name="Trazado 68883"
+																d="M35.689,21.13,4.668,0H0V1.552L29.482,21.635h6.207Z"
+																transform="translate(-8.967 -1.94)"
+																fill="#feffff"
+															/>
+															<path
+																id="Trazado_68884"
+																data-name="Trazado 68884"
+																d="M35.689,0H31.034L0,21.14v.495H6.221L35.689,1.562Z"
+																transform="translate(-8.967 -1.94)"
+																fill="#feffff"
+															/>
+															<rect
+																id="Rectángulo_1963"
+																data-name="Rectángulo 1963"
+																width="5.222"
+																height="21.635"
+																transform="translate(6.242 -1.94)"
+																fill="#feffff"
+															/>
+															<rect
+																id="Rectángulo_1964"
+																data-name="Rectángulo 1964"
+																width="35.491"
+																height="5.104"
+																transform="translate(-8.835 6.538)"
+																fill="#feffff"
+															/>
+															<rect
+																id="Rectángulo_1965"
+																data-name="Rectángulo 1965"
+																width="35.491"
+																height="3.899"
+																transform="translate(-8.835 7.074)"
+																fill="#fd0002"
+															/>
+															<rect
+																id="Rectángulo_1966"
+																data-name="Rectángulo 1966"
+																width="3.365"
+																height="21.635"
+																transform="translate(7.201 -1.94)"
+																fill="#fd0002"
+															/>
+															<path
+																id="Trazado_68885"
+																data-name="Trazado 68885"
+																d="M35.409,21.635,67.17,0H64.832L33.071,21.635Z"
+																transform="translate(-41.116 -1.94)"
+																fill="#fd0002"
+															/>
+															<path
+																id="Trazado_68886"
+																data-name="Trazado 68886"
+																d="M58.533,21.635,26.772,0H24.433L56.195,21.635Z"
+																transform="translate(-32.72 -1.94)"
+																fill="#fd0002"
+															/>
+														</g>
+													</g>
+												</svg>
+											)}
 										</foreignObject>
 									</g>
 
 									<g transform="translate(37 4.493)">
 										<g className="f-navbar-mobile">
-											<path
+											<a href="/">
+												<foreignObject
+													width={31}
+													height={30}>
+													<img src="/amarey-logo.png" />
+												</foreignObject>
+											</a>
+											{/* <path
 												className="g-navbar-mobile"
 												d="M18.058,19.489l4.281,5.827a.162.162,0,0,1,.03.094l.024,4.562a.16.16,0,0,1-.159.16l-.637,0a.159.159,0,0,1-.16-.158l-.009-1.618-2.3.012.009,1.619a.159.159,0,0,1-.159.16l-.637,0a.158.158,0,0,1-.159-.158L18.16,25.8a.159.159,0,0,1,.158-.16l.637,0a.16.16,0,0,1,.16.159l.009,1.618,2.3-.012-.009-1.731-3.887-5.292-3.307.017L10.39,25.731l.009,1.73,2.3-.012-.009-1.618a.159.159,0,0,1,.158-.16l.637,0a.159.159,0,0,1,.16.159l.022,4.191a.159.159,0,0,1-.158.16l-.637,0a.159.159,0,0,1-.16-.158L12.705,28.4l-2.3.012.009,1.619a.16.16,0,0,1-.159.16l-.637,0a.159.159,0,0,1-.16-.158l-.024-4.562a.159.159,0,0,1,.03-.094l4.22-5.872a.161.161,0,0,1,.128-.066l4.118-.021a.158.158,0,0,1,.129.065m-6.63-4.765-6.888-2.2a.154.154,0,0,0-.1,0L.11,13.959a.159.159,0,0,0-.1.2l.2.6a.159.159,0,0,0,.2.1l1.536-.508.723,2.185-1.537.508a.159.159,0,0,0-.1.2l.2.6a.16.16,0,0,0,.2.1l3.98-1.316a.159.159,0,0,0,.1-.2l-.2-.6a.16.16,0,0,0-.2-.1l-1.537.508-.722-2.185L4.5,13.515l6.256,2,.511,1.546.527,1.594L7.958,23.984l-1.644.543-.722-2.185,1.537-.508a.159.159,0,0,0,.1-.2l-.2-.6a.159.159,0,0,0-.2-.1l-3.98,1.316a.159.159,0,0,0-.1.2l.2.6a.159.159,0,0,0,.2.1l1.537-.508.723,2.185-1.537.508a.159.159,0,0,0-.1.2l.2.6a.159.159,0,0,0,.2.1L8.5,24.809a.159.159,0,0,0,.08-.058L12.8,18.879a.158.158,0,0,0,.022-.143L11.53,14.827a.159.159,0,0,0-.1-.1m8.494-1.076,6.865-2.27a.158.158,0,0,0,.079-.058l2.663-3.7a.159.159,0,0,0-.036-.222l-.517-.372a.159.159,0,0,0-.222.036l-.945,1.314L25.94,7.029l.944-1.314a.159.159,0,0,0-.036-.222l-.517-.372a.158.158,0,0,0-.222.036l-2.446,3.4a.159.159,0,0,0,.036.223l.517.372a.159.159,0,0,0,.222-.036L25.383,7.8l1.869,1.343-1.01,1.405-6.235,2.062-2.686-1.93-.034-6.567L18.3,2.713l1.869,1.343L19.222,5.37a.159.159,0,0,0,.036.222l.517.372A.159.159,0,0,0,20,5.927l2.446-3.4a.159.159,0,0,0-.036-.222L21.89,1.93a.159.159,0,0,0-.222.036L20.723,3.28,18.855,1.938,19.8.623A.159.159,0,0,0,19.763.4L19.246.03a.158.158,0,0,0-.222.036l-2.663,3.7a.162.162,0,0,0-.03.094l.038,7.231a.158.158,0,0,0,.066.128l3.344,2.4a.159.159,0,0,0,.143.022m11.56.953.193-.607a.159.159,0,0,0-.1-.2l-4.346-1.387a.16.16,0,0,0-.1,0l-6.865,2.27a.157.157,0,0,0-.1.1L18.909,18.7a.158.158,0,0,0,.023.142l4.281,5.828a.162.162,0,0,0,.08.057l4.346,1.388a.159.159,0,0,0,.2-.1l.193-.606a.158.158,0,0,0-.1-.2l-1.542-.493.7-2.193,1.542.492a.159.159,0,0,0,.2-.1l.193-.607a.159.159,0,0,0-.1-.2l-3.993-1.274a.158.158,0,0,0-.2.1l-.194.607a.158.158,0,0,0,.1.2l1.541.493-.7,2.193L23.829,23.9l-3.888-5.293,1.006-3.15L27.182,13.4l1.648.527-.7,2.193-1.542-.493a.16.16,0,0,0-.2.1l-.193.607a.159.159,0,0,0,.1.2l3.992,1.274a.159.159,0,0,0,.2-.1l.194-.607a.16.16,0,0,0-.1-.2l-1.542-.492.7-2.193,1.542.493a.16.16,0,0,0,.2-.1m-19.57-.94,3.315-2.442a.16.16,0,0,0,.065-.13L15.244,3.86a.157.157,0,0,0-.031-.093L12.508.093a.159.159,0,0,0-.223-.034l-.513.378a.159.159,0,0,0-.033.223l.96,1.3L10.846,3.328l-.96-1.3a.159.159,0,0,0-.223-.033l-.513.378a.159.159,0,0,0-.033.223L11.6,5.966A.159.159,0,0,0,11.825,6l.513-.378a.159.159,0,0,0,.034-.223l-.96-1.3,1.853-1.365,1.026,1.394.043,6.567-2.663,1.961L5.414,10.665,4.387,9.271,6.24,7.906l.959,1.3a.159.159,0,0,0,.223.033l.513-.378a.16.16,0,0,0,.034-.223L5.483,5.268a.159.159,0,0,0-.223-.034l-.513.378a.159.159,0,0,0-.033.223l.959,1.3L3.821,8.5l-.96-1.3a.159.159,0,0,0-.223-.034l-.513.378a.159.159,0,0,0-.033.223L4.8,11.439a.156.156,0,0,0,.08.057l6.892,2.19a.16.16,0,0,0,.143-.024"
 												transform="translate(0 0)"
-											/>
+											/> */}
 											<path
 												className="b-navbar-mobile"
 												d="M90.485,14.8H87.8a3.643,3.643,0,0,1-1.877-.5,3.744,3.744,0,0,1-1.362-1.368,3.794,3.794,0,0,1,0-3.777,3.8,3.8,0,0,1,1.362-1.374,3.684,3.684,0,0,1,3.371-.188,3.756,3.756,0,0,1,1.242.893l-.378.354A3.242,3.242,0,0,0,87.8,7.8a3.141,3.141,0,0,0-1.614.435A3.25,3.25,0,0,0,85,9.411a3.245,3.245,0,0,0,0,3.245,3.276,3.276,0,0,0,1.179,1.184,3.106,3.106,0,0,0,1.614.441h2.152V11.614H87.5V11.1h2.987Z"
@@ -3452,8 +3487,8 @@ export const NavbarMovil: React.FC = () => {
 														className="h-[40px] w-full flex items-center border-b-solid border-b-[1px] border-[#e6e6e6] px-[10px]"
 														key={index}
 														onClick={() =>
-														(window.location.href =
-															item.url)
+															(window.location.href =
+																item.url)
 														}>
 														<span>
 															{item.label}
@@ -3542,8 +3577,8 @@ export const NavbarMovil: React.FC = () => {
 									<g
 										transform="translate(2 547.534)"
 										onClick={() =>
-										(window.location.href =
-											'/contactenos')
+											(window.location.href =
+												'/contactenos')
 										}>
 										<g
 											className="u-navbar-mobile"
@@ -3629,8 +3664,8 @@ export const NavbarMovil: React.FC = () => {
 									<g
 										transform="translate(2 526.796)"
 										onClick={() =>
-										(window.location.href =
-											'codigo-linea-etica')
+											(window.location.href =
+												'codigo-linea-etica')
 										}>
 										<g
 											className="s-navbar-mobile"
@@ -4409,11 +4444,16 @@ export const NavbarMovil: React.FC = () => {
 							</g>
 							<g transform="translate(37 4.493)">
 								<g className="l-navbar-mobile">
-									<path
+									<a href="/">
+										<foreignObject width={31} height={30}>
+											<img src="/amarey-logo.png" />
+										</foreignObject>
+									</a>
+									{/* <path
 										className="m-navbar-mobile"
 										d="M18.058,19.489l4.281,5.827a.162.162,0,0,1,.03.094l.024,4.562a.16.16,0,0,1-.159.16l-.637,0a.159.159,0,0,1-.16-.158l-.009-1.618-2.3.012.009,1.619a.159.159,0,0,1-.159.16l-.637,0a.158.158,0,0,1-.159-.158L18.16,25.8a.159.159,0,0,1,.158-.16l.637,0a.16.16,0,0,1,.16.159l.009,1.618,2.3-.012-.009-1.731-3.887-5.292-3.307.017L10.39,25.731l.009,1.73,2.3-.012-.009-1.618a.159.159,0,0,1,.158-.16l.637,0a.159.159,0,0,1,.16.159l.022,4.191a.159.159,0,0,1-.158.16l-.637,0a.159.159,0,0,1-.16-.158L12.705,28.4l-2.3.012.009,1.619a.16.16,0,0,1-.159.16l-.637,0a.159.159,0,0,1-.16-.158l-.024-4.562a.159.159,0,0,1,.03-.094l4.22-5.872a.161.161,0,0,1,.128-.066l4.118-.021a.158.158,0,0,1,.129.065m-6.63-4.765-6.888-2.2a.154.154,0,0,0-.1,0L.11,13.959a.159.159,0,0,0-.1.2l.2.6a.159.159,0,0,0,.2.1l1.536-.508.723,2.185-1.537.508a.159.159,0,0,0-.1.2l.2.6a.16.16,0,0,0,.2.1l3.98-1.316a.159.159,0,0,0,.1-.2l-.2-.6a.16.16,0,0,0-.2-.1l-1.537.508-.722-2.185L4.5,13.515l6.256,2,.511,1.546.527,1.594L7.958,23.984l-1.644.543-.722-2.185,1.537-.508a.159.159,0,0,0,.1-.2l-.2-.6a.159.159,0,0,0-.2-.1l-3.98,1.316a.159.159,0,0,0-.1.2l.2.6a.159.159,0,0,0,.2.1l1.537-.508.723,2.185-1.537.508a.159.159,0,0,0-.1.2l.2.6a.159.159,0,0,0,.2.1L8.5,24.809a.159.159,0,0,0,.08-.058L12.8,18.879a.158.158,0,0,0,.022-.143L11.53,14.827a.159.159,0,0,0-.1-.1m8.494-1.076,6.865-2.27a.158.158,0,0,0,.079-.058l2.663-3.7a.159.159,0,0,0-.036-.222l-.517-.372a.159.159,0,0,0-.222.036l-.945,1.314L25.94,7.029l.944-1.314a.159.159,0,0,0-.036-.222l-.517-.372a.158.158,0,0,0-.222.036l-2.446,3.4a.159.159,0,0,0,.036.223l.517.372a.159.159,0,0,0,.222-.036L25.383,7.8l1.869,1.343-1.01,1.405-6.235,2.062-2.686-1.93-.034-6.567L18.3,2.713l1.869,1.343L19.222,5.37a.159.159,0,0,0,.036.222l.517.372A.159.159,0,0,0,20,5.927l2.446-3.4a.159.159,0,0,0-.036-.222L21.89,1.93a.159.159,0,0,0-.222.036L20.723,3.28,18.855,1.938,19.8.623A.159.159,0,0,0,19.763.4L19.246.03a.158.158,0,0,0-.222.036l-2.663,3.7a.162.162,0,0,0-.03.094l.038,7.231a.158.158,0,0,0,.066.128l3.344,2.4a.159.159,0,0,0,.143.022m11.56.953.193-.607a.159.159,0,0,0-.1-.2l-4.346-1.387a.16.16,0,0,0-.1,0l-6.865,2.27a.157.157,0,0,0-.1.1L18.909,18.7a.158.158,0,0,0,.023.142l4.281,5.828a.162.162,0,0,0,.08.057l4.346,1.388a.159.159,0,0,0,.2-.1l.193-.606a.158.158,0,0,0-.1-.2l-1.542-.493.7-2.193,1.542.492a.159.159,0,0,0,.2-.1l.193-.607a.159.159,0,0,0-.1-.2l-3.993-1.274a.158.158,0,0,0-.2.1l-.194.607a.158.158,0,0,0,.1.2l1.541.493-.7,2.193L23.829,23.9l-3.888-5.293,1.006-3.15L27.182,13.4l1.648.527-.7,2.193-1.542-.493a.16.16,0,0,0-.2.1l-.193.607a.159.159,0,0,0,.1.2l3.992,1.274a.159.159,0,0,0,.2-.1l.194-.607a.16.16,0,0,0-.1-.2l-1.542-.492.7-2.193,1.542.493a.16.16,0,0,0,.2-.1m-19.57-.94,3.315-2.442a.16.16,0,0,0,.065-.13L15.244,3.86a.157.157,0,0,0-.031-.093L12.508.093a.159.159,0,0,0-.223-.034l-.513.378a.159.159,0,0,0-.033.223l.96,1.3L10.846,3.328l-.96-1.3a.159.159,0,0,0-.223-.033l-.513.378a.159.159,0,0,0-.033.223L11.6,5.966A.159.159,0,0,0,11.825,6l.513-.378a.159.159,0,0,0,.034-.223l-.96-1.3,1.853-1.365,1.026,1.394.043,6.567-2.663,1.961L5.414,10.665,4.387,9.271,6.24,7.906l.959,1.3a.159.159,0,0,0,.223.033l.513-.378a.16.16,0,0,0,.034-.223L5.483,5.268a.159.159,0,0,0-.223-.034l-.513.378a.159.159,0,0,0-.033.223l.959,1.3L3.821,8.5l-.96-1.3a.159.159,0,0,0-.223-.034l-.513.378a.159.159,0,0,0-.033.223L4.8,11.439a.156.156,0,0,0,.08.057l6.892,2.19a.16.16,0,0,0,.143-.024"
 										transform="translate(0 0)"
-									/>
+									/> */}
 									<path
 										className="h-navbar-mobile"
 										d="M90.485,14.8H87.8a3.643,3.643,0,0,1-1.877-.5,3.744,3.744,0,0,1-1.362-1.368,3.794,3.794,0,0,1,0-3.777,3.8,3.8,0,0,1,1.362-1.374,3.684,3.684,0,0,1,3.371-.188,3.756,3.756,0,0,1,1.242.893l-.378.354A3.242,3.242,0,0,0,87.8,7.8a3.141,3.141,0,0,0-1.614.435A3.25,3.25,0,0,0,85,9.411a3.245,3.245,0,0,0,0,3.245,3.276,3.276,0,0,0,1.179,1.184,3.106,3.106,0,0,0,1.614.441h2.152V11.614H87.5V11.1h2.987Z"
@@ -4543,26 +4583,6 @@ export const NavbarMovil: React.FC = () => {
 							</clipPath>
 						</defs>
 						<g>
-							{/* <g
-								transform="translate(0 0)"
-								style={{ zIndex: 1 }}
-								onClick={handleChangeSelectedLanguage}>
-								<foreignObject
-									x={0}
-									y={0}
-									width={51}
-									height={51}>
-									<img
-										src={
-											selectedLanguage === 'en'
-												? '/images/english-mobile.png'
-												: '/images/spanish-movil.png'
-										}
-										alt=""
-										className="h-full w-full"
-									/>
-								</foreignObject>
-							</g> */}
 							<g
 								className="f-navbar-mobile"
 								transform="matrix(1, 0, 0, 1, 280, 10)"
@@ -4579,9 +4599,10 @@ export const NavbarMovil: React.FC = () => {
 											data-name="Componente 38 – 3"
 											width="25"
 											height="25"
-											viewBox="0 0 25 25"
-										>
-											<g id="Grupo_5836" data-name="Grupo 5836">
+											viewBox="0 0 25 25">
+											<g
+												id="Grupo_5836"
+												data-name="Grupo 5836">
 												<path
 													id="Trazado_68877"
 													data-name="Trazado 68877"
@@ -4620,8 +4641,7 @@ export const NavbarMovil: React.FC = () => {
 											data-name="Componente 38 – 3"
 											width="25"
 											height="25"
-											viewBox="0 0 25 25"
-										>
+											viewBox="0 0 25 25">
 											<defs>
 												<clipPath id="clip-path">
 													<path
@@ -4633,7 +4653,9 @@ export const NavbarMovil: React.FC = () => {
 													/>
 												</clipPath>
 											</defs>
-											<g id="Grupo_5837" data-name="Grupo 5837">
+											<g
+												id="Grupo_5837"
+												data-name="Grupo 5837">
 												<path
 													id="Trazado_68882"
 													data-name="Trazado 68882"
@@ -4645,8 +4667,7 @@ export const NavbarMovil: React.FC = () => {
 													id="Grupo_5836"
 													data-name="Grupo 5836"
 													transform="translate(0.876 0.876)"
-													clipPath="url(#clip-path)"
-												>
+													clipPath="url(#clip-path)">
 													<path
 														id="Trazado_68883"
 														data-name="Trazado 68883"
@@ -4713,17 +4734,19 @@ export const NavbarMovil: React.FC = () => {
 									)}
 								</foreignObject>
 							</g>
-
-							<g transform="translate(37 7.004)">
-								<a href="/">
+							<a href="/">
+								<g transform="translate(37 7.004)">
 									<g
 										className="c-navbar-mobile"
 										transform="translate(0 -2.512)">
-										<path
+										<foreignObject width={31} height={30}>
+											<img src="/amarey-logo.png" />
+										</foreignObject>
+										{/* <path
 											className="d-navbar-mobile"
 											d="M18.058,19.489l4.281,5.827a.162.162,0,0,1,.03.094l.024,4.562a.16.16,0,0,1-.159.16l-.637,0a.159.159,0,0,1-.16-.158l-.009-1.618-2.3.012.009,1.619a.159.159,0,0,1-.159.16l-.637,0a.158.158,0,0,1-.159-.158L18.16,25.8a.159.159,0,0,1,.158-.16l.637,0a.16.16,0,0,1,.16.159l.009,1.618,2.3-.012-.009-1.731-3.887-5.292-3.307.017L10.39,25.731l.009,1.73,2.3-.012-.009-1.618a.159.159,0,0,1,.158-.16l.637,0a.159.159,0,0,1,.16.159l.022,4.191a.159.159,0,0,1-.158.16l-.637,0a.159.159,0,0,1-.16-.158L12.705,28.4l-2.3.012.009,1.619a.16.16,0,0,1-.159.16l-.637,0a.159.159,0,0,1-.16-.158l-.024-4.562a.159.159,0,0,1,.03-.094l4.22-5.872a.161.161,0,0,1,.128-.066l4.118-.021a.158.158,0,0,1,.129.065m-6.63-4.765-6.888-2.2a.154.154,0,0,0-.1,0L.11,13.959a.159.159,0,0,0-.1.2l.2.6a.159.159,0,0,0,.2.1l1.536-.508.723,2.185-1.537.508a.159.159,0,0,0-.1.2l.2.6a.16.16,0,0,0,.2.1l3.98-1.316a.159.159,0,0,0,.1-.2l-.2-.6a.16.16,0,0,0-.2-.1l-1.537.508-.722-2.185L4.5,13.515l6.256,2,.511,1.546.527,1.594L7.958,23.984l-1.644.543-.722-2.185,1.537-.508a.159.159,0,0,0,.1-.2l-.2-.6a.159.159,0,0,0-.2-.1l-3.98,1.316a.159.159,0,0,0-.1.2l.2.6a.159.159,0,0,0,.2.1l1.537-.508.723,2.185-1.537.508a.159.159,0,0,0-.1.2l.2.6a.159.159,0,0,0,.2.1L8.5,24.809a.159.159,0,0,0,.08-.058L12.8,18.879a.158.158,0,0,0,.022-.143L11.53,14.827a.159.159,0,0,0-.1-.1m8.494-1.076,6.865-2.27a.158.158,0,0,0,.079-.058l2.663-3.7a.159.159,0,0,0-.036-.222l-.517-.372a.159.159,0,0,0-.222.036l-.945,1.314L25.94,7.029l.944-1.314a.159.159,0,0,0-.036-.222l-.517-.372a.158.158,0,0,0-.222.036l-2.446,3.4a.159.159,0,0,0,.036.223l.517.372a.159.159,0,0,0,.222-.036L25.383,7.8l1.869,1.343-1.01,1.405-6.235,2.062-2.686-1.93-.034-6.567L18.3,2.713l1.869,1.343L19.222,5.37a.159.159,0,0,0,.036.222l.517.372A.159.159,0,0,0,20,5.927l2.446-3.4a.159.159,0,0,0-.036-.222L21.89,1.93a.159.159,0,0,0-.222.036L20.723,3.28,18.855,1.938,19.8.623A.159.159,0,0,0,19.763.4L19.246.03a.158.158,0,0,0-.222.036l-2.663,3.7a.162.162,0,0,0-.03.094l.038,7.231a.158.158,0,0,0,.066.128l3.344,2.4a.159.159,0,0,0,.143.022m11.56.953.193-.607a.159.159,0,0,0-.1-.2l-4.346-1.387a.16.16,0,0,0-.1,0l-6.865,2.27a.157.157,0,0,0-.1.1L18.909,18.7a.158.158,0,0,0,.023.142l4.281,5.828a.162.162,0,0,0,.08.057l4.346,1.388a.159.159,0,0,0,.2-.1l.193-.606a.158.158,0,0,0-.1-.2l-1.542-.493.7-2.193,1.542.492a.159.159,0,0,0,.2-.1l.193-.607a.159.159,0,0,0-.1-.2l-3.993-1.274a.158.158,0,0,0-.2.1l-.194.607a.158.158,0,0,0,.1.2l1.541.493-.7,2.193L23.829,23.9l-3.888-5.293,1.006-3.15L27.182,13.4l1.648.527-.7,2.193-1.542-.493a.16.16,0,0,0-.2.1l-.193.607a.159.159,0,0,0,.1.2l3.992,1.274a.159.159,0,0,0,.2-.1l.194-.607a.16.16,0,0,0-.1-.2l-1.542-.492.7-2.193,1.542.493a.16.16,0,0,0,.2-.1m-19.57-.94,3.315-2.442a.16.16,0,0,0,.065-.13L15.244,3.86a.157.157,0,0,0-.031-.093L12.508.093a.159.159,0,0,0-.223-.034l-.513.378a.159.159,0,0,0-.033.223l.96,1.3L10.846,3.328l-.96-1.3a.159.159,0,0,0-.223-.033l-.513.378a.159.159,0,0,0-.033.223L11.6,5.966A.159.159,0,0,0,11.825,6l.513-.378a.159.159,0,0,0,.034-.223l-.96-1.3,1.853-1.365,1.026,1.394.043,6.567-2.663,1.961L5.414,10.665,4.387,9.271,6.24,7.906l.959,1.3a.159.159,0,0,0,.223.033l.513-.378a.16.16,0,0,0,.034-.223L5.483,5.268a.159.159,0,0,0-.223-.034l-.513.378a.159.159,0,0,0-.033.223l.959,1.3L3.821,8.5l-.96-1.3a.159.159,0,0,0-.223-.034l-.513.378a.159.159,0,0,0-.033.223L4.8,11.439a.156.156,0,0,0,.08.057l6.892,2.19a.16.16,0,0,0,.143-.024"
 											transform="translate(0 0)"
-										/>
+										/> */}
 										<path
 											className="e-navbar-mobile"
 											d="M90.485,14.8H87.8a3.643,3.643,0,0,1-1.877-.5,3.744,3.744,0,0,1-1.362-1.368,3.794,3.794,0,0,1,0-3.777,3.8,3.8,0,0,1,1.362-1.374,3.684,3.684,0,0,1,3.371-.188,3.756,3.756,0,0,1,1.242.893l-.378.354A3.242,3.242,0,0,0,87.8,7.8a3.141,3.141,0,0,0-1.614.435A3.25,3.25,0,0,0,85,9.411a3.245,3.245,0,0,0,0,3.245,3.276,3.276,0,0,0,1.179,1.184,3.106,3.106,0,0,0,1.614.441h2.152V11.614H87.5V11.1h2.987Z"
@@ -4780,8 +4803,8 @@ export const NavbarMovil: React.FC = () => {
 											transform="translate(-21.638 -7.833)"
 										/>
 									</g>
-								</a>
-							</g>
+								</g>
+							</a>
 							<g
 								transform="translate(-17.918 -1.985)"
 								onClick={() => setOpenMenu(!openMenu)}>

@@ -6,8 +6,11 @@ import {CarouselHeaderItems, carouselHeaderItems} from 'mocks/carouselHeader.moc
 import Slide4 from './components/Slide4'
 /** Hooks */
 import useCarouselHome from 'utils/hooks/carousel'
+import useLayout from 'hooks/ancho.hook'
+import { useLanguage } from 'context/language'
 
 const CarouselHeader: React.FC = () => {
+	const { selectedLanguage } = useLanguage()
 	/** Hooks */
 	const {
 		showPopup,
@@ -19,10 +22,12 @@ const CarouselHeader: React.FC = () => {
 		handleOpenPopup,
 		handleOnSelected
 	} = useCarouselHome();
+	
+	const { isSmallScreen } = useLayout()
 
 	return (
 		<div className='h-full'>
-			<Carousel slide={slide} slideInterval={20000}>
+			<Carousel slide={false} slideInterval={20000} className={`${isSmallScreen ? 'h-[625px]' : ''}`}>
 				{carouselHeaderItems.map(
 					(item: CarouselHeaderItems, index: number) => (
 						<React.Fragment key={index}>
@@ -46,11 +51,11 @@ const CarouselHeader: React.FC = () => {
 				className={`fixed h-screen w-screen top-0 left-0 z-[100]${showPopup ? ' flex' : ' hidden'}`}
 			>
 				<video
-					src="https://grupoamarey.com/pdf/video/Origen pentamero_1.mp4"
+					src={selectedLanguage === 'es' && showPopup ? "https://grupoamarey.com/pdf/video/Origen pentamero_1.mp4" : selectedLanguage === 'en' && showPopup ? "https://grupoamarey.com/videos/videos_inlges/Pentamero_ingles.mp4" : ''}
 					className="w-full h-full"
 					id="video-1"
 					controls
-					autoPlay={false}
+					autoPlay={true}
 
 				/>
 				<span

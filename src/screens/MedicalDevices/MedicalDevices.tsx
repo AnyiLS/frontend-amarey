@@ -3,6 +3,7 @@ import useGeneral from 'hooks/general.hook'
 import DevicesMedical from './Components/DevicesMedical'
 import MedicalDevicesMOMobile from './MedicalDevicesMOMobile'
 import { useTranslation } from 'react-i18next'
+import useLayout from 'hooks/ancho.hook'
 
 const MedicalDevices: React.FC = (): JSX.Element => {
 	/** Hooks */
@@ -10,7 +11,9 @@ const MedicalDevices: React.FC = (): JSX.Element => {
 	const [ShowModal, setShowModal] = React.useState(false)
 	const [openShow, setOpenShow] = React.useState(false)
 
-	const {t} = useTranslation()
+	const { t } = useTranslation()
+	const { isSmallScreen } = useLayout()
+
 	return (
 		<React.Fragment>
 			{width > 1024 ? (
@@ -23,10 +26,10 @@ const MedicalDevices: React.FC = (): JSX.Element => {
 							}></DevicesMedical>
 					) : (
 						<svg
-						width="100%"
-						height="100%"
-						preserveAspectRatio="none"
-							viewBox="0 0 1920 1080">
+							width="100%"
+							height="100%"
+							preserveAspectRatio="none"
+							viewBox="0 0 1920 975">
 							<defs>
 								<style>
 									{
@@ -41,7 +44,7 @@ const MedicalDevices: React.FC = (): JSX.Element => {
 									<image
 										preserveAspectRatio="xMidYMid slice"
 										width={1920}
-          height={1077.895}
+										height={1077.895}
 										xlinkHref="/images/products/background-medical-devices.webp"
 									/>
 								</pattern>
@@ -107,27 +110,7 @@ const MedicalDevices: React.FC = (): JSX.Element => {
 										height={1080}
 									/>
 								</g>
-								<text
-									className="c-medical-devices"
-									transform="translate(403 833)">
-									<tspan x={-259.27} y={0}>
-										{t('EQUIPOS M\xC9DICOS ')}
-									</tspan>
-								</text>
-								<text
-									className="d-medical-devices"
-									transform="translate(968 778)">
-									<tspan x={0} y={23}>
-										{
-											t('Ofrecemos a los especialistas equipos de la m\xE1s alta tecnolog\xEDa ')
-										}
-									</tspan>
-									<tspan x={0} y={51}>
-										{
-											t('para el servicio y asistencia de los pacientes.')
-										}
-									</tspan>
-								</text>
+
 								<g
 									className="m-medical-devices"
 									transform="matrix(1, 0, 0, 1, -9, -6)">
@@ -145,10 +128,32 @@ const MedicalDevices: React.FC = (): JSX.Element => {
 										{t('SOLUCIONES EN SALUD')}
 									</tspan>
 								</text>
+								<text
+									className="c-medical-devices"
+									transform={'translate(403 733)'
+									}>
+									<tspan x={-259.27} y={0}>
+										{t('EQUIPOS M\xC9DICOS ')}
+									</tspan>
+								</text>
+								<text
+									className="d-medical-devices"
+									transform={'translate(968 678)'}>
+									<tspan x={0} y={23}>
+										{t(
+											'Ofrecemos a los especialistas equipos de la m\xE1s alta tecnolog\xEDa '
+										)}
+									</tspan>
+									<tspan x={0} y={51}>
+										{t(
+											'para el servicio y asistencia de los pacientes.'
+										)}
+									</tspan>
+								</text>
 								<g
 									onClick={() => setShowModal(true)}
 									className="g-medical-devices"
-									transform="translate(810 980.975)">
+									transform={isSmallScreen ? 'translate(810 800.975)' : "translate(810 830.975)"}>
 									<defs>
 										<style>
 											{
@@ -162,9 +167,7 @@ const MedicalDevices: React.FC = (): JSX.Element => {
 											width={299.362}
 											height={72.775}
 											filterUnits="userSpaceOnUse">
-											<feOffset
-												dy={3}
-											/>
+											<feOffset dy={3} />
 											<feGaussianBlur
 												stdDeviation={3}
 												result="b-cococ"
@@ -177,7 +180,10 @@ const MedicalDevices: React.FC = (): JSX.Element => {
 											<feComposite in="SourceGraphic" />
 										</filter>
 									</defs>
-									<g transform="translate(-3778.748 -5819)" onMouseLeave={() => setOpenShow(false)} onMouseOver={() => setOpenShow(true)}>
+									<g
+										transform="translate(-3778.748 -5819)"
+										onMouseLeave={() => setOpenShow(false)}
+										onMouseOver={() => setOpenShow(true)}>
 										<g
 											className="c-cococ cursor-pointer"
 											transform="matrix(1, 0, 0, 1, 3778.75, 5819)">
@@ -190,7 +196,11 @@ const MedicalDevices: React.FC = (): JSX.Element => {
 										<text
 											className="b-cococ cursor-pointer"
 											transform="translate(3835.929 5863.388)"
-											style={{ fill: openShow ? "#001f5f" : '#ffffff' }}>
+											style={{
+												fill: openShow
+													? '#001f5f'
+													: '#ffffff',
+											}}>
 											<tspan x={0} y={0}>
 												{t('Conoce M\xE1s')}
 											</tspan>
@@ -198,18 +208,18 @@ const MedicalDevices: React.FC = (): JSX.Element => {
 									</g>
 								</g>
 								<a href="/productos">
-								<path
-									className="i-medical-devices"
-									d="M45.263,0V19.012L61.725,9.505l-7.863-4.54Z"
-									transform="translate(201.725 50.773) rotate(180)"
-								/>
-								<text
-									className="j-medical-devices"
-									transform="translate(232.852 49.768)">
-									<tspan x={-71.52} y={0}>
-										{t('Volver')}
-									</tspan>
-								</text>
+									<path
+										className="i-medical-devices"
+										d="M45.263,0V19.012L61.725,9.505l-7.863-4.54Z"
+										transform="translate(201.725 50.773) rotate(180)"
+									/>
+									<text
+										className="j-medical-devices"
+										transform="translate(232.852 49.768)">
+										<tspan x={-71.52} y={0}>
+											{t('Volver')}
+										</tspan>
+									</text>
 								</a>
 							</g>
 						</svg>

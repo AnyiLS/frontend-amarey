@@ -7,16 +7,22 @@ const MedicalDevicesMOMobile: React.FC = (): JSX.Element => {
 	const [height, setHeight] = React.useState<number>(0)
 
 	React.useEffect(() => {
-		if (document.getElementById('navbar__container')) setHeight(document.getElementById('navbar__container')?.clientHeight ?? 0)
+		if (document.getElementById('navbar__container'))
+			setHeight(
+				document.getElementById('navbar__container')?.clientHeight ?? 0
+			)
 	}, [])
 
-	const {t} = useTranslation()
-
+	const { t } = useTranslation()
 
 	return (
 		<React.Fragment>
 			{view === 0 ? (
-				<svg viewBox="2 0 414 800" width='100%' style={{ height: "100%" }} preserveAspectRatio='none'>
+				<svg
+					viewBox="2 0 414 700"
+					width="100%"
+					style={{ height: '100%' }}
+					preserveAspectRatio="none">
 					<defs>
 						<style>
 							{
@@ -96,30 +102,7 @@ const MedicalDevicesMOMobile: React.FC = (): JSX.Element => {
 							height={855}
 							transform="translate(1.541)"
 						/>
-						<text
-							className="d-reward-2-mobile"
-							transform="translate(208.541 645)">
-							<tspan x={-109.536} y={0}>
-								{t('EQUIPOS MÉDICOS')}
-							</tspan>
-						</text>
-						<text
-							className="e-reward-2-mobile"
-							transform="translate(36.541 681)">
-							<tspan x={0} y={13}>
-								{
-									t('Ofrecemos a los especialistas equipos de la más ')
-								}
-							</tspan>
-							<tspan x={0} y={31}>
-								{
-									t('alta tecnología para el servicio y asistencia de ')
-								}
-							</tspan>
-							<tspan x={0} y={49}>
-								{t('los pacientes.')}
-							</tspan>
-						</text>
+
 						<g
 							className="o-reward-2-mobile"
 							transform="matrix(1, 0, 0, 1, -7.46, -6)">
@@ -137,7 +120,11 @@ const MedicalDevicesMOMobile: React.FC = (): JSX.Element => {
 								{t(' Soluciones en salud')}
 							</tspan>
 						</text>
-						<g transform="translate(368.125 13.292)" onClick={() => window.location.href = '/productos'}>
+						<g
+							transform="translate(368.125 13.292)"
+							onClick={() =>
+								(window.location.href = '/productos')
+							}>
 							<path
 								className="a-reward-2-mobile"
 								onClick={() => setView(0)}
@@ -145,26 +132,53 @@ const MedicalDevicesMOMobile: React.FC = (): JSX.Element => {
 								transform="translate(0 0)"
 							/>
 						</g>
-						<g
-							transform="translate(93.539 736.493)"
-							onClick={() => setView(1)}>
-							<g
-								className="n-reward-2-mobile"
-								transform="matrix(1, 0, 0, 1, -101, -777.49)">
-								<path
-									className="h-reward-2-mobile"
-									d="M230,0H47.176C28.161,0,11.086,12.6,4.142,31.746L0,43.169H181.308c20.259,0,38.4-13.581,45.534-34.092Z"
-									transform="translate(101 777.49)"
-								/>
-							</g>
+						<g transform="translate(0 -200)">
 							<text
-								className="g-reward-2-mobile"
-								transform="translate(55.5 28.584)">
-								<tspan x={0} y={0}>
-									{t('Conoce Más')}
+								className="d-reward-2-mobile"
+								transform="translate(208.541 645)">
+								<tspan x={-109.536} y={0}>
+									{t('EQUIPOS MÉDICOS')}
 								</tspan>
 							</text>
+							<text
+								className="e-reward-2-mobile"
+								transform="translate(36.541 681)">
+								<tspan x={0} y={13}>
+									{t(
+										'Ofrecemos a los especialistas equipos de la más '
+									)}
+								</tspan>
+								<tspan x={0} y={31}>
+									{t(
+										'alta tecnología para el servicio y asistencia de '
+									)}
+								</tspan>
+								<tspan x={0} y={49}>
+									{t('los pacientes.')}
+								</tspan>
+							</text>
+							<g
+								transform="translate(93.539 736.493)"
+								onClick={() => setView(1)}>
+								<g
+									className="n-reward-2-mobile"
+									transform="matrix(1, 0, 0, 1, -101, -777.49)">
+									<path
+										className="h-reward-2-mobile"
+										d="M230,0H47.176C28.161,0,11.086,12.6,4.142,31.746L0,43.169H181.308c20.259,0,38.4-13.581,45.534-34.092Z"
+										transform="translate(101 777.49)"
+									/>
+								</g>
+								<text
+									className="g-reward-2-mobile"
+									transform="translate(55.5 28.584)">
+									<tspan x={0} y={0}>
+										{t('Conoce Más')}
+									</tspan>
+								</text>
+							</g>
 						</g>
+
 						<g transform="translate(0 -2990)">
 							<path
 								className="i-reward-2-mobile"
@@ -490,56 +504,58 @@ const MedicalDevicesMOMobile: React.FC = (): JSX.Element => {
 							className="f-reward-2-mobile"
 							transform="translate(37.541 468)">
 							<tspan x={0} y={13}>
-								{
-									t('Con una variada gama de soluciones para áreas ')
-								}
+								{t(
+									'Con una variada gama de soluciones para áreas '
+								)}
 							</tspan>
 							<tspan x={0} y={31}>
-								{
-									t('especializadas, UCIs, quirófanos, urgencias y ')
-								}
+								{t(
+									'especializadas, UCIs, quirófanos, urgencias y '
+								)}
 							</tspan>
 							<tspan x={0} y={49}>
 								{t('hospitalización. ')}
 							</tspan>
 							<tspan x={0} y={67} />
 							<tspan x={0} y={85}>
-								{
-									t('En cumplimiento de la Ley 1672 del 19 de julio de ')
-								}
+								{t(
+									'En cumplimiento de la Ley 1672 del 19 de julio de '
+								)}
 							</tspan>
 							<tspan x={0} y={103}>
-								{
-									t('2013, Decreto 284 de 2018 y Resolución 851 del ')
-								}
+								{t(
+									'2013, Decreto 284 de 2018 y Resolución 851 del '
+								)}
 							</tspan>
 							<tspan x={0} y={121}>
-								{
-									t('2022. Amarey Nova Medical S.A, Ucipharma S.A. ')
-								}
+								{t(
+									'2022. Amarey Nova Medical S.A, Ucipharma S.A. '
+								)}
 							</tspan>
 							<tspan x={0} y={139}>
-								{
-									t('y Novatécnica S.A.S., ponen a su disposición ')
-								}
+								{t(
+									'y Novatécnica S.A.S., ponen a su disposición '
+								)}
 							</tspan>
 							<tspan x={0} y={157}>
-								{
-									t('nuestro proceso de disposición y gestión de los ')
-								}
+								{t(
+									'nuestro proceso de disposición y gestión de los '
+								)}
 							</tspan>
 							<tspan x={0} y={175}>
-								{
-									t('residuos de aparatos eléctricos y electrónicos ')
-								}
+								{t(
+									'residuos de aparatos eléctricos y electrónicos '
+								)}
 							</tspan>
 							<tspan x={0} y={193}>
-								{t('(RAEE) relacionados específicamente con los ')}
+								{t(
+									'(RAEE) relacionados específicamente con los '
+								)}
 							</tspan>
 							<tspan x={0} y={211}>
-								{
-									t('equipos biomédicos eléctricos o electrónicos ')
-								}
+								{t(
+									'equipos biomédicos eléctricos o electrónicos '
+								)}
 							</tspan>
 							<tspan x={0} y={229}>
 								{t('(con excepción de todos los productos ')}
@@ -548,9 +564,9 @@ const MedicalDevicesMOMobile: React.FC = (): JSX.Element => {
 								{t('implantados e infectados) que distribuye ')}
 							</tspan>
 							<tspan x={0} y={265}>
-								{
-									t('nuestras compañías. Para este fin, solicitamos ')
-								}
+								{t(
+									'nuestras compañías. Para este fin, solicitamos '
+								)}
 							</tspan>
 							<tspan x={0} y={283}>
 								{t('comunicarse directamente con nuestro ')}
@@ -559,17 +575,19 @@ const MedicalDevicesMOMobile: React.FC = (): JSX.Element => {
 								{t('representante de ventas asignado a su ')}
 							</tspan>
 							<tspan x={0} y={319}>
-								{t('institución con el objetivo de programar su ')}
+								{t(
+									'institución con el objetivo de programar su '
+								)}
 							</tspan>
 							<tspan x={0} y={337}>
-								{
-									t('recolección. Para la disposición final de los RAEE ')
-								}
+								{t(
+									'recolección. Para la disposición final de los RAEE '
+								)}
 							</tspan>
 							<tspan x={0} y={355}>
-								{
-									t('realizamos la gestión a través de una empresa ')
-								}
+								{t(
+									'realizamos la gestión a través de una empresa '
+								)}
 							</tspan>
 							<tspan x={0} y={373} xmlSpace="preserve">
 								{t('autorizada por la Autoridad Ambiental.  ')}
