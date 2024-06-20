@@ -46,3 +46,7 @@
   body {
     overflow-x: hidden !important;
   }
+
+  [data-testid="carousel"] .snap-mandatory {
+    overflow-y: hidden !important;
+  }
