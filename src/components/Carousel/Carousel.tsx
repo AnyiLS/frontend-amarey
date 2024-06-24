@@ -26,8 +26,8 @@ const CarouselHeader: React.FC = () => {
 	const { isSmallScreen } = useLayout()
 
 	return (
-		<div className='h-full'>
-			<Carousel slide={false} slideInterval={20000} className={`${isSmallScreen ? 'h-[625px]' : ''}`}>
+		<div className='h-screen'>
+			<Carousel slide={false} slideInterval={20000}>
 				{carouselHeaderItems.map(
 					(item: CarouselHeaderItems, index: number) => (
 						<React.Fragment key={index}>
