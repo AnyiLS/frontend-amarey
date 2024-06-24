@@ -27,10 +27,9 @@ const Slide4: React.FC<SlideFourProps> = ({ image, onReturn, onOpenPopup }): JSX
 	return (
 		<React.Fragment>
 			<svg
+				viewBox={`0 0 1920 975`}
 				width="100%"
-				height='100vh'
-				viewBox={`0 40 1920 1045`}
-				style={{ height: 'auto' }}
+				className="h-screen"
 				preserveAspectRatio="none"
 			>
 				<defs>

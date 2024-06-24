@@ -17,10 +17,10 @@ const Slide3: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 
 	return (
 		<svg
-			width="100%"
-			height="auto"
-			viewBox={`0 ${isSmallScreen ? '95' : '92'} 1920 975`}
-			preserveAspectRatio='none'>
+		viewBox={`0 95 1920 975`}
+		width="100%"
+		className="h-screen"
+		preserveAspectRatio="none">
 			<defs>
 				<clipPath id="a-sliders-1">
 					<rect
