@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
 	} = useNavbarComponents()
 
 	return (
-		<div className="navbar__estatic" id="navbar__container">
+		<div className="navbar__estatic fixed top-0 w-full z-[1]" id="navbar__container">
 			<svg
 				viewBox="0 0 1920 105"
 				width={window.screen.width}

@@ -20,7 +20,7 @@ const Slide1: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 
   return (
     <svg
-      viewBox={`0 0 1920 975`}
+      viewBox="0 0 1920 1080"
       width="100%"
       className="h-screen"
       preserveAspectRatio="none"
@@ -106,12 +106,13 @@ const Slide1: React.FC<ISlide> = ({ onClick }): JSX.Element => {
           id="m-bienvenida-1"
           width={1}
           height={1}
-          viewBox={`25.027 ${isSmallScreen ? '0' : '78.091'} 1562.724 953.539`}
+          viewBox="-5 -50 1562.724 953.539"
+          // viewBox={isSmallScreen ? '-155 -50 1562.724 953.539' : '25'`25.027 ${isSmallScreen ? '0' : '78.091'} 1562.724 953.539`}
         >
           <image
-            preserveAspectRatio="xMidYMid slice"
-            width={1587.751}
-            height={1058.5}
+            preserveAspectRatio="none"
+            width={1555}
+            height={1000}
             xlinkHref="/images/movil.webp"
           />
         </pattern>
@@ -195,7 +196,7 @@ const Slide1: React.FC<ISlide> = ({ onClick }): JSX.Element => {
           height={968.423}
           transform="translate(0 2.683)"
         />
-        <g className="d-bienvenida-1" transform={isSmallScreen ? 'translate(0 0)' : 'translate(0 0)'}>
+        <g className="d-bienvenida-1" transform='translate(0 90)'>
           <path
             className="a-bienvenida-1"
             d="M267.257,157.266H0V0H406.518V40.716c0,64.369-62.349,116.55-139.261,116.55"
@@ -239,7 +240,7 @@ const Slide1: React.FC<ISlide> = ({ onClick }): JSX.Element => {
         />
         <g
           className="x-bienvenida-1"
-          transform="matrix(1, 0, 0, 1, -332.25, -1.93)"
+          transform="matrix(1, 0, 0, 1, -332.25, 20.93)"
         >
           <path
             className="c-bienvenida-1"
