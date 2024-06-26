@@ -31,7 +31,8 @@ const CarouselHeader: React.FC = () => {
 				{carouselHeaderItems.map(
 					(item: CarouselHeaderItems, index: number) => (
 						<React.Fragment key={index}>
-							{selected === index ? (
+							{index === 0 && item.slide(height.toString(),handleOnSelected)}
+							{/* {selected === index ? (
 								<Slide4
 									height={height.toString()}
 									image={item.image}
@@ -42,7 +43,7 @@ const CarouselHeader: React.FC = () => {
 								<React.Fragment>
 									{item.slide(height.toString(),handleOnSelected)}
 								</React.Fragment>
-							)}
+							)} */}
 						</React.Fragment>
 					)
 				)}
