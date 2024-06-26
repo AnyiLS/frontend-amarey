@@ -20,7 +20,7 @@ const Slide1: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 
   return (
     <svg
-      viewBox="0 0 1920 1080"
+      viewBox="0 0 1920 975"
       width="100%"
       className="h-screen"
       preserveAspectRatio="none"
