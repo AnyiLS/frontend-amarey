@@ -111,7 +111,7 @@ const Slide1: React.FC<ISlide> = ({ onClick }): JSX.Element => {
         >
           <image
             preserveAspectRatio="none"
-            width={1555}
+            width={1395}
             height={1000}
             xlinkHref="/images/movil.webp"
           />
@@ -203,7 +203,7 @@ const Slide1: React.FC<ISlide> = ({ onClick }): JSX.Element => {
           />
         </g>
       </g>
-      <g transform="translate(58.607)">
+      <g transform="translate(239.607)">
         <g className="e-bienvenida-1">
           <path
             className="a-bienvenida-1"
@@ -223,7 +223,7 @@ const Slide1: React.FC<ISlide> = ({ onClick }): JSX.Element => {
           />
           <text
             className="h-bienvenida-1"
-            transform="translate(226.641 860.695) rotate(-65)"
+            transform="translate(241.641 819.695) rotate(-65)"
             onClick={() => onClick(0)}
           >
             <tspan x={0} y={0}>
@@ -232,7 +232,7 @@ const Slide1: React.FC<ISlide> = ({ onClick }): JSX.Element => {
           </text>
         </g>
       </g>
-      <g transform="translate(332.249 1.934)">
+      <g transform="translate(505.249 1.934)">
         <path
           className="i-bienvenida-1"
           d="M1695.549,14.03H812.3c-149.253,0-254.9,20.808-341.291,200.168L107.8,982.84H1695.549Z"
@@ -240,7 +240,7 @@ const Slide1: React.FC<ISlide> = ({ onClick }): JSX.Element => {
         />
         <g
           className="x-bienvenida-1"
-          transform="matrix(1, 0, 0, 1, -332.25, 20.93)"
+          transform="matrix(1, 0, 0, 1, -332.25, 60.93)"
         >
           <path
             className="c-bienvenida-1"
@@ -256,7 +256,7 @@ const Slide1: React.FC<ISlide> = ({ onClick }): JSX.Element => {
             {t("con la salud y la vida")}
           </tspan>
         </text>
-        <g transform="translate(383.174 247.268)">
+        <g transform="scale(0.9) translate(459.174 340.268)">
           <g transform="translate(72.285 358.239)">
             <g transform="translate(0 0)">
               <path
