@@ -111,7 +111,7 @@ const Slide1: React.FC<ISlide> = ({ onClick }): JSX.Element => {
         >
           <image
             preserveAspectRatio="none"
-            width={1395}
+            width={1548}
             height={1000}
             xlinkHref="/images/movil.webp"
           />
@@ -204,7 +204,7 @@ const Slide1: React.FC<ISlide> = ({ onClick }): JSX.Element => {
         </g>
       </g>
       <g transform="translate(239.607)">
-        <g className="e-bienvenida-1">
+        <g className="e-bienvenida-1" transform="translate(-204 10)">
           <path
             className="a-bienvenida-1"
             d="M597.5,770.2V126.916H529.28c-142.747,0-271.5,78.251-326.412,198.387L0,770.2Z"
@@ -232,7 +232,7 @@ const Slide1: React.FC<ISlide> = ({ onClick }): JSX.Element => {
           </text>
         </g>
       </g>
-      <g transform="translate(505.249 1.934)">
+      <g transform="translate(331.249 8.934)">
         <path
           className="i-bienvenida-1"
           d="M1695.549,14.03H812.3c-149.253,0-254.9,20.808-341.291,200.168L107.8,982.84H1695.549Z"
