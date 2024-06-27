@@ -94,14 +94,15 @@ const Lineacodigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 									selectedLanguage === 'es'
 										? 'translate(-36 -71)'
 										: 'translate(-36 -70)'
-								}>
+								} onClick={onClose}>
 								<path
+								onClick={onClose}
 									className="d-linea cursor-pointer"
 									d="M45.263,0V19.012L61.725,9.505l-7.863-4.54Z"
 									transform="translate(237.725 115.762) rotate(180)"
 								/>
 								<text
-									className="e-linea cursor-pointer"
+									className="e-linea cursor-pointer" onClick={onClose}
 									transform="translate(268.852 114.756)">
 									<tspan x={-71.52} y={0}>
 										{t('Volver')}
@@ -141,14 +142,14 @@ const Lineacodigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							</g>
 							<text
 								className="k-linea"
-								transform="translate(692 219.271)">
+								transform="translate(692 179.271)">
 								<tspan x={0} y={55}>
 									{t('L\xEDnea \xE9tica')}
 								</tspan>
 							</text>
 							<text
 								className="l-linea"
-								transform="translate(692 335.868)">
+								transform="translate(692 280.868)">
 								<tspan x={0} y={23}>
 									{t(
 										'La l\xEDnea \xE9tica es un canal dise\xF1ado para que empleados, proveedores, aliados '
@@ -186,7 +187,7 @@ const Lineacodigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							</text>
 							<text
 								className="m-linea"
-								transform="translate(692 607.434)">
+								transform="translate(692 547.434)">
 								<tspan x={0} y={30}>
 									{t(
 										'\xBFC\xF3mo puedo comunicarme con la l\xEDnea \xE9tica?'
@@ -195,7 +196,7 @@ const Lineacodigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							</text>
 							<text
 								className="l-linea"
-								transform="translate(692 670)">
+								transform="translate(692 610)">
 								<a href="mailto:linea.etica@grupoamarey.com">
 									<tspan x={0} y={23}>
 										{t(
@@ -205,7 +206,7 @@ const Lineacodigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 								</a>
 							</text>
 							<g
-								transform="translate(60.899 117.86)"
+								transform="translate(60.899 55.86)"
 								onClick={() => setShowPop(true)}>
 								<g
 									className="r-linea cursor-pointer"
