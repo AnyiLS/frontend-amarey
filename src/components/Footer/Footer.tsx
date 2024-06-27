@@ -72,14 +72,20 @@ const Footer: React.FC = (): JSX.Element => {
 					</a>
 				</text>
 				<a href="https://facebook.com/GrupoAmarey/" target='_blank' rel='noreferrer'>
-				<path
+					<foreignObject transform='translate(1486.158 203.371)' width={40} height={76}>
+						<img src="/images/facebook.webp" alt="" />
+					</foreignObject>
+				{/* <path
 					className="a-5 cursor-pointer"
 					d="M31.751,65.1l1.188-7.749H25.5v-5.03c0-2.12,1.039-4.186,4.369-4.186h3.382v-6.6a41.238,41.238,0,0,0-6-.524c-6.124,0-10.127,3.712-10.127,10.431v5.907H10.318V65.1h6.807V83.831a27.114,27.114,0,0,0,8.379,0V65.1Z"
 					transform="translate(1486.158 173.371)"
-				/>
+				/> */}
 				</a>
 				<a href="https://www.instagram.com/grupoamarey" target='_blank' rel='noreferrer'>
-				<g transform="translate(1561.764 214.595)">
+					<foreignObject transform="translate(1555.764 204.595)" width={55} height={60}>
+						<img src='/images/instagram.webp'/>
+					</foreignObject>
+				{/* <g transform="translate(1561.764 214.595)">
 					
 						<path
 						className="a-5 cursor-pointer"
@@ -97,11 +103,14 @@ const Footer: React.FC = (): JSX.Element => {
 						d="M81.43,48.832a2.563,2.563,0,1,1-2.563-2.563,2.563,2.563,0,0,1,2.563,2.563"
 						transform="translate(-46.106 -38.873)"
 					/>
-				</g>
+				</g> */}
 				</a>
 
 				<a href="https://es.linkedin.com/company/grupo-amarey" target='_blank' rel='noreferrer'>
-				<g transform="translate(1642.894 215.435)">
+					<foreignObject transform="translate(1642.894 202.435)" width={55} height={60}>
+						<img src="/images/linkedin.webp" alt="" />
+					</foreignObject>
+				{/* <g transform="translate(1642.894 215.435)">
 					<path
 						className="a-5 cursor-pointer"
 						d="M129.729,55.067c.57-.641,1.04-1.291,1.626-1.844a8.922,8.922,0,0,1,6.416-2.532,14.816,14.816,0,0,1,4.036.492,7.887,7.887,0,0,1,5.6,5.89,24.621,24.621,0,0,1,.745,6.749c.009,4.8-.013,9.593,0,14.388,0,.45-.124.567-.567.564q-3.705-.03-7.413,0c-.434,0-.528-.13-.527-.541q.02-6.846,0-13.692a12.327,12.327,0,0,0-.4-3.4,3.821,3.821,0,0,0-4.2-2.978c-2.93.155-4.454,1.6-4.827,4.584a16.818,16.818,0,0,0-.13,2.142c0,4.438,0,8.878.012,13.316,0,.443-.11.573-.561.569q-3.733-.033-7.467,0c-.4,0-.515-.1-.514-.508q.015-13.182,0-26.364c0-.434.142-.535.553-.533q3.545.026,7.091,0c.434,0,.547.137.538.548-.025,1.051-.009,2.1-.009,3.152"
@@ -117,7 +126,7 @@ const Footer: React.FC = (): JSX.Element => {
 						d="M121.368,46.647a4.934,4.934,0,1,1-4.926-4.908,4.951,4.951,0,0,1,4.926,4.908"
 						transform="translate(-111.5 -41.739)"
 					/>
-				</g>
+				</g> */}
 				</a>
 				<g transform="translate(1435.956 98.428)">
 					<g className="e-5" transform="translate(0 0)">
