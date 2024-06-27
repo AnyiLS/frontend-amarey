@@ -24,17 +24,34 @@ export const CarouselMovil: React.FC = () => {
 		}
 	}, [])
 
+	const [w, setW] = React.useState(window.outerWidth);
+	const [to, setTo] = React.useState(0);
+
+	React.useEffect(() => {
+		const d = document.body.clientWidth;
+		console.log('d', d)
+		console.log('w', w)
+		
+		console.log('total: ', (w * 100) / d)
+
+		window.addEventListener('resize', () => setTo((w * 100) / d))
+
+		return () => {
+			window.removeEventListener('resize', () => setTo((w * 100) / d))
+		}
+	}, [])
+
 	return (
 		<React.Fragment>
 			{selectedImage === '' ? (
 				<Carousel
-					style={{ height: `calc(100vh - ${height}px)`, overflow: 'hidden' }}
+					style={{ height: `calc(100vh)`, overflow: 'hidden' }}
 					slide={false}
 					slideInterval={20000}>
 					<svg
-						viewBox={`2 0 414 906`}
+						viewBox={`2 0 414 860`}
 						width="100%"
-						height="100vh"
+						height="100%"
 						preserveAspectRatio="none">
 						<defs>
 							<style>

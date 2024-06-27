@@ -12,7 +12,7 @@ const MedicalDevices: React.FC = (): JSX.Element => {
 	const [openShow, setOpenShow] = React.useState(false)
 
 	const { t } = useTranslation()
-	const { isSmallScreen } = useLayout()
+	const { isSmallScreen, navbarHeight } = useLayout()
 
 	return (
 		<React.Fragment>
@@ -25,11 +25,12 @@ const MedicalDevices: React.FC = (): JSX.Element => {
 								setShowModal(false)
 							}></DevicesMedical>
 					) : (
-						<svg
+						<div className="h-full" style={{ marginTop: navbarHeight }}>
+							<svg
 							width="100%"
 							height="100%"
 							preserveAspectRatio="none"
-							viewBox="0 0 1920 975">
+							viewBox="0 0 1920 768">
 							<defs>
 								<style>
 									{
@@ -130,7 +131,7 @@ const MedicalDevices: React.FC = (): JSX.Element => {
 								</text>
 								<text
 									className="c-medical-devices"
-									transform={'translate(403 733)'
+									transform={'translate(403 633)'
 									}>
 									<tspan x={-259.27} y={0}>
 										{t('EQUIPOS M\xC9DICOS ')}
@@ -138,7 +139,7 @@ const MedicalDevices: React.FC = (): JSX.Element => {
 								</text>
 								<text
 									className="d-medical-devices"
-									transform={'translate(968 678)'}>
+									transform={'translate(968 578)'}>
 									<tspan x={0} y={23}>
 										{t(
 											'Ofrecemos a los especialistas equipos de la m\xE1s alta tecnolog\xEDa '
@@ -153,7 +154,7 @@ const MedicalDevices: React.FC = (): JSX.Element => {
 								<g
 									onClick={() => setShowModal(true)}
 									className="g-medical-devices"
-									transform={isSmallScreen ? 'translate(810 800.975)' : "translate(810 830.975)"}>
+									transform='translate(810 680.975)'>
 									<defs>
 										<style>
 											{
@@ -181,12 +182,11 @@ const MedicalDevices: React.FC = (): JSX.Element => {
 										</filter>
 									</defs>
 									<g
-										transform="translate(-3778.748 -5819)"
 										onMouseLeave={() => setOpenShow(false)}
 										onMouseOver={() => setOpenShow(true)}>
 										<g
 											className="c-cococ cursor-pointer"
-											transform="matrix(1, 0, 0, 1, 3778.75, 5819)">
+											transform="matrix(1, 0, 0, 1, 0, 0)">
 											<path
 												className="a-cococ cursor-pointer"
 												d="M281.362,0H57.711C34.449,0,13.561,15.983,5.067,40.281L0,54.775H221.8c24.783,0,46.972-17.232,55.7-43.257Z"
@@ -195,7 +195,7 @@ const MedicalDevices: React.FC = (): JSX.Element => {
 										</g>
 										<text
 											className="b-cococ cursor-pointer"
-											transform="translate(3835.929 5863.388)"
+											transform="translate(55 42)"
 											style={{
 												fill: openShow
 													? '#001f5f'
@@ -223,6 +223,7 @@ const MedicalDevices: React.FC = (): JSX.Element => {
 								</a>
 							</g>
 						</svg>
+						</div>
 					)}
 				</React.Fragment>
 			) : (

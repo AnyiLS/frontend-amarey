@@ -52,7 +52,7 @@ const Servicios: React.FC = () => {
 	const { selectedLanguage } = useLanguage()
 
 	return (
-		<div style={{ height: '100%' }}>
+		<div className='h-full'>
 			<Carousel
 				slide={false}
 				onSlideChange={(e) => setSlideIndex(e)}
@@ -66,7 +66,6 @@ const Servicios: React.FC = () => {
 								slideIndex,
 								handleChangeSlide,
 								() => {
-									console.log('gola')
 									setOpenVideo(true)
 								}
 							)}

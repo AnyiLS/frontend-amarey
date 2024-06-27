@@ -2,6 +2,7 @@ import React from 'react'
 import useGeneral from 'hooks/general.hook'
 import FilosofiaMobile from './FilosofiaMobile'
 import { useTranslation } from 'react-i18next'
+import useLayout from 'hooks/ancho.hook'
 
 const Filosofia: React.FC = () => {
 	/** Hooks */
@@ -9,10 +10,12 @@ const Filosofia: React.FC = () => {
 
 	const {t} = useTranslation()
 
+	const { navbarHeight } = useLayout()
+
 	return (
 		<div>
 			{width > 767 ? (
-				<React.Fragment>
+				<div className='h-full' style={{ marginTop: navbarHeight }}>
 					<svg viewBox="1 10 1920 3650" width='100%' preserveAspectRatio='none'>
 						<defs>
 							<style>
@@ -894,7 +897,7 @@ const Filosofia: React.FC = () => {
 							</text>
 						</g>
 					</svg>
-				</React.Fragment>
+				</div>
 			) : (
 				<React.Fragment>
 					<FilosofiaMobile />

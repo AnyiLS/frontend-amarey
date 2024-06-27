@@ -5,10 +5,12 @@ import Lineacodigo from './Components/Lineacodigo'
 import EticMobile from './EticMobile'
 import { useTranslation } from 'react-i18next'
 import { useLanguage } from 'context/language'
+import useLayout from 'hooks/ancho.hook'
 
 const RoboticSurgery: React.FC = (): JSX.Element => {
 	/** Hooks */
 	const { width, height } = useGeneral()
+	const { navbarHeight } = useLayout()
 
 	const [view, setView] = React.useState(0)
 	const {t} = useTranslation()
@@ -22,9 +24,10 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 					{view === 1 && <Codigo onClose={() => setView(0)}/>}
 					{view === 2 && <Lineacodigo onClose={() => setView(0)}/>}
 					{view === 0 && (
-						<svg
+						<div className='h-full' style={{ marginTop: navbarHeight }}>
+							<svg
 							width="100%"
-							height={height}
+							height='100%'
 							viewBox="0 0 1920 1080"
 							preserveAspectRatio="none">
 							<defs>
@@ -147,7 +150,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 									/>
 									<text
 										className="c-etic"
-										transform="translate(572.846 732.688)">
+										transform="translate(572.846 532.688)">
 										<tspan x={selectedLanguage === 'es' ? 179.02 : 70.02} y={55}>
 											{t('L\xEDnea ')}
 										</tspan>
@@ -179,7 +182,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 								</g>
 								<text
 									className="g-etic"
-									transform="translate(278 735.688)">
+									transform="translate(278 535.688)">
 									<tspan x={0} y={55}>
 										{t('C\xF3digo de')}
 									</tspan>
@@ -208,7 +211,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 								</text>
 								<g
 									className="j-etic cursor-pointer"
-									transform="translate(814 871.163) rotate(180)"
+									transform="translate(814 681.163) rotate(180)"
 									onClick={() => setView(1)}>
 									<circle
 										className="k-etic cursor-pointer"
@@ -225,7 +228,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 								</g>
 								<g
 									className="j-etic cursor-pointer"
-									transform="translate(1106 817.163)"
+									transform="translate(1106 627.163)"
 									onClick={() => setView(2)}>
 									<circle
 										className="m cursor-pointer"
@@ -241,6 +244,7 @@ const RoboticSurgery: React.FC = (): JSX.Element => {
 								</g>
 							</g>
 						</svg>
+						</div>
 					)}
 				</React.Fragment>
 			) : (

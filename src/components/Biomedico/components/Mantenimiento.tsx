@@ -1,11 +1,14 @@
 import React from 'react'
 import { IMantenimiento } from './Mantebiomedico'
 import { useTranslation } from 'react-i18next'
+import useLayout from 'hooks/ancho.hook'
 
 const Mantenimiento: React.FC<IMantenimiento> = ({ onClick }): JSX.Element => {
 	const {t} = useTranslation()
+	const { navbarHeight } = useLayout();
+
 	return (
-		<div>
+		<div className='h-full' style={{ marginTop: navbarHeight }}>
 			<svg
 				width="100%"
 				height={'100%'}
@@ -62,7 +65,7 @@ const Mantenimiento: React.FC<IMantenimiento> = ({ onClick }): JSX.Element => {
 					<path
 						className="d-mante"
 						d="M1700.965,802.11l23.877,8.07q2.366.8,4.694,1.641c39.274,14.121,72.536,36.84,96.425,65.9,24.833,30.214,37.957,65.377,37.957,101.692v251.066h-2.269V979.416c0-73.5-54.041-139.263-137.677-167.54l-.164-.054-22.843-7.721Z"
-						transform="translate(1214.043 -1749.347) rotate(90)"
+						transform="translate(1000.043 -1749.347) rotate(90)"
 					/>
 					<path
 						className="d-mante"
@@ -87,7 +90,7 @@ const Mantenimiento: React.FC<IMantenimiento> = ({ onClick }): JSX.Element => {
 					height={81}
 					transform="translate(331 786)"
 				/>
-				<g transform="translate(1325.264 852)" onClick={onClick}>
+				<g transform="translate(1325.264 752)" onClick={onClick}>
 					<g
 						className="l cursor-pointer"
 						transform="matrix(1, 0, 0, 1, -1325.26, -852)">
@@ -110,7 +113,7 @@ const Mantenimiento: React.FC<IMantenimiento> = ({ onClick }): JSX.Element => {
 						transform="translate(118.409 23.332)"
 					/>
 				</g>
-				<text className="g-mante" transform="translate(1202 405)">
+				<text className="g-mante" transform="translate(1202 305)">
 					<tspan x={0} y={23}>
 						{t('Ofrecemos soluciones de mantenimiento ')}
 					</tspan>

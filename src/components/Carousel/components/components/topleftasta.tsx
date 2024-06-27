@@ -11,7 +11,7 @@ const TopLeftAsta: React.FC<any> = ({onOpenPopup}): JSX.Element => {
 
 	return (
 		<React.Fragment>
-			<g transform='translate(300 170)'>
+			<g transform='translate(400 230) scale(0.8)'>
 				<defs>
 					<style>
 						{

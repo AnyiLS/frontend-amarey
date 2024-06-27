@@ -44,3 +44,12 @@
   }
 }
 
+.container-carousel {
+  height: 100vh;
+}
+
+@media (max-height: 600px) {
+  .container-carousel {
+    height: 100%;
+  }
+}

@@ -16,7 +16,7 @@ const Elipses: React.FC = (): JSX.Element => {
 					<stop offset={1} stopColor="gray" stopOpacity={0} />
 				</radialGradient>
 			</defs>
-			<g className='elipses__container'>
+			<g style={{ transform: 'translate(640px, 580px) scale(0.8)' }}>
 				<ellipse
 					className="a-item-1826"
 					cx={132.5}

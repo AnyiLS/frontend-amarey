@@ -37,7 +37,7 @@ const Cifras: React.FC = () => {
 
   return (
     <div className="relative">
-      <svg width='100%' style={{ height: '100%'}} viewBox="0 0 1920 1080" preserveAspectRatio="none">
+      <svg width='100%' style={{ height: '100%'}} viewBox="0 0 1920 800" preserveAspectRatio="none">
       <defs>
       <style>
         {
@@ -230,7 +230,7 @@ const Cifras: React.FC = () => {
           </g>
         </g>
       </g>
-      <text className="h-2" transform="translate(284.131 700.51)">
+      <text className="h-2" transform="translate(234.131 525.51)">
         <tspan x={selectedLanguage === 'es' ? 0 : 20} y={100}>
           {t("Cifras de")}
         </tspan>
@@ -238,7 +238,7 @@ const Cifras: React.FC = () => {
           {t("impacto")}
         </tspan>
       </text>
-      <g transform="translate(0.208 0)" onClick={() => {setOpenModal(true); setSelected(2)}}>
+      <g transform="translate(0.208 -80)" onClick={() => {setOpenModal(true); setSelected(2)}}>
         <path
           className="i-2"
           d="M282.186.49H952.023V587.4H-8.185l131.6-425.818C149.837,64.133,212.559.49,282.186.49Z"
@@ -283,7 +283,7 @@ const Cifras: React.FC = () => {
           </g>
         </g>
       </g>
-      <g transform="translate(0.208 0)" onClick={() => {setOpenModal(true); setSelected(1)}}>
+      <g transform="translate(0.208 -80)" onClick={() => {setOpenModal(true); setSelected(1)}}>
         <path
           className="i-2"
           d="M208.125.49H673.547V382.075H.729L88.043,105.227C108.026,41.868,155.464.49,208.125.49Z"
@@ -325,7 +325,7 @@ const Cifras: React.FC = () => {
           transform="translate(652.798 294.657) rotate(180)"
         />
       </g>
-      <g transform="translate(982.696 595.632)" onClick={() => {setOpenModal(true); setSelected(3)}}>
+      <g transform="translate(982.696 355.632)" onClick={() => {setOpenModal(true); setSelected(3)}}>
         <g transform="translate(0)">
           <path
             className="i-2 cursor-pointer"
@@ -371,7 +371,7 @@ const Cifras: React.FC = () => {
           </g>
         </g>
       </g>
-      <g transform="translate(1180.07 746.383)">
+      <g transform="translate(1180.07 506.383)">
         <g transform="translate(88.068 39.634)" onClick={() => {setOpenModal(true); setSelected(4)}}>
           <path
             className="i-2"

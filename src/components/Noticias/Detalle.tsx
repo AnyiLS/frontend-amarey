@@ -1,10 +1,12 @@
+import useLayout from 'hooks/ancho.hook'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
 const Detalle = () => {
 	const {t} = useTranslation()
+	const { navbarHeight } = useLayout()
 	return (
-		<div>
+		<div className="h-full" style={{ marginTop: navbarHeight }}>
 			<svg viewBox="5 93 1920 1295">
 				<defs>
 					<style>

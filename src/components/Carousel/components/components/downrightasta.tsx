@@ -13,7 +13,7 @@ const DownRightAsta: React.FC<{ onUnselected: () => void }> = ({
 
 	return (
 		<React.Fragment>
-			<g onClick={onUnselected} transform="translate(1064 480)">
+			<g onClick={onUnselected} transform="translate(1014 480) scale(0.8)">
 				<defs>
 					<style>
 						{

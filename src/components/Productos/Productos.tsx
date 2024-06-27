@@ -9,18 +9,18 @@ const Productos: React.FC = (): JSX.Element => {
 	/** Hooks */
 	const [hover, setHover] = React.useState<number | null>(2)
 
-	const {t} = useTranslation()
+	const { t } = useTranslation()
 	const { selectedLanguage } = useLanguage()
 
 	return (
 		<React.Fragment>
 			{width > 1024 ? (
 				<div>
-					<svg viewBox="0 100 1923 998">
+					<svg viewBox="0 100 1923 990">
 						<defs>
 							<style>
 								{
-									".a-products{fill:none;}.b-products{fill:#fff;stroke:#707070;}.c-products{clip-path:url(#a-products);}.d-products{fill:#e7002a;}.e-products,.q-products{fill:#001f5f;}.f-products{fill:url(#b-products);}.g-products{fill:#182856;font-size:24px;font-family:Silka-SemiBold, Silka;font-weight:600;}.h-products{fill:url(#e-products);}.i-products{fill:url(#h-products);}.j-products{fill:url(#k-products);}.k-products{fill:url(#n-products);}.l-products{fill:url(#q-products);}.m-products{fill:url(#t-products);}.n-products{fill:url(#w-products);}.o-products{fill:url(#z-products);}.p-products{fill:url(#ac-products);}.q-products{font-size:100px;font-family:'Kiona-Bold';font-weight:700;}.r-products{stroke:none;}.s-products{filter:url(#ad-products);}.t-products{filter:url(#aa-products);}.u-products{filter:url(#x-products);}.v-products{filter:url(#u-products);}.w-products{filter:url(#r-products);}.x-products{filter:url(#o-products);}.y-products{filter:url(#l-products);}.z-products{filter:url(#i-products);}.aa-products{filter:url(#f-products);}.ab-products{filter:url(#c-products);}"
+									".a-products{fill:none;}.b-products{fill:#fff;stroke:#707070;}.c-products{clip-path:url(#a-products);}.d-products{fill:#e7002a;}.e-products,.q-products{fill:#001f5f;}.f-products{fill:url(#b-products);}.g-products{fill:#182856;font-size:24px;font-family:Silka-SemiBold, Silka;font-weight:600;}.h-products{fill:url(#e-products);}.i-products{fill:url(#h-products);}.j-products{fill:url(#k-products);}.k-products{fill:url(#n-products);}.l-products{fill:url(#q-products);}.m-products{fill:url(#t-products);}.n-products{fill:url(#w-products);}.o-products{fill:url(#z-products);}.p-products{fill:url(#ac-products);}.q-products{font-size:81px;font-family:'Kiona-Bold';font-weight:700;}.r-products{stroke:none;}.s-products{filter:url(#ad-products);}.t-products{filter:url(#aa-products);}.u-products{filter:url(#x-products);}.v-products{filter:url(#u-products);}.w-products{filter:url(#r-products);}.x-products{filter:url(#o-products);}.y-products{filter:url(#l-products);}.z-products{filter:url(#i-products);}.aa-products{filter:url(#f-products);}.ab-products{filter:url(#c-products);}"
 								}
 							</style>
 							<clipPath id="a-products">
@@ -312,7 +312,7 @@ const Productos: React.FC = (): JSX.Element => {
 								<path
 									className="e-products"
 									d="M1925.864,98.615A131.184,131.184,0,0,0,1825.079,51.38H1645.036v.048H1535.662A129.636,129.636,0,0,1,1432.106,0h-1.612a131.443,131.443,0,0,0,32.243,30.6,130.739,130.739,0,0,0,72.925,22.152H1715.7V52.7h109.374a129.628,129.628,0,0,1,100.785,47.9Z"
-									transform="translate(-2.863)"
+									transform="translate(-2.863 102)"
 								/>
 								<path
 									className="e-products"
@@ -377,10 +377,22 @@ const Productos: React.FC = (): JSX.Element => {
 								<text
 									className="g-products"
 									transform="translate(1282 932.405)">
-									<tspan x={selectedLanguage === 'es' ? -111.852 : -61.852} y={0}>
+									<tspan
+										x={
+											selectedLanguage === 'es'
+												? -111.852
+												: -61.852
+										}
+										y={0}>
 										{t('Cuidado avanzado')}
 									</tspan>
-									<tspan x={selectedLanguage === 'es' ? -62.784 : -72.784} y={26}>
+									<tspan
+										x={
+											selectedLanguage === 'es'
+												? -62.784
+												: -72.784
+										}
+										y={26}>
 										{t('de heridas')}
 									</tspan>
 								</text>
@@ -441,7 +453,11 @@ const Productos: React.FC = (): JSX.Element => {
 								</g>
 								<text
 									className="g-products"
-									transform={selectedLanguage === 'es' ? "translate(516 931.487)" : "translate(502 931.487)"}>
+									transform={
+										selectedLanguage === 'es'
+											? 'translate(516 931.487)'
+											: 'translate(502 931.487)'
+									}>
 									<tspan x={0} y={0}>
 										{t('Genómica y genética')}
 									</tspan>
@@ -473,10 +489,22 @@ const Productos: React.FC = (): JSX.Element => {
 								<text
 									className="g-products"
 									transform="translate(326.864 979.871)">
-									<tspan x={selectedLanguage === 'es' ? -71.928 : -103.928} y={0}>
+									<tspan
+										x={
+											selectedLanguage === 'es'
+												? -71.928
+												: -103.928
+										}
+										y={0}>
 										{t('Dispositivos')}
 									</tspan>
-									<tspan x={selectedLanguage === 'es' ? -116.52 : -46.52} y={28}>
+									<tspan
+										x={
+											selectedLanguage === 'es'
+												? -116.52
+												: -46.52
+										}
+										y={28}>
 										{t('médico-quirúrgicos')}
 									</tspan>
 								</text>
@@ -507,7 +535,11 @@ const Productos: React.FC = (): JSX.Element => {
 								</g>
 								<text
 									className="g-products"
-									transform={selectedLanguage === 'es' ? "translate(1486 600)" : "translate(1510 600)"}>
+									transform={
+										selectedLanguage === 'es'
+											? 'translate(1486 600)'
+											: 'translate(1510 600)'
+									}>
 									<tspan x={0} y={0}>
 										{t('Logística hospitalaria')}
 									</tspan>
@@ -538,7 +570,11 @@ const Productos: React.FC = (): JSX.Element => {
 								</g>
 								<text
 									className="g-products"
-									transform={selectedLanguage === 'es' ? "translate(1281 644)" : "translate(1266 644)"}>
+									transform={
+										selectedLanguage === 'es'
+											? 'translate(1281 644)'
+											: 'translate(1266 644)'
+									}>
 									<tspan x={-61.824} y={0}>
 										{t('Ortopedia')}
 									</tspan>
@@ -569,7 +605,11 @@ const Productos: React.FC = (): JSX.Element => {
 								</g>
 								<text
 									className="g-products"
-									transform={selectedLanguage === 'es' ? "translate(860 600)" : "translate(845 600)"}>
+									transform={
+										selectedLanguage === 'es'
+											? 'translate(860 600)'
+											: 'translate(845 600)'
+									}>
 									<tspan x={0} y={0}>
 										{t('Equipos médicos')}
 									</tspan>
@@ -641,7 +681,7 @@ const Productos: React.FC = (): JSX.Element => {
 						</a>
 						<text
 							className="q-products"
-							transform="translate(357 170.384)">
+							transform="translate(450 200.384)">
 							<tspan x={28.487} y={100} xmlSpace="preserve">
 								{t(' SOLUCIONES EN SALUD')}
 							</tspan>

@@ -1,26 +1,26 @@
-import { useLanguage } from 'context/language';
+import { useLanguage } from 'context/language'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 /** Interfaces & Types */
-import type { ISlide } from 'utils/models/Slide';
+import type { ISlide } from 'utils/models/Slide'
 /** Styles */
-import './styles/slide3.css';
-import useLayout from 'hooks/ancho.hook';
+import './styles/slide3.css'
+import useLayout from 'hooks/ancho.hook'
 
 const Slide3: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 	/** Hooks */
-	const {t} = useTranslation()
+	const { t } = useTranslation()
 	const { isSmallScreen } = useLayout()
 
 	/** Contexts */
-	const { selectedLanguage } = useLanguage();
+	const { selectedLanguage } = useLanguage()
 
 	return (
 		<svg
-		viewBox={`0 95 1920 975`}
-		width="100%"
-		className="h-screen"
-		preserveAspectRatio="none">
+			viewBox="0 95 1920 975"
+			width="100%"
+			height="100%"
+			preserveAspectRatio="none">
 			<defs>
 				<clipPath id="a-sliders-1">
 					<rect
@@ -40,11 +40,11 @@ const Slide3: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 					id="c-sliders-1"
 					width={1}
 					height={1}
-					viewBox="190.898 335.331 1096.781 749.098">
+					viewBox="0 900 1626.781 975">
 					<image
 						preserveAspectRatio="xMidYMid slice"
-						width={1626.644}
-						height={1084.43}
+						width={2000}
+						height={2000}
 						xlinkHref="/images/slider3.webp"
 					/>
 				</pattern>
@@ -82,7 +82,13 @@ const Slide3: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 					height={1084}
 					transform="translate(0 2.594)"
 				/>
-				<g className="d-sliders-1" transform={isSmallScreen ? "translate(0 95.406)" : "translate(0 0.406)"}>
+				<g
+					className="d-sliders-1"
+					transform={
+						isSmallScreen
+							? 'translate(0 95.406)'
+							: 'translate(0 0.406)'
+					}>
 					<path
 						className="a-sliders-1"
 						d="M267.257,175.872H0V0H406.518V45.533c0,71.985-62.349,130.339-139.261,130.339"
@@ -117,7 +123,7 @@ const Slide3: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 				/>
 				<g
 					className="m-sliders-1"
-					transform="matrix(1, 0, 0, 1, -328.9, -2.16)">
+					transform="matrix(1, 0, 0, 1, -328.9, 60.16)">
 					<path
 						className="c-sliders-1"
 						d="M0,422.172,144.937,90.939C168.523,35.9,224.173,0,285.908,0H1428V422.172Z"
@@ -125,7 +131,7 @@ const Slide3: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 					/>
 				</g>
 				<a href="/nuestros-aliados">
-					<g transform="translate(647.098 900.835)">
+					<g transform="translate(700.098 920.835)">
 						<g
 							className="l-sliders-1"
 							transform="matrix(1, 0, 0, 1, -976, -922)">
@@ -144,23 +150,33 @@ const Slide3: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 						</text>
 					</g>
 				</a>
-				<text
-					className="j-sliders-1"
-					transform="translate(841.098 805.835)">
-					<tspan x={selectedLanguage === 'es' ? -450.927 : -350.927} y={51}>
-						{t('desarrollo de tecnolog\xEDa en salud')}
-					</tspan>
-				</text>
-				<text
-					className="k-sliders-1"
-					transform="translate(839.098 710.835)">
-					<tspan x={selectedLanguage === 'es' ? -388.248 : -338.248} y={40}>
-						{t('Representamos las marcas de mayor')}
-					</tspan>
-					<tspan x={selectedLanguage === 'es' ? -446.607 : -386.607} y={82}>
-						{t('prestigio a nivel mundial en investigaci\xF3n y')}
-					</tspan>
-				</text>
+				<g transform='translate(90 30)'>
+					<text
+						className="j-sliders-1"
+						transform="translate(841.098 805.835)">
+						<tspan
+							x={selectedLanguage === 'es' ? -450.927 : -350.927}
+							y={51}>
+							{t('desarrollo de tecnolog\xEDa en salud')}
+						</tspan>
+					</text>
+					<text
+						className="k-sliders-1"
+						transform="translate(839.098 710.835)">
+						<tspan
+							x={selectedLanguage === 'es' ? -388.248 : -338.248}
+							y={40}>
+							{t('Representamos las marcas de mayor')}
+						</tspan>
+						<tspan
+							x={selectedLanguage === 'es' ? -446.607 : -386.607}
+							y={82}>
+							{t(
+								'prestigio a nivel mundial en investigaci\xF3n y'
+							)}
+						</tspan>
+					</text>
+				</g>
 			</g>
 		</svg>
 	)

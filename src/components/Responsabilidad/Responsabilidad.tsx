@@ -3,6 +3,7 @@ import React from 'react'
 import ResponsabilidadMobile from './ResponsabilidadMobile'
 import { useTranslation } from 'react-i18next'
 import { useLanguage } from 'context/language'
+import useLayout from 'hooks/ancho.hook'
 
 const Responsabilidad: React.FC = (): JSX.Element => {
 	/** States */
@@ -10,10 +11,11 @@ const Responsabilidad: React.FC = (): JSX.Element => {
 
 	const { t } = useTranslation()
 	const { selectedLanguage } = useLanguage()
+	const { navbarHeight } = useLayout()
 	return (
 		<React.Fragment>
 			{width > 767 ? (
-				<div>
+				<div className='h-full' style={{ marginTop: navbarHeight }}>
 					<svg
 						width="100%"
 						height={'100%'}
