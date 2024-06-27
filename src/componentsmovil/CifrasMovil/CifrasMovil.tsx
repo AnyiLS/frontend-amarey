@@ -26,7 +26,7 @@ export const CifrasMovil: React.FC = () => {
 			<svg
 				viewBox="14 0 412 895"
 				width="100%"
-				height="100vh"
+				height="100%"
 				preserveAspectRatio="none">
 				<defs>
 					<style>

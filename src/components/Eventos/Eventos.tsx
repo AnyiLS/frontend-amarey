@@ -3,10 +3,12 @@ import { CalendarItems, calendarItems } from './mocks/calendar.mock'
 import moment from 'moment'
 import EventosMobile from './EventosMobile'
 import useGeneral from 'hooks/general.hook'
+import useLayout from 'hooks/ancho.hook'
 
 const Eventos = () => {
 	/** Hooks  */
 	const { width } = useGeneral();
+	const { navbarHeight } = useLayout();
 
 	const month = moment().month()
 	const day = moment().date()
@@ -61,7 +63,7 @@ const Eventos = () => {
 	return (
 		<React.Fragment>
 			{width > 1024 ? (
-				<React.Fragment>
+				<div className='h-full' style={{ marginTop: navbarHeight }}>
 					{calendarItems.map((item: CalendarItems, index: number) => {
 						const Component = item.Component
 
@@ -79,7 +81,7 @@ const Eventos = () => {
 							)
 						else return <React.Fragment></React.Fragment>
 					})}
-				</React.Fragment>
+				</div>
 			) : (
 				<EventosMobile />
 			)}

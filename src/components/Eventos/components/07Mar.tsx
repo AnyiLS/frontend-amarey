@@ -12,7 +12,14 @@ export interface ICalendar {
 	onLessMonth: () => void
 }
 
-const Mar07: React.FC<ICalendar> = ({ month, next, prev, today, onChangeMonth, onLessMonth }) => {
+const Mar07: React.FC<ICalendar> = ({
+	month,
+	next,
+	prev,
+	today,
+	onChangeMonth,
+	onLessMonth,
+}) => {
 	const currentMonth = moment('02').month() + 1
 	const events = Object.values(daysMar).filter(
 		(item: any) => item.hasEvent === true
@@ -21,10 +28,10 @@ const Mar07: React.FC<ICalendar> = ({ month, next, prev, today, onChangeMonth, o
 		? daysMar[`${today}-${currentMonth}`]?.transform
 		: 'translate(0px, 0px)'
 
-		const {t} = useTranslation()
+	const { t } = useTranslation()
 
 	return (
-		<svg viewBox="-150 0 1920 998.106">
+		<svg viewBox="-150 0 1920 778.106">
 			<defs>
 				<style>
 					{
@@ -102,85 +109,562 @@ const Mar07: React.FC<ICalendar> = ({ month, next, prev, today, onChangeMonth, o
 					<rect className="a-item-1813" width={567} height={284} />
 				</clipPath>
 			</defs>
-			{currentMonth === 3 && today === moment().date() && (
-				<circle
-					className="z-item-1813"
-					cx={22}
-					cy={22}
-					r={22}
-					style={{ transform: currentTransform }}
-				/>
-			)}
-			{events.map((item: any, index: number) => (
-				<React.Fragment>
-					{currentTransform !== item.transform && (
-						<circle
-							key={index}
-							className="b-item-1813"
-							cx={22}
-							cy={22}
-							r={22}
-							style={{ transform: item.transform }}
-						/>
-					)}
-				</React.Fragment>
-			))}
+			<g transform="translate(0 -150)">
+				{currentMonth === 3 && today === moment().date() && (
+					<circle
+						className="z-item-1813"
+						cx={22}
+						cy={22}
+						r={22}
+						style={{ transform: currentTransform }}
+					/>
+				)}
+				{events.map((item: any, index: number) => (
+					<React.Fragment>
+						{currentTransform !== item.transform && (
+							<circle
+								key={index}
+								className="b-item-1813"
+								cx={22}
+								cy={22}
+								r={22}
+								style={{ transform: item.transform }}
+							/>
+						)}
+					</React.Fragment>
+				))}
+				<text className="d-item-1813" transform="translate(0 214.019)">
+					<tspan x={0} y={50}>
+						{t('Prográmese con ')}
+					</tspan>
+					<tspan x={0} y={100}>
+						{t('Grupo Amarey ')}
+					</tspan>
+				</text>
+				<g transform="translate(-140 -79.981)">
+					<circle
+						className="b-item-1813"
+						cx={17.5}
+						cy={17.5}
+						r={17.5}
+						transform="translate(416 867)"
+					/>
+					<text
+						className="g-item-1813"
+						transform="translate(458 893)">
+						<tspan x={0} y={0}>
+							{t('Fecha evento')}
+						</tspan>
+					</text>
+				</g>
+				<g transform="translate(-140 -79.981)">
+					<circle
+						className="h-item-1813"
+						cx={17.5}
+						cy={17.5}
+						r={17.5}
+						transform="translate(140 867)"
+					/>
+					<text
+						className="g-item-1813"
+						transform="translate(182 893)">
+						<tspan x={0} y={0}>
+							{t('Fecha de hoy')}
+						</tspan>
+					</text>
+				</g>
+				{currentMonth !== 3 && today !== 7 && (
+					<rect
+						className="h-item-1813"
+						width={44}
+						height={4}
+						rx={2}
+						transform="translate(335 558.019)"
+					/>
+				)}
+
+				<g transform="translate(-140 -133.981)">
+					<g className="m-item-1813" transform="translate(140 557)">
+						<g transform="translate(-140 -557)">
+							<text
+								className="n-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={30}>
+									{t('Do')}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(-54 -557)">
+							<text
+								className="n-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={30}>
+									{t('Lu')}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(32 -557)">
+							<text
+								className="n-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={30}>
+									{t('Ma')}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(118 -557)">
+							<text
+								className="n-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={30}>
+									{t('Mi')}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(204 -557)">
+							<text
+								className="n-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={30}>
+									{t('Ju')}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(290 -557)">
+							<text
+								className="n-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={30}>
+									{t('Vi')}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(376 -557)">
+							<text
+								className="n-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={30}>
+									{t('Sa')}
+								</tspan>
+							</text>
+						</g>
+					</g>
+					<g className="o-item-1813" transform="translate(140 610)">
+						<g transform="translate(-140 -557)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'25'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(-54 -557)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'26'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(32 -557)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'27'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(118 -557)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'28'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(204 -557)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'29'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(290 -557)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'01'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(376 -557)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'02'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(-140 -509)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'03'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(-54 -509)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'04'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(32 -509)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'05'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(118 -509)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'06'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(204 -509)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'07'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(290 -509)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'08'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(376 -509)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'09'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(-140 -461)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'10'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(-54 -461)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'11'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(32 -461)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'12'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(118 -461)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'13'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(204 -461)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'14'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(290 -461)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'15'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(376 -461)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'16'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(-140 -413)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'17'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(-54 -413)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'18'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(32 -413)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'19'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(118 -413)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'20'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(204 -413)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'21'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(290 -413)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'22'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(376 -413)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'23'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(-140 -365)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'24'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(-54 -365)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'25'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(32 -365)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'26'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(118 -365)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'27'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(204 -365)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'28'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(290 -365)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'29'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(376 -365)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'30'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(-140 -317)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'31'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(-54 -317)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'01'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(32 -317)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'02'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(118 -317)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'03'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(204 -317)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'04'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(290 -317)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'05'}
+								</tspan>
+							</text>
+						</g>
+						<g transform="translate(376 -317)">
+							<text
+								className="p-item-1813"
+								transform="translate(140 557)">
+								<tspan x={0} y={23}>
+									{'06'}
+								</tspan>
+							</text>
+						</g>
+					</g>
+					<text
+						className="q-item-1813"
+						transform="translate(140 525)">
+						<tspan x={0} y={0}>
+							{'Marzo 2024'}
+						</tspan>
+					</text>
+					<line
+						className="r-item-1813"
+						x2={567}
+						transform="translate(140 546)"
+					/>
+					<path
+						className="c-item-1813"
+						d="M13.947,0,27.893,23.908H0Z"
+						transform="translate(616.338 532.048) rotate(-90)"
+						onClick={onLessMonth}
+					/>
+					<path
+						className="c-item-1813"
+						d="M13.947,0,27.893,23.908H0Z"
+						transform="translate(698.246 504.155) rotate(90)"
+						onClick={onChangeMonth}
+					/>
+				</g>
+			</g>
+
 			<path
 				className="c-item-1813"
 				d="M1136.187,0H50.372C18.5,0-5.357,24.843,1.043,51.375L39.612,842.591l5.914,121.316c4.8,19.905,25.417,34.2,49.329,34.2H1136.187Z"
-				transform="translate(643.813 0.003)"
+				style={{
+					transform: 'scaleY(0.78) scaleX(1) translate(640px, 0px)',
+				}}
 			/>
-			<text className="d-item-1813" transform="translate(0 214.019)">
-			<tspan x={0} y={50}>
-					{t('Prográmese con ')}
-				</tspan>
-				<tspan x={0} y={100}>
-					{t('Grupo Amarey ')}
-				</tspan>
-			</text>
-			<g className="v-item-1813" transform="matrix(1, 0, 0, 1, 0, 0)">
-				<path
-					className="e-item-1813"
-					d="M714.62,44.719,661.7,503.6H267.94c-77.71,0-147.5,49.025-175.88,123.546L79.57,659.978a44.438,44.438,0,0,1-8.89-22.931L.27,44.873C-2.18,21.1,12.35,0,31.16,0H683.71c18.77,0,33.28,20.995,30.91,44.719"
-					transform="translate(828 160.36)"
-				/>
-			</g>
-			<g className="u-item-1813" transform="matrix(1, 0, 0, 1, 0, 0)">
-				<path
-					className="f-item-1813"
-					d="M661.7,488.86,646.33,622.152c-1.98,19.841-15.22,34.716-30.92,34.716H101.58c-8.54,0-16.36-4.409-22.01-11.63l12.49-32.831c28.38-74.521,98.17-123.546,175.88-123.546Z"
-					transform="translate(828 175.1)"
-				/>
-			</g>
-			<g transform="translate(-140 -79.981)">
-				<circle
-					className="b-item-1813"
-					cx={17.5}
-					cy={17.5}
-					r={17.5}
-					transform="translate(416 867)"
-				/>
-				<text className="g-item-1813" transform="translate(458 893)">
-					<tspan x={0} y={0}>
-						{t('Fecha evento')}
-					</tspan>
-				</text>
-			</g>
-			<g transform="translate(-140 -79.981)">
-				<circle
-					className="h-item-1813"
-					cx={17.5}
-					cy={17.5}
-					r={17.5}
-					transform="translate(140 867)"
-				/>
-				<text className="g-item-1813" transform="translate(182 893)">
-					<tspan x={0} y={0}>
-						{t('Fecha de hoy')}
-					</tspan>
-				</text>
-			</g>
-			<g transform="translate(-210.89 -41.981)">
+
+			<g transform="translate(-210.89 -251.981)">
 				<g transform="translate(1440.747 906.884)" onClick={next}>
 					<g
 						className="t-item-1813 cursor-pointer"
@@ -214,505 +698,49 @@ const Mar07: React.FC<ICalendar> = ({ month, next, prev, today, onChangeMonth, o
 					/>
 				</g>
 			</g>
-			<text className="j-item-1813" transform="translate(1436 718.106)">
-				<tspan x={-176.225} y={0}>
-					{'XVI Simposio:'}
-				</tspan>
-				<tspan x={-458.275} y={27}>
-					{'"Transformación de los modelos'}
-				</tspan>
-				<tspan x={-443.775} y={54}>
-					{'integrados de gestión en salud"'}
-				</tspan>
-			</text>
-			<text className="k-item-1813" transform="translate(1435 785.106)">
-				<tspan x={-314.64} y={17}>
-					{'Bogotá 7 y 8 de marzo Cosmos 100'}
-				</tspan>
-			</text>
-			<text className="l-item-1813" transform="translate(1002 126.019)">
-				<tspan x={0} y={0}>
-					{t('07 de marzo de 2024')}
-				</tspan>
-			</text>
-			{currentMonth !== 3 && today !== 7 && (
-				<rect
-				className="h-item-1813"
-				width={44}
-				height={4}
-				rx={2}
-				transform="translate(335 558.019)"
-			/>
-			)}
-			
-			<g transform="translate(-140 -133.981)">
-				<g className="m-item-1813" transform="translate(140 557)">
-					<g transform="translate(-140 -557)">
-						<text
-							className="n-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={30}>
-								{t('Do')}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(-54 -557)">
-						<text
-							className="n-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={30}>
-								{t('Lu')}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(32 -557)">
-						<text
-							className="n-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={30}>
-								{t('Ma')}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(118 -557)">
-						<text
-							className="n-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={30}>
-								{t('Mi')}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(204 -557)">
-						<text
-							className="n-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={30}>
-								{t('Ju')}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(290 -557)">
-						<text
-							className="n-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={30}>
-								{t('Vi')}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(376 -557)">
-						<text
-							className="n-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={30}>
-								{t('Sa')}
-							</tspan>
-						</text>
-					</g>
+
+			<g transform="translate(360 0) scale(0.7)">
+				<g className="v-item-1813" transform="matrix(1, 0, 0, 1, 0, 0)">
+					<path
+						className="e-item-1813"
+						d="M714.62,44.719,661.7,503.6H267.94c-77.71,0-147.5,49.025-175.88,123.546L79.57,659.978a44.438,44.438,0,0,1-8.89-22.931L.27,44.873C-2.18,21.1,12.35,0,31.16,0H683.71c18.77,0,33.28,20.995,30.91,44.719"
+						transform="translate(828 160.36)"
+					/>
 				</g>
-				<g className="o-item-1813" transform="translate(140 610)">
-					<g transform="translate(-140 -557)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'25'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(-54 -557)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'26'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(32 -557)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'27'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(118 -557)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'28'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(204 -557)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'29'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(290 -557)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'01'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(376 -557)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'02'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(-140 -509)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'03'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(-54 -509)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'04'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(32 -509)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'05'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(118 -509)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'06'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(204 -509)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'07'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(290 -509)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'08'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(376 -509)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'09'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(-140 -461)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'10'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(-54 -461)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'11'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(32 -461)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'12'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(118 -461)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'13'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(204 -461)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'14'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(290 -461)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'15'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(376 -461)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'16'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(-140 -413)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'17'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(-54 -413)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'18'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(32 -413)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'19'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(118 -413)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'20'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(204 -413)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'21'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(290 -413)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'22'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(376 -413)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'23'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(-140 -365)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'24'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(-54 -365)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'25'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(32 -365)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'26'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(118 -365)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'27'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(204 -365)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'28'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(290 -365)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'29'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(376 -365)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'30'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(-140 -317)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'31'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(-54 -317)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'01'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(32 -317)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'02'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(118 -317)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'03'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(204 -317)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'04'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(290 -317)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'05'}
-							</tspan>
-						</text>
-					</g>
-					<g transform="translate(376 -317)">
-						<text
-							className="p-item-1813"
-							transform="translate(140 557)">
-							<tspan x={0} y={23}>
-								{'06'}
-							</tspan>
-						</text>
-					</g>
+				<g className="u-item-1813" transform="matrix(1, 0, 0, 1, 0, 0)">
+					<path
+						className="f-item-1813"
+						d="M661.7,488.86,646.33,622.152c-1.98,19.841-15.22,34.716-30.92,34.716H101.58c-8.54,0-16.36-4.409-22.01-11.63l12.49-32.831c28.38-74.521,98.17-123.546,175.88-123.546Z"
+						transform="translate(828 175.1)"
+					/>
 				</g>
-				<text className="q-item-1813" transform="translate(140 525)">
-					<tspan x={0} y={0}>
-						{'Marzo 2024'}
+				<text
+					className="j-item-1813"
+					transform="translate(1436 718.106)">
+					<tspan x={-176.225} y={0}>
+						{'XVI Simposio:'}
+					</tspan>
+					<tspan x={-458.275} y={27}>
+						{'"Transformación de los modelos'}
+					</tspan>
+					<tspan x={-443.775} y={54}>
+						{'integrados de gestión en salud"'}
 					</tspan>
 				</text>
-				<line
-					className="r-item-1813"
-					x2={567}
-					transform="translate(140 546)"
-				/>
-				<path
-					className="c-item-1813"
-					d="M13.947,0,27.893,23.908H0Z"
-					transform="translate(616.338 532.048) rotate(-90)"
-					onClick={onLessMonth}
-				/>
-				<path
-					className="c-item-1813"
-					d="M13.947,0,27.893,23.908H0Z"
-					transform="translate(698.246 504.155) rotate(90)"
-					onClick={onChangeMonth}
-				/>
+				<text
+					className="k-item-1813"
+					transform="translate(1435 785.106)">
+					<tspan x={-314.64} y={17}>
+						{'Bogotá 7 y 8 de marzo Cosmos 100'}
+					</tspan>
+				</text>
+				<text
+					className="l-item-1813"
+					transform="translate(1002 126.019)">
+					<tspan x={0} y={0}>
+						{t('07 de marzo de 2024')}
+					</tspan>
+				</text>
 			</g>
 		</svg>
 	)

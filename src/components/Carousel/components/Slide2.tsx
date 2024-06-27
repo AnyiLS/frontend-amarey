@@ -1,28 +1,28 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import useLayout from 'hooks/ancho.hook'
 /** Contexts */
-import { useLanguage } from 'context/language';
+import { useLanguage } from 'context/language'
 /** Interfaces & Types */
-import type { ISlide } from 'utils/models/Slide';
+import type { ISlide } from 'utils/models/Slide'
 /** Styles */
-import './styles/slide2.css';
-import useLayout from 'hooks/ancho.hook';
+import './styles/slide2.css'
+
 
 const Slide2: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 	/** Hooks */
-	const {t} = useTranslation()
+	const { t } = useTranslation()
 	const { isSmallScreen } = useLayout()
 
 	/** Contexts */
-	const { selectedLanguage } = useLanguage();
+	const { selectedLanguage } = useLanguage()
 
 	return (
 		<svg
-		viewBox={`0 95 1920 975`}
-		width="100%"
-		className="h-screen"
-		preserveAspectRatio="none"
-		>
+			viewBox="0 95 1920 975"
+			width="100%"
+			height="100%"
+			preserveAspectRatio="none">
 			<defs>
 				<clipPath id="a-slide-2">
 					<rect
@@ -42,11 +42,11 @@ const Slide2: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 					id="c-slide-2"
 					width={1}
 					height={1}
-					viewBox={`17.166 ${isSmallScreen ? '0' : '127.188'} 1401.53 957.242`}>
+					viewBox="0 -50 1401.53 957.242">
 					<image
-						preserveAspectRatio="xMidYMid slice"
-						width={1626.644}
-						height={1084.429}
+						preserveAspectRatio="none"
+						width={1400}
+						height={975}
 						xlinkHref="/images/slider-2.webp"
 					/>
 				</pattern>
@@ -77,14 +77,20 @@ const Slide2: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 					<feComposite in="SourceGraphic" />
 				</filter>
 			</defs>
-			<g transform="translate(0 1.406)">
+			<g transform="translate(0 95)">
 				<rect
 					className="c-slide-2"
 					width={1920}
 					height={1084}
 					transform="translate(0 2.594)"
 				/>
-				<g className="d-slide-2" transform={isSmallScreen ? 'translate(0 50.406)' : 'translate(0 -0.406)'}>
+				<g
+					className="d-slide-2"
+					transform={
+						isSmallScreen
+							? 'translate(0 50.406)'
+							: 'translate(0 -0.406)'
+					}>
 					<path
 						className="a-slide-2"
 						d="M267.257,175.872H0V0H406.518V45.533c0,71.985-62.349,130.339-139.261,130.339"
@@ -119,22 +125,42 @@ const Slide2: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 				/>
 				<g
 					className="p-slide-2"
-					transform="matrix(1, 0, 0, 1, -325.55, -2.16)">
+					transform="matrix(1, 0, 0, 1, -325.55, 60.16)">
 					<path
 						className="c-slide-2"
 						d="M0,422.172,144.937,90.939C168.523,35.9,224.173,0,285.908,0H1428V422.172Z"
 						transform="translate(488.65 664.06)"
 					/>
 				</g>
-				<text
-					className="h-slide-2"
-					transform="translate(809.445 715.835)">
-					<tspan x={selectedLanguage === 'es' ? -231.54 : -180.54} y={57}>
-						{t('ROBOT DAVINCI')}
-					</tspan>
-				</text>
+				<g transform="translate(90 40)">
+					<text
+						className="h-slide-2"
+						transform="translate(809.445 715.835)">
+						<tspan
+							x={selectedLanguage === 'es' ? -231.54 : -180.54}
+							y={57}>
+							{t('ROBOT DAVINCI')}
+						</tspan>
+					</text>
+					<text
+						className="n-slide-2"
+						transform="translate(804.066 804.303)">
+						<tspan
+							x={selectedLanguage === 'es' ? -455.168 : -350.168}
+							y={30}>
+							{t(
+								'Llevando la precisión quirúrgica más allá de los límites de'
+							)}
+						</tspan>
+						<tspan
+							x={selectedLanguage === 'es' ? -125.776 : 0}
+							y={64}>
+							{t('nuestras manos')}
+						</tspan>
+					</text>
+				</g>
 				<a href="/productos/cirugia-robotica">
-					<g transform="translate(650.445 910.835)">
+					<g transform="translate(700.445 940.835)">
 						<g
 							className="o-slide-2"
 							transform="matrix(1, 0, 0, 1, -976, -950)">
@@ -153,16 +179,6 @@ const Slide2: React.FC<ISlide> = ({ onClick }): JSX.Element => {
 						</text>
 					</g>
 				</a>
-				<text
-					className="n-slide-2"
-					transform="translate(804.066 804.303)">
-					<tspan x={selectedLanguage === 'es' ? -455.168 : -350.168} y={30}>
-						{t('Llevando la precisión quirúrgica más allá de los límites de')}
-					</tspan>
-					<tspan x={selectedLanguage === 'es' ? -125.776 : 0} y={64}>
-						{t('nuestras manos')}
-					</tspan>
-				</text>
 			</g>
 		</svg>
 	)

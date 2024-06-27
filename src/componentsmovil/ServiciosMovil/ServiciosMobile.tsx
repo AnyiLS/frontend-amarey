@@ -29,14 +29,14 @@ export const ServiciosMovil: React.FC = () => {
 	}, [changeTo2])
 
 	return (
-		<div style={{ height: '100vh' }}>
+		<div style={{ height: '896px' }}>
 			<Carousel
 				slide={false}
 				rightControl={<button className="next-button"></button>}>
 				<svg
 					viewBox="0 0 414 896"
 					width="100%"
-					height="100vh"
+					height="100%"
 					preserveAspectRatio="none">
 					<defs>
 						<style>
@@ -200,7 +200,7 @@ export const ServiciosMovil: React.FC = () => {
 					viewBox="0 0 417 894.481"
 					className="mt-[0]"
 					width="100%"
-					height="100vh"
+					height="100%"
 					preserveAspectRatio="none">
 					<defs>
 						<style>
@@ -470,7 +470,7 @@ export const ServiciosMovil: React.FC = () => {
 				<svg
 					viewBox="0 0 417 896"
 					width="100%"
-					height="100vh"
+					height="100%"
 					preserveAspectRatio="none">
 					<defs>
 						<style>
@@ -824,7 +824,7 @@ export const ServiciosMovil: React.FC = () => {
 				<svg
 					viewBox="1090 0 414 897.134"
 					width="100%"
-					height="100vh"
+					height="100%"
 					preserveAspectRatio="none">
 					<defs>
 						<style>

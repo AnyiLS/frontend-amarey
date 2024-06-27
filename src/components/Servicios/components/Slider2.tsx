@@ -18,13 +18,17 @@ export const Slider2: React.FC<ISlider> = ({ index }) => {
 		else setTimeout(() => setGrandImage(false), 1000)
 	}, [index])
 
-	const {t} = useTranslation()
+	const { t } = useTranslation()
 
 	/** Contexts */
-	const { selectedLanguage } = useLanguage();
+	const { selectedLanguage } = useLanguage()
 
 	return (
-		<svg viewBox="1590 10 1920 1080" preserveAspectRatio='none'  style={{ height: '100%'}} width={window.screen.width}>
+		<svg
+			viewBox="1590 10 1920 780"
+			preserveAspectRatio="none"
+			style={{ height: '100%' }}
+			width={window.screen.width}>
 			<defs>
 				<style>
 					{
@@ -326,11 +330,7 @@ export const Slider2: React.FC<ISlider> = ({ index }) => {
 					/>
 				</pattern>
 				<clipPath id="bv-pentagrama">
-					<rect
-						style={{ fill: 'none' }}
-						width={590}
-						height={345}
-					/>
+					<rect style={{ fill: 'none' }} width={590} height={345} />
 				</clipPath>
 			</defs>
 			<path
@@ -447,7 +447,7 @@ export const Slider2: React.FC<ISlider> = ({ index }) => {
 					transform="translate(-328.443 166.967) rotate(-51)"
 				/>
 			</g>
-			<text className="s-pentagrama" transform="translate(2015 442.426)">
+			<text className="s-pentagrama" transform="translate(2015 350.426)">
 				<tspan x={80.416} y={30}>
 					{t('Resultados medición de')}
 				</tspan>
@@ -461,78 +461,93 @@ export const Slider2: React.FC<ISlider> = ({ index }) => {
 					{'NPS: Net Promoter Score '}
 				</tspan>
 			</text>
-			<text className="v-pentagrama" transform="translate(2565 252.425)">
-				<tspan x={selectedLanguage === 'es' ? -365.855 : -244.855} y={66}>
+			<text className="v-pentagrama" transform="translate(2565 150.425)">
+				<tspan
+					x={selectedLanguage === 'es' ? -365.855 : -244.855}
+					y={66}>
 					{t('NUESTROS CLIENTES,')}
 				</tspan>
-				<tspan x={selectedLanguage === 'es' ? -416.605 : -301.605} y={138}>
+				<tspan
+					x={selectedLanguage === 'es' ? -416.605 : -301.605}
+					y={138}>
 					{t('NUESTRA RAZÓN DE SER')}
 				</tspan>
 			</text>
-			<g
-				transform="translate(1832 554.229)"
-				onMouseOver={() => setHoverCard(true)}
-				onMouseLeave={() => setHoverCard(true)}>
-				<path
-					className="d-pentagrama"
-					d="M684.641,315.6H17.574C6.991,315.6-1.191,304.109.143,291.12L38.658,19C39.772,8.14,47.24,0,56.089,0H644.931c8.822,0,16.276,8.094,17.422,18.916l39.71,272.12c1.378,13.016-6.812,24.562-17.422,24.562"
-					transform="translate(702.215 315.598) rotate(180)"
-				/>
-				<path
-					className="w-pentagrama"
-					d="M667.261,300.822H17.128c-10.314,0-18.289-10.951-16.989-23.332L37.677,18.11C38.762,7.759,46.041,0,54.665,0H628.559c8.6,0,15.863,7.715,16.98,18.03l38.7,259.38c1.343,12.407-6.639,23.412-16.98,23.412"
-					transform="translate(693.865 308.21) rotate(180)"
-				/>
-				{hoverCard && (
-					<React.Fragment>
-						<path
-							className="x-pentagrama"
-							d="M667.261,300.822H17.128c-10.314,0-18.289-10.951-16.989-23.332L37.677,18.11C38.762,7.759,46.041,0,54.665,0H628.559c8.6,0,15.863,7.715,16.98,18.03l38.7,259.38c1.343,12.407-6.639,23.412-16.98,23.412"
-							transform="translate(693.865 308.21) rotate(180)"
-						/>
-						<text
-							className="y-pentagrama"
-							transform="translate(54.107 94.799)">
-							<tspan x={40.38} y={113}>
-								{'NPS 86%'}
-							</tspan>
-						</text>
-					</React.Fragment>
-				)}
-			</g>
-			<g
-				transform="translate(2575 554.229)"
-				onMouseOver={() => setHoverCard2(true)}
-				onMouseLeave={() => setHoverCard2(true)}>
-				<path
-					className="d-pentagrama"
-					d="M684.641,315.6H17.574C6.991,315.6-1.191,304.109.143,291.12L38.658,19C39.772,8.14,47.24,0,56.089,0H644.931c8.822,0,16.276,8.094,17.422,18.916l39.71,272.12c1.378,13.016-6.812,24.562-17.422,24.562"
-					transform="translate(0)"
-				/>
-				<path
-					className="z-pentagrama"
-					d="M667.261,300.822H17.128c-10.314,0-18.289-10.951-16.989-23.332L37.677,18.11C38.762,7.759,46.041,0,54.665,0H628.559c8.6,0,15.863,7.715,16.98,18.03l38.7,259.38c1.343,12.407-6.639,23.412-16.98,23.412"
-					transform="translate(8.913 7.388)"
-				/>
-				{hoverCard2 && (
-					<React.Fragment>
-						<path
-							className="x-pentagrama"
-							d="M667.261,300.822H17.128c-10.314,0-18.289-10.951-16.989-23.332L37.677,18.11C38.762,7.759,46.041,0,54.665,0H628.559c8.6,0,15.863,7.715,16.98,18.03l38.7,259.38c1.343,12.407-6.639,23.412-16.98,23.412"
-							transform="translate(8.913 7.388)"
-						/>
-						<text
-							className="aa-pentagrama"
-							transform="translate(54.107 88.799)">
-							<tspan x={selectedLanguage === 'es' ? 117.875 : 160} y={47}>
-								{t('SATISFACCIÓN ')}
-							</tspan>
-							<tspan className="ab-pentagrama" x={173.16} y={147}>
-								{'89%'}
-							</tspan>
-						</text>
-					</React.Fragment>
-				)}
+			<g style={{ transform: 'scale(0.8) translate(650px, 10px)' }}>
+				<g
+					transform="translate(1832 554.229)"
+					onMouseOver={() => setHoverCard(true)}
+					onMouseLeave={() => setHoverCard(true)}>
+					<path
+						className="d-pentagrama"
+						d="M684.641,315.6H17.574C6.991,315.6-1.191,304.109.143,291.12L38.658,19C39.772,8.14,47.24,0,56.089,0H644.931c8.822,0,16.276,8.094,17.422,18.916l39.71,272.12c1.378,13.016-6.812,24.562-17.422,24.562"
+						transform="translate(702.215 315.598) rotate(180)"
+					/>
+					<path
+						className="w-pentagrama"
+						d="M667.261,300.822H17.128c-10.314,0-18.289-10.951-16.989-23.332L37.677,18.11C38.762,7.759,46.041,0,54.665,0H628.559c8.6,0,15.863,7.715,16.98,18.03l38.7,259.38c1.343,12.407-6.639,23.412-16.98,23.412"
+						transform="translate(693.865 308.21) rotate(180)"
+					/>
+					{hoverCard && (
+						<React.Fragment>
+							<path
+								className="x-pentagrama"
+								d="M667.261,300.822H17.128c-10.314,0-18.289-10.951-16.989-23.332L37.677,18.11C38.762,7.759,46.041,0,54.665,0H628.559c8.6,0,15.863,7.715,16.98,18.03l38.7,259.38c1.343,12.407-6.639,23.412-16.98,23.412"
+								transform="translate(693.865 308.21) rotate(180)"
+							/>
+							<text
+								className="y-pentagrama"
+								transform="translate(54.107 94.799)">
+								<tspan x={40.38} y={113}>
+									{'NPS 86%'}
+								</tspan>
+							</text>
+						</React.Fragment>
+					)}
+				</g>
+				<g
+					transform="translate(2575 554.229)"
+					onMouseOver={() => setHoverCard2(true)}
+					onMouseLeave={() => setHoverCard2(true)}>
+					<path
+						className="d-pentagrama"
+						d="M684.641,315.6H17.574C6.991,315.6-1.191,304.109.143,291.12L38.658,19C39.772,8.14,47.24,0,56.089,0H644.931c8.822,0,16.276,8.094,17.422,18.916l39.71,272.12c1.378,13.016-6.812,24.562-17.422,24.562"
+						transform="translate(0)"
+					/>
+					<path
+						className="z-pentagrama"
+						d="M667.261,300.822H17.128c-10.314,0-18.289-10.951-16.989-23.332L37.677,18.11C38.762,7.759,46.041,0,54.665,0H628.559c8.6,0,15.863,7.715,16.98,18.03l38.7,259.38c1.343,12.407-6.639,23.412-16.98,23.412"
+						transform="translate(8.913 7.388)"
+					/>
+					{hoverCard2 && (
+						<React.Fragment>
+							<path
+								className="x-pentagrama"
+								d="M667.261,300.822H17.128c-10.314,0-18.289-10.951-16.989-23.332L37.677,18.11C38.762,7.759,46.041,0,54.665,0H628.559c8.6,0,15.863,7.715,16.98,18.03l38.7,259.38c1.343,12.407-6.639,23.412-16.98,23.412"
+								transform="translate(8.913 7.388)"
+							/>
+							<text
+								className="aa-pentagrama"
+								transform="translate(54.107 88.799)">
+								<tspan
+									x={
+										selectedLanguage === 'es'
+											? 117.875
+											: 160
+									}
+									y={47}>
+									{t('SATISFACCIÓN ')}
+								</tspan>
+								<tspan
+									className="ab-pentagrama"
+									x={173.16}
+									y={147}>
+									{'89%'}
+								</tspan>
+							</text>
+						</React.Fragment>
+					)}
+				</g>
 			</g>
 		</svg>
 	)

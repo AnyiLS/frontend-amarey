@@ -1,4 +1,5 @@
 import { useLanguage } from "context/language";
+import useLayout from "hooks/ancho.hook";
 import React from "react";
 import { useTranslation } from "react-i18next";
 
@@ -9,8 +10,9 @@ export interface IMantenimiento {
 const Mantebiomedico: React.FC<IMantenimiento> = ({ onClick }): JSX.Element => {
   const { t } = useTranslation();
   const { selectedLanguage } = useLanguage();
+  const { navbarHeight } = useLayout();
   return (
-    <div>
+    <div className="h-full" style={{ marginTop: navbarHeight }}>
       <svg
         width="100%"
         height={"100%"}

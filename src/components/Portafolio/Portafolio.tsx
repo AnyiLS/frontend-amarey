@@ -75,7 +75,7 @@ const Portafolio: React.FC = () => {
 	return (
 		<div>
 			{!openState ? (
-				<svg viewBox={`0 0 1920 975`} height='auto' width={window.screen.width} preserveAspectRatio='none'>
+				<svg viewBox='0 0 1920 778' height='100%' width={window.screen.width} preserveAspectRatio='none'>
 					<defs>
 						<style>
 							{
@@ -103,9 +103,9 @@ const Portafolio: React.FC = () => {
 							id="d-4"
 							width={1}
 							height={1}
-							viewBox={`359.445 ${isSmallScreen ? '0' : '174.865'} 908.599 837.429`}>
+							viewBox={`359.445 0 908.599 837.429`}>
 							<image
-								preserveAspectRatio="xMidYMid slice"
+								preserveAspectRatio="none"
 								width={1544.558}
 								height={1027.662}
 								xlinkHref="/images/maquinas_11zon.webp"
@@ -128,7 +128,7 @@ const Portafolio: React.FC = () => {
 					<g>
 						<path className="a-4" d="M0,0H1920V1079.473H0Z" />
 						<g className="d-4">
-							<g transform={isSmallScreen ? 'translate(1965.221 314.48) rotate(180)' : "translate(1965.221 424.48) rotate(180)"}>
+							<g transform='translate(1965.221 154.48) rotate(180)'>
 								<g className="e-4">
 									<path
 										className="f-4"
@@ -136,8 +136,8 @@ const Portafolio: React.FC = () => {
 									/>
 								</g>
 							</g>
-							<g transform="translate(1920 1079.473) rotate(180)">
-								<g className="g-4" transform={isSmallScreen ? "translate(0 150)" : 'translate(0 0)'}>
+							<g transform="translate(1920 959.473) rotate(180)">
+								<g className="g-4" transform={isSmallScreen ? "translate(0 150)" : 'translate(0 150)'}>
 									<path
 										className="c-4"
 										d="M455.945,307.365H0V0H699L609.4,208.6c-25.677,59.78-86.254,98.769-153.456,98.769"
@@ -148,7 +148,7 @@ const Portafolio: React.FC = () => {
 						</g>
 						<g
 							className="k-4"
-							transform={isSmallScreen ? 'matrix(1, 0, 0, 1, -9, -250.13)' : "matrix(1, 0, 0, 1, -9, -4.13)"}>
+							transform='matrix(1, 0, 0, 1, -9, -350.13)'>
 							<path
 								className="h-4"
 								d="M727.295,1027.662H0V0H1115L972.078,697.434C931.12,897.3,834.491,1027.662,727.295,1027.662"
@@ -156,7 +156,7 @@ const Portafolio: React.FC = () => {
 								onClick={() => setOpenState(true)}
 							/>
 						</g>
-						<g transform={isSmallScreen ? 'translate(0 -150)' : 'translate(0 0)'}>
+						<g transform='translate(0 -270)'>
 						<text
 							className="i-4"
 							transform="translate(1115 500.068)">
@@ -189,7 +189,7 @@ const Portafolio: React.FC = () => {
 						</g>
 					</g>
 					<g
-						transform={isSmallScreen ? 'translate(1164 609)' : "translate(1164 779)"}
+						transform='translate(1164 489)'
 						onClick={() => setOpenState(true)}>
 						<defs>
 							<style>
@@ -240,7 +240,7 @@ const Portafolio: React.FC = () => {
 				<svg
 					width="100%"
 					height="100%"
-					viewBox="0 0 1920 1080"
+					viewBox="0 0 1920 778"
 					preserveAspectRatio="none">
 					<defs>
 						<clipPath id="a-portfolio-3">
@@ -458,7 +458,7 @@ const Portafolio: React.FC = () => {
 					<path className="e-portfolio-3" d="M0,0H1920V1080H0Z" />
 					<g
 						className="f-portfolio-3"
-						transform="translate(479.366 770.502)">
+						style={{ transform: 'translate(589px, 522.502px) scale(0.8)' }}>
 						<g transform="translate(31.644 46.498)">
 							<g className="g-portfolio-3">
 								<g className="h-portfolio-3">
@@ -488,6 +488,11 @@ const Portafolio: React.FC = () => {
 							</g>
 						</g>
 					</g>
+					<path
+								className="p-portfolio-3"
+								d="M0,0H562.969a242.805,242.805,0,0,1,224.12,149.469l233.188,559.88"
+								style={{ transform: 'rotate(360deg) translate(-20px, 671px)' }}
+							/>
 					<g className="m-portfolio-3">
 						<g transform="translate(937.511 1690.645) rotate(180)">
 							<g
@@ -499,13 +504,9 @@ const Portafolio: React.FC = () => {
 									transform="translate(0 0)"
 								/>
 							</g>
-							<path
-								className="p-portfolio-3"
-								d="M0,0H562.969a242.805,242.805,0,0,1,224.12,149.469l233.188,559.88"
-								transform="translate(1020.277 709.349) rotate(180)"
-							/>
+							
 						</g>
-						<g transform="translate(1664.339 777.599) rotate(180)">
+						<g transform="translate(1664.339 480.599) rotate(180)">
 							<g
 								className="q-portfolio-3"
 								transform="translate(-290.83 -302)">
@@ -517,7 +518,7 @@ const Portafolio: React.FC = () => {
 							</g>
 							<g
 								className="r-portfolio-3"
-								transform="translate(1664.339 777.599) rotate(180)">
+								transform="translate(1664.339 500) rotate(180)">
 								<path
 									className="c-portfolio-3"
 									d="M366.693,247.2H0V0H562.17L490.111,167.764c-20.651,48.078-69.37,79.435-123.417,79.435"
@@ -550,7 +551,7 @@ const Portafolio: React.FC = () => {
 						ry={8.5}
 						transform="translate(1184.992 836)"
 					/>
-					<g transform="translate(281 297)">
+					<g style={{ transform: 'translate(421px, 141px) scale(0.8)' }}>
 						<g
 							className="t-portfolio-3"
 							transform="translate(122.488 0)">
@@ -672,7 +673,7 @@ const Portafolio: React.FC = () => {
 					</g>
 					<text
 						className="ab-portfolio-3"
-						transform="translate(699 116)">
+						transform="translate(699 26)">
 						<tspan
 							x={selectedLanguage === 'es' ? 42.715 : 122.715}
 							y={66}>

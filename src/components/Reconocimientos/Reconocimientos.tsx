@@ -4,6 +4,7 @@ import useGeneral from 'hooks/general.hook'
 import ReconocimientosMobile from './ReconocimientosMobile/ReconocimientosMobile'
 import { useTranslation } from 'react-i18next'
 import { useLanguage } from 'context/language'
+import useLayout from 'hooks/ancho.hook'
 
 const Reconocimientos: React.FC = (): JSX.Element => {
 	/** Hooks */
@@ -21,12 +22,12 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 
 	const handleAddSlide = () => setSlide(slide + 1 > 3 ? 0 : slide + 1)
 
-	
+	const { navbarHeight } = useLayout()
 
 	return (
 		<React.Fragment>
 			{width > 767 ? (
-				<div>
+				<div className='h-full' style={{ marginTop: navbarHeight }}>
 					<svg viewBox="300 200 1920 1970">
 						<defs>
 							<style>

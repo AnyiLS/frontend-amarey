@@ -3,26 +3,30 @@ import { useTranslation } from 'react-i18next'
 /** Components */
 import useAstasComponents from './components'
 /** Interfaces & Types */
-import type { SlideFourProps } from 'utils/models/Slide';
-import { useLanguage } from 'context/language';
+import type { SlideFourProps } from 'utils/models/Slide'
+import { useLanguage } from 'context/language'
 
-const Slide4: React.FC<SlideFourProps> = ({ image, onReturn, onOpenPopup }): JSX.Element => {
+const Slide4: React.FC<SlideFourProps> = ({
+	image,
+	onReturn,
+	onOpenPopup,
+}): JSX.Element => {
 	/** States */
 	const [selected, setSelected] = React.useState<number>(0)
 
 	/** Hooks */
-	const {t} = useTranslation()
+	const { t } = useTranslation()
 	const {
 		DownAsta,
 		DownLeftAsta,
 		DownRightAsta,
 		TopLeftAsta,
 		TopRightAsta,
-		Tooltip
+		Tooltip,
 	} = useAstasComponents()
 
 	/** Contexts */
-	const { selectedLanguage } = useLanguage();
+	const { selectedLanguage } = useLanguage()
 
 	return (
 		<React.Fragment>
@@ -30,8 +34,7 @@ const Slide4: React.FC<SlideFourProps> = ({ image, onReturn, onOpenPopup }): JSX
 				viewBox={`0 0 1920 975`}
 				width="100%"
 				className="h-screen"
-				preserveAspectRatio="none"
-			>
+				preserveAspectRatio="none">
 				<defs>
 					<style
 						dangerouslySetInnerHTML={{
@@ -173,7 +176,12 @@ const Slide4: React.FC<SlideFourProps> = ({ image, onReturn, onOpenPopup }): JSX
 						id="r-slide-5"
 						width={1}
 						height={1}
-						viewBox={image === '/images/carouselHeader/ComponentTMP_0-image4.webp' ? '223 0 450.303 514.533' : "0 132.158 775.246 348.89"}>
+						viewBox={
+							image ===
+							'/images/carouselHeader/ComponentTMP_0-image4.webp'
+								? '223 0 450.303 514.533'
+								: '0 132.158 775.246 348.89'
+						}>
 						<image
 							preserveAspectRatio="xMidYMid slice"
 							width={775.246}
@@ -399,45 +407,52 @@ const Slide4: React.FC<SlideFourProps> = ({ image, onReturn, onOpenPopup }): JSX
 							</g>
 						</g>
 					</g>
-					<g className="is-slide-6">
+					<g className="is-slide-6" transform="translate(-10 90)">
 						<path
 							className="b-slide-6"
 							d="M267.257,175.872H0V0H406.518V45.533c0,71.985-62.349,130.339-139.261,130.339"
 						/>
 					</g>
-					<g transform="translate(1213 513.486)">
-						<g className="it-slide-6" transform="translate(0 0)">
-							<path
-								className="b-slide-6"
-								d="M580.38,460.013l.078-333.1H274.217c-73.956,0-140.661,40.518-169.112,102.725L0,460.013Z"
-								transform="translate(126.59 109.501)"
-							/>
-							<path
-								className="iu-slide-6"
-								d="M674.943.5H491.771c-83.748,0-159.284,49.865-191.5,126.42L85.887,637.572H674.943Z"
-								transform="translate(99.495 7.963)"
-							/>
-							<path
-								className="t-slide-6"
-								d="M57.358,0V26.1H0V39.2H57.358V65.3l56.719-32.652Z"
-								transform="translate(206.912 645.535)"
-							/>
+
+					<g transform="translate(0 -50)">
+						<g transform="translate(1213 513.486)">
+							<g
+								className="it-slide-6"
+								transform="translate(0 0)">
+								<path
+									className="b-slide-6"
+									d="M580.38,460.013l.078-333.1H274.217c-73.956,0-140.661,40.518-169.112,102.725L0,460.013Z"
+									transform="translate(126.59 109.501)"
+								/>
+								<path
+									className="iu-slide-6"
+									d="M674.943.5H491.771c-83.748,0-159.284,49.865-191.5,126.42L85.887,637.572H674.943Z"
+									transform="translate(99.495 7.963)"
+								/>
+								<path
+									className="t-slide-6"
+									d="M57.358,0V26.1H0V39.2H57.358V65.3l56.719-32.652Z"
+									transform="translate(206.912 645.535)"
+								/>
+							</g>
 						</g>
-					</g>
-					<g className="iv-slide-6" transform="translate(-145.658)">
-						<g transform="translate(899.409 182.768)">
-							<g transform="translate(746.249 385.699)">
-								<g transform="translate(0 0)">
-									<path
-										className="iw-slide-6"
-										d="M770.1,14.03H401.667c-62.258,0-106.328,11.051-142.364,106.309L107.8,528.563H770.1Z"
-										transform="translate(-107.798 -14.03)"
-									/>
+						<g
+							className="iv-slide-6"
+							transform="translate(-145.658)">
+							<g transform="translate(899.409 182.768)">
+								<g transform="translate(746.249 385.699)">
+									<g transform="translate(0 0)">
+										<path
+											className="iw-slide-6"
+											d="M770.1,14.03H401.667c-62.258,0-106.328,11.051-142.364,106.309L107.8,528.563H770.1Z"
+											transform="translate(-107.798 -14.03)"
+										/>
+									</g>
 								</g>
 							</g>
 						</g>
 					</g>
-					<g transform="translate(550 170)">
+					<g transform="translate(600 230) scale(0.8)">
 						<defs>
 							<style>
 								{
@@ -580,11 +595,15 @@ const Slide4: React.FC<SlideFourProps> = ({ image, onReturn, onOpenPopup }): JSX
 					</g>
 					<text
 						className="iy-slide-6"
-						transform="translate(1000 67.639)">
-						<tspan x={selectedLanguage === 'es' ? -432.432 : -300.432} y={42}>
+						transform="translate(1000 127.639)">
+						<tspan
+							x={selectedLanguage === 'es' ? -432.432 : -300.432}
+							y={42}>
 							{t('El origen de nuestra historia es hoy')}
 						</tspan>
-						<tspan x={selectedLanguage === 'es' ? -351.886 : -225.886} y={79}>
+						<tspan
+							x={selectedLanguage === 'es' ? -351.886 : -225.886}
+							y={79}>
 							{t('la esencia de nuestra marca')}
 						</tspan>
 					</text>
@@ -598,21 +617,19 @@ const Slide4: React.FC<SlideFourProps> = ({ image, onReturn, onOpenPopup }): JSX
 						<DownRightAsta onUnselected={() => setSelected(0)} />
 					)}
 					{selected === 5 && (
-						<TopLeftAsta
-							onOpenPopup={onOpenPopup}
-						/>
+						<TopLeftAsta onOpenPopup={onOpenPopup} />
 					)}
 					{selected === 4 && (
 						<TopRightAsta onUnselected={() => setSelected(0)} />
 					)}
 				</g>
-				<g transform="translate(1557 950)" onClick={onReturn}>
+				<g transform="translate(1565 880)" onClick={onReturn}>
 					<path
 						style={{ fill: '#fff' }}
 						d="M45.263,0V46.781L85.8,23.389,66.44,12.217Z"
 						transform="rotate(180)"></path>
 				</g>
-				<g transform="translate(158 770)">
+				<g transform="translate(158 670)">
 					<Tooltip />
 				</g>
 			</svg>

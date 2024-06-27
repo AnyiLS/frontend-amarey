@@ -15,7 +15,7 @@ export const Slider1: React.FC<ISlider> = ({ height, handleChangeSlide }) => {
 	const { isSmallScreen } = useLayout()
 	return (
 		<div>
-			<svg viewBox="0 0 1920 1080" width={window.screen.width} style={{ height: '100%'}} preserveAspectRatio='none'>
+			<svg viewBox="0 0 1920 780" width='100%' height='100%' preserveAspectRatio='none'>
 				<defs>
 					<style>
 						{
@@ -282,7 +282,7 @@ export const Slider1: React.FC<ISlider> = ({ height, handleChangeSlide }) => {
 					d="M0,0H1920V1082.626H0Z"
 					transform="translate(0 23.957)"
 				/>
-				<g transform="translate(0 0.546)">
+				<g style={{ transform: 'translate(0px, -0.546px) scaleY(0.73)' }}>
 					<g transform="translate(318 2)">
 						<g className="f-pentagrama80" transform="translate(0 0)">
 							<path
@@ -352,7 +352,7 @@ export const Slider1: React.FC<ISlider> = ({ height, handleChangeSlide }) => {
 						transform="translate(-107 57.829) rotate(-51)"
 					/>
 				</g>
-				<g transform={isSmallScreen ? 'translate(0 -150)' : 'translate(0 0)'}>
+				<g style={{ transform: 'translate(0px, -220px) scale(0.95)' }}>
 				<text
 					className="n-pentagrama80"
 					transform="translate(269 581.806)">
@@ -429,7 +429,7 @@ export const Slider1: React.FC<ISlider> = ({ height, handleChangeSlide }) => {
 					</tspan>
 				</text>
 				</g>
-				<g transform="translate(1299 734.666)" onClick={() => handleChangeSlide(1)}>
+				<g transform="translate(1299 530.666)" onClick={() => handleChangeSlide(1)}>
 					<g
 						className="s-pentagrama80"
 						transform="matrix(1, 0, 0, 1, -1299, -734.67)" onClick={() => handleChangeSlide(1)}>

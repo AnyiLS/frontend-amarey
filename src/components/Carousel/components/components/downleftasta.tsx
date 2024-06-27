@@ -7,7 +7,7 @@ const DownLeftAsta: React.FC<{ onUnselected: () => void }> = ({
 	const {t} = useTranslation()
 	return (
 		<React.Fragment>
-			<g transform="translate(181 480)" onClick={onUnselected}>
+			<g transform="translate(250 470) scale(0.9)" onClick={onUnselected}>
 				<defs>
 					<style>
 						{

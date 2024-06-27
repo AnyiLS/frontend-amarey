@@ -8,7 +8,7 @@ const DownAsta: React.FC<AstasProps> = ({ onUnselected }): JSX.Element => {
 
 	return (
 		<React.Fragment>
-			<g transform='translate(695 620)' onClick={onUnselected}>
+			<g transform='translate(715 590) scale(0.8)' onClick={onUnselected}>
       <defs>
 				<style>
 					{

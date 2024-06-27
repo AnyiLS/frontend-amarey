@@ -1,4 +1,5 @@
 import { useLanguage } from 'context/language'
+import useLayout from 'hooks/ancho.hook'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
@@ -9,9 +10,10 @@ const Codigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 
 	const {t} = useTranslation()
 	const { selectedLanguage } = useLanguage();
+	const { navbarHeight } = useLayout();
 
 	return (
-		<div>
+		<div className='h-full' style={{ marginTop: navbarHeight }}>
 			<svg viewBox="0 0 1938 975">
 				<defs>
 					<style>
@@ -273,7 +275,7 @@ const Codigo: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 							{t('ÉTICA Y COMPLIANCE ')}
 						</tspan>
 					</text>
-					<g transform={selectedLanguage === 'es' ? 'translate(0)' : 'translate(0 -75)'} onClick={onClose}>
+					<g transform={selectedLanguage === 'es' ? 'translate(0 -75)' : 'translate(0 -75)'} onClick={onClose}>
 						<path
 							className="g-codigo cursor-pointer"
 							d="M45.263,0V19.012L61.725,9.505l-7.863-4.54Z"
