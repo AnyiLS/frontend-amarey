@@ -45,7 +45,7 @@ const Component = () => {
 	return (
 		<I18nextProvider i18n={i18n}>
 			<Flowbite theme={{ theme: customTheme }}>
-				{showVideoPopup === 'false' ? (
+				{showVideoPopup === 'false' || window.location.pathname !== '/' ? (
 					<div id="main" style={{ width: window.screen.width }}>
 						<React.Suspense fallback={<Loading />}>
 							{width >= 768 ? <Navbar /> : <NavbarMovil />}
