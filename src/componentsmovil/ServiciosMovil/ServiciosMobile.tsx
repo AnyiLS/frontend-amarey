@@ -93,7 +93,7 @@ export const ServiciosMovil: React.FC = () => {
 					</g>
 					<text
 						className="e-servicios-1-mobile"
-						transform="translate(210 409.681)">
+						transform="translate(210 380.681)">
 						<tspan x={selectedLanguage === 'es' ? -143.542 : -163.542} y={13}>
 							{t('El servicio es uno de los pilares del Grupo ')}
 						</tspan>
@@ -122,7 +122,7 @@ export const ServiciosMovil: React.FC = () => {
 					</text>
 					<text
 						className="g-servicios-1-mobile"
-						transform="translate(210 329.076)">
+						transform="translate(210 300.076)">
 						<tspan x={selectedLanguage === 'es' ? -125.263 : -115.263} y={55}>
 							{t('Servicio')}
 						</tspan>

@@ -19,7 +19,7 @@ const ReconocimientosMobile: React.FC = (): JSX.Element => {
 
 	return (
 		<React.Fragment>
-			<svg viewBox="56 0 414 815" preserveAspectRatio="none">
+			<svg viewBox="56 0 414 780" preserveAspectRatio="none">
 				<defs>
 					<style>
 						{
