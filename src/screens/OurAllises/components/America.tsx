@@ -57,6 +57,17 @@ const America: React.FC<IAmerica> = ({ height, onClose }): JSX.Element => {
 						</clipPath>
 					</defs>
 					<g transform="translate(0 6)">
+						<text
+							className="g-america-1"
+							transform="translate(0 42.062)">
+							<tspan x={0} y={60}>
+								{t('NUESTROS')}
+							</tspan>
+							<tspan className="h-america-1" y={60} />
+							<tspan className="i-america-1" x={0} y={130}>
+								{t('ALIADOS')}
+							</tspan>
+						</text>
 						<g transform="translate(190.999)">
 							<g transform="translate(388.937 5.194)">
 								<g className="b-america-1">
@@ -452,17 +463,7 @@ const America: React.FC<IAmerica> = ({ height, onClose }): JSX.Element => {
 									/>
 								</g>
 							</g>
-							<text
-								className="g-america-1"
-								transform="translate(0 42.062)">
-								<tspan x={0} y={60}>
-									{t('NUESTROS')}
-								</tspan>
-								<tspan className="h-america-1" y={60} />
-								<tspan className="i-america-1" x={0} y={130}>
-									{t('ALIADOS')}
-								</tspan>
-							</text>
+
 							<g transform="translate(360 -74)" onClick={onClose}>
 								<g
 									className="n-america-1"
@@ -520,7 +521,7 @@ const America: React.FC<IAmerica> = ({ height, onClose }): JSX.Element => {
 					<svg
 						width="100%"
 						height={'100%'}
-						viewBox="0 23 1920 975"
+						viewBox="0 23 1920 778"
 						preserveAspectRatio="none">
 						<defs>
 							<style>
@@ -787,7 +788,18 @@ const America: React.FC<IAmerica> = ({ height, onClose }): JSX.Element => {
 							</clipPath>
 						</defs>
 						<g transform="translate(0 6)">
-							<g transform="translate(191)">
+							<text
+								className="h-item-1826"
+								transform="translate(220 42.062)">
+								<tspan x={0} y={60}>
+									{t('NUESTROS')}
+								</tspan>
+								<tspan className="i-item-1826" y={60} />
+								<tspan className="j-item-1826" x={0} y={130}>
+									{t('ALIADOS')}
+								</tspan>
+							</text>
+							<g style={{ transform: 'translate(350px, 10px) scale(0.85)' }}>
 								<g transform="translate(388.937 5.194)">
 									<g className="c-item-1826">
 										<path
@@ -1172,20 +1184,7 @@ const America: React.FC<IAmerica> = ({ height, onClose }): JSX.Element => {
 										/>
 									</g>
 								</g>
-								<text
-									className="h-item-1826"
-									transform="translate(0 42.062)">
-									<tspan x={0} y={60}>
-										{t('NUESTROS')}
-									</tspan>
-									<tspan className="i-item-1826" y={60} />
-									<tspan
-										className="j-item-1826"
-										x={0}
-										y={130}>
-										{t('ALIADOS')}
-									</tspan>
-								</text>
+
 								<rect
 									className="k-item-1826"
 									width={262}
@@ -1316,25 +1315,23 @@ const America: React.FC<IAmerica> = ({ height, onClose }): JSX.Element => {
 										</tspan>
 									</text>
 								</g>
+							</g>
+							<g transform="translate(360 -50)" onClick={onClose}>
 								<g
-									transform="translate(360 -50)"
-									onClick={onClose}>
-									<g
-										className="af-item-1826 cursor-pointer"
-										transform="matrix(1, 0, 0, 1, -551, 68)">
-										<path
-											className="b-item-1826 cursor-pointer"
-											d="M52.8,70.064H0v-30.1C0,17.894,12.958,0,28.944,0h52.8V30.1c0,22.073-12.959,39.967-28.944,39.967"
-											transform="translate(1696.25 6)"
-										/>
-									</g>
-									<g transform="translate(16.329 16.329)">
-										<path
-											className="ac-item-1826 cursor-pointer"
-											d="M-3415.762-18.009l-7.071-7.071-7.071,7.071a3.5,3.5,0,0,1-4.95,0,3.5,3.5,0,0,1,0-4.95l7.071-7.071-7.071-7.071a3.5,3.5,0,0,1,0-4.95,3.5,3.5,0,0,1,4.95,0l7.071,7.071,7.071-7.071a3.5,3.5,0,0,1,4.95,0,3.5,3.5,0,0,1,0,4.95l-7.071,7.071,7.071,7.071a3.5,3.5,0,0,1,0,4.95,3.489,3.489,0,0,1-2.475,1.025A3.489,3.489,0,0,1-3415.762-18.009Z"
-											transform="translate(4592.762 124.262)"
-										/>
-									</g>
+									className="af-item-1826 cursor-pointer"
+									transform="matrix(1, 0, 0, 1, -551, 68)">
+									<path
+										className="b-item-1826 cursor-pointer"
+										d="M52.8,70.064H0v-30.1C0,17.894,12.958,0,28.944,0h52.8V30.1c0,22.073-12.959,39.967-28.944,39.967"
+										transform="translate(1696.25 6)"
+									/>
+								</g>
+								<g transform="translate(16.329 16.329)">
+									<path
+										className="ac-item-1826 cursor-pointer"
+										d="M-3415.762-18.009l-7.071-7.071-7.071,7.071a3.5,3.5,0,0,1-4.95,0,3.5,3.5,0,0,1,0-4.95l7.071-7.071-7.071-7.071a3.5,3.5,0,0,1,0-4.95,3.5,3.5,0,0,1,4.95,0l7.071,7.071,7.071-7.071a3.5,3.5,0,0,1,4.95,0,3.5,3.5,0,0,1,0,4.95l-7.071,7.071,7.071,7.071a3.5,3.5,0,0,1,0,4.95,3.489,3.489,0,0,1-2.475,1.025A3.489,3.489,0,0,1-3415.762-18.009Z"
+										transform="translate(4592.762 124.262)"
+									/>
 								</g>
 							</g>
 							<g transform="translate(-109.858 -41.067)">
