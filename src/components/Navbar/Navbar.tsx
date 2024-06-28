@@ -138,7 +138,7 @@ const Navbar: React.FC = () => {
 							transform={
 								selectedLanguage === 'es'
 									? 'translate(69 29)'
-									: 'translate(69 22)'
+									: 'translate(79 35)'
 							}
 							style={{
 								fill:
