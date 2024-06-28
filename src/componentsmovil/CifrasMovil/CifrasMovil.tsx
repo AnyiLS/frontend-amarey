@@ -6,12 +6,26 @@ export const CifrasMovil: React.FC = () => {
 	/** States */
 	const [openVideo, setOpenVideo] = React.useState<boolean>(false)
 	const [numberVideo, setNumberVideo] = React.useState<number>(0)
-	const [mute] = React.useState(false);
+	const [mute, setMute] = React.useState(false);
 
 	const {t} = useTranslation()
 
 	/** Contexts */
 	const { selectedLanguage } = useLanguage();
+
+	const handlePlayVideo = () => {
+		if(mute){
+			const video: HTMLVideoElement = document.getElementById('video-cifras') as HTMLVideoElement;
+
+			video.pause()
+			setMute(false)
+		} else {
+			const video: HTMLVideoElement = document.getElementById('video-cifras') as HTMLVideoElement;
+
+			video.play()
+			setMute(true)
+		}
+	}
 
 	const video = [
 		{ url: openVideo && selectedLanguage === 'en' ? 'https://grupoamarey.com/videos/videos_inlges/Trainning_Vertical.mp4' :'https://grupoamarey.com/pdf/video/Cifras educacion vertical_1.mp4' },
@@ -24,7 +38,7 @@ export const CifrasMovil: React.FC = () => {
 	return (
 		<div className="relative">
 			<svg
-				viewBox="14 0 412 895"
+				viewBox="14 0 412 805"
 				width="100%"
 				height="100%"
 				preserveAspectRatio="none">
@@ -315,7 +329,7 @@ export const CifrasMovil: React.FC = () => {
 					</g>
 					<text
 						className="i-cifras-impacto"
-						transform="translate(220 398.119)">
+						transform="translate(220 348.119)">
 						<tspan x={selectedLanguage === 'es' ? -112.567 : -86.567} y={45}>
 							{t('Cifras de')}
 						</tspan>
@@ -389,7 +403,7 @@ export const CifrasMovil: React.FC = () => {
 						/>
 					</g>
 					<g
-						transform="translate(12.381 641.973)"
+						transform="translate(12.381 550.973)"
 						onClick={() => {
 							setOpenVideo(true)
 							setNumberVideo(2)
@@ -523,7 +537,7 @@ export const CifrasMovil: React.FC = () => {
 						</g>
 					</g>
 					<g
-						transform="translate(139.786 711.526)"
+						transform="translate(139.786 620.526)"
 						onClick={() => {
 							setOpenVideo(true)
 							setNumberVideo(3)
@@ -595,7 +609,7 @@ export const CifrasMovil: React.FC = () => {
 				<div className="h-full w-full fixed	 top-0 bg-[#959192] flex items-center ">
 					<svg
 						viewBox="0 0 48 50"
-						className="w-[15%] right-[20px] absolute top-[20px]"
+						className="w-[8%] right-[20px] absolute top-[20px]"
 						onClick={() => {
 							setOpenVideo(false)
 							document.body.style.overflow = 'auto'
@@ -649,12 +663,13 @@ export const CifrasMovil: React.FC = () => {
 						src={video[numberVideo].url}
 						className="object-cover h-[82%] w-full"
 						id="video-cifras"
-						controls></video>
+						controls
+						></video>
 					{/* <img
-						src={mute ? '/images/mute.png' : '/images/Button.png'}
+						src={mute ? '/images/Button.png' : '/images/mute.png'}
 						className="absolute w-[10%] left-[2%] bottom-[10px]"
 						alt="Mute"
-						onClick={() => setMute(!mute)}
+						onClick={handlePlayVideo}
 					/> */}
 				</div>
 			)}
