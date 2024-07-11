@@ -1384,6 +1384,7 @@ export const ServiciosMovil: React.FC = () => {
 						height="100%"
 						controls
 						id="video-cifras"
+						playsInline
 						style={{
 							height: '100vh',
 							width: '100vw',
