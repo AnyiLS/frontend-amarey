@@ -2800,7 +2800,8 @@ export const CarouselMovil: React.FC = () => {
 					}
 					controls
 					className="w-full h-full"
-					id="video-1"></video>
+					id="video-1"
+					playsInline></video>
 
 				<span
 					className="absolute top-[5%] right-[5%] text-white text-[30px] text-center font-bold bg-[#00000050] w-[50px] h-[50px] rounded-[100%]"

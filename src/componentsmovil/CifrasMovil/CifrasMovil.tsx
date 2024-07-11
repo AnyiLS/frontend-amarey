@@ -664,6 +664,7 @@ export const CifrasMovil: React.FC = () => {
 						className="object-cover h-[82%] w-full"
 						id="video-cifras"
 						controls
+						playsInline
 						></video>
 					{/* <img
 						src={mute ? '/images/Button.png' : '/images/mute.png'}
