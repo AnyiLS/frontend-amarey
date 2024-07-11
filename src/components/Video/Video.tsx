@@ -87,6 +87,7 @@ const Video: React.FC<IVideo> = ({ onCloseVideo }): JSX.Element => {
 				loop
 				id='play'
 				autoPlay
+				playsInline
 				muted={!mute}></video>
 			<div>
 				<img
