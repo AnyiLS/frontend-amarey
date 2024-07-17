@@ -282,6 +282,22 @@ export const NavbarMovil: React.FC = () => {
 									<feComposite operator="in" in2="w" />
 									<feComposite in="SourceGraphic" />
 								</filter>
+								<filter
+									id="k-mapa-servicios-desktop"
+									x={0}
+									y={0}
+									width={414}
+									height={52.967}
+									filterUnits="userSpaceOnUse">
+									<feOffset dy={3} />
+									<feGaussianBlur
+										stdDeviation={3}
+										result="l"
+									/>
+									<feFlood floodOpacity={0.302} />
+									<feComposite operator="in" in2="l" />
+									<feComposite in="SourceGraphic" />
+								</filter>
 							</defs>
 							<g>
 								<g transform="translate(358.487 10.743)">
@@ -4259,7 +4275,7 @@ export const NavbarMovil: React.FC = () => {
 							</foreignObject>
 						</g>
 					</svg> */}
-					<svg viewBox="0 0 414 40" id="navbar__container">
+					<svg viewBox="0 0 414 50" id="navbar__container" className='absolute top-0 z-[1]'>
 						<defs>
 							<style>
 								{
@@ -4279,6 +4295,19 @@ export const NavbarMovil: React.FC = () => {
 								<feComposite operator="in" in2="b" />
 								<feComposite in="SourceGraphic" />
 							</filter>
+							<filter
+								id="k-mapa-servicios-desktop"
+								x={0}
+								y={0}
+								width={414}
+								height={52.967}
+								filterUnits="userSpaceOnUse">
+								<feOffset dy={3} />
+								<feGaussianBlur stdDeviation={3} result="l" />
+								<feFlood floodOpacity={0.302} />
+								<feComposite operator="in" in2="l" />
+								<feComposite in="SourceGraphic" />
+							</filter>
 							<clipPath id="c-navbar-mobile">
 								<rect
 									className="a-navbar-mobile"
@@ -4288,6 +4317,14 @@ export const NavbarMovil: React.FC = () => {
 							</clipPath>
 						</defs>
 						<g>
+							<path
+								className="b-mapa-servicios-desktop"
+								d="M0,0H414V34.967H0Z"
+								style={{
+									filter: 'url(#k-mapa-servicios-desktop)',
+									fill: 'white',
+								}}
+							/>
 							<g
 								className="f-navbar-mobile"
 								transform="matrix(1, 0, 0, 1, 280, 10)"
