@@ -12,7 +12,7 @@ const ProductosMobile: React.FC = (): JSX.Element => {
 				<defs>
 					<style>
 						{
-							".a-reward-2-mobile{fill:none;}.b-reward-2-mobile{clip-path:url(#a-reward-2-mobile);}.c-reward-2-mobile,.o-reward-2-mobile,.p-reward-2-mobile{fill:#001f5f;}.d-reward-2-mobile{fill:#e40032;}.e-reward-2-mobile{fill:url(#b-reward-2-mobile);}.f-reward-2-mobile{fill:url(#e-reward-2-mobile);}.g-reward-2-mobile{fill:url(#h-reward-2-mobile);}.h-reward-2-mobile{fill:url(#k-reward-2-mobile);}.i-reward-2-mobile{fill:url(#n-reward-2-mobile);}.j-reward-2-mobile{fill:url(#q-reward-2-mobile);}.k-reward-2-mobile{fill:url(#t-reward-2-mobile);}.l-reward-2-mobile{fill:url(#w-reward-2-mobile);}.m-reward-2-mobile{fill:url(#z-reward-2-mobile);}.n-reward-2-mobile{fill:url(#ac-reward-2-mobile);}.o-reward-2-mobile{font-size:14px;font-family:Silka-Bold, Silka;}.o-reward-2-mobile,.p-reward-2-mobile{font-weight:700;}.p-reward-2-mobile{font-size:32px;font-family:'Kiona-Bold';}.q-reward-2-mobile{filter:url(#ad-reward-2-mobile);}.r-reward-2-mobile{filter:url(#aa-reward-2-mobile);}.s-reward-2-mobile{filter:url(#x-reward-2-mobile);}.t-reward-2-mobile{filter:url(#u-reward-2-mobile);}.u-reward-2-mobile{filter:url(#r-reward-2-mobile);}.v-reward-2-mobile{filter:url(#o-reward-2-mobile);}.w-reward-2-mobile{filter:url(#l-reward-2-mobile);}.x-reward-2-mobile{filter:url(#i-reward-2-mobile);}.y-reward-2-mobile{filter:url(#f-reward-2-mobile);}.z-reward-2-mobile{filter:url(#c-reward-2-mobile);}"
+							".a-reward-2-mobile{fill:none;}.b-reward-2-mobile{clip-path:url(#a-reward-2-mobile);}.c-reward-2-mobile,.o-reward-2-mobile,.p-reward-2-mobile{fill:#001f5f;}.d-reward-2-mobile{fill:#e40032;}.e-reward-2-mobile{fill:url(#b-reward-2-mobile);}.f-reward-2-mobile{fill:url(#e-reward-2-mobile);}.g-reward-2-mobile{fill:url(#h-reward-2-mobile);}.h-reward-2-mobile{fill:url(#k-reward-2-mobile);}.i-reward-2-mobile{fill:url(#n-reward-2-mobile);}.j-reward-2-mobile{fill:url(#q-reward-2-mobile);}.k-reward-2-mobile{fill:url(#t-reward-2-mobile);}.l-reward-2-mobile{fill:url(#w-reward-2-mobile);}.m-reward-2-mobile{fill:url(#z-reward-2-mobile);}.n-reward-2-mobile{fill:url(#ac-reward-2-mobile);}.o-reward-2-mobile{font-size:14px;font-family:Silka-Bold, Silka;}.o-reward-2-mobile,.p-reward-2-mobile{font-weight:700;}.p-reward-2-mobile{font-size:28px;font-family:'Kiona-Bold';}.q-reward-2-mobile{filter:url(#ad-reward-2-mobile);}.r-reward-2-mobile{filter:url(#aa-reward-2-mobile);}.s-reward-2-mobile{filter:url(#x-reward-2-mobile);}.t-reward-2-mobile{filter:url(#u-reward-2-mobile);}.u-reward-2-mobile{filter:url(#r-reward-2-mobile);}.v-reward-2-mobile{filter:url(#o-reward-2-mobile);}.w-reward-2-mobile{filter:url(#l-reward-2-mobile);}.x-reward-2-mobile{filter:url(#i-reward-2-mobile);}.y-reward-2-mobile{filter:url(#f-reward-2-mobile);}.z-reward-2-mobile{filter:url(#c-reward-2-mobile);}"
 						}
 					</style>
 					<clipPath id="a-reward-2-mobile">
@@ -502,10 +502,10 @@ const ProductosMobile: React.FC = (): JSX.Element => {
 				<text
 					className="p-reward-2-mobile"
 					transform="translate(104 35.21)">
-					<tspan x={3.096} y={32}>
+					<tspan x={selectedLanguage === 'es' ? 13.096 : 0} y={32}>
 						{t('Soluciones ')}
 					</tspan>
-					<tspan x={27.576} y={66}>
+					<tspan x={selectedLanguage === 'es' ? -67.576 : -50} y={66}>
 						{t('en salud')}
 					</tspan>
 				</text>

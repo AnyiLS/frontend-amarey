@@ -862,7 +862,7 @@ export const NavbarMovil: React.FC = () => {
 											className="l-navbar-mobile"
 											transform="translate(40 10.729)">
 											<tspan x={0} y={15}>
-												{t('Soluciones en salud​')}
+												{t('Soluciones en salud')}
 											</tspan>
 										</text>
 									</g>
@@ -1805,7 +1805,7 @@ export const NavbarMovil: React.FC = () => {
 											className="n-navbar-mobile"
 											transform="translate(40 10.729)">
 											<tspan x={0} y={15}>
-												{t('Soluciones en salud​')}
+												{t('Soluciones en salud')}
 											</tspan>
 										</text>
 									</g>
@@ -2499,9 +2499,10 @@ export const NavbarMovil: React.FC = () => {
 										onClick={() =>
 											(window.location.href =
 												'/productos')
-										}>
+										}
+										style={{ textTransform: selectedLanguage === 'en' ? 'uppercase' : 'initial' }}>
 										<tspan x={0} y={0}>
-											{t('Soluciones en salud​')}
+											{t('Soluciones en salud')}
 										</tspan>
 									</text>
 									<line
@@ -2723,7 +2724,7 @@ export const NavbarMovil: React.FC = () => {
 											className="m-navbar-mobile"
 											transform="translate(40 10.729)">
 											<tspan x={0} y={15}>
-												{t('Soluciones en salud​')}
+												{t('Soluciones en salud')}
 											</tspan>
 										</text>
 									</g>
@@ -3534,7 +3535,7 @@ export const NavbarMovil: React.FC = () => {
 											className="m-navbar-mobile"
 											transform="translate(40 10.729)">
 											<tspan x={0} y={15}>
-												{t('Soluciones en salud​')}
+												{t('Soluciones en salud')}
 											</tspan>
 										</text>
 									</g>
@@ -4255,27 +4256,7 @@ export const NavbarMovil: React.FC = () => {
 				</svg>
 			) : (
 				<React.Fragment>
-					{/* <svg
-						className="absolute top-0 z-[1] w-[51px] h-[35px]"
-						style={{ transform: 'translate(260px, 2px)' }}>
-						<g
-							transform="translate(0 0)"
-							style={{ zIndex: 1 }}
-							onClick={handleChangeSelectedLanguage}>
-							<foreignObject x={0} y={0} width={51} height={51}>
-								<img
-									src={
-										selectedLanguage === 'en'
-											? '/images/english-mobile.png'
-											: '/images/spanish-movil.png'
-									}
-									alt=""
-									className="h-full w-full"
-								/>
-							</foreignObject>
-						</g>
-					</svg> */}
-					<svg viewBox="0 0 414 50" id="navbar__container" className='absolute top-0 z-[1]'>
+					<svg viewBox={`0 0 414 ${window.location.pathname === '/' ? 50 : 35}`} id="navbar__container" className={window.location.pathname === '/' ? 'absolute top-0 z-[1]' : ''}>
 						<defs>
 							<style>
 								{
