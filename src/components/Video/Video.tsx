@@ -1,6 +1,6 @@
 import React from 'react'
 import BarraVideo from 'assets/images/Home/BarrainicialAmarey.png'
-import Mute from 'assets/images/Grupo 5828.png'
+import Mute from 'assets/images/play-micro.png'
 import Mute2 from 'assets/images/Button.png'
 import useGeneral from 'hooks/general.hook'
 import './video.css'
@@ -88,7 +88,7 @@ const Video: React.FC<IVideo> = ({ onCloseVideo }): JSX.Element => {
 				id='play'
 				autoPlay
 				playsInline
-				></video>
+				muted={!mute}></video>
 			<div>
 				<img
 					src={!mute ? Mute : Mute2}
