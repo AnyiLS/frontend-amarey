@@ -163,12 +163,12 @@ const SubmenuSolution: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 						transform="translate(9 -120.41)"
 					/>
 				</g>
-				<text className="h-solution" transform="translate(150 358)">
+				<text className="h-solution" transform="translate(60 358)" style={{ fontSize: 30 }}>
 					<tspan x={0} y={0}>
-						{t('soluciones')}
+						{`${t('soluciones y productos distribuidos').split(' ')[0]} ${t('soluciones y productos distribuidos').split(' ')[1]}`}
 					</tspan>
 					<tspan x={0} y={37}>
-						{t('EN SALUD')}
+					{`${t('soluciones y productos distribuidos').split(' ')[2]} ${t('soluciones y productos distribuidos').split(' ')[3]}`}
 					</tspan>
 				</text>
 				<path
@@ -218,8 +218,11 @@ const SubmenuSolution: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 					/>
 				</a>
 				<text className="k-solution" transform="translate(1409 268)">
+					<tspan x={42.904} y={0}>
+						{`${t('soluciones y productos distribuidos').split(' ')[0]} ${t('soluciones y productos distribuidos').split(' ')[1]}`}
+					</tspan>
 					<tspan x={42.904} y={24}>
-						{t('soluciones EN SALUD')}
+						{`${t('soluciones y productos distribuidos').split(' ')[2]} ${t('soluciones y productos distribuidos').split(' ')[3]}`}
 					</tspan>
 				</text>
 			</g>
