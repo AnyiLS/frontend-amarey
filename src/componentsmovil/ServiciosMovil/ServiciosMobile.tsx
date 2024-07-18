@@ -1399,7 +1399,7 @@ export const ServiciosMovil: React.FC = () => {
 					/> */}
 					<svg
 						viewBox="0 0 48 50"
-						className="w-[80px] right-[20px] absolute top-[20px]"
+						className="w-[30px] right-[20px] absolute top-[20px]"
 						onClick={() => {
 							setOpenVideo(false)
 							document.body.style.overflow = 'auto'

@@ -293,7 +293,7 @@ const ReconocimientosMobile: React.FC = (): JSX.Element => {
 					playsInline
 				/>
 				<span
-					className="absolute top-[5%] right-[5%] text-white text-[30px] text-center font-bold bg-[#00000050] w-[50px] h-[50px] rounded-[100%]"
+					className="absolute top-[5%] right-[5%] text-white text-[19px] text-center font-bold bg-[#00000050] w-[30px] h-[30px] rounded-[100%]"
 					onClick={() => {
 						setShowVideo(false)
 						const video: HTMLVideoElement = document.getElementById('video-cifras') as HTMLVideoElement
