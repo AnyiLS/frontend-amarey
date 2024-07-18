@@ -609,7 +609,7 @@ export const CifrasMovil: React.FC = () => {
 				<div className="h-full w-full fixed	 top-0 bg-[#959192] flex items-center ">
 					<svg
 						viewBox="0 0 48 50"
-						className="w-[8%] right-[20px] absolute top-[20px]"
+						className="w-[8%] h-[6%] right-[20px] absolute top-[20px] z-[1]"
 						onClick={() => {
 							setOpenVideo(false)
 							document.body.style.overflow = 'auto'
@@ -637,7 +637,7 @@ export const CifrasMovil: React.FC = () => {
 								<feComposite in="SourceGraphic" />
 							</filter>
 						</defs>
-						<g transform="translate(1.5 0.5)">
+						<g transform="translate(1.5 8.5)">
 							<g
 								className="c-cifras-video-close"
 								transform="matrix(1, 0, 0, 1, -1.5, -0.5)">
@@ -661,7 +661,7 @@ export const CifrasMovil: React.FC = () => {
 					</svg>
 					<video
 						src={video[numberVideo].url}
-						className="object-cover h-[82%] w-full"
+						className="object-cover h-[100%] w-full"
 						id="video-cifras"
 						controls
 						playsInline
