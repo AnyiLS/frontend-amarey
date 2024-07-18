@@ -88,7 +88,7 @@ const Video: React.FC<IVideo> = ({ onCloseVideo }): JSX.Element => {
 				id='play'
 				autoPlay
 				playsInline
-				muted={!mute}></video>
+				></video>
 			<div>
 				<img
 					src={!mute ? Mute : Mute2}
